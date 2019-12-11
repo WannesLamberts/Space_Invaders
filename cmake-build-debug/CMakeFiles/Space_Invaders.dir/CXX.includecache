@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.cpp
+EnemyShipView.h
+/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+
+/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+../EntityView.h
+/home/student/Space_Invaders/Entity/EntityView.h
+
+/home/student/Space_Invaders/Entity/EntityView.h
+../MVCAbstract/ViewAbstract.h
+/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
+
+/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
+SFML/Graphics.hpp
+-
+
