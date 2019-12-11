@@ -18,7 +18,25 @@ EnemyShipView.h
 ../MVCAbstract/ViewAbstract.h
 /home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
 
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
+PlayerShipView.h
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+../EntityView.h
+/home/student/Space_Invaders/Entity/EntityView.h
+
 /home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
 SFML/Graphics.hpp
+-
+
+/home/student/Space_Invaders/main.cpp
+Entity/PlayerShip/PlayerShipView.h
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+Entity/EnemyShip/EnemyShipView.h
+/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+SFML/Graphics.hpp
+-
+vector
 -
 

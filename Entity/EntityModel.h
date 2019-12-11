@@ -5,7 +5,7 @@
 #ifndef SPACE_INVADERS_ENTITYMODEL_H
 #define SPACE_INVADERS_ENTITYMODEL_H
 
-
+#include <SFML/Graphics.hpp>
 class EntityModel {
     private:
         int healthPoints;

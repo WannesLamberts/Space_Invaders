@@ -8,9 +8,11 @@
 #include "../EntityView.h"
 
 class PlayerShipView: public EntityView {
+
 public:
     void draw(sf::RenderWindow & w);
 
+    PlayerShipView();
 };
 
 

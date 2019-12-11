@@ -7,7 +7,14 @@
 
 #include "../MVCAbstract/ViewAbstract.h"
 class EntityView : public ViewAbstract {
+private:
+    sf::Drawable* shape;
 public:
+    sf::Drawable *getShape() const;
+
+    void setShape(sf::Drawable *shape);
+
+
     virtual void draw(sf::RenderWindow & w)=0;
 
 };

@@ -17,7 +17,7 @@ int main()
     std::vector<ViewAbstract*> f;
     f.push_back(&v);
     f.push_back(&e);
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
     while (window.isOpen())
     {
         sf::Event event;

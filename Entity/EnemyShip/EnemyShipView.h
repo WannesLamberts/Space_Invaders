@@ -11,6 +11,7 @@ class EnemyShipView: public EntityView {
 public:
     void draw(sf::RenderWindow & w);
 
+    EnemyShipView();
 };
 
 
