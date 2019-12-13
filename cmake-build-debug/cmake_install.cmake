@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Space_Invaders
+# Install script for directory: /home/wannes/Desktop/Space_Invaders
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/Space_Invaders/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

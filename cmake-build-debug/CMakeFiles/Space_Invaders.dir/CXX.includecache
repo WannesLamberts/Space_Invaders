@@ -6,35 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.cpp
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.cpp
 EnemyShipView.h
-/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
 
-/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
 ../EntityView.h
-/home/student/Space_Invaders/Entity/EntityView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
 
-/home/student/Space_Invaders/Entity/EntityView.h
-../MVCAbstract/ViewAbstract.h
-/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp
+EntityModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
 
-/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
-PlayerShipView.h
-/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
-
-/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
-../EntityView.h
-/home/student/Space_Invaders/Entity/EntityView.h
-
-/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
 SFML/Graphics.hpp
 -
 
-/home/student/Space_Invaders/main.cpp
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp
+EntityView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+../MVCAbstract/ViewAbstract.h
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
+PlayerShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+../EntityView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp
+ViewAbstract.h
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+SFML/Graphics.hpp
+-
+
+/home/wannes/Desktop/Space_Invaders/main.cpp
 Entity/PlayerShip/PlayerShipView.h
-/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
 Entity/EnemyShip/EnemyShipView.h
-/home/student/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
 SFML/Graphics.hpp
 -
 vector

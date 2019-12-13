@@ -5,11 +5,13 @@
 #include "Entity/EnemyShip/EnemyShipView.h"
 #include <SFML/Graphics.hpp>
 #include <vector>
+
 void drawviews(sf::RenderWindow& w,std::vector<ViewAbstract*>& f){
     for (int i = 0; i < f.size(); i++) {
         f[i]->draw(w);
     }
 }
+
 int main()
 {
     PlayerShipView v;
