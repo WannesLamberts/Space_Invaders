@@ -4,7 +4,7 @@
 
 #include "EntityModel.h"
 
-EntityModel::EntityModel(int healthPoints, double xVal, double Yval)
+Entity::EntityModel::EntityModel(int healthPoints, double xVal, double Yval)
     : healthPoints(healthPoints), xVal(xVal), Yval(Yval)
 {
 }

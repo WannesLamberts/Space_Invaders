@@ -13,8 +13,8 @@ void drawviews(sf::RenderWindow& w, std::vector<ViewAbstract*>& f)
 }
 int main()
 {
-        PlayerShipView v;
-        EnemyShipView e;
+        Entity::PlayerShipView v;
+        Entity::EnemyShipView e;
         std::vector<ViewAbstract*> f;
         f.push_back(&v);
         f.push_back(&e);

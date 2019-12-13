@@ -3,9 +3,9 @@
 //
 
 #include "PlayerShipView.h"
-void PlayerShipView::draw(sf::RenderWindow& w) { w.draw(*getShape()); }
+void Entity::PlayerShipView::draw(sf::RenderWindow& w) { w.draw(*getShape()); }
 
-PlayerShipView::PlayerShipView()
+Entity::PlayerShipView::PlayerShipView()
 {
         sf::VertexArray* quad = new sf::VertexArray(sf::Quads, 4);
         quad->operator[](0).position = sf::Vector2f(10, 10);

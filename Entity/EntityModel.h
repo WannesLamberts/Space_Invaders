@@ -5,6 +5,7 @@
 #ifndef SPACE_INVADERS_ENTITYMODEL_H
 #define SPACE_INVADERS_ENTITYMODEL_H
 #include <SFML/Graphics.hpp>
+namespace Entity{
 /**
  * \brief Model class for Entity this class handles all the data of Entity
  */
@@ -33,4 +34,5 @@ public:
          */
         EntityModel(int healthPoints, double xVal, double Yval);
 };
+}
 #endif // SPACE_INVADERS_ENTITYMODEL_H

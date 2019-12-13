@@ -6,6 +6,7 @@
 #define SPACE_INVADERS_ENTITYVIEW_H
 
 #include "../MVCAbstract/ViewAbstract.h"
+namespace Entity{
 /**
  * \brief View class for Entity this class handles the visual aspect of the game
  */
@@ -35,5 +36,6 @@ public:
          */
         virtual void draw(sf::RenderWindow& w) = 0;
 };
+}
 
 #endif // SPACE_INVADERS_ENTITYVIEW_H

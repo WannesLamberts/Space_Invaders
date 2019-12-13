@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o"
-  "/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/main.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

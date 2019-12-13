@@ -3,9 +3,9 @@
 //
 
 #include "EnemyShipView.h"
-void EnemyShipView::draw(sf::RenderWindow& w) { w.draw(*getShape()); }
+void Entity::EnemyShipView::draw(sf::RenderWindow& w) { w.draw(*getShape()); }
 
-EnemyShipView::EnemyShipView()
+Entity::EnemyShipView::EnemyShipView()
 {
         sf::VertexArray* quad = new sf::VertexArray(sf::Quads, 4);
         quad->operator[](0).position = sf::Vector2f(20, 20);

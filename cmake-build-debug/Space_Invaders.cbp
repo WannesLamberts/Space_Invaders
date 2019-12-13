@@ -108,9 +108,6 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>

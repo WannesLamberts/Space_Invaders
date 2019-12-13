@@ -18,9 +18,6 @@ CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
-CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h

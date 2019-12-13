@@ -6,6 +6,7 @@
 #define SPACE_INVADERS_PLAYERSHIPVIEW_H
 
 #include "../EntityView.h"
+namespace Entity{
 /**
  * \brief View class for PlayerShip this class handles the visual aspect of the game
  */
@@ -18,8 +19,11 @@ public:
          * @param w the window where the shape gets drawn on.
          */
         void draw(sf::RenderWindow& w);
-
+        /**
+         * \brief basic contructor for playership sets the shape to the standard square
+         */
         PlayerShipView();
 };
+}
 
 #endif // SPACE_INVADERS_PLAYERSHIPVIEW_H
