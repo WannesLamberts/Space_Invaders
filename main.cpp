@@ -5,13 +5,11 @@
 #include "Entity/EnemyShip/EnemyShipView.h"
 #include <SFML/Graphics.hpp>
 #include <vector>
-
 void drawviews(sf::RenderWindow& w,std::vector<ViewAbstract*>& f){
     for (int i = 0; i < f.size(); i++) {
         f[i]->draw(w);
     }
 }
-
 int main()
 {
     PlayerShipView v;
@@ -19,7 +17,7 @@ int main()
     std::vector<ViewAbstract*> f;
     f.push_back(&v);
     f.push_back(&e);
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "SpaceInvaders");
     while (window.isOpen())
     {
         sf::Event event;
