@@ -4,13 +4,6 @@
 
 #include "EntityView.h"
 
+sf::Drawable* EntityView::getShape() const { return shape; }
 
-
-
-sf::Drawable *EntityView::getShape() const {
-    return shape;
-}
-
-void EntityView::setShape(sf::Drawable *shape) {
-    EntityView::shape = shape;
-}
+void EntityView::setShape(sf::Drawable* shape) { EntityView::shape = shape; }

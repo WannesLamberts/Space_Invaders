@@ -12,19 +12,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
@@ -45,7 +51,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -102,6 +110,7 @@
       <updated>1576076188526</updated>
       <workItem from="1576076189718" duration="9436000" />
       <workItem from="1576187620743" duration="8135000" />
+      <workItem from="1576255125948" duration="104000" />
     </task>
     <servers />
   </component>

@@ -8,8 +8,9 @@
 /**
  * \brief Model class for Entity this class handles all the data of Entity
  */
-class EntityModel {
-    private:
+class EntityModel
+{
+private:
         /**
          * \brief the healthpoints of the Entity an Entity dies when the healthpoints are 0
          */
@@ -22,7 +23,8 @@ class EntityModel {
          * \brief the value where the Entity is on the y-axis
          */
         double Yval;
-    public:
+
+public:
         /**
          * the contrustructor of EntityModel creates a Entity with healthpoints, xVal, Yval
          * @param healthPoints The healthPoints of the Entity
@@ -31,4 +33,4 @@ class EntityModel {
          */
         EntityModel(int healthPoints, double xVal, double Yval);
 };
-#endif //SPACE_INVADERS_ENTITYMODEL_H
+#endif // SPACE_INVADERS_ENTITYMODEL_H

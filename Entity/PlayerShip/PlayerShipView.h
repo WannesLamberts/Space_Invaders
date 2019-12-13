@@ -9,17 +9,17 @@
 /**
  * \brief View class for PlayerShip this class handles the visual aspect of the game
  */
-class PlayerShipView: public EntityView {
+class PlayerShipView : public EntityView
+{
 
 public:
-    /**
-     * \brief draws the shape on the sf::RenderWindow w
-     * @param w the window where the shape gets drawn on.
-     */
-    void draw(sf::RenderWindow & w);
+        /**
+         * \brief draws the shape on the sf::RenderWindow w
+         * @param w the window where the shape gets drawn on.
+         */
+        void draw(sf::RenderWindow& w);
 
-    PlayerShipView();
+        PlayerShipView();
 };
 
-
-#endif //SPACE_INVADERS_PLAYERSHIPVIEW_H
+#endif // SPACE_INVADERS_PLAYERSHIPVIEW_H
