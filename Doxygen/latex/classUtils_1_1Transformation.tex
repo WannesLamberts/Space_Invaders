@@ -1,0 +1,51 @@
+\hypertarget{classUtils_1_1Transformation}{}\doxysection{Utils\+::Transformation Class Reference}
+\label{classUtils_1_1Transformation}\index{Utils::Transformation@{Utils::Transformation}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} $\ast$ \mbox{\hyperlink{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em This is the only way to get a pointer to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object and there can only exist 1 object of \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}};. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Transformation.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}\label{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}} 
+\index{Utils::Transformation@{Utils::Transformation}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Utils::Transformation@{Utils::Transformation}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtils_1_1Transformation}{Utils\+::\+Transformation}} $\ast$ Utils\+::\+Transformation\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This is the only way to get a pointer to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object and there can only exist 1 object of \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}};. 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Transformation.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                       \{}
+\DoxyCodeLine{9         \textcolor{keywordflow}{if} (!i)}
+\DoxyCodeLine{10                 i=\textcolor{keyword}{new} Transformation;}
+\DoxyCodeLine{11         \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Utils/Transformation.\+h\item 
+Utils/Transformation.\+cpp\end{DoxyCompactItemize}

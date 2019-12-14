@@ -231,6 +231,33 @@ Entity/PlayerShip/PlayerShipView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.s
 .PHONY : Entity/PlayerShip/PlayerShipView.cpp.s
 
+Utils/Transformation.o: Utils/Transformation.cpp.o
+
+.PHONY : Utils/Transformation.o
+
+# target to build an object file
+Utils/Transformation.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o
+.PHONY : Utils/Transformation.cpp.o
+
+Utils/Transformation.i: Utils/Transformation.cpp.i
+
+.PHONY : Utils/Transformation.i
+
+# target to preprocess a source file
+Utils/Transformation.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.i
+.PHONY : Utils/Transformation.cpp.i
+
+Utils/Transformation.s: Utils/Transformation.cpp.s
+
+.PHONY : Utils/Transformation.s
+
+# target to generate assembly for a file
+Utils/Transformation.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.s
+.PHONY : Utils/Transformation.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -279,6 +306,9 @@ help:
 	@echo "... Entity/PlayerShip/PlayerShipView.o"
 	@echo "... Entity/PlayerShip/PlayerShipView.i"
 	@echo "... Entity/PlayerShip/PlayerShipView.s"
+	@echo "... Utils/Transformation.o"
+	@echo "... Utils/Transformation.i"
+	@echo "... Utils/Transformation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

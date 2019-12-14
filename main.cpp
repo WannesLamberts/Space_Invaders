@@ -29,6 +29,5 @@ int main()
                 drawviews(window, f);
                 window.display();
         }
-
         return 0;
 }

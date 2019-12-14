@@ -111,6 +111,12 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/main.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>

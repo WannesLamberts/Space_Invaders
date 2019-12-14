@@ -1,0 +1,103 @@
+\hypertarget{classEntity_1_1EntityView}{}\doxysection{Entity\+::Entity\+View Class Reference}
+\label{classEntity_1_1EntityView}\index{Entity::EntityView@{Entity::EntityView}}
+
+
+View class for Entity this class handles the visual aspect of the game.  
+
+
+
+
+{\ttfamily \#include $<$Entity\+View.\+h$>$}
+
+Inheritance diagram for Entity\+::Entity\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classEntity_1_1EntityView}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Drawable $\ast$ \mbox{\hyperlink{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}{get\+Shape}} () const
+\item 
+void \mbox{\hyperlink{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}{set\+Shape}} (sf\+::\+Drawable $\ast$shape)
+\item 
+virtual void \mbox{\hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{draw}} (sf\+::\+Render\+Window \&w)=0
+\begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View class for Entity this class handles the visual aspect of the game. 
+
+Definition at line 13 of file Entity\+View.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}\label{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}} 
+\index{Entity::EntityView@{Entity::EntityView}!draw@{draw}}
+\index{draw@{draw}!Entity::EntityView@{Entity::EntityView}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Entity\+::\+Entity\+View\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+draws the shape on the sf\+::\+Render\+Window w 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the window where the shape gets drawn on. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classViewAbstract_ab9d21012b19948e704a800da39b232ba}{View\+Abstract}}.
+
+
+
+Implemented in \mbox{\hyperlink{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}{Entity\+::\+Player\+Ship\+View}}, and \mbox{\hyperlink{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}{Entity\+::\+Enemy\+Ship\+View}}.
+
+\mbox{\Hypertarget{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}\label{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}} 
+\index{Entity::EntityView@{Entity::EntityView}!getShape@{getShape}}
+\index{getShape@{getShape}!Entity::EntityView@{Entity::EntityView}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily sf\+::\+Drawable $\ast$ Entity\+::\+Entity\+View\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+returns the sf\+::drawable of this Entity \begin{DoxyReturn}{Returns}
+const sf\+::\+Drawable of this Entity 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Entity\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{ \textcolor{keywordflow}{return} shape; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}\label{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}} 
+\index{Entity::EntityView@{Entity::EntityView}!setShape@{setShape}}
+\index{setShape@{setShape}!Entity::EntityView@{Entity::EntityView}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::set\+Shape (\begin{DoxyParamCaption}\item[{sf\+::\+Drawable $\ast$}]{shape }\end{DoxyParamCaption})}
+
+sets the shape of this Entity to the given shape 
+\begin{DoxyParams}{Parameters}
+{\em shape} & the new shape of this Entity \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Entity\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{ EntityView::shape = shape; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Entity/Entity\+View.\+h\item 
+Entity/Entity\+View.\+cpp\end{DoxyCompactItemize}

@@ -1,4 +1,3 @@
 # Space_Invaders
 Todo:
-Prog2 formatting
-Namespaces maken
+unique pointer maken naar Transformation
