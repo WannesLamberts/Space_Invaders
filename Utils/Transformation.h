@@ -4,34 +4,39 @@
 
 #ifndef SPACE_INVADERS_TRANSFORMATION_H
 #define SPACE_INVADERS_TRANSFORMATION_H
+#include <memory>
 namespace Utils {
-
+/**
+ * \brief used for transforming a models x and y values to the corresponding values on the screen.
+ */
 class Transformation
 {
 public:
         /**
-         * \brief This is the only way to get a pointer to the Transformation object and there can only exist 1 object of Transformation;
-         * @return the pointer to the Transformation object
+         * \brief This is the only way to get a reference to the Transformation object and there can only exist 1 object of Transformation;
+         * @return the reference to the Transformation object
          */
-        static Transformation* getInstance();
+        static Transformation& getInstance(){
+                static Transformation    instance; // Guaranteed to be destroyed.
+                // Instantiated on first use.
+                return instance;
+        }
+        double transX(double, double);
+        double transY(double, double);
 
 private:
         /**
-         * \brief constructor is made private so it can't be called
+         * \brief Constructor is made private so it can't be called
          */
-        Transformation();
+        Transformation(){};
         /**
-         * \brief copy constructor is made private so it can't be called
+         * \brief Copy constructor is made private so it can't be called
          */
         Transformation(Transformation const&);
         /**
          * \brief Copy assignemmt is made private so it can't be called
          */
         Transformation& operator=(Transformation const&);
-        /**
-         * \brief the pointer to the only Transformation object
-         */
-        static Transformation* i;
 };
-} // namespace Utils
+}
 #endif // SPACE_INVADERS_TRANSFORMATION_H

@@ -72,19 +72,25 @@ $(function() {
 <div class="title">Utils::Transformation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>used for transforming a models x and y values to the corresponding values on the screen.  
+ <a href="classUtils_1_1Transformation.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Transformation_8h_source.html">Transformation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a79bbdc9a039c87102bc784b186e33ecd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classUtils_1_1Transformation.html">Transformation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1Transformation.html#a79bbdc9a039c87102bc784b186e33ecd">getInstance</a> ()</td></tr>
-<tr class="memdesc:a79bbdc9a039c87102bc784b186e33ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the only way to get a pointer to the <a class="el" href="classUtils_1_1Transformation.html">Transformation</a> object and there can only exist 1 object of <a class="el" href="classUtils_1_1Transformation.html">Transformation</a>;.  <a href="classUtils_1_1Transformation.html#a79bbdc9a039c87102bc784b186e33ecd">More...</a><br /></td></tr>
-<tr class="separator:a79bbdc9a039c87102bc784b186e33ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35aa1cb15f4b4173d3abe4528dd60b5"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classUtils_1_1Transformation.html">Transformation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1Transformation.html#ad35aa1cb15f4b4173d3abe4528dd60b5">getInstance</a> ()</td></tr>
+<tr class="memdesc:ad35aa1cb15f4b4173d3abe4528dd60b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the only way to get a pointer to the <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a> object and there can only exist 1 object of <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a>;.  <a href="classUtils_1_1Transformation.html#ad35aa1cb15f4b4173d3abe4528dd60b5">More...</a><br /></td></tr>
+<tr class="separator:ad35aa1cb15f4b4173d3abe4528dd60b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00009">9</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
+<div class="textblock"><p>used for transforming a models x and y values to the corresponding values on the screen. </p>
+
+<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00012">12</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79bbdc9a039c87102bc784b186e33ecd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79bbdc9a039c87102bc784b186e33ecd">&#9670;&nbsp;</a></span>getInstance()</h2>
+<a id="ad35aa1cb15f4b4173d3abe4528dd60b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35aa1cb15f4b4173d3abe4528dd60b5">&#9670;&nbsp;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -93,7 +99,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classUtils_1_1Transformation.html">Utils::Transformation</a> * Utils::Transformation::getInstance </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classUtils_1_1Transformation.html">Utils::Transformation</a> &gt; Utils::Transformation::getInstance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -106,17 +112,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This is the only way to get a pointer to the <a class="el" href="classUtils_1_1Transformation.html">Transformation</a> object and there can only exist 1 object of <a class="el" href="classUtils_1_1Transformation.html">Transformation</a>;. </p>
-<dl class="section return"><dt>Returns</dt><dd>the pointer to the <a class="el" href="classUtils_1_1Transformation.html">Transformation</a> object </dd></dl>
+<p>This is the only way to get a pointer to the <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a> object and there can only exist 1 object of <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a>;. </p>
+<dl class="section return"><dt>Returns</dt><dd>the pointer to the <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a> object </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Transformation_8cpp_source.html#l00008">8</a> of file <a class="el" href="Transformation_8cpp_source.html">Transformation.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                                      {</div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                                                    {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">if</span> (!i)</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                i=<span class="keyword">new</span> Transformation;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                i=std::make_shared&lt;Utils::Transformation&gt;();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

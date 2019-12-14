@@ -3,7 +3,9 @@
 //
 #include "Entity/EnemyShip/EnemyShipView.h"
 #include "Entity/PlayerShip/PlayerShipView.h"
+#include "Utils/Transformation.h"
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include <vector>
 void drawviews(sf::RenderWindow& w, std::vector<ViewAbstract*>& f)
 {
@@ -11,6 +13,7 @@ void drawviews(sf::RenderWindow& w, std::vector<ViewAbstract*>& f)
                 f[i]->draw(w);
         }
 }
+
 int main()
 {
         Entity::PlayerShipView v;

@@ -12,22 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Utils/Transformation.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/Transformation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/Transformation_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Transformation_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/Transformation_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Transformation_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classUtils_1_1Transformation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classUtils_1_1Transformation.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Transformation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Transformation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Transformation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +120,7 @@
       <workItem from="1576187620743" duration="8135000" />
       <workItem from="1576255125948" duration="104000" />
       <workItem from="1576264796688" duration="1773000" />
-      <workItem from="1576340281353" duration="4928000" />
+      <workItem from="1576340281353" duration="12280000" />
     </task>
     <servers />
   </component>
@@ -127,25 +132,29 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="667" y="276" width="642" height="553" key="#Build_All/67.27.1853.1053@67.27.1853.1053" timestamp="1576187927349" />
+    <state x="801" y="271" width="372" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576356256671">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="271" width="372" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576356256671" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576265122830">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576265122830" />
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576346509199">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576357186889">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576346509199" />
-    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576346509198">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576357186889" />
+    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576357186889">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576346509198" />
-    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576346509198">
+    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576357186889" />
+    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576357186888">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576346509198" />
-    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576346509198">
+    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576357186888" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576357186889">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576346509198" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576357186889" />
   </component>
 </project>

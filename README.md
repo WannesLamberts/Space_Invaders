@@ -1,3 +1,3 @@
 # Space_Invaders
 Todo:
-unique pointer maken naar Transformation
+Optimaliseren transX en transY(enum?)

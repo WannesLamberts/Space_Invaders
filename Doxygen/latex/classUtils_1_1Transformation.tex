@@ -1,25 +1,34 @@
 \hypertarget{classUtils_1_1Transformation}{}\doxysection{Utils\+::Transformation Class Reference}
 \label{classUtils_1_1Transformation}\index{Utils::Transformation@{Utils::Transformation}}
+
+
+used for transforming a models x and y values to the corresponding values on the screen.  
+
+
+
+
+{\ttfamily \#include $<$Transformation.\+h$>$}
+
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} $\ast$ \mbox{\hyperlink{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}{get\+Instance}} ()
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} $>$ \mbox{\hyperlink{classUtils_1_1Transformation_ad35aa1cb15f4b4173d3abe4528dd60b5}{get\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em This is the only way to get a pointer to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object and there can only exist 1 object of \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}};. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+used for transforming a models x and y values to the corresponding values on the screen. 
 
-
-Definition at line 9 of file Transformation.\+h.
+Definition at line 12 of file Transformation.\+h.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}\label{classUtils_1_1Transformation_a79bbdc9a039c87102bc784b186e33ecd}} 
+\mbox{\Hypertarget{classUtils_1_1Transformation_ad35aa1cb15f4b4173d3abe4528dd60b5}\label{classUtils_1_1Transformation_ad35aa1cb15f4b4173d3abe4528dd60b5}} 
 \index{Utils::Transformation@{Utils::Transformation}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!Utils::Transformation@{Utils::Transformation}}
 \doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classUtils_1_1Transformation}{Utils\+::\+Transformation}} $\ast$ Utils\+::\+Transformation\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUtils_1_1Transformation}{Utils\+::\+Transformation}} $>$ Utils\+::\+Transformation\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -34,13 +43,11 @@ Definition at line 8 of file Transformation.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8                                                       \{}
+\DoxyCodeLine{8                                                                     \{}
 \DoxyCodeLine{9         \textcolor{keywordflow}{if} (!i)}
-\DoxyCodeLine{10                 i=\textcolor{keyword}{new} Transformation;}
+\DoxyCodeLine{10                 i=std::make\_shared<Utils::Transformation>();}
 \DoxyCodeLine{11         \textcolor{keywordflow}{return} i;}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14 \}}
+\DoxyCodeLine{12 \}}
 
 \end{DoxyCode}
 
