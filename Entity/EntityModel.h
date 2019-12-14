@@ -5,11 +5,12 @@
 #ifndef SPACE_INVADERS_ENTITYMODEL_H
 #define SPACE_INVADERS_ENTITYMODEL_H
 #include <SFML/Graphics.hpp>
+#include "../MVCAbstract/ModelAbstract.h"
 namespace Entity{
 /**
  * \brief Model class for Entity this class handles all the data of Entity
  */
-class EntityModel
+class EntityModel : public ModelAbstract
 {
 private:
         /**
@@ -33,6 +34,7 @@ public:
          * @param Yval The yVal of the Entity
          */
         EntityModel(int healthPoints, double xVal, double Yval);
+        void notify(double,double);
 };
 }
 #endif // SPACE_INVADERS_ENTITYMODEL_H

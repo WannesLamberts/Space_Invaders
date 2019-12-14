@@ -6,26 +6,54 @@
 
 #IncludeRegexTransform: 
 
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.cpp
+EnemyShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+
 /home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
 ../EntityView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp
+EntityModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+SFML/Graphics.hpp
+-
+../MVCAbstract/ModelAbstract.h
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp
+EntityView.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
 
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
 ../MVCAbstract/ViewAbstract.h
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
 
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp
+PlayerShipModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h
+../EntityModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
+PlayerShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+
 /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
 ../EntityView.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
 
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ViewAbstract.h
+/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
 SFML/Graphics.hpp
--
-
-/home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp
-Transformation.h
-/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
-iostream
 -
 
 /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h

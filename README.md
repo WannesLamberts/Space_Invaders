@@ -1,3 +1,4 @@
 # Space_Invaders
-Todo:
-Optimaliseren transX en transY(enum?)
+Todo:<br /><br />
+Optimaliseren transX en transY(enum?)<br />
+MVC Abstract inhertince nuttig? of is Entity genoeg<br />

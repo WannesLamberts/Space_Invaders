@@ -204,6 +204,33 @@ Entity/EntityView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s
 .PHONY : Entity/EntityView.cpp.s
 
+Entity/PlayerShip/PlayerShipModel.o: Entity/PlayerShip/PlayerShipModel.cpp.o
+
+.PHONY : Entity/PlayerShip/PlayerShipModel.o
+
+# target to build an object file
+Entity/PlayerShip/PlayerShipModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o
+.PHONY : Entity/PlayerShip/PlayerShipModel.cpp.o
+
+Entity/PlayerShip/PlayerShipModel.i: Entity/PlayerShip/PlayerShipModel.cpp.i
+
+.PHONY : Entity/PlayerShip/PlayerShipModel.i
+
+# target to preprocess a source file
+Entity/PlayerShip/PlayerShipModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.i
+.PHONY : Entity/PlayerShip/PlayerShipModel.cpp.i
+
+Entity/PlayerShip/PlayerShipModel.s: Entity/PlayerShip/PlayerShipModel.cpp.s
+
+.PHONY : Entity/PlayerShip/PlayerShipModel.s
+
+# target to generate assembly for a file
+Entity/PlayerShip/PlayerShipModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.s
+.PHONY : Entity/PlayerShip/PlayerShipModel.cpp.s
+
 Entity/PlayerShip/PlayerShipView.o: Entity/PlayerShip/PlayerShipView.cpp.o
 
 .PHONY : Entity/PlayerShip/PlayerShipView.o
@@ -303,6 +330,9 @@ help:
 	@echo "... Entity/EntityView.o"
 	@echo "... Entity/EntityView.i"
 	@echo "... Entity/EntityView.s"
+	@echo "... Entity/PlayerShip/PlayerShipModel.o"
+	@echo "... Entity/PlayerShip/PlayerShipModel.i"
+	@echo "... Entity/PlayerShip/PlayerShipModel.s"
 	@echo "... Entity/PlayerShip/PlayerShipView.o"
 	@echo "... Entity/PlayerShip/PlayerShipView.i"
 	@echo "... Entity/PlayerShip/PlayerShipView.s"

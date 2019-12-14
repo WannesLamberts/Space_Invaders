@@ -32,5 +32,7 @@ int main()
                 drawviews(window, f);
                 window.display();
         }
+        int getal;
+        std::cin>>getal;
         return 0;
 }

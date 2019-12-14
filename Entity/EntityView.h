@@ -35,6 +35,7 @@ public:
          * @param w the window where the shape gets drawn on.
          */
         virtual void draw(sf::RenderWindow& w) = 0;
+        void update(double,double);
 };
 }
 

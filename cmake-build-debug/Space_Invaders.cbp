@@ -102,10 +102,19 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h">

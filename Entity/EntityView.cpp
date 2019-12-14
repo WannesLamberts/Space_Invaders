@@ -7,3 +7,6 @@
 sf::Drawable* Entity::EntityView::getShape() const { return shape; }
 
 void Entity::EntityView::setShape(sf::Drawable* shape) { EntityView::shape = shape; }
+void Entity::EntityView::update(double, double) {
+        
+}

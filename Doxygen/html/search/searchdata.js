@@ -1,7 +1,7 @@
 var indexSectionsWithContent =
 {
-  0: "degpstv",
-  1: "eptv",
+  0: "degmpstv",
+  1: "emptv",
   2: "degps",
   3: "s"
 };

@@ -8,3 +8,4 @@ Entity::EntityModel::EntityModel(int healthPoints, double xVal, double Yval)
     : healthPoints(healthPoints), xVal(xVal), Yval(Yval)
 {
 }
+void Entity::EntityModel::notify(double, double) {}

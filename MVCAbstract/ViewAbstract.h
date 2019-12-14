@@ -17,6 +17,8 @@ public:
          * @param w the window where the drawable gets drawn on
          */
         virtual void draw(sf::RenderWindow& w) = 0;
+        virtual void update(double,double)=0;
+
 };
 
 #endif // SPACE_INVADERS_VIEWABSTRACT_H

@@ -8,10 +8,18 @@ CMakeFiles/Space_Invaders.dir/Entity/EnemyShip/EnemyShipView.cpp.o: ../MVCAbstra
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Entity/EntityModel.cpp
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityView.cpp
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityView.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../MVCAbstract/ViewAbstract.h
+
+CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o: ../Entity/PlayerShip/PlayerShipModel.cpp
+CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o: ../Entity/PlayerShip/PlayerShipModel.h
+CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 
 CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o: ../Entity/EntityView.h
 CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o: ../Entity/PlayerShip/PlayerShipView.cpp
