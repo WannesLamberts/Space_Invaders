@@ -6,6 +6,7 @@
 #define SPACE_INVADERS_ENTITYVIEW_H
 
 #include "../MVCAbstract/ViewAbstract.h"
+#include "../Utils/Transformation.h"
 namespace Entity{
 /**
  * \brief View class for Entity this class handles the visual aspect of the game
@@ -13,22 +14,33 @@ namespace Entity{
 class EntityView : public ViewAbstract
 {
 private:
+        double size;
+
+public:
+        double getSize() const;
+        void setSize(double size);
+private:
         /**
          * \brief the sf::Drawable that will be drawn on the window of the game
          */
-        sf::Drawable* shape;
+        sf::Sprite shape;
+        sf::Texture texture;
+
+public:
+        const sf::Texture& getTexture() const;
+        void setTexture(const sf::Texture& texture);
 
 public:
         /**
          * returns the sf::drawable of this Entity
          * @return const sf::Drawable of this Entity
          */
-        sf::Drawable* getShape() const;
+        sf::Sprite getShape() const;
         /**
          * sets the shape of this Entity to the given shape
          * @param shape the new shape of this Entity
          */
-        void setShape(sf::Drawable* shape);
+        void setShape(sf::Sprite shape);
 
         /**
          * \brief draws the shape on the sf::RenderWindow w
@@ -36,6 +48,8 @@ public:
          */
         virtual void draw(sf::RenderWindow& w) = 0;
         void update(double,double);
+        virtual void generateShape()=0;
+
 };
 }
 

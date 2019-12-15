@@ -4,9 +4,10 @@
 
 #ifndef SPACE_INVADERS_ENTITYMODEL_H
 #define SPACE_INVADERS_ENTITYMODEL_H
-#include <SFML/Graphics.hpp>
 #include "../MVCAbstract/ModelAbstract.h"
-namespace Entity{
+#include <SFML/Graphics.hpp>
+
+namespace Entity {
 /**
  * \brief Model class for Entity this class handles all the data of Entity
  */
@@ -21,6 +22,18 @@ private:
          * \brief the value where the Entity is on the x-axis
          */
         double xVal;
+
+
+public:
+        int getHealthPoints() const;
+        void setHealthPoints(int healthPoints);
+        double getXVal() const;
+        void setXVal(double xVal);
+        double getYval() const;
+        void setYval(double yval);
+        void moveLeft();
+        void moveRight();
+private:
         /**
          * \brief the value where the Entity is on the y-axis
          */
@@ -34,7 +47,7 @@ public:
          * @param Yval The yVal of the Entity
          */
         EntityModel(int healthPoints, double xVal, double Yval);
-        void notify(double,double);
+        void notify(double, double);
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ENTITYMODEL_H

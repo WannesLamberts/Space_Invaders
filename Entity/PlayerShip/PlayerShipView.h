@@ -23,6 +23,7 @@ public:
          * \brief basic contructor for playership sets the shape to the standard square
          */
         PlayerShipView();
+        void generateShape();
 };
 }
 

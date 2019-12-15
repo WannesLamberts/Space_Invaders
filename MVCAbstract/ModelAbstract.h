@@ -13,5 +13,11 @@
 class ModelAbstract
 {
         ViewAbstract* observer;
+
+public:
+        ViewAbstract* getObserver() const;
+        void setObserver(ViewAbstract* observer);
+
+private:
         virtual void notify(double,double)=0;
 };

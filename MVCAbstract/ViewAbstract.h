@@ -10,6 +10,12 @@
  */
 class ViewAbstract
 {
+private:
+        sf::RenderWindow* w;
+
+public:
+        sf::RenderWindow* getW() const;
+        void setW(sf::RenderWindow* w);
 
 public:
         /**
@@ -18,6 +24,7 @@ public:
          */
         virtual void draw(sf::RenderWindow& w) = 0;
         virtual void update(double,double)=0;
+
 
 };
 

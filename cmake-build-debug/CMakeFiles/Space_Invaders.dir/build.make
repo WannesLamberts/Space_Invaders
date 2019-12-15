@@ -148,6 +148,32 @@ CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.s
 
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../MVCAbstract/ViewAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o -c /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp
+
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i
+
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s
+
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: ../MVCAbstract/ModelAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o -c /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp
+
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i
+
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s
+
 # Object files for target Space_Invaders
 Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/main.cpp.o" \
@@ -156,7 +182,9 @@ Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/EnemyShip/EnemyShipView.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o" \
-"CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o"
+"CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
 
 # External object files for target Space_Invaders
 Space_Invaders_EXTERNAL_OBJECTS =
@@ -168,9 +196,11 @@ Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/EnemyShip/EnemyShipView.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/build.make
 Space_Invaders: CMakeFiles/Space_Invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Space_Invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Space_Invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Invaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

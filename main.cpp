@@ -3,6 +3,7 @@
 //
 #include "Entity/EnemyShip/EnemyShipView.h"
 #include "Entity/PlayerShip/PlayerShipView.h"
+#include "Entity/PlayerShip/PlayerShipModel.h"
 #include "Utils/Transformation.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
@@ -17,10 +18,11 @@ void drawviews(sf::RenderWindow& w, std::vector<ViewAbstract*>& f)
 int main()
 {
         Entity::PlayerShipView v;
-        Entity::EnemyShipView e;
+        v.setSize(1);
+        Entity::PlayerShipModel m(100,0,0);
+        m.setObserver(&v);
         std::vector<ViewAbstract*> f;
         f.push_back(&v);
-        f.push_back(&e);
         sf::RenderWindow window(sf::VideoMode(800, 600), "SpaceInvaders");
         while (window.isOpen()) {
                 sf::Event event;
@@ -32,7 +34,6 @@ int main()
                 drawviews(window, f);
                 window.display();
         }
-        int getal;
-        std::cin>>getal;
+
         return 0;
 }

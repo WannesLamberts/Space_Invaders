@@ -6,6 +6,7 @@ CMakeFiles/Space_Invaders.dir/Entity/EnemyShip/EnemyShipView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
@@ -15,6 +16,7 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp
@@ -26,13 +28,24 @@ CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
  /home/wannes/Desktop/Space_Invaders/main.cpp

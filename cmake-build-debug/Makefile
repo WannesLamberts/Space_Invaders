@@ -258,6 +258,60 @@ Entity/PlayerShip/PlayerShipView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.s
 .PHONY : Entity/PlayerShip/PlayerShipView.cpp.s
 
+MVCAbstract/ModelAbstract.o: MVCAbstract/ModelAbstract.cpp.o
+
+.PHONY : MVCAbstract/ModelAbstract.o
+
+# target to build an object file
+MVCAbstract/ModelAbstract.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o
+.PHONY : MVCAbstract/ModelAbstract.cpp.o
+
+MVCAbstract/ModelAbstract.i: MVCAbstract/ModelAbstract.cpp.i
+
+.PHONY : MVCAbstract/ModelAbstract.i
+
+# target to preprocess a source file
+MVCAbstract/ModelAbstract.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i
+.PHONY : MVCAbstract/ModelAbstract.cpp.i
+
+MVCAbstract/ModelAbstract.s: MVCAbstract/ModelAbstract.cpp.s
+
+.PHONY : MVCAbstract/ModelAbstract.s
+
+# target to generate assembly for a file
+MVCAbstract/ModelAbstract.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s
+.PHONY : MVCAbstract/ModelAbstract.cpp.s
+
+MVCAbstract/ViewAbstract.o: MVCAbstract/ViewAbstract.cpp.o
+
+.PHONY : MVCAbstract/ViewAbstract.o
+
+# target to build an object file
+MVCAbstract/ViewAbstract.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o
+.PHONY : MVCAbstract/ViewAbstract.cpp.o
+
+MVCAbstract/ViewAbstract.i: MVCAbstract/ViewAbstract.cpp.i
+
+.PHONY : MVCAbstract/ViewAbstract.i
+
+# target to preprocess a source file
+MVCAbstract/ViewAbstract.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i
+.PHONY : MVCAbstract/ViewAbstract.cpp.i
+
+MVCAbstract/ViewAbstract.s: MVCAbstract/ViewAbstract.cpp.s
+
+.PHONY : MVCAbstract/ViewAbstract.s
+
+# target to generate assembly for a file
+MVCAbstract/ViewAbstract.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s
+.PHONY : MVCAbstract/ViewAbstract.cpp.s
+
 Utils/Transformation.o: Utils/Transformation.cpp.o
 
 .PHONY : Utils/Transformation.o
@@ -336,6 +390,12 @@ help:
 	@echo "... Entity/PlayerShip/PlayerShipView.o"
 	@echo "... Entity/PlayerShip/PlayerShipView.i"
 	@echo "... Entity/PlayerShip/PlayerShipView.s"
+	@echo "... MVCAbstract/ModelAbstract.o"
+	@echo "... MVCAbstract/ModelAbstract.i"
+	@echo "... MVCAbstract/ModelAbstract.s"
+	@echo "... MVCAbstract/ViewAbstract.o"
+	@echo "... MVCAbstract/ViewAbstract.i"
+	@echo "... MVCAbstract/ViewAbstract.s"
 	@echo "... Utils/Transformation.o"
 	@echo "... Utils/Transformation.i"
 	@echo "... Utils/Transformation.s"

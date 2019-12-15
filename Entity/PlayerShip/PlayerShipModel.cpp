@@ -3,3 +3,8 @@
 //
 
 #include "PlayerShipModel.h"
+
+Entity::PlayerShipModel::PlayerShipModel(int healthPoints, double xVal, double yval)
+    : EntityModel(healthPoints, xVal, yval)
+{
+}

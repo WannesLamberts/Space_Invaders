@@ -12,6 +12,8 @@ namespace Entity {
  */
 class PlayerShipModel : public EntityModel
 {
+public:
+        PlayerShipModel(int healthPoints, double xVal, double yval);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_PLAYERSHIPMODEL_H

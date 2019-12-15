@@ -3,14 +3,18 @@
 //
 
 #include "PlayerShipView.h"
-void Entity::PlayerShipView::draw(sf::RenderWindow& w) { w.draw(*getShape()); }
+#include <iostream>
+void Entity::PlayerShipView::draw(sf::RenderWindow& w) { w.draw(getShape()); }
 
-Entity::PlayerShipView::PlayerShipView()
+Entity::PlayerShipView::PlayerShipView() { generateShape(); }
+void Entity::PlayerShipView::generateShape()
 {
-        sf::VertexArray* quad = new sf::VertexArray(sf::Quads, 4);
-        quad->operator[](0).position = sf::Vector2f(40, 10);
-        quad->operator[](1).position = sf::Vector2f(110, 10);
-        quad->operator[](2).position = sf::Vector2f(110, 110);
-        quad->operator[](3).position = sf::Vector2f(10, 110);
-        setShape(quad);
+        sf::Texture tex;
+        tex.loadFromFile("../Sprites/player.jpg");
+        setTexture(tex);
+        sf::Sprite player;
+        player.setTexture(getTexture());
+        player.setScale(0.1,0.1);
+        player.setPosition(400, 300);
+        setShape(player);
 }

@@ -12,53 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/red.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/EntityModel_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EntityModel_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/Transformation_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Transformation_8cpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/Transformation_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Transformation_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/annotated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classUtils_1_1Transformation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/files.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/main_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/main_8cpp_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/md_README.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/md_README.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/classes_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/classes_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/classes_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/classes_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/classes_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/classes_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/classes_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/pages_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/pages_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityModel.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityModel.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classUtils_1_1Transformation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classUtils_1_1Transformation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/hierarchy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/hierarchy.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxygen/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/refman.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
@@ -114,6 +83,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Doxygen" />
       <recent name="$PROJECT_DIR$" />
@@ -162,6 +134,7 @@
       <workItem from="1576255125948" duration="104000" />
       <workItem from="1576264796688" duration="1773000" />
       <workItem from="1576340281353" duration="20216000" />
+      <workItem from="1576437857287" duration="10000000" />
     </task>
     <servers />
   </component>
@@ -173,10 +146,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="667" y="276" width="642" height="553" key="#Build_All/67.27.1853.1053@67.27.1853.1053" timestamp="1576187927349" />
-    <state x="801" y="271" width="382" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576366988299">
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576445847351">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="271" width="382" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576366988299" />
+    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576445847351" />
+    <state x="801" y="271" width="465" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576446804928">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="271" width="465" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576446804928" />
     <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576366436081">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -185,21 +162,57 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576265122830" />
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576366807347">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576447887532">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576366807347" />
-    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576366807346">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
+    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576447887532">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576366807346" />
-    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576366807346">
+    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
+    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576447887531">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576366807346" />
-    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576366807347">
+    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887531" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576447887532">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576366807347" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
+    <state width="1807" height="343" key="GridCell.Tab.1.bottom" timestamp="1576447866183">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="343" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576447866183" />
+    <state width="1807" height="343" key="GridCell.Tab.1.center" timestamp="1576447866182">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="343" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576447866182" />
+    <state width="1807" height="343" key="GridCell.Tab.1.left" timestamp="1576447866182">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="343" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576447866182" />
+    <state width="1807" height="343" key="GridCell.Tab.1.right" timestamp="1576447866183">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="343" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576447866183" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576437930168">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576437930168" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="m" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
