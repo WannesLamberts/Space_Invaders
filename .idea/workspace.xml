@@ -12,38 +12,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Doxygen/html/ModelAbstract_8cpp_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Doxygen/html/ViewAbstract_8cpp_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Doxygen/html/classModelAbstract-members.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EnemyShip/EnemyShipView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EntityModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EntityModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EntityView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/EntityView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipModel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/PlayerShip/PlayerShipView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ModelAbstract.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EnemyShipView_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EnemyShipView_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EnemyShipView_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EnemyShipView_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EntityModel_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EntityModel_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EntityModel_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EntityModel_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EntityView_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EntityView_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EntityView_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EntityView_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/ModelAbstract_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/ModelAbstract_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/PlayerShipModel_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/PlayerShipModel_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/PlayerShipModel_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/PlayerShipModel_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/PlayerShipView_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/PlayerShipView_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/PlayerShipView_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/PlayerShipView_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/ViewAbstract_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/ViewAbstract_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyShipView-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyShipView-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyShipView.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyShipView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityView-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityView-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityView.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EntityView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipModel-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipModel-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipView-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipView-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipView.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1PlayerShipView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classModelAbstract.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classModelAbstract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classViewAbstract-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classViewAbstract-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classViewAbstract.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classViewAbstract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/main_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/main_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/md_README.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/md_README.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EnemyShipView.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EnemyShipView.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityModel.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityModel.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityView.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1EntityView.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1PlayerShipModel.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1PlayerShipModel.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1PlayerShipView.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classEntity_1_1PlayerShipView.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classModelAbstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classModelAbstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classViewAbstract.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classViewAbstract.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +154,7 @@
       <workItem from="1576255125948" duration="104000" />
       <workItem from="1576264796688" duration="1773000" />
       <workItem from="1576340281353" duration="20216000" />
-      <workItem from="1576437857287" duration="10000000" />
+      <workItem from="1576437857287" duration="10594000" />
     </task>
     <servers />
   </component>
@@ -162,22 +182,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576265122830" />
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576447887532">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom" timestamp="1576448491489">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
-    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576447887532">
+    <state width="1807" height="371" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576448491489" />
+    <state width="1807" height="371" key="GridCell.Tab.0.center" timestamp="1576448491489">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
-    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576447887531">
+    <state width="1807" height="371" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576448491489" />
+    <state width="1807" height="371" key="GridCell.Tab.0.left" timestamp="1576448491488">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887531" />
-    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576447887532">
+    <state width="1807" height="371" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576448491488" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right" timestamp="1576448491489">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576447887532" />
+    <state width="1807" height="371" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576448491489" />
     <state width="1807" height="343" key="GridCell.Tab.1.bottom" timestamp="1576447866183">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

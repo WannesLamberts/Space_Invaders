@@ -18,18 +18,36 @@ Inheritance diagram for Entity\+::Entity\+View\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-sf\+::\+Drawable $\ast$ \mbox{\hyperlink{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}{get\+Shape}} () const
+\mbox{\Hypertarget{classEntity_1_1EntityView_abd5ed0dd272fc216f201020b2ac4e8b1}\label{classEntity_1_1EntityView_abd5ed0dd272fc216f201020b2ac4e8b1}} 
+double {\bfseries get\+Size} () const
 \item 
-void \mbox{\hyperlink{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}{set\+Shape}} (sf\+::\+Drawable $\ast$shape)
+\mbox{\Hypertarget{classEntity_1_1EntityView_afa0c120d100bad7f62b240beadfcee02}\label{classEntity_1_1EntityView_afa0c120d100bad7f62b240beadfcee02}} 
+void {\bfseries set\+Size} (double size)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_a2e9bf31d4e90ab92b8ad5d96f2057846}\label{classEntity_1_1EntityView_a2e9bf31d4e90ab92b8ad5d96f2057846}} 
+const sf\+::\+Texture \& {\bfseries get\+Texture} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_aed6c61089c3d8de22bbe895e69d901b5}\label{classEntity_1_1EntityView_aed6c61089c3d8de22bbe895e69d901b5}} 
+void {\bfseries set\+Texture} (const sf\+::\+Texture \&texture)
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classEntity_1_1EntityView_a3902b7f2a7fb36363a227d59b7044e5a}{get\+Shape}} () const
+\item 
+void \mbox{\hyperlink{classEntity_1_1EntityView_ab462f61f84150553ac1cf87c67f529f4}{set\+Shape}} (sf\+::\+Sprite shape)
 \item 
 virtual void \mbox{\hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{draw}} (sf\+::\+Render\+Window \&w)=0
-\begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_aa7ac759577e903d916b7f62e81acfc39}\label{classEntity_1_1EntityView_aa7ac759577e903d916b7f62e81acfc39}} 
+void {\bfseries update} (double, double)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}\label{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}} 
+virtual void {\bfseries generate\+Shape} ()=0
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 View class for Entity this class handles the visual aspect of the game. 
 
-Definition at line 13 of file Entity\+View.\+h.
+Definition at line 14 of file Entity\+View.\+h.
 
 
 
@@ -57,29 +75,29 @@ Implements \mbox{\hyperlink{classViewAbstract_ab9d21012b19948e704a800da39b232ba}
 
 Implemented in \mbox{\hyperlink{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}{Entity\+::\+Player\+Ship\+View}}, and \mbox{\hyperlink{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}{Entity\+::\+Enemy\+Ship\+View}}.
 
-\mbox{\Hypertarget{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}\label{classEntity_1_1EntityView_a16df1b3b1a5d17a2d87315788f0cf1c7}} 
+\mbox{\Hypertarget{classEntity_1_1EntityView_a3902b7f2a7fb36363a227d59b7044e5a}\label{classEntity_1_1EntityView_a3902b7f2a7fb36363a227d59b7044e5a}} 
 \index{Entity::EntityView@{Entity::EntityView}!getShape@{getShape}}
 \index{getShape@{getShape}!Entity::EntityView@{Entity::EntityView}}
 \doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
-{\footnotesize\ttfamily sf\+::\+Drawable $\ast$ Entity\+::\+Entity\+View\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily sf\+::\+Sprite Entity\+::\+Entity\+View\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 returns the sf\+::drawable of this Entity \begin{DoxyReturn}{Returns}
 const sf\+::\+Drawable of this Entity 
 \end{DoxyReturn}
 
 
-Definition at line 7 of file Entity\+View.\+cpp.
+Definition at line 8 of file Entity\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{7 \{ \textcolor{keywordflow}{return} shape; \}}
+\DoxyCodeLine{8 \{ \textcolor{keywordflow}{return} shape; \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}\label{classEntity_1_1EntityView_a968c9a894d5f034f2d5a2f176f1fcc09}} 
+\mbox{\Hypertarget{classEntity_1_1EntityView_ab462f61f84150553ac1cf87c67f529f4}\label{classEntity_1_1EntityView_ab462f61f84150553ac1cf87c67f529f4}} 
 \index{Entity::EntityView@{Entity::EntityView}!setShape@{setShape}}
 \index{setShape@{setShape}!Entity::EntityView@{Entity::EntityView}}
 \doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
-{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::set\+Shape (\begin{DoxyParamCaption}\item[{sf\+::\+Drawable $\ast$}]{shape }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::set\+Shape (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite}]{shape }\end{DoxyParamCaption})}
 
 sets the shape of this Entity to the given shape 
 \begin{DoxyParams}{Parameters}
@@ -88,11 +106,11 @@ sets the shape of this Entity to the given shape
 \end{DoxyParams}
 
 
-Definition at line 9 of file Entity\+View.\+cpp.
+Definition at line 10 of file Entity\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{9 \{ EntityView::shape = shape; \}}
+\DoxyCodeLine{10 \{ EntityView::shape = shape; \}}
 
 \end{DoxyCode}
 

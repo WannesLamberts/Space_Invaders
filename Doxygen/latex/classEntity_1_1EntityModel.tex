@@ -18,14 +18,41 @@ Inheritance diagram for Entity\+::Entity\+Model\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a76486115945554dcebdd654321da4da0}\label{classEntity_1_1EntityModel_a76486115945554dcebdd654321da4da0}} 
+int {\bfseries get\+Health\+Points} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a917aa1330b6c38dd8754f6044a24fa6b}\label{classEntity_1_1EntityModel_a917aa1330b6c38dd8754f6044a24fa6b}} 
+void {\bfseries set\+Health\+Points} (int health\+Points)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_ab9c31fc144f852a1f220fd844fb9eeb7}\label{classEntity_1_1EntityModel_ab9c31fc144f852a1f220fd844fb9eeb7}} 
+double {\bfseries get\+X\+Val} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a1ed361b3812b74fe14e66313f4f29c32}\label{classEntity_1_1EntityModel_a1ed361b3812b74fe14e66313f4f29c32}} 
+void {\bfseries set\+X\+Val} (double x\+Val)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_aa7477ab9d908f54d71773c720c85bf7c}\label{classEntity_1_1EntityModel_aa7477ab9d908f54d71773c720c85bf7c}} 
+double {\bfseries get\+Yval} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a99f1a7c318bdea0b52284ea3c6176427}\label{classEntity_1_1EntityModel_a99f1a7c318bdea0b52284ea3c6176427}} 
+void {\bfseries set\+Yval} (double yval)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_ae9f1924f345347765941ff38c220ee68}\label{classEntity_1_1EntityModel_ae9f1924f345347765941ff38c220ee68}} 
+void {\bfseries move\+Left} ()
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a55decbf24325a034989c7235b2019d02}\label{classEntity_1_1EntityModel_a55decbf24325a034989c7235b2019d02}} 
+void {\bfseries move\+Right} ()
+\item 
 \mbox{\hyperlink{classEntity_1_1EntityModel_a13d4ef395649df7741fc6f73e0993f82}{Entity\+Model}} (int health\+Points, double x\+Val, double Yval)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a8a6e8514febe0629ef1d0eb4b10fc750}\label{classEntity_1_1EntityModel_a8a6e8514febe0629ef1d0eb4b10fc750}} 
+void {\bfseries notify} (double, double)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Model class for Entity this class handles all the data of Entity. 
 
-Definition at line 13 of file Entity\+Model.\+h.
+Definition at line 14 of file Entity\+Model.\+h.
 
 
 
@@ -53,7 +80,8 @@ Definition at line 7 of file Entity\+Model.\+cpp.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{8     : healthPoints(healthPoints), xVal(xVal), Yval(Yval)}
 \DoxyCodeLine{9 \{}
-\DoxyCodeLine{10 \}}
+\DoxyCodeLine{10         \textcolor{comment}{//notify(getXVal(),getYval());}}
+\DoxyCodeLine{11 \}}
 
 \end{DoxyCode}
 

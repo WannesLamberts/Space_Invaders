@@ -74,23 +74,23 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;EnemyShipView.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">    6</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">Entity::EnemyShipView::draw</a>(sf::RenderWindow&amp; w) { w.draw(*<a class="code" href="classEntity_1_1EntityView.html#a16df1b3b1a5d17a2d87315788f0cf1c7">getShape</a>()); }</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">    8</a></span>&#160;<a class="code" href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">Entity::EnemyShipView::EnemyShipView</a>()</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        sf::VertexArray* quad = <span class="keyword">new</span> sf::VertexArray(sf::Quads, 4);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        quad-&gt;operator[](0).position = sf::Vector2f(20, 20);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        quad-&gt;operator[](1).position = sf::Vector2f(220, 20);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        quad-&gt;operator[](2).position = sf::Vector2f(220, 220);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        quad-&gt;operator[](3).position = sf::Vector2f(20, 220);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">// define it as a rectangle, located at (10, 10) and with size 100x100</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="comment">// define its texture area to be a 25x50 rectangle starting at (0, 0)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        setShape(quad);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">Entity::EnemyShipView::draw</a>(sf::RenderWindow&amp; w) { w.draw(<a class="code" href="classEntity_1_1EntityView.html#a3902b7f2a7fb36363a227d59b7044e5a">getShape</a>()); }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">    9</a></span>&#160;<a class="code" href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">Entity::EnemyShipView::EnemyShipView</a>() {}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> Entity::EnemyShipView::generateShape()</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="comment">/*sf::VertexArray quad = sf::VertexArray(sf::Quads, 4);</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">        quad[0].color = sf::Color::Red;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">        quad[1].color = sf::Color::Red;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">        quad[2].color = sf::Color::Red;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">        quad[3].color = sf::Color::Red;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">        setShape(quad);*/</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassEntity_1_1EntityView_html_a16df1b3b1a5d17a2d87315788f0cf1c7"><div class="ttname"><a href="classEntity_1_1EntityView.html#a16df1b3b1a5d17a2d87315788f0cf1c7">Entity::EntityView::getShape</a></div><div class="ttdeci">sf::Drawable * getShape() const</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8cpp_source.html#l00007">EntityView.cpp:7</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EnemyShipView_html_a3417632d012f12720ebbbe4b525b3c19"><div class="ttname"><a href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">Entity::EnemyShipView::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;w)</div><div class="ttdoc">draws the shape on the sf::RenderWindow w</div><div class="ttdef"><b>Definition:</b> <a href="EnemyShipView_8cpp_source.html#l00006">EnemyShipView.cpp:6</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EnemyShipView_html_a208188bb32ba97acefdd236227b223e6"><div class="ttname"><a href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">Entity::EnemyShipView::EnemyShipView</a></div><div class="ttdeci">EnemyShipView()</div><div class="ttdoc">basic contructor for playership sets the shape to the standard square</div><div class="ttdef"><b>Definition:</b> <a href="EnemyShipView_8cpp_source.html#l00008">EnemyShipView.cpp:8</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityView_html_a3902b7f2a7fb36363a227d59b7044e5a"><div class="ttname"><a href="classEntity_1_1EntityView.html#a3902b7f2a7fb36363a227d59b7044e5a">Entity::EntityView::getShape</a></div><div class="ttdeci">sf::Sprite getShape() const</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8cpp_source.html#l00008">EntityView.cpp:8</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EnemyShipView_html_a3417632d012f12720ebbbe4b525b3c19"><div class="ttname"><a href="classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19">Entity::EnemyShipView::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;w)</div><div class="ttdoc">draws the shape on the sf::RenderWindow w</div><div class="ttdef"><b>Definition:</b> <a href="EnemyShipView_8cpp_source.html#l00007">EnemyShipView.cpp:7</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EnemyShipView_html_a208188bb32ba97acefdd236227b223e6"><div class="ttname"><a href="classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6">Entity::EnemyShipView::EnemyShipView</a></div><div class="ttdeci">EnemyShipView()</div><div class="ttdoc">basic contructor for playership sets the shape to the standard square</div><div class="ttdef"><b>Definition:</b> <a href="EnemyShipView_8cpp_source.html#l00009">EnemyShipView.cpp:9</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
