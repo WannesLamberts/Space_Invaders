@@ -4,17 +4,14 @@
 
 #include "PlayerShipView.h"
 #include <iostream>
-void Entity::PlayerShipView::draw(sf::RenderWindow& w) { w.draw(getShape()); }
+void Entity::PlayerShipView::draw(sf::RenderWindow& w) { w.draw(shape); }
 
 Entity::PlayerShipView::PlayerShipView() { generateShape(); }
 void Entity::PlayerShipView::generateShape()
 {
-        sf::Texture tex;
-        tex.loadFromFile("../Sprites/player.jpg");
-        setTexture(tex);
+        texture.loadFromFile("../Sprites/player.png");
         sf::Sprite player;
-        player.setTexture(getTexture());
-        player.setScale(0.1,0.1);
-        player.setPosition(400, 300);
-        setShape(player);
+        shape.setTexture(texture);
+        shape.setScale(0.1,0.1);
+        shape.setPosition(400, 300);
 }

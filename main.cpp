@@ -18,9 +18,8 @@ void drawviews(sf::RenderWindow& w, std::vector<ViewAbstract*>& f)
 int main()
 {
         Entity::PlayerShipView v;
-        v.setSize(1);
         Entity::PlayerShipModel m(100,0,0);
-        m.setObserver(&v);
+        m.registerObserver(&v);
         std::vector<ViewAbstract*> f;
         f.push_back(&v);
         sf::RenderWindow window(sf::VideoMode(800, 600), "SpaceInvaders");

@@ -4,27 +4,21 @@
 
 #ifndef SPACE_INVADERS_VIEWABSTRACT_H
 #define SPACE_INVADERS_VIEWABSTRACT_H
+
 #include <SFML/Graphics.hpp>
+#include "Observer.h"
 /**
  * \brief superclass of all view classes handles the visual aspect of the game
  */
-class ViewAbstract
-{
-private:
-        sf::RenderWindow* w;
-
+class ViewAbstract : public Observer {
+protected:
+    sf::RenderWindow *w;
 public:
-        sf::RenderWindow* getW() const;
-        void setW(sf::RenderWindow* w);
-
-public:
-        /**
-         * \brief draws a sf::Drawable on a window
-         * @param w the window where the drawable gets drawn on
-         */
-        virtual void draw(sf::RenderWindow& w) = 0;
-        virtual void update(double,double)=0;
-
+    /**
+     * \brief draws a sf::Drawable on a window
+     * @param w the window where the drawable gets drawn on
+     */
+    virtual void draw(sf::RenderWindow &w) = 0;
 
 };
 

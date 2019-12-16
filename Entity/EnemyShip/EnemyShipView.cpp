@@ -4,7 +4,7 @@
 
 #include "EnemyShipView.h"
 
-void Entity::EnemyShipView::draw(sf::RenderWindow& w) { w.draw(getShape()); }
+void Entity::EnemyShipView::draw(sf::RenderWindow& w) { w.draw(shape); }
 
 Entity::EnemyShipView::EnemyShipView() {}
 void Entity::EnemyShipView::generateShape()

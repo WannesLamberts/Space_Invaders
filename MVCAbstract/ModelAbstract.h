@@ -7,17 +7,11 @@
 
 #endif // SPACE_INVADERS_MODELABSTRACT_H
 #include "ViewAbstract.h"
+#include "Subject.h"
 /**
  * \brief superclass of all model classes handles the data section of the game
  */
-class ModelAbstract
+class ModelAbstract : public Subject
 {
-        ViewAbstract* observer;
 
-public:
-        ViewAbstract* getObserver() const;
-        void setObserver(ViewAbstract* observer);
-
-private:
-        virtual void notify(double,double)=0;
 };
