@@ -1,4 +1,4 @@
-/opt/clion-2018.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/student/Space_Invaders
+/home/wannes/Downloads/clion-2019.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wannes/Desktop/Space_Invaders
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/student/Space_Invaders/cmake-build-debug
+-- Build files have been written to: /home/wannes/Desktop/Space_Invaders/cmake-build-debug

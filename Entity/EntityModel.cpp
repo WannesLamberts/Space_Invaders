@@ -25,6 +25,6 @@ void Entity::EntityModel::setYval(double yVal) {
     notifyObservers(xVal, yVal);
 }
 
-void Entity::EntityModel::moveLeft() { setXVal(xVal - 1); }
+void Entity::EntityModel::moveLeft() { setXVal(xVal - 0.1); }
 
-void Entity::EntityModel::moveRight() { setXVal(xVal + 1); }
+void Entity::EntityModel::moveRight() { setXVal(xVal + 0.1); }

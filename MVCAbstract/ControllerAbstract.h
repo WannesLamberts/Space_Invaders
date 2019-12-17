@@ -1,0 +1,13 @@
+//
+// Created by wannes on 17.12.19.
+//
+
+#ifndef SPACE_INVADERS_CONTROLLERABSTRACT_H
+#define SPACE_INVADERS_CONTROLLERABSTRACT_H
+
+class ControllerAbstract
+{
+
+};
+
+#endif // SPACE_INVADERS_CONTROLLERABSTRACT_H
