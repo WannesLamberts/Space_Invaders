@@ -15,11 +15,11 @@ class PlayerShipController: public Controllable
 {
 public:
         void readInput();
-        PlayerShipController(PlayerShipModel* m, PlayerShipView* v);
+        PlayerShipController(std::shared_ptr<PlayerShipModel> m, std::shared_ptr<PlayerShipView> v);
 
 private:
-        PlayerShipModel* m;
-        PlayerShipView* v;
+    std::shared_ptr<PlayerShipModel> m;
+        std::shared_ptr<PlayerShipView> v;
 };
 }
 #endif // SPACE_INVADERS_PLAYERSHIPCONTROLLER_H

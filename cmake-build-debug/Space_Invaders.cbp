@@ -8,164 +8,158 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/wannes/Desktop/Space_Invaders/cmake-build-debug"/>
+				<Option working_dir="/home/student/Space_Invaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/wannes/Desktop/Space_Invaders/cmake-build-debug"/>
+				<Option working_dir="/home/student/Space_Invaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Space_Invaders">
-				<Option output="/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Space_Invaders" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wannes/Desktop/Space_Invaders/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Space_Invaders"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Space_Invaders/fast">
-				<Option output="/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Space_Invaders" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wannes/Desktop/Space_Invaders/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Space_Invaders/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/wannes/Desktop/Space_Invaders/cmake-build-debug"/>
+				<Option working_dir="/home/student/Space_Invaders/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wannes/Desktop/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Space_Invaders">
+				<Option output="/home/student/Space_Invaders/cmake-build-debug/Space_Invaders" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Space_Invaders/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Space_Invaders"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Space_Invaders/fast">
+				<Option output="/home/student/Space_Invaders/cmake-build-debug/Space_Invaders" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Space_Invaders/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 Space_Invaders/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/student/Space_Invaders/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.cpp">
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EnemyShip/EnemyShipView.h">
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp">
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h">
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipController.cpp">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipController.h">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h">
+		<Unit filename="/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/Controllable.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ControllerAbstract.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ControllerAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ModelAbstract.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ModelAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/Observer.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/Subject.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Observer.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/Subject.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Subject.cpp">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ViewAbstract.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Subject.h">
+		<Unit filename="/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp">
+		<Unit filename="/home/student/Space_Invaders/Utils/StopWatch.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h">
+		<Unit filename="/home/student/Space_Invaders/Utils/StopWatch.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp">
+		<Unit filename="/home/student/Space_Invaders/Utils/Transformation.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h">
+		<Unit filename="/home/student/Space_Invaders/Utils/Transformation.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp">
+		<Unit filename="/home/student/Space_Invaders/main.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/main.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/CMakeLists.txt">
+		<Unit filename="/home/student/Space_Invaders/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

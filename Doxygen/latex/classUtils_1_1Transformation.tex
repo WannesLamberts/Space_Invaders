@@ -1,5 +1,5 @@
-\hypertarget{classUtils_1_1Transformation}{}\doxysection{Utils\+::Transformation Class Reference}
-\label{classUtils_1_1Transformation}\index{Utils::Transformation@{Utils::Transformation}}
+\hypertarget{classUtils_1_1Transformation}{}\section{Utils\+:\+:Transformation Class Reference}
+\label{classUtils_1_1Transformation}\index{Utils\+::\+Transformation@{Utils\+::\+Transformation}}
 
 
 used for transforming a models x and y values to the corresponding values on the screen.  
@@ -9,7 +9,7 @@ used for transforming a models x and y values to the corresponding values on the
 
 {\ttfamily \#include $<$Transformation.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classUtils_1_1Transformation_a4c04707895cb31f07f615c6d0dbd6691}\label{classUtils_1_1Transformation_a4c04707895cb31f07f615c6d0dbd6691}} 
@@ -18,46 +18,45 @@ double {\bfseries transX} (double, double)
 \mbox{\Hypertarget{classUtils_1_1Transformation_a1b8c8966672f4182309a14b82a5af2cb}\label{classUtils_1_1Transformation_a1b8c8966672f4182309a14b82a5af2cb}} 
 double {\bfseries transY} (double, double)
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
+\subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} \& \mbox{\hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{get\+Instance}} ()
-\begin{DoxyCompactList}\small\item\em This is the only way to get a reference to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object and there can only exist 1 object of \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}};. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static \hyperlink{classUtils_1_1Transformation}{Transformation} \& \hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em This is the only way to get a reference to the \hyperlink{classUtils_1_1Transformation}{Transformation} object and there can only exist 1 object of \hyperlink{classUtils_1_1Transformation}{Transformation};. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 used for transforming a models x and y values to the corresponding values on the screen. 
 
 Definition at line 12 of file Transformation.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}\label{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}} 
-\index{Utils::Transformation@{Utils::Transformation}!getInstance@{getInstance}}
-\index{getInstance@{getInstance}!Utils::Transformation@{Utils::Transformation}}
-\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}}\& Utils\+::\+Transformation\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+\index{Utils\+::\+Transformation@{Utils\+::\+Transformation}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Utils\+::\+Transformation@{Utils\+::\+Transformation}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classUtils_1_1Transformation}{Transformation}\& Utils\+::\+Transformation\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
-This is the only way to get a reference to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object and there can only exist 1 object of \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}};. 
+This is the only way to get a reference to the \hyperlink{classUtils_1_1Transformation}{Transformation} object and there can only exist 1 object of \hyperlink{classUtils_1_1Transformation}{Transformation};. 
 
 \begin{DoxyReturn}{Returns}
-the reference to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} object 
+the reference to the \hyperlink{classUtils_1_1Transformation}{Transformation} object 
 \end{DoxyReturn}
 
 
 Definition at line 19 of file Transformation.\+h.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{19                                             \{}
-\DoxyCodeLine{20                 \textcolor{keyword}{static} Transformation    instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
-\DoxyCodeLine{21                 \textcolor{comment}{// Instantiated on first use.}}
-\DoxyCodeLine{22                 \textcolor{keywordflow}{return} instance;}
-\DoxyCodeLine{23         \}}
-
+\begin{DoxyCode}
+19                                             \{
+20                 \textcolor{keyword}{static} Transformation    instance; \textcolor{comment}{// Guaranteed to be destroyed.}
+21                 \textcolor{comment}{// Instantiated on first use.}
+22                 \textcolor{keywordflow}{return} instance;
+23         \}
 \end{DoxyCode}
 
 

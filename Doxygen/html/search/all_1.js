@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['enemyshipview_1',['EnemyShipView',['../classEntity_1_1EnemyShipView.html',1,'Entity::EnemyShipView'],['../classEntity_1_1EnemyShipView.html#a208188bb32ba97acefdd236227b223e6',1,'Entity::EnemyShipView::EnemyShipView()']]],
-  ['entitymodel_2',['EntityModel',['../classEntity_1_1EntityModel.html',1,'Entity::EntityModel'],['../classEntity_1_1EntityModel.html#a13d4ef395649df7741fc6f73e0993f82',1,'Entity::EntityModel::EntityModel()']]],
-  ['entityview_3',['EntityView',['../classEntity_1_1EntityView.html',1,'Entity']]]
+  ['draw',['draw',['../classEntity_1_1EnemyShipView.html#a3417632d012f12720ebbbe4b525b3c19',1,'Entity::EnemyShipView::draw()'],['../classEntity_1_1EntityView.html#a9a415b467798f8bbb9cd2489c3edd941',1,'Entity::EntityView::draw()'],['../classEntity_1_1PlayerShipView.html#ad9767510af4af87a4b67182065a1bf6c',1,'Entity::PlayerShipView::draw()'],['../classViewAbstract.html#ab9d21012b19948e704a800da39b232ba',1,'ViewAbstract::draw()']]]
 ];

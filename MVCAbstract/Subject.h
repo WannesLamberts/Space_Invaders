@@ -7,12 +7,13 @@
 
 #include "Observer.h"
 #include <vector>
+#include <memory>
 class Subject {
 protected:
-    std::vector<Observer*> observers;
+    std::vector<std::shared_ptr<Observer>> observers;
 public:
- void registerObserver(Observer* o);
- void removeObserver(Observer* o);
+ void registerObserver(std::shared_ptr<Observer> o);
+ void removeObserver(std::shared_ptr<Observer> o);
  virtual void notifyObservers(double,double)=0;
 };
 

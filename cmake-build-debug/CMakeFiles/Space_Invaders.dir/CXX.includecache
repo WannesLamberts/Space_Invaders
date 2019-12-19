@@ -6,31 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+/home/student/Space_Invaders/Entity/EntityView.h
 ../MVCAbstract/ViewAbstract.h
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
 ../Utils/Transformation.h
-/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+/home/student/Space_Invaders/Utils/Transformation.h
 
-/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp
 PlayerShipView.h
-/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
 iostream
 -
 
-/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
+/home/student/Space_Invaders/Entity/PlayerShip/PlayerShipView.h
 ../EntityView.h
-/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+/home/student/Space_Invaders/Entity/EntityView.h
 
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Observer.h
+/home/student/Space_Invaders/MVCAbstract/Observer.h
 
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+/home/student/Space_Invaders/MVCAbstract/ViewAbstract.h
 SFML/Graphics.hpp
 -
 Observer.h
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Observer.h
+/home/student/Space_Invaders/MVCAbstract/Observer.h
+memory
+-
 
-/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+/home/student/Space_Invaders/Utils/Transformation.h
 memory
 -
 

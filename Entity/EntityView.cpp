@@ -6,5 +6,9 @@
 #include <iostream>
 
 void Entity::EntityView::update(double x, double y) {
-        shape.setPosition(Utils::Transformation::getInstance().transX(x,800),Utils::Transformation::getInstance().transY(y,600));
+        std::cout<<"test"<<std::endl;
+        std::cout<<w->getSize().y<<std::endl;
+        shape.setPosition(Utils::Transformation::getInstance().transX(x,w->getSize().x),Utils::Transformation::getInstance().transY(y,w->getSize().y));
 }
+
+Entity::EntityView::EntityView(const std::__shared_ptr<sf::RenderWindow> &w) : ViewAbstract(w) {}

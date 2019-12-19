@@ -1,5 +1,5 @@
-\hypertarget{classEntity_1_1EnemyShipView}{}\doxysection{Entity\+::Enemy\+Ship\+View Class Reference}
-\label{classEntity_1_1EnemyShipView}\index{Entity::EnemyShipView@{Entity::EnemyShipView}}
+\hypertarget{classEntity_1_1EnemyShipView}{}\section{Entity\+:\+:Enemy\+Ship\+View Class Reference}
+\label{classEntity_1_1EnemyShipView}\index{Entity\+::\+Enemy\+Ship\+View@{Entity\+::\+Enemy\+Ship\+View}}
 
 
 View class for Player\+Ship this class handles the visual aspect of the game.  
@@ -9,37 +9,38 @@ View class for Player\+Ship this class handles the visual aspect of the game.
 
 {\ttfamily \#include $<$Enemy\+Ship\+View.\+h$>$}
 
-Inheritance diagram for Entity\+::Enemy\+Ship\+View\+:\begin{figure}[H]
+Inheritance diagram for Entity\+:\+:Enemy\+Ship\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{classEntity_1_1EnemyShipView}
+\includegraphics[height=4.000000cm]{classEntity_1_1EnemyShipView}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}{draw}} (sf\+::\+Render\+Window \&w)
+void \hyperlink{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}{draw} (sf\+::\+Render\+Window \&w)
 \begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EnemyShipView_a208188bb32ba97acefdd236227b223e6}\label{classEntity_1_1EnemyShipView_a208188bb32ba97acefdd236227b223e6}} 
-\mbox{\hyperlink{classEntity_1_1EnemyShipView_a208188bb32ba97acefdd236227b223e6}{Enemy\+Ship\+View}} ()
+\hyperlink{classEntity_1_1EnemyShipView_a208188bb32ba97acefdd236227b223e6}{Enemy\+Ship\+View} ()
 \begin{DoxyCompactList}\small\item\em basic contructor for playership sets the shape to the standard square \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EnemyShipView_ac023c3cd83fbc0ad66fa8221b006519b}\label{classEntity_1_1EnemyShipView_ac023c3cd83fbc0ad66fa8221b006519b}} 
 void {\bfseries generate\+Shape} ()
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 View class for Player\+Ship this class handles the visual aspect of the game. 
 
 Definition at line 13 of file Enemy\+Ship\+View.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}\label{classEntity_1_1EnemyShipView_a3417632d012f12720ebbbe4b525b3c19}} 
-\index{Entity::EnemyShipView@{Entity::EnemyShipView}!draw@{draw}}
-\index{draw@{draw}!Entity::EnemyShipView@{Entity::EnemyShipView}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+\index{Entity\+::\+Enemy\+Ship\+View@{Entity\+::\+Enemy\+Ship\+View}!draw@{draw}}
+\index{draw@{draw}!Entity\+::\+Enemy\+Ship\+View@{Entity\+::\+Enemy\+Ship\+View}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Entity\+::\+Enemy\+Ship\+View\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -53,16 +54,15 @@ draws the shape on the sf\+::\+Render\+Window w
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{Entity\+::\+Entity\+View}}.
+Implements \hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{Entity\+::\+Entity\+View}.
 
 
 
 Definition at line 7 of file Enemy\+Ship\+View.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{7 \{ w.draw(\mbox{\hyperlink{classEntity_1_1EntityView_a3902b7f2a7fb36363a227d59b7044e5a}{getShape}}()); \}}
-
+\begin{DoxyCode}
+7 \{ w.draw(\hyperlink{classEntity_1_1EntityView_aea3dd9f085ae1f822dc943b9eeea0928}{shape}); \}
 \end{DoxyCode}
 
 

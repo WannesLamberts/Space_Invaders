@@ -12,6 +12,6 @@ void Entity::PlayerShipController::readInput() {
                 m->moveLeft();
         }
 }
-Entity::PlayerShipController::PlayerShipController(Entity::PlayerShipModel* m, Entity::PlayerShipView* v) : m(m), v(v)
+Entity::PlayerShipController::PlayerShipController(std::shared_ptr<Entity::PlayerShipModel> m, std::shared_ptr<Entity::PlayerShipView> v) : m(m), v(v)
 {
 }

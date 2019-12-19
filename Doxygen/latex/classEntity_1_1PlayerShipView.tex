@@ -1,5 +1,5 @@
-\hypertarget{classEntity_1_1PlayerShipView}{}\doxysection{Entity\+::Player\+Ship\+View Class Reference}
-\label{classEntity_1_1PlayerShipView}\index{Entity::PlayerShipView@{Entity::PlayerShipView}}
+\hypertarget{classEntity_1_1PlayerShipView}{}\section{Entity\+:\+:Player\+Ship\+View Class Reference}
+\label{classEntity_1_1PlayerShipView}\index{Entity\+::\+Player\+Ship\+View@{Entity\+::\+Player\+Ship\+View}}
 
 
 View class for Player\+Ship this class handles the visual aspect of the game.  
@@ -9,37 +9,38 @@ View class for Player\+Ship this class handles the visual aspect of the game.
 
 {\ttfamily \#include $<$Player\+Ship\+View.\+h$>$}
 
-Inheritance diagram for Entity\+::Player\+Ship\+View\+:\begin{figure}[H]
+Inheritance diagram for Entity\+:\+:Player\+Ship\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{classEntity_1_1PlayerShipView}
+\includegraphics[height=4.000000cm]{classEntity_1_1PlayerShipView}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}{draw}} (sf\+::\+Render\+Window \&w)
+\mbox{\Hypertarget{classEntity_1_1PlayerShipView_adabee8b35991da5679fc633692b6425e}\label{classEntity_1_1PlayerShipView_adabee8b35991da5679fc633692b6425e}} 
+{\bfseries Player\+Ship\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&w)
+\item 
+void \hyperlink{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}{draw} (sf\+::\+Render\+Window \&w)
 \begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classEntity_1_1PlayerShipView_a10d31615e936a5bf39f167ea2cdc6203}\label{classEntity_1_1PlayerShipView_a10d31615e936a5bf39f167ea2cdc6203}} 
-\mbox{\hyperlink{classEntity_1_1PlayerShipView_a10d31615e936a5bf39f167ea2cdc6203}{Player\+Ship\+View}} ()
-\begin{DoxyCompactList}\small\item\em basic contructor for playership sets the shape to the standard square \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}\label{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}} 
-void {\bfseries generate\+Shape} ()
-\end{DoxyCompactItemize}
+void \hyperlink{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}{generate\+Shape} ()
+\begin{DoxyCompactList}\small\item\em basic contructor for playership sets the shape to the standard square \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 View class for Player\+Ship this class handles the visual aspect of the game. 
 
 Definition at line 13 of file Player\+Ship\+View.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}\label{classEntity_1_1PlayerShipView_ad9767510af4af87a4b67182065a1bf6c}} 
-\index{Entity::PlayerShipView@{Entity::PlayerShipView}!draw@{draw}}
-\index{draw@{draw}!Entity::PlayerShipView@{Entity::PlayerShipView}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+\index{Entity\+::\+Player\+Ship\+View@{Entity\+::\+Player\+Ship\+View}!draw@{draw}}
+\index{draw@{draw}!Entity\+::\+Player\+Ship\+View@{Entity\+::\+Player\+Ship\+View}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Entity\+::\+Player\+Ship\+View\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -53,16 +54,15 @@ draws the shape on the sf\+::\+Render\+Window w
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{Entity\+::\+Entity\+View}}.
+Implements \hyperlink{classEntity_1_1EntityView_a9a415b467798f8bbb9cd2489c3edd941}{Entity\+::\+Entity\+View}.
 
 
 
 Definition at line 7 of file Player\+Ship\+View.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{7 \{ w.draw(\mbox{\hyperlink{classEntity_1_1EntityView_a3902b7f2a7fb36363a227d59b7044e5a}{getShape}}()); \}}
-
+\begin{DoxyCode}
+7 \{ w.draw(\hyperlink{classEntity_1_1EntityView_aea3dd9f085ae1f822dc943b9eeea0928}{shape}); \}
 \end{DoxyCode}
 
 
