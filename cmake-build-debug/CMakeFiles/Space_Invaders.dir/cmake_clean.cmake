@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o"
   "CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipController.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o"
   "Space_Invaders.pdb"
   "Space_Invaders"
 )

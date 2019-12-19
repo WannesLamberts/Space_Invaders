@@ -123,6 +123,33 @@ Space_Invaders/fast:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/build
 .PHONY : Space_Invaders/fast
 
+Entity/EntityController.o: Entity/EntityController.cpp.o
+
+.PHONY : Entity/EntityController.o
+
+# target to build an object file
+Entity/EntityController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o
+.PHONY : Entity/EntityController.cpp.o
+
+Entity/EntityController.i: Entity/EntityController.cpp.i
+
+.PHONY : Entity/EntityController.i
+
+# target to preprocess a source file
+Entity/EntityController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.i
+.PHONY : Entity/EntityController.cpp.i
+
+Entity/EntityController.s: Entity/EntityController.cpp.s
+
+.PHONY : Entity/EntityController.s
+
+# target to generate assembly for a file
+Entity/EntityController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.s
+.PHONY : Entity/EntityController.cpp.s
+
 Entity/EntityModel.o: Entity/EntityModel.cpp.o
 
 .PHONY : Entity/EntityModel.o
@@ -456,6 +483,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Space_Invaders"
+	@echo "... Entity/EntityController.o"
+	@echo "... Entity/EntityController.i"
+	@echo "... Entity/EntityController.s"
 	@echo "... Entity/EntityModel.o"
 	@echo "... Entity/EntityModel.i"
 	@echo "... Entity/EntityModel.s"

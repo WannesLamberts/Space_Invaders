@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/student/Space_Invaders/Entity/EntityController.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/student/Space_Invaders/Entity/EntityModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
