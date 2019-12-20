@@ -4,9 +4,8 @@
 
 #include "EntityModel.h"
 
-Entity::EntityModel::EntityModel(int healthPoints, double xVal, double yVal)
-        : healthPoints(healthPoints), xVal(xVal), yVal(yVal) {
-        notifyObservers(EntityModel::xVal,EntityModel::yVal);
+Entity::EntityModel::EntityModel( double xVal, double yVal)
+        : xVal(xVal), yVal(yVal) {
 }
 
 void Entity::EntityModel::notifyObservers(double x, double y) {
@@ -25,8 +24,10 @@ void Entity::EntityModel::setYval(double yVal) {
     notifyObservers(xVal, yVal);
 }
 
-void Entity::EntityModel::moveLeft() { setXVal(xVal - 0.1); }
 
-void Entity::EntityModel::moveRight() { setXVal(xVal + 0.1); }
 double Entity::EntityModel::getXVal() const { return xVal; }
 double Entity::EntityModel::getYVal() const { return yVal; }
+double Entity::EntityModel::getSizeX() const { return sizeX; }
+double Entity::EntityModel::getSizeY() const { return sizeY; }
+void Entity::EntityModel::setSizeX(double sizeX) { EntityModel::sizeX = sizeX; }
+void Entity::EntityModel::setSizeY(double sizeY) { EntityModel::sizeY = sizeY; }

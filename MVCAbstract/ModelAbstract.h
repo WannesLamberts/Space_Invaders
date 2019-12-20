@@ -4,8 +4,8 @@
 
 #ifndef SPACE_INVADERS_MODELABSTRACT_H
 #define SPACE_INVADERS_MODELABSTRACT_H
+#include "../Observer/Subject.h"
 #include "ViewAbstract.h"
-#include "Subject.h"
 /**
  * \brief superclass of all model classes handles the data section of the game
  */

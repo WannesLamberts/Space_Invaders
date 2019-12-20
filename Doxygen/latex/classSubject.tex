@@ -1,39 +1,39 @@
-\hypertarget{classSubject}{}\section{Subject Class Reference}
+\hypertarget{classSubject}{}\doxysection{Subject Class Reference}
 \label{classSubject}\index{Subject@{Subject}}
 Inheritance diagram for Subject\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classSubject}
+\includegraphics[height=5.000000cm]{classSubject}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSubject_abfcee03b33598243f896689b124c0f9e}\label{classSubject_abfcee03b33598243f896689b124c0f9e}} 
-void {\bfseries register\+Observer} (\hyperlink{classObserver}{Observer} $\ast$o)
+\mbox{\Hypertarget{classSubject_ae79704a06089dffc1809c8ac0cd12398}\label{classSubject_ae79704a06089dffc1809c8ac0cd12398}} 
+void {\bfseries register\+Observer} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classObserver}{Observer}} $>$ o)
 \item 
-\mbox{\Hypertarget{classSubject_a4a1c42acb74393e8458edb13be7e4b28}\label{classSubject_a4a1c42acb74393e8458edb13be7e4b28}} 
-void {\bfseries remove\+Observer} (\hyperlink{classObserver}{Observer} $\ast$o)
+\mbox{\Hypertarget{classSubject_ab2b8a1aeb158f75379d3975bc2f96ad0}\label{classSubject_ab2b8a1aeb158f75379d3975bc2f96ad0}} 
+void {\bfseries remove\+Observer} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classObserver}{Observer}} $>$ o)
 \item 
 \mbox{\Hypertarget{classSubject_aa21e68c3420b0dbbfdbff4f4f0f2e746}\label{classSubject_aa21e68c3420b0dbbfdbff4f4f0f2e746}} 
 virtual void {\bfseries notify\+Observers} (double, double)=0
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSubject_a39d24e695db0a792799b351dbebde992}\label{classSubject_a39d24e695db0a792799b351dbebde992}} 
-std\+::vector$<$ \hyperlink{classObserver}{Observer} $\ast$ $>$ {\bfseries observers}
+\mbox{\Hypertarget{classSubject_ab8b404a56f172645e95d23e86f1b8d95}\label{classSubject_ab8b404a56f172645e95d23e86f1b8d95}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classObserver}{Observer}} $>$ $>$ {\bfseries observers}
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 
 
-Definition at line 10 of file Subject.\+h.
+Definition at line 11 of file Subject.\+h.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-M\+V\+C\+Abstract/Subject.\+h\item 
-M\+V\+C\+Abstract/Subject.\+cpp\end{DoxyCompactItemize}
+Observer/Subject.\+h\item 
+Observer/Subject.\+cpp\end{DoxyCompactItemize}

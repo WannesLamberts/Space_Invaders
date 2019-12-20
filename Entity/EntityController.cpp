@@ -4,10 +4,16 @@
 
 #include "EntityController.h"
 #include "EntityModel.h"
+#include "EntityView.h"
+#include <iostream>
 
 EntityController::EntityController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v)
     : ControllerAbstract(m, v)
 {
         std::shared_ptr<Entity::EntityModel> mod = std::dynamic_pointer_cast<Entity::EntityModel>(m);
-        mod->notifyObservers(mod->getXVal(), mod->getYVal());
+        std::shared_ptr<Entity::EntityView> view = std::dynamic_pointer_cast<Entity::EntityView>(v);
+        mod->notifyObservers(mod->getXVal()-(mod->getSizeX()/2), mod->getYVal()-(mod->getSizeY()/2));
+
+
+
 }

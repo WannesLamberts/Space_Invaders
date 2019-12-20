@@ -4,16 +4,16 @@
 
 #ifndef SPACE_INVADERS_PLAYERSHIPMODEL_H
 #define SPACE_INVADERS_PLAYERSHIPMODEL_H
-#include "../EntityModel.h"
+#include "../AliveModel.h"
 namespace Entity {
 
 /**
  * \brief Model of the PlayerShip handles all the data for PlayerShip
  */
-class PlayerShipModel : public EntityModel
+class PlayerShipModel : public AliveModel
 {
 public:
-        PlayerShipModel(int healthPoints, double xVal, double yval);
+        PlayerShipModel(double xVal, double yval, int healthpoints);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_PLAYERSHIPMODEL_H

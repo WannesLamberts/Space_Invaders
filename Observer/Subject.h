@@ -6,8 +6,8 @@
 #define SPACE_INVADERS_SUBJECT_H
 
 #include "Observer.h"
-#include <vector>
 #include <memory>
+#include <vector>
 class Subject {
 protected:
     std::vector<std::shared_ptr<Observer>> observers;

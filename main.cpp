@@ -1,9 +1,9 @@
 //
 // Created by student on 11.12.19.
 //
-#include "Entity/PlayerShip/PlayerShipController.h"
-#include "Entity/PlayerShip/PlayerShipModel.h"
-#include "Entity/PlayerShip/PlayerShipView.h"
+#include "Entity/Alive/PlayerShip/PlayerShipController.h"
+#include "Entity/Alive/PlayerShip/PlayerShipModel.h"
+#include "Entity/Alive/PlayerShip/PlayerShipView.h"
 #include "Utils/StopWatch.h"
 #include "Utils/Transformation.h"
 #include <SFML/Graphics.hpp>
@@ -20,7 +20,9 @@ void drawviews(std::shared_ptr<sf::RenderWindow> w, std::vector<std::shared_ptr<
 int main()
 {
         std::vector<std::shared_ptr<ViewAbstract>> f;
-        std::shared_ptr<Entity::PlayerShipModel> m=std::make_shared<Entity::PlayerShipModel>(100, 0, 2);
+        std::shared_ptr<Entity::PlayerShipModel> m=std::make_shared<Entity::PlayerShipModel>( 0, 0,100);
+        m->setSizeX(1);
+        m->setSizeY(1);
         std::shared_ptr<sf::RenderWindow> window=std::make_shared<sf::RenderWindow>(sf::VideoMode(800, 600), "SpaceInvaders");
         std::shared_ptr<Entity::PlayerShipView> v=std::make_shared<Entity::PlayerShipView>(window);
         m->registerObserver(v);

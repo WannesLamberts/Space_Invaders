@@ -1,5 +1,5 @@
-\hypertarget{classEntity_1_1EntityModel}{}\section{Entity\+:\+:Entity\+Model Class Reference}
-\label{classEntity_1_1EntityModel}\index{Entity\+::\+Entity\+Model@{Entity\+::\+Entity\+Model}}
+\hypertarget{classEntity_1_1EntityModel}{}\doxysection{Entity\+::Entity\+Model Class Reference}
+\label{classEntity_1_1EntityModel}\index{Entity::EntityModel@{Entity::EntityModel}}
 
 
 Model class for Entity this class handles all the data of Entity.  
@@ -9,61 +9,76 @@ Model class for Entity this class handles all the data of Entity.
 
 {\ttfamily \#include $<$Entity\+Model.\+h$>$}
 
-Inheritance diagram for Entity\+:\+:Entity\+Model\+:\begin{figure}[H]
+Inheritance diagram for Entity\+::Entity\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{classEntity_1_1EntityModel}
+\includegraphics[height=5.000000cm]{classEntity_1_1EntityModel}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_ac84a66ef4fa0ffe7617f707883311fba}\label{classEntity_1_1EntityModel_ac84a66ef4fa0ffe7617f707883311fba}} 
+double {\bfseries get\+SizeY} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a57188ec8a9c2b761e5d4642191222620}\label{classEntity_1_1EntityModel_a57188ec8a9c2b761e5d4642191222620}} 
+double {\bfseries get\+SizeX} () const
+\item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_a1ed361b3812b74fe14e66313f4f29c32}\label{classEntity_1_1EntityModel_a1ed361b3812b74fe14e66313f4f29c32}} 
-void {\bfseries set\+X\+Val} (double \hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val})
+void {\bfseries set\+X\+Val} (double \mbox{\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val}})
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_a99f1a7c318bdea0b52284ea3c6176427}\label{classEntity_1_1EntityModel_a99f1a7c318bdea0b52284ea3c6176427}} 
 void {\bfseries set\+Yval} (double yval)
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_ae9f1924f345347765941ff38c220ee68}\label{classEntity_1_1EntityModel_ae9f1924f345347765941ff38c220ee68}} 
-void {\bfseries move\+Left} ()
+\mbox{\hyperlink{classEntity_1_1EntityModel_ac1cd644bda02693d659ae9ce3bd89332}{Entity\+Model}} (double \mbox{\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val}}, double Yval)
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a55decbf24325a034989c7235b2019d02}\label{classEntity_1_1EntityModel_a55decbf24325a034989c7235b2019d02}} 
-void {\bfseries move\+Right} ()
+\mbox{\Hypertarget{classEntity_1_1EntityModel_ab9c31fc144f852a1f220fd844fb9eeb7}\label{classEntity_1_1EntityModel_ab9c31fc144f852a1f220fd844fb9eeb7}} 
+double {\bfseries get\+X\+Val} () const
 \item 
-\hyperlink{classEntity_1_1EntityModel_a13d4ef395649df7741fc6f73e0993f82}{Entity\+Model} (int \hyperlink{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}{health\+Points}, double \hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val}, double Yval)
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a1de0085e44f08dcbccc40a9dbcfe3994}\label{classEntity_1_1EntityModel_a1de0085e44f08dcbccc40a9dbcfe3994}} 
+double {\bfseries get\+Y\+Val} () const
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_aee6f83739c150d0c4d9b097aa3d7dca6}\label{classEntity_1_1EntityModel_aee6f83739c150d0c4d9b097aa3d7dca6}} 
 void {\bfseries notify\+Observers} (double, double)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a49281e1755e34505b9dfdc062769e79f}\label{classEntity_1_1EntityModel_a49281e1755e34505b9dfdc062769e79f}} 
+void {\bfseries set\+SizeX} (double sizeX)
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a07ba2f9e8c751b9f2ffb3dcf4489f310}\label{classEntity_1_1EntityModel_a07ba2f9e8c751b9f2ffb3dcf4489f310}} 
+void {\bfseries set\+SizeY} (double sizeY)
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}\label{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}} 
-int \hyperlink{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}{health\+Points}
-\begin{DoxyCompactList}\small\item\em the healthpoints of the Entity an Entity dies when the healthpoints are 0 \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}\label{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}} 
-double \hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val}
+double \mbox{\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{x\+Val}}
 \begin{DoxyCompactList}\small\item\em the value where the Entity is on the x-\/axis \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}\label{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}} 
-double \hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{y\+Val}
-\begin{DoxyCompactList}\small\item\em the value where the Entity is on the y-\/axis \end{DoxyCompactList}\end{DoxyCompactItemize}
+double \mbox{\hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{y\+Val}}
+\begin{DoxyCompactList}\small\item\em the value where the Entity is on the y-\/axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a5489707b3a3230acf4c571ca3807c7cc}\label{classEntity_1_1EntityModel_a5489707b3a3230acf4c571ca3807c7cc}} 
+double {\bfseries sizeX}
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_aa7e9d36a8f39021c93004f807dbdc091}\label{classEntity_1_1EntityModel_aa7e9d36a8f39021c93004f807dbdc091}} 
+double {\bfseries sizeY}
+\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Model class for Entity this class handles all the data of Entity. 
 
 Definition at line 15 of file Entity\+Model.\+h.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a13d4ef395649df7741fc6f73e0993f82}\label{classEntity_1_1EntityModel_a13d4ef395649df7741fc6f73e0993f82}} 
-\index{Entity\+::\+Entity\+Model@{Entity\+::\+Entity\+Model}!Entity\+Model@{Entity\+Model}}
-\index{Entity\+Model@{Entity\+Model}!Entity\+::\+Entity\+Model@{Entity\+::\+Entity\+Model}}
-\subsubsection{\texorpdfstring{Entity\+Model()}{EntityModel()}}
-{\footnotesize\ttfamily Entity\+::\+Entity\+Model\+::\+Entity\+Model (\begin{DoxyParamCaption}\item[{int}]{health\+Points,  }\item[{double}]{x\+Val,  }\item[{double}]{Yval }\end{DoxyParamCaption})}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_ac1cd644bda02693d659ae9ce3bd89332}\label{classEntity_1_1EntityModel_ac1cd644bda02693d659ae9ce3bd89332}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!EntityModel@{EntityModel}}
+\index{EntityModel@{EntityModel}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{EntityModel()}{EntityModel()}}
+{\footnotesize\ttfamily Entity\+::\+Entity\+Model\+::\+Entity\+Model (\begin{DoxyParamCaption}\item[{double}]{x\+Val,  }\item[{double}]{Yval }\end{DoxyParamCaption})}
 
-the contrustructor of \hyperlink{classEntity_1_1EntityModel}{Entity\+Model} creates a Entity with healthpoints, x\+Val, Yval 
+the contrustructor of \mbox{\hyperlink{classEntity_1_1EntityModel}{Entity\+Model}} creates a Entity with healthpoints, x\+Val, Yval 
 \begin{DoxyParams}{Parameters}
 {\em health\+Points} & The health\+Points of the Entity \\
 \hline
@@ -77,11 +92,10 @@ the contrustructor of \hyperlink{classEntity_1_1EntityModel}{Entity\+Model} crea
 Definition at line 7 of file Entity\+Model.\+cpp.
 
 
-\begin{DoxyCode}
-8         : \hyperlink{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}{healthPoints}(\hyperlink{classEntity_1_1EntityModel_a975263695b038cb5d11218226526c734}{healthPoints}), \hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{xVal}(\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{xVal}), 
-      \hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{yVal}(\hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{yVal}) \{
-9     \textcolor{comment}{//notify(getXVal(),getYval());}
-10 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8         : \mbox{\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{xVal}}(\mbox{\hyperlink{classEntity_1_1EntityModel_aac6eb5f2b4e0b953a104e6aac0de6f22}{xVal}}), \mbox{\hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{yVal}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a1fe41ef38158ad18ef4dbc70ddf3358e}{yVal}}) \{}
+\DoxyCodeLine{9 \}}
+
 \end{DoxyCode}
 
 

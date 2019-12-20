@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['controllable',['Controllable',['../classControllable.html',1,'']]],
-  ['controllerabstract',['ControllerAbstract',['../classControllerAbstract.html',1,'']]]
+  ['alivemodel_23',['AliveModel',['../classEntity_1_1AliveModel.html',1,'Entity']]]
 ];

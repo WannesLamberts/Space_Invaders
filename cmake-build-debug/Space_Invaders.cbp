@@ -84,6 +84,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
@@ -102,24 +126,6 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipController.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipController.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
@@ -135,19 +141,19 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Observer.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Subject.cpp">
-			<Option target="Space_Invaders"/>
-		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Subject.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Observer/Observer.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Observer/Subject.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp">

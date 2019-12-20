@@ -3,6 +3,7 @@
 //
 
 #include "PlayerShipController.h"
+#include "PlayerShipView.h"
 #include <iostream>
 void Entity::PlayerShipController::readInput() {
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
@@ -16,4 +17,7 @@ Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAb
                                                    const std::shared_ptr<ViewAbstract>& v)
     : EntityController(m, v)
 {
+        std::shared_ptr<Entity::EntityView> view=std::dynamic_pointer_cast<Entity::EntityView>(v);
+        std::shared_ptr<Entity::EntityModel> model=std::dynamic_pointer_cast<Entity::EntityModel>(m);
+        view->changeScale(model->getSizeX(),model->getSizeY());
 }

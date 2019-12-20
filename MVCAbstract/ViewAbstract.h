@@ -5,8 +5,8 @@
 #ifndef SPACE_INVADERS_VIEWABSTRACT_H
 #define SPACE_INVADERS_VIEWABSTRACT_H
 
+#include "../Observer/Observer.h"
 #include <SFML/Graphics.hpp>
-#include "Observer.h"
 #include <memory>
 /**
  * \brief superclass of all view classes handles the visual aspect of the game

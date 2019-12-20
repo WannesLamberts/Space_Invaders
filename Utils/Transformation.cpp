@@ -5,8 +5,9 @@
 #include <iostream>
 
 double Utils::Transformation::transX(double modelx,double screenx) {
-        return ((modelx+4)/8)*screenx;
+        return (((modelx+4))/8)*screenx;
 }
 double Utils::Transformation::transY(double modely,double screeny) {
-        return ((modely+3)/6)*screeny;
+        return (((modely+3))/6)*screeny;
 }
+

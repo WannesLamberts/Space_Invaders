@@ -16,10 +16,6 @@ class EntityModel : public ModelAbstract
 {
 protected:
         /**
-         * \brief the healthpoints of the Entity an Entity dies when the healthpoints are 0
-         */
-        int healthPoints;
-        /**
          * \brief the value where the Entity is on the x-axis
          */
         double xVal;
@@ -28,15 +24,19 @@ protected:
          */
         double yVal;
 
+        double sizeX;
+        double sizeY;
+
+public:
+        double getSizeY() const;
+
+public:
+        double getSizeX() const;
+
 public:
         void setXVal(double xVal);
 
         void setYval(double yval);
-
-        void moveLeft();
-
-        void moveRight();
-
 public:
         /**
          * the contrustructor of EntityModel creates a Entity with healthpoints, xVal, Yval
@@ -44,11 +44,12 @@ public:
          * @param xVal The xVal of the Entity
          * @param Yval The yVal of the Entity
          */
-        EntityModel(int healthPoints, double xVal, double Yval);
+        EntityModel(double xVal, double Yval);
         double getXVal() const;
         double getYVal() const;
-
         void notifyObservers(double, double);
+        void setSizeX(double sizeX);
+        void setSizeY(double sizeY);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_ENTITYMODEL_H

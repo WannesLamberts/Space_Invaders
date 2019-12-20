@@ -18,19 +18,20 @@ namespace Entity {
          * \brief the sf::Drawable that will be drawn on the window of the game
          */
         sf::Sprite shape;
+        /**
+         * \brief The texture that will be drawn on te sf::sprite shape
+         */
         sf::Texture texture;
-        double size;
     public:
-
         /**
          * \brief draws the shape on the sf::RenderWindow w
          * @param w the window where the shape gets drawn on.
          */
         virtual void draw(std::shared_ptr<sf::RenderWindow> w) = 0;
-
         void update(double, double);
-
-        virtual void generateShape() = 0;
+        const sf::Sprite& getShape() const;
+        void changeScale(double,double);
+         virtual void generateShape()=0 ;
 
         EntityView(const std::__shared_ptr<sf::RenderWindow> &w);
 

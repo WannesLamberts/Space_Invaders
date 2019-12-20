@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['healthpoints',['healthPoints',['../classEntity_1_1EntityModel.html#a975263695b038cb5d11218226526c734',1,'Entity::EntityModel']]]
+  ['generateshape_7',['generateShape',['../classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622',1,'Entity::PlayerShipView']]],
+  ['getinstance_8',['getInstance',['../classUtils_1_1Transformation.html#a03b9f5b948a515ced74861fa154a3ce4',1,'Utils::Transformation']]]
 ];

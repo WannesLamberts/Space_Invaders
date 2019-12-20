@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['generateshape',['generateShape',['../classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622',1,'Entity::PlayerShipView']]],
-  ['getinstance',['getInstance',['../classUtils_1_1Transformation.html#a03b9f5b948a515ced74861fa154a3ce4',1,'Utils::Transformation']]]
+  ['entitycontroller_4',['EntityController',['../classEntityController.html',1,'']]],
+  ['entitymodel_5',['EntityModel',['../classEntity_1_1EntityModel.html',1,'Entity::EntityModel'],['../classEntity_1_1EntityModel.html#ac1cd644bda02693d659ae9ce3bd89332',1,'Entity::EntityModel::EntityModel()']]],
+  ['entityview_6',['EntityView',['../classEntity_1_1EntityView.html',1,'Entity']]]
 ];

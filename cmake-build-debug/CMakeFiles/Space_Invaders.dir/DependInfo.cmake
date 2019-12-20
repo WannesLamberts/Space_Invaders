@@ -4,16 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o"
+  "/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o"
+  "/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o"
+  "/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o"
-  "/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipController.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipController.cpp.o"
-  "/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipModel.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipModel.cpp.o"
-  "/home/wannes/Desktop/Space_Invaders/Entity/PlayerShip/PlayerShipView.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Entity/PlayerShip/PlayerShipView.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
-  "/home/wannes/Desktop/Space_Invaders/MVCAbstract/Subject.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/MVCAbstract/Subject.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
+  "/home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o"
   "/home/wannes/Desktop/Space_Invaders/main.cpp" "/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/main.cpp.o"

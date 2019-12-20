@@ -24,6 +24,8 @@ public:
         double transX(double, double);
         double transY(double, double);
 
+
+
 private:
         /**
          * \brief Constructor is made private so it can't be called
