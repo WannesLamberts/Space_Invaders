@@ -8,7 +8,7 @@
 
 class Observer {
 public:
-    virtual void update(Utils::Vector2D)=0;
+    virtual void update(Utils::Vector2D,Utils::Vector2D)=0;
 
 };
 

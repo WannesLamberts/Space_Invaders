@@ -8,8 +8,8 @@
 void Entity::PlayerShipView::draw(std::shared_ptr<sf::RenderWindow> w) { w->draw(shape); }
 void Entity::PlayerShipView::generateShape()
 {
-        texture.loadFromFile("../Sprites/red.jpg");
-        //texture.loadFromFile("../Sprites/player.png");
+        //texture.loadFromFile("../Sprites/red.jpg");
+        texture.loadFromFile("../Sprites/player.png");
         shape.setTexture(texture);
 }
 

@@ -36,7 +36,7 @@ public:
          * @param xVal The xVal of the Entity
          * @param Yval The yVal of the Entity
          */
-        void notifyObservers(Utils::Vector2D position);
+        void notifyObservers(Utils::Vector2D position,Utils::Vector2D);
         EntityModel(const Utils::Vector2D& position);
 };
 } // namespace Entity

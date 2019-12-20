@@ -6,16 +6,16 @@
 
 
 
-void Entity::EntityModel::notifyObservers(Utils::Vector2D pos) {
+void Entity::EntityModel::notifyObservers(Utils::Vector2D pos,Utils::Vector2D size) {
     for (int i = 0; i < observers.size(); ++i) {
-        observers[i]->update(pos);
+        observers[i]->update(pos,size);
     }
 }
 
 const Utils::Vector2D& Entity::EntityModel::getPosition() const { return position; }
 void Entity::EntityModel::setPosition(const Utils::Vector2D& position) {
         EntityModel::position = position;
-        notifyObservers(position)
+        notifyObservers(position,size);
 ;}
 const Utils::Vector2D& Entity::EntityModel::getSize() const { return size; }
 void Entity::EntityModel::setSize(const Utils::Vector2D& size) { EntityModel::size = size; }

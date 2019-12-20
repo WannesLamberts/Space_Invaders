@@ -5,10 +5,10 @@
 #include "EntityView.h"
 #include <iostream>
 
-void Entity::EntityView::update(Utils::Vector2D cor)
+void Entity::EntityView::update(Utils::Vector2D cor,Utils::Vector2D size)
 {
         Utils::Vector2D v = Utils::Vector2D(
-            Utils::Transformation::getInstance().trans(cor,Utils::Vector2D(w->getSize().x, w->getSize().y)));
+            Utils::Transformation::getInstance().transAndCenter(cor,Utils::Vector2D(w->getSize().x, w->getSize().y),size));
         shape.setPosition(v.x, v.y);
 }
 
