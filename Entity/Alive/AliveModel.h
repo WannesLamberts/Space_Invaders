@@ -15,7 +15,7 @@ private:
 public:
         void moveLeft();
         void moveRight();
-        AliveModel(double xVal, double yval, int healthpoints);
+        AliveModel(Utils::Vector2D position, int healthpoints);
 };
 }
 #endif // SPACE_INVADERS_ALIVEMODEL_H

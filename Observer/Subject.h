@@ -5,6 +5,7 @@
 #ifndef SPACE_INVADERS_SUBJECT_H
 #define SPACE_INVADERS_SUBJECT_H
 
+#include "../Utils/Vector2D.h"
 #include "Observer.h"
 #include <memory>
 #include <vector>
@@ -14,7 +15,7 @@ protected:
 public:
  void registerObserver(std::shared_ptr<Observer> o);
  void removeObserver(std::shared_ptr<Observer> o);
- virtual void notifyObservers(double,double)=0;
+ virtual void notifyObservers(Utils::Vector2D)=0;
 };
 
 

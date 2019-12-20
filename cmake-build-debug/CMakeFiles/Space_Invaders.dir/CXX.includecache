@@ -6,27 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
-../EntityModel.h
-/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
-
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
-../../../MVCAbstract/Controllable.h
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
-../../EntityController.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp
+EntityController.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
-PlayerShipModel.h
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
-SFML/Graphics.hpp
--
-
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
-../AliveModel.h
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
-
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
-../../EntityView.h
+EntityModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+EntityView.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+iostream
+-
 
 /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
 ../MVCAbstract/ControllerAbstract.h
@@ -45,8 +33,6 @@ SFML/Graphics.hpp
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
 ../Utils/Transformation.h
 /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
-
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
 
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
 memory
@@ -71,8 +57,12 @@ memory
 -
 
 /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+../Utils/Vector2D.h
+/home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 
 /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+../Utils/Vector2D.h
+/home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 Observer.h
 /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
 memory
@@ -80,31 +70,11 @@ memory
 vector
 -
 
-/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
-chrono
--
-
 /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+Vector2D.h
+/home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 memory
 -
 
-/home/wannes/Desktop/Space_Invaders/main.cpp
-Entity/Alive/PlayerShip/PlayerShipController.h
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
-Entity/Alive/PlayerShip/PlayerShipModel.h
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
-Entity/Alive/PlayerShip/PlayerShipView.h
-/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
-Utils/StopWatch.h
-/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
-Utils/Transformation.h
-/home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
-SFML/Graphics.hpp
--
-iostream
--
-vector
--
-memory
--
+/home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 

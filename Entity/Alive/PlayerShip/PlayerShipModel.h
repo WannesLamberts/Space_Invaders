@@ -13,7 +13,7 @@ namespace Entity {
 class PlayerShipModel : public AliveModel
 {
 public:
-        PlayerShipModel(double xVal, double yval, int healthpoints);
+        PlayerShipModel(Utils::Vector2D position, int healthpoints);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_PLAYERSHIPMODEL_H

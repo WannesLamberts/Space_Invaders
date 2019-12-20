@@ -4,6 +4,7 @@
 
 #ifndef SPACE_INVADERS_TRANSFORMATION_H
 #define SPACE_INVADERS_TRANSFORMATION_H
+#include "Vector2D.h"
 #include <memory>
 namespace Utils {
 /**
@@ -21,9 +22,9 @@ public:
                 // Instantiated on first use.
                 return instance;
         }
-        double transX(double, double);
-        double transY(double, double);
-
+        Utils::Vector2D trans(Utils::Vector2D,Utils::Vector2D);
+        Utils::Vector2D transAndCenter(Utils::Vector2D,Utils::Vector2D,Utils::Vector2D);
+        Utils::Vector2D center(Utils::Vector2D,Utils::Vector2D);
 
 
 private:

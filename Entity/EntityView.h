@@ -28,9 +28,9 @@ namespace Entity {
          * @param w the window where the shape gets drawn on.
          */
         virtual void draw(std::shared_ptr<sf::RenderWindow> w) = 0;
-        void update(double, double);
+        void update(Utils::Vector2D);
         const sf::Sprite& getShape() const;
-        void changeScale(double,double);
+        void changeScale(Utils::Vector2D);
          virtual void generateShape()=0 ;
 
         EntityView(const std::__shared_ptr<sf::RenderWindow> &w);

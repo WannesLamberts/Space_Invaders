@@ -15,28 +15,20 @@ namespace Entity {
 class EntityModel : public ModelAbstract
 {
 protected:
-        /**
-         * \brief the value where the Entity is on the x-axis
-         */
-        double xVal;
-        /**
-         * \brief the value where the Entity is on the y-axis
-         */
-        double yVal;
 
-        double sizeX;
-        double sizeY;
+        Utils::Vector2D position;
+        Utils::Vector2D size;
 
 public:
-        double getSizeY() const;
+        const Utils::Vector2D& getSize() const;
+        void setSize(const Utils::Vector2D& size);
 
 public:
-        double getSizeX() const;
+        const Utils::Vector2D& getPosition() const;
+protected:
 
-public:
-        void setXVal(double xVal);
+        void setPosition(const Utils::Vector2D& position);
 
-        void setYval(double yval);
 public:
         /**
          * the contrustructor of EntityModel creates a Entity with healthpoints, xVal, Yval
@@ -44,12 +36,8 @@ public:
          * @param xVal The xVal of the Entity
          * @param Yval The yVal of the Entity
          */
-        EntityModel(double xVal, double Yval);
-        double getXVal() const;
-        double getYVal() const;
-        void notifyObservers(double, double);
-        void setSizeX(double sizeX);
-        void setSizeY(double sizeY);
+        void notifyObservers(Utils::Vector2D position);
+        EntityModel(const Utils::Vector2D& position);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_ENTITYMODEL_H
