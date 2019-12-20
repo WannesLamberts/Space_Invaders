@@ -12,9 +12,8 @@ void Entity::PlayerShipController::readInput() {
                 std::dynamic_pointer_cast<PlayerShipModel>(m)->moveLeft();
         }
 }
-
-Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAbstract> &m,
-                                                   const std::shared_ptr<ViewAbstract> &v) : EntityController(m, v) {}
-
-
-
+Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAbstract>& m,
+                                                   const std::shared_ptr<ViewAbstract>& v)
+    : EntityController(m, v)
+{
+}

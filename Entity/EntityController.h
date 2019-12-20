@@ -6,6 +6,7 @@
 #define SPACE_INVADERS_ENTITYCONTROLLER_H
 
 #include "../MVCAbstract/ControllerAbstract.h"
+#include <memory>
 class EntityController : public ControllerAbstract {
 public:
     EntityController(const std::shared_ptr<ModelAbstract> &m, const std::shared_ptr<ViewAbstract> &v);

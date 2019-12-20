@@ -6,7 +6,7 @@
 
 Entity::EntityModel::EntityModel(int healthPoints, double xVal, double yVal)
         : healthPoints(healthPoints), xVal(xVal), yVal(yVal) {
-    //notify(getXVal(),getYval());
+        notifyObservers(EntityModel::xVal,EntityModel::yVal);
 }
 
 void Entity::EntityModel::notifyObservers(double x, double y) {
@@ -28,3 +28,5 @@ void Entity::EntityModel::setYval(double yVal) {
 void Entity::EntityModel::moveLeft() { setXVal(xVal - 0.1); }
 
 void Entity::EntityModel::moveRight() { setXVal(xVal + 0.1); }
+double Entity::EntityModel::getXVal() const { return xVal; }
+double Entity::EntityModel::getYVal() const { return yVal; }

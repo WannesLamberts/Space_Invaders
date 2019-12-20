@@ -4,8 +4,6 @@
 
 #ifndef SPACE_INVADERS_MODELABSTRACT_H
 #define SPACE_INVADERS_MODELABSTRACT_H
-
-#endif // SPACE_INVADERS_MODELABSTRACT_H
 #include "ViewAbstract.h"
 #include "Subject.h"
 /**
@@ -15,3 +13,4 @@ class ModelAbstract : public Subject
 {
 
 };
+#endif // SPACE_INVADERS_MODELABSTRACT_H
