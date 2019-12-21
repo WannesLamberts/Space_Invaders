@@ -20,8 +20,8 @@ void drawviews(std::shared_ptr<sf::RenderWindow> w, std::vector<std::shared_ptr<
 int main()
 {
         std::vector<std::shared_ptr<ViewAbstract>> f;
-        std::shared_ptr<Entity::PlayerShipModel> m=std::make_shared<Entity::PlayerShipModel>(Utils::Vector2D(-4,0),100);
-        m->setSize(Utils::Vector2D(0.5,0.5));
+        std::shared_ptr<Entity::PlayerShipModel> m=std::make_shared<Entity::PlayerShipModel>(Utils::Vector2D(0,0),100);
+        m->setSize(Utils::Vector2D(7,5));
         std::shared_ptr<sf::RenderWindow> window=std::make_shared<sf::RenderWindow>(sf::VideoMode(800, 600), "SpaceInvaders");
         std::shared_ptr<Entity::PlayerShipView> v=std::make_shared<Entity::PlayerShipView>(window);
         m->registerObserver(v);
@@ -36,7 +36,7 @@ int main()
                 }
                 window->clear();
                 if (Utils::StopWatch::getInstance().elapsed() > 0.01666666666) {
-                        p.readInput();
+                        p.tick();
                         drawviews(window, f);
                         window->display();
                         Utils::StopWatch::getInstance().start();

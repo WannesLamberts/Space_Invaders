@@ -239,6 +239,45 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s
 
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/BulletModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Entity/Bullet/BulletView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/Bullet/BulletController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s
+
 # Object files for target Space_Invaders
 Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/main.cpp.o" \
@@ -254,7 +293,10 @@ Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o" \
-"CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o"
+"CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o"
 
 # External object files for target Space_Invaders
 Space_Invaders_EXTERNAL_OBJECTS =
@@ -273,9 +315,12 @@ Space_Invaders: CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/build.make
 Space_Invaders: CMakeFiles/Space_Invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Space_Invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Space_Invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Invaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

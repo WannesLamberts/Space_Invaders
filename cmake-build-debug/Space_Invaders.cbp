@@ -108,6 +108,24 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>

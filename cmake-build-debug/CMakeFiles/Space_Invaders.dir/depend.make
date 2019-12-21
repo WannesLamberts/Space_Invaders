@@ -45,6 +45,35 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o: ../O
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o: ../Utils/Vector2D.h
 
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/Bullet/BulletController.cpp
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/Bullet/BulletController.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/Bullet/BulletModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/EntityController.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../MVCAbstract/ControllerAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Utils/Vector2D.h
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/BulletModel.cpp
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/BulletModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Utils/Vector2D.h
+
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Entity/Bullet/BulletView.cpp
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Entity/Bullet/BulletView.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Utils/Vector2D.h
+
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: ../Entity/EntityController.cpp
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: ../Entity/EntityController.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: ../Entity/EntityModel.h

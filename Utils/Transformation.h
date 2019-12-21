@@ -25,6 +25,7 @@ public:
         Utils::Vector2D trans(Utils::Vector2D,Utils::Vector2D);
         Utils::Vector2D transAndCenter(Utils::Vector2D,Utils::Vector2D,Utils::Vector2D);
         Utils::Vector2D center(Utils::Vector2D,Utils::Vector2D);
+        Utils::Vector2D reScaleHitbox(Utils::Vector2D,Utils::Vector2D,Utils::Vector2D);
 
 
 private:

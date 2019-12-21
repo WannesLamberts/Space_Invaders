@@ -231,6 +231,87 @@ Entity/Alive/PlayerShip/PlayerShipView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s
 .PHONY : Entity/Alive/PlayerShip/PlayerShipView.cpp.s
 
+Entity/Bullet/BulletController.o: Entity/Bullet/BulletController.cpp.o
+
+.PHONY : Entity/Bullet/BulletController.o
+
+# target to build an object file
+Entity/Bullet/BulletController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o
+.PHONY : Entity/Bullet/BulletController.cpp.o
+
+Entity/Bullet/BulletController.i: Entity/Bullet/BulletController.cpp.i
+
+.PHONY : Entity/Bullet/BulletController.i
+
+# target to preprocess a source file
+Entity/Bullet/BulletController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i
+.PHONY : Entity/Bullet/BulletController.cpp.i
+
+Entity/Bullet/BulletController.s: Entity/Bullet/BulletController.cpp.s
+
+.PHONY : Entity/Bullet/BulletController.s
+
+# target to generate assembly for a file
+Entity/Bullet/BulletController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s
+.PHONY : Entity/Bullet/BulletController.cpp.s
+
+Entity/Bullet/BulletModel.o: Entity/Bullet/BulletModel.cpp.o
+
+.PHONY : Entity/Bullet/BulletModel.o
+
+# target to build an object file
+Entity/Bullet/BulletModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o
+.PHONY : Entity/Bullet/BulletModel.cpp.o
+
+Entity/Bullet/BulletModel.i: Entity/Bullet/BulletModel.cpp.i
+
+.PHONY : Entity/Bullet/BulletModel.i
+
+# target to preprocess a source file
+Entity/Bullet/BulletModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i
+.PHONY : Entity/Bullet/BulletModel.cpp.i
+
+Entity/Bullet/BulletModel.s: Entity/Bullet/BulletModel.cpp.s
+
+.PHONY : Entity/Bullet/BulletModel.s
+
+# target to generate assembly for a file
+Entity/Bullet/BulletModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s
+.PHONY : Entity/Bullet/BulletModel.cpp.s
+
+Entity/Bullet/BulletView.o: Entity/Bullet/BulletView.cpp.o
+
+.PHONY : Entity/Bullet/BulletView.o
+
+# target to build an object file
+Entity/Bullet/BulletView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o
+.PHONY : Entity/Bullet/BulletView.cpp.o
+
+Entity/Bullet/BulletView.i: Entity/Bullet/BulletView.cpp.i
+
+.PHONY : Entity/Bullet/BulletView.i
+
+# target to preprocess a source file
+Entity/Bullet/BulletView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i
+.PHONY : Entity/Bullet/BulletView.cpp.i
+
+Entity/Bullet/BulletView.s: Entity/Bullet/BulletView.cpp.s
+
+.PHONY : Entity/Bullet/BulletView.s
+
+# target to generate assembly for a file
+Entity/Bullet/BulletView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s
+.PHONY : Entity/Bullet/BulletView.cpp.s
+
 Entity/EntityController.o: Entity/EntityController.cpp.o
 
 .PHONY : Entity/EntityController.o
@@ -522,6 +603,15 @@ help:
 	@echo "... Entity/Alive/PlayerShip/PlayerShipView.o"
 	@echo "... Entity/Alive/PlayerShip/PlayerShipView.i"
 	@echo "... Entity/Alive/PlayerShip/PlayerShipView.s"
+	@echo "... Entity/Bullet/BulletController.o"
+	@echo "... Entity/Bullet/BulletController.i"
+	@echo "... Entity/Bullet/BulletController.s"
+	@echo "... Entity/Bullet/BulletModel.o"
+	@echo "... Entity/Bullet/BulletModel.i"
+	@echo "... Entity/Bullet/BulletModel.s"
+	@echo "... Entity/Bullet/BulletView.o"
+	@echo "... Entity/Bullet/BulletView.i"
+	@echo "... Entity/Bullet/BulletView.s"
 	@echo "... Entity/EntityController.o"
 	@echo "... Entity/EntityController.i"
 	@echo "... Entity/EntityController.s"

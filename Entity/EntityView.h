@@ -27,7 +27,7 @@ namespace Entity {
          * \brief draws the shape on the sf::RenderWindow w
          * @param w the window where the shape gets drawn on.
          */
-        virtual void draw(std::shared_ptr<sf::RenderWindow> w) = 0;
+        void draw(std::shared_ptr<sf::RenderWindow> w);
         void update(Utils::Vector2D,Utils::Vector2D);
         const sf::Sprite& getShape() const;
         void changeScale(Utils::Vector2D);

@@ -17,7 +17,7 @@ Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAb
                                                    const std::shared_ptr<ViewAbstract>& v)
     : EntityController(m, v)
 {
-        std::shared_ptr<Entity::EntityView> view=std::dynamic_pointer_cast<Entity::EntityView>(v);
-        std::shared_ptr<Entity::EntityModel> model=std::dynamic_pointer_cast<Entity::EntityModel>(m);
-        view->changeScale(model->getSize());
+}
+void Entity::PlayerShipController::tick() {
+        readInput();
 }

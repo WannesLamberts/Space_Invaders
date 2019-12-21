@@ -10,6 +10,7 @@
 class EntityController : public ControllerAbstract {
 public:
     EntityController(const std::shared_ptr<ModelAbstract> &m, const std::shared_ptr<ViewAbstract> &v);
+    virtual void tick()=0;
 };
 
 

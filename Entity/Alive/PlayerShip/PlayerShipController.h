@@ -16,6 +16,7 @@ class PlayerShipController: public Controllable,EntityController
 public:
         void readInput();
         PlayerShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+        void tick();
 };
 }
 #endif // SPACE_INVADERS_PLAYERSHIPCONTROLLER_H

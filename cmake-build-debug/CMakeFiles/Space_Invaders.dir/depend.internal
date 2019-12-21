@@ -45,6 +45,35 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
