@@ -12,11 +12,17 @@ used for transforming a models x and y values to the corresponding values on the
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_a4c04707895cb31f07f615c6d0dbd6691}\label{classUtils_1_1Transformation_a4c04707895cb31f07f615c6d0dbd6691}} 
-double {\bfseries transX} (double, double)
+\mbox{\Hypertarget{classUtils_1_1Transformation_a1924912bd32f92f85f2ad093f2cf7828}\label{classUtils_1_1Transformation_a1924912bd32f92f85f2ad093f2cf7828}} 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries trans} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
 \item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_a1b8c8966672f4182309a14b82a5af2cb}\label{classUtils_1_1Transformation_a1b8c8966672f4182309a14b82a5af2cb}} 
-double {\bfseries transY} (double, double)
+\mbox{\Hypertarget{classUtils_1_1Transformation_ace53034749afed6d1d4f58b7c25f83a0}\label{classUtils_1_1Transformation_ace53034749afed6d1d4f58b7c25f83a0}} 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries trans\+And\+Center} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
+\item 
+\mbox{\Hypertarget{classUtils_1_1Transformation_a0b81c184922caf62bf5c0d94dbaa1812}\label{classUtils_1_1Transformation_a0b81c184922caf62bf5c0d94dbaa1812}} 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries center} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
+\item 
+\mbox{\Hypertarget{classUtils_1_1Transformation_a884c93b1db7ec8d766beca44c3a9f51d}\label{classUtils_1_1Transformation_a884c93b1db7ec8d766beca44c3a9f51d}} 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries re\+Scale\+Hitbox} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -28,7 +34,7 @@ static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} \& \mbox{
 \doxysubsection{Detailed Description}
 used for transforming a models x and y values to the corresponding values on the screen. 
 
-Definition at line 12 of file Transformation.\+h.
+Definition at line 13 of file Transformation.\+h.
 
 
 
@@ -48,15 +54,15 @@ the reference to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformati
 \end{DoxyReturn}
 
 
-Definition at line 19 of file Transformation.\+h.
+Definition at line 20 of file Transformation.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{19                                             \{}
-\DoxyCodeLine{20                 \textcolor{keyword}{static} Transformation    instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
-\DoxyCodeLine{21                 \textcolor{comment}{// Instantiated on first use.}}
-\DoxyCodeLine{22                 \textcolor{keywordflow}{return} instance;}
-\DoxyCodeLine{23         \}}
+\DoxyCodeLine{20                                             \{}
+\DoxyCodeLine{21                 \textcolor{keyword}{static} Transformation    instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
+\DoxyCodeLine{22                 \textcolor{comment}{// Instantiated on first use.}}
+\DoxyCodeLine{23                 \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{24         \}}
 
 \end{DoxyCode}
 

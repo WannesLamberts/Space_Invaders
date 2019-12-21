@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['entitycontroller_26',['EntityController',['../classEntityController.html',1,'']]],
-  ['entitymodel_27',['EntityModel',['../classEntity_1_1EntityModel.html',1,'Entity']]],
-  ['entityview_28',['EntityView',['../classEntity_1_1EntityView.html',1,'Entity']]]
+  ['controllable_30',['Controllable',['../classControllable.html',1,'']]],
+  ['controllerabstract_31',['ControllerAbstract',['../classControllerAbstract.html',1,'']]]
 ];

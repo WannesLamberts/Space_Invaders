@@ -21,8 +21,6 @@ Inheritance diagram for Entity\+::Player\+Ship\+View\+:\begin{figure}[H]
 \mbox{\Hypertarget{classEntity_1_1PlayerShipView_adabee8b35991da5679fc633692b6425e}\label{classEntity_1_1PlayerShipView_adabee8b35991da5679fc633692b6425e}} 
 {\bfseries Player\+Ship\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&w)
 \item 
-void \mbox{\hyperlink{classEntity_1_1PlayerShipView_a679ab583ec99436cd1d825baf96868ea}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ w)
-\begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}\label{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}} 
 void \mbox{\hyperlink{classEntity_1_1PlayerShipView_a1a3e9f8b78fc6fbe450b72dc5e39e622}{generate\+Shape}} ()
 \begin{DoxyCompactList}\small\item\em basic contructor for playership sets the shape to the standard square \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -34,37 +32,6 @@ View class for Player\+Ship this class handles the visual aspect of the game.
 
 Definition at line 13 of file Player\+Ship\+View.\+h.
 
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1PlayerShipView_a679ab583ec99436cd1d825baf96868ea}\label{classEntity_1_1PlayerShipView_a679ab583ec99436cd1d825baf96868ea}} 
-\index{Entity::PlayerShipView@{Entity::PlayerShipView}!draw@{draw}}
-\index{draw@{draw}!Entity::PlayerShipView@{Entity::PlayerShipView}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily void Entity\+::\+Player\+Ship\+View\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-draws the shape on the sf\+::\+Render\+Window w 
-
-
-\begin{DoxyParams}{Parameters}
-{\em w} & the window where the shape gets drawn on. \\
-\hline
-\end{DoxyParams}
-
-
-Implements \mbox{\hyperlink{classEntity_1_1EntityView_ae57c8e91ddc117586b59cc5d9fe340de}{Entity\+::\+Entity\+View}}.
-
-
-
-Definition at line 8 of file Player\+Ship\+View.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8 \{ w-\/>draw(\mbox{\hyperlink{classEntity_1_1EntityView_aea3dd9f085ae1f822dc943b9eeea0928}{shape}}); \}}
-
-\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

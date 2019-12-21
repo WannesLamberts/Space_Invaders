@@ -13,6 +13,7 @@ private:
 
 public:
         void travel();
+        BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed);
 };
 }
 #endif // SPACE_INVADERS_BULLETMODEL_H

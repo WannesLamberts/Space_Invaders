@@ -75,9 +75,10 @@ Inheritance diagram for Subject:</div>
  <div class="center">
   <img src="classSubject.png" usemap="#Subject_map" alt=""/>
   <map id="Subject_map" name="Subject_map">
-<area href="classModelAbstract.html" title="superclass of all model classes handles the data section of the game" alt="ModelAbstract" shape="rect" coords="0,56,146,80"/>
-<area href="classEntity_1_1EntityModel.html" title="Model class for Entity this class handles all the data of Entity." alt="Entity::EntityModel" shape="rect" coords="0,112,146,136"/>
+<area href="classModelAbstract.html" title="superclass of all model classes handles the data section of the game" alt="ModelAbstract" shape="rect" coords="78,56,224,80"/>
+<area href="classEntity_1_1EntityModel.html" title="Model class for Entity this class handles all the data of Entity." alt="Entity::EntityModel" shape="rect" coords="78,112,224,136"/>
 <area href="classEntity_1_1AliveModel.html" alt="Entity::AliveModel" shape="rect" coords="0,168,146,192"/>
+<area href="classEntity_1_1BulletModel.html" alt="Entity::BulletModel" shape="rect" coords="156,168,302,192"/>
 <area href="classEntity_1_1PlayerShipModel.html" title="Model of the PlayerShip handles all the data for PlayerShip." alt="Entity::PlayerShipModel" shape="rect" coords="0,224,146,248"/>
   </map>
 </div></div>
@@ -90,9 +91,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerObserver</b> 
 <tr class="memitem:ab2b8a1aeb158f75379d3975bc2f96ad0"><td class="memItemLeft" align="right" valign="top"><a id="ab2b8a1aeb158f75379d3975bc2f96ad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; o)</td></tr>
 <tr class="separator:ab2b8a1aeb158f75379d3975bc2f96ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21e68c3420b0dbbfdbff4f4f0f2e746"><td class="memItemLeft" align="right" valign="top"><a id="aa21e68c3420b0dbbfdbff4f4f0f2e746"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> (double, double)=0</td></tr>
-<tr class="separator:aa21e68c3420b0dbbfdbff4f4f0f2e746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8cbc824cec718dd9f35997a3a3c418"><td class="memItemLeft" align="right" valign="top"><a id="adc8cbc824cec718dd9f35997a3a3c418"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)=0</td></tr>
+<tr class="separator:adc8cbc824cec718dd9f35997a3a3c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -102,7 +103,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Obse
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Subject_8h_source.html#l00011">11</a> of file <a class="el" href="Subject_8h_source.html">Subject.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subject_8h_source.html#l00012">12</a> of file <a class="el" href="Subject_8h_source.html">Subject.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>Observer/<a class="el" href="Subject_8h_source.html">Subject.h</a></li>
 <li>Observer/<a class="el" href="Subject_8cpp_source.html">Subject.cpp</a></li>

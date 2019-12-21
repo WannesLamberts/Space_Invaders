@@ -4,7 +4,7 @@
 
 #include "PlayerShipModel.h"
 
-Entity::PlayerShipModel::PlayerShipModel(Utils::Vector2D position, int healthpoints)
-    : AliveModel(position, healthpoints)
+Entity::PlayerShipModel::PlayerShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints)
+    : AliveModel(position, size, healthpoints)
 {
 }

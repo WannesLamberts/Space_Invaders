@@ -5,6 +5,7 @@
 #ifndef SPACE_INVADERS_ALIVEMODEL_H
 #define SPACE_INVADERS_ALIVEMODEL_H
 #include "../EntityModel.h"
+
 namespace Entity{
 
 
@@ -15,7 +16,7 @@ private:
 public:
         void moveLeft();
         void moveRight();
-        AliveModel(Utils::Vector2D position, int healthpoints);
+        AliveModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints);
 };
 }
 #endif // SPACE_INVADERS_ALIVEMODEL_H

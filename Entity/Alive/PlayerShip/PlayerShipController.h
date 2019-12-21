@@ -7,16 +7,22 @@
 #include "../../../MVCAbstract/Controllable.h"
 #include "../../EntityController.h"
 #include "PlayerShipModel.h"
+#include "PlayerShipView.h"
 #include <SFML/Graphics.hpp>
+#include "../../Bullet/BulletController.h"
+#include "../../Bullet/BulletModel.h"
+#include "../../Bullet/BulletView.h"
 namespace Entity{
 
 
-class PlayerShipController: public Controllable,EntityController
+class PlayerShipController: public Controllable, public EntityController
 {
 public:
         void readInput();
         PlayerShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
         void tick();
+        void shoot();
+
 };
 }
 #endif // SPACE_INVADERS_PLAYERSHIPCONTROLLER_H

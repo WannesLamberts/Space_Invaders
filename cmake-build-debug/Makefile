@@ -393,6 +393,33 @@ Entity/EntityView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s
 .PHONY : Entity/EntityView.cpp.s
 
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
 MVCAbstract/ControllerAbstract.o: MVCAbstract/ControllerAbstract.cpp.o
 
 .PHONY : MVCAbstract/ControllerAbstract.o
@@ -500,6 +527,33 @@ Observer/Subject.s: Observer/Subject.cpp.s
 Observer/Subject.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s
 .PHONY : Observer/Subject.cpp.s
+
+Utils/ObjectMaker.o: Utils/ObjectMaker.cpp.o
+
+.PHONY : Utils/ObjectMaker.o
+
+# target to build an object file
+Utils/ObjectMaker.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o
+.PHONY : Utils/ObjectMaker.cpp.o
+
+Utils/ObjectMaker.i: Utils/ObjectMaker.cpp.i
+
+.PHONY : Utils/ObjectMaker.i
+
+# target to preprocess a source file
+Utils/ObjectMaker.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.i
+.PHONY : Utils/ObjectMaker.cpp.i
+
+Utils/ObjectMaker.s: Utils/ObjectMaker.cpp.s
+
+.PHONY : Utils/ObjectMaker.s
+
+# target to generate assembly for a file
+Utils/ObjectMaker.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.s
+.PHONY : Utils/ObjectMaker.cpp.s
 
 Utils/StopWatch.o: Utils/StopWatch.cpp.o
 
@@ -621,6 +675,9 @@ help:
 	@echo "... Entity/EntityView.o"
 	@echo "... Entity/EntityView.i"
 	@echo "... Entity/EntityView.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... MVCAbstract/ControllerAbstract.o"
 	@echo "... MVCAbstract/ControllerAbstract.i"
 	@echo "... MVCAbstract/ControllerAbstract.s"
@@ -633,6 +690,9 @@ help:
 	@echo "... Observer/Subject.o"
 	@echo "... Observer/Subject.i"
 	@echo "... Observer/Subject.s"
+	@echo "... Utils/ObjectMaker.o"
+	@echo "... Utils/ObjectMaker.i"
+	@echo "... Utils/ObjectMaker.s"
 	@echo "... Utils/StopWatch.o"
 	@echo "... Utils/StopWatch.i"
 	@echo "... Utils/StopWatch.s"

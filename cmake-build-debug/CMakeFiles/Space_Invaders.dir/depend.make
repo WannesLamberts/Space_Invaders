@@ -5,7 +5,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Entity/Alive/Ali
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Entity/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../MVCAbstract/ModelAbstract.h
-CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Utils/Vector2D.h
@@ -15,15 +14,21 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipController.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Bullet/BulletController.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Bullet/BulletModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Bullet/BulletView.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/EntityController.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Game.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../MVCAbstract/Controllable.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../MVCAbstract/ControllerAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Utils/Object.h
+CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Utils/ObjectMaker.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Utils/Vector2D.h
 
@@ -32,7 +37,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../MVCAbstract/ModelAbstract.h
-CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Utils/Vector2D.h
@@ -61,7 +65,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/BulletModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../MVCAbstract/ModelAbstract.h
-CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Utils/Vector2D.h
@@ -89,7 +92,6 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: ../Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Entity/EntityModel.cpp
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../MVCAbstract/ModelAbstract.h
-CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Utils/Vector2D.h
@@ -100,6 +102,30 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../MVCAbstract/ViewAbstra
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Utils/Vector2D.h
+
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Alive/AliveModel.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipController.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipView.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Bullet/BulletController.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Bullet/BulletModel.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Bullet/BulletView.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/EntityController.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Game.cpp
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Game.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../MVCAbstract/Controllable.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../MVCAbstract/ControllerAbstract.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Utils/Object.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Utils/ObjectMaker.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Utils/StopWatch.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o: ../MVCAbstract/ControllerAbstract.cpp
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o: ../MVCAbstract/ControllerAbstract.h
@@ -126,6 +152,29 @@ CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Observer/Subject.cpp
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Utils/Vector2D.h
 
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Alive/AliveModel.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipController.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipView.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Bullet/BulletController.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Bullet/BulletModel.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/Bullet/BulletView.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/EntityController.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Game.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../MVCAbstract/Controllable.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../MVCAbstract/ControllerAbstract.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Utils/Object.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Utils/ObjectMaker.cpp
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Utils/ObjectMaker.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o: ../Utils/Vector2D.h
+
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o: ../Utils/StopWatch.cpp
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o: ../Utils/StopWatch.h
 
@@ -133,21 +182,13 @@ CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o: ../Utils/Transformatio
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o: ../Utils/Vector2D.h
 
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/Alive/AliveModel.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipController.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipView.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/EntityController.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/EntityModel.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Entity/EntityView.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../MVCAbstract/Controllable.h
+CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Game.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../MVCAbstract/ControllerAbstract.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Observer/Subject.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Utils/StopWatch.h
-CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Utils/Object.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../main.cpp
 

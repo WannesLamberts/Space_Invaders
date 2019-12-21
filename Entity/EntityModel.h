@@ -6,7 +6,6 @@
 #define SPACE_INVADERS_ENTITYMODEL_H
 
 #include "../MVCAbstract/ModelAbstract.h"
-#include <SFML/Graphics.hpp>
 
 namespace Entity {
 /**
@@ -37,7 +36,7 @@ public:
          * @param Yval The yVal of the Entity
          */
         void notifyObservers(Utils::Vector2D position,Utils::Vector2D);
-        EntityModel(const Utils::Vector2D& position);
+        EntityModel(const Utils::Vector2D& position, const Utils::Vector2D& size);
 };
 } // namespace Entity
 #endif // SPACE_INVADERS_ENTITYMODEL_H

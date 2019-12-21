@@ -12,7 +12,7 @@ class ControllerAbstract
 {
 public:
     ControllerAbstract(const std::shared_ptr<ModelAbstract> &m, const std::shared_ptr<ViewAbstract> &v);
-
+       virtual void tick()=0;
 protected:
     std::shared_ptr<ModelAbstract> m;
     std::shared_ptr<ViewAbstract> v;

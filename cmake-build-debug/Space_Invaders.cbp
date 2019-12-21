@@ -144,6 +144,12 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Game.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Game.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
@@ -172,6 +178,15 @@
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Observer/Subject.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Object.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp">

@@ -6,7 +6,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
@@ -16,15 +15,21 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
  /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+ /home/wannes/Desktop/Space_Invaders/Game.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Object.h
+ /home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o
@@ -33,7 +38,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
@@ -62,7 +66,6 @@ CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
@@ -90,7 +93,6 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp
  /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
@@ -99,6 +101,30 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o
  /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+ /home/wannes/Desktop/Space_Invaders/Game.cpp
+ /home/wannes/Desktop/Space_Invaders/Game.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Object.h
+ /home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h
+ /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o
@@ -126,6 +152,29 @@ CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+ /home/wannes/Desktop/Space_Invaders/Game.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
+ /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Object.h
+ /home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.cpp
+ /home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o
  /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp
  /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
@@ -134,20 +183,12 @@ CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o
  /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/main.cpp.o
- /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
- /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
- /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
- /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
- /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
- /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
- /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
- /home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
+ /home/wannes/Desktop/Space_Invaders/Game.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/Desktop/Space_Invaders/Observer/Observer.h
  /home/wannes/Desktop/Space_Invaders/Observer/Subject.h
- /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
- /home/wannes/Desktop/Space_Invaders/Utils/Transformation.h
+ /home/wannes/Desktop/Space_Invaders/Utils/Object.h
  /home/wannes/Desktop/Space_Invaders/Utils/Vector2D.h
  /home/wannes/Desktop/Space_Invaders/main.cpp

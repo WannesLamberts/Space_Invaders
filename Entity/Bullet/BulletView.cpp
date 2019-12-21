@@ -3,7 +3,9 @@
 //
 
 #include "BulletView.h"
-Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w) : EntityView(w) {}
+Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w) : EntityView(w) {
+        generateShape();
+}
 void Entity::BulletView::generateShape() {
         texture.loadFromFile("../Sprites/bullet.png");
         shape.setTexture(texture);

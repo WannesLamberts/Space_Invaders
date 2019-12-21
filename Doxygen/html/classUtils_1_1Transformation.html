@@ -81,12 +81,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c04707895cb31f07f615c6d0dbd6691"><td class="memItemLeft" align="right" valign="top"><a id="a4c04707895cb31f07f615c6d0dbd6691"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>transX</b> (double, double)</td></tr>
-<tr class="separator:a4c04707895cb31f07f615c6d0dbd6691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8c8966672f4182309a14b82a5af2cb"><td class="memItemLeft" align="right" valign="top"><a id="a1b8c8966672f4182309a14b82a5af2cb"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>transY</b> (double, double)</td></tr>
-<tr class="separator:a1b8c8966672f4182309a14b82a5af2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1924912bd32f92f85f2ad093f2cf7828"><td class="memItemLeft" align="right" valign="top"><a id="a1924912bd32f92f85f2ad093f2cf7828"></a>
+<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>trans</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:a1924912bd32f92f85f2ad093f2cf7828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace53034749afed6d1d4f58b7c25f83a0"><td class="memItemLeft" align="right" valign="top"><a id="ace53034749afed6d1d4f58b7c25f83a0"></a>
+<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transAndCenter</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:ace53034749afed6d1d4f58b7c25f83a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b81c184922caf62bf5c0d94dbaa1812"><td class="memItemLeft" align="right" valign="top"><a id="a0b81c184922caf62bf5c0d94dbaa1812"></a>
+<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>center</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:a0b81c184922caf62bf5c0d94dbaa1812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884c93b1db7ec8d766beca44c3a9f51d"><td class="memItemLeft" align="right" valign="top"><a id="a884c93b1db7ec8d766beca44c3a9f51d"></a>
+<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>reScaleHitbox</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:a884c93b1db7ec8d766beca44c3a9f51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -97,7 +103,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>used for transforming a models x and y values to the corresponding values on the screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00012">12</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00013">13</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a03b9f5b948a515ced74861fa154a3ce4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03b9f5b948a515ced74861fa154a3ce4">&#9670;&nbsp;</a></span>getInstance()</h2>
@@ -125,12 +131,12 @@ Static Public Member Functions</h2></td></tr>
 <p>This is the only way to get a reference to the <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a> object and there can only exist 1 object of <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a>;. </p>
 <dl class="section return"><dt>Returns</dt><dd>the reference to the <a class="el" href="classUtils_1_1Transformation.html" title="used for transforming a models x and y values to the corresponding values on the screen.">Transformation</a> object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00019">19</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                            {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">static</span> Transformation    instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="comment">// Instantiated on first use.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Transformation_8h_source.html#l00020">20</a> of file <a class="el" href="Transformation_8h_source.html">Transformation.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                            {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keyword">static</span> Transformation    instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="comment">// Instantiated on first use.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>

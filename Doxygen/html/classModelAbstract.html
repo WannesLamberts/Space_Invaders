@@ -78,9 +78,10 @@ Inheritance diagram for ModelAbstract:</div>
  <div class="center">
   <img src="classModelAbstract.png" usemap="#ModelAbstract_map" alt=""/>
   <map id="ModelAbstract_map" name="ModelAbstract_map">
-<area href="classSubject.html" alt="Subject" shape="rect" coords="0,0,146,24"/>
-<area href="classEntity_1_1EntityModel.html" title="Model class for Entity this class handles all the data of Entity." alt="Entity::EntityModel" shape="rect" coords="0,112,146,136"/>
+<area href="classSubject.html" alt="Subject" shape="rect" coords="78,0,224,24"/>
+<area href="classEntity_1_1EntityModel.html" title="Model class for Entity this class handles all the data of Entity." alt="Entity::EntityModel" shape="rect" coords="78,112,224,136"/>
 <area href="classEntity_1_1AliveModel.html" alt="Entity::AliveModel" shape="rect" coords="0,168,146,192"/>
+<area href="classEntity_1_1BulletModel.html" alt="Entity::BulletModel" shape="rect" coords="156,168,302,192"/>
 <area href="classEntity_1_1PlayerShipModel.html" title="Model of the PlayerShip handles all the data for PlayerShip." alt="Entity::PlayerShipModel" shape="rect" coords="0,224,146,248"/>
   </map>
 </div></div>
@@ -94,9 +95,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerObserver</b> 
 <tr class="memitem:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="ab2b8a1aeb158f75379d3975bc2f96ad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; o)</td></tr>
 <tr class="separator:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21e68c3420b0dbbfdbff4f4f0f2e746 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="aa21e68c3420b0dbbfdbff4f4f0f2e746"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> (double, double)=0</td></tr>
-<tr class="separator:aa21e68c3420b0dbbfdbff4f4f0f2e746 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8cbc824cec718dd9f35997a3a3c418 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="adc8cbc824cec718dd9f35997a3a3c418"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)=0</td></tr>
+<tr class="separator:adc8cbc824cec718dd9f35997a3a3c418 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSubject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSubject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSubject.html">Subject</a></td></tr>
 <tr class="memitem:ab8b404a56f172645e95d23e86f1b8d95 inherit pro_attribs_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="ab8b404a56f172645e95d23e86f1b8d95"></a>
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>observers</b></td></tr>

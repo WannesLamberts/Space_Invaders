@@ -18,13 +18,16 @@ Inheritance diagram for Entity\+::Entity\+View\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classEntity_1_1EntityView_ae57c8e91ddc117586b59cc5d9fe340de}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ w)=0
+void \mbox{\hyperlink{classEntity_1_1EntityView_a03c3e29c6972249ac0f4e08aa5cb242e}{draw}} (std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ w)
 \begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classEntity_1_1EntityView_aa7ac759577e903d916b7f62e81acfc39}\label{classEntity_1_1EntityView_aa7ac759577e903d916b7f62e81acfc39}} 
-void {\bfseries update} (double, double)
+\mbox{\Hypertarget{classEntity_1_1EntityView_ac6adb00cf01213d5f018f4abb8358ff1}\label{classEntity_1_1EntityView_ac6adb00cf01213d5f018f4abb8358ff1}} 
+void {\bfseries update} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityView_a1ee91411e7bb052f526b48b783cd25dd}\label{classEntity_1_1EntityView_a1ee91411e7bb052f526b48b783cd25dd}} 
 const sf\+::\+Sprite \& {\bfseries get\+Shape} () const
+\item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_a390500fd3f9fe27b09f12c51ccf3fa97}\label{classEntity_1_1EntityView_a390500fd3f9fe27b09f12c51ccf3fa97}} 
+void {\bfseries change\+Scale} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}\label{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}} 
 virtual void {\bfseries generate\+Shape} ()=0
@@ -52,11 +55,11 @@ Definition at line 15 of file Entity\+View.\+h.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1EntityView_ae57c8e91ddc117586b59cc5d9fe340de}\label{classEntity_1_1EntityView_ae57c8e91ddc117586b59cc5d9fe340de}} 
+\mbox{\Hypertarget{classEntity_1_1EntityView_a03c3e29c6972249ac0f4e08aa5cb242e}\label{classEntity_1_1EntityView_a03c3e29c6972249ac0f4e08aa5cb242e}} 
 \index{Entity::EntityView@{Entity::EntityView}!draw@{draw}}
 \index{draw@{draw}!Entity::EntityView@{Entity::EntityView}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily virtual void Entity\+::\+Entity\+View\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -73,8 +76,15 @@ Implements \mbox{\hyperlink{classViewAbstract_a5f70ba4ae9a065c8a2262e6a65106c92}
 
 
 
-Implemented in \mbox{\hyperlink{classEntity_1_1PlayerShipView_a679ab583ec99436cd1d825baf96868ea}{Entity\+::\+Player\+Ship\+View}}.
+Definition at line 26 of file Entity\+View.\+cpp.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                                                            \{}
+\DoxyCodeLine{27         w-\/>draw(\mbox{\hyperlink{classEntity_1_1EntityView_aea3dd9f085ae1f822dc943b9eeea0928}{shape}});}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
