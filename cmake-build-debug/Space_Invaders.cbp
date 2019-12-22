@@ -84,6 +84,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
@@ -150,9 +174,6 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Game.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h">
-			<Option target="Space_Invaders"/>
-		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
@@ -183,10 +204,10 @@
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/Object.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.cpp">
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h">
+		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp">

@@ -75,8 +75,12 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;BulletModel.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> Entity::BulletModel::travel() {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x, position.y+speed));</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x, position.y-speed));</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Entity::BulletModel::BulletModel(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">double</span> speed)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    : EntityModel(position, size), speed(speed)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructUtils_1_1Vector2D_html"><div class="ttname"><a href="structUtils_1_1Vector2D.html">Utils::Vector2D</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector2D_8h_source.html#l00010">Vector2D.h:10</a></div></div>
 <!-- start footer part -->

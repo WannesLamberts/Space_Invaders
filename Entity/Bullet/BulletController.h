@@ -8,11 +8,13 @@
 #include "BulletModel.h"
 namespace Entity{
 
-class BulletController : public EntityController
+class BulletController : public EntityController, std::enable_shared_from_this<BulletController>
 {
 public:
         void tick();
         BulletController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+         void onCollision(std::shared_ptr<Entity::EntityController> b);
+
 };
 }
 

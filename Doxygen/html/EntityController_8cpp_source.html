@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;EntityView.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;EntityController::EntityController(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt;&amp; m, <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt;&amp; v)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Entity::EntityController::EntityController(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt;&amp; m, <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt;&amp; v)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <a class="code" href="classControllerAbstract.html">ControllerAbstract</a>(m, v)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::shared_ptr&lt;Entity::EntityModel&gt; mod = std::dynamic_pointer_cast&lt;Entity::EntityModel&gt;(m);</div>

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o"
@@ -14,7 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
   "CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o"
-  "CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o"
   "CMakeFiles/Space_Invaders.dir/main.cpp.o"

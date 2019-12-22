@@ -77,36 +77,36 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SPACE_INVADERS_ENTITYMODEL_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../MVCAbstract/ModelAbstract.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Entity {</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classEntity_1_1EntityModel.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a> : <span class="keyword">public</span> <a class="code" href="classModelAbstract.html">ModelAbstract</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; getSize() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> setSize(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; getPosition() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Entity {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classEntity_1_1EntityModel.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a> : <span class="keyword">public</span> <a class="code" href="classModelAbstract.html">ModelAbstract</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; getSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> setSize(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; getPosition() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">bool</span> checkCollision(<a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a> a,<a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a> b);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> setPosition(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classEntity_1_1EntityModel.html#aa318495311fdb595a100b9cbc5969a82">notifyObservers</a>(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position,<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a>(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a>(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace Entity</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // SPACE_INVADERS_ENTITYMODEL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassModelAbstract_html"><div class="ttname"><a href="classModelAbstract.html">ModelAbstract</a></div><div class="ttdoc">superclass of all model classes handles the data section of the game</div><div class="ttdef"><b>Definition:</b> <a href="ModelAbstract_8h_source.html#l00012">ModelAbstract.h:12</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EntityModel_html_aa318495311fdb595a100b9cbc5969a82"><div class="ttname"><a href="classEntity_1_1EntityModel.html#aa318495311fdb595a100b9cbc5969a82">Entity::EntityModel::notifyObservers</a></div><div class="ttdeci">void notifyObservers(Utils::Vector2D position, Utils::Vector2D)</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8cpp_source.html#l00009">EntityModel.cpp:9</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EntityModel_html"><div class="ttname"><a href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></div><div class="ttdoc">Model class for Entity this class handles all the data of Entity.</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8h_source.html#l00015">EntityModel.h:15</a></div></div>
+<div class="ttc" id="aclassModelAbstract_html"><div class="ttname"><a href="classModelAbstract.html">ModelAbstract</a></div><div class="ttdoc">superclass of all model classes handles the data section of the game</div><div class="ttdef"><b>Definition:</b> <a href="ModelAbstract_8h_source.html#l00011">ModelAbstract.h:11</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityModel_html_aa318495311fdb595a100b9cbc5969a82"><div class="ttname"><a href="classEntity_1_1EntityModel.html#aa318495311fdb595a100b9cbc5969a82">Entity::EntityModel::notifyObservers</a></div><div class="ttdeci">void notifyObservers(Utils::Vector2D position, Utils::Vector2D)</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8cpp_source.html#l00007">EntityModel.cpp:7</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityModel_html"><div class="ttname"><a href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></div><div class="ttdoc">Model class for Entity this class handles all the data of Entity.</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8h_source.html#l00014">EntityModel.h:14</a></div></div>
 <div class="ttc" id="astructUtils_1_1Vector2D_html"><div class="ttname"><a href="structUtils_1_1Vector2D.html">Utils::Vector2D</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector2D_8h_source.html#l00010">Vector2D.h:10</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

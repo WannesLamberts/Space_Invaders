@@ -10,6 +10,5 @@
  */
 class ModelAbstract : public Subject
 {
-
 };
 #endif // SPACE_INVADERS_MODELABSTRACT_H

@@ -3,7 +3,7 @@
 //
 
 #include "Game.h"
-#include "Utils/ObjectMaker.h"
+#include "Utils/ObjectManager.h"
 #include "Utils/StopWatch.h"
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
@@ -11,9 +11,11 @@ void Game::addObject(std::shared_ptr<Utils::Object> object) {
         o.push_back(object);
 }
 Game::Game() {
-        Utils::ObjectMaker::getInstance().setup(this);
-        w=std::make_shared<sf::RenderWindow>(sf::VideoMode(800, 600), "SpaceInvaders");
-        Utils::ObjectMaker::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,1),100);
+        Utils::ObjectManager::getInstance().setup(this);
+        w=std::make_shared<sf::RenderWindow>(sf::VideoMode(2000, 600), "SpaceInvaders");
+        Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,1),100,0.1);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-2),Utils::Vector2D(1,1),100,0.1);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-1),Utils::Vector2D(1,1),100,0.1);
 }
 void Game::drawGame() {
         for (int i = 0; i <o.size() ; ++i) {
@@ -41,4 +43,8 @@ void Game::runGame() {
 }
 void Game::setup() {
 
+}
+const std::vector<std::shared_ptr<Utils::Object>>& Game::getO() const { return o; }
+void Game::deleteob(int i) {
+        o.erase(o.begin()+i);
 }

@@ -74,11 +74,13 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;BulletView.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Entity::BulletView::BulletView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt;&amp; w) : EntityView(w) {}</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> Entity::BulletView::generateShape() {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        texture.loadFromFile(<span class="stringliteral">&quot;../Sprites/bullet.png&quot;</span>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        shape.setTexture(texture);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Entity::BulletView::BulletView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt;&amp; w) : EntityView(w) {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        generateShape();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> Entity::BulletView::generateShape() {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        texture.loadFromFile(<span class="stringliteral">&quot;../Sprites/bullet.png&quot;</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        shape.setTexture(texture);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['stopwatch_40',['StopWatch',['../classUtils_1_1StopWatch.html',1,'Utils']]],
-  ['subject_41',['Subject',['../classSubject.html',1,'']]]
+  ['playershipcontroller_49',['PlayerShipController',['../classEntity_1_1PlayerShipController.html',1,'Entity']]],
+  ['playershipmodel_50',['PlayerShipModel',['../classEntity_1_1PlayerShipModel.html',1,'Entity']]],
+  ['playershipview_51',['PlayerShipView',['../classEntity_1_1PlayerShipView.html',1,'Entity']]]
 ];

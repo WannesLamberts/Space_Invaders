@@ -7,11 +7,16 @@
 
 #include "../MVCAbstract/ControllerAbstract.h"
 #include <memory>
-class EntityController : public ControllerAbstract {
+namespace Entity {
+
+class EntityController : public ControllerAbstract
+{
 public:
-    EntityController(const std::shared_ptr<ModelAbstract> &m, const std::shared_ptr<ViewAbstract> &v);
-    virtual void tick()=0;
+        bool checkCollision(std::shared_ptr<Entity::EntityController> b);
+        virtual void onCollision(std::shared_ptr<Entity::EntityController> b);
+        EntityController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+        virtual void tick() = 0;
 };
 
-
+}
 #endif //SPACE_INVADERS_ENTITYCONTROLLER_H

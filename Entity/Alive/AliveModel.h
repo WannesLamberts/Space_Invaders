@@ -10,13 +10,24 @@ namespace Entity{
 
 
 class AliveModel : public Entity::EntityModel{
-private:
+protected:
+public:
+        AliveModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
+
+protected:
         int healthpoints;
+        int fireCooldown;
+        double speed;
+
+public:
+        int getHealthpoints() const;
+        void setHealthpoints(int healthpoints);
+        int getFireCooldown() const;
+        void setFireCooldown(int fireCooldown);
 
 public:
         void moveLeft();
         void moveRight();
-        AliveModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints);
 };
 }
 #endif // SPACE_INVADERS_ALIVEMODEL_H

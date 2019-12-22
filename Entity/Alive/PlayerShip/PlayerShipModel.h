@@ -12,8 +12,9 @@ namespace Entity {
  */
 class PlayerShipModel : public AliveModel
 {
+
 public:
-        PlayerShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints);
+        PlayerShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
 
 public:
 };

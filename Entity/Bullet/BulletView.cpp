@@ -7,6 +7,6 @@ Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w) : E
         generateShape();
 }
 void Entity::BulletView::generateShape() {
-        texture.loadFromFile("../Sprites/bullet.png");
+        texture.loadFromFile("../Sprites/red.jpg");
         shape.setTexture(texture);
 }

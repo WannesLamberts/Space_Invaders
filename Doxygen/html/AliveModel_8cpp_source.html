@@ -74,16 +74,22 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Created by wannes on 20.12.19.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveLeft()</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x - 0.1, position.y));</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveRight() { setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x + 0.1, position.y)); }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Entity::AliveModel::AliveModel(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <span class="keywordtype">int</span> healthpoints)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : EntityModel(position), healthpoints(healthpoints)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveLeft()</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x - 0.1, position.y));</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveRight() { setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x + 0.1, position.y)); }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Entity::AliveModel::AliveModel(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">int</span> healthpoints)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    : EntityModel(position, size), healthpoints(healthpoints)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        fireCooldown=0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getHealthpoints()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> healthpoints; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setHealthpoints(<span class="keywordtype">int</span> healthpoints) { AliveModel::healthpoints = healthpoints; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getFireCooldown()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fireCooldown; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setFireCooldown(<span class="keywordtype">int</span> fireCooldown) { AliveModel::fireCooldown = fireCooldown; }</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructUtils_1_1Vector2D_html"><div class="ttname"><a href="structUtils_1_1Vector2D.html">Utils::Vector2D</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector2D_8h_source.html#l00010">Vector2D.h:10</a></div></div>
 <!-- start footer part -->

@@ -123,6 +123,114 @@ Space_Invaders/fast:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/build
 .PHONY : Space_Invaders/fast
 
+Entity/Alive/AlienShip/AlienShipController.o: Entity/Alive/AlienShip/AlienShipController.cpp.o
+
+.PHONY : Entity/Alive/AlienShip/AlienShipController.o
+
+# target to build an object file
+Entity/Alive/AlienShip/AlienShipController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o
+.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.o
+
+Entity/Alive/AlienShip/AlienShipController.i: Entity/Alive/AlienShip/AlienShipController.cpp.i
+
+.PHONY : Entity/Alive/AlienShip/AlienShipController.i
+
+# target to preprocess a source file
+Entity/Alive/AlienShip/AlienShipController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i
+.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.i
+
+Entity/Alive/AlienShip/AlienShipController.s: Entity/Alive/AlienShip/AlienShipController.cpp.s
+
+.PHONY : Entity/Alive/AlienShip/AlienShipController.s
+
+# target to generate assembly for a file
+Entity/Alive/AlienShip/AlienShipController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s
+.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.s
+
+Entity/Alive/AlienShip/AlienShipModel.o: Entity/Alive/AlienShip/AlienShipModel.cpp.o
+
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.o
+
+# target to build an object file
+Entity/Alive/AlienShip/AlienShipModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.o
+
+Entity/Alive/AlienShip/AlienShipModel.i: Entity/Alive/AlienShip/AlienShipModel.cpp.i
+
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.i
+
+# target to preprocess a source file
+Entity/Alive/AlienShip/AlienShipModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.i
+
+Entity/Alive/AlienShip/AlienShipModel.s: Entity/Alive/AlienShip/AlienShipModel.cpp.s
+
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.s
+
+# target to generate assembly for a file
+Entity/Alive/AlienShip/AlienShipModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s
+.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.s
+
+Entity/Alive/AlienShip/AlienShipView.o: Entity/Alive/AlienShip/AlienShipView.cpp.o
+
+.PHONY : Entity/Alive/AlienShip/AlienShipView.o
+
+# target to build an object file
+Entity/Alive/AlienShip/AlienShipView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o
+.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.o
+
+Entity/Alive/AlienShip/AlienShipView.i: Entity/Alive/AlienShip/AlienShipView.cpp.i
+
+.PHONY : Entity/Alive/AlienShip/AlienShipView.i
+
+# target to preprocess a source file
+Entity/Alive/AlienShip/AlienShipView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i
+.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.i
+
+Entity/Alive/AlienShip/AlienShipView.s: Entity/Alive/AlienShip/AlienShipView.cpp.s
+
+.PHONY : Entity/Alive/AlienShip/AlienShipView.s
+
+# target to generate assembly for a file
+Entity/Alive/AlienShip/AlienShipView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s
+.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.s
+
+Entity/Alive/AliveController.o: Entity/Alive/AliveController.cpp.o
+
+.PHONY : Entity/Alive/AliveController.o
+
+# target to build an object file
+Entity/Alive/AliveController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o
+.PHONY : Entity/Alive/AliveController.cpp.o
+
+Entity/Alive/AliveController.i: Entity/Alive/AliveController.cpp.i
+
+.PHONY : Entity/Alive/AliveController.i
+
+# target to preprocess a source file
+Entity/Alive/AliveController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i
+.PHONY : Entity/Alive/AliveController.cpp.i
+
+Entity/Alive/AliveController.s: Entity/Alive/AliveController.cpp.s
+
+.PHONY : Entity/Alive/AliveController.s
+
+# target to generate assembly for a file
+Entity/Alive/AliveController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s
+.PHONY : Entity/Alive/AliveController.cpp.s
+
 Entity/Alive/AliveModel.o: Entity/Alive/AliveModel.cpp.o
 
 .PHONY : Entity/Alive/AliveModel.o
@@ -528,32 +636,32 @@ Observer/Subject.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s
 .PHONY : Observer/Subject.cpp.s
 
-Utils/ObjectMaker.o: Utils/ObjectMaker.cpp.o
+Utils/ObjectManager.o: Utils/ObjectManager.cpp.o
 
-.PHONY : Utils/ObjectMaker.o
+.PHONY : Utils/ObjectManager.o
 
 # target to build an object file
-Utils/ObjectMaker.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.o
-.PHONY : Utils/ObjectMaker.cpp.o
+Utils/ObjectManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o
+.PHONY : Utils/ObjectManager.cpp.o
 
-Utils/ObjectMaker.i: Utils/ObjectMaker.cpp.i
+Utils/ObjectManager.i: Utils/ObjectManager.cpp.i
 
-.PHONY : Utils/ObjectMaker.i
+.PHONY : Utils/ObjectManager.i
 
 # target to preprocess a source file
-Utils/ObjectMaker.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.i
-.PHONY : Utils/ObjectMaker.cpp.i
+Utils/ObjectManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.i
+.PHONY : Utils/ObjectManager.cpp.i
 
-Utils/ObjectMaker.s: Utils/ObjectMaker.cpp.s
+Utils/ObjectManager.s: Utils/ObjectManager.cpp.s
 
-.PHONY : Utils/ObjectMaker.s
+.PHONY : Utils/ObjectManager.s
 
 # target to generate assembly for a file
-Utils/ObjectMaker.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectMaker.cpp.s
-.PHONY : Utils/ObjectMaker.cpp.s
+Utils/ObjectManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.s
+.PHONY : Utils/ObjectManager.cpp.s
 
 Utils/StopWatch.o: Utils/StopWatch.cpp.o
 
@@ -645,6 +753,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Space_Invaders"
 	@echo "... edit_cache"
+	@echo "... Entity/Alive/AlienShip/AlienShipController.o"
+	@echo "... Entity/Alive/AlienShip/AlienShipController.i"
+	@echo "... Entity/Alive/AlienShip/AlienShipController.s"
+	@echo "... Entity/Alive/AlienShip/AlienShipModel.o"
+	@echo "... Entity/Alive/AlienShip/AlienShipModel.i"
+	@echo "... Entity/Alive/AlienShip/AlienShipModel.s"
+	@echo "... Entity/Alive/AlienShip/AlienShipView.o"
+	@echo "... Entity/Alive/AlienShip/AlienShipView.i"
+	@echo "... Entity/Alive/AlienShip/AlienShipView.s"
+	@echo "... Entity/Alive/AliveController.o"
+	@echo "... Entity/Alive/AliveController.i"
+	@echo "... Entity/Alive/AliveController.s"
 	@echo "... Entity/Alive/AliveModel.o"
 	@echo "... Entity/Alive/AliveModel.i"
 	@echo "... Entity/Alive/AliveModel.s"
@@ -690,9 +810,9 @@ help:
 	@echo "... Observer/Subject.o"
 	@echo "... Observer/Subject.i"
 	@echo "... Observer/Subject.s"
-	@echo "... Utils/ObjectMaker.o"
-	@echo "... Utils/ObjectMaker.i"
-	@echo "... Utils/ObjectMaker.s"
+	@echo "... Utils/ObjectManager.o"
+	@echo "... Utils/ObjectManager.i"
+	@echo "... Utils/ObjectManager.s"
 	@echo "... Utils/StopWatch.o"
 	@echo "... Utils/StopWatch.i"
 	@echo "... Utils/StopWatch.s"

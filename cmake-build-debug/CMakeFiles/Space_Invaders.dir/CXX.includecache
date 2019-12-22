@@ -6,13 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.h
+../AliveController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h
+AlienShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.h
+AlienShipModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.h
+../AliveModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.h
+../../EntityView.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h
+../EntityController.h
+/home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
+AliveModel.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
+
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
 ../EntityModel.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
 
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
-../../../MVCAbstract/Controllable.h
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
 ../../EntityController.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
 PlayerShipModel.h
@@ -27,6 +47,8 @@ SFML/Graphics.hpp
 /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.h
 ../../Bullet/BulletView.h
 /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.h
+../AliveController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h
 
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h
 ../AliveModel.h
@@ -69,8 +91,8 @@ memory
 /home/wannes/Desktop/Space_Invaders/Game.cpp
 Game.h
 /home/wannes/Desktop/Space_Invaders/Game.h
-Utils/ObjectMaker.h
-/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h
+Utils/ObjectManager.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
 Utils/StopWatch.h
 /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
 
@@ -83,8 +105,6 @@ memory
 -
 Utils/Object.h
 /home/wannes/Desktop/Space_Invaders/Utils/Object.h
-
-/home/wannes/Desktop/Space_Invaders/MVCAbstract/Controllable.h
 
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
 memory
@@ -126,13 +146,15 @@ vector
 memory
 -
 
-/home/wannes/Desktop/Space_Invaders/Utils/ObjectMaker.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
 ../Game.h
 /home/wannes/Desktop/Space_Invaders/Game.h
 ../Entity/Alive/PlayerShip/PlayerShipController.h
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
 ../Entity/Bullet/BulletController.h
 /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+../Entity/Alive/AlienShip/AlienShipController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.h
 
 /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.h
 chrono

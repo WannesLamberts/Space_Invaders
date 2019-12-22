@@ -27,10 +27,13 @@ void {\bfseries set\+Size} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Util
 \mbox{\Hypertarget{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}\label{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}} 
 const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& {\bfseries get\+Position} () const
 \item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a31a8c874036424639a2640d89068050a}\label{classEntity_1_1EntityModel_a31a8c874036424639a2640d89068050a}} 
+bool {\bfseries check\+Collision} (\mbox{\hyperlink{classEntity_1_1EntityModel}{Entity\+Model}} a, \mbox{\hyperlink{classEntity_1_1EntityModel}{Entity\+Model}} b)
+\item 
 void \mbox{\hyperlink{classEntity_1_1EntityModel_aa318495311fdb595a100b9cbc5969a82}{notify\+Observers}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_aad77292985c5a4f69983ee6de90fcd72}\label{classEntity_1_1EntityModel_aad77292985c5a4f69983ee6de90fcd72}} 
-{\bfseries Entity\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position)
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}\label{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}} 
+{\bfseries Entity\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&size)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +55,7 @@ void {\bfseries set\+Position} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{
 \doxysubsection{Detailed Description}
 Model class for Entity this class handles all the data of Entity. 
 
-Definition at line 15 of file Entity\+Model.\+h.
+Definition at line 14 of file Entity\+Model.\+h.
 
 
 
@@ -78,15 +81,15 @@ Implements \mbox{\hyperlink{classSubject}{Subject}}.
 
 
 
-Definition at line 9 of file Entity\+Model.\+cpp.
+Definition at line 7 of file Entity\+Model.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{9                                                                             \{}
-\DoxyCodeLine{10     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < observers.size(); ++i) \{}
-\DoxyCodeLine{11         observers[i]-\/>update(pos,size);}
-\DoxyCodeLine{12     \}}
-\DoxyCodeLine{13 \}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < observers.size(); ++i) \{}
+\DoxyCodeLine{10                 observers[i]-\/>update(pos, size);}
+\DoxyCodeLine{11         \}}
+\DoxyCodeLine{12 \}}
 
 \end{DoxyCode}
 

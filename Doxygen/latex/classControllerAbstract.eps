@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 171.428571
+%%BoundingBox: 0 0 500 152.380952
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,13 +19,13 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 2.916667 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 3.281250 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 3 def
-/cols 2 def
+/rows 4 def
+/cols 3 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
 
@@ -174,8 +174,10 @@
 boxfont setfont
 1 boundaspect scale
 (ControllerAbstract) cw
-(EntityController) cw
+(Entity::EntityController) cw
+(Entity::AliveController) cw
 (Entity::BulletController) cw
+(AlienShipController) cw
 (Entity::PlayerShipController) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
@@ -188,15 +190,23 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (ControllerAbstract) 0.500000 2.000000 box
- (EntityController) 0.500000 1.000000 box
- (Entity::BulletController) 0.000000 0.000000 box
+ (ControllerAbstract) 1.000000 3.000000 box
+ (Entity::EntityController) 1.000000 2.000000 box
+ (Entity::AliveController) 0.500000 1.000000 box
+ (Entity::BulletController) 1.500000 1.000000 box
+ (AlienShipController) 0.000000 0.000000 box
  (Entity::PlayerShipController) 1.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 0.500000 1.250000 out
+1 1.000000 2.250000 out
+solid
+0 1.000000 2.750000 in
+solid
+1 1.000000 1.250000 out
+solid
+0.500000 1.500000 2.000000 conn
 solid
 0 0.500000 1.750000 in
 solid
@@ -204,6 +214,8 @@ solid
 solid
 0.000000 1.000000 1.000000 conn
 solid
-0 0.000000 0.750000 in
+0 1.500000 1.750000 in
 dotted
+0 0.000000 0.750000 in
+solid
 0 1.000000 0.750000 in
