@@ -22,6 +22,14 @@ AlienShipModel.h
 ../../EntityView.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
 
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.cpp
+AliveController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h
+../../Utils/ObjectManager.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
+iostream
+-
+
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.h
 ../EntityController.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityController.h
@@ -31,6 +39,16 @@ AliveModel.h
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.h
 ../EntityModel.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp
+PlayerShipController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
+../../../Utils/ObjectManager.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
+PlayerShipView.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
+iostream
+-
 
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h
 ../../EntityController.h
@@ -57,6 +75,16 @@ SFML/Graphics.hpp
 /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h
 ../../EntityView.h
 /home/wannes/Desktop/Space_Invaders/Entity/EntityView.h
+
+/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp
+BulletController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
+../../Utils/ObjectManager.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
+../Alive/AlienShip/AlienShipController.h
+/home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.h
+iostream
+-
 
 /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.h
 ../EntityController.h
@@ -145,6 +173,10 @@ vector
 /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.h
 memory
 -
+
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.cpp
+ObjectManager.h
+/home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
 
 /home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.h
 ../Game.h
