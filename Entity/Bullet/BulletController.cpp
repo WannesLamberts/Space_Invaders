@@ -22,7 +22,8 @@ Entity::BulletController::BulletController(const std::shared_ptr<ModelAbstract>&
 void Entity::BulletController::onCollision(std::shared_ptr<Entity::EntityController> b)
 {
         if( std::dynamic_pointer_cast<Entity::AlienShipController>(b)){
-                Utils::ObjectManager::getInstance().deleteObject(b);
+                Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
+                Utils::ObjectManager::getInstance().addDeletion(b);
                 std::cout<<"HT"<<std::endl;
         }
 }

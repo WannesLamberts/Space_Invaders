@@ -4,4 +4,6 @@
 
 #include "ControllerAbstract.h"
 ControllerAbstract::ControllerAbstract(const std::shared_ptr<ModelAbstract> &m, const std::shared_ptr<ViewAbstract> &v)
-        : m(m), v(v) {}
+        : m(m), v(v) {
+
+}

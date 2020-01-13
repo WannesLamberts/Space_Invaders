@@ -13,17 +13,11 @@ class Game
 {
 public:
         Game();
-
-        void addObject(std::shared_ptr<Utils::Object> o);
         void drawGame();
         void runGame();
-        void setup();
 private:
-        std::vector<std::shared_ptr<Utils::Object>> o;
 
 public:
-        const std::vector<std::shared_ptr<Utils::Object>>& getO() const;
-        void deleteob(int i);
 private:
         std::shared_ptr<sf::RenderWindow> w;
 

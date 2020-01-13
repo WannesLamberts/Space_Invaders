@@ -43,10 +43,10 @@ RM = /home/wannes/Downloads/clion-2019.3.1/bin/cmake/linux/bin/cmake -E remove -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wannes/Desktop/Space_Invaders
+CMAKE_SOURCE_DIR = /home/wannes/CLionProjects/Space_Invaders
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wannes/Desktop/Space_Invaders/cmake-build-debug
+CMAKE_BINARY_DIR = /home/wannes/CLionProjects/Space_Invaders/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Space_Invaders.dir/depend.make
@@ -59,302 +59,302 @@ include CMakeFiles/Space_Invaders.dir/flags.make
 
 CMakeFiles/Space_Invaders.dir/main.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Space_Invaders.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/main.cpp.o -c /home/wannes/Desktop/Space_Invaders/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Space_Invaders.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/main.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/main.cpp
 
 CMakeFiles/Space_Invaders.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/main.cpp > CMakeFiles/Space_Invaders.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/main.cpp > CMakeFiles/Space_Invaders.dir/main.cpp.i
 
 CMakeFiles/Space_Invaders.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/main.cpp -o CMakeFiles/Space_Invaders.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/main.cpp -o CMakeFiles/Space_Invaders.dir/main.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Entity/EntityModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/EntityModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/EntityView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o: ../Utils/Transformation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o -c /home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.cpp
 
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp > CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.cpp > CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Utils/Transformation.cpp -o CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.cpp -o CMakeFiles/Space_Invaders.dir/Utils/Transformation.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.s
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../MVCAbstract/ViewAbstract.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o -c /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.cpp
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.i
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/MVCAbstract/ViewAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.s
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: ../MVCAbstract/ModelAbstract.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o -c /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.cpp
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.i
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/MVCAbstract/ModelAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Observer/Subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o -c /home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.cpp
 
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp > CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.cpp > CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Observer/Subject.cpp -o CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.cpp -o CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o: ../Utils/StopWatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o -c /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Utils/StopWatch.cpp
 
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp > CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Utils/StopWatch.cpp > CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Utils/StopWatch.cpp -o CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Utils/StopWatch.cpp -o CMakeFiles/Space_Invaders.dir/Utils/StopWatch.cpp.s
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o: ../MVCAbstract/ControllerAbstract.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o -c /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ControllerAbstract.cpp
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ControllerAbstract.cpp > CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.i
 
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/MVCAbstract/ControllerAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ControllerAbstract.cpp -o CMakeFiles/Space_Invaders.dir/MVCAbstract/ControllerAbstract.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Alive/PlayerShip/PlayerShipController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o: ../Entity/EntityController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.cpp > CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/EntityController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/EntityController.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o: ../Entity/Alive/AliveModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveModel.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o: ../Entity/Bullet/BulletModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletModel.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o: ../Entity/Bullet/BulletView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletView.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o: ../Entity/Bullet/BulletController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletController.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Bullet/BulletController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Space_Invaders.dir/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Game.cpp.o -c /home/wannes/Desktop/Space_Invaders/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Space_Invaders.dir/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Game.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Game.cpp
 
 CMakeFiles/Space_Invaders.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Game.cpp > CMakeFiles/Space_Invaders.dir/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Game.cpp > CMakeFiles/Space_Invaders.dir/Game.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Game.cpp -o CMakeFiles/Space_Invaders.dir/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Game.cpp -o CMakeFiles/Space_Invaders.dir/Game.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Utils/ObjectManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o -c /home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Utils/ObjectManager.cpp
 
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.cpp > CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Utils/ObjectManager.cpp > CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Utils/ObjectManager.cpp -o CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Utils/ObjectManager.cpp -o CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o: ../Entity/Alive/AlienShip/AlienShipModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o: ../Entity/Alive/AlienShip/AlienShipView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Alive/AlienShip/AlienShipController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o: ../Entity/Alive/AliveController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o -c /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveController.cpp
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i
 
 CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/Desktop/Space_Invaders/Entity/Alive/AliveController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s
 
 # Object files for target Space_Invaders
 Space_Invaders_OBJECTS = \
@@ -410,7 +410,7 @@ Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipCo
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/build.make
 Space_Invaders: CMakeFiles/Space_Invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Space_Invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Space_Invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Invaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -423,6 +423,6 @@ CMakeFiles/Space_Invaders.dir/clean:
 .PHONY : CMakeFiles/Space_Invaders.dir/clean
 
 CMakeFiles/Space_Invaders.dir/depend:
-	cd /home/wannes/Desktop/Space_Invaders/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wannes/Desktop/Space_Invaders /home/wannes/Desktop/Space_Invaders /home/wannes/Desktop/Space_Invaders/cmake-build-debug /home/wannes/Desktop/Space_Invaders/cmake-build-debug /home/wannes/Desktop/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wannes/CLionProjects/Space_Invaders/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wannes/CLionProjects/Space_Invaders /home/wannes/CLionProjects/Space_Invaders /home/wannes/CLionProjects/Space_Invaders/cmake-build-debug /home/wannes/CLionProjects/Space_Invaders/cmake-build-debug /home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Space_Invaders.dir/depend
 

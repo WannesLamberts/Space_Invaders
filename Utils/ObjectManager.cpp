@@ -10,7 +10,7 @@ void Utils::ObjectManager::createPlayerShip(Utils::Vector2D p, Utils::Vector2D s
         m->registerObserver(v);
         std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::PlayerShipController>(m, v);
         std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
-        g->addObject(obj);
+        addObject(obj);
         colliders.push_back(std::dynamic_pointer_cast<Entity::PlayerShipController>(c));
 }
 void Utils::ObjectManager::setup(Game* game) {
@@ -22,10 +22,8 @@ void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, do
         m->registerObserver(v);
         std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::BulletController>(m, v);
         std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
-        g->addObject(obj);
+        addObject(obj);
         colliders.push_back(std::dynamic_pointer_cast<Entity::BulletController>(c));
-
-
 }
 void Utils::ObjectManager::createAlienShip(Utils::Vector2D p, Utils::Vector2D s, int healthpoints,double speed) {
     std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::AlienShipView>(g->getW());
@@ -33,7 +31,7 @@ void Utils::ObjectManager::createAlienShip(Utils::Vector2D p, Utils::Vector2D s,
     m->registerObserver(v);
     std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::AlienShipController>(m, v);
     std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
-    g->addObject(obj);
+    addObject(obj);
         colliders.push_back(std::dynamic_pointer_cast<Entity::AlienShipController>(c));
 
 }
@@ -49,10 +47,26 @@ void Utils::ObjectManager::deleteCollider(std::shared_ptr<Entity::EntityControll
         }
 }
 void Utils::ObjectManager::deleteObject(std::shared_ptr<Entity::EntityController> c) {
-        for (int i = 0; i < g->getO().size(); ++i) {
-                if(g->getO()[i]->c==c){
-                        g->deleteob(i);
+        for (int i = 0; i < o.size(); ++i) {
+                if(o[i]->c==c){
+                        deleteob(i);
                 }
         }
         deleteCollider(c);
+}
+void Utils::ObjectManager::addDeletion(std::shared_ptr<Entity::EntityController> v) {
+        objectsToDelete.push_back(v);
+}
+void Utils::ObjectManager::deleteob(int i) {
+        o.erase(o.begin()+i);
+
+}
+const std::vector<std::shared_ptr<Utils::Object>>& Utils::ObjectManager::getO() const { return o; }
+void Utils::ObjectManager::addObject(std::shared_ptr<Utils::Object> obj) {
+        o.push_back(obj);
+}
+void Utils::ObjectManager::deleteObjects() {
+        for (int i = 0; i < objectsToDelete.size(); ++i) {
+                deleteObject(objectsToDelete[i]);
+        }
 }

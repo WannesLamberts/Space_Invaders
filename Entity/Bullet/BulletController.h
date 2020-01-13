@@ -8,7 +8,7 @@
 #include "BulletModel.h"
 namespace Entity{
 
-class BulletController : public EntityController
+class BulletController : public EntityController,public std::enable_shared_from_this<BulletController>
 {
 public:
         void tick();
