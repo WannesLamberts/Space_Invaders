@@ -4,16 +4,16 @@
 
 #ifndef SPACE_INVADERS_BULLETCONTROLLER_H
 #define SPACE_INVADERS_BULLETCONTROLLER_H
-#include "../EntityController.h"
+#include "../../Collidable/CollidableController.h"
 #include "BulletModel.h"
 namespace Entity{
 
-class BulletController : public EntityController,public std::enable_shared_from_this<BulletController>
+class BulletController : public CollidableController,public std::enable_shared_from_this<BulletController>
 {
 public:
         void tick();
         BulletController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
-         void onCollision(std::shared_ptr<Entity::EntityController> b);
+         void onCollision(std::shared_ptr<Entity::CollidableController> b);
 
 };
 }

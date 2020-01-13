@@ -4,7 +4,7 @@
 
 #ifndef SPACE_INVADERS_BULLETMODEL_H
 #define SPACE_INVADERS_BULLETMODEL_H
-#include "../EntityModel.h"
+#include "../../EntityModel.h"
 namespace Entity{
 class BulletModel :public EntityModel
 {

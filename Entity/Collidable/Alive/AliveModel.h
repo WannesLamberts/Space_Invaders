@@ -4,7 +4,7 @@
 
 #ifndef SPACE_INVADERS_ALIVEMODEL_H
 #define SPACE_INVADERS_ALIVEMODEL_H
-#include "../EntityModel.h"
+#include "../../EntityModel.h"
 
 namespace Entity{
 

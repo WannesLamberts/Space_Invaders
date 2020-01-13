@@ -4,7 +4,7 @@
 
 #ifndef SPACE_INVADERS_BULLETVIEW_H
 #define SPACE_INVADERS_BULLETVIEW_H
-#include "../EntityView.h"
+#include "../../EntityView.h"
 namespace Entity{
 
 

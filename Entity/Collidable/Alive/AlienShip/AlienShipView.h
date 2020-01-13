@@ -4,7 +4,7 @@
 
 #ifndef SPACE_INVADERS_ALIENSHIPVIEW_H
 #define SPACE_INVADERS_ALIENSHIPVIEW_H
-#include "../../EntityView.h"
+#include "../../../EntityView.h"
 namespace Entity {
 
 class AlienShipView : public Entity::EntityView

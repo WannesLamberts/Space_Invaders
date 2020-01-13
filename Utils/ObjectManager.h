@@ -5,9 +5,9 @@
 #ifndef SPACE_INVADERS_OBJECTMANAGER_H
 #define SPACE_INVADERS_OBJECTMANAGER_H
 #include "../Game.h"
-#include "../Entity/Alive/PlayerShip/PlayerShipController.h"
-#include "../Entity/Bullet/BulletController.h"
-#include "../Entity/Alive/AlienShip/AlienShipController.h"
+#include "../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h"
+#include "../Entity/Collidable/Bullet/BulletController.h"
+#include "../Entity/Collidable/Alive/AlienShip/AlienShipController.h"
 namespace Utils{
 
 
@@ -24,21 +24,17 @@ public:
         }
        void setup(Game*);
 private:
-        std::vector<std::shared_ptr<Entity::EntityController>> colliders;
-        std::vector<std::shared_ptr<Entity::EntityController>> objectsToDelete;
+        std::vector<std::shared_ptr<ControllerAbstract>> objectsToDelete;
         std::vector<std::shared_ptr<Utils::Object>> o;
 public:
-        const std::vector<std::shared_ptr<Entity::EntityController>>& getTemp() const;
         void deleteob(int i);
         void addObject(std::shared_ptr<Utils::Object>);
         const std::vector<std::shared_ptr<Utils::Object>>& getO() const;
 
 public:
-        void addDeletion(std::shared_ptr<Entity::EntityController>);
+        void addDeletion(std::shared_ptr<ControllerAbstract>);
         void deleteObjects();
-        const std::vector<std::shared_ptr<Entity::EntityController>>& getColliders() const;
-        void deleteCollider(std::shared_ptr<Entity::EntityController> c);
-        void deleteObject(std::shared_ptr<Entity::EntityController> c);
+        void deleteObject(std::shared_ptr<ControllerAbstract> c);
 private:
         Game* g;
         ObjectManager(){};

@@ -3,7 +3,7 @@
 //
 
 #include "AliveController.h"
-#include "../../Utils/ObjectManager.h"
+#include "../../../Utils/ObjectManager.h"
 #include <iostream>
 
 void Entity::AliveController::shoot() {
@@ -17,6 +17,6 @@ void Entity::AliveController::shoot() {
 }
 Entity::AliveController::AliveController(const std::shared_ptr<ModelAbstract>& m,
                                          const std::shared_ptr<ViewAbstract>& v)
-    : EntityController(m, v)
+    : Entity::CollidableController(m, v)
 {
 }

@@ -4,14 +4,14 @@
 
 #ifndef SPACE_INVADERS_PLAYERSHIPCONTROLLER_H
 #define SPACE_INVADERS_PLAYERSHIPCONTROLLER_H
-#include "../../EntityController.h"
-#include "PlayerShipModel.h"
-#include "PlayerShipView.h"
-#include <SFML/Graphics.hpp>
+#include "../../../EntityController.h"
 #include "../../Bullet/BulletController.h"
 #include "../../Bullet/BulletModel.h"
 #include "../../Bullet/BulletView.h"
 #include "../AliveController.h"
+#include "PlayerShipModel.h"
+#include "PlayerShipView.h"
+#include <SFML/Graphics.hpp>
 namespace Entity{
 
 

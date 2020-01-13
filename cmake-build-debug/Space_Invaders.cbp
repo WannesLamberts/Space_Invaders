@@ -84,70 +84,76 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipController.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipModel.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AlienShip/AlienShipView.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveController.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveController.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveModel.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/AliveModel.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipController.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipModel.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Alive/PlayerShip/PlayerShipView.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletController.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletController.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletModel.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletModel.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletModel.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletModel.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletView.cpp">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletView.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>
-		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Bullet/BulletView.h">
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
 		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.cpp">

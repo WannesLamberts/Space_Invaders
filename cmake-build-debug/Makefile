@@ -123,302 +123,329 @@ Space_Invaders/fast:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/build
 .PHONY : Space_Invaders/fast
 
-Entity/Alive/AlienShip/AlienShipController.o: Entity/Alive/AlienShip/AlienShipController.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipController.o: Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o
 
-.PHONY : Entity/Alive/AlienShip/AlienShipController.o
-
-# target to build an object file
-Entity/Alive/AlienShip/AlienShipController.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.o
-.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.o
-
-Entity/Alive/AlienShip/AlienShipController.i: Entity/Alive/AlienShip/AlienShipController.cpp.i
-
-.PHONY : Entity/Alive/AlienShip/AlienShipController.i
-
-# target to preprocess a source file
-Entity/Alive/AlienShip/AlienShipController.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.i
-.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.i
-
-Entity/Alive/AlienShip/AlienShipController.s: Entity/Alive/AlienShip/AlienShipController.cpp.s
-
-.PHONY : Entity/Alive/AlienShip/AlienShipController.s
-
-# target to generate assembly for a file
-Entity/Alive/AlienShip/AlienShipController.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipController.cpp.s
-.PHONY : Entity/Alive/AlienShip/AlienShipController.cpp.s
-
-Entity/Alive/AlienShip/AlienShipModel.o: Entity/Alive/AlienShip/AlienShipModel.cpp.o
-
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.o
 
 # target to build an object file
-Entity/Alive/AlienShip/AlienShipModel.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.o
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o
 
-Entity/Alive/AlienShip/AlienShipModel.i: Entity/Alive/AlienShip/AlienShipModel.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipController.i: Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.i
 
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.i
 
 # target to preprocess a source file
-Entity/Alive/AlienShip/AlienShipModel.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.i
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.i
 
-Entity/Alive/AlienShip/AlienShipModel.s: Entity/Alive/AlienShip/AlienShipModel.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipController.s: Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.s
 
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.s
 
 # target to generate assembly for a file
-Entity/Alive/AlienShip/AlienShipModel.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipModel.cpp.s
-.PHONY : Entity/Alive/AlienShip/AlienShipModel.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.s
 
-Entity/Alive/AlienShip/AlienShipView.o: Entity/Alive/AlienShip/AlienShipView.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipModel.o: Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.o
 
-.PHONY : Entity/Alive/AlienShip/AlienShipView.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.o
 
 # target to build an object file
-Entity/Alive/AlienShip/AlienShipView.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.o
-.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.o
 
-Entity/Alive/AlienShip/AlienShipView.i: Entity/Alive/AlienShip/AlienShipView.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipModel.i: Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.i
 
-.PHONY : Entity/Alive/AlienShip/AlienShipView.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.i
 
 # target to preprocess a source file
-Entity/Alive/AlienShip/AlienShipView.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.i
-.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.i
 
-Entity/Alive/AlienShip/AlienShipView.s: Entity/Alive/AlienShip/AlienShipView.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipModel.s: Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.s
 
-.PHONY : Entity/Alive/AlienShip/AlienShipView.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.s
 
 # target to generate assembly for a file
-Entity/Alive/AlienShip/AlienShipView.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AlienShip/AlienShipView.cpp.s
-.PHONY : Entity/Alive/AlienShip/AlienShipView.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.s
 
-Entity/Alive/AliveController.o: Entity/Alive/AliveController.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipView.o: Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o
 
-.PHONY : Entity/Alive/AliveController.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.o
 
 # target to build an object file
-Entity/Alive/AliveController.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.o
-.PHONY : Entity/Alive/AliveController.cpp.o
+Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o
 
-Entity/Alive/AliveController.i: Entity/Alive/AliveController.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipView.i: Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.i
 
-.PHONY : Entity/Alive/AliveController.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.i
 
 # target to preprocess a source file
-Entity/Alive/AliveController.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.i
-.PHONY : Entity/Alive/AliveController.cpp.i
+Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.i
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.i
 
-Entity/Alive/AliveController.s: Entity/Alive/AliveController.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipView.s: Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s
 
-.PHONY : Entity/Alive/AliveController.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.s
 
 # target to generate assembly for a file
-Entity/Alive/AliveController.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveController.cpp.s
-.PHONY : Entity/Alive/AliveController.cpp.s
+Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s
+.PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s
 
-Entity/Alive/AliveModel.o: Entity/Alive/AliveModel.cpp.o
+Entity/Collidable/Alive/AliveController.o: Entity/Collidable/Alive/AliveController.cpp.o
 
-.PHONY : Entity/Alive/AliveModel.o
+.PHONY : Entity/Collidable/Alive/AliveController.o
 
 # target to build an object file
-Entity/Alive/AliveModel.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.o
-.PHONY : Entity/Alive/AliveModel.cpp.o
+Entity/Collidable/Alive/AliveController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o
+.PHONY : Entity/Collidable/Alive/AliveController.cpp.o
 
-Entity/Alive/AliveModel.i: Entity/Alive/AliveModel.cpp.i
+Entity/Collidable/Alive/AliveController.i: Entity/Collidable/Alive/AliveController.cpp.i
 
-.PHONY : Entity/Alive/AliveModel.i
+.PHONY : Entity/Collidable/Alive/AliveController.i
 
 # target to preprocess a source file
-Entity/Alive/AliveModel.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.i
-.PHONY : Entity/Alive/AliveModel.cpp.i
+Entity/Collidable/Alive/AliveController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.i
+.PHONY : Entity/Collidable/Alive/AliveController.cpp.i
 
-Entity/Alive/AliveModel.s: Entity/Alive/AliveModel.cpp.s
+Entity/Collidable/Alive/AliveController.s: Entity/Collidable/Alive/AliveController.cpp.s
 
-.PHONY : Entity/Alive/AliveModel.s
+.PHONY : Entity/Collidable/Alive/AliveController.s
 
 # target to generate assembly for a file
-Entity/Alive/AliveModel.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/AliveModel.cpp.s
-.PHONY : Entity/Alive/AliveModel.cpp.s
+Entity/Collidable/Alive/AliveController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.s
+.PHONY : Entity/Collidable/Alive/AliveController.cpp.s
 
-Entity/Alive/PlayerShip/PlayerShipController.o: Entity/Alive/PlayerShip/PlayerShipController.cpp.o
+Entity/Collidable/Alive/AliveModel.o: Entity/Collidable/Alive/AliveModel.cpp.o
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.o
+.PHONY : Entity/Collidable/Alive/AliveModel.o
 
 # target to build an object file
-Entity/Alive/PlayerShip/PlayerShipController.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.o
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.cpp.o
+Entity/Collidable/Alive/AliveModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveModel.cpp.o
+.PHONY : Entity/Collidable/Alive/AliveModel.cpp.o
 
-Entity/Alive/PlayerShip/PlayerShipController.i: Entity/Alive/PlayerShip/PlayerShipController.cpp.i
+Entity/Collidable/Alive/AliveModel.i: Entity/Collidable/Alive/AliveModel.cpp.i
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.i
+.PHONY : Entity/Collidable/Alive/AliveModel.i
 
 # target to preprocess a source file
-Entity/Alive/PlayerShip/PlayerShipController.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.i
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.cpp.i
+Entity/Collidable/Alive/AliveModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveModel.cpp.i
+.PHONY : Entity/Collidable/Alive/AliveModel.cpp.i
 
-Entity/Alive/PlayerShip/PlayerShipController.s: Entity/Alive/PlayerShip/PlayerShipController.cpp.s
+Entity/Collidable/Alive/AliveModel.s: Entity/Collidable/Alive/AliveModel.cpp.s
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.s
+.PHONY : Entity/Collidable/Alive/AliveModel.s
 
 # target to generate assembly for a file
-Entity/Alive/PlayerShip/PlayerShipController.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipController.cpp.s
-.PHONY : Entity/Alive/PlayerShip/PlayerShipController.cpp.s
+Entity/Collidable/Alive/AliveModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveModel.cpp.s
+.PHONY : Entity/Collidable/Alive/AliveModel.cpp.s
 
-Entity/Alive/PlayerShip/PlayerShipModel.o: Entity/Alive/PlayerShip/PlayerShipModel.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.o: Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.o
 
 # target to build an object file
-Entity/Alive/PlayerShip/PlayerShipModel.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.o
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o
 
-Entity/Alive/PlayerShip/PlayerShipModel.i: Entity/Alive/PlayerShip/PlayerShipModel.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.i: Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.i
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.i
 
 # target to preprocess a source file
-Entity/Alive/PlayerShip/PlayerShipModel.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.i
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.i
 
-Entity/Alive/PlayerShip/PlayerShipModel.s: Entity/Alive/PlayerShip/PlayerShipModel.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.s: Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.s
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.s
 
 # target to generate assembly for a file
-Entity/Alive/PlayerShip/PlayerShipModel.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipModel.cpp.s
-.PHONY : Entity/Alive/PlayerShip/PlayerShipModel.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.s
 
-Entity/Alive/PlayerShip/PlayerShipView.o: Entity/Alive/PlayerShip/PlayerShipView.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.o: Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.o
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.o
 
 # target to build an object file
-Entity/Alive/PlayerShip/PlayerShipView.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.o
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.o
 
-Entity/Alive/PlayerShip/PlayerShipView.i: Entity/Alive/PlayerShip/PlayerShipView.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.i: Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.i
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.i
 
 # target to preprocess a source file
-Entity/Alive/PlayerShip/PlayerShipView.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.i
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.i
 
-Entity/Alive/PlayerShip/PlayerShipView.s: Entity/Alive/PlayerShip/PlayerShipView.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.s: Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.s
 
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.s
 
 # target to generate assembly for a file
-Entity/Alive/PlayerShip/PlayerShipView.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Alive/PlayerShip/PlayerShipView.cpp.s
-.PHONY : Entity/Alive/PlayerShip/PlayerShipView.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp.s
 
-Entity/Bullet/BulletController.o: Entity/Bullet/BulletController.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.o: Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o
 
-.PHONY : Entity/Bullet/BulletController.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.o
 
 # target to build an object file
-Entity/Bullet/BulletController.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.o
-.PHONY : Entity/Bullet/BulletController.cpp.o
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o
 
-Entity/Bullet/BulletController.i: Entity/Bullet/BulletController.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.i: Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.i
 
-.PHONY : Entity/Bullet/BulletController.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.i
 
 # target to preprocess a source file
-Entity/Bullet/BulletController.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.i
-.PHONY : Entity/Bullet/BulletController.cpp.i
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.i
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.i
 
-Entity/Bullet/BulletController.s: Entity/Bullet/BulletController.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.s: Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.s
 
-.PHONY : Entity/Bullet/BulletController.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.s
 
 # target to generate assembly for a file
-Entity/Bullet/BulletController.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletController.cpp.s
-.PHONY : Entity/Bullet/BulletController.cpp.s
+Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.s
+.PHONY : Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.s
 
-Entity/Bullet/BulletModel.o: Entity/Bullet/BulletModel.cpp.o
+Entity/Collidable/Bullet/BulletController.o: Entity/Collidable/Bullet/BulletController.cpp.o
 
-.PHONY : Entity/Bullet/BulletModel.o
+.PHONY : Entity/Collidable/Bullet/BulletController.o
 
 # target to build an object file
-Entity/Bullet/BulletModel.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.o
-.PHONY : Entity/Bullet/BulletModel.cpp.o
+Entity/Collidable/Bullet/BulletController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o
+.PHONY : Entity/Collidable/Bullet/BulletController.cpp.o
 
-Entity/Bullet/BulletModel.i: Entity/Bullet/BulletModel.cpp.i
+Entity/Collidable/Bullet/BulletController.i: Entity/Collidable/Bullet/BulletController.cpp.i
 
-.PHONY : Entity/Bullet/BulletModel.i
+.PHONY : Entity/Collidable/Bullet/BulletController.i
 
 # target to preprocess a source file
-Entity/Bullet/BulletModel.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.i
-.PHONY : Entity/Bullet/BulletModel.cpp.i
+Entity/Collidable/Bullet/BulletController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.i
+.PHONY : Entity/Collidable/Bullet/BulletController.cpp.i
 
-Entity/Bullet/BulletModel.s: Entity/Bullet/BulletModel.cpp.s
+Entity/Collidable/Bullet/BulletController.s: Entity/Collidable/Bullet/BulletController.cpp.s
 
-.PHONY : Entity/Bullet/BulletModel.s
+.PHONY : Entity/Collidable/Bullet/BulletController.s
 
 # target to generate assembly for a file
-Entity/Bullet/BulletModel.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletModel.cpp.s
-.PHONY : Entity/Bullet/BulletModel.cpp.s
+Entity/Collidable/Bullet/BulletController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.s
+.PHONY : Entity/Collidable/Bullet/BulletController.cpp.s
 
-Entity/Bullet/BulletView.o: Entity/Bullet/BulletView.cpp.o
+Entity/Collidable/Bullet/BulletModel.o: Entity/Collidable/Bullet/BulletModel.cpp.o
 
-.PHONY : Entity/Bullet/BulletView.o
+.PHONY : Entity/Collidable/Bullet/BulletModel.o
 
 # target to build an object file
-Entity/Bullet/BulletView.cpp.o:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.o
-.PHONY : Entity/Bullet/BulletView.cpp.o
+Entity/Collidable/Bullet/BulletModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o
+.PHONY : Entity/Collidable/Bullet/BulletModel.cpp.o
 
-Entity/Bullet/BulletView.i: Entity/Bullet/BulletView.cpp.i
+Entity/Collidable/Bullet/BulletModel.i: Entity/Collidable/Bullet/BulletModel.cpp.i
 
-.PHONY : Entity/Bullet/BulletView.i
+.PHONY : Entity/Collidable/Bullet/BulletModel.i
 
 # target to preprocess a source file
-Entity/Bullet/BulletView.cpp.i:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.i
-.PHONY : Entity/Bullet/BulletView.cpp.i
+Entity/Collidable/Bullet/BulletModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.i
+.PHONY : Entity/Collidable/Bullet/BulletModel.cpp.i
 
-Entity/Bullet/BulletView.s: Entity/Bullet/BulletView.cpp.s
+Entity/Collidable/Bullet/BulletModel.s: Entity/Collidable/Bullet/BulletModel.cpp.s
 
-.PHONY : Entity/Bullet/BulletView.s
+.PHONY : Entity/Collidable/Bullet/BulletModel.s
 
 # target to generate assembly for a file
-Entity/Bullet/BulletView.cpp.s:
-	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Bullet/BulletView.cpp.s
-.PHONY : Entity/Bullet/BulletView.cpp.s
+Entity/Collidable/Bullet/BulletModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.s
+.PHONY : Entity/Collidable/Bullet/BulletModel.cpp.s
+
+Entity/Collidable/Bullet/BulletView.o: Entity/Collidable/Bullet/BulletView.cpp.o
+
+.PHONY : Entity/Collidable/Bullet/BulletView.o
+
+# target to build an object file
+Entity/Collidable/Bullet/BulletView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o
+.PHONY : Entity/Collidable/Bullet/BulletView.cpp.o
+
+Entity/Collidable/Bullet/BulletView.i: Entity/Collidable/Bullet/BulletView.cpp.i
+
+.PHONY : Entity/Collidable/Bullet/BulletView.i
+
+# target to preprocess a source file
+Entity/Collidable/Bullet/BulletView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.i
+.PHONY : Entity/Collidable/Bullet/BulletView.cpp.i
+
+Entity/Collidable/Bullet/BulletView.s: Entity/Collidable/Bullet/BulletView.cpp.s
+
+.PHONY : Entity/Collidable/Bullet/BulletView.s
+
+# target to generate assembly for a file
+Entity/Collidable/Bullet/BulletView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.s
+.PHONY : Entity/Collidable/Bullet/BulletView.cpp.s
+
+Entity/Collidable/CollidableController.o: Entity/Collidable/CollidableController.cpp.o
+
+.PHONY : Entity/Collidable/CollidableController.o
+
+# target to build an object file
+Entity/Collidable/CollidableController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.o
+.PHONY : Entity/Collidable/CollidableController.cpp.o
+
+Entity/Collidable/CollidableController.i: Entity/Collidable/CollidableController.cpp.i
+
+.PHONY : Entity/Collidable/CollidableController.i
+
+# target to preprocess a source file
+Entity/Collidable/CollidableController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.i
+.PHONY : Entity/Collidable/CollidableController.cpp.i
+
+Entity/Collidable/CollidableController.s: Entity/Collidable/CollidableController.cpp.s
+
+.PHONY : Entity/Collidable/CollidableController.s
+
+# target to generate assembly for a file
+Entity/Collidable/CollidableController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.s
+.PHONY : Entity/Collidable/CollidableController.cpp.s
 
 Entity/EntityController.o: Entity/EntityController.cpp.o
 
@@ -753,39 +780,42 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Space_Invaders"
 	@echo "... edit_cache"
-	@echo "... Entity/Alive/AlienShip/AlienShipController.o"
-	@echo "... Entity/Alive/AlienShip/AlienShipController.i"
-	@echo "... Entity/Alive/AlienShip/AlienShipController.s"
-	@echo "... Entity/Alive/AlienShip/AlienShipModel.o"
-	@echo "... Entity/Alive/AlienShip/AlienShipModel.i"
-	@echo "... Entity/Alive/AlienShip/AlienShipModel.s"
-	@echo "... Entity/Alive/AlienShip/AlienShipView.o"
-	@echo "... Entity/Alive/AlienShip/AlienShipView.i"
-	@echo "... Entity/Alive/AlienShip/AlienShipView.s"
-	@echo "... Entity/Alive/AliveController.o"
-	@echo "... Entity/Alive/AliveController.i"
-	@echo "... Entity/Alive/AliveController.s"
-	@echo "... Entity/Alive/AliveModel.o"
-	@echo "... Entity/Alive/AliveModel.i"
-	@echo "... Entity/Alive/AliveModel.s"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipController.o"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipController.i"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipController.s"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipModel.o"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipModel.i"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipModel.s"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipView.o"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipView.i"
-	@echo "... Entity/Alive/PlayerShip/PlayerShipView.s"
-	@echo "... Entity/Bullet/BulletController.o"
-	@echo "... Entity/Bullet/BulletController.i"
-	@echo "... Entity/Bullet/BulletController.s"
-	@echo "... Entity/Bullet/BulletModel.o"
-	@echo "... Entity/Bullet/BulletModel.i"
-	@echo "... Entity/Bullet/BulletModel.s"
-	@echo "... Entity/Bullet/BulletView.o"
-	@echo "... Entity/Bullet/BulletView.i"
-	@echo "... Entity/Bullet/BulletView.s"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipController.o"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipController.i"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipController.s"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipModel.o"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipModel.i"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipModel.s"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.o"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.i"
+	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.s"
+	@echo "... Entity/Collidable/Alive/AliveController.o"
+	@echo "... Entity/Collidable/Alive/AliveController.i"
+	@echo "... Entity/Collidable/Alive/AliveController.s"
+	@echo "... Entity/Collidable/Alive/AliveModel.o"
+	@echo "... Entity/Collidable/Alive/AliveModel.i"
+	@echo "... Entity/Collidable/Alive/AliveModel.s"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipController.o"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipController.i"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipController.s"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipModel.o"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipModel.i"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipModel.s"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipView.o"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipView.i"
+	@echo "... Entity/Collidable/Alive/PlayerShip/PlayerShipView.s"
+	@echo "... Entity/Collidable/Bullet/BulletController.o"
+	@echo "... Entity/Collidable/Bullet/BulletController.i"
+	@echo "... Entity/Collidable/Bullet/BulletController.s"
+	@echo "... Entity/Collidable/Bullet/BulletModel.o"
+	@echo "... Entity/Collidable/Bullet/BulletModel.i"
+	@echo "... Entity/Collidable/Bullet/BulletModel.s"
+	@echo "... Entity/Collidable/Bullet/BulletView.o"
+	@echo "... Entity/Collidable/Bullet/BulletView.i"
+	@echo "... Entity/Collidable/Bullet/BulletView.s"
+	@echo "... Entity/Collidable/CollidableController.o"
+	@echo "... Entity/Collidable/CollidableController.i"
+	@echo "... Entity/Collidable/CollidableController.s"
 	@echo "... Entity/EntityController.o"
 	@echo "... Entity/EntityController.i"
 	@echo "... Entity/EntityController.s"
