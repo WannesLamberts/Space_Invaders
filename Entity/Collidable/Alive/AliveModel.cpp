@@ -9,7 +9,10 @@ void Entity::AliveModel::moveLeft()
         setPosition(Utils::Vector2D(position.x - speed, position.y));
 }
 
-void Entity::AliveModel::moveRight() { setPosition(Utils::Vector2D(position.x + speed, position.y)); }
+void Entity::AliveModel::moveRight()
+{
+        setPosition(Utils::Vector2D(position.x + speed, position.y));
+}
 
 int Entity::AliveModel::getHealthpoints() const { return healthpoints; }
 void Entity::AliveModel::setHealthpoints(int healthpoints) { AliveModel::healthpoints = healthpoints; }
@@ -19,5 +22,5 @@ Entity::AliveModel::AliveModel(const Utils::Vector2D& position, const Utils::Vec
                                double speed)
     : EntityModel(position, size), healthpoints(healthpoints), speed(speed)
 {
-        fireCooldown=0;
+        fireCooldown = 0;
 }

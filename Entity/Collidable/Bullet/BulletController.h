@@ -14,7 +14,6 @@ public:
         void tick();
         BulletController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
          void onCollision(std::shared_ptr<Entity::CollidableController> b);
-
 };
 }
 

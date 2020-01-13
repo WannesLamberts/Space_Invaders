@@ -12,7 +12,7 @@ private:
         double speed;
 
 public:
-        void travel();
+        bool travel();
         BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed);
 };
 }

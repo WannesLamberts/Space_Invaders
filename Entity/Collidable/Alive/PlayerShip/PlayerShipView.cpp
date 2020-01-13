@@ -7,7 +7,7 @@
 #include <iostream>
 void Entity::PlayerShipView::generateShape()
 {
-        texture.loadFromFile("../Sprites/player.png");
+        texture.loadFromFile("../Sprites/red.jpg");
         shape.setTexture(texture);
 }
 

@@ -21,12 +21,14 @@ protected:
 public:
         const Utils::Vector2D& getSize() const;
         void setSize(const Utils::Vector2D& size);
+        bool validPosition(Utils::Vector2D);
+
 
 public:
         const Utils::Vector2D& getPosition() const;
 protected:
 
-        void setPosition(const Utils::Vector2D& position);
+        bool setPosition(const Utils::Vector2D& position);
 
 public:
         /**
