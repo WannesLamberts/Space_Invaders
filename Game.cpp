@@ -11,7 +11,7 @@ const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 Game::Game() {
         Utils::ObjectManager::getInstance().setup(this);
         w=std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
-        Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,1),100,0.1);
+        Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,1),100,0.05);
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-2),Utils::Vector2D(1,1),100,0.1);
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-1),Utils::Vector2D(1,1),100,0.1);
 }
