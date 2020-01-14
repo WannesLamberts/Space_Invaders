@@ -13,9 +13,12 @@ Game::Game() {
         Utils::ObjectManager::getInstance().setup(this);
         w=std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
         Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,0.5),3,0.05);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3.5,-2.5),Utils::Vector2D(1,1),100,0.05);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-2.5),Utils::Vector2D(1,1),100,0.05);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3.5,-2.5),Utils::Vector2D(1,1),100,0.05);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
 }
 void Game::drawGame() {
         for (int i = 0; i <Utils::ObjectManager::getInstance().getO().size() ; ++i) {

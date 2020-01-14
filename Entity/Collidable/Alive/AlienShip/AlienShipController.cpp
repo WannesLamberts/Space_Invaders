@@ -20,14 +20,24 @@ void Entity::AlienShipController::tick()
         }
         if (std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->isRight()) {
                 if (!std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->moveRight()) {
-                        std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->setRight(false);
-                        std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->moveDown();
+                        for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
+                                if(std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)){
+                                        std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)->setRight(false);
+                                        std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)->moveDown();
+                                }
+
+                        }
                 }
         } else {
                 if (!std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->moveLeft()) {
-                        std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->setRight(true);
-                        std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->moveDown();
 
+                        for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
+                                if(std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)){
+                                        std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)->setRight(true);
+                                        std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)->moveDown();
+                                }
+
+                        }
                 }
         }
 }

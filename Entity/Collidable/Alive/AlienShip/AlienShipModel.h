@@ -11,6 +11,7 @@ class AlienShipModel : public Entity::AliveModel
 {
         bool right;
 
+
 public:
         bool isRight() const;
         void setRight(bool right);
