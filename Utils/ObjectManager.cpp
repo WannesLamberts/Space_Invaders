@@ -15,9 +15,9 @@ void Utils::ObjectManager::createPlayerShip(Utils::Vector2D p, Utils::Vector2D s
 void Utils::ObjectManager::setup(Game* game) {
         g=game;
 }
-void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, double speed) {
+void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, double speed, bool friendly) {
         std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::BulletView>(g->getW());
-        std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::BulletModel>(p, s, speed);
+        std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::BulletModel>(p, s, speed,friendly);
         m->registerObserver(v);
         std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::BulletController>(m, v);
         std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
@@ -25,7 +25,7 @@ void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, do
 }
 void Utils::ObjectManager::createAlienShip(Utils::Vector2D p, Utils::Vector2D s, int healthpoints,double speed) {
     std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::AlienShipView>(g->getW());
-    std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::AliveModel>(p, s, healthpoints,speed);
+    std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::AlienShipModel>(p, s, healthpoints,speed);
     m->registerObserver(v);
     std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::AlienShipController>(m, v);
     std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);

@@ -16,7 +16,7 @@ class ObjectManager
 public:
         void createPlayerShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints,double speed);
         void createAlienShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints, double speed);
-        void createBullet(Utils::Vector2D p,Utils::Vector2D s,double speed);
+        void createBullet(Utils::Vector2D p,Utils::Vector2D s,double speed, bool friendly);
         static ObjectManager& getInstance(){
                 static ObjectManager instance; // Guaranteed to be destroyed.
                 // Instantiated on first use.

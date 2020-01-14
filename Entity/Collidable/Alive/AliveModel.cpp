@@ -4,14 +4,14 @@
 // Created by wannes on 20.12.19.
 //
 
-void Entity::AliveModel::moveLeft()
+bool Entity::AliveModel::moveLeft()
 {
-        setPosition(Utils::Vector2D(position.x - speed, position.y));
+        return setPosition(Utils::Vector2D(position.x - speed, position.y));
 }
 
-void Entity::AliveModel::moveRight()
+bool Entity::AliveModel::moveRight()
 {
-        setPosition(Utils::Vector2D(position.x + speed, position.y));
+        return setPosition(Utils::Vector2D(position.x + speed, position.y));
 }
 
 int Entity::AliveModel::getHealthpoints() const { return healthpoints; }

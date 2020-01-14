@@ -6,6 +6,14 @@
 #include "../../../../Utils/ObjectManager.h"
 #include "PlayerShipView.h"
 #include <iostream>
+void Entity::PlayerShipController::shoot() {
+        if (std::dynamic_pointer_cast<Entity::AliveModel>(m)->getFireCooldown() == 0) {
+                std::dynamic_pointer_cast<Entity::AliveModel>(m)->setFireCooldown(10);
+                std::shared_ptr<Entity::AliveModel> mod = std::dynamic_pointer_cast<Entity::AliveModel>(m);
+                Utils::ObjectManager::getInstance().createBullet(
+                    Utils::Vector2D(mod->getPosition().x, mod->getPosition().y), Utils::Vector2D(0.2, 0.2), 0.1,true);
+        }
+}
 void Entity::PlayerShipController::readInput()
 {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
@@ -23,8 +31,10 @@ Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAb
     : Entity::AliveController(m, v)
 {
 }
+
 void Entity::PlayerShipController::tick()
 {
+
         readInput();
         if (std::dynamic_pointer_cast<PlayerShipModel>(m)->getFireCooldown() > 0) {
                 std::dynamic_pointer_cast<PlayerShipModel>(m)->setFireCooldown(

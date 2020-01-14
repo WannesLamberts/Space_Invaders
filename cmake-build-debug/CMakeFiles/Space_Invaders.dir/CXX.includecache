@@ -13,6 +13,10 @@ AlienShipView.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
 AlienShipModel.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
+stdlib.h
+-
+time.h
+-
 
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 ../AliveModel.h
@@ -113,6 +117,10 @@ memory
 -
 Utils/Object.h
 /home/wannes/CLionProjects/Space_Invaders/Utils/Object.h
+stdlib.h
+-
+time.h
+-
 
 /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ControllerAbstract.h
 memory

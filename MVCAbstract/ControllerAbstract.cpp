@@ -7,3 +7,5 @@ ControllerAbstract::ControllerAbstract(const std::shared_ptr<ModelAbstract> &m, 
         : m(m), v(v) {
 
 }
+const std::shared_ptr<ModelAbstract>& ControllerAbstract::getM() const { return m; }
+const std::shared_ptr<ViewAbstract>& ControllerAbstract::getV() const { return v; }

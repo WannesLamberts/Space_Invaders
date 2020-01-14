@@ -10,10 +10,12 @@ class BulletModel :public EntityModel
 {
 private:
         double speed;
+        bool friendly;
 
 public:
         bool travel();
-        BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed);
+        BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed, bool friendly);
+        bool isFriendly() const;
 };
 }
 #endif // SPACE_INVADERS_BULLETMODEL_H

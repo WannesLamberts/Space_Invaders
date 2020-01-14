@@ -26,8 +26,8 @@ public:
         void setFireCooldown(int fireCooldown);
 
 public:
-        void moveLeft();
-        void moveRight();
+        bool moveLeft();
+        bool moveRight();
 };
 }
 #endif // SPACE_INVADERS_ALIVEMODEL_H

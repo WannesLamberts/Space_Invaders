@@ -13,7 +13,7 @@ class AliveController : public Entity::CollidableController
 {
 public:
         AliveController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
-        void shoot();
+
 };
 }
 #endif // SPACE_INVADERS_ALIVECONTROLLER_H

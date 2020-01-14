@@ -8,6 +8,8 @@
 #include "MVCAbstract/ControllerAbstract.h"
 #include <memory>
 #include "Utils/Object.h"
+#include <stdlib.h>
+#include <time.h>
 
 class Game
 {

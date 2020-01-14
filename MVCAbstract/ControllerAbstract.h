@@ -15,7 +15,12 @@ public:
        virtual void tick()=0;
 protected:
     std::shared_ptr<ModelAbstract> m;
-    std::shared_ptr<ViewAbstract> v;
+
+public:
+        const std::shared_ptr<ModelAbstract>& getM() const;
+        const std::shared_ptr<ViewAbstract>& getV() const;
+protected:
+        std::shared_ptr<ViewAbstract> v;
 };
 
 #endif // SPACE_INVADERS_CONTROLLERABSTRACT_H
