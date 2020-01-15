@@ -15,7 +15,7 @@ protected:
 public:
  void registerObserver(std::shared_ptr<Observer> o);
  void removeObserver(std::shared_ptr<Observer> o);
- virtual void notifyObservers(Utils::Vector2D,Utils::Vector2D)=0;
+ virtual void notifyObservers()=0;
 };
 
 

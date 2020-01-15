@@ -5,10 +5,10 @@
 #include "EntityModel.h"
 #include <iostream>
 
-void Entity::EntityModel::notifyObservers(Utils::Vector2D pos, Utils::Vector2D size)
+void Entity::EntityModel::notifyObservers()
 {
         for (int i = 0; i < observers.size(); ++i) {
-                observers[i]->update(pos, size);
+                observers[i]->update(position, size);
         }
 }
 
@@ -17,7 +17,7 @@ bool Entity::EntityModel::setPosition(const Utils::Vector2D& position)
 {
         if (validPosition(position)) {
                 EntityModel::position = position;
-                notifyObservers(position, size);
+                notifyObservers();
                 return true;
         }
         return false;

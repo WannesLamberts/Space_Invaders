@@ -30,7 +30,6 @@ void Entity::AlienShipController::tick()
                 }
         } else {
                 if (!std::dynamic_pointer_cast<Entity::AlienShipModel>(m)->moveLeft()) {
-
                         for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
                                 if(std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)){
                                         std::dynamic_pointer_cast<Entity::AlienShipModel>(Utils::ObjectManager::getInstance().getO()[i]->m)->setRight(true);

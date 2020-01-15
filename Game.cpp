@@ -19,6 +19,7 @@ Game::Game() {
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
+        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,0),Utils::Vector2D(0.5,0.5),100,0.01);
 }
 void Game::drawGame() {
         for (int i = 0; i <Utils::ObjectManager::getInstance().getO().size() ; ++i) {
