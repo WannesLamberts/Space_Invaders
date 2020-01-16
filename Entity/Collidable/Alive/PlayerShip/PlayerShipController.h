@@ -15,7 +15,7 @@
 namespace Entity{
 
 
-class PlayerShipController: public Entity::AliveController
+class PlayerShipController: public Entity::AliveController,public std::enable_shared_from_this<PlayerShipController>
 {
 public:
         void readInput();

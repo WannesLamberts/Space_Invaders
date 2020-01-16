@@ -10,8 +10,12 @@ namespace Entity {
 class AlienShipView : public Entity::EntityView
 {
 public:
-        AlienShipView(const std::__shared_ptr<sf::RenderWindow>& w);
+        AlienShipView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model);
         void generateShape();
+        /**
+     * \brief The texture that will be drawn on te sf::sprite shape
+     */
+        sf::Texture texture;
 };
 }
 #endif // SPACE_INVADERS_ALIENSHIPVIEW_H

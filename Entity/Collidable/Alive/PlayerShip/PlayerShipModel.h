@@ -12,9 +12,12 @@ namespace Entity {
  */
 class PlayerShipModel : public AliveModel
 {
+        int score;
 
 public:
         PlayerShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
+        void setScore(int score);
+        int getScore() const;
 
 public:
 };

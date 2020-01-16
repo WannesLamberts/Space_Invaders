@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveModel.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o"

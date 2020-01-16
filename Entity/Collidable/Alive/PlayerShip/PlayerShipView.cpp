@@ -7,10 +7,11 @@
 #include <iostream>
 void Entity::PlayerShipView::generateShape()
 {
-        texture.loadFromFile("../Sprites/red.jpg");
-        shape.setTexture(texture);
+        shape=std::make_shared<sf::Sprite>();
+        texture.loadFromFile("../Sprites/player.png");
+        std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }
 
-Entity::PlayerShipView::PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w) : EntityView(w) {
+Entity::PlayerShipView::PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
         generateShape();
 }

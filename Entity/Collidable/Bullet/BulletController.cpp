@@ -32,6 +32,9 @@ void Entity::BulletController::onCollision(std::shared_ptr<Entity::CollidableCon
 {
         if (std::dynamic_pointer_cast<Entity::AlienShipController>(b) &&
             std::dynamic_pointer_cast<Entity::BulletModel>(m)->isFriendly()) {
+                std::shared_ptr<Entity::BulletModel> model = std::dynamic_pointer_cast<Entity::BulletModel>(m);
+                std::shared_ptr<Entity::PlayerShipController> play=   std::dynamic_pointer_cast<Entity::PlayerShipController>(model->getOwner());
+                std::dynamic_pointer_cast<Entity::PlayerShipModel>(play->getM())->setScore(std::dynamic_pointer_cast<Entity::PlayerShipModel>(play->getM())->getScore()+50);
                 Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
                 Utils::ObjectManager::getInstance().addDeletion(b);
         } else if (std::dynamic_pointer_cast<Entity::PlayerShipController>(b) &&

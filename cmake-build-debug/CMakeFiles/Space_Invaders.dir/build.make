@@ -369,6 +369,32 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.s
 
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s
+
 # Object files for target Space_Invaders
 Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/main.cpp.o" \
@@ -394,7 +420,9 @@ Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o" \
-"CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.o"
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o"
 
 # External object files for target Space_Invaders
 Space_Invaders_EXTERNAL_OBJECTS =
@@ -423,9 +451,11 @@ Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/build.make
 Space_Invaders: CMakeFiles/Space_Invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Space_Invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/CLionProjects/Space_Invaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable Space_Invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Invaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,7 +13,7 @@
 namespace Entity{
 
 
-class AlienShipController : public Entity::AliveController
+class AlienShipController : public Entity::AliveController,public std::enable_shared_from_this<AliveController>
 {
 public:
         AlienShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);

@@ -8,7 +8,7 @@
 void Entity::EntityModel::notifyObservers()
 {
         for (int i = 0; i < observers.size(); ++i) {
-                observers[i]->update(position, size);
+                observers[i]->update();
         }
 }
 

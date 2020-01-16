@@ -17,6 +17,7 @@ public:
         void setRight(bool right);
         bool moveDown();
 
+
 public:
         AlienShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
 };

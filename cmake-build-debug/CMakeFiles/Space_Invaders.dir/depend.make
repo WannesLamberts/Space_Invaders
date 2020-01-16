@@ -5,6 +5,8 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipControl
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -39,15 +41,46 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.c
 
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.cpp
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o: ../Utils/Vector2D.h
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.cpp
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o: ../Utils/Vector2D.h
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../MVCAbstract/ViewAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Observer/Subject.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Utils/Transformation.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AliveController.cpp
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
@@ -83,6 +116,8 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveModel.cpp.o: ../Utils
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp
@@ -118,15 +153,20 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipModel
 
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -154,16 +194,21 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o: .
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Entity/Collidable/Bullet/BulletModel.cpp
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Entity/Collidable/Bullet/BulletModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Entity/EntityModel.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../MVCAbstract/ControllerAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../MVCAbstract/ModelAbstract.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Entity/Collidable/Bullet/BulletView.cpp
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Entity/Collidable/Bullet/BulletView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o: ../Utils/Vector2D.h
 
@@ -199,16 +244,21 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Observer/Observer.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o: ../Utils/Vector2D.h
 
+CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityModel.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityView.cpp
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Entity/EntityView.h
+CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Utils/Transformation.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -249,9 +299,11 @@ CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: ../Observer/Obser
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o: ../Utils/Vector2D.h
 
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../MVCAbstract/ModelAbstract.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../MVCAbstract/ViewAbstract.cpp
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../MVCAbstract/ViewAbstract.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../Observer/Observer.h
+CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../Observer/Subject.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o: ../Utils/Vector2D.h
 
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Observer/Observer.h
@@ -262,6 +314,8 @@ CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o: ../Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipController.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipModel.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AlienShip/AlienShipView.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AlienShip/LifeView.h
+CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AliveController.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/AliveModel.h
 CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o: ../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h

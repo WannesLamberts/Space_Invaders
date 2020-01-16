@@ -14,13 +14,17 @@ class PlayerShipView : public EntityView
 {
 
 public:
-    PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w);
+    PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
 
 
         /**
          * \brief basic contructor for playership sets the shape to the standard square
          */
         void generateShape();
+        /**
+     * \brief The texture that will be drawn on te sf::sprite shape
+     */
+        sf::Texture texture;
 };
 }
 

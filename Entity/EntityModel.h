@@ -6,7 +6,6 @@
 #define SPACE_INVADERS_ENTITYMODEL_H
 
 #include "../MVCAbstract/ModelAbstract.h"
-
 namespace Entity {
 /**
  * \brief Model class for Entity this class handles all the data of Entity

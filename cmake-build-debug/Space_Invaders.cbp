@@ -102,6 +102,18 @@
 		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h">
 			<Option target="Space_Invaders"/>
 		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp">
+			<Option target="Space_Invaders"/>
+		</Unit>
+		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h">
+			<Option target="Space_Invaders"/>
+		</Unit>
 		<Unit filename="/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.cpp">
 			<Option target="Space_Invaders"/>
 		</Unit>

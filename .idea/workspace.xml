@@ -12,13 +12,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/LifeView.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/LifeView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip/AlienShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entity/EntityModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Observer/Subject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Observer/Subject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observer/Observer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Observer/Observer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/Player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/Sprites/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/ObjectManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/ObjectManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/ObjectManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/ObjectManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Space_Invaders.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Space_Invaders.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +102,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Fonts" />
+      <recent name="$PROJECT_DIR$/Entity/Collidable/Alive/AlienShip" />
+      <recent name="$PROJECT_DIR$/Entity" />
       <recent name="$PROJECT_DIR$/Entity/Collidable" />
       <recent name="$PROJECT_DIR$/Observer" />
-      <recent name="$PROJECT_DIR$/Entity/Alive" />
-      <recent name="$PROJECT_DIR$/Doxygen" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Sprites" />
@@ -136,6 +177,9 @@
       <workItem from="1579012127570" duration="12608000" />
       <workItem from="1579030893500" duration="1851000" />
       <workItem from="1579097043549" duration="1136000" />
+      <workItem from="1579105050511" duration="32000" />
+      <workItem from="1579171417146" duration="5848000" />
+      <workItem from="1579177371464" duration="8848000" />
     </task>
     <servers />
   </component>
@@ -151,10 +195,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576445847351" />
-    <state x="1166" y="288" width="475" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579025214900">
+    <state x="1166" y="288" width="475" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1579184334521">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1166" y="288" width="475" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1579025214900" />
+    <state x="1166" y="288" width="475" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1579184334521" />
     <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577023042536">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -167,46 +211,46 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576265122830" />
-    <state width="901" height="222" key="GridCell.Tab.0.bottom" timestamp="1579098343535">
+    <state width="901" height="222" key="GridCell.Tab.0.bottom" timestamp="1579187765494">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="901" height="222" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579098343535" />
-    <state width="901" height="222" key="GridCell.Tab.0.center" timestamp="1579098343534">
+    <state width="901" height="222" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579187765494" />
+    <state width="901" height="222" key="GridCell.Tab.0.center" timestamp="1579187765494">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="901" height="222" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579098343534" />
-    <state width="901" height="222" key="GridCell.Tab.0.left" timestamp="1579098343534">
+    <state width="901" height="222" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579187765494" />
+    <state width="901" height="222" key="GridCell.Tab.0.left" timestamp="1579187765494">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="901" height="222" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579098343534" />
-    <state width="901" height="222" key="GridCell.Tab.0.right" timestamp="1579098343535">
+    <state width="901" height="222" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579187765494" />
+    <state width="901" height="222" key="GridCell.Tab.0.right" timestamp="1579187765494">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="901" height="222" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579098343535" />
-    <state width="903" height="431" key="GridCell.Tab.1.bottom" timestamp="1579031828196">
+    <state width="901" height="222" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579187765494" />
+    <state width="903" height="431" key="GridCell.Tab.1.bottom" timestamp="1579187764190">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="903" height="431" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579031828196" />
-    <state width="903" height="431" key="GridCell.Tab.1.center" timestamp="1579031828195">
+    <state width="903" height="431" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579187764190" />
+    <state width="903" height="431" key="GridCell.Tab.1.center" timestamp="1579187764189">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="903" height="431" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579031828195" />
-    <state width="903" height="431" key="GridCell.Tab.1.left" timestamp="1579031828195">
+    <state width="903" height="431" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579187764189" />
+    <state width="903" height="431" key="GridCell.Tab.1.left" timestamp="1579187764189">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="903" height="431" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579031828195" />
-    <state width="903" height="431" key="GridCell.Tab.1.right" timestamp="1579031828195">
+    <state width="903" height="431" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579187764189" />
+    <state width="903" height="431" key="GridCell.Tab.1.right" timestamp="1579187764189">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="903" height="431" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579031828195" />
+    <state width="903" height="431" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579187764189" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1579018168192">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="498" height="446" key="SwitcherDM/67.27.1853.1053@67.27.1853.1053" timestamp="1579018168192" />
-    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog" timestamp="1579097042486">
+    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog" timestamp="1579177371440">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579097042486" />
+    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579177371440" />
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578916829493">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -224,9 +268,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MVCAbstract/ViewAbstract.h</url>
-          <line>7</line>
+          <url>file://$PROJECT_DIR$/Utils/ObjectManager.h</url>
+          <line>6</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.cpp</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,10 +3,12 @@
 //
 
 #include "BulletView.h"
-Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w) : EntityView(w) {
+Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
         generateShape();
 }
 void Entity::BulletView::generateShape() {
-        texture.loadFromFile("../Sprites/red.jpg");
-        shape.setTexture(texture);
+        shape=std::make_shared<sf::Sprite>();
+
+        texture.loadFromFile("../Sprites/bullet.png");
+        std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }

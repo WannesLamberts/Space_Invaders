@@ -22,6 +22,10 @@ Game::Game() {
         Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,0),Utils::Vector2D(0.5,0.5),100,0.01);
 }
 void Game::drawGame() {
+        for (int j = 0; j <Utils::ObjectManager::getInstance().getVisuals().size() ; ++j) {
+                Utils::ObjectManager::getInstance().getVisuals()[j]->draw(w);
+
+        }
         for (int i = 0; i <Utils::ObjectManager::getInstance().getO().size() ; ++i) {
                 Utils::ObjectManager::getInstance().getO()[i]->v->draw(w);
         }

@@ -204,6 +204,60 @@ Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s
 .PHONY : Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.s
 
+Entity/Collidable/Alive/AlienShip/LifeView.o: Entity/Collidable/Alive/AlienShip/LifeView.cpp.o
+
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.o
+
+# target to build an object file
+Entity/Collidable/Alive/AlienShip/LifeView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.cpp.o
+
+Entity/Collidable/Alive/AlienShip/LifeView.i: Entity/Collidable/Alive/AlienShip/LifeView.cpp.i
+
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.i
+
+# target to preprocess a source file
+Entity/Collidable/Alive/AlienShip/LifeView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.i
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.cpp.i
+
+Entity/Collidable/Alive/AlienShip/LifeView.s: Entity/Collidable/Alive/AlienShip/LifeView.cpp.s
+
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.s
+
+# target to generate assembly for a file
+Entity/Collidable/Alive/AlienShip/LifeView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.s
+.PHONY : Entity/Collidable/Alive/AlienShip/LifeView.cpp.s
+
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.o: Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o
+
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.o
+
+# target to build an object file
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o
+
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.i: Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i
+
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.i
+
+# target to preprocess a source file
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.i
+
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.s: Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s
+
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.s
+
+# target to generate assembly for a file
+Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s
+.PHONY : Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.s
+
 Entity/Collidable/Alive/AliveController.o: Entity/Collidable/Alive/AliveController.cpp.o
 
 .PHONY : Entity/Collidable/Alive/AliveController.o
@@ -789,6 +843,12 @@ help:
 	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.o"
 	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.i"
 	@echo "... Entity/Collidable/Alive/AlienShip/AlienShipView.s"
+	@echo "... Entity/Collidable/Alive/AlienShip/LifeView.o"
+	@echo "... Entity/Collidable/Alive/AlienShip/LifeView.i"
+	@echo "... Entity/Collidable/Alive/AlienShip/LifeView.s"
+	@echo "... Entity/Collidable/Alive/AlienShip/PlayerScoreView.o"
+	@echo "... Entity/Collidable/Alive/AlienShip/PlayerScoreView.i"
+	@echo "... Entity/Collidable/Alive/AlienShip/PlayerScoreView.s"
 	@echo "... Entity/Collidable/Alive/AliveController.o"
 	@echo "... Entity/Collidable/Alive/AliveController.i"
 	@echo "... Entity/Collidable/Alive/AliveController.s"

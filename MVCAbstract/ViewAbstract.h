@@ -6,6 +6,7 @@
 #define SPACE_INVADERS_VIEWABSTRACT_H
 
 #include "../Observer/Observer.h"
+#include "ModelAbstract.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
 /**
@@ -14,8 +15,9 @@
 class ViewAbstract : public Observer {
 public:
     std::__shared_ptr<sf::RenderWindow> w;
+    std::shared_ptr<ModelAbstract> model;
 public:
-    ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w);
+    ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
 
 /**
      * \brief draws a sf::Drawable on a window

@@ -6,6 +6,8 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipControl
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -40,15 +42,46 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipModel.c
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
+ /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
+ /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/LifeView.cpp.o
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.cpp
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
+ /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
+ /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp.o
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.cpp
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/AliveController.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
@@ -84,6 +117,8 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipContr
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp
@@ -119,15 +154,20 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipModel
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletController.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -155,16 +195,21 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletModel.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletModel.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ControllerAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Bullet/BulletView.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletView.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.o
@@ -200,16 +245,21 @@ CMakeFiles/Space_Invaders.dir/Entity/EntityModel.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Entity/EntityView.cpp.o
+ /home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.cpp
  /home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Transformation.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Game.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
@@ -250,9 +300,11 @@ CMakeFiles/Space_Invaders.dir/MVCAbstract/ModelAbstract.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/MVCAbstract/ViewAbstract.cpp.o
+ /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ModelAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.cpp
  /home/wannes/CLionProjects/Space_Invaders/MVCAbstract/ViewAbstract.h
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
+ /home/wannes/CLionProjects/Space_Invaders/Observer/Subject.h
  /home/wannes/CLionProjects/Space_Invaders/Utils/Vector2D.h
 CMakeFiles/Space_Invaders.dir/Observer/Subject.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Observer/Observer.h
@@ -263,6 +315,8 @@ CMakeFiles/Space_Invaders.dir/Utils/ObjectManager.cpp.o
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/AlienShipView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/LifeView.h
+ /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AlienShip/PlayerScoreView.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveController.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/AliveModel.h
  /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h

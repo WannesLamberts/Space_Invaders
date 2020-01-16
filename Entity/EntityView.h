@@ -7,7 +7,7 @@
 
 #include "../MVCAbstract/ViewAbstract.h"
 #include "../Utils/Transformation.h"
-
+#include "EntityModel.h"
 namespace Entity {
 /**
  * \brief View class for Entity this class handles the visual aspect of the game
@@ -17,23 +17,19 @@ namespace Entity {
         /**
          * \brief the sf::Drawable that will be drawn on the window of the game
          */
-        sf::Sprite shape;
-        /**
-         * \brief The texture that will be drawn on te sf::sprite shape
-         */
-        sf::Texture texture;
+        std::shared_ptr<sf::Drawable> shape;
+
     public:
         /**
          * \brief draws the shape on the sf::RenderWindow w
          * @param w the window where the shape gets drawn on.
          */
         void draw(std::shared_ptr<sf::RenderWindow> w);
-        void update(Utils::Vector2D,Utils::Vector2D);
-        const sf::Sprite& getShape() const;
+        virtual void update();
         void changeScale(Utils::Vector2D);
          virtual void generateShape()=0 ;
 
-        EntityView(const std::__shared_ptr<sf::RenderWindow> &w);
+        EntityView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
 
 
     };

@@ -8,4 +8,8 @@ Entity::PlayerShipModel::PlayerShipModel(const Utils::Vector2D& position, const 
                                          double speed)
     : AliveModel(position, size, healthpoints, speed)
 {
+        score=0;
 }
+int Entity::PlayerShipModel::getScore() const { return score; }
+void Entity::PlayerShipModel::setScore(int score) { PlayerShipModel::score = score;
+notifyObservers();}

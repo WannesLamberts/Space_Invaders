@@ -3,10 +3,12 @@
 //
 
 #include "AlienShipView.h"
-Entity::AlienShipView::AlienShipView(const std::__shared_ptr<sf::RenderWindow>& w) : EntityView(w) {
+Entity::AlienShipView::AlienShipView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
         generateShape();
 }
 void Entity::AlienShipView::generateShape() {
-        texture.loadFromFile("../Sprites/red.jpg");
-        shape.setTexture(texture);
+        shape=std::make_shared<sf::Sprite>();
+
+        texture.loadFromFile("../Sprites/alien.png");
+        std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }
