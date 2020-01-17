@@ -20,5 +20,4 @@ Entity::AliveModel::AliveModel(const Utils::Vector2D& position, const Utils::Vec
                                double speed)
     : EntityModel(position, size), healthpoints(healthpoints), speed(speed)
 {
-        fireCooldown = 0;
 }

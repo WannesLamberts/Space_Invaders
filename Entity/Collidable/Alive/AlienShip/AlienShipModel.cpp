@@ -9,6 +9,7 @@ Entity::AlienShipModel::AlienShipModel(const Utils::Vector2D& position, const Ut
     : AliveModel(position, size, healthpoints, speed)
 {
         right=true;
+        fireCooldown=rand() % 500;
 }
 bool Entity::AlienShipModel::isRight() const { return right; }
 void Entity::AlienShipModel::setRight(bool right) { AlienShipModel::right = right; }

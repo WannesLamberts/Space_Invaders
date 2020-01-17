@@ -43,8 +43,6 @@ void Entity::BulletController::onCollision(std::shared_ptr<Entity::CollidableCon
                 std::shared_ptr<Entity::PlayerShipModel> model = std::dynamic_pointer_cast<Entity::PlayerShipModel>(
                     std::dynamic_pointer_cast<Entity::PlayerShipController>(b)->getM());
                 model->setHealthpoints(model->getHealthpoints() - 1);
-                std::cout<<model->getHealthpoints()<<std::endl;
-                if (model->getHealthpoints() == 0)
-                        std::cout << "Game over" << std::endl;
+                //if (model->getHealthpoints() == 0)
         }
 }

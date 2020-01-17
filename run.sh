@@ -3,5 +3,5 @@ cd build
 cmake ..
 make
 make install
-./Space_Invaders ../level.json
+./Space_Invaders ../levels/level1.json
 cd ..

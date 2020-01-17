@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
         Game g;
-        g.loadLevel("../level.json");
+        g.loadLevel(argv[1]);
         g.runGame();
         return 0;
 }

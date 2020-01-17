@@ -9,29 +9,25 @@
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 
-Game::Game() {
-        srand (time(NULL));
+Game::Game()
+{
+        srand(time(NULL));
         Utils::ObjectManager::getInstance().setup(this);
-        w=std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
-        Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0,2),Utils::Vector2D(1,0.5),3,0.05);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,-2.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(0,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,-1.5),Utils::Vector2D(0.5,0.5),100,0.01);
-        Utils::ObjectManager::getInstance().createAlienShip(Utils::Vector2D(-3,0),Utils::Vector2D(0.5,0.5),100,0.01);
-}
-void Game::drawGame() {
-        for (int j = 0; j <Utils::ObjectManager::getInstance().getVisuals().size() ; ++j) {
-                Utils::ObjectManager::getInstance().getVisuals()[j]->draw(w);
+        w = std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
+        Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0, 2), Utils::Vector2D(1, 0.5), 3, 0.05);
 
+}
+void Game::drawGame()
+{
+        for (int j = 0; j < Utils::ObjectManager::getInstance().getVisuals().size(); ++j) {
+                Utils::ObjectManager::getInstance().getVisuals()[j]->draw(w);
         }
-        for (int i = 0; i <Utils::ObjectManager::getInstance().getO().size() ; ++i) {
+        for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
                 Utils::ObjectManager::getInstance().getO()[i]->v->draw(w);
         }
 }
-void Game::runGame() {
+void Game::runGame()
+{
         Utils::StopWatch::getInstance().start();
         while (w->isOpen()) {
                 sf::Event event;
@@ -51,12 +47,17 @@ void Game::runGame() {
                 }
         }
 }
-void Game::loadLevel(std::string file) {
-        std::cout<<file<<std::endl;
-      std::ifstream i(file);
-      nlohmann::json j;
+void Game::loadLevel(std::string file)
+{
+        std::cout << file << std::endl;
+        std::ifstream i(file);
+        nlohmann::json j;
         i >> j;
-        std::cout<<j["type"]<<std::endl;
-        std::vector<std::string> tekst=j["alphabet"];
-
+        double speed=j["alienspeed"];
+        for (int k = 0; k < j["aliens"].size(); ++k) {
+                double healthpoints=j["aliens"][k]["healthpoints"];
+                Utils::Vector2D position=Utils::Vector2D(j["aliens"][k]["position"]["x"],j["aliens"][k]["position"]["y"]);
+                Utils::Vector2D size=Utils::Vector2D(j["aliens"][k]["size"]["x"],j["aliens"][k]["size"]["y"]);
+                Utils::ObjectManager::getInstance().createAlienShip(position,size,healthpoints,speed);
+        }
 }
