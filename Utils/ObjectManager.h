@@ -5,8 +5,8 @@
 #ifndef SPACE_INVADERS_OBJECTMANAGER_H
 #define SPACE_INVADERS_OBJECTMANAGER_H
 #include "../Entity/Collidable/Alive/AlienShip/AlienShipController.h"
-#include "../Entity/Collidable/Alive/AlienShip/LifeView.h"
-#include "../Entity/Collidable/Alive/AlienShip/PlayerScoreView.h"
+#include "../Entity/Collidable/Alive/PlayerShip/LifeView.h"
+#include "../Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h"
 #include "../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h"
 #include "../Entity/Collidable/Bullet/BulletController.h"
 #include "../Game.h"

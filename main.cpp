@@ -3,9 +3,10 @@
 //
 
 #include "Game.h"
-int main()
+int main(int argc, char* argv[])
 {
         Game g;
+        g.loadLevel("../level.json");
         g.runGame();
         return 0;
 }

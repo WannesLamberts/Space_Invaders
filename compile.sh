@@ -1,0 +1,1 @@
+g++ -std=c++14 *.cpp -o Space_Invaders

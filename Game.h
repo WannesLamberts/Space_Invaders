@@ -8,8 +8,11 @@
 #include "MVCAbstract/ControllerAbstract.h"
 #include <memory>
 #include "Utils/Object.h"
+#include "json-develop/single_include/nlohmann/json.hpp"
 #include <stdlib.h>
 #include <time.h>
+#include <fstream>
+
 
 class Game
 {
@@ -17,6 +20,7 @@ public:
         Game();
         void drawGame();
         void runGame();
+        void loadLevel(std::string file);
 private:
 
 public:

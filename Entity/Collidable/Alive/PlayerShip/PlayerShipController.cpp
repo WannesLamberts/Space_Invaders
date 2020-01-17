@@ -31,10 +31,8 @@ Entity::PlayerShipController::PlayerShipController(const std::shared_ptr<ModelAb
     : Entity::AliveController(m, v)
 {
 }
-
 void Entity::PlayerShipController::tick()
 {
-
         readInput();
         if (std::dynamic_pointer_cast<PlayerShipModel>(m)->getFireCooldown() > 0) {
                 std::dynamic_pointer_cast<PlayerShipModel>(m)->setFireCooldown(

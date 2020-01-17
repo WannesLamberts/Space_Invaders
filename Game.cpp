@@ -5,6 +5,7 @@
 #include "Game.h"
 #include "Utils/ObjectManager.h"
 #include "Utils/StopWatch.h"
+#include <iostream>
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 
@@ -49,4 +50,13 @@ void Game::runGame() {
                         Utils::StopWatch::getInstance().start();
                 }
         }
+}
+void Game::loadLevel(std::string file) {
+        std::cout<<file<<std::endl;
+      std::ifstream i(file);
+      nlohmann::json j;
+        i >> j;
+        std::cout<<j["type"]<<std::endl;
+        std::vector<std::string> tekst=j["alphabet"];
+
 }
