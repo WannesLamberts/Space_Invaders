@@ -32,6 +32,15 @@ void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, do
         std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
         addObject(obj);
 }
+void Utils::ObjectManager::createShield(Utils::Vector2D p, Utils::Vector2D s, int healthpoints) {
+        std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::ShieldModel>(p, s, healthpoints);
+        std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::ShieldView>(g->getW(),m);
+        m->registerObserver(v);
+        std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::ShieldController>(m, v);
+        std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
+        addObject(obj);
+}
+
 void Utils::ObjectManager::createAlienShip(Utils::Vector2D p, Utils::Vector2D s, int healthpoints,double speed) {
     std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::AlienShipModel>(p, s, healthpoints,speed);
         std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::AlienShipView>(g->getW(),m);
@@ -70,3 +79,4 @@ const std::vector<std::shared_ptr<ViewAbstract>>& Utils::ObjectManager::getVisua
 int Utils::ObjectManager::getEnemycount() const { return enemycount; }
 void Utils::ObjectManager::setEnemycount(int enemycount) { ObjectManager::enemycount = enemycount; }
 const std::shared_ptr<Entity::PlayerShipController>& Utils::ObjectManager::getHero() const { return hero; }
+Game* Utils::ObjectManager::getG() const { return g; }

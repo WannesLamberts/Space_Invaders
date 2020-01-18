@@ -15,8 +15,10 @@ public:
         bool checkCollision(std::shared_ptr<Entity::CollidableController> b);
 
         CollidableController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+        virtual void tick();
+
 private:
-        virtual void onCollision(std::shared_ptr<Entity::CollidableController> b);
+        virtual void onCollision(std::shared_ptr<Entity::CollidableController> b)=0;
 };
 }
 #endif // SPACE_INVADERS_COLLIDABLECONTROLLER_H

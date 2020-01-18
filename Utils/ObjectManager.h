@@ -9,6 +9,8 @@
 #include "../Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h"
 #include "../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h"
 #include "../Entity/Collidable/Bullet/BulletController.h"
+#include "../Entity/Collidable/Shield/ShieldController.h"
+
 #include "../Game.h"
 namespace Utils{
 
@@ -19,6 +21,7 @@ public:
         void createPlayerShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints,double speed);
         void createAlienShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints, double speed);
         void createBullet(Utils::Vector2D p,Utils::Vector2D s,double speed, bool friendly);
+        void createShield(Utils::Vector2D p,Utils::Vector2D s,int healthpoints);
         static ObjectManager& getInstance(){
                 static ObjectManager instance; // Guaranteed to be destroyed.
                 // Instantiated on first use.
@@ -56,6 +59,10 @@ public:
         void deleteObject(std::shared_ptr<ControllerAbstract> c);
 private:
         Game* g;
+
+public:
+        Game* getG() const;
+private:
         ObjectManager(){};
         ObjectManager(ObjectManager const&);
         ObjectManager& operator=(ObjectManager const&);

@@ -3,6 +3,7 @@
 //
 
 #include "CollidableController.h"
+#include "../../Utils/ObjectManager.h"
 bool Entity::CollidableController::checkCollision(std::shared_ptr<Entity::CollidableController> b)
 {
         std::shared_ptr<Entity::EntityModel> mod = std::dynamic_pointer_cast<Entity::EntityModel>(m);
@@ -18,4 +19,15 @@ Entity::CollidableController::CollidableController(const std::shared_ptr<ModelAb
                                                    const std::shared_ptr<ViewAbstract>& v)
     : EntityController(m, v)
 {
+}
+void Entity::CollidableController::tick() {
+        for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
+                if (std::dynamic_pointer_cast<Entity::CollidableController>(
+                    Utils::ObjectManager::getInstance().getO()[i]->c) &&
+                    checkCollision(std::dynamic_pointer_cast<Entity::CollidableController>(
+                        Utils::ObjectManager::getInstance().getO()[i]->c))) {
+                        onCollision(std::dynamic_pointer_cast<Entity::CollidableController>(
+                            Utils::ObjectManager::getInstance().getO()[i]->c));
+                }
+        }
 }

@@ -18,7 +18,7 @@ void Entity::EntityView::update()
 }
 
 Entity::EntityView::EntityView(const std::__shared_ptr<sf::RenderWindow>& w, std::weak_ptr<ModelAbstract> model)
-    : ViewAbstract(w, model)
+    : ViewAbstract(w),model(model)
 {
 }
 void Entity::EntityView::changeScale(Utils::Vector2D cor)

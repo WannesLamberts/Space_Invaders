@@ -19,6 +19,7 @@ public:
         AlienShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
         void tick();
         void shoot();
+
 };
 }
 #endif // SPACE_INVADERS_ALIENSHIPCONTROLLER_H

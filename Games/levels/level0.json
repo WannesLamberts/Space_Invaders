@@ -11,29 +11,8 @@
         "y": 0.5
       },
       "healthpoints": 1
-    },
-    {
-      "position": {
-        "x": 0,
-        "y": -2.5
-      },
-      "size": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "healthpoints": 1
-    },
-    {
-      "position": {
-        "x": -3,
-        "y": -2.5
-      },
-      "size": {
-        "x": 0.5,
-        "y": 0.5
-      },
-      "healthpoints": 1
     }
+
   ]
 }
 

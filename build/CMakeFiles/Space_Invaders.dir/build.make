@@ -729,6 +729,78 @@ CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o.pro
 CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o.provides.build: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o
 
 
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o: ../Entity/Collidable/Shield/ShieldController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.cpp > CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.requires
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.provides: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.provides
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.provides.build: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o
+
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o: ../Entity/Collidable/Shield/ShieldModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.cpp > CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.requires
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.provides: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.provides
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.provides.build: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o
+
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o: CMakeFiles/Space_Invaders.dir/flags.make
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o: ../Entity/Collidable/Shield/ShieldView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o -c /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.cpp
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.cpp > CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.i
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.cpp -o CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.s
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.requires:
+
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.requires
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.provides: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.provides.build
+.PHONY : CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.provides
+
+CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.provides.build: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o
+
+
 # Object files for target Space_Invaders
 Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/main.cpp.o" \
@@ -758,7 +830,10 @@ Space_Invaders_OBJECTS = \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/LifeView.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp.o" \
 "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyController.cpp.o" \
-"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o"
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o" \
+"CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o"
 
 # External object files for target Space_Invaders
 Space_Invaders_EXTERNAL_OBJECTS =
@@ -791,9 +866,12 @@ Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyController.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o
+Space_Invaders: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o
 Space_Invaders: CMakeFiles/Space_Invaders.dir/build.make
 Space_Invaders: CMakeFiles/Space_Invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Space_Invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable Space_Invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Invaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -829,6 +907,9 @@ CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Col
 CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp.o.requires
 CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyController.cpp.o.requires
 CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o.requires
+CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o.requires
+CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o.requires
+CMakeFiles/Space_Invaders.dir/requires: CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o.requires
 
 .PHONY : CMakeFiles/Space_Invaders.dir/requires
 

@@ -8,15 +8,7 @@
 void Entity::BulletController::tick()
 {
         if (std::dynamic_pointer_cast<BulletModel>(m)->travel()) {
-                for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
-                        if (std::dynamic_pointer_cast<Entity::CollidableController>(
-                                Utils::ObjectManager::getInstance().getO()[i]->c) &&
-                            checkCollision(std::dynamic_pointer_cast<Entity::CollidableController>(
-                                Utils::ObjectManager::getInstance().getO()[i]->c))) {
-                                onCollision(std::dynamic_pointer_cast<Entity::CollidableController>(
-                                    Utils::ObjectManager::getInstance().getO()[i]->c));
-                        }
-                }
+                CollidableController::tick();
         } else {
                 Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
         }
@@ -47,7 +39,17 @@ void Entity::BulletController::onCollision(std::shared_ptr<Entity::CollidableCon
                     std::dynamic_pointer_cast<Entity::PlayerShipController>(b)->getM());
                 model->setHealthpoints(model->getHealthpoints() - 1);
                 Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
-
-                // if (model->getHealthpoints() == 0)
+                 if (model->getHealthpoints() == 0){
+                         Utils::ObjectManager::getInstance().getG()->setEnd(true);
+                 }
+        }
+        else if(std::dynamic_pointer_cast<Entity::ShieldController>(b)){
+                Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
+                std::shared_ptr<Entity::ShieldModel> model = std::dynamic_pointer_cast<Entity::ShieldModel>(
+                    std::dynamic_pointer_cast<Entity::ShieldController>(b)->getM());
+                model->setHealthpoints(model->getHealthpoints()-1);
+                if(model->getHealthpoints()==0){
+                        Utils::ObjectManager::getInstance().addDeletion(b);
+                }
         }
 }

@@ -75,6 +75,8 @@ EnemyController.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/Enemy/EnemyController.h
 ../../../../Utils/ObjectManager.h
 /home/wannes/CLionProjects/Space_Invaders/Utils/ObjectManager.h
+iostream
+-
 
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/Enemy/EnemyController.h
 ../AliveController.h
@@ -197,10 +199,40 @@ BulletView.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.cpp
 CollidableController.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.h
+../../Utils/ObjectManager.h
+/home/wannes/CLionProjects/Space_Invaders/Utils/ObjectManager.h
 
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.h
 ../EntityController.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.cpp
+ShieldController.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.h
+../CollidableController.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/CollidableController.h
+ShieldModel.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.h
+ShieldView.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.cpp
+ShieldModel.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldModel.h
+../../EntityModel.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/EntityModel.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.cpp
+ShieldView.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.h
+
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldView.h
+../../EntityView.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/EntityView.h
 
 /home/wannes/CLionProjects/Space_Invaders/Entity/EntityController.cpp
 EntityController.h
@@ -347,6 +379,8 @@ ObjectManager.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h
 ../Entity/Collidable/Bullet/BulletController.h
 /home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Bullet/BulletController.h
+../Entity/Collidable/Shield/ShieldController.h
+/home/wannes/CLionProjects/Space_Invaders/Entity/Collidable/Shield/ShieldController.h
 ../Game.h
 /home/wannes/CLionProjects/Space_Invaders/Game.h
 

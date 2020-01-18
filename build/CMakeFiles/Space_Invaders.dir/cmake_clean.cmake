@@ -27,6 +27,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyController.cpp.o"
   "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Alive/Enemy/EnemyModel.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o"
+  "CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o"
   "Space_Invaders.pdb"
   "Space_Invaders"
 )

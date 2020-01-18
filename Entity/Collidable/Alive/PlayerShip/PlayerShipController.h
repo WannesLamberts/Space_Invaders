@@ -22,7 +22,7 @@ public:
         PlayerShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
         void tick();
         void shoot();
-
+        void onCollision(std::shared_ptr<Entity::CollidableController> b);
 
 
 };

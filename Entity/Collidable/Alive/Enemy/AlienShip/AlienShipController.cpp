@@ -30,4 +30,3 @@ void Entity::AlienShipController::shoot()
                     false);
         }
 }
-

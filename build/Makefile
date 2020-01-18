@@ -555,6 +555,87 @@ Entity/Collidable/CollidableController.cpp.s:
 	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/CollidableController.cpp.s
 .PHONY : Entity/Collidable/CollidableController.cpp.s
 
+Entity/Collidable/Shield/ShieldController.o: Entity/Collidable/Shield/ShieldController.cpp.o
+
+.PHONY : Entity/Collidable/Shield/ShieldController.o
+
+# target to build an object file
+Entity/Collidable/Shield/ShieldController.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.o
+.PHONY : Entity/Collidable/Shield/ShieldController.cpp.o
+
+Entity/Collidable/Shield/ShieldController.i: Entity/Collidable/Shield/ShieldController.cpp.i
+
+.PHONY : Entity/Collidable/Shield/ShieldController.i
+
+# target to preprocess a source file
+Entity/Collidable/Shield/ShieldController.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.i
+.PHONY : Entity/Collidable/Shield/ShieldController.cpp.i
+
+Entity/Collidable/Shield/ShieldController.s: Entity/Collidable/Shield/ShieldController.cpp.s
+
+.PHONY : Entity/Collidable/Shield/ShieldController.s
+
+# target to generate assembly for a file
+Entity/Collidable/Shield/ShieldController.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldController.cpp.s
+.PHONY : Entity/Collidable/Shield/ShieldController.cpp.s
+
+Entity/Collidable/Shield/ShieldModel.o: Entity/Collidable/Shield/ShieldModel.cpp.o
+
+.PHONY : Entity/Collidable/Shield/ShieldModel.o
+
+# target to build an object file
+Entity/Collidable/Shield/ShieldModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.o
+.PHONY : Entity/Collidable/Shield/ShieldModel.cpp.o
+
+Entity/Collidable/Shield/ShieldModel.i: Entity/Collidable/Shield/ShieldModel.cpp.i
+
+.PHONY : Entity/Collidable/Shield/ShieldModel.i
+
+# target to preprocess a source file
+Entity/Collidable/Shield/ShieldModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.i
+.PHONY : Entity/Collidable/Shield/ShieldModel.cpp.i
+
+Entity/Collidable/Shield/ShieldModel.s: Entity/Collidable/Shield/ShieldModel.cpp.s
+
+.PHONY : Entity/Collidable/Shield/ShieldModel.s
+
+# target to generate assembly for a file
+Entity/Collidable/Shield/ShieldModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldModel.cpp.s
+.PHONY : Entity/Collidable/Shield/ShieldModel.cpp.s
+
+Entity/Collidable/Shield/ShieldView.o: Entity/Collidable/Shield/ShieldView.cpp.o
+
+.PHONY : Entity/Collidable/Shield/ShieldView.o
+
+# target to build an object file
+Entity/Collidable/Shield/ShieldView.cpp.o:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.o
+.PHONY : Entity/Collidable/Shield/ShieldView.cpp.o
+
+Entity/Collidable/Shield/ShieldView.i: Entity/Collidable/Shield/ShieldView.cpp.i
+
+.PHONY : Entity/Collidable/Shield/ShieldView.i
+
+# target to preprocess a source file
+Entity/Collidable/Shield/ShieldView.cpp.i:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.i
+.PHONY : Entity/Collidable/Shield/ShieldView.cpp.i
+
+Entity/Collidable/Shield/ShieldView.s: Entity/Collidable/Shield/ShieldView.cpp.s
+
+.PHONY : Entity/Collidable/Shield/ShieldView.s
+
+# target to generate assembly for a file
+Entity/Collidable/Shield/ShieldView.cpp.s:
+	$(MAKE) -f CMakeFiles/Space_Invaders.dir/build.make CMakeFiles/Space_Invaders.dir/Entity/Collidable/Shield/ShieldView.cpp.s
+.PHONY : Entity/Collidable/Shield/ShieldView.cpp.s
+
 Entity/EntityController.o: Entity/EntityController.cpp.o
 
 .PHONY : Entity/EntityController.o
@@ -936,6 +1017,15 @@ help:
 	@echo "... Entity/Collidable/CollidableController.o"
 	@echo "... Entity/Collidable/CollidableController.i"
 	@echo "... Entity/Collidable/CollidableController.s"
+	@echo "... Entity/Collidable/Shield/ShieldController.o"
+	@echo "... Entity/Collidable/Shield/ShieldController.i"
+	@echo "... Entity/Collidable/Shield/ShieldController.s"
+	@echo "... Entity/Collidable/Shield/ShieldModel.o"
+	@echo "... Entity/Collidable/Shield/ShieldModel.i"
+	@echo "... Entity/Collidable/Shield/ShieldModel.s"
+	@echo "... Entity/Collidable/Shield/ShieldView.o"
+	@echo "... Entity/Collidable/Shield/ShieldView.i"
+	@echo "... Entity/Collidable/Shield/ShieldView.s"
 	@echo "... Entity/EntityController.o"
 	@echo "... Entity/EntityController.i"
 	@echo "... Entity/EntityController.s"

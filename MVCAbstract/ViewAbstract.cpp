@@ -3,4 +3,4 @@
 //
 // Created by wannes on 15.12.19.
 //
-ViewAbstract::ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w,std::weak_ptr<ModelAbstract> model) : w(w),model(model) {}
+ViewAbstract::ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w) : w(w) {}

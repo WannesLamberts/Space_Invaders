@@ -17,8 +17,7 @@ namespace Entity {
         /**
          * \brief the sf::Drawable that will be drawn on the window of the game
          */
-        std::shared_ptr<sf::Drawable> shape;
-
+            std::weak_ptr<ModelAbstract> model;
     public:
         /**
          * \brief draws the shape on the sf::RenderWindow w

@@ -22,9 +22,17 @@ public:
         void runGame();
         void nextlevel();
         void loadLevel(std::string file);
+        void setupgame(std::string file);
+        sf::Sprite generateOver();
 private:
         int currentlevel;
         std::vector<std::string> levels;
+        bool end;
+        sf::Texture texture;
+
+public:
+        void setEnd(bool end);
+
 public:
 private:
         std::shared_ptr<sf::RenderWindow> w;
