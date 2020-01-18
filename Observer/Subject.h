@@ -15,7 +15,6 @@ protected:
 public:
  void registerObserver(std::shared_ptr<Observer> o);
  void removeObserver(std::shared_ptr<Observer> o);
- void removeallObservers();
  virtual void notifyObservers()=0;
 };
 
