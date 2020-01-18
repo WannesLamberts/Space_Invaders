@@ -17,12 +17,12 @@
 class Game
 {
 public:
-        Game(std::string file);
+        Game(std::string file,int x,int y);
         void drawGame();
         void runGame();
         void nextlevel();
         void loadLevel(std::string file);
-        void setupgame(std::string file);
+        void setupgame(std::string file,int x,int y);
         sf::Sprite generateOver();
 private:
         int currentlevel;

@@ -9,9 +9,9 @@
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 
-Game::Game(std::string file)
+Game::Game(std::string file,int x,int y)
 {
-        setupgame(file);
+        setupgame(file,x,y);
 
 }
 void Game::drawGame()
@@ -76,7 +76,7 @@ void Game::nextlevel()
                 end = true;
         }
 }
-void Game::setupgame(std::string file) {
+void Game::setupgame(std::string file,int x,int y) {
         end = false;
         std::ifstream i(file);
         nlohmann::json j;
@@ -87,7 +87,7 @@ void Game::setupgame(std::string file) {
         }
         srand(time(NULL));
         Utils::ObjectManager::getInstance().setup(this);
-        w = std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
+        w = std::make_shared<sf::RenderWindow>(sf::VideoMode(x, y), "SpaceInvaders");
         Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0, 2), Utils::Vector2D(1, 0.5), 3, 0.05);
         Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(-3 ,1),Utils::Vector2D(0.7,0.7),3);
         Utils::ObjectManager::getInstance().createShield(Utils::Vector2D( -1,1),Utils::Vector2D(0.7,0.7),3);

@@ -13,7 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +145,7 @@
       <workItem from="1579358561455" duration="3454000" />
       <workItem from="1579362907141" duration="715000" />
       <workItem from="1579368549112" duration="16777000" />
-      <workItem from="1579385568417" duration="472000" />
+      <workItem from="1579385568417" duration="976000" />
     </task>
     <servers />
   </component>
