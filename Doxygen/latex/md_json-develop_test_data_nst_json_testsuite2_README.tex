@@ -1,0 +1,63 @@
+A comprehensive test suite for R\+FC 8259 compliant J\+S\+ON parsers
+
+This repository was created as an appendix to the article \href{http://seriot.ch/parsing_json.php}{\texttt{ Parsing J\+S\+ON is a Minefield 💣}}.
+
+$\ast$$\ast$/parsers/$\ast$$\ast$
+
+This directory contains several parsers and tiny wrappers to turn the parsers into J\+S\+ON validators, by returning a specific value.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily 0} the parser did accept the content
+\item {\ttfamily 1} the parser did reject the content
+\item {\ttfamily $>$1} the process did crash
+\item {\ttfamily timeout} happens after 5 seconds
+\end{DoxyItemize}
+
+$\ast$$\ast$/test\+\_\+parsing/$\ast$$\ast$
+
+The name of these files tell if their contents should be accepted or rejected.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily y\+\_\+} content must be accepted by parsers
+\item {\ttfamily n\+\_\+} content must be rejected by parsers
+\item {\ttfamily i\+\_\+} parsers are free to accept or reject content
+\end{DoxyItemize}
+
+$\ast$$\ast$/test\+\_\+transform/$\ast$$\ast$
+
+These files contain weird structures and characters that parsers may understand differently, eg\+:
+
+
+\begin{DoxyItemize}
+\item huge numbers
+\item dictionaries with similar keys
+\item N\+U\+LL characters
+\item escaped invalid strings
+\end{DoxyItemize}
+
+These files were used to produce {\ttfamily results/transform.\+html}.
+
+$\ast$$\ast$/run\+\_\+tests.py$\ast$$\ast$
+
+Run all parsers with all files\+: \begin{DoxyVerb}$ python3 run_tests.py
+\end{DoxyVerb}
+
+
+Run all parsers with a specific file\+: \begin{DoxyVerb}$ python3 run_tests.py file.json
+\end{DoxyVerb}
+
+
+Run specific parsers with all files\+: \begin{DoxyVerb}$ echo '["Python 2.7.10", "Python 3.5.2"]' > python_only.json
+$ python3 run_tests.py --filter=python_only.json
+\end{DoxyVerb}
+
+
+The script writes logs in {\ttfamily results/logs.\+txt}.
+
+The script then reads {\ttfamily logs.\+txt} and generates {\ttfamily results/parsing.\+html}.
+
+$\ast$$\ast$/results/$\ast$$\ast$
+
+ 

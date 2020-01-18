@@ -14,7 +14,7 @@ class PlayerShipView : public EntityView
 {
 
 public:
-    PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
+    PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::weak_ptr<ModelAbstract> model);
 
 
         /**

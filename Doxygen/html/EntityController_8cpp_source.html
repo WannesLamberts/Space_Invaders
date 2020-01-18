@@ -74,20 +74,18 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;EntityController.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;EntityModel.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;EntityView.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Entity::EntityController::EntityController(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt;&amp; m, <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt;&amp; v)</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Entity::EntityController::EntityController(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt;&amp; m,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                           <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt;&amp; v)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <a class="code" href="classControllerAbstract.html">ControllerAbstract</a>(m, v)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::shared_ptr&lt;Entity::EntityModel&gt; mod = std::dynamic_pointer_cast&lt;Entity::EntityModel&gt;(m);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::shared_ptr&lt;Entity::EntityView&gt; view = std::dynamic_pointer_cast&lt;Entity::EntityView&gt;(v);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        view-&gt;changeScale(mod-&gt;getSize());</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        mod-&gt;notifyObservers(mod-&gt;getPosition(),mod-&gt;getSize());</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        mod-&gt;notifyObservers();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassControllerAbstract_html"><div class="ttname"><a href="classControllerAbstract.html">ControllerAbstract</a></div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00011">ControllerAbstract.h:11</a></div></div>
 <!-- start footer part -->

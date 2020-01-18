@@ -1,0 +1,71 @@
+\hypertarget{classbenchmark_1_1ConsoleReporter}{}\doxysection{benchmark\+::Console\+Reporter Class Reference}
+\label{classbenchmark_1_1ConsoleReporter}\index{benchmark::ConsoleReporter@{benchmark::ConsoleReporter}}
+Inheritance diagram for benchmark\+::Console\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbenchmark_1_1ConsoleReporter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_ae1dc9c16b67b70e2c85ef1f5104cb4e0}\label{classbenchmark_1_1ConsoleReporter_ae1dc9c16b67b70e2c85ef1f5104cb4e0}} 
+enum {\bfseries Output\+Options} \{ \newline
+{\bfseries O\+O\+\_\+\+None} = 0, 
+{\bfseries O\+O\+\_\+\+Color} = 1, 
+{\bfseries O\+O\+\_\+\+Tabular} = 2, 
+{\bfseries O\+O\+\_\+\+Color\+Tabular} = O\+O\+\_\+\+Color$\vert$\+O\+O\+\_\+\+Tabular, 
+\newline
+{\bfseries O\+O\+\_\+\+Defaults} = O\+O\+\_\+\+Color\+Tabular
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a30fbb5da613713aabc8917cfad31861a}\label{classbenchmark_1_1ConsoleReporter_a30fbb5da613713aabc8917cfad31861a}} 
+{\bfseries Console\+Reporter} (Output\+Options opts\+\_\+=O\+O\+\_\+\+Defaults)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a368bd56e289bbae744a14c972e4d21bb}\label{classbenchmark_1_1ConsoleReporter_a368bd56e289bbae744a14c972e4d21bb}} 
+virtual bool {\bfseries Report\+Context} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} \&context)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a61695042de6301a3249688812f154cf4}\label{classbenchmark_1_1ConsoleReporter_a61695042de6301a3249688812f154cf4}} 
+virtual void {\bfseries Report\+Runs} (const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} $>$ \&reports)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a3759516cbd523319ffbd121514cfc7c0}\label{classbenchmark_1_1ConsoleReporter_a3759516cbd523319ffbd121514cfc7c0}} 
+virtual void {\bfseries Print\+Run\+Data} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} \&report)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a9a039ddb97f3321309db8120c176f4d0}\label{classbenchmark_1_1ConsoleReporter_a9a039ddb97f3321309db8120c176f4d0}} 
+virtual void {\bfseries Print\+Header} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} \&report)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_ae73d452f97f5be83f59de1ab7935d03d}\label{classbenchmark_1_1ConsoleReporter_ae73d452f97f5be83f59de1ab7935d03d}} 
+Output\+Options {\bfseries output\+\_\+options\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a70035000337728074b93dfb9a95a7110}\label{classbenchmark_1_1ConsoleReporter_a70035000337728074b93dfb9a95a7110}} 
+size\+\_\+t {\bfseries name\+\_\+field\+\_\+width\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a99262481c424bc54177cc95df96ae34d}\label{classbenchmark_1_1ConsoleReporter_a99262481c424bc54177cc95df96ae34d}} 
+User\+Counters {\bfseries prev\+\_\+counters\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a84683025b8ef739f751203e058c2544e}\label{classbenchmark_1_1ConsoleReporter_a84683025b8ef739f751203e058c2544e}} 
+bool {\bfseries printed\+\_\+header\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1378 of file benchmark.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/benchmarks/thirdparty/benchmark/include/benchmark/benchmark.\+h\item 
+json-\/develop/benchmarks/thirdparty/benchmark/src/console\+\_\+reporter.\+cc\end{DoxyCompactItemize}

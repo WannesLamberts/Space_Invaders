@@ -24,12 +24,12 @@ namespace Entity {
          * \brief draws the shape on the sf::RenderWindow w
          * @param w the window where the shape gets drawn on.
          */
-        void draw(std::shared_ptr<sf::RenderWindow> w);
+        void draw();
         virtual void update();
         void changeScale(Utils::Vector2D);
          virtual void generateShape()=0 ;
 
-        EntityView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
+        EntityView(const std::__shared_ptr<sf::RenderWindow> &w,std::weak_ptr<ModelAbstract> model);
 
 
     };

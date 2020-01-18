@@ -1,0 +1,84 @@
+\hypertarget{md_json-develop_doc_faq_autotoc_md99}{}\doxysection{Parsing}\label{md_json-develop_doc_faq_autotoc_md99}
+\hypertarget{md_json-develop_doc_faq_autotoc_md100}{}\doxysubsection{How can I parse from a string?}\label{md_json-develop_doc_faq_autotoc_md100}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j = \mbox{\hyperlink{classnlohmann_1_1basic__json_a265a473e939184aa42655c9ccdf34e58}{json::parse}}(\textcolor{stringliteral}{"[1,2,3,4]"});}
+\end{DoxyCode}
+
+
+You can pass string literals (as above), {\ttfamily std\+::string}, {\ttfamily const char$\ast$} or byte containers such as {\ttfamily std\+::vector$<$uint8\+\_\+t$>$}.\hypertarget{md_json-develop_doc_faq_autotoc_md101}{}\doxysubsection{How can I parse from a file?}\label{md_json-develop_doc_faq_autotoc_md101}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::ifstream i(\textcolor{stringliteral}{"your\_file.json"});}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j = \mbox{\hyperlink{classnlohmann_1_1basic__json_a265a473e939184aa42655c9ccdf34e58}{json::parse}}(i);}
+\end{DoxyCode}
+\hypertarget{md_json-develop_doc_faq_autotoc_md102}{}\doxysection{Serialization}\label{md_json-develop_doc_faq_autotoc_md102}
+\hypertarget{md_json-develop_doc_faq_autotoc_md103}{}\doxysubsection{How can I serialize a J\+S\+O\+N value}\label{md_json-develop_doc_faq_autotoc_md103}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::cout << j << std::endl;}
+\end{DoxyCode}
+
+
+This is equivalent to
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string s = j.\mbox{\hyperlink{classnlohmann_1_1basic__json_a50ec80b02d0f3f51130d4abb5d1cfdc5}{dump}}();}
+\DoxyCodeLine{std::cout << s << std::endl;}
+\end{DoxyCode}
+\hypertarget{md_json-develop_doc_faq_autotoc_md104}{}\doxysubsection{How can I pretty-\/print a J\+S\+O\+N value}\label{md_json-develop_doc_faq_autotoc_md104}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::cout << std::setw(4) << j << std::endl;}
+\end{DoxyCode}
+
+
+This is equivalent to
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string s = j.\mbox{\hyperlink{classnlohmann_1_1basic__json_a50ec80b02d0f3f51130d4abb5d1cfdc5}{dump}}(4);}
+\DoxyCodeLine{std::cout << s << std::endl;}
+\end{DoxyCode}
+
+
+The number {\ttfamily 4} denotes the number of spaces used for indentation.\hypertarget{md_json-develop_doc_faq_autotoc_md105}{}\doxysection{Iterating}\label{md_json-develop_doc_faq_autotoc_md105}
+\hypertarget{md_json-develop_doc_faq_autotoc_md106}{}\doxysubsection{How can I iterate over a J\+S\+O\+N value?}\label{md_json-develop_doc_faq_autotoc_md106}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}}\& val : j)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// val is a reference for the current value}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+This works with any J\+S\+ON value, also primitive values like numbers.\hypertarget{md_json-develop_doc_faq_autotoc_md107}{}\doxysubsection{How can I access the keys when iterating over a J\+S\+O\+N object?}\label{md_json-develop_doc_faq_autotoc_md107}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = j.begin(); it != j.end(); ++it)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// the value}}
+\DoxyCodeLine{    \mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} \&val = it.\mbox{\hyperlink{classnlohmann_1_1basic__json_adcf8ca5079f5db993820bf50036bf45d}{value}}();}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// the key (for objects)}}
+\DoxyCodeLine{    \textcolor{keyword}{const} std::string \&key = it.key();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+You can also use an iteration wrapper and use range for\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it : json::iteration\_wrapper(j))}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// the value}}
+\DoxyCodeLine{    \mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} \&val = it.\mbox{\hyperlink{classnlohmann_1_1basic__json_adcf8ca5079f5db993820bf50036bf45d}{value}}();}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// the key (for objects)}}
+\DoxyCodeLine{    \textcolor{keyword}{const} std::string \&key = it.key();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

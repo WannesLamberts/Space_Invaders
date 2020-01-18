@@ -76,10 +76,12 @@ Inheritance diagram for ControllerAbstract:</div>
   <img src="classControllerAbstract.png" usemap="#ControllerAbstract_map" alt=""/>
   <map id="ControllerAbstract_map" name="ControllerAbstract_map">
 <area href="classEntity_1_1EntityController.html" alt="Entity::EntityController" shape="rect" coords="177,56,344,80"/>
-<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="88,112,255,136"/>
-<area href="classEntity_1_1BulletController.html" alt="Entity::BulletController" shape="rect" coords="265,112,432,136"/>
-<area href="classAlienShipController.html" alt="AlienShipController" shape="rect" coords="0,168,167,192"/>
-<area href="classEntity_1_1PlayerShipController.html" alt="Entity::PlayerShipController" shape="rect" coords="177,168,344,192"/>
+<area href="classEntity_1_1CollidableController.html" alt="Entity::CollidableController" shape="rect" coords="177,112,344,136"/>
+<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="88,168,255,192"/>
+<area href="classEntity_1_1BulletController.html" alt="Entity::BulletController" shape="rect" coords="265,168,432,192"/>
+<area href="classEntity_1_1EnemyController.html" alt="Entity::EnemyController" shape="rect" coords="0,224,167,248"/>
+<area href="classEntity_1_1PlayerShipController.html" alt="Entity::PlayerShipController" shape="rect" coords="177,224,344,248"/>
+<area href="classEntity_1_1AlienShipController.html" alt="Entity::AlienShipController" shape="rect" coords="0,280,167,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -91,6 +93,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbe9ad50a190b3dced17a5904b7d418d"><td class="memItemLeft" align="right" valign="top"><a id="abbe9ad50a190b3dced17a5904b7d418d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> ()=0</td></tr>
 <tr class="separator:abbe9ad50a190b3dced17a5904b7d418d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac011c92c97ae6236cd24dd03020bdf85"><td class="memItemLeft" align="right" valign="top"><a id="ac011c92c97ae6236cd24dd03020bdf85"></a>
+const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getM</b> () const</td></tr>
+<tr class="separator:ac011c92c97ae6236cd24dd03020bdf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120c5e7197bbf9a53d0365658770be43"><td class="memItemLeft" align="right" valign="top"><a id="a120c5e7197bbf9a53d0365658770be43"></a>
+const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getV</b> () const</td></tr>
+<tr class="separator:a120c5e7197bbf9a53d0365658770be43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

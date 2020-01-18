@@ -11,7 +11,7 @@ namespace Entity{
 class BulletView: public EntityView
 {
 public:
-        BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model);
+        BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model);
         void generateShape();
         /**
              * \brief The texture that will be drawn on te sf::sprite shape

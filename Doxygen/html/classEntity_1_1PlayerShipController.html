@@ -78,7 +78,8 @@ Inheritance diagram for Entity::PlayerShipController:</div>
  <div class="center">
   <img src="classEntity_1_1PlayerShipController.png" usemap="#Entity::PlayerShipController_map" alt=""/>
   <map id="Entity::PlayerShipController_map" name="Entity::PlayerShipController_map">
-<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="0,112,167,136"/>
+<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="0,168,167,192"/>
+<area href="classEntity_1_1CollidableController.html" alt="Entity::CollidableController" shape="rect" coords="0,112,167,136"/>
 <area href="classEntity_1_1EntityController.html" alt="Entity::EntityController" shape="rect" coords="0,56,167,80"/>
 <area href="classControllerAbstract.html" alt="ControllerAbstract" shape="rect" coords="0,0,167,24"/>
   </map>
@@ -95,13 +96,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>readInput</b> ()</td>
 <tr class="memitem:ae9210cd1bb8f24ade63b423fa31e1518"><td class="memItemLeft" align="right" valign="top"><a id="ae9210cd1bb8f24ade63b423fa31e1518"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> ()</td></tr>
 <tr class="separator:ae9210cd1bb8f24ade63b423fa31e1518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6970835c4daf4115924896daed5b6ed"><td class="memItemLeft" align="right" valign="top"><a id="ad6970835c4daf4115924896daed5b6ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
+<tr class="separator:ad6970835c4daf4115924896daed5b6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1AliveController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1AliveController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1AliveController.html">Entity::AliveController</a></td></tr>
 <tr class="memitem:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="memItemLeft" align="right" valign="top"><a id="a114a701e8601ba0c51f5a1c64f5f71f4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AliveController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
 <tr class="separator:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec2f2269af2e00cd12ff4c6cb08a55e inherit pub_methods_classEntity_1_1AliveController"><td class="memItemLeft" align="right" valign="top"><a id="adec2f2269af2e00cd12ff4c6cb08a55e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
-<tr class="separator:adec2f2269af2e00cd12ff4c6cb08a55e inherit pub_methods_classEntity_1_1AliveController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEntity_1_1CollidableController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1CollidableController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a></td></tr>
+<tr class="memitem:aef0e6202ddf27cdcb76faf9e49d82876 inherit pub_methods_classEntity_1_1CollidableController"><td class="memItemLeft" align="right" valign="top"><a id="aef0e6202ddf27cdcb76faf9e49d82876"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkCollision</b> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; b)</td></tr>
+<tr class="separator:aef0e6202ddf27cdcb76faf9e49d82876 inherit pub_methods_classEntity_1_1CollidableController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab612a1b07f04bb2cd1dddd1105180ab7 inherit pub_methods_classEntity_1_1CollidableController"><td class="memItemLeft" align="right" valign="top"><a id="ab612a1b07f04bb2cd1dddd1105180ab7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CollidableController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
+<tr class="separator:ab612a1b07f04bb2cd1dddd1105180ab7 inherit pub_methods_classEntity_1_1CollidableController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1EntityController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1EntityController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1EntityController.html">Entity::EntityController</a></td></tr>
 <tr class="memitem:a32f2181996d48182c887ab92149afdf7 inherit pub_methods_classEntity_1_1EntityController"><td class="memItemLeft" align="right" valign="top"><a id="a32f2181996d48182c887ab92149afdf7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EntityController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
@@ -110,6 +118,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr
 <tr class="memitem:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a9ff7d37a76409a65aed7870458b13e5c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ControllerAbstract</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
 <tr class="separator:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ac011c92c97ae6236cd24dd03020bdf85"></a>
+const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getM</b> () const</td></tr>
+<tr class="separator:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a120c5e7197bbf9a53d0365658770be43"></a>
+const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getV</b> () const</td></tr>
+<tr class="separator:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -125,8 +139,8 @@ std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="PlayerShipController_8h_source.html#l00018">18</a> of file <a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Entity/Alive/PlayerShip/<a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a></li>
-<li>Entity/Alive/PlayerShip/<a class="el" href="PlayerShipController_8cpp_source.html">PlayerShipController.cpp</a></li>
+<li>Entity/Collidable/Alive/PlayerShip/<a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a></li>
+<li>Entity/Collidable/Alive/PlayerShip/<a class="el" href="PlayerShipController_8cpp_source.html">PlayerShipController.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -79,8 +79,9 @@ Inheritance diagram for Subject:</div>
 <area href="classEntity_1_1EntityModel.html" title="Model class for Entity this class handles all the data of Entity." alt="Entity::EntityModel" shape="rect" coords="156,112,302,136"/>
 <area href="classEntity_1_1AliveModel.html" alt="Entity::AliveModel" shape="rect" coords="78,168,224,192"/>
 <area href="classEntity_1_1BulletModel.html" alt="Entity::BulletModel" shape="rect" coords="234,168,380,192"/>
-<area href="classAlienShipModel.html" alt="AlienShipModel" shape="rect" coords="0,224,146,248"/>
+<area href="classEntity_1_1EnemyModel.html" alt="Entity::EnemyModel" shape="rect" coords="0,224,146,248"/>
 <area href="classEntity_1_1PlayerShipModel.html" title="Model of the PlayerShip handles all the data for PlayerShip." alt="Entity::PlayerShipModel" shape="rect" coords="156,224,302,248"/>
+<area href="classEntity_1_1AlienShipModel.html" alt="Entity::AlienShipModel" shape="rect" coords="0,280,146,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -92,9 +93,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerObserver</b> 
 <tr class="memitem:ab2b8a1aeb158f75379d3975bc2f96ad0"><td class="memItemLeft" align="right" valign="top"><a id="ab2b8a1aeb158f75379d3975bc2f96ad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; o)</td></tr>
 <tr class="separator:ab2b8a1aeb158f75379d3975bc2f96ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8cbc824cec718dd9f35997a3a3c418"><td class="memItemLeft" align="right" valign="top"><a id="adc8cbc824cec718dd9f35997a3a3c418"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)=0</td></tr>
-<tr class="separator:adc8cbc824cec718dd9f35997a3a3c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de02ea75ec4b19553dbb310eeafc514"><td class="memItemLeft" align="right" valign="top"><a id="a0de02ea75ec4b19553dbb310eeafc514"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeallObservers</b> ()</td></tr>
+<tr class="separator:a0de02ea75ec4b19553dbb310eeafc514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3adcf5638dda8dbd4b1d4356d02453"><td class="memItemLeft" align="right" valign="top"><a id="adb3adcf5638dda8dbd4b1d4356d02453"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObservers</b> ()=0</td></tr>
+<tr class="separator:adb3adcf5638dda8dbd4b1d4356d02453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

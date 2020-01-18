@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Entity/Bullet/BulletModel.h Source File</title>
+<title>My Project: Entity/Collidable/Bullet/BulletModel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_fd843aa809358da7a552eef755e91556.html">Bullet</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_a88f5e9adf38e61dcd4aaad0edb0d8f0.html">Collidable</a></li><li class="navelem"><a class="el" href="dir_20eadfb1115bb71bc9e79c11d163baf8.html">Bullet</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,23 +75,26 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SPACE_INVADERS_BULLETMODEL_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SPACE_INVADERS_BULLETMODEL_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../EntityModel.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>Entity{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classEntity_1_1BulletModel.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1BulletModel.html">BulletModel</a> :<span class="keyword">public</span> <a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">double</span> speed;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> travel();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classEntity_1_1BulletModel.html">BulletModel</a>(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">double</span> speed);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif // SPACE_INVADERS_BULLETMODEL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../../MVCAbstract/ControllerAbstract.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../EntityModel.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Entity{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classEntity_1_1BulletModel.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1BulletModel.html">BulletModel</a> :<span class="keyword">public</span> <a class="code" href="classEntity_1_1EntityModel.html">EntityModel</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">double</span> speed;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">bool</span> friendly;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">bool</span> travel();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classEntity_1_1BulletModel.html">BulletModel</a>(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">double</span> speed, <span class="keywordtype">bool</span> friendly);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">bool</span> isFriendly() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // SPACE_INVADERS_BULLETMODEL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassEntity_1_1EntityModel_html"><div class="ttname"><a href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></div><div class="ttdoc">Model class for Entity this class handles all the data of Entity.</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8h_source.html#l00014">EntityModel.h:14</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityModel_html"><div class="ttname"><a href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></div><div class="ttdoc">Model class for Entity this class handles all the data of Entity.</div><div class="ttdef"><b>Definition:</b> <a href="EntityModel_8h_source.html#l00013">EntityModel.h:13</a></div></div>
 <div class="ttc" id="astructUtils_1_1Vector2D_html"><div class="ttname"><a href="structUtils_1_1Vector2D.html">Utils::Vector2D</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector2D_8h_source.html#l00010">Vector2D.h:10</a></div></div>
-<div class="ttc" id="aclassEntity_1_1BulletModel_html"><div class="ttname"><a href="classEntity_1_1BulletModel.html">Entity::BulletModel</a></div><div class="ttdef"><b>Definition:</b> <a href="BulletModel_8h_source.html#l00009">BulletModel.h:9</a></div></div>
+<div class="ttc" id="aclassEntity_1_1BulletModel_html"><div class="ttname"><a href="classEntity_1_1BulletModel.html">Entity::BulletModel</a></div><div class="ttdef"><b>Definition:</b> <a href="BulletModel_8h_source.html#l00010">BulletModel.h:10</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

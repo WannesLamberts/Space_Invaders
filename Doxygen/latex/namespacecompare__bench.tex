@@ -1,0 +1,55 @@
+\hypertarget{namespacecompare__bench}{}\doxysection{compare\+\_\+bench Namespace Reference}
+\label{namespacecompare__bench}\index{compare\_bench@{compare\_bench}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecompare__bench_a5e90671fbe7113cf21c2b3f54ae0a858}{check\+\_\+inputs}} (in1, in2, flags)
+\item 
+\mbox{\Hypertarget{namespacecompare__bench_ae82bb21b1019ff4a8dd6692ebb99d0de}\label{namespacecompare__bench_ae82bb21b1019ff4a8dd6692ebb99d0de}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}compare_bench.py - Compare two benchmarks or their results and report the
+           difference.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecompare__bench_a5e90671fbe7113cf21c2b3f54ae0a858}\label{namespacecompare__bench_a5e90671fbe7113cf21c2b3f54ae0a858}} 
+\index{compare\_bench@{compare\_bench}!check\_inputs@{check\_inputs}}
+\index{check\_inputs@{check\_inputs}!compare\_bench@{compare\_bench}}
+\doxysubsubsection{\texorpdfstring{check\_inputs()}{check\_inputs()}}
+{\footnotesize\ttfamily def compare\+\_\+bench.\+check\+\_\+inputs (\begin{DoxyParamCaption}\item[{}]{in1,  }\item[{}]{in2,  }\item[{}]{flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform checking on the user provided inputs and diagnose any abnormalities
+\end{DoxyVerb}
+ 
+
+Definition at line 13 of file compare\+\_\+bench.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \textcolor{keyword}{def }check\_inputs(in1, in2, flags):}
+\DoxyCodeLine{14     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{15 \textcolor{stringliteral}{    Perform checking on the user provided inputs and diagnose any abnormalities}}
+\DoxyCodeLine{16 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{17     in1\_kind, in1\_err = classify\_input\_file(in1)}
+\DoxyCodeLine{18     in2\_kind, in2\_err = classify\_input\_file(in2)}
+\DoxyCodeLine{19     output\_file = find\_benchmark\_flag(\textcolor{stringliteral}{'-\/-\/benchmark\_out='}, flags)}
+\DoxyCodeLine{20     output\_type = find\_benchmark\_flag(\textcolor{stringliteral}{'-\/-\/benchmark\_out\_format='}, flags)}
+\DoxyCodeLine{21     \textcolor{keywordflow}{if} in1\_kind == IT\_Executable \textcolor{keywordflow}{and} in2\_kind == IT\_Executable \textcolor{keywordflow}{and} output\_file:}
+\DoxyCodeLine{22         print((\textcolor{stringliteral}{"WARNING: '-\/-\/benchmark\_out=\%s' will be passed to both "}}
+\DoxyCodeLine{23               \textcolor{stringliteral}{"benchmarks causing it to be overwritten"}) \% output\_file)}
+\DoxyCodeLine{24     \textcolor{keywordflow}{if} in1\_kind == IT\_JSON \textcolor{keywordflow}{and} in2\_kind == IT\_JSON \textcolor{keywordflow}{and} len(flags) > 0:}
+\DoxyCodeLine{25         print(\textcolor{stringliteral}{"WARNING: passing -\/-\/benchmark flags has no effect since both "}}
+\DoxyCodeLine{26               \textcolor{stringliteral}{"inputs are JSON"})}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if} output\_type \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None} \textcolor{keywordflow}{and} output\_type != \textcolor{stringliteral}{'json'}:}
+\DoxyCodeLine{28         print((\textcolor{stringliteral}{"ERROR: passing '-\/-\/benchmark\_out\_format=\%s' to 'compare\_bench.py`"}}
+\DoxyCodeLine{29               \textcolor{stringliteral}{" is not supported."}) \% output\_type)}
+\DoxyCodeLine{30         sys.exit(1)}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+
+\end{DoxyCode}

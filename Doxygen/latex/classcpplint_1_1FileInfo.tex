@@ -1,0 +1,263 @@
+\hypertarget{classcpplint_1_1FileInfo}{}\doxysection{cpplint.\+File\+Info Class Reference}
+\label{classcpplint_1_1FileInfo}\index{cpplint.FileInfo@{cpplint.FileInfo}}
+Inheritance diagram for cpplint.\+File\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcpplint_1_1FileInfo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_abd3ff77aab027af2476b3a1d97b1f89c}\label{classcpplint_1_1FileInfo_abd3ff77aab027af2476b3a1d97b1f89c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, filename)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_aed56577368c45cdf45fc4c9109129145}{Full\+Name}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_a2b3b79b7d46221a6b9d0ea0bebac2061}{Repository\+Name}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_a43f1c5ff1771da52e29c60c114955e72}{Split}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_a1a12ed63ddc2ffd8f6a105e3ab4d6289}{Base\+Name}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_a2554b504117839931e901b59a59c67ae}{Extension}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_acb46555a72b346966f4bf28c08e3b1fa}{No\+Extension}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1FileInfo_a157f8d3266d7291321db88cdad3b2879}{Is\+Source}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides utility functions for filenames.
+
+FileInfo provides easy access to the components of a file's path
+relative to the project root.
+\end{DoxyVerb}
+ 
+
+Definition at line 1296 of file cpplint.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_a1a12ed63ddc2ffd8f6a105e3ab4d6289}\label{classcpplint_1_1FileInfo_a1a12ed63ddc2ffd8f6a105e3ab4d6289}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!BaseName@{BaseName}}
+\index{BaseName@{BaseName}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{BaseName()}{BaseName()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Base\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}File base name - text after the final slash, before the final period.\end{DoxyVerb}
+ 
+
+Definition at line 1384 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1384   \textcolor{keyword}{def }BaseName(self):}
+\DoxyCodeLine{1385     \textcolor{stringliteral}{"""File base name -\/ text after the final slash, before the final period."""}}
+\DoxyCodeLine{1386     \textcolor{keywordflow}{return} self.Split()[1]}
+\DoxyCodeLine{1387 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_a2554b504117839931e901b59a59c67ae}\label{classcpplint_1_1FileInfo_a2554b504117839931e901b59a59c67ae}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!Extension@{Extension}}
+\index{Extension@{Extension}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{Extension()}{Extension()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Extension (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}File extension - text following the final period, includes that period.\end{DoxyVerb}
+ 
+
+Definition at line 1388 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1388   \textcolor{keyword}{def }Extension(self):}
+\DoxyCodeLine{1389     \textcolor{stringliteral}{"""File extension -\/ text following the final period, includes that period."""}}
+\DoxyCodeLine{1390     \textcolor{keywordflow}{return} self.Split()[2]}
+\DoxyCodeLine{1391 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_aed56577368c45cdf45fc4c9109129145}\label{classcpplint_1_1FileInfo_aed56577368c45cdf45fc4c9109129145}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!FullName@{FullName}}
+\index{FullName@{FullName}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{FullName()}{FullName()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Full\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make Windows paths like Unix.\end{DoxyVerb}
+ 
+
+Definition at line 1306 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1306   \textcolor{keyword}{def }FullName(self):}
+\DoxyCodeLine{1307     \textcolor{stringliteral}{"""Make Windows paths like Unix."""}}
+\DoxyCodeLine{1308     \textcolor{keywordflow}{return} os.path.abspath(self.\_filename).replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{1309 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_a157f8d3266d7291321db88cdad3b2879}\label{classcpplint_1_1FileInfo_a157f8d3266d7291321db88cdad3b2879}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!IsSource@{IsSource}}
+\index{IsSource@{IsSource}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{IsSource()}{IsSource()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Is\+Source (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}File has a source file extension.\end{DoxyVerb}
+ 
+
+Definition at line 1396 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1396   \textcolor{keyword}{def }IsSource(self):}
+\DoxyCodeLine{1397     \textcolor{stringliteral}{"""File has a source file extension."""}}
+\DoxyCodeLine{1398     \textcolor{keywordflow}{return} \_IsSourceExtension(self.Extension()[1:])}
+\DoxyCodeLine{1399 }
+\DoxyCodeLine{1400 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_acb46555a72b346966f4bf28c08e3b1fa}\label{classcpplint_1_1FileInfo_acb46555a72b346966f4bf28c08e3b1fa}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!NoExtension@{NoExtension}}
+\index{NoExtension@{NoExtension}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{NoExtension()}{NoExtension()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+No\+Extension (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}File has no source file extension.\end{DoxyVerb}
+ 
+
+Definition at line 1392 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1392   \textcolor{keyword}{def }NoExtension(self):}
+\DoxyCodeLine{1393     \textcolor{stringliteral}{"""File has no source file extension."""}}
+\DoxyCodeLine{1394     \textcolor{keywordflow}{return} \textcolor{stringliteral}{'/'}.join(self.Split()[0:2])}
+\DoxyCodeLine{1395 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_a2b3b79b7d46221a6b9d0ea0bebac2061}\label{classcpplint_1_1FileInfo_a2b3b79b7d46221a6b9d0ea0bebac2061}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!RepositoryName@{RepositoryName}}
+\index{RepositoryName@{RepositoryName}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{RepositoryName()}{RepositoryName()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Repository\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}FullName after removing the local path to the repository.
+
+If we have a real absolute path name here we can try to do something smart:
+detecting the root of the checkout and truncating /path/to/checkout from
+the name so that we get header guards that don't include things like
+"C:\Documents and Settings\..." or "/home/username/..." in them and thus
+people on different computers who have checked the source out to different
+locations won't see bogus errors.
+\end{DoxyVerb}
+ 
+
+Definition at line 1310 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1310   \textcolor{keyword}{def }RepositoryName(self):}
+\DoxyCodeLine{1311     \textcolor{stringliteral}{r"""FullName after removing the local path to the repository.}}
+\DoxyCodeLine{1312 \textcolor{stringliteral}{}}
+\DoxyCodeLine{1313 \textcolor{stringliteral}{    If we have a real absolute path name here we can try to do something smart:}}
+\DoxyCodeLine{1314 \textcolor{stringliteral}{    detecting the root of the checkout and truncating /path/to/checkout from}}
+\DoxyCodeLine{1315 \textcolor{stringliteral}{    the name so that we get header guards that don't include things like}}
+\DoxyCodeLine{1316 \textcolor{stringliteral}{    "C:\(\backslash\)Documents and Settings\(\backslash\)..." or "/home/username/..." in them and thus}}
+\DoxyCodeLine{1317 \textcolor{stringliteral}{    people on different computers who have checked the source out to different}}
+\DoxyCodeLine{1318 \textcolor{stringliteral}{    locations won't see bogus errors.}}
+\DoxyCodeLine{1319 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{1320     fullname = self.FullName()}
+\DoxyCodeLine{1321 }
+\DoxyCodeLine{1322     \textcolor{keywordflow}{if} os.path.exists(fullname):}
+\DoxyCodeLine{1323       project\_dir = os.path.dirname(fullname)}
+\DoxyCodeLine{1324 }
+\DoxyCodeLine{1325       \textcolor{comment}{\# If the user specified a repository path, it exists, and the file is}}
+\DoxyCodeLine{1326       \textcolor{comment}{\# contained in it, use the specified repository path}}
+\DoxyCodeLine{1327       \textcolor{keywordflow}{if} \_repository:}
+\DoxyCodeLine{1328         repo = FileInfo(\_repository).FullName()}
+\DoxyCodeLine{1329         root\_dir = project\_dir}
+\DoxyCodeLine{1330         \textcolor{keywordflow}{while} os.path.exists(root\_dir):}
+\DoxyCodeLine{1331           \textcolor{comment}{\# allow case insensitive compare on Windows}}
+\DoxyCodeLine{1332           \textcolor{keywordflow}{if} os.path.normcase(root\_dir) == os.path.normcase(repo):}
+\DoxyCodeLine{1333             \textcolor{keywordflow}{return} os.path.relpath(fullname, root\_dir).replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{1334           one\_up\_dir = os.path.dirname(root\_dir)}
+\DoxyCodeLine{1335           \textcolor{keywordflow}{if} one\_up\_dir == root\_dir:}
+\DoxyCodeLine{1336             \textcolor{keywordflow}{break}}
+\DoxyCodeLine{1337           root\_dir = one\_up\_dir}
+\DoxyCodeLine{1338 }
+\DoxyCodeLine{1339       \textcolor{keywordflow}{if} os.path.exists(os.path.join(project\_dir, \textcolor{stringliteral}{".svn"})):}
+\DoxyCodeLine{1340         \textcolor{comment}{\# If there's a .svn file in the current directory, we recursively look}}
+\DoxyCodeLine{1341         \textcolor{comment}{\# up the directory tree for the top of the SVN checkout}}
+\DoxyCodeLine{1342         root\_dir = project\_dir}
+\DoxyCodeLine{1343         one\_up\_dir = os.path.dirname(root\_dir)}
+\DoxyCodeLine{1344         \textcolor{keywordflow}{while} os.path.exists(os.path.join(one\_up\_dir, \textcolor{stringliteral}{".svn"})):}
+\DoxyCodeLine{1345           root\_dir = os.path.dirname(root\_dir)}
+\DoxyCodeLine{1346           one\_up\_dir = os.path.dirname(one\_up\_dir)}
+\DoxyCodeLine{1347 }
+\DoxyCodeLine{1348         prefix = os.path.commonprefix([root\_dir, project\_dir])}
+\DoxyCodeLine{1349         \textcolor{keywordflow}{return} fullname[len(prefix) + 1:]}
+\DoxyCodeLine{1350 }
+\DoxyCodeLine{1351       \textcolor{comment}{\# Not SVN <= 1.6? Try to find a git, hg, or svn top level directory by}}
+\DoxyCodeLine{1352       \textcolor{comment}{\# searching up from the current path.}}
+\DoxyCodeLine{1353       root\_dir = current\_dir = os.path.dirname(fullname)}
+\DoxyCodeLine{1354       \textcolor{keywordflow}{while} current\_dir != os.path.dirname(current\_dir):}
+\DoxyCodeLine{1355         \textcolor{keywordflow}{if} (os.path.exists(os.path.join(current\_dir, \textcolor{stringliteral}{".git"})) \textcolor{keywordflow}{or}}
+\DoxyCodeLine{1356             os.path.exists(os.path.join(current\_dir, \textcolor{stringliteral}{".hg"})) \textcolor{keywordflow}{or}}
+\DoxyCodeLine{1357             os.path.exists(os.path.join(current\_dir, \textcolor{stringliteral}{".svn"}))):}
+\DoxyCodeLine{1358           root\_dir = current\_dir}
+\DoxyCodeLine{1359         current\_dir = os.path.dirname(current\_dir)}
+\DoxyCodeLine{1360 }
+\DoxyCodeLine{1361       \textcolor{keywordflow}{if} (os.path.exists(os.path.join(root\_dir, \textcolor{stringliteral}{".git"})) \textcolor{keywordflow}{or}}
+\DoxyCodeLine{1362           os.path.exists(os.path.join(root\_dir, \textcolor{stringliteral}{".hg"})) \textcolor{keywordflow}{or}}
+\DoxyCodeLine{1363           os.path.exists(os.path.join(root\_dir, \textcolor{stringliteral}{".svn"}))):}
+\DoxyCodeLine{1364         prefix = os.path.commonprefix([root\_dir, project\_dir])}
+\DoxyCodeLine{1365         \textcolor{keywordflow}{return} fullname[len(prefix) + 1:]}
+\DoxyCodeLine{1366 }
+\DoxyCodeLine{1367     \textcolor{comment}{\# Don't know what to do; header guard warnings may be wrong...}}
+\DoxyCodeLine{1368     \textcolor{keywordflow}{return} fullname}
+\DoxyCodeLine{1369 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1FileInfo_a43f1c5ff1771da52e29c60c114955e72}\label{classcpplint_1_1FileInfo_a43f1c5ff1771da52e29c60c114955e72}} 
+\index{cpplint.FileInfo@{cpplint.FileInfo}!Split@{Split}}
+\index{Split@{Split}!cpplint.FileInfo@{cpplint.FileInfo}}
+\doxysubsubsection{\texorpdfstring{Split()}{Split()}}
+{\footnotesize\ttfamily def cpplint.\+File\+Info.\+Split (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Splits the file into the directory, basename, and extension.
+
+For 'chrome/browser/browser.cc', Split() would
+return ('chrome/browser', 'browser', '.cc')
+
+Returns:
+  A tuple of (directory, basename, extension).
+\end{DoxyVerb}
+ 
+
+Definition at line 1370 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1370   \textcolor{keyword}{def }Split(self):}
+\DoxyCodeLine{1371     \textcolor{stringliteral}{"""Splits the file into the directory, basename, and extension.}}
+\DoxyCodeLine{1372 \textcolor{stringliteral}{}}
+\DoxyCodeLine{1373 \textcolor{stringliteral}{    For 'chrome/browser/browser.cc', Split() would}}
+\DoxyCodeLine{1374 \textcolor{stringliteral}{    return ('chrome/browser', 'browser', '.cc')}}
+\DoxyCodeLine{1375 \textcolor{stringliteral}{}}
+\DoxyCodeLine{1376 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{1377 \textcolor{stringliteral}{      A tuple of (directory, basename, extension).}}
+\DoxyCodeLine{1378 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{1379 }
+\DoxyCodeLine{1380     googlename = self.RepositoryName()}
+\DoxyCodeLine{1381     project, rest = os.path.split(googlename)}
+\DoxyCodeLine{1382     \textcolor{keywordflow}{return} (project,) + os.path.splitext(rest)}
+\DoxyCodeLine{1383 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/cpplint/cpplint.\+py\end{DoxyCompactItemize}

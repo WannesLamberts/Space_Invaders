@@ -17,12 +17,14 @@
 class Game
 {
 public:
-        Game();
+        Game(std::string file);
         void drawGame();
         void runGame();
+        void nextlevel();
         void loadLevel(std::string file);
 private:
-
+        int currentlevel;
+        std::vector<std::string> levels;
 public:
 private:
         std::shared_ptr<sf::RenderWindow> w;

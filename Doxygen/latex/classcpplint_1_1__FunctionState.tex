@@ -1,0 +1,168 @@
+\hypertarget{classcpplint_1_1__FunctionState}{}\doxysection{cpplint.\+\_\+\+Function\+State Class Reference}
+\label{classcpplint_1_1__FunctionState}\index{cpplint.\_FunctionState@{cpplint.\_FunctionState}}
+Inheritance diagram for cpplint.\+\_\+\+Function\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcpplint_1_1__FunctionState}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a3f6a865710852cc74c6a7085180458ae}\label{classcpplint_1_1__FunctionState_a3f6a865710852cc74c6a7085180458ae}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__FunctionState_a41215c4d73baccbb340f6d0df1c1f4b3}{Begin}} (self, function\+\_\+name)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__FunctionState_ac25c9711911ae181b091b52619cf2701}{Count}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__FunctionState_a5e4ad7d7b104038b45204ab4abf527b2}{Check}} (self, error, filename, linenum)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__FunctionState_a1ab6b0a575c25c135f9004b7fb12dc4a}{End}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a8362d472591f60462184bf68b49c0efb}\label{classcpplint_1_1__FunctionState_a8362d472591f60462184bf68b49c0efb}} 
+{\bfseries in\+\_\+a\+\_\+function}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a886f5d476adc81f499a711750a399aa2}\label{classcpplint_1_1__FunctionState_a886f5d476adc81f499a711750a399aa2}} 
+{\bfseries lines\+\_\+in\+\_\+function}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a320674f54bd75087febc8f0d83620569}\label{classcpplint_1_1__FunctionState_a320674f54bd75087febc8f0d83620569}} 
+{\bfseries current\+\_\+function}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tracks current function name and the number of lines in its body.\end{DoxyVerb}
+ 
+
+Definition at line 1232 of file cpplint.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a41215c4d73baccbb340f6d0df1c1f4b3}\label{classcpplint_1_1__FunctionState_a41215c4d73baccbb340f6d0df1c1f4b3}} 
+\index{cpplint.\_FunctionState@{cpplint.\_FunctionState}!Begin@{Begin}}
+\index{Begin@{Begin}!cpplint.\_FunctionState@{cpplint.\_FunctionState}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Function\+State.\+Begin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{function\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start analyzing function body.
+
+Args:
+  function_name: The name of the function being tracked.
+\end{DoxyVerb}
+ 
+
+Definition at line 1243 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1243   \textcolor{keyword}{def }Begin(self, function\_name):}
+\DoxyCodeLine{1244     \textcolor{stringliteral}{"""Start analyzing function body.}}
+\DoxyCodeLine{1245 \textcolor{stringliteral}{}}
+\DoxyCodeLine{1246 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{1247 \textcolor{stringliteral}{      function\_name: The name of the function being tracked.}}
+\DoxyCodeLine{1248 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{1249     self.in\_a\_function = \textcolor{keyword}{True}}
+\DoxyCodeLine{1250     self.lines\_in\_function = 0}
+\DoxyCodeLine{1251     self.current\_function = function\_name}
+\DoxyCodeLine{1252 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a5e4ad7d7b104038b45204ab4abf527b2}\label{classcpplint_1_1__FunctionState_a5e4ad7d7b104038b45204ab4abf527b2}} 
+\index{cpplint.\_FunctionState@{cpplint.\_FunctionState}!Check@{Check}}
+\index{Check@{Check}!cpplint.\_FunctionState@{cpplint.\_FunctionState}}
+\doxysubsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Function\+State.\+Check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{error,  }\item[{}]{filename,  }\item[{}]{linenum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Report if too many lines in function body.
+
+Args:
+  error: The function to call with any errors found.
+  filename: The name of the current file.
+  linenum: The number of the line to check.
+\end{DoxyVerb}
+ 
+
+Definition at line 1258 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1258   \textcolor{keyword}{def }Check(self, error, filename, linenum):}
+\DoxyCodeLine{1259     \textcolor{stringliteral}{"""Report if too many lines in function body.}}
+\DoxyCodeLine{1260 \textcolor{stringliteral}{}}
+\DoxyCodeLine{1261 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{1262 \textcolor{stringliteral}{      error: The function to call with any errors found.}}
+\DoxyCodeLine{1263 \textcolor{stringliteral}{      filename: The name of the current file.}}
+\DoxyCodeLine{1264 \textcolor{stringliteral}{      linenum: The number of the line to check.}}
+\DoxyCodeLine{1265 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{1266     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.in\_a\_function:}
+\DoxyCodeLine{1267       \textcolor{keywordflow}{return}}
+\DoxyCodeLine{1268 }
+\DoxyCodeLine{1269     \textcolor{keywordflow}{if} Match(\textcolor{stringliteral}{r'T(EST|est)'}, self.current\_function):}
+\DoxyCodeLine{1270       base\_trigger = self.\_TEST\_TRIGGER}
+\DoxyCodeLine{1271     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{1272       base\_trigger = self.\_NORMAL\_TRIGGER}
+\DoxyCodeLine{1273     trigger = base\_trigger * 2**\_VerboseLevel()}
+\DoxyCodeLine{1274 }
+\DoxyCodeLine{1275     \textcolor{keywordflow}{if} self.lines\_in\_function > trigger:}
+\DoxyCodeLine{1276       error\_level = int(math.log(self.lines\_in\_function / base\_trigger, 2))}
+\DoxyCodeLine{1277       \textcolor{comment}{\# 50 => 0, 100 => 1, 200 => 2, 400 => 3, 800 => 4, 1600 => 5, ...}}
+\DoxyCodeLine{1278       \textcolor{keywordflow}{if} error\_level > 5:}
+\DoxyCodeLine{1279         error\_level = 5}
+\DoxyCodeLine{1280       error(filename, linenum, \textcolor{stringliteral}{'readability/fn\_size'}, error\_level,}
+\DoxyCodeLine{1281             \textcolor{stringliteral}{'Small and focused functions are preferred:'}}
+\DoxyCodeLine{1282             \textcolor{stringliteral}{' \%s has \%d non-\/comment lines'}}
+\DoxyCodeLine{1283             \textcolor{stringliteral}{' (error triggered by exceeding \%d lines).'}  \% (}
+\DoxyCodeLine{1284                 self.current\_function, self.lines\_in\_function, trigger))}
+\DoxyCodeLine{1285 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_ac25c9711911ae181b091b52619cf2701}\label{classcpplint_1_1__FunctionState_ac25c9711911ae181b091b52619cf2701}} 
+\index{cpplint.\_FunctionState@{cpplint.\_FunctionState}!Count@{Count}}
+\index{Count@{Count}!cpplint.\_FunctionState@{cpplint.\_FunctionState}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Function\+State.\+Count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Count line in current function body.\end{DoxyVerb}
+ 
+
+Definition at line 1253 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1253   \textcolor{keyword}{def }Count(self):}
+\DoxyCodeLine{1254     \textcolor{stringliteral}{"""Count line in current function body."""}}
+\DoxyCodeLine{1255     \textcolor{keywordflow}{if} self.in\_a\_function:}
+\DoxyCodeLine{1256       self.lines\_in\_function += 1}
+\DoxyCodeLine{1257 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__FunctionState_a1ab6b0a575c25c135f9004b7fb12dc4a}\label{classcpplint_1_1__FunctionState_a1ab6b0a575c25c135f9004b7fb12dc4a}} 
+\index{cpplint.\_FunctionState@{cpplint.\_FunctionState}!End@{End}}
+\index{End@{End}!cpplint.\_FunctionState@{cpplint.\_FunctionState}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Function\+State.\+End (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop analyzing function body.\end{DoxyVerb}
+ 
+
+Definition at line 1286 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1286   \textcolor{keyword}{def }End(self):}
+\DoxyCodeLine{1287     \textcolor{stringliteral}{"""Stop analyzing function body."""}}
+\DoxyCodeLine{1288     self.in\_a\_function = \textcolor{keyword}{False}}
+\DoxyCodeLine{1289 }
+\DoxyCodeLine{1290 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/cpplint/cpplint.\+py\end{DoxyCompactItemize}

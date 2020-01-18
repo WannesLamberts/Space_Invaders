@@ -12,6 +12,6 @@ void Entity::PlayerShipView::generateShape()
         std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }
 
-Entity::PlayerShipView::PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
+Entity::PlayerShipView::PlayerShipView(const std::__shared_ptr<sf::RenderWindow> &w,std::weak_ptr<ModelAbstract> model) : EntityView(w,model) {
         generateShape();
 }

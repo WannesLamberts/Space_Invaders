@@ -3,11 +3,14 @@
 Inheritance diagram for Entity\+::Alive\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=5.000000cm]{classEntity_1_1AliveModel}
+\includegraphics[height=6.000000cm]{classEntity_1_1AliveModel}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}\label{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}} 
+{\bfseries Alive\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&size, int healthpoints, double speed)
 \item 
 \mbox{\Hypertarget{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}\label{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}} 
 int {\bfseries get\+Healthpoints} () const
@@ -21,14 +24,23 @@ int {\bfseries get\+Fire\+Cooldown} () const
 \mbox{\Hypertarget{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}\label{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}} 
 void {\bfseries set\+Fire\+Cooldown} (int fire\+Cooldown)
 \item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a6402785410fb34984ede6df73f371b64}\label{classEntity_1_1AliveModel_a6402785410fb34984ede6df73f371b64}} 
-void {\bfseries move\+Left} ()
+\mbox{\Hypertarget{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}\label{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}} 
+bool {\bfseries move\+Left} ()
 \item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_aff68722d4e12be26e5477dbcf0f0c252}\label{classEntity_1_1AliveModel_aff68722d4e12be26e5477dbcf0f0c252}} 
-void {\bfseries move\+Right} ()
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}\label{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}} 
+bool {\bfseries move\+Right} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a80ca08b127969886d4337f6e3f1752bd}\label{classEntity_1_1AliveModel_a80ca08b127969886d4337f6e3f1752bd}} 
-{\bfseries Alive\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&size, int healthpoints)
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}\label{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}} 
+int {\bfseries healthpoints}
+\item 
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}\label{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}} 
+int {\bfseries fire\+Cooldown}
+\item 
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}\label{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}} 
+double {\bfseries speed}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -42,5 +54,5 @@ Definition at line 12 of file Alive\+Model.\+h.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Entity/\+Alive/Alive\+Model.\+h\item 
-Entity/\+Alive/Alive\+Model.\+cpp\end{DoxyCompactItemize}
+Entity/\+Collidable/\+Alive/Alive\+Model.\+h\item 
+Entity/\+Collidable/\+Alive/Alive\+Model.\+cpp\end{DoxyCompactItemize}

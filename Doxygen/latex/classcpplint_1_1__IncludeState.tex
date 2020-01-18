@@ -1,0 +1,296 @@
+\hypertarget{classcpplint_1_1__IncludeState}{}\doxysection{cpplint.\+\_\+\+Include\+State Class Reference}
+\label{classcpplint_1_1__IncludeState}\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+Inheritance diagram for cpplint.\+\_\+\+Include\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcpplint_1_1__IncludeState}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a4d3ae4ee2a38efc25cce07e3e8484ba4}\label{classcpplint_1_1__IncludeState_a4d3ae4ee2a38efc25cce07e3e8484ba4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__IncludeState_a9bddbf581fc7a4c3c0258eaa42b94c3a}{Find\+Header}} (self, header)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__IncludeState_a31551f83fcc626e7babb1581a486b6fa}{Reset\+Section}} (self, directive)
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a9bc1ada2060a49628c1fffa973b57df1}\label{classcpplint_1_1__IncludeState_a9bc1ada2060a49628c1fffa973b57df1}} 
+def {\bfseries Set\+Last\+Header} (self, header\+\_\+path)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__IncludeState_ae69c652befa2d160194c0a02ff0c7d48}{Canonicalize\+Alphabetical\+Order}} (self, header\+\_\+path)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__IncludeState_abfda27324121ab0bf9d29866d975274b}{Is\+In\+Alphabetical\+Order}} (self, clean\+\_\+lines, linenum, header\+\_\+path)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__IncludeState_a80f82f17565e8412e7e5bbe52b464f18}{Check\+Next\+Include\+Order}} (self, header\+\_\+type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a82d8b92a431437ee181e950517c71cbb}\label{classcpplint_1_1__IncludeState_a82d8b92a431437ee181e950517c71cbb}} 
+{\bfseries include\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tracks line numbers for includes, and the order in which includes appear.
+
+include_list contains list of lists of (header, line number) pairs.
+It's a lists of lists rather than just one flat list to make it
+easier to update across preprocessor boundaries.
+
+Call CheckNextIncludeOrder() once for each header in the file, passing
+in the type constants defined above. Calls in an illegal order will
+raise an _IncludeError with an appropriate error message.\end{DoxyVerb}
+ 
+
+Definition at line 828 of file cpplint.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_ae69c652befa2d160194c0a02ff0c7d48}\label{classcpplint_1_1__IncludeState_ae69c652befa2d160194c0a02ff0c7d48}} 
+\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}!CanonicalizeAlphabeticalOrder@{CanonicalizeAlphabeticalOrder}}
+\index{CanonicalizeAlphabeticalOrder@{CanonicalizeAlphabeticalOrder}!cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+\doxysubsubsection{\texorpdfstring{CanonicalizeAlphabeticalOrder()}{CanonicalizeAlphabeticalOrder()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Include\+State.\+Canonicalize\+Alphabetical\+Order (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a path canonicalized for alphabetical comparison.
+
+- replaces "-" with "_" so they both cmp the same.
+- removes '-inl' since we don't require them to be after the main header.
+- lowercase everything, just in case.
+
+Args:
+  header_path: Path to be canonicalized.
+
+Returns:
+  Canonicalized path.
+\end{DoxyVerb}
+ 
+
+Definition at line 905 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{905   \textcolor{keyword}{def }CanonicalizeAlphabeticalOrder(self, header\_path):}
+\DoxyCodeLine{906     \textcolor{stringliteral}{"""Returns a path canonicalized for alphabetical comparison.}}
+\DoxyCodeLine{907 \textcolor{stringliteral}{}}
+\DoxyCodeLine{908 \textcolor{stringliteral}{    -\/ replaces "-\/" with "\_" so they both cmp the same.}}
+\DoxyCodeLine{909 \textcolor{stringliteral}{    -\/ removes '-\/inl' since we don't require them to be after the main header.}}
+\DoxyCodeLine{910 \textcolor{stringliteral}{    -\/ lowercase everything, just in case.}}
+\DoxyCodeLine{911 \textcolor{stringliteral}{}}
+\DoxyCodeLine{912 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{913 \textcolor{stringliteral}{      header\_path: Path to be canonicalized.}}
+\DoxyCodeLine{914 \textcolor{stringliteral}{}}
+\DoxyCodeLine{915 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{916 \textcolor{stringliteral}{      Canonicalized path.}}
+\DoxyCodeLine{917 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{918     \textcolor{keywordflow}{return} header\_path.replace(\textcolor{stringliteral}{'-\/inl.h'}, \textcolor{stringliteral}{'.h'}).replace(\textcolor{stringliteral}{'-\/'}, \textcolor{stringliteral}{'\_'}).lower()}
+\DoxyCodeLine{919 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a80f82f17565e8412e7e5bbe52b464f18}\label{classcpplint_1_1__IncludeState_a80f82f17565e8412e7e5bbe52b464f18}} 
+\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}!CheckNextIncludeOrder@{CheckNextIncludeOrder}}
+\index{CheckNextIncludeOrder@{CheckNextIncludeOrder}!cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+\doxysubsubsection{\texorpdfstring{CheckNextIncludeOrder()}{CheckNextIncludeOrder()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Include\+State.\+Check\+Next\+Include\+Order (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header\+\_\+type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a non-empty error message if the next header is out of order.
+
+This function also updates the internal state to be ready to check
+the next include.
+
+Args:
+  header_type: One of the _XXX_HEADER constants defined above.
+
+Returns:
+  The empty string if the header is in the right order, or an
+  error message describing what's wrong.\end{DoxyVerb}
+ 
+
+Definition at line 941 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{941   \textcolor{keyword}{def }CheckNextIncludeOrder(self, header\_type):}
+\DoxyCodeLine{942     \textcolor{stringliteral}{"""Returns a non-\/empty error message if the next header is out of order.}}
+\DoxyCodeLine{943 \textcolor{stringliteral}{}}
+\DoxyCodeLine{944 \textcolor{stringliteral}{    This function also updates the internal state to be ready to check}}
+\DoxyCodeLine{945 \textcolor{stringliteral}{    the next include.}}
+\DoxyCodeLine{946 \textcolor{stringliteral}{}}
+\DoxyCodeLine{947 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{948 \textcolor{stringliteral}{      header\_type: One of the \_XXX\_HEADER constants defined above.}}
+\DoxyCodeLine{949 \textcolor{stringliteral}{}}
+\DoxyCodeLine{950 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{951 \textcolor{stringliteral}{      The empty string if the header is in the right order, or an}}
+\DoxyCodeLine{952 \textcolor{stringliteral}{      error message describing what's wrong.}}
+\DoxyCodeLine{953 \textcolor{stringliteral}{}}
+\DoxyCodeLine{954 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{955     error\_message = (\textcolor{stringliteral}{'Found \%s after \%s'} \%}
+\DoxyCodeLine{956                      (self.\_TYPE\_NAMES[header\_type],}
+\DoxyCodeLine{957                       self.\_SECTION\_NAMES[self.\_section]))}
+\DoxyCodeLine{958 }
+\DoxyCodeLine{959     last\_section = self.\_section}
+\DoxyCodeLine{960 }
+\DoxyCodeLine{961     \textcolor{keywordflow}{if} header\_type == \_C\_SYS\_HEADER:}
+\DoxyCodeLine{962       \textcolor{keywordflow}{if} self.\_section <= self.\_C\_SECTION:}
+\DoxyCodeLine{963         self.\_section = self.\_C\_SECTION}
+\DoxyCodeLine{964       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{965         self.\_last\_header = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{966         \textcolor{keywordflow}{return} error\_message}
+\DoxyCodeLine{967     \textcolor{keywordflow}{elif} header\_type == \_CPP\_SYS\_HEADER:}
+\DoxyCodeLine{968       \textcolor{keywordflow}{if} self.\_section <= self.\_CPP\_SECTION:}
+\DoxyCodeLine{969         self.\_section = self.\_CPP\_SECTION}
+\DoxyCodeLine{970       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{971         self.\_last\_header = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{972         \textcolor{keywordflow}{return} error\_message}
+\DoxyCodeLine{973     \textcolor{keywordflow}{elif} header\_type == \_LIKELY\_MY\_HEADER:}
+\DoxyCodeLine{974       \textcolor{keywordflow}{if} self.\_section <= self.\_MY\_H\_SECTION:}
+\DoxyCodeLine{975         self.\_section = self.\_MY\_H\_SECTION}
+\DoxyCodeLine{976       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{977         self.\_section = self.\_OTHER\_H\_SECTION}
+\DoxyCodeLine{978     \textcolor{keywordflow}{elif} header\_type == \_POSSIBLE\_MY\_HEADER:}
+\DoxyCodeLine{979       \textcolor{keywordflow}{if} self.\_section <= self.\_MY\_H\_SECTION:}
+\DoxyCodeLine{980         self.\_section = self.\_MY\_H\_SECTION}
+\DoxyCodeLine{981       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{982         \textcolor{comment}{\# This will always be the fallback because we're not sure}}
+\DoxyCodeLine{983         \textcolor{comment}{\# enough that the header is associated with this file.}}
+\DoxyCodeLine{984         self.\_section = self.\_OTHER\_H\_SECTION}
+\DoxyCodeLine{985     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{986       \textcolor{keyword}{assert} header\_type == \_OTHER\_HEADER}
+\DoxyCodeLine{987       self.\_section = self.\_OTHER\_H\_SECTION}
+\DoxyCodeLine{988 }
+\DoxyCodeLine{989     \textcolor{keywordflow}{if} last\_section != self.\_section:}
+\DoxyCodeLine{990       self.\_last\_header = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{991 }
+\DoxyCodeLine{992     \textcolor{keywordflow}{return} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{993 }
+\DoxyCodeLine{994 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a9bddbf581fc7a4c3c0258eaa42b94c3a}\label{classcpplint_1_1__IncludeState_a9bddbf581fc7a4c3c0258eaa42b94c3a}} 
+\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}!FindHeader@{FindHeader}}
+\index{FindHeader@{FindHeader}!cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+\doxysubsubsection{\texorpdfstring{FindHeader()}{FindHeader()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Include\+State.\+Find\+Header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{header }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if a header has already been included.
+
+Args:
+  header: header to check.
+Returns:
+  Line number of previous occurrence, or -1 if the header has not
+  been seen before.
+\end{DoxyVerb}
+ 
+
+Definition at line 869 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{869   \textcolor{keyword}{def }FindHeader(self, header):}
+\DoxyCodeLine{870     \textcolor{stringliteral}{"""Check if a header has already been included.}}
+\DoxyCodeLine{871 \textcolor{stringliteral}{}}
+\DoxyCodeLine{872 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{873 \textcolor{stringliteral}{      header: header to check.}}
+\DoxyCodeLine{874 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{875 \textcolor{stringliteral}{      Line number of previous occurrence, or -\/1 if the header has not}}
+\DoxyCodeLine{876 \textcolor{stringliteral}{      been seen before.}}
+\DoxyCodeLine{877 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{878     \textcolor{keywordflow}{for} section\_list \textcolor{keywordflow}{in} self.include\_list:}
+\DoxyCodeLine{879       \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} section\_list:}
+\DoxyCodeLine{880         \textcolor{keywordflow}{if} f[0] == header:}
+\DoxyCodeLine{881           \textcolor{keywordflow}{return} f[1]}
+\DoxyCodeLine{882     \textcolor{keywordflow}{return} -\/1}
+\DoxyCodeLine{883 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_abfda27324121ab0bf9d29866d975274b}\label{classcpplint_1_1__IncludeState_abfda27324121ab0bf9d29866d975274b}} 
+\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}!IsInAlphabeticalOrder@{IsInAlphabeticalOrder}}
+\index{IsInAlphabeticalOrder@{IsInAlphabeticalOrder}!cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+\doxysubsubsection{\texorpdfstring{IsInAlphabeticalOrder()}{IsInAlphabeticalOrder()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Include\+State.\+Is\+In\+Alphabetical\+Order (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{clean\+\_\+lines,  }\item[{}]{linenum,  }\item[{}]{header\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if a header is in alphabetical order with the previous header.
+
+Args:
+  clean_lines: A CleansedLines instance containing the file.
+  linenum: The number of the line to check.
+  header_path: Canonicalized header to be checked.
+
+Returns:
+  Returns true if the header is in alphabetical order.
+\end{DoxyVerb}
+ 
+
+Definition at line 920 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{920   \textcolor{keyword}{def }IsInAlphabeticalOrder(self, clean\_lines, linenum, header\_path):}
+\DoxyCodeLine{921     \textcolor{stringliteral}{"""Check if a header is in alphabetical order with the previous header.}}
+\DoxyCodeLine{922 \textcolor{stringliteral}{}}
+\DoxyCodeLine{923 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{924 \textcolor{stringliteral}{      clean\_lines: A CleansedLines instance containing the file.}}
+\DoxyCodeLine{925 \textcolor{stringliteral}{      linenum: The number of the line to check.}}
+\DoxyCodeLine{926 \textcolor{stringliteral}{      header\_path: Canonicalized header to be checked.}}
+\DoxyCodeLine{927 \textcolor{stringliteral}{}}
+\DoxyCodeLine{928 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{929 \textcolor{stringliteral}{      Returns true if the header is in alphabetical order.}}
+\DoxyCodeLine{930 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{931     \textcolor{comment}{\# If previous section is different from current section, \_last\_header will}}
+\DoxyCodeLine{932     \textcolor{comment}{\# be reset to empty string, so it's always less than current header.}}
+\DoxyCodeLine{933     \textcolor{comment}{\#}}
+\DoxyCodeLine{934     \textcolor{comment}{\# If previous line was a blank line, assume that the headers are}}
+\DoxyCodeLine{935     \textcolor{comment}{\# intentionally sorted the way they are.}}
+\DoxyCodeLine{936     \textcolor{keywordflow}{if} (self.\_last\_header > header\_path \textcolor{keywordflow}{and}}
+\DoxyCodeLine{937         Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\#\(\backslash\)s*include\(\backslash\)b'}, clean\_lines.elided[linenum -\/ 1])):}
+\DoxyCodeLine{938       \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{939     \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{940 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1__IncludeState_a31551f83fcc626e7babb1581a486b6fa}\label{classcpplint_1_1__IncludeState_a31551f83fcc626e7babb1581a486b6fa}} 
+\index{cpplint.\_IncludeState@{cpplint.\_IncludeState}!ResetSection@{ResetSection}}
+\index{ResetSection@{ResetSection}!cpplint.\_IncludeState@{cpplint.\_IncludeState}}
+\doxysubsubsection{\texorpdfstring{ResetSection()}{ResetSection()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Include\+State.\+Reset\+Section (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{directive }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset section checking for preprocessor directive.
+
+Args:
+  directive: preprocessor directive (e.g. "if", "else").
+\end{DoxyVerb}
+ 
+
+Definition at line 884 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{884   \textcolor{keyword}{def }ResetSection(self, directive):}
+\DoxyCodeLine{885     \textcolor{stringliteral}{"""Reset section checking for preprocessor directive.}}
+\DoxyCodeLine{886 \textcolor{stringliteral}{}}
+\DoxyCodeLine{887 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{888 \textcolor{stringliteral}{      directive: preprocessor directive (e.g. "if", "else").}}
+\DoxyCodeLine{889 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{890     \textcolor{comment}{\# The name of the current section.}}
+\DoxyCodeLine{891     self.\_section = self.\_INITIAL\_SECTION}
+\DoxyCodeLine{892     \textcolor{comment}{\# The path of last found header.}}
+\DoxyCodeLine{893     self.\_last\_header = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{894 }
+\DoxyCodeLine{895     \textcolor{comment}{\# Update list of includes.  Note that we never pop from the}}
+\DoxyCodeLine{896     \textcolor{comment}{\# include list.}}
+\DoxyCodeLine{897     \textcolor{keywordflow}{if} directive \textcolor{keywordflow}{in} (\textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'ifdef'}, \textcolor{stringliteral}{'ifndef'}):}
+\DoxyCodeLine{898       self.include\_list.append([])}
+\DoxyCodeLine{899     \textcolor{keywordflow}{elif} directive \textcolor{keywordflow}{in} (\textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'elif'}):}
+\DoxyCodeLine{900       self.include\_list[-\/1] = []}
+\DoxyCodeLine{901 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/cpplint/cpplint.\+py\end{DoxyCompactItemize}

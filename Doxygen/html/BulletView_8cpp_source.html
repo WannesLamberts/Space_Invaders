@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Entity/Bullet/BulletView.cpp Source File</title>
+<title>My Project: Entity/Collidable/Bullet/BulletView.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_fd843aa809358da7a552eef755e91556.html">Bullet</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_a88f5e9adf38e61dcd4aaad0edb0d8f0.html">Collidable</a></li><li class="navelem"><a class="el" href="dir_20eadfb1115bb71bc9e79c11d163baf8.html">Bullet</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,13 +74,15 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;BulletView.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Entity::BulletView::BulletView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt;&amp; w) : EntityView(w) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Entity::BulletView::BulletView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt;&amp; w,std::weak_ptr&lt;ModelAbstract&gt; model) : EntityView(w,model) {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        generateShape();</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> Entity::BulletView::generateShape() {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        texture.loadFromFile(<span class="stringliteral">&quot;../Sprites/bullet.png&quot;</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        shape.setTexture(texture);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        shape=std::make_shared&lt;sf::Sprite&gt;();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        texture.loadFromFile(<span class="stringliteral">&quot;../Sprites/bullet.png&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::dynamic_pointer_cast&lt;sf::Sprite&gt;(shape)-&gt;setTexture(texture);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

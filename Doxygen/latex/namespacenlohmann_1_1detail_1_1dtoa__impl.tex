@@ -1,0 +1,903 @@
+\hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl}{}\doxysection{nlohmann\+::detail\+::dtoa\+\_\+impl Namespace Reference}
+\label{namespacenlohmann_1_1detail_1_1dtoa__impl}\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+
+
+implements the Grisu2 algorithm for binary to decimal floating-\/point conversion.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries}{boundaries}}
+\item 
+struct \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power}{cached\+\_\+power}}
+\item 
+struct \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a1c5d30eb51e5e994a3f48bde104d2ce8}} 
+{\footnotesize template$<$typename Target , typename Source $>$ }\\Target {\bfseries reinterpret\+\_\+bits} (const Source source)
+\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries}{boundaries}} \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}{compute\+\_\+boundaries}} (Float\+Type value)
+\item 
+\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power}{cached\+\_\+power}} \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_adbf329a18c5cf854a3477327afd2200b}{get\+\_\+cached\+\_\+power\+\_\+for\+\_\+binary\+\_\+exponent}} (int e)
+\item 
+int \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a36ded358763b5dbcea9867660fbe4e28}{find\+\_\+largest\+\_\+pow10}} (const std\+::uint32\+\_\+t n, std\+::uint32\+\_\+t \&pow10)
+\item 
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a5bc841e0bee12fd6489d49cf7bd07bb4}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a5bc841e0bee12fd6489d49cf7bd07bb4}} 
+void {\bfseries grisu2\+\_\+round} (char $\ast$buf, int len, std\+::uint64\+\_\+t dist, std\+::uint64\+\_\+t delta, std\+::uint64\+\_\+t rest, std\+::uint64\+\_\+t ten\+\_\+k)
+\item 
+void \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}{grisu2\+\_\+digit\+\_\+gen}} (char $\ast$buffer, int \&length, int \&decimal\+\_\+exponent, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} M\+\_\+minus, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} w, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} M\+\_\+plus)
+\item 
+void \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a05b681dcb8569b9784c6dccfadb01633}{grisu2}} (char $\ast$buf, int \&len, int \&decimal\+\_\+exponent, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} m\+\_\+minus, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} v, \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}} m\+\_\+plus)
+\item 
+{\footnotesize template$<$typename Float\+Type $>$ }\\void \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_aab7a9670a4f4704a5d0347ad7588576b}{grisu2}} (char $\ast$buf, int \&len, int \&decimal\+\_\+exponent, Float\+Type value)
+\item 
+J\+S\+O\+N\+\_\+\+H\+E\+D\+L\+E\+Y\+\_\+\+R\+E\+T\+U\+R\+N\+S\+\_\+\+N\+O\+N\+\_\+\+N\+U\+LL char $\ast$ \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a78ad745d14b79fc65714c9938981faf6}{append\+\_\+exponent}} (char $\ast$buf, int e)
+\begin{DoxyCompactList}\small\item\em appends a decimal representation of e to buf \end{DoxyCompactList}\item 
+J\+S\+O\+N\+\_\+\+H\+E\+D\+L\+E\+Y\+\_\+\+R\+E\+T\+U\+R\+N\+S\+\_\+\+N\+O\+N\+\_\+\+N\+U\+LL char $\ast$ \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a0986c3e015db045df89506436f19e07c}{format\+\_\+buffer}} (char $\ast$buf, int len, int decimal\+\_\+exponent, int min\+\_\+exp, int max\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em prettify v = buf $\ast$ 10$^\wedge$decimal\+\_\+exponent \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_ac1ea1316de0b4a219f707c76b1db1966}} 
+constexpr int {\bfseries k\+Alpha} = -\/60
+\item 
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a4a750fcc38da1ce68b7e25ab3a230e20}} 
+constexpr int {\bfseries k\+Gamma} = -\/32
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+implements the Grisu2 algorithm for binary to decimal floating-\/point conversion. 
+
+This implementation is a slightly modified version of the reference implementation which may be obtained from \href{http://florian.loitsch.com/publications}{\texttt{ http\+://florian.\+loitsch.\+com/publications}} (bench.\+tar.\+gz).
+
+The code is distributed under the M\+IT license, Copyright (c) 2009 Florian Loitsch.
+
+For a detailed description of the algorithm see\+:
+
+\mbox{[}1\mbox{]} Loitsch, \char`\"{}\+Printing Floating-\/\+Point Numbers Quickly and Accurately with
+    Integers\char`\"{}, Proceedings of the A\+CM S\+I\+G\+P\+L\+AN 2010 Conference on Programming Language Design and Implementation, P\+L\+DI 2010 \mbox{[}2\mbox{]} Burger, Dybvig, \char`\"{}\+Printing Floating-\/\+Point Numbers Quickly and Accurately\char`\"{}, Proceedings of the A\+CM S\+I\+G\+P\+L\+AN 1996 Conference on Programming Language Design and Implementation, P\+L\+DI 1996 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a78ad745d14b79fc65714c9938981faf6}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a78ad745d14b79fc65714c9938981faf6}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!append\_exponent@{append\_exponent}}
+\index{append\_exponent@{append\_exponent}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{append\_exponent()}{append\_exponent()}}
+{\footnotesize\ttfamily J\+S\+O\+N\+\_\+\+H\+E\+D\+L\+E\+Y\+\_\+\+R\+E\+T\+U\+R\+N\+S\+\_\+\+N\+O\+N\+\_\+\+N\+U\+LL char $\ast$ nlohmann\+::detail\+::dtoa\+\_\+impl\+::append\+\_\+exponent (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{int}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+appends a decimal representation of e to buf 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the element following the exponent. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+-\/1000 $<$ e $<$ 1000 
+\end{DoxyPrecond}
+
+
+Definition at line 923 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{924 \{}
+\DoxyCodeLine{925     assert(e > -\/1000);}
+\DoxyCodeLine{926     assert(e <  1000);}
+\DoxyCodeLine{927 }
+\DoxyCodeLine{928     \textcolor{keywordflow}{if} (e < 0)}
+\DoxyCodeLine{929     \{}
+\DoxyCodeLine{930         e = -\/e;}
+\DoxyCodeLine{931         *buf++ = \textcolor{charliteral}{'-\/'};}
+\DoxyCodeLine{932     \}}
+\DoxyCodeLine{933     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{934     \{}
+\DoxyCodeLine{935         *buf++ = \textcolor{charliteral}{'+'};}
+\DoxyCodeLine{936     \}}
+\DoxyCodeLine{937 }
+\DoxyCodeLine{938     \textcolor{keyword}{auto} k = \textcolor{keyword}{static\_cast<}std::uint32\_t\textcolor{keyword}{>}(e);}
+\DoxyCodeLine{939     \textcolor{keywordflow}{if} (k < 10)}
+\DoxyCodeLine{940     \{}
+\DoxyCodeLine{941         \textcolor{comment}{// Always print at least two digits in the exponent.}}
+\DoxyCodeLine{942         \textcolor{comment}{// This is for compatibility with printf("\%g").}}
+\DoxyCodeLine{943         *buf++ = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{944         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k);}
+\DoxyCodeLine{945     \}}
+\DoxyCodeLine{946     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (k < 100)}
+\DoxyCodeLine{947     \{}
+\DoxyCodeLine{948         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k / 10);}
+\DoxyCodeLine{949         k \%= 10;}
+\DoxyCodeLine{950         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k);}
+\DoxyCodeLine{951     \}}
+\DoxyCodeLine{952     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{953     \{}
+\DoxyCodeLine{954         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k / 100);}
+\DoxyCodeLine{955         k \%= 100;}
+\DoxyCodeLine{956         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k / 10);}
+\DoxyCodeLine{957         k \%= 10;}
+\DoxyCodeLine{958         *buf++ = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + k);}
+\DoxyCodeLine{959     \}}
+\DoxyCodeLine{960 }
+\DoxyCodeLine{961     \textcolor{keywordflow}{return} buf;}
+\DoxyCodeLine{962 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!compute\_boundaries@{compute\_boundaries}}
+\index{compute\_boundaries@{compute\_boundaries}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{compute\_boundaries()}{compute\_boundaries()}}
+{\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
+\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries}{boundaries}} nlohmann\+::detail\+::dtoa\+\_\+impl\+::compute\+\_\+boundaries (\begin{DoxyParamCaption}\item[{Float\+Type}]{value }\end{DoxyParamCaption})}
+
+Compute the (normalized) diyfp representing the input number \textquotesingle{}value\textquotesingle{} and its boundaries.
+
+\begin{DoxyPrecond}{Precondition}
+value must be finite and positive 
+\end{DoxyPrecond}
+
+
+Definition at line 182 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183 \{}
+\DoxyCodeLine{184     assert(std::isfinite(value));}
+\DoxyCodeLine{185     assert(value > 0);}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187     \textcolor{comment}{// Convert the IEEE representation into a diyfp.}}
+\DoxyCodeLine{188     \textcolor{comment}{//}}
+\DoxyCodeLine{189     \textcolor{comment}{// If v is denormal:}}
+\DoxyCodeLine{190     \textcolor{comment}{//      value = 0.F * 2\string^(1 -\/ bias) = (          F) * 2\string^(1 -\/ bias -\/ (p-\/1))}}
+\DoxyCodeLine{191     \textcolor{comment}{// If v is normalized:}}
+\DoxyCodeLine{192     \textcolor{comment}{//      value = 1.F * 2\string^(E -\/ bias) = (2\string^(p-\/1) + F) * 2\string^(E -\/ bias -\/ (p-\/1))}}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194     static\_assert(std::numeric\_limits<FloatType>::is\_iec559,}
+\DoxyCodeLine{195                   \textcolor{stringliteral}{"internal error: dtoa\_short requires an IEEE-\/754 floating-\/point implementation"});}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197     constexpr \textcolor{keywordtype}{int}      kPrecision = std::numeric\_limits<FloatType>::digits; \textcolor{comment}{// = p (includes the hidden bit)}}
+\DoxyCodeLine{198     constexpr \textcolor{keywordtype}{int}      kBias      = std::numeric\_limits<FloatType>::max\_exponent -\/ 1 + (kPrecision -\/ 1);}
+\DoxyCodeLine{199     constexpr \textcolor{keywordtype}{int}      kMinExp    = 1 -\/ kBias;}
+\DoxyCodeLine{200     constexpr std::uint64\_t kHiddenBit = std::uint64\_t\{1\} << (kPrecision -\/ 1); \textcolor{comment}{// = 2\string^(p-\/1)}}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202     \textcolor{keyword}{using} bits\_type = \textcolor{keyword}{typename} std::conditional<kPrecision == 24, std::uint32\_t, std::uint64\_t >::type;}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204     \textcolor{keyword}{const} std::uint64\_t bits = reinterpret\_bits<bits\_type>(value);}
+\DoxyCodeLine{205     \textcolor{keyword}{const} std::uint64\_t E = bits >> (kPrecision -\/ 1);}
+\DoxyCodeLine{206     \textcolor{keyword}{const} std::uint64\_t F = bits \& (kHiddenBit -\/ 1);}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} is\_denormal = E == 0;}
+\DoxyCodeLine{209     \textcolor{keyword}{const} diyfp v = is\_denormal}
+\DoxyCodeLine{210                     ? diyfp(F, kMinExp)}
+\DoxyCodeLine{211                     : diyfp(F + kHiddenBit, static\_cast<int>(E) -\/ kBias);}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213     \textcolor{comment}{// Compute the boundaries m-\/ and m+ of the floating-\/point value}}
+\DoxyCodeLine{214     \textcolor{comment}{// v = f * 2\string^e.}}
+\DoxyCodeLine{215     \textcolor{comment}{//}}
+\DoxyCodeLine{216     \textcolor{comment}{// Determine v-\/ and v+, the floating-\/point predecessor and successor if v,}}
+\DoxyCodeLine{217     \textcolor{comment}{// respectively.}}
+\DoxyCodeLine{218     \textcolor{comment}{//}}
+\DoxyCodeLine{219     \textcolor{comment}{//      v-\/ = v -\/ 2\string^e        if f != 2\string^(p-\/1) or e == e\_min                (A)}}
+\DoxyCodeLine{220     \textcolor{comment}{//         = v -\/ 2\string^(e-\/1)    if f == 2\string^(p-\/1) and e > e\_min                (B)}}
+\DoxyCodeLine{221     \textcolor{comment}{//}}
+\DoxyCodeLine{222     \textcolor{comment}{//      v+ = v + 2\string^e}}
+\DoxyCodeLine{223     \textcolor{comment}{//}}
+\DoxyCodeLine{224     \textcolor{comment}{// Let m-\/ = (v-\/ + v) / 2 and m+ = (v + v+) / 2. All real numbers \_strictly\_}}
+\DoxyCodeLine{225     \textcolor{comment}{// between m-\/ and m+ round to v, regardless of how the input rounding}}
+\DoxyCodeLine{226     \textcolor{comment}{// algorithm breaks ties.}}
+\DoxyCodeLine{227     \textcolor{comment}{//}}
+\DoxyCodeLine{228     \textcolor{comment}{//      -\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/  (A)}}
+\DoxyCodeLine{229     \textcolor{comment}{//         v-\/            m-\/            v             m+            v+}}
+\DoxyCodeLine{230     \textcolor{comment}{//}}
+\DoxyCodeLine{231     \textcolor{comment}{//      -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/  (B)}}
+\DoxyCodeLine{232     \textcolor{comment}{//                       v-\/     m-\/     v             m+            v+}}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234     \textcolor{keyword}{const} \textcolor{keywordtype}{bool} lower\_boundary\_is\_closer = F == 0 and E > 1;}
+\DoxyCodeLine{235     \textcolor{keyword}{const} diyfp m\_plus = diyfp(2 * v.f + 1, v.e -\/ 1);}
+\DoxyCodeLine{236     \textcolor{keyword}{const} diyfp m\_minus = lower\_boundary\_is\_closer}
+\DoxyCodeLine{237                           ? diyfp(4 * v.f -\/ 1, v.e -\/ 2)  \textcolor{comment}{// (B)}}
+\DoxyCodeLine{238                           : diyfp(2 * v.f -\/ 1, v.e -\/ 1); \textcolor{comment}{// (A)}}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240     \textcolor{comment}{// Determine the normalized w+ = m+.}}
+\DoxyCodeLine{241     \textcolor{keyword}{const} diyfp w\_plus = diyfp::normalize(m\_plus);}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243     \textcolor{comment}{// Determine w-\/ = m-\/ such that e\_(w-\/) = e\_(w+).}}
+\DoxyCodeLine{244     \textcolor{keyword}{const} diyfp w\_minus = diyfp::normalize\_to(m\_minus, w\_plus.e);}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246     \textcolor{keywordflow}{return} \{diyfp::normalize(v), w\_minus, w\_plus\};}
+\DoxyCodeLine{247 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a36ded358763b5dbcea9867660fbe4e28}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a36ded358763b5dbcea9867660fbe4e28}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!find\_largest\_pow10@{find\_largest\_pow10}}
+\index{find\_largest\_pow10@{find\_largest\_pow10}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{find\_largest\_pow10()}{find\_largest\_pow10()}}
+{\footnotesize\ttfamily int nlohmann\+::detail\+::dtoa\+\_\+impl\+::find\+\_\+largest\+\_\+pow10 (\begin{DoxyParamCaption}\item[{const std\+::uint32\+\_\+t}]{n,  }\item[{std\+::uint32\+\_\+t \&}]{pow10 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For n != 0, returns k, such that pow10 \+:= 10$^\wedge$(k-\/1) $<$= n $<$ 10$^\wedge$k. For n == 0, returns 1 and sets pow10 \+:= 1. 
+
+Definition at line 485 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{486 \{}
+\DoxyCodeLine{487     \textcolor{comment}{// LCOV\_EXCL\_START}}
+\DoxyCodeLine{488     \textcolor{keywordflow}{if} (n >= 1000000000)}
+\DoxyCodeLine{489     \{}
+\DoxyCodeLine{490         pow10 = 1000000000;}
+\DoxyCodeLine{491         \textcolor{keywordflow}{return} 10;}
+\DoxyCodeLine{492     \}}
+\DoxyCodeLine{493     \textcolor{comment}{// LCOV\_EXCL\_STOP}}
+\DoxyCodeLine{494     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 100000000)}
+\DoxyCodeLine{495     \{}
+\DoxyCodeLine{496         pow10 = 100000000;}
+\DoxyCodeLine{497         \textcolor{keywordflow}{return}  9;}
+\DoxyCodeLine{498     \}}
+\DoxyCodeLine{499     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 10000000)}
+\DoxyCodeLine{500     \{}
+\DoxyCodeLine{501         pow10 = 10000000;}
+\DoxyCodeLine{502         \textcolor{keywordflow}{return}  8;}
+\DoxyCodeLine{503     \}}
+\DoxyCodeLine{504     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 1000000)}
+\DoxyCodeLine{505     \{}
+\DoxyCodeLine{506         pow10 = 1000000;}
+\DoxyCodeLine{507         \textcolor{keywordflow}{return}  7;}
+\DoxyCodeLine{508     \}}
+\DoxyCodeLine{509     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 100000)}
+\DoxyCodeLine{510     \{}
+\DoxyCodeLine{511         pow10 = 100000;}
+\DoxyCodeLine{512         \textcolor{keywordflow}{return}  6;}
+\DoxyCodeLine{513     \}}
+\DoxyCodeLine{514     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 10000)}
+\DoxyCodeLine{515     \{}
+\DoxyCodeLine{516         pow10 = 10000;}
+\DoxyCodeLine{517         \textcolor{keywordflow}{return}  5;}
+\DoxyCodeLine{518     \}}
+\DoxyCodeLine{519     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 1000)}
+\DoxyCodeLine{520     \{}
+\DoxyCodeLine{521         pow10 = 1000;}
+\DoxyCodeLine{522         \textcolor{keywordflow}{return}  4;}
+\DoxyCodeLine{523     \}}
+\DoxyCodeLine{524     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 100)}
+\DoxyCodeLine{525     \{}
+\DoxyCodeLine{526         pow10 = 100;}
+\DoxyCodeLine{527         \textcolor{keywordflow}{return}  3;}
+\DoxyCodeLine{528     \}}
+\DoxyCodeLine{529     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n >= 10)}
+\DoxyCodeLine{530     \{}
+\DoxyCodeLine{531         pow10 = 10;}
+\DoxyCodeLine{532         \textcolor{keywordflow}{return}  2;}
+\DoxyCodeLine{533     \}}
+\DoxyCodeLine{534     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{535     \{}
+\DoxyCodeLine{536         pow10 = 1;}
+\DoxyCodeLine{537         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{538     \}}
+\DoxyCodeLine{539 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a0986c3e015db045df89506436f19e07c}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a0986c3e015db045df89506436f19e07c}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!format\_buffer@{format\_buffer}}
+\index{format\_buffer@{format\_buffer}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{format\_buffer()}{format\_buffer()}}
+{\footnotesize\ttfamily J\+S\+O\+N\+\_\+\+H\+E\+D\+L\+E\+Y\+\_\+\+R\+E\+T\+U\+R\+N\+S\+\_\+\+N\+O\+N\+\_\+\+N\+U\+LL char $\ast$ nlohmann\+::detail\+::dtoa\+\_\+impl\+::format\+\_\+buffer (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{int}]{len,  }\item[{int}]{decimal\+\_\+exponent,  }\item[{int}]{min\+\_\+exp,  }\item[{int}]{max\+\_\+exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+prettify v = buf $\ast$ 10$^\wedge$decimal\+\_\+exponent 
+
+If v is in the range \mbox{[}10$^\wedge$min\+\_\+exp, 10$^\wedge$max\+\_\+exp) it will be printed in fixed-\/point notation. Otherwise it will be printed in exponential notation.
+
+\begin{DoxyPrecond}{Precondition}
+min\+\_\+exp $<$ 0 
+
+max\+\_\+exp $>$ 0 
+\end{DoxyPrecond}
+
+
+Definition at line 975 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{977 \{}
+\DoxyCodeLine{978     assert(min\_exp < 0);}
+\DoxyCodeLine{979     assert(max\_exp > 0);}
+\DoxyCodeLine{980 }
+\DoxyCodeLine{981     \textcolor{keyword}{const} \textcolor{keywordtype}{int} k = len;}
+\DoxyCodeLine{982     \textcolor{keyword}{const} \textcolor{keywordtype}{int} n = len + decimal\_exponent;}
+\DoxyCodeLine{983 }
+\DoxyCodeLine{984     \textcolor{comment}{// v = buf * 10\string^(n-\/k)}}
+\DoxyCodeLine{985     \textcolor{comment}{// k is the length of the buffer (number of decimal digits)}}
+\DoxyCodeLine{986     \textcolor{comment}{// n is the position of the decimal point relative to the start of the buffer.}}
+\DoxyCodeLine{987 }
+\DoxyCodeLine{988     \textcolor{keywordflow}{if} (k <= n and n <= max\_exp)}
+\DoxyCodeLine{989     \{}
+\DoxyCodeLine{990         \textcolor{comment}{// digits[000]}}
+\DoxyCodeLine{991         \textcolor{comment}{// len <= max\_exp + 2}}
+\DoxyCodeLine{992 }
+\DoxyCodeLine{993         std::memset(buf + k, \textcolor{charliteral}{'0'}, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(n -\/ k));}
+\DoxyCodeLine{994         \textcolor{comment}{// Make it look like a floating-\/point number (\#362, \#378)}}
+\DoxyCodeLine{995         buf[n + 0] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{996         buf[n + 1] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{997         \textcolor{keywordflow}{return} buf + (n + 2);}
+\DoxyCodeLine{998     \}}
+\DoxyCodeLine{999 }
+\DoxyCodeLine{1000     \textcolor{keywordflow}{if} (0 < n and n <= max\_exp)}
+\DoxyCodeLine{1001     \{}
+\DoxyCodeLine{1002         \textcolor{comment}{// dig.its}}
+\DoxyCodeLine{1003         \textcolor{comment}{// len <= max\_digits10 + 1}}
+\DoxyCodeLine{1004 }
+\DoxyCodeLine{1005         assert(k > n);}
+\DoxyCodeLine{1006 }
+\DoxyCodeLine{1007         std::memmove(buf + (n + 1), buf + n, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(k -\/ n));}
+\DoxyCodeLine{1008         buf[n] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{1009         \textcolor{keywordflow}{return} buf + (k + 1);}
+\DoxyCodeLine{1010     \}}
+\DoxyCodeLine{1011 }
+\DoxyCodeLine{1012     \textcolor{keywordflow}{if} (min\_exp < n and n <= 0)}
+\DoxyCodeLine{1013     \{}
+\DoxyCodeLine{1014         \textcolor{comment}{// 0.[000]digits}}
+\DoxyCodeLine{1015         \textcolor{comment}{// len <= 2 + (-\/min\_exp -\/ 1) + max\_digits10}}
+\DoxyCodeLine{1016 }
+\DoxyCodeLine{1017         std::memmove(buf + (2 + -\/n), buf, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(k));}
+\DoxyCodeLine{1018         buf[0] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{1019         buf[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{1020         std::memset(buf + 2, \textcolor{charliteral}{'0'}, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(-\/n));}
+\DoxyCodeLine{1021         \textcolor{keywordflow}{return} buf + (2 + (-\/n) + k);}
+\DoxyCodeLine{1022     \}}
+\DoxyCodeLine{1023 }
+\DoxyCodeLine{1024     \textcolor{keywordflow}{if} (k == 1)}
+\DoxyCodeLine{1025     \{}
+\DoxyCodeLine{1026         \textcolor{comment}{// dE+123}}
+\DoxyCodeLine{1027         \textcolor{comment}{// len <= 1 + 5}}
+\DoxyCodeLine{1028 }
+\DoxyCodeLine{1029         buf += 1;}
+\DoxyCodeLine{1030     \}}
+\DoxyCodeLine{1031     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1032     \{}
+\DoxyCodeLine{1033         \textcolor{comment}{// d.igitsE+123}}
+\DoxyCodeLine{1034         \textcolor{comment}{// len <= max\_digits10 + 1 + 5}}
+\DoxyCodeLine{1035 }
+\DoxyCodeLine{1036         std::memmove(buf + 2, buf + 1, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{size\_t}\textcolor{keyword}{>}(k -\/ 1));}
+\DoxyCodeLine{1037         buf[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{1038         buf += 1 + k;}
+\DoxyCodeLine{1039     \}}
+\DoxyCodeLine{1040 }
+\DoxyCodeLine{1041     *buf++ = \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{1042     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a78ad745d14b79fc65714c9938981faf6}{append\_exponent}}(buf, n -\/ 1);}
+\DoxyCodeLine{1043 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_adbf329a18c5cf854a3477327afd2200b}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_adbf329a18c5cf854a3477327afd2200b}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!get\_cached\_power\_for\_binary\_exponent@{get\_cached\_power\_for\_binary\_exponent}}
+\index{get\_cached\_power\_for\_binary\_exponent@{get\_cached\_power\_for\_binary\_exponent}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{get\_cached\_power\_for\_binary\_exponent()}{get\_cached\_power\_for\_binary\_exponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power}{cached\+\_\+power}} nlohmann\+::detail\+::dtoa\+\_\+impl\+::get\+\_\+cached\+\_\+power\+\_\+for\+\_\+binary\+\_\+exponent (\begin{DoxyParamCaption}\item[{int}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For a normalized diyfp w = f $\ast$ 2$^\wedge$e, this function returns a (normalized) cached power-\/of-\/ten c = f\+\_\+c $\ast$ 2$^\wedge$e\+\_\+c, such that the exponent of the product w $\ast$ c satisfies (Definition 3.\+2 from \mbox{[}1\mbox{]}) \begin{DoxyVerb} alpha <= e_c + e + q <= gamma.
+\end{DoxyVerb}
+ 
+
+Definition at line 321 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{322 \{}
+\DoxyCodeLine{323     \textcolor{comment}{// Now}}
+\DoxyCodeLine{324     \textcolor{comment}{//}}
+\DoxyCodeLine{325     \textcolor{comment}{//      alpha <= e\_c + e + q <= gamma                                    (1)}}
+\DoxyCodeLine{326     \textcolor{comment}{//      ==> f\_c * 2\string^alpha <= c * 2\string^e * 2\string^q}}
+\DoxyCodeLine{327     \textcolor{comment}{//}}
+\DoxyCodeLine{328     \textcolor{comment}{// and since the c's are normalized, 2\string^(q-\/1) <= f\_c,}}
+\DoxyCodeLine{329     \textcolor{comment}{//}}
+\DoxyCodeLine{330     \textcolor{comment}{//      ==> 2\string^(q -\/ 1 + alpha) <= c * 2\string^(e + q)}}
+\DoxyCodeLine{331     \textcolor{comment}{//      ==> 2\string^(alpha -\/ e -\/ 1) <= c}}
+\DoxyCodeLine{332     \textcolor{comment}{//}}
+\DoxyCodeLine{333     \textcolor{comment}{// If c were an exact power of ten, i.e. c = 10\string^k, one may determine k as}}
+\DoxyCodeLine{334     \textcolor{comment}{//}}
+\DoxyCodeLine{335     \textcolor{comment}{//      k = ceil( log\_10( 2\string^(alpha -\/ e -\/ 1) ) )}}
+\DoxyCodeLine{336     \textcolor{comment}{//        = ceil( (alpha -\/ e -\/ 1) * log\_10(2) )}}
+\DoxyCodeLine{337     \textcolor{comment}{//}}
+\DoxyCodeLine{338     \textcolor{comment}{// From the paper:}}
+\DoxyCodeLine{339     \textcolor{comment}{// "In theory the result of the procedure could be wrong since c is rounded,}}
+\DoxyCodeLine{340     \textcolor{comment}{//  and the computation itself is approximated [...]. In practice, however,}}
+\DoxyCodeLine{341     \textcolor{comment}{//  this simple function is sufficient."}}
+\DoxyCodeLine{342     \textcolor{comment}{//}}
+\DoxyCodeLine{343     \textcolor{comment}{// For IEEE double precision floating-\/point numbers converted into}}
+\DoxyCodeLine{344     \textcolor{comment}{// normalized diyfp's w = f * 2\string^e, with q = 64,}}
+\DoxyCodeLine{345     \textcolor{comment}{//}}
+\DoxyCodeLine{346     \textcolor{comment}{//      e >= -\/1022      (min IEEE exponent)}}
+\DoxyCodeLine{347     \textcolor{comment}{//           -\/52        (p -\/ 1)}}
+\DoxyCodeLine{348     \textcolor{comment}{//           -\/52        (p -\/ 1, possibly normalize denormal IEEE numbers)}}
+\DoxyCodeLine{349     \textcolor{comment}{//           -\/11        (normalize the diyfp)}}
+\DoxyCodeLine{350     \textcolor{comment}{//         = -\/1137}}
+\DoxyCodeLine{351     \textcolor{comment}{//}}
+\DoxyCodeLine{352     \textcolor{comment}{// and}}
+\DoxyCodeLine{353     \textcolor{comment}{//}}
+\DoxyCodeLine{354     \textcolor{comment}{//      e <= +1023      (max IEEE exponent)}}
+\DoxyCodeLine{355     \textcolor{comment}{//           -\/52        (p -\/ 1)}}
+\DoxyCodeLine{356     \textcolor{comment}{//           -\/11        (normalize the diyfp)}}
+\DoxyCodeLine{357     \textcolor{comment}{//         = 960}}
+\DoxyCodeLine{358     \textcolor{comment}{//}}
+\DoxyCodeLine{359     \textcolor{comment}{// This binary exponent range [-\/1137,960] results in a decimal exponent}}
+\DoxyCodeLine{360     \textcolor{comment}{// range [-\/307,324]. One does not need to store a cached power for each}}
+\DoxyCodeLine{361     \textcolor{comment}{// k in this range. For each such k it suffices to find a cached power}}
+\DoxyCodeLine{362     \textcolor{comment}{// such that the exponent of the product lies in [alpha,gamma].}}
+\DoxyCodeLine{363     \textcolor{comment}{// This implies that the difference of the decimal exponents of adjacent}}
+\DoxyCodeLine{364     \textcolor{comment}{// table entries must be less than or equal to}}
+\DoxyCodeLine{365     \textcolor{comment}{//}}
+\DoxyCodeLine{366     \textcolor{comment}{//      floor( (gamma -\/ alpha) * log\_10(2) ) = 8.}}
+\DoxyCodeLine{367     \textcolor{comment}{//}}
+\DoxyCodeLine{368     \textcolor{comment}{// (A smaller distance gamma-\/alpha would require a larger table.)}}
+\DoxyCodeLine{369 }
+\DoxyCodeLine{370     \textcolor{comment}{// NB:}}
+\DoxyCodeLine{371     \textcolor{comment}{// Actually this function returns c, such that -\/60 <= e\_c + e + 64 <= -\/34.}}
+\DoxyCodeLine{372 }
+\DoxyCodeLine{373     constexpr \textcolor{keywordtype}{int} kCachedPowersMinDecExp = -\/300;}
+\DoxyCodeLine{374     constexpr \textcolor{keywordtype}{int} kCachedPowersDecStep = 8;}
+\DoxyCodeLine{375 }
+\DoxyCodeLine{376     \textcolor{keyword}{static} constexpr std::array<cached\_power, 79> kCachedPowers =}
+\DoxyCodeLine{377     \{}
+\DoxyCodeLine{378         \{}
+\DoxyCodeLine{379             \{ 0xAB70FE17C79AC6CA, -\/1060, -\/300 \},}
+\DoxyCodeLine{380             \{ 0xFF77B1FCBEBCDC4F, -\/1034, -\/292 \},}
+\DoxyCodeLine{381             \{ 0xBE5691EF416BD60C, -\/1007, -\/284 \},}
+\DoxyCodeLine{382             \{ 0x8DD01FAD907FFC3C,  -\/980, -\/276 \},}
+\DoxyCodeLine{383             \{ 0xD3515C2831559A83,  -\/954, -\/268 \},}
+\DoxyCodeLine{384             \{ 0x9D71AC8FADA6C9B5,  -\/927, -\/260 \},}
+\DoxyCodeLine{385             \{ 0xEA9C227723EE8BCB,  -\/901, -\/252 \},}
+\DoxyCodeLine{386             \{ 0xAECC49914078536D,  -\/874, -\/244 \},}
+\DoxyCodeLine{387             \{ 0x823C12795DB6CE57,  -\/847, -\/236 \},}
+\DoxyCodeLine{388             \{ 0xC21094364DFB5637,  -\/821, -\/228 \},}
+\DoxyCodeLine{389             \{ 0x9096EA6F3848984F,  -\/794, -\/220 \},}
+\DoxyCodeLine{390             \{ 0xD77485CB25823AC7,  -\/768, -\/212 \},}
+\DoxyCodeLine{391             \{ 0xA086CFCD97BF97F4,  -\/741, -\/204 \},}
+\DoxyCodeLine{392             \{ 0xEF340A98172AACE5,  -\/715, -\/196 \},}
+\DoxyCodeLine{393             \{ 0xB23867FB2A35B28E,  -\/688, -\/188 \},}
+\DoxyCodeLine{394             \{ 0x84C8D4DFD2C63F3B,  -\/661, -\/180 \},}
+\DoxyCodeLine{395             \{ 0xC5DD44271AD3CDBA,  -\/635, -\/172 \},}
+\DoxyCodeLine{396             \{ 0x936B9FCEBB25C996,  -\/608, -\/164 \},}
+\DoxyCodeLine{397             \{ 0xDBAC6C247D62A584,  -\/582, -\/156 \},}
+\DoxyCodeLine{398             \{ 0xA3AB66580D5FDAF6,  -\/555, -\/148 \},}
+\DoxyCodeLine{399             \{ 0xF3E2F893DEC3F126,  -\/529, -\/140 \},}
+\DoxyCodeLine{400             \{ 0xB5B5ADA8AAFF80B8,  -\/502, -\/132 \},}
+\DoxyCodeLine{401             \{ 0x87625F056C7C4A8B,  -\/475, -\/124 \},}
+\DoxyCodeLine{402             \{ 0xC9BCFF6034C13053,  -\/449, -\/116 \},}
+\DoxyCodeLine{403             \{ 0x964E858C91BA2655,  -\/422, -\/108 \},}
+\DoxyCodeLine{404             \{ 0xDFF9772470297EBD,  -\/396, -\/100 \},}
+\DoxyCodeLine{405             \{ 0xA6DFBD9FB8E5B88F,  -\/369,  -\/92 \},}
+\DoxyCodeLine{406             \{ 0xF8A95FCF88747D94,  -\/343,  -\/84 \},}
+\DoxyCodeLine{407             \{ 0xB94470938FA89BCF,  -\/316,  -\/76 \},}
+\DoxyCodeLine{408             \{ 0x8A08F0F8BF0F156B,  -\/289,  -\/68 \},}
+\DoxyCodeLine{409             \{ 0xCDB02555653131B6,  -\/263,  -\/60 \},}
+\DoxyCodeLine{410             \{ 0x993FE2C6D07B7FAC,  -\/236,  -\/52 \},}
+\DoxyCodeLine{411             \{ 0xE45C10C42A2B3B06,  -\/210,  -\/44 \},}
+\DoxyCodeLine{412             \{ 0xAA242499697392D3,  -\/183,  -\/36 \},}
+\DoxyCodeLine{413             \{ 0xFD87B5F28300CA0E,  -\/157,  -\/28 \},}
+\DoxyCodeLine{414             \{ 0xBCE5086492111AEB,  -\/130,  -\/20 \},}
+\DoxyCodeLine{415             \{ 0x8CBCCC096F5088CC,  -\/103,  -\/12 \},}
+\DoxyCodeLine{416             \{ 0xD1B71758E219652C,   -\/77,   -\/4 \},}
+\DoxyCodeLine{417             \{ 0x9C40000000000000,   -\/50,    4 \},}
+\DoxyCodeLine{418             \{ 0xE8D4A51000000000,   -\/24,   12 \},}
+\DoxyCodeLine{419             \{ 0xAD78EBC5AC620000,     3,   20 \},}
+\DoxyCodeLine{420             \{ 0x813F3978F8940984,    30,   28 \},}
+\DoxyCodeLine{421             \{ 0xC097CE7BC90715B3,    56,   36 \},}
+\DoxyCodeLine{422             \{ 0x8F7E32CE7BEA5C70,    83,   44 \},}
+\DoxyCodeLine{423             \{ 0xD5D238A4ABE98068,   109,   52 \},}
+\DoxyCodeLine{424             \{ 0x9F4F2726179A2245,   136,   60 \},}
+\DoxyCodeLine{425             \{ 0xED63A231D4C4FB27,   162,   68 \},}
+\DoxyCodeLine{426             \{ 0xB0DE65388CC8ADA8,   189,   76 \},}
+\DoxyCodeLine{427             \{ 0x83C7088E1AAB65DB,   216,   84 \},}
+\DoxyCodeLine{428             \{ 0xC45D1DF942711D9A,   242,   92 \},}
+\DoxyCodeLine{429             \{ 0x924D692CA61BE758,   269,  100 \},}
+\DoxyCodeLine{430             \{ 0xDA01EE641A708DEA,   295,  108 \},}
+\DoxyCodeLine{431             \{ 0xA26DA3999AEF774A,   322,  116 \},}
+\DoxyCodeLine{432             \{ 0xF209787BB47D6B85,   348,  124 \},}
+\DoxyCodeLine{433             \{ 0xB454E4A179DD1877,   375,  132 \},}
+\DoxyCodeLine{434             \{ 0x865B86925B9BC5C2,   402,  140 \},}
+\DoxyCodeLine{435             \{ 0xC83553C5C8965D3D,   428,  148 \},}
+\DoxyCodeLine{436             \{ 0x952AB45CFA97A0B3,   455,  156 \},}
+\DoxyCodeLine{437             \{ 0xDE469FBD99A05FE3,   481,  164 \},}
+\DoxyCodeLine{438             \{ 0xA59BC234DB398C25,   508,  172 \},}
+\DoxyCodeLine{439             \{ 0xF6C69A72A3989F5C,   534,  180 \},}
+\DoxyCodeLine{440             \{ 0xB7DCBF5354E9BECE,   561,  188 \},}
+\DoxyCodeLine{441             \{ 0x88FCF317F22241E2,   588,  196 \},}
+\DoxyCodeLine{442             \{ 0xCC20CE9BD35C78A5,   614,  204 \},}
+\DoxyCodeLine{443             \{ 0x98165AF37B2153DF,   641,  212 \},}
+\DoxyCodeLine{444             \{ 0xE2A0B5DC971F303A,   667,  220 \},}
+\DoxyCodeLine{445             \{ 0xA8D9D1535CE3B396,   694,  228 \},}
+\DoxyCodeLine{446             \{ 0xFB9B7CD9A4A7443C,   720,  236 \},}
+\DoxyCodeLine{447             \{ 0xBB764C4CA7A44410,   747,  244 \},}
+\DoxyCodeLine{448             \{ 0x8BAB8EEFB6409C1A,   774,  252 \},}
+\DoxyCodeLine{449             \{ 0xD01FEF10A657842C,   800,  260 \},}
+\DoxyCodeLine{450             \{ 0x9B10A4E5E9913129,   827,  268 \},}
+\DoxyCodeLine{451             \{ 0xE7109BFBA19C0C9D,   853,  276 \},}
+\DoxyCodeLine{452             \{ 0xAC2820D9623BF429,   880,  284 \},}
+\DoxyCodeLine{453             \{ 0x80444B5E7AA7CF85,   907,  292 \},}
+\DoxyCodeLine{454             \{ 0xBF21E44003ACDD2D,   933,  300 \},}
+\DoxyCodeLine{455             \{ 0x8E679C2F5E44FF8F,   960,  308 \},}
+\DoxyCodeLine{456             \{ 0xD433179D9C8CB841,   986,  316 \},}
+\DoxyCodeLine{457             \{ 0x9E19DB92B4E31BA9,  1013,  324 \},}
+\DoxyCodeLine{458         \}}
+\DoxyCodeLine{459     \};}
+\DoxyCodeLine{460 }
+\DoxyCodeLine{461     \textcolor{comment}{// This computation gives exactly the same results for k as}}
+\DoxyCodeLine{462     \textcolor{comment}{//      k = ceil((kAlpha -\/ e -\/ 1) * 0.30102999566398114)}}
+\DoxyCodeLine{463     \textcolor{comment}{// for |e| <= 1500, but doesn't require floating-\/point operations.}}
+\DoxyCodeLine{464     \textcolor{comment}{// NB: log\_10(2) \string~= 78913 / 2\string^18}}
+\DoxyCodeLine{465     assert(e >= -\/1500);}
+\DoxyCodeLine{466     assert(e <=  1500);}
+\DoxyCodeLine{467     \textcolor{keyword}{const} \textcolor{keywordtype}{int} f = kAlpha -\/ e -\/ 1;}
+\DoxyCodeLine{468     \textcolor{keyword}{const} \textcolor{keywordtype}{int} k = (f * 78913) / (1 << 18) + \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(f > 0);}
+\DoxyCodeLine{469 }
+\DoxyCodeLine{470     \textcolor{keyword}{const} \textcolor{keywordtype}{int} index = (-\/kCachedPowersMinDecExp + k + (kCachedPowersDecStep -\/ 1)) / kCachedPowersDecStep;}
+\DoxyCodeLine{471     assert(index >= 0);}
+\DoxyCodeLine{472     assert(\textcolor{keyword}{static\_cast<}std::size\_t\textcolor{keyword}{>}(index) < kCachedPowers.size());}
+\DoxyCodeLine{473 }
+\DoxyCodeLine{474     \textcolor{keyword}{const} cached\_power cached = kCachedPowers[\textcolor{keyword}{static\_cast<}std::size\_t\textcolor{keyword}{>}(index)];}
+\DoxyCodeLine{475     assert(kAlpha <= cached.e + e + 64);}
+\DoxyCodeLine{476     assert(kGamma >= cached.e + e + 64);}
+\DoxyCodeLine{477 }
+\DoxyCodeLine{478     \textcolor{keywordflow}{return} cached;}
+\DoxyCodeLine{479 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a05b681dcb8569b9784c6dccfadb01633}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a05b681dcb8569b9784c6dccfadb01633}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!grisu2@{grisu2}}
+\index{grisu2@{grisu2}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{grisu2()}{grisu2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void nlohmann\+::detail\+::dtoa\+\_\+impl\+::grisu2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{int \&}]{len,  }\item[{int \&}]{decimal\+\_\+exponent,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{m\+\_\+minus,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{v,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{m\+\_\+plus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+v = buf $\ast$ 10$^\wedge$decimal\+\_\+exponent len is the length of the buffer (number of decimal digits) The buffer must be large enough, i.\+e. $>$= max\+\_\+digits10. 
+
+Definition at line 823 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{825 \{}
+\DoxyCodeLine{826     assert(m\_plus.e == m\_minus.e);}
+\DoxyCodeLine{827     assert(m\_plus.e == v.e);}
+\DoxyCodeLine{828 }
+\DoxyCodeLine{829     \textcolor{comment}{//  -\/-\/-\/-\/-\/-\/-\/-\/(-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/)-\/-\/-\/-\/-\/-\/-\/-\/    (A)}}
+\DoxyCodeLine{830     \textcolor{comment}{//          m-\/                      v                       m+}}
+\DoxyCodeLine{831     \textcolor{comment}{//}}
+\DoxyCodeLine{832     \textcolor{comment}{//  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/(-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/)-\/-\/-\/-\/-\/-\/-\/-\/    (B)}}
+\DoxyCodeLine{833     \textcolor{comment}{//                      m-\/          v                       m+}}
+\DoxyCodeLine{834     \textcolor{comment}{//}}
+\DoxyCodeLine{835     \textcolor{comment}{// First scale v (and m-\/ and m+) such that the exponent is in the range}}
+\DoxyCodeLine{836     \textcolor{comment}{// [alpha, gamma].}}
+\DoxyCodeLine{837 }
+\DoxyCodeLine{838     \textcolor{keyword}{const} cached\_power cached = \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_adbf329a18c5cf854a3477327afd2200b}{get\_cached\_power\_for\_binary\_exponent}}(m\_plus.e);}
+\DoxyCodeLine{839 }
+\DoxyCodeLine{840     \textcolor{keyword}{const} diyfp c\_minus\_k(cached.f, cached.e); \textcolor{comment}{// = c \string~= 10\string^-\/k}}
+\DoxyCodeLine{841 }
+\DoxyCodeLine{842     \textcolor{comment}{// The exponent of the products is = v.e + c\_minus\_k.e + q and is in the range [alpha,gamma]}}
+\DoxyCodeLine{843     \textcolor{keyword}{const} diyfp w       = diyfp::mul(v,       c\_minus\_k);}
+\DoxyCodeLine{844     \textcolor{keyword}{const} diyfp w\_minus = diyfp::mul(m\_minus, c\_minus\_k);}
+\DoxyCodeLine{845     \textcolor{keyword}{const} diyfp w\_plus  = diyfp::mul(m\_plus,  c\_minus\_k);}
+\DoxyCodeLine{846 }
+\DoxyCodeLine{847     \textcolor{comment}{//  -\/-\/-\/-\/(-\/-\/-\/+-\/-\/-\/)-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/(-\/-\/-\/+-\/-\/-\/)-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/(-\/-\/-\/+-\/-\/-\/)-\/-\/-\/-\/}}
+\DoxyCodeLine{848     \textcolor{comment}{//          w-\/                      w                       w+}}
+\DoxyCodeLine{849     \textcolor{comment}{//          = c*m-\/                  = c*v                   = c*m+}}
+\DoxyCodeLine{850     \textcolor{comment}{//}}
+\DoxyCodeLine{851     \textcolor{comment}{// diyfp::mul rounds its result and c\_minus\_k is approximated too. w, w-\/ and}}
+\DoxyCodeLine{852     \textcolor{comment}{// w+ are now off by a small amount.}}
+\DoxyCodeLine{853     \textcolor{comment}{// In fact:}}
+\DoxyCodeLine{854     \textcolor{comment}{//}}
+\DoxyCodeLine{855     \textcolor{comment}{//      w -\/ v * 10\string^k < 1 ulp}}
+\DoxyCodeLine{856     \textcolor{comment}{//}}
+\DoxyCodeLine{857     \textcolor{comment}{// To account for this inaccuracy, add resp. subtract 1 ulp.}}
+\DoxyCodeLine{858     \textcolor{comment}{//}}
+\DoxyCodeLine{859     \textcolor{comment}{//  -\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/[-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/(-\/-\/-\/+-\/-\/-\/)-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/]-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{860     \textcolor{comment}{//          w-\/  M-\/                  w                   M+  w+}}
+\DoxyCodeLine{861     \textcolor{comment}{//}}
+\DoxyCodeLine{862     \textcolor{comment}{// Now any number in [M-\/, M+] (bounds included) will round to w when input,}}
+\DoxyCodeLine{863     \textcolor{comment}{// regardless of how the input rounding algorithm breaks ties.}}
+\DoxyCodeLine{864     \textcolor{comment}{//}}
+\DoxyCodeLine{865     \textcolor{comment}{// And digit\_gen generates the shortest possible such number in [M-\/, M+].}}
+\DoxyCodeLine{866     \textcolor{comment}{// Note that this does not mean that Grisu2 always generates the shortest}}
+\DoxyCodeLine{867     \textcolor{comment}{// possible number in the interval (m-\/, m+).}}
+\DoxyCodeLine{868     \textcolor{keyword}{const} diyfp M\_minus(w\_minus.f + 1, w\_minus.e);}
+\DoxyCodeLine{869     \textcolor{keyword}{const} diyfp M\_plus (w\_plus.f  -\/ 1, w\_plus.e );}
+\DoxyCodeLine{870 }
+\DoxyCodeLine{871     decimal\_exponent = -\/cached.k; \textcolor{comment}{// = -\/(-\/k) = k}}
+\DoxyCodeLine{872 }
+\DoxyCodeLine{873     \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}{grisu2\_digit\_gen}}(buf, len, decimal\_exponent, M\_minus, w, M\_plus);}
+\DoxyCodeLine{874 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_aab7a9670a4f4704a5d0347ad7588576b}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_aab7a9670a4f4704a5d0347ad7588576b}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!grisu2@{grisu2}}
+\index{grisu2@{grisu2}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{grisu2()}{grisu2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Float\+Type $>$ \\
+void nlohmann\+::detail\+::dtoa\+\_\+impl\+::grisu2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{int \&}]{len,  }\item[{int \&}]{decimal\+\_\+exponent,  }\item[{Float\+Type}]{value }\end{DoxyParamCaption})}
+
+v = buf $\ast$ 10$^\wedge$decimal\+\_\+exponent len is the length of the buffer (number of decimal digits) The buffer must be large enough, i.\+e. $>$= max\+\_\+digits10. 
+
+Definition at line 883 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{884 \{}
+\DoxyCodeLine{885     static\_assert(diyfp::kPrecision >= std::numeric\_limits<FloatType>::digits + 3,}
+\DoxyCodeLine{886                   \textcolor{stringliteral}{"internal error: not enough precision"});}
+\DoxyCodeLine{887 }
+\DoxyCodeLine{888     assert(std::isfinite(value));}
+\DoxyCodeLine{889     assert(value > 0);}
+\DoxyCodeLine{890 }
+\DoxyCodeLine{891     \textcolor{comment}{// If the neighbors (and boundaries) of 'value' are always computed for double-\/precision}}
+\DoxyCodeLine{892     \textcolor{comment}{// numbers, all float's can be recovered using strtod (and strtof). However, the resulting}}
+\DoxyCodeLine{893     \textcolor{comment}{// decimal representations are not exactly "short".}}
+\DoxyCodeLine{894     \textcolor{comment}{//}}
+\DoxyCodeLine{895     \textcolor{comment}{// The documentation for 'std::to\_chars' (https://en.cppreference.com/w/cpp/utility/to\_chars)}}
+\DoxyCodeLine{896     \textcolor{comment}{// says "value is converted to a string as if by std::sprintf in the default ("C") locale"}}
+\DoxyCodeLine{897     \textcolor{comment}{// and since sprintf promotes float's to double's, I think this is exactly what 'std::to\_chars'}}
+\DoxyCodeLine{898     \textcolor{comment}{// does.}}
+\DoxyCodeLine{899     \textcolor{comment}{// On the other hand, the documentation for 'std::to\_chars' requires that "parsing the}}
+\DoxyCodeLine{900     \textcolor{comment}{// representation using the corresponding std::from\_chars function recovers value exactly". That}}
+\DoxyCodeLine{901     \textcolor{comment}{// indicates that single precision floating-\/point numbers should be recovered using}}
+\DoxyCodeLine{902     \textcolor{comment}{// 'std::strtof'.}}
+\DoxyCodeLine{903     \textcolor{comment}{//}}
+\DoxyCodeLine{904     \textcolor{comment}{// NB: If the neighbors are computed for single-\/precision numbers, there is a single float}}
+\DoxyCodeLine{905     \textcolor{comment}{//     (7.0385307e-\/26f) which can't be recovered using strtod. The resulting double precision}}
+\DoxyCodeLine{906     \textcolor{comment}{//     value is off by 1 ulp.}}
+\DoxyCodeLine{907 \textcolor{preprocessor}{\#if 0}}
+\DoxyCodeLine{908     \textcolor{keyword}{const} boundaries w = \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}{compute\_boundaries}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(value));}
+\DoxyCodeLine{909 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{910     \textcolor{keyword}{const} boundaries w = \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a22b6e37654ac93c6d0d9c06ec1bf5ded}{compute\_boundaries}}(value);}
+\DoxyCodeLine{911 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{912 }
+\DoxyCodeLine{913     \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a05b681dcb8569b9784c6dccfadb01633}{grisu2}}(buf, len, decimal\_exponent, w.minus, w.w, w.plus);}
+\DoxyCodeLine{914 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}\label{namespacenlohmann_1_1detail_1_1dtoa__impl_a9b899c72b0e1e3dd46d75c2b4e6bcdfb}} 
+\index{nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}!grisu2\_digit\_gen@{grisu2\_digit\_gen}}
+\index{grisu2\_digit\_gen@{grisu2\_digit\_gen}!nlohmann::detail::dtoa\_impl@{nlohmann::detail::dtoa\_impl}}
+\doxysubsubsection{\texorpdfstring{grisu2\_digit\_gen()}{grisu2\_digit\_gen()}}
+{\footnotesize\ttfamily void nlohmann\+::detail\+::dtoa\+\_\+impl\+::grisu2\+\_\+digit\+\_\+gen (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int \&}]{length,  }\item[{int \&}]{decimal\+\_\+exponent,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{M\+\_\+minus,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{w,  }\item[{\mbox{\hyperlink{structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp}{diyfp}}}]{M\+\_\+plus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates V = buffer $\ast$ 10$^\wedge$decimal\+\_\+exponent, such that M-\/ $<$= V $<$= M+. M-\/ and M+ must be normalized and share the same exponent -\/60 $<$= e $<$= -\/32. 
+
+Definition at line 582 of file to\+\_\+chars.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{584 \{}
+\DoxyCodeLine{585     static\_assert(kAlpha >= -\/60, \textcolor{stringliteral}{"internal error"});}
+\DoxyCodeLine{586     static\_assert(kGamma <= -\/32, \textcolor{stringliteral}{"internal error"});}
+\DoxyCodeLine{587 }
+\DoxyCodeLine{588     \textcolor{comment}{// Generates the digits (and the exponent) of a decimal floating-\/point}}
+\DoxyCodeLine{589     \textcolor{comment}{// number V = buffer * 10\string^decimal\_exponent in the range [M-\/, M+]. The diyfp's}}
+\DoxyCodeLine{590     \textcolor{comment}{// w, M-\/ and M+ share the same exponent e, which satisfies alpha <= e <= gamma.}}
+\DoxyCodeLine{591     \textcolor{comment}{//}}
+\DoxyCodeLine{592     \textcolor{comment}{//               <-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ delta -\/-\/-\/-\/>}}
+\DoxyCodeLine{593     \textcolor{comment}{//                                  <-\/-\/-\/-\/ dist -\/-\/-\/-\/-\/-\/-\/-\/-\/>}}
+\DoxyCodeLine{594     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/[-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/]-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{595     \textcolor{comment}{//               M-\/                 w                   M+}}
+\DoxyCodeLine{596     \textcolor{comment}{//}}
+\DoxyCodeLine{597     \textcolor{comment}{// Grisu2 generates the digits of M+ from left to right and stops as soon as}}
+\DoxyCodeLine{598     \textcolor{comment}{// V is in [M-\/,M+].}}
+\DoxyCodeLine{599 }
+\DoxyCodeLine{600     assert(M\_plus.e >= kAlpha);}
+\DoxyCodeLine{601     assert(M\_plus.e <= kGamma);}
+\DoxyCodeLine{602 }
+\DoxyCodeLine{603     std::uint64\_t delta = diyfp::sub(M\_plus, M\_minus).f; \textcolor{comment}{// (significand of (M+ -\/ M-\/), implicit exponent is e)}}
+\DoxyCodeLine{604     std::uint64\_t dist  = diyfp::sub(M\_plus, w      ).f; \textcolor{comment}{// (significand of (M+ -\/ w ), implicit exponent is e)}}
+\DoxyCodeLine{605 }
+\DoxyCodeLine{606     \textcolor{comment}{// Split M+ = f * 2\string^e into two parts p1 and p2 (note: e < 0):}}
+\DoxyCodeLine{607     \textcolor{comment}{//}}
+\DoxyCodeLine{608     \textcolor{comment}{//      M+ = f * 2\string^e}}
+\DoxyCodeLine{609     \textcolor{comment}{//         = ((f div 2\string^-\/e) * 2\string^-\/e + (f mod 2\string^-\/e)) * 2\string^e}}
+\DoxyCodeLine{610     \textcolor{comment}{//         = ((p1        ) * 2\string^-\/e + (p2        )) * 2\string^e}}
+\DoxyCodeLine{611     \textcolor{comment}{//         = p1 + p2 * 2\string^e}}
+\DoxyCodeLine{612 }
+\DoxyCodeLine{613     \textcolor{keyword}{const} diyfp one(std::uint64\_t\{1\} << -\/M\_plus.e, M\_plus.e);}
+\DoxyCodeLine{614 }
+\DoxyCodeLine{615     \textcolor{keyword}{auto} p1 = \textcolor{keyword}{static\_cast<}std::uint32\_t\textcolor{keyword}{>}(M\_plus.f >> -\/one.e); \textcolor{comment}{// p1 = f div 2\string^-\/e (Since -\/e >= 32, p1 fits into a 32-\/bit int.)}}
+\DoxyCodeLine{616     std::uint64\_t p2 = M\_plus.f \& (one.f -\/ 1);                    \textcolor{comment}{// p2 = f mod 2\string^-\/e}}
+\DoxyCodeLine{617 }
+\DoxyCodeLine{618     \textcolor{comment}{// 1)}}
+\DoxyCodeLine{619     \textcolor{comment}{//}}
+\DoxyCodeLine{620     \textcolor{comment}{// Generate the digits of the integral part p1 = d[n-\/1]...d[1]d[0]}}
+\DoxyCodeLine{621 }
+\DoxyCodeLine{622     assert(p1 > 0);}
+\DoxyCodeLine{623 }
+\DoxyCodeLine{624     std::uint32\_t pow10;}
+\DoxyCodeLine{625     \textcolor{keyword}{const} \textcolor{keywordtype}{int} k = \mbox{\hyperlink{namespacenlohmann_1_1detail_1_1dtoa__impl_a36ded358763b5dbcea9867660fbe4e28}{find\_largest\_pow10}}(p1, pow10);}
+\DoxyCodeLine{626 }
+\DoxyCodeLine{627     \textcolor{comment}{//      10\string^(k-\/1) <= p1 < 10\string^k, pow10 = 10\string^(k-\/1)}}
+\DoxyCodeLine{628     \textcolor{comment}{//}}
+\DoxyCodeLine{629     \textcolor{comment}{//      p1 = (p1 div 10\string^(k-\/1)) * 10\string^(k-\/1) + (p1 mod 10\string^(k-\/1))}}
+\DoxyCodeLine{630     \textcolor{comment}{//         = (d[k-\/1]         ) * 10\string^(k-\/1) + (p1 mod 10\string^(k-\/1))}}
+\DoxyCodeLine{631     \textcolor{comment}{//}}
+\DoxyCodeLine{632     \textcolor{comment}{//      M+ = p1                                             + p2 * 2\string^e}}
+\DoxyCodeLine{633     \textcolor{comment}{//         = d[k-\/1] * 10\string^(k-\/1) + (p1 mod 10\string^(k-\/1))          + p2 * 2\string^e}}
+\DoxyCodeLine{634     \textcolor{comment}{//         = d[k-\/1] * 10\string^(k-\/1) + ((p1 mod 10\string^(k-\/1)) * 2\string^-\/e + p2) * 2\string^e}}
+\DoxyCodeLine{635     \textcolor{comment}{//         = d[k-\/1] * 10\string^(k-\/1) + (                         rest) * 2\string^e}}
+\DoxyCodeLine{636     \textcolor{comment}{//}}
+\DoxyCodeLine{637     \textcolor{comment}{// Now generate the digits d[n] of p1 from left to right (n = k-\/1,...,0)}}
+\DoxyCodeLine{638     \textcolor{comment}{//}}
+\DoxyCodeLine{639     \textcolor{comment}{//      p1 = d[k-\/1]...d[n] * 10\string^n + d[n-\/1]...d[0]}}
+\DoxyCodeLine{640     \textcolor{comment}{//}}
+\DoxyCodeLine{641     \textcolor{comment}{// but stop as soon as}}
+\DoxyCodeLine{642     \textcolor{comment}{//}}
+\DoxyCodeLine{643     \textcolor{comment}{//      rest * 2\string^e = (d[n-\/1]...d[0] * 2\string^-\/e + p2) * 2\string^e <= delta * 2\string^e}}
+\DoxyCodeLine{644 }
+\DoxyCodeLine{645     \textcolor{keywordtype}{int} n = k;}
+\DoxyCodeLine{646     \textcolor{keywordflow}{while} (n > 0)}
+\DoxyCodeLine{647     \{}
+\DoxyCodeLine{648         \textcolor{comment}{// Invariants:}}
+\DoxyCodeLine{649         \textcolor{comment}{//      M+ = buffer * 10\string^n + (p1 + p2 * 2\string^e)    (buffer = 0 for n = k)}}
+\DoxyCodeLine{650         \textcolor{comment}{//      pow10 = 10\string^(n-\/1) <= p1 < 10\string^n}}
+\DoxyCodeLine{651         \textcolor{comment}{//}}
+\DoxyCodeLine{652         \textcolor{keyword}{const} std::uint32\_t d = p1 / pow10;  \textcolor{comment}{// d = p1 div 10\string^(n-\/1)}}
+\DoxyCodeLine{653         \textcolor{keyword}{const} std::uint32\_t r = p1 \% pow10;  \textcolor{comment}{// r = p1 mod 10\string^(n-\/1)}}
+\DoxyCodeLine{654         \textcolor{comment}{//}}
+\DoxyCodeLine{655         \textcolor{comment}{//      M+ = buffer * 10\string^n + (d * 10\string^(n-\/1) + r) + p2 * 2\string^e}}
+\DoxyCodeLine{656         \textcolor{comment}{//         = (buffer * 10 + d) * 10\string^(n-\/1) + (r + p2 * 2\string^e)}}
+\DoxyCodeLine{657         \textcolor{comment}{//}}
+\DoxyCodeLine{658         assert(d <= 9);}
+\DoxyCodeLine{659         buffer[length++] = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + d); \textcolor{comment}{// buffer := buffer * 10 + d}}
+\DoxyCodeLine{660         \textcolor{comment}{//}}
+\DoxyCodeLine{661         \textcolor{comment}{//      M+ = buffer * 10\string^(n-\/1) + (r + p2 * 2\string^e)}}
+\DoxyCodeLine{662         \textcolor{comment}{//}}
+\DoxyCodeLine{663         p1 = r;}
+\DoxyCodeLine{664         n-\/-\/;}
+\DoxyCodeLine{665         \textcolor{comment}{//}}
+\DoxyCodeLine{666         \textcolor{comment}{//      M+ = buffer * 10\string^n + (p1 + p2 * 2\string^e)}}
+\DoxyCodeLine{667         \textcolor{comment}{//      pow10 = 10\string^n}}
+\DoxyCodeLine{668         \textcolor{comment}{//}}
+\DoxyCodeLine{669 }
+\DoxyCodeLine{670         \textcolor{comment}{// Now check if enough digits have been generated.}}
+\DoxyCodeLine{671         \textcolor{comment}{// Compute}}
+\DoxyCodeLine{672         \textcolor{comment}{//}}
+\DoxyCodeLine{673         \textcolor{comment}{//      p1 + p2 * 2\string^e = (p1 * 2\string^-\/e + p2) * 2\string^e = rest * 2\string^e}}
+\DoxyCodeLine{674         \textcolor{comment}{//}}
+\DoxyCodeLine{675         \textcolor{comment}{// Note:}}
+\DoxyCodeLine{676         \textcolor{comment}{// Since rest and delta share the same exponent e, it suffices to}}
+\DoxyCodeLine{677         \textcolor{comment}{// compare the significands.}}
+\DoxyCodeLine{678         \textcolor{keyword}{const} std::uint64\_t rest = (std::uint64\_t\{p1\} << -\/one.e) + p2;}
+\DoxyCodeLine{679         \textcolor{keywordflow}{if} (rest <= delta)}
+\DoxyCodeLine{680         \{}
+\DoxyCodeLine{681             \textcolor{comment}{// V = buffer * 10\string^n, with M-\/ <= V <= M+.}}
+\DoxyCodeLine{682 }
+\DoxyCodeLine{683             decimal\_exponent += n;}
+\DoxyCodeLine{684 }
+\DoxyCodeLine{685             \textcolor{comment}{// We may now just stop. But instead look if the buffer could be}}
+\DoxyCodeLine{686             \textcolor{comment}{// decremented to bring V closer to w.}}
+\DoxyCodeLine{687             \textcolor{comment}{//}}
+\DoxyCodeLine{688             \textcolor{comment}{// pow10 = 10\string^n is now 1 ulp in the decimal representation V.}}
+\DoxyCodeLine{689             \textcolor{comment}{// The rounding procedure works with diyfp's with an implicit}}
+\DoxyCodeLine{690             \textcolor{comment}{// exponent of e.}}
+\DoxyCodeLine{691             \textcolor{comment}{//}}
+\DoxyCodeLine{692             \textcolor{comment}{//      10\string^n = (10\string^n * 2\string^-\/e) * 2\string^e = ulp * 2\string^e}}
+\DoxyCodeLine{693             \textcolor{comment}{//}}
+\DoxyCodeLine{694             \textcolor{keyword}{const} std::uint64\_t ten\_n = std::uint64\_t\{pow10\} << -\/one.e;}
+\DoxyCodeLine{695             grisu2\_round(buffer, length, dist, delta, rest, ten\_n);}
+\DoxyCodeLine{696 }
+\DoxyCodeLine{697             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{698         \}}
+\DoxyCodeLine{699 }
+\DoxyCodeLine{700         pow10 /= 10;}
+\DoxyCodeLine{701         \textcolor{comment}{//}}
+\DoxyCodeLine{702         \textcolor{comment}{//      pow10 = 10\string^(n-\/1) <= p1 < 10\string^n}}
+\DoxyCodeLine{703         \textcolor{comment}{// Invariants restored.}}
+\DoxyCodeLine{704     \}}
+\DoxyCodeLine{705 }
+\DoxyCodeLine{706     \textcolor{comment}{// 2)}}
+\DoxyCodeLine{707     \textcolor{comment}{//}}
+\DoxyCodeLine{708     \textcolor{comment}{// The digits of the integral part have been generated:}}
+\DoxyCodeLine{709     \textcolor{comment}{//}}
+\DoxyCodeLine{710     \textcolor{comment}{//      M+ = d[k-\/1]...d[1]d[0] + p2 * 2\string^e}}
+\DoxyCodeLine{711     \textcolor{comment}{//         = buffer            + p2 * 2\string^e}}
+\DoxyCodeLine{712     \textcolor{comment}{//}}
+\DoxyCodeLine{713     \textcolor{comment}{// Now generate the digits of the fractional part p2 * 2\string^e.}}
+\DoxyCodeLine{714     \textcolor{comment}{//}}
+\DoxyCodeLine{715     \textcolor{comment}{// Note:}}
+\DoxyCodeLine{716     \textcolor{comment}{// No decimal point is generated: the exponent is adjusted instead.}}
+\DoxyCodeLine{717     \textcolor{comment}{//}}
+\DoxyCodeLine{718     \textcolor{comment}{// p2 actually represents the fraction}}
+\DoxyCodeLine{719     \textcolor{comment}{//}}
+\DoxyCodeLine{720     \textcolor{comment}{//      p2 * 2\string^e}}
+\DoxyCodeLine{721     \textcolor{comment}{//          = p2 / 2\string^-\/e}}
+\DoxyCodeLine{722     \textcolor{comment}{//          = d[-\/1] / 10\string^1 + d[-\/2] / 10\string^2 + ...}}
+\DoxyCodeLine{723     \textcolor{comment}{//}}
+\DoxyCodeLine{724     \textcolor{comment}{// Now generate the digits d[-\/m] of p1 from left to right (m = 1,2,...)}}
+\DoxyCodeLine{725     \textcolor{comment}{//}}
+\DoxyCodeLine{726     \textcolor{comment}{//      p2 * 2\string^e = d[-\/1]d[-\/2]...d[-\/m] * 10\string^-\/m}}
+\DoxyCodeLine{727     \textcolor{comment}{//                      + 10\string^-\/m * (d[-\/m-\/1] / 10\string^1 + d[-\/m-\/2] / 10\string^2 + ...)}}
+\DoxyCodeLine{728     \textcolor{comment}{//}}
+\DoxyCodeLine{729     \textcolor{comment}{// using}}
+\DoxyCodeLine{730     \textcolor{comment}{//}}
+\DoxyCodeLine{731     \textcolor{comment}{//      10\string^m * p2 = ((10\string^m * p2) div 2\string^-\/e) * 2\string^-\/e + ((10\string^m * p2) mod 2\string^-\/e)}}
+\DoxyCodeLine{732     \textcolor{comment}{//                = (                   d) * 2\string^-\/e + (                   r)}}
+\DoxyCodeLine{733     \textcolor{comment}{//}}
+\DoxyCodeLine{734     \textcolor{comment}{// or}}
+\DoxyCodeLine{735     \textcolor{comment}{//      10\string^m * p2 * 2\string^e = d + r * 2\string^e}}
+\DoxyCodeLine{736     \textcolor{comment}{//}}
+\DoxyCodeLine{737     \textcolor{comment}{// i.e.}}
+\DoxyCodeLine{738     \textcolor{comment}{//}}
+\DoxyCodeLine{739     \textcolor{comment}{//      M+ = buffer + p2 * 2\string^e}}
+\DoxyCodeLine{740     \textcolor{comment}{//         = buffer + 10\string^-\/m * (d + r * 2\string^e)}}
+\DoxyCodeLine{741     \textcolor{comment}{//         = (buffer * 10\string^m + d) * 10\string^-\/m + 10\string^-\/m * r * 2\string^e}}
+\DoxyCodeLine{742     \textcolor{comment}{//}}
+\DoxyCodeLine{743     \textcolor{comment}{// and stop as soon as 10\string^-\/m * r * 2\string^e <= delta * 2\string^e}}
+\DoxyCodeLine{744 }
+\DoxyCodeLine{745     assert(p2 > delta);}
+\DoxyCodeLine{746 }
+\DoxyCodeLine{747     \textcolor{keywordtype}{int} m = 0;}
+\DoxyCodeLine{748     \textcolor{keywordflow}{for} (;;)}
+\DoxyCodeLine{749     \{}
+\DoxyCodeLine{750         \textcolor{comment}{// Invariant:}}
+\DoxyCodeLine{751         \textcolor{comment}{//      M+ = buffer * 10\string^-\/m + 10\string^-\/m * (d[-\/m-\/1] / 10 + d[-\/m-\/2] / 10\string^2 + ...) * 2\string^e}}
+\DoxyCodeLine{752         \textcolor{comment}{//         = buffer * 10\string^-\/m + 10\string^-\/m * (p2                                 ) * 2\string^e}}
+\DoxyCodeLine{753         \textcolor{comment}{//         = buffer * 10\string^-\/m + 10\string^-\/m * (1/10 * (10 * p2)                   ) * 2\string^e}}
+\DoxyCodeLine{754         \textcolor{comment}{//         = buffer * 10\string^-\/m + 10\string^-\/m * (1/10 * ((10*p2 div 2\string^-\/e) * 2\string^-\/e + (10*p2 mod 2\string^-\/e)) * 2\string^e}}
+\DoxyCodeLine{755         \textcolor{comment}{//}}
+\DoxyCodeLine{756         assert(p2 <= (std::numeric\_limits<std::uint64\_t>::max)() / 10);}
+\DoxyCodeLine{757         p2 *= 10;}
+\DoxyCodeLine{758         \textcolor{keyword}{const} std::uint64\_t d = p2 >> -\/one.e;     \textcolor{comment}{// d = (10 * p2) div 2\string^-\/e}}
+\DoxyCodeLine{759         \textcolor{keyword}{const} std::uint64\_t r = p2 \& (one.f -\/ 1); \textcolor{comment}{// r = (10 * p2) mod 2\string^-\/e}}
+\DoxyCodeLine{760         \textcolor{comment}{//}}
+\DoxyCodeLine{761         \textcolor{comment}{//      M+ = buffer * 10\string^-\/m + 10\string^-\/m * (1/10 * (d * 2\string^-\/e + r) * 2\string^e}}
+\DoxyCodeLine{762         \textcolor{comment}{//         = buffer * 10\string^-\/m + 10\string^-\/m * (1/10 * (d + r * 2\string^e))}}
+\DoxyCodeLine{763         \textcolor{comment}{//         = (buffer * 10 + d) * 10\string^(-\/m-\/1) + 10\string^(-\/m-\/1) * r * 2\string^e}}
+\DoxyCodeLine{764         \textcolor{comment}{//}}
+\DoxyCodeLine{765         assert(d <= 9);}
+\DoxyCodeLine{766         buffer[length++] = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(\textcolor{charliteral}{'0'} + d); \textcolor{comment}{// buffer := buffer * 10 + d}}
+\DoxyCodeLine{767         \textcolor{comment}{//}}
+\DoxyCodeLine{768         \textcolor{comment}{//      M+ = buffer * 10\string^(-\/m-\/1) + 10\string^(-\/m-\/1) * r * 2\string^e}}
+\DoxyCodeLine{769         \textcolor{comment}{//}}
+\DoxyCodeLine{770         p2 = r;}
+\DoxyCodeLine{771         m++;}
+\DoxyCodeLine{772         \textcolor{comment}{//}}
+\DoxyCodeLine{773         \textcolor{comment}{//      M+ = buffer * 10\string^-\/m + 10\string^-\/m * p2 * 2\string^e}}
+\DoxyCodeLine{774         \textcolor{comment}{// Invariant restored.}}
+\DoxyCodeLine{775 }
+\DoxyCodeLine{776         \textcolor{comment}{// Check if enough digits have been generated.}}
+\DoxyCodeLine{777         \textcolor{comment}{//}}
+\DoxyCodeLine{778         \textcolor{comment}{//      10\string^-\/m * p2 * 2\string^e <= delta * 2\string^e}}
+\DoxyCodeLine{779         \textcolor{comment}{//              p2 * 2\string^e <= 10\string^m * delta * 2\string^e}}
+\DoxyCodeLine{780         \textcolor{comment}{//                    p2 <= 10\string^m * delta}}
+\DoxyCodeLine{781         delta *= 10;}
+\DoxyCodeLine{782         dist  *= 10;}
+\DoxyCodeLine{783         \textcolor{keywordflow}{if} (p2 <= delta)}
+\DoxyCodeLine{784         \{}
+\DoxyCodeLine{785             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{786         \}}
+\DoxyCodeLine{787     \}}
+\DoxyCodeLine{788 }
+\DoxyCodeLine{789     \textcolor{comment}{// V = buffer * 10\string^-\/m, with M-\/ <= V <= M+.}}
+\DoxyCodeLine{790 }
+\DoxyCodeLine{791     decimal\_exponent -\/= m;}
+\DoxyCodeLine{792 }
+\DoxyCodeLine{793     \textcolor{comment}{// 1 ulp in the decimal representation is now 10\string^-\/m.}}
+\DoxyCodeLine{794     \textcolor{comment}{// Since delta and dist are now scaled by 10\string^m, we need to do the}}
+\DoxyCodeLine{795     \textcolor{comment}{// same with ulp in order to keep the units in sync.}}
+\DoxyCodeLine{796     \textcolor{comment}{//}}
+\DoxyCodeLine{797     \textcolor{comment}{//      10\string^m * 10\string^-\/m = 1 = 2\string^-\/e * 2\string^e = ten\_m * 2\string^e}}
+\DoxyCodeLine{798     \textcolor{comment}{//}}
+\DoxyCodeLine{799     \textcolor{keyword}{const} std::uint64\_t ten\_m = one.f;}
+\DoxyCodeLine{800     grisu2\_round(buffer, length, dist, delta, p2, ten\_m);}
+\DoxyCodeLine{801 }
+\DoxyCodeLine{802     \textcolor{comment}{// By construction this algorithm generates the shortest possible decimal}}
+\DoxyCodeLine{803     \textcolor{comment}{// number (Loitsch, Theorem 6.2) which rounds back to w.}}
+\DoxyCodeLine{804     \textcolor{comment}{// For an input number of precision p, at least}}
+\DoxyCodeLine{805     \textcolor{comment}{//}}
+\DoxyCodeLine{806     \textcolor{comment}{//      N = 1 + ceil(p * log\_10(2))}}
+\DoxyCodeLine{807     \textcolor{comment}{//}}
+\DoxyCodeLine{808     \textcolor{comment}{// decimal digits are sufficient to identify all binary floating-\/point}}
+\DoxyCodeLine{809     \textcolor{comment}{// numbers (Matula, "In-\/and-\/Out conversions").}}
+\DoxyCodeLine{810     \textcolor{comment}{// This implies that the algorithm does not produce more than N decimal}}
+\DoxyCodeLine{811     \textcolor{comment}{// digits.}}
+\DoxyCodeLine{812     \textcolor{comment}{//}}
+\DoxyCodeLine{813     \textcolor{comment}{//      N = 17 for p = 53 (IEEE double precision)}}
+\DoxyCodeLine{814     \textcolor{comment}{//      N = 9  for p = 24 (IEEE single precision)}}
+\DoxyCodeLine{815 \}}
+
+\end{DoxyCode}

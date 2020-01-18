@@ -1,0 +1,47 @@
+\hypertarget{classfuzzer_1_1TraceState}{}\doxysection{fuzzer\+::Trace\+State Class Reference}
+\label{classfuzzer_1_1TraceState}\index{fuzzer::TraceState@{fuzzer::TraceState}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_aa76275fc21df8dabdab8707cc7707825}\label{classfuzzer_1_1TraceState_aa76275fc21df8dabdab8707cc7707825}} 
+{\bfseries Trace\+State} (\mbox{\hyperlink{classfuzzer_1_1MutationDispatcher}{Mutation\+Dispatcher}} \&MD, const \mbox{\hyperlink{structfuzzer_1_1FuzzingOptions}{Fuzzing\+Options}} \&Options, const \mbox{\hyperlink{classfuzzer_1_1Fuzzer}{Fuzzer}} $\ast$F)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a19ca7e78b3705def9767cef2d55d04ca}\label{classfuzzer_1_1TraceState_a19ca7e78b3705def9767cef2d55d04ca}} 
+void {\bfseries Trace\+Memcmp\+Callback} (size\+\_\+t Cmp\+Size, const uint8\+\_\+t $\ast$Data1, const uint8\+\_\+t $\ast$Data2)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a90c1b3e1c63873c2ea8faa00ad29d411}\label{classfuzzer_1_1TraceState_a90c1b3e1c63873c2ea8faa00ad29d411}} 
+void {\bfseries Trace\+Switch\+Callback} (uintptr\+\_\+t PC, size\+\_\+t Val\+Size\+In\+Bits, uint64\+\_\+t Val, size\+\_\+t Num\+Cases, uint64\+\_\+t $\ast$Cases)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_acf2bff66ee5368a9ca0d44d2926a5d6c}\label{classfuzzer_1_1TraceState_acf2bff66ee5368a9ca0d44d2926a5d6c}} 
+int {\bfseries Try\+To\+Add\+Desired\+Data} (uint64\+\_\+t Present\+Data, uint64\+\_\+t Desired\+Data, size\+\_\+t Data\+Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_abd1b3dc526c6a18c167fe57c611b5b78}\label{classfuzzer_1_1TraceState_abd1b3dc526c6a18c167fe57c611b5b78}} 
+int {\bfseries Try\+To\+Add\+Desired\+Data} (const uint8\+\_\+t $\ast$Present\+Data, const uint8\+\_\+t $\ast$Desired\+Data, size\+\_\+t Data\+Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a0c3b5e922389f8b18e5cbc9add9dda0b}\label{classfuzzer_1_1TraceState_a0c3b5e922389f8b18e5cbc9add9dda0b}} 
+void {\bfseries Start\+Trace\+Recording} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a7e610df0349a397e09d67a10c251dc07}\label{classfuzzer_1_1TraceState_a7e610df0349a397e09d67a10c251dc07}} 
+void {\bfseries Stop\+Trace\+Recording} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a3cfaba51f138339caf55beb176fd25d2}\label{classfuzzer_1_1TraceState_a3cfaba51f138339caf55beb176fd25d2}} 
+void {\bfseries Add\+Mutation} (uint32\+\_\+t Pos, uint32\+\_\+t Size, const uint8\+\_\+t $\ast$Data)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_ad45c505dd4e607fd1de68d49de1a5537}\label{classfuzzer_1_1TraceState_ad45c505dd4e607fd1de68d49de1a5537}} 
+void {\bfseries Add\+Mutation} (uint32\+\_\+t Pos, uint32\+\_\+t Size, uint64\+\_\+t Data)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1TraceState_a956f37bcffd013e84d1f014a739b3a23}\label{classfuzzer_1_1TraceState_a956f37bcffd013e84d1f014a739b3a23}} 
+void {\bfseries Add\+Interesting\+Word} (const uint8\+\_\+t $\ast$Data, size\+\_\+t Size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 40 of file Fuzzer\+Trace\+State.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Trace\+State.\+cpp\end{DoxyCompactItemize}

@@ -5,8 +5,7 @@
 #include "Game.h"
 int main(int argc, char* argv[])
 {
-        Game g;
-        g.loadLevel(argv[1]);
+        Game g(argv[1]);
         g.runGame();
         return 0;
 }

@@ -4,7 +4,7 @@
 
 #include "LifeView.h"
 #include <iostream>
-Entity::LifeView::LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
+Entity::LifeView::LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model) : EntityView(w,model) {
        generateShape();
 }
 void Entity::LifeView::generateShape() {
@@ -14,7 +14,6 @@ void Entity::LifeView::generateShape() {
         shape=std::make_shared<sf::Text>("",font);
 }
 void Entity::LifeView::update() {
-       std::shared_ptr<PlayerShipModel> mod= std::dynamic_pointer_cast<PlayerShipModel>(model);
+       std::shared_ptr<PlayerShipModel> mod= std::dynamic_pointer_cast<PlayerShipModel>(model.lock());
         std::dynamic_pointer_cast<sf::Text>(shape)->setString(std::to_string(mod->getHealthpoints()));
-
 }

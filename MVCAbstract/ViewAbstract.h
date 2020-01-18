@@ -15,15 +15,15 @@
 class ViewAbstract : public Observer {
 public:
     std::__shared_ptr<sf::RenderWindow> w;
-    std::shared_ptr<ModelAbstract> model;
+    std::weak_ptr<ModelAbstract> model;
 public:
-    ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w,std::shared_ptr<ModelAbstract> model);
+    ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w,std::weak_ptr<ModelAbstract> model);
 
 /**
      * \brief draws a sf::Drawable on a window
      * @param w the window where the drawable gets drawn on
      */
-    virtual void draw(std::shared_ptr<sf::RenderWindow> w) = 0;
+    virtual void draw() = 0;
 
 };
 

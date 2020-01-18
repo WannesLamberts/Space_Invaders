@@ -1,0 +1,86 @@
+\hypertarget{classalt__string}{}\doxysection{alt\+\_\+string Class Reference}
+\label{classalt__string}\index{alt\_string@{alt\_string}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classalt__string_a5688a47e0ff39723a00fdad7dc2a49cd}\label{classalt__string_a5688a47e0ff39723a00fdad7dc2a49cd}} 
+using {\bfseries value\+\_\+type} = std\+::string\+::value\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classalt__string_a41eceead1a7a06ff0fcf5930ac266fc4}\label{classalt__string_a41eceead1a7a06ff0fcf5930ac266fc4}} 
+{\bfseries alt\+\_\+string} (const char $\ast$str)
+\item 
+\mbox{\Hypertarget{classalt__string_abcb8c124ad2bbd06764ecbeea7d80247}\label{classalt__string_abcb8c124ad2bbd06764ecbeea7d80247}} 
+{\bfseries alt\+\_\+string} (const char $\ast$str, std\+::size\+\_\+t count)
+\item 
+\mbox{\Hypertarget{classalt__string_abd430ff0a21bc4075f2cda036b578bb4}\label{classalt__string_abd430ff0a21bc4075f2cda036b578bb4}} 
+{\bfseries alt\+\_\+string} (size\+\_\+t count, char chr)
+\item 
+\mbox{\Hypertarget{classalt__string_ae2a69e4219a1476e09191ab1003f438f}\label{classalt__string_ae2a69e4219a1476e09191ab1003f438f}} 
+{\footnotesize template$<$typename... T\+Params$>$ }\\\mbox{\hyperlink{classalt__string}{alt\+\_\+string}} \& {\bfseries append} (T\+Params \&\&...params)
+\item 
+\mbox{\Hypertarget{classalt__string_afc649986756fefc7eeda3471063eb004}\label{classalt__string_afc649986756fefc7eeda3471063eb004}} 
+void {\bfseries push\+\_\+back} (char c)
+\item 
+\mbox{\Hypertarget{classalt__string_a4f0509e034164c6c878b806cd96b5df5}\label{classalt__string_a4f0509e034164c6c878b806cd96b5df5}} 
+{\footnotesize template$<$typename op\+\_\+type $>$ }\\bool {\bfseries operator==} (const op\+\_\+type \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_a7c7d0a87c1557b08a3d8808bdacd6331}\label{classalt__string_a7c7d0a87c1557b08a3d8808bdacd6331}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classalt__string}{alt\+\_\+string}} \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_a234008a263f7951e9a09568567cfd308}\label{classalt__string_a234008a263f7951e9a09568567cfd308}} 
+{\footnotesize template$<$typename op\+\_\+type $>$ }\\bool {\bfseries operator!=} (const op\+\_\+type \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_a1d4fa980b6ca39a498f2b8b2124be62d}\label{classalt__string_a1d4fa980b6ca39a498f2b8b2124be62d}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classalt__string}{alt\+\_\+string}} \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_a630035ebc2a4a619322a19955962500a}\label{classalt__string_a630035ebc2a4a619322a19955962500a}} 
+std\+::size\+\_\+t {\bfseries size} () const noexcept
+\item 
+\mbox{\Hypertarget{classalt__string_ac53da0b6970f4b34c361ef3a503e412a}\label{classalt__string_ac53da0b6970f4b34c361ef3a503e412a}} 
+void {\bfseries resize} (std\+::size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classalt__string_a5569bb8e2bc355e008e4d1ce56679232}\label{classalt__string_a5569bb8e2bc355e008e4d1ce56679232}} 
+void {\bfseries resize} (std\+::size\+\_\+t n, char c)
+\item 
+\mbox{\Hypertarget{classalt__string_a8181e90614f825fd94a725e547a96c33}\label{classalt__string_a8181e90614f825fd94a725e547a96c33}} 
+{\footnotesize template$<$typename op\+\_\+type $>$ }\\bool {\bfseries operator$<$} (const op\+\_\+type \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_abbbf0972cab333158d8da8c3443d9295}\label{classalt__string_abbbf0972cab333158d8da8c3443d9295}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{classalt__string}{alt\+\_\+string}} \&op) const
+\item 
+\mbox{\Hypertarget{classalt__string_a35b6594fc5c63231ecba80e35bba8a39}\label{classalt__string_a35b6594fc5c63231ecba80e35bba8a39}} 
+const char $\ast$ {\bfseries c\+\_\+str} () const
+\item 
+\mbox{\Hypertarget{classalt__string_a926eff5c06e408e40a3fdc0b51031888}\label{classalt__string_a926eff5c06e408e40a3fdc0b51031888}} 
+char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classalt__string_a7f15a12c08827f6c598462685dae895d}\label{classalt__string_a7f15a12c08827f6c598462685dae895d}} 
+const char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classalt__string_a1eb89daf193505511906abd329913a5e}\label{classalt__string_a1eb89daf193505511906abd329913a5e}} 
+char \& {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classalt__string_aa2b0e49ac194b8a1bf924767dbe30251}\label{classalt__string_aa2b0e49ac194b8a1bf924767dbe30251}} 
+const char \& {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classalt__string_a4d3e177884d7160241c5a972c27a4c9c}\label{classalt__string_a4d3e177884d7160241c5a972c27a4c9c}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classalt__string_a9076542cf89b6ebb7a24657db4fcc73f}\label{classalt__string_a9076542cf89b6ebb7a24657db4fcc73f}} 
+const value\+\_\+type $\ast$ {\bfseries data} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 47 of file unit-\/alt-\/string.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/test/src/unit-\/alt-\/string.\+cpp\end{DoxyCompactItemize}

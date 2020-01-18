@@ -1,0 +1,66 @@
+\hypertarget{classUtils_1_1ObjectManager}{}\doxysection{Utils\+::Object\+Manager Class Reference}
+\label{classUtils_1_1ObjectManager}\index{Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a1c2bbff560b52d08cf2058cc13def2d0}\label{classUtils_1_1ObjectManager_a1c2bbff560b52d08cf2058cc13def2d0}} 
+void {\bfseries create\+Player\+Ship} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, int healthpoints, double speed)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_aa533783a21d7223f77e73864d1a10f9f}\label{classUtils_1_1ObjectManager_aa533783a21d7223f77e73864d1a10f9f}} 
+void {\bfseries create\+Alien\+Ship} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, int healthpoints, double speed)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a401e5ffd32be41d83cb80d7d397a9374}\label{classUtils_1_1ObjectManager_a401e5ffd32be41d83cb80d7d397a9374}} 
+void {\bfseries create\+Bullet} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, double speed, bool friendly)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a65c28d2c647f5ddad5da876afd350d8a}\label{classUtils_1_1ObjectManager_a65c28d2c647f5ddad5da876afd350d8a}} 
+void {\bfseries setup} (\mbox{\hyperlink{classGame}{Game}} $\ast$)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}\label{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}} 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1PlayerShipController}{Entity\+::\+Player\+Ship\+Controller}} $>$ \& {\bfseries get\+Hero} () const
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}\label{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}} 
+void {\bfseries set\+Enemycount} (int enemycount)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}\label{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}} 
+int {\bfseries get\+Enemycount} () const
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}\label{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ $>$ \& {\bfseries get\+Visuals} () const
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}\label{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}} 
+void {\bfseries deleteob} (int i)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a64b9368e0a6e77f69044eac0aaedd5ca}\label{classUtils_1_1ObjectManager_a64b9368e0a6e77f69044eac0aaedd5ca}} 
+void {\bfseries add\+Object} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}\label{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$ $>$ \& {\bfseries getO} () const
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a360b895d90b961c466725ec4d2650d57}\label{classUtils_1_1ObjectManager_a360b895d90b961c466725ec4d2650d57}} 
+void {\bfseries add\+Deletion} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$)
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a6b6562c16d017ba3c38bd028696da9cf}\label{classUtils_1_1ObjectManager_a6b6562c16d017ba3c38bd028696da9cf}} 
+void {\bfseries delete\+Objects} ()
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a59054098c8accaf440db5c699a891e90}\label{classUtils_1_1ObjectManager_a59054098c8accaf440db5c699a891e90}} 
+void {\bfseries delete\+Object} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}\label{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}} 
+static \mbox{\hyperlink{classUtils_1_1ObjectManager}{Object\+Manager}} \& {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 16 of file Object\+Manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Utils/Object\+Manager.\+h\item 
+Utils/Object\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,349 @@
+\hypertarget{namespacegbench_1_1util}{}\doxysection{gbench.\+util Namespace Reference}
+\label{namespacegbench_1_1util}\index{gbench.util@{gbench.util}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_ab892754dc0be3bbe4785bf4610a8cc76}{is\+\_\+executable\+\_\+file}} (filename)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_a2b5de1b1f7c12819da516c50fc1f433b}{is\+\_\+json\+\_\+file}} (filename)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_a25ee5a7452eb3618b88659be49dc48d8}{classify\+\_\+input\+\_\+file}} (filename)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_aa332d3ac64581e88c71debd765ebd14e}{check\+\_\+input\+\_\+file}} (filename)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_adb11119409b105a464f238f67d49a33f}{find\+\_\+benchmark\+\_\+flag}} (prefix, benchmark\+\_\+flags)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_ac9fcdf6c47eaec31a8ec561ab29f6968}{remove\+\_\+benchmark\+\_\+flags}} (prefix, benchmark\+\_\+flags)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_a815611aefc9668cc33bf88eefb3c0138}{load\+\_\+benchmark\+\_\+results}} (fname)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_ad31457115437aaf422451b7f302b36dd}{run\+\_\+benchmark}} (exe\+\_\+name, benchmark\+\_\+flags)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1util_a4ebe890db77f6434598541c4460602cb}{run\+\_\+or\+\_\+load\+\_\+benchmark}} (filename, benchmark\+\_\+flags)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1util_a0bea0aaefd0d7dd4abccbce16673a471}\label{namespacegbench_1_1util_a0bea0aaefd0d7dd4abccbce16673a471}} 
+int {\bfseries I\+T\+\_\+\+Invalid} = 0
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1util_a56c9d1902f395f1d659cac30a394528e}\label{namespacegbench_1_1util_a56c9d1902f395f1d659cac30a394528e}} 
+int {\bfseries I\+T\+\_\+\+J\+S\+ON} = 1
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1util_ac66353422071729cc237a1fd5ba8e74a}\label{namespacegbench_1_1util_ac66353422071729cc237a1fd5ba8e74a}} 
+int {\bfseries I\+T\+\_\+\+Executable} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}util.py - General utilities for running, loading, and processing benchmarks
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegbench_1_1util_aa332d3ac64581e88c71debd765ebd14e}\label{namespacegbench_1_1util_aa332d3ac64581e88c71debd765ebd14e}} 
+\index{gbench.util@{gbench.util}!check\_input\_file@{check\_input\_file}}
+\index{check\_input\_file@{check\_input\_file}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{check\_input\_file()}{check\_input\_file()}}
+{\footnotesize\ttfamily def gbench.\+util.\+check\+\_\+input\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Classify the file named by 'filename' and return the classification.
+If the file is classified as 'IT_Invalid' print an error message and exit
+the program.
+\end{DoxyVerb}
+ 
+
+Definition at line 75 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75 \textcolor{keyword}{def }check\_input\_file(filename):}
+\DoxyCodeLine{76     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{77 \textcolor{stringliteral}{    Classify the file named by 'filename' and return the classification.}}
+\DoxyCodeLine{78 \textcolor{stringliteral}{    If the file is classified as 'IT\_Invalid' print an error message and exit}}
+\DoxyCodeLine{79 \textcolor{stringliteral}{    the program.}}
+\DoxyCodeLine{80 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{81     ftype, msg = classify\_input\_file(filename)}
+\DoxyCodeLine{82     \textcolor{keywordflow}{if} ftype == IT\_Invalid:}
+\DoxyCodeLine{83         print(\textcolor{stringliteral}{"Invalid input file: \%s"} \% msg)}
+\DoxyCodeLine{84         sys.exit(1)}
+\DoxyCodeLine{85     \textcolor{keywordflow}{return} ftype}
+\DoxyCodeLine{86 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_a25ee5a7452eb3618b88659be49dc48d8}\label{namespacegbench_1_1util_a25ee5a7452eb3618b88659be49dc48d8}} 
+\index{gbench.util@{gbench.util}!classify\_input\_file@{classify\_input\_file}}
+\index{classify\_input\_file@{classify\_input\_file}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{classify\_input\_file()}{classify\_input\_file()}}
+{\footnotesize\ttfamily def gbench.\+util.\+classify\+\_\+input\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple (type, msg) where 'type' specifies the classified type
+of 'filename'. If 'type' is 'IT_Invalid' then 'msg' is a human readable
+string represeting the error.
+\end{DoxyVerb}
+ 
+
+Definition at line 54 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \textcolor{keyword}{def }classify\_input\_file(filename):}
+\DoxyCodeLine{55     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{56 \textcolor{stringliteral}{    Return a tuple (type, msg) where 'type' specifies the classified type}}
+\DoxyCodeLine{57 \textcolor{stringliteral}{    of 'filename'. If 'type' is 'IT\_Invalid' then 'msg' is a human readable}}
+\DoxyCodeLine{58 \textcolor{stringliteral}{    string represeting the error.}}
+\DoxyCodeLine{59 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{60     ftype = IT\_Invalid}
+\DoxyCodeLine{61     err\_msg = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{62     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.exists(filename):}
+\DoxyCodeLine{63         err\_msg = \textcolor{stringliteral}{"'\%s' does not exist"} \% filename}
+\DoxyCodeLine{64     \textcolor{keywordflow}{elif} \textcolor{keywordflow}{not} os.path.isfile(filename):}
+\DoxyCodeLine{65         err\_msg = \textcolor{stringliteral}{"'\%s' does not name a file"} \% filename}
+\DoxyCodeLine{66     \textcolor{keywordflow}{elif} is\_executable\_file(filename):}
+\DoxyCodeLine{67         ftype = IT\_Executable}
+\DoxyCodeLine{68     \textcolor{keywordflow}{elif} is\_json\_file(filename):}
+\DoxyCodeLine{69         ftype = IT\_JSON}
+\DoxyCodeLine{70     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{71         err\_msg = \textcolor{stringliteral}{"'\%s' does not name a valid benchmark executable or JSON file"} \% filename}
+\DoxyCodeLine{72     \textcolor{keywordflow}{return} ftype, err\_msg}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_adb11119409b105a464f238f67d49a33f}\label{namespacegbench_1_1util_adb11119409b105a464f238f67d49a33f}} 
+\index{gbench.util@{gbench.util}!find\_benchmark\_flag@{find\_benchmark\_flag}}
+\index{find\_benchmark\_flag@{find\_benchmark\_flag}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{find\_benchmark\_flag()}{find\_benchmark\_flag()}}
+{\footnotesize\ttfamily def gbench.\+util.\+find\+\_\+benchmark\+\_\+flag (\begin{DoxyParamCaption}\item[{}]{prefix,  }\item[{}]{benchmark\+\_\+flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Search the specified list of flags for a flag matching `<prefix><arg>` and
+if it is found return the arg it specifies. If specified more than once the
+last value is returned. If the flag is not found None is returned.
+\end{DoxyVerb}
+ 
+
+Definition at line 87 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87 \textcolor{keyword}{def }find\_benchmark\_flag(prefix, benchmark\_flags):}
+\DoxyCodeLine{88     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{89 \textcolor{stringliteral}{    Search the specified list of flags for a flag matching `<prefix><arg>` and}}
+\DoxyCodeLine{90 \textcolor{stringliteral}{    if it is found return the arg it specifies. If specified more than once the}}
+\DoxyCodeLine{91 \textcolor{stringliteral}{    last value is returned. If the flag is not found None is returned.}}
+\DoxyCodeLine{92 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{93     \textcolor{keyword}{assert} prefix.startswith(\textcolor{stringliteral}{'-\/-\/'}) \textcolor{keywordflow}{and} prefix.endswith(\textcolor{stringliteral}{'='})}
+\DoxyCodeLine{94     result = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{95     \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} benchmark\_flags:}
+\DoxyCodeLine{96         \textcolor{keywordflow}{if} f.startswith(prefix):}
+\DoxyCodeLine{97             result = f[len(prefix):]}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} result}
+\DoxyCodeLine{99 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_ab892754dc0be3bbe4785bf4610a8cc76}\label{namespacegbench_1_1util_ab892754dc0be3bbe4785bf4610a8cc76}} 
+\index{gbench.util@{gbench.util}!is\_executable\_file@{is\_executable\_file}}
+\index{is\_executable\_file@{is\_executable\_file}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{is\_executable\_file()}{is\_executable\_file()}}
+{\footnotesize\ttfamily def gbench.\+util.\+is\+\_\+executable\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return 'True' if 'filename' names a valid file which is likely
+an executable. A file is considered an executable if it starts with the
+magic bytes for a EXE, Mach O, or ELF file.
+\end{DoxyVerb}
+ 
+
+Definition at line 15 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \textcolor{keyword}{def }is\_executable\_file(filename):}
+\DoxyCodeLine{16     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{17 \textcolor{stringliteral}{    Return 'True' if 'filename' names a valid file which is likely}}
+\DoxyCodeLine{18 \textcolor{stringliteral}{    an executable. A file is considered an executable if it starts with the}}
+\DoxyCodeLine{19 \textcolor{stringliteral}{    magic bytes for a EXE, Mach O, or ELF file.}}
+\DoxyCodeLine{20 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{21     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.isfile(filename):}
+\DoxyCodeLine{22         \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{23     \textcolor{keyword}{with} open(filename, mode=\textcolor{stringliteral}{'rb'}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{24         magic\_bytes = f.read(\_num\_magic\_bytes)}
+\DoxyCodeLine{25     \textcolor{keywordflow}{if} sys.platform == \textcolor{stringliteral}{'darwin'}:}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} magic\_bytes \textcolor{keywordflow}{in} [}
+\DoxyCodeLine{27             b\textcolor{stringliteral}{'\(\backslash\)xfe\(\backslash\)xed\(\backslash\)xfa\(\backslash\)xce'},  \textcolor{comment}{\# MH\_MAGIC}}
+\DoxyCodeLine{28             b\textcolor{stringliteral}{'\(\backslash\)xce\(\backslash\)xfa\(\backslash\)xed\(\backslash\)xfe'},  \textcolor{comment}{\# MH\_CIGAM}}
+\DoxyCodeLine{29             b\textcolor{stringliteral}{'\(\backslash\)xfe\(\backslash\)xed\(\backslash\)xfa\(\backslash\)xcf'},  \textcolor{comment}{\# MH\_MAGIC\_64}}
+\DoxyCodeLine{30             b\textcolor{stringliteral}{'\(\backslash\)xcf\(\backslash\)xfa\(\backslash\)xed\(\backslash\)xfe'},  \textcolor{comment}{\# MH\_CIGAM\_64}}
+\DoxyCodeLine{31             b\textcolor{stringliteral}{'\(\backslash\)xca\(\backslash\)xfe\(\backslash\)xba\(\backslash\)xbe'},  \textcolor{comment}{\# FAT\_MAGIC}}
+\DoxyCodeLine{32             b\textcolor{stringliteral}{'\(\backslash\)xbe\(\backslash\)xba\(\backslash\)xfe\(\backslash\)xca'}   \textcolor{comment}{\# FAT\_CIGAM}}
+\DoxyCodeLine{33         ]}
+\DoxyCodeLine{34     \textcolor{keywordflow}{elif} sys.platform.startswith(\textcolor{stringliteral}{'win'}):}
+\DoxyCodeLine{35         \textcolor{keywordflow}{return} magic\_bytes == b\textcolor{stringliteral}{'MZ'}}
+\DoxyCodeLine{36     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} magic\_bytes == b\textcolor{stringliteral}{'\(\backslash\)x7FELF'}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_a2b5de1b1f7c12819da516c50fc1f433b}\label{namespacegbench_1_1util_a2b5de1b1f7c12819da516c50fc1f433b}} 
+\index{gbench.util@{gbench.util}!is\_json\_file@{is\_json\_file}}
+\index{is\_json\_file@{is\_json\_file}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{is\_json\_file()}{is\_json\_file()}}
+{\footnotesize\ttfamily def gbench.\+util.\+is\+\_\+json\+\_\+file (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns 'True' if 'filename' names a valid JSON output file.
+'False' otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line 40 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \textcolor{keyword}{def }is\_json\_file(filename):}
+\DoxyCodeLine{41     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{42 \textcolor{stringliteral}{    Returns 'True' if 'filename' names a valid JSON output file.}}
+\DoxyCodeLine{43 \textcolor{stringliteral}{    'False' otherwise.}}
+\DoxyCodeLine{44 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{46         \textcolor{keyword}{with} open(filename, \textcolor{stringliteral}{'r'}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{47             json.load(f)}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{49     \textcolor{keywordflow}{except}:}
+\DoxyCodeLine{50         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{51     \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_a815611aefc9668cc33bf88eefb3c0138}\label{namespacegbench_1_1util_a815611aefc9668cc33bf88eefb3c0138}} 
+\index{gbench.util@{gbench.util}!load\_benchmark\_results@{load\_benchmark\_results}}
+\index{load\_benchmark\_results@{load\_benchmark\_results}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{load\_benchmark\_results()}{load\_benchmark\_results()}}
+{\footnotesize\ttfamily def gbench.\+util.\+load\+\_\+benchmark\+\_\+results (\begin{DoxyParamCaption}\item[{}]{fname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read benchmark output from a file and return the JSON object.
+REQUIRES: 'fname' names a file containing JSON benchmark output.
+\end{DoxyVerb}
+ 
+
+Definition at line 108 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108 \textcolor{keyword}{def }load\_benchmark\_results(fname):}
+\DoxyCodeLine{109     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{110 \textcolor{stringliteral}{    Read benchmark output from a file and return the JSON object.}}
+\DoxyCodeLine{111 \textcolor{stringliteral}{    REQUIRES: 'fname' names a file containing JSON benchmark output.}}
+\DoxyCodeLine{112 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{113     \textcolor{keyword}{with} open(fname, \textcolor{stringliteral}{'r'}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{114         \textcolor{keywordflow}{return} json.load(f)}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_ac9fcdf6c47eaec31a8ec561ab29f6968}\label{namespacegbench_1_1util_ac9fcdf6c47eaec31a8ec561ab29f6968}} 
+\index{gbench.util@{gbench.util}!remove\_benchmark\_flags@{remove\_benchmark\_flags}}
+\index{remove\_benchmark\_flags@{remove\_benchmark\_flags}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{remove\_benchmark\_flags()}{remove\_benchmark\_flags()}}
+{\footnotesize\ttfamily def gbench.\+util.\+remove\+\_\+benchmark\+\_\+flags (\begin{DoxyParamCaption}\item[{}]{prefix,  }\item[{}]{benchmark\+\_\+flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new list containing the specified benchmark_flags except those
+with the specified prefix.
+\end{DoxyVerb}
+ 
+
+Definition at line 100 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100 \textcolor{keyword}{def }remove\_benchmark\_flags(prefix, benchmark\_flags):}
+\DoxyCodeLine{101     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{102 \textcolor{stringliteral}{    Return a new list containing the specified benchmark\_flags except those}}
+\DoxyCodeLine{103 \textcolor{stringliteral}{    with the specified prefix.}}
+\DoxyCodeLine{104 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{105     \textcolor{keyword}{assert} prefix.startswith(\textcolor{stringliteral}{'-\/-\/'}) \textcolor{keywordflow}{and} prefix.endswith(\textcolor{stringliteral}{'='})}
+\DoxyCodeLine{106     \textcolor{keywordflow}{return} [f \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} benchmark\_flags \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} f.startswith(prefix)]}
+\DoxyCodeLine{107 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_ad31457115437aaf422451b7f302b36dd}\label{namespacegbench_1_1util_ad31457115437aaf422451b7f302b36dd}} 
+\index{gbench.util@{gbench.util}!run\_benchmark@{run\_benchmark}}
+\index{run\_benchmark@{run\_benchmark}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{run\_benchmark()}{run\_benchmark()}}
+{\footnotesize\ttfamily def gbench.\+util.\+run\+\_\+benchmark (\begin{DoxyParamCaption}\item[{}]{exe\+\_\+name,  }\item[{}]{benchmark\+\_\+flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a benchmark specified by 'exe_name' with the specified
+'benchmark_flags'. The benchmark is run directly as a subprocess to preserve
+real time console output.
+RETURNS: A JSON object representing the benchmark output
+\end{DoxyVerb}
+ 
+
+Definition at line 117 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117 \textcolor{keyword}{def }run\_benchmark(exe\_name, benchmark\_flags):}
+\DoxyCodeLine{118     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{119 \textcolor{stringliteral}{    Run a benchmark specified by 'exe\_name' with the specified}}
+\DoxyCodeLine{120 \textcolor{stringliteral}{    'benchmark\_flags'. The benchmark is run directly as a subprocess to preserve}}
+\DoxyCodeLine{121 \textcolor{stringliteral}{    real time console output.}}
+\DoxyCodeLine{122 \textcolor{stringliteral}{    RETURNS: A JSON object representing the benchmark output}}
+\DoxyCodeLine{123 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{124     output\_name = find\_benchmark\_flag(\textcolor{stringliteral}{'-\/-\/benchmark\_out='},}
+\DoxyCodeLine{125                                       benchmark\_flags)}
+\DoxyCodeLine{126     is\_temp\_output = \textcolor{keyword}{False}}
+\DoxyCodeLine{127     \textcolor{keywordflow}{if} output\_name \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{128         is\_temp\_output = \textcolor{keyword}{True}}
+\DoxyCodeLine{129         thandle, output\_name = tempfile.mkstemp()}
+\DoxyCodeLine{130         os.close(thandle)}
+\DoxyCodeLine{131         benchmark\_flags = list(benchmark\_flags) + \(\backslash\)}
+\DoxyCodeLine{132                           [\textcolor{stringliteral}{'-\/-\/benchmark\_out=\%s'} \% output\_name]}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134     cmd = [exe\_name] + benchmark\_flags}
+\DoxyCodeLine{135     print(\textcolor{stringliteral}{"RUNNING: \%s"} \% \textcolor{stringliteral}{' '}.join(cmd))}
+\DoxyCodeLine{136     exitCode = subprocess.call(cmd)}
+\DoxyCodeLine{137     \textcolor{keywordflow}{if} exitCode != 0:}
+\DoxyCodeLine{138         print(\textcolor{stringliteral}{'TEST FAILED...'})}
+\DoxyCodeLine{139         sys.exit(exitCode)}
+\DoxyCodeLine{140     json\_res = load\_benchmark\_results(output\_name)}
+\DoxyCodeLine{141     \textcolor{keywordflow}{if} is\_temp\_output:}
+\DoxyCodeLine{142         os.unlink(output\_name)}
+\DoxyCodeLine{143     \textcolor{keywordflow}{return} json\_res}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegbench_1_1util_a4ebe890db77f6434598541c4460602cb}\label{namespacegbench_1_1util_a4ebe890db77f6434598541c4460602cb}} 
+\index{gbench.util@{gbench.util}!run\_or\_load\_benchmark@{run\_or\_load\_benchmark}}
+\index{run\_or\_load\_benchmark@{run\_or\_load\_benchmark}!gbench.util@{gbench.util}}
+\doxysubsubsection{\texorpdfstring{run\_or\_load\_benchmark()}{run\_or\_load\_benchmark()}}
+{\footnotesize\ttfamily def gbench.\+util.\+run\+\_\+or\+\_\+load\+\_\+benchmark (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{benchmark\+\_\+flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the results for a specified benchmark. If 'filename' specifies
+an executable benchmark then the results are generated by running the
+benchmark. Otherwise 'filename' must name a valid JSON output file,
+which is loaded and the result returned.
+\end{DoxyVerb}
+ 
+
+Definition at line 146 of file util.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{146 \textcolor{keyword}{def }run\_or\_load\_benchmark(filename, benchmark\_flags):}
+\DoxyCodeLine{147     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{148 \textcolor{stringliteral}{    Get the results for a specified benchmark. If 'filename' specifies}}
+\DoxyCodeLine{149 \textcolor{stringliteral}{    an executable benchmark then the results are generated by running the}}
+\DoxyCodeLine{150 \textcolor{stringliteral}{    benchmark. Otherwise 'filename' must name a valid JSON output file,}}
+\DoxyCodeLine{151 \textcolor{stringliteral}{    which is loaded and the result returned.}}
+\DoxyCodeLine{152 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{153     ftype = check\_input\_file(filename)}
+\DoxyCodeLine{154     \textcolor{keywordflow}{if} ftype == IT\_JSON:}
+\DoxyCodeLine{155         \textcolor{keywordflow}{return} load\_benchmark\_results(filename)}
+\DoxyCodeLine{156     \textcolor{keywordflow}{elif} ftype == IT\_Executable:}
+\DoxyCodeLine{157         \textcolor{keywordflow}{return} run\_benchmark(filename, benchmark\_flags)}
+\DoxyCodeLine{158     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{159         \textcolor{keyword}{assert} \textcolor{keyword}{False} \textcolor{comment}{\# This branch is unreachable}}
+
+\end{DoxyCode}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Entity/Alive/AliveModel.cpp Source File</title>
+<title>My Project: Entity/Collidable/Alive/AliveModel.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_efe987b61e5f2f35856b64481d0b905f.html">Alive</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_a88f5e9adf38e61dcd4aaad0edb0d8f0.html">Collidable</a></li><li class="navelem"><a class="el" href="dir_6353f3f9e6d8456c5cc202118422da7c.html">Alive</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,21 +75,23 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Created by wannes on 20.12.19.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveLeft()</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x - 0.1, position.y));</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::moveRight() { setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x + 0.1, position.y)); }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Entity::AliveModel::AliveModel(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">int</span> healthpoints)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    : EntityModel(position, size), healthpoints(healthpoints)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        fireCooldown=0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getHealthpoints()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> healthpoints; }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setHealthpoints(<span class="keywordtype">int</span> healthpoints) { AliveModel::healthpoints = healthpoints; }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getFireCooldown()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fireCooldown; }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setFireCooldown(<span class="keywordtype">int</span> fireCooldown) { AliveModel::fireCooldown = fireCooldown; }</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">bool</span> Entity::AliveModel::moveLeft() { <span class="keywordflow">return</span> setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x - speed, position.y)); }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">bool</span> Entity::AliveModel::moveRight() { <span class="keywordflow">return</span> setPosition(<a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>(position.x + speed, position.y)); }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getHealthpoints()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> healthpoints; }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setHealthpoints(<span class="keywordtype">int</span> healthpoints)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        AliveModel::healthpoints = healthpoints;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        notifyObservers();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> Entity::AliveModel::getFireCooldown()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> fireCooldown; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> Entity::AliveModel::setFireCooldown(<span class="keywordtype">int</span> fireCooldown) { AliveModel::fireCooldown = fireCooldown; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;Entity::AliveModel::AliveModel(<span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; position, <span class="keyword">const</span> <a class="code" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&amp; size, <span class="keywordtype">int</span> healthpoints,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                               <span class="keywordtype">double</span> speed)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : EntityModel(position, size), healthpoints(healthpoints), speed(speed)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructUtils_1_1Vector2D_html"><div class="ttname"><a href="structUtils_1_1Vector2D.html">Utils::Vector2D</a></div><div class="ttdef"><b>Definition:</b> <a href="Vector2D_8h_source.html#l00010">Vector2D.h:10</a></div></div>
 <!-- start footer part -->

@@ -12,13 +12,10 @@ class BulletModel :public EntityModel
 private:
         double speed;
         bool friendly;
-        std::shared_ptr<ControllerAbstract> owner;
 
 public:
         bool travel();
-        BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed, bool friendly,std::shared_ptr<ControllerAbstract> owner);
-        const std::shared_ptr<ControllerAbstract>& getOwner() const;
-        void setOwner(const std::shared_ptr<ControllerAbstract>& owner);
+        BulletModel(const Utils::Vector2D& position, const Utils::Vector2D& size, double speed, bool friendly);
         bool isFriendly() const;
 };
 }

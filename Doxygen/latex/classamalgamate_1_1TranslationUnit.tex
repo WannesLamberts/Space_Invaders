@@ -1,0 +1,80 @@
+\hypertarget{classamalgamate_1_1TranslationUnit}{}\doxysection{amalgamate.\+Translation\+Unit Class Reference}
+\label{classamalgamate_1_1TranslationUnit}\index{amalgamate.TranslationUnit@{amalgamate.TranslationUnit}}
+Inheritance diagram for amalgamate.\+Translation\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classamalgamate_1_1TranslationUnit}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_acdd5d5c8db29b75731845ad2a8e5f0db}\label{classamalgamate_1_1TranslationUnit_acdd5d5c8db29b75731845ad2a8e5f0db}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, file\+\_\+path, amalgamation, is\+\_\+root)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_af7fea972f14bc8f0ed106d8ea7dda490}\label{classamalgamate_1_1TranslationUnit_af7fea972f14bc8f0ed106d8ea7dda490}} 
+{\bfseries content}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a08009905863cf3c94b32ce2865c172fa}\label{classamalgamate_1_1TranslationUnit_a08009905863cf3c94b32ce2865c172fa}} 
+{\bfseries file\+\_\+path}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_aff5d10ca68726ffd9b541b53f5236739}\label{classamalgamate_1_1TranslationUnit_aff5d10ca68726ffd9b541b53f5236739}} 
+{\bfseries file\+\_\+dir}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a8a015adbd48f3fc8e8033f0567b4a29a}\label{classamalgamate_1_1TranslationUnit_a8a015adbd48f3fc8e8033f0567b4a29a}} 
+{\bfseries amalgamation}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a9792dd7a8e0221ddfc1584c691e96843}\label{classamalgamate_1_1TranslationUnit_a9792dd7a8e0221ddfc1584c691e96843}} 
+{\bfseries is\+\_\+root}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a8668de1312a1ad0f5ad4d9cde162c88a}\label{classamalgamate_1_1TranslationUnit_a8668de1312a1ad0f5ad4d9cde162c88a}} 
+{\bfseries cpp\+\_\+comment\+\_\+pattern} = re.\+compile(r\char`\"{}//.$\ast$?\textbackslash{}n\char`\"{})
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a5d2a3fac8c1bdb531030e6211d278573}\label{classamalgamate_1_1TranslationUnit_a5d2a3fac8c1bdb531030e6211d278573}} 
+{\bfseries c\+\_\+comment\+\_\+pattern} = re.\+compile(r\char`\"{}/\textbackslash{}$\ast$.$\ast$?\textbackslash{}$\ast$/\char`\"{}, re.\+S)
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a915ad705bf157de47f8d77584bb55d59}\label{classamalgamate_1_1TranslationUnit_a915ad705bf157de47f8d77584bb55d59}} 
+{\bfseries string\+\_\+pattern} = re.\+compile(\char`\"{}\mbox{[}$^\wedge$\textquotesingle{}\mbox{]}\char`\"{} r\textquotesingle{}\char`\"{}.$\ast$?(?$<$=\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]})\char`\"{}\textquotesingle{}, re.\+S)
+\item 
+{\bfseries include\+\_\+pattern}
+\item 
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a022cc82140094abbb5bee6aeec82fd2b}\label{classamalgamate_1_1TranslationUnit_a022cc82140094abbb5bee6aeec82fd2b}} 
+{\bfseries pragma\+\_\+once\+\_\+pattern} = re.\+compile(r\textquotesingle{}\#\textbackslash{}s$\ast$pragma\textbackslash{}s+once\textquotesingle{}, re.\+S)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 115 of file amalgamate.\+py.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classamalgamate_1_1TranslationUnit_a97822f68525e4bf2f89edf42bc3c994b}\label{classamalgamate_1_1TranslationUnit_a97822f68525e4bf2f89edf42bc3c994b}} 
+\index{amalgamate.TranslationUnit@{amalgamate.TranslationUnit}!include\_pattern@{include\_pattern}}
+\index{include\_pattern@{include\_pattern}!amalgamate.TranslationUnit@{amalgamate.TranslationUnit}}
+\doxysubsubsection{\texorpdfstring{include\_pattern}{include\_pattern}}
+{\footnotesize\ttfamily amalgamate.\+Translation\+Unit.\+include\+\_\+pattern\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  re.compile(}
+\DoxyCodeLine{        \textcolor{stringliteral}{r'\#\(\backslash\)s*include\(\backslash\)s+(<|")(?P<path>.*?)("|>)'}, re.S)}
+
+\end{DoxyCode}
+
+
+Definition at line 128 of file amalgamate.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/amalgamate/amalgamate.\+py\end{DoxyCompactItemize}

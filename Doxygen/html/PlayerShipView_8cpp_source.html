@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Entity/Alive/PlayerShip/PlayerShipView.cpp Source File</title>
+<title>My Project: Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_efe987b61e5f2f35856b64481d0b905f.html">Alive</a></li><li class="navelem"><a class="el" href="dir_002350d78e226c822e74214c5ae44f40.html">PlayerShip</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a625c670f828dfaff80322b07e1365a6.html">Entity</a></li><li class="navelem"><a class="el" href="dir_a88f5e9adf38e61dcd4aaad0edb0d8f0.html">Collidable</a></li><li class="navelem"><a class="el" href="dir_6353f3f9e6d8456c5cc202118422da7c.html">Alive</a></li><li class="navelem"><a class="el" href="dir_d1c1cf55ab257943488ab06b430606e1.html">PlayerShip</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,21 +74,22 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;PlayerShipView.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../../Utils/Transformation.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../../../Utils/Transformation.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622">Entity::PlayerShipView::generateShape</a>()</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classEntity_1_1EntityView.html#ab3cc599da3c954d469c2092611f369ab">texture</a>.loadFromFile(<span class="stringliteral">&quot;../Sprites/player.png&quot;</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classEntity_1_1EntityView.html#aea3dd9f085ae1f822dc943b9eeea0928">shape</a>.setTexture(<a class="code" href="classEntity_1_1EntityView.html#ab3cc599da3c954d469c2092611f369ab">texture</a>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;Entity::PlayerShipView::PlayerShipView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt; &amp;w) : <a class="code" href="classEntity_1_1EntityView.html">EntityView</a>(w) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622">generateShape</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classEntity_1_1EntityView.html#a8434e36a86fa4c29fb7784a1c4be57ce">shape</a>=std::make_shared&lt;sf::Sprite&gt;();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classEntity_1_1PlayerShipView.html#ad947f6498446c86f9827877059f8871a">texture</a>.loadFromFile(<span class="stringliteral">&quot;../Sprites/player.png&quot;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        std::dynamic_pointer_cast&lt;sf::Sprite&gt;(<a class="code" href="classEntity_1_1EntityView.html#a8434e36a86fa4c29fb7784a1c4be57ce">shape</a>)-&gt;setTexture(<a class="code" href="classEntity_1_1PlayerShipView.html#ad947f6498446c86f9827877059f8871a">texture</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;Entity::PlayerShipView::PlayerShipView(<span class="keyword">const</span> std::__shared_ptr&lt;sf::RenderWindow&gt; &amp;w,std::weak_ptr&lt;ModelAbstract&gt; model) : <a class="code" href="classEntity_1_1EntityView.html">EntityView</a>(w,model) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622">generateShape</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassEntity_1_1PlayerShipView_html_ad947f6498446c86f9827877059f8871a"><div class="ttname"><a href="classEntity_1_1PlayerShipView.html#ad947f6498446c86f9827877059f8871a">Entity::PlayerShipView::texture</a></div><div class="ttdeci">sf::Texture texture</div><div class="ttdoc">The texture that will be drawn on te sf::sprite shape.</div><div class="ttdef"><b>Definition:</b> <a href="PlayerShipView_8h_source.html#l00027">PlayerShipView.h:27</a></div></div>
 <div class="ttc" id="aclassEntity_1_1PlayerShipView_html_a1a3e9f8b78fc6fbe450b72dc5e39e622"><div class="ttname"><a href="classEntity_1_1PlayerShipView.html#a1a3e9f8b78fc6fbe450b72dc5e39e622">Entity::PlayerShipView::generateShape</a></div><div class="ttdeci">void generateShape()</div><div class="ttdoc">basic contructor for playership sets the shape to the standard square</div><div class="ttdef"><b>Definition:</b> <a href="PlayerShipView_8cpp_source.html#l00008">PlayerShipView.cpp:8</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EntityView_html_ab3cc599da3c954d469c2092611f369ab"><div class="ttname"><a href="classEntity_1_1EntityView.html#ab3cc599da3c954d469c2092611f369ab">Entity::EntityView::texture</a></div><div class="ttdeci">sf::Texture texture</div><div class="ttdoc">The texture that will be drawn on te sf::sprite shape.</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8h_source.html#l00024">EntityView.h:24</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EntityView_html_aea3dd9f085ae1f822dc943b9eeea0928"><div class="ttname"><a href="classEntity_1_1EntityView.html#aea3dd9f085ae1f822dc943b9eeea0928">Entity::EntityView::shape</a></div><div class="ttdeci">sf::Sprite shape</div><div class="ttdoc">the sf::Drawable that will be drawn on the window of the game</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8h_source.html#l00020">EntityView.h:20</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityView_html_a8434e36a86fa4c29fb7784a1c4be57ce"><div class="ttname"><a href="classEntity_1_1EntityView.html#a8434e36a86fa4c29fb7784a1c4be57ce">Entity::EntityView::shape</a></div><div class="ttdeci">std::shared_ptr&lt; sf::Drawable &gt; shape</div><div class="ttdoc">the sf::Drawable that will be drawn on the window of the game</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8h_source.html#l00020">EntityView.h:20</a></div></div>
 <div class="ttc" id="aclassEntity_1_1EntityView_html"><div class="ttname"><a href="classEntity_1_1EntityView.html">Entity::EntityView</a></div><div class="ttdoc">View class for Entity this class handles the visual aspect of the game.</div><div class="ttdef"><b>Definition:</b> <a href="EntityView_8h_source.html#l00015">EntityView.h:15</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -79,10 +79,12 @@ Inheritance diagram for Entity::EntityController:</div>
   <img src="classEntity_1_1EntityController.png" usemap="#Entity::EntityController_map" alt=""/>
   <map id="Entity::EntityController_map" name="Entity::EntityController_map">
 <area href="classControllerAbstract.html" alt="ControllerAbstract" shape="rect" coords="177,0,344,24"/>
-<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="88,112,255,136"/>
-<area href="classEntity_1_1BulletController.html" alt="Entity::BulletController" shape="rect" coords="265,112,432,136"/>
-<area href="classAlienShipController.html" alt="AlienShipController" shape="rect" coords="0,168,167,192"/>
-<area href="classEntity_1_1PlayerShipController.html" alt="Entity::PlayerShipController" shape="rect" coords="177,168,344,192"/>
+<area href="classEntity_1_1CollidableController.html" alt="Entity::CollidableController" shape="rect" coords="177,112,344,136"/>
+<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="88,168,255,192"/>
+<area href="classEntity_1_1BulletController.html" alt="Entity::BulletController" shape="rect" coords="265,168,432,192"/>
+<area href="classEntity_1_1EnemyController.html" alt="Entity::EnemyController" shape="rect" coords="0,224,167,248"/>
+<area href="classEntity_1_1PlayerShipController.html" alt="Entity::PlayerShipController" shape="rect" coords="177,224,344,248"/>
+<area href="classEntity_1_1AlienShipController.html" alt="Entity::AlienShipController" shape="rect" coords="0,280,167,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -98,6 +100,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> ()=0
 <tr class="memitem:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a9ff7d37a76409a65aed7870458b13e5c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ControllerAbstract</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
 <tr class="separator:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ac011c92c97ae6236cd24dd03020bdf85"></a>
+const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getM</b> () const</td></tr>
+<tr class="separator:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a120c5e7197bbf9a53d0365658770be43"></a>
+const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getV</b> () const</td></tr>
+<tr class="separator:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -111,7 +119,7 @@ std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="EntityController_8h_source.html#l00013">13</a> of file <a class="el" href="EntityController_8h_source.html">EntityController.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EntityController_8h_source.html#l00014">14</a> of file <a class="el" href="EntityController_8h_source.html">EntityController.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>Entity/<a class="el" href="EntityController_8h_source.html">EntityController.h</a></li>
 <li>Entity/<a class="el" href="EntityController_8cpp_source.html">EntityController.cpp</a></li>

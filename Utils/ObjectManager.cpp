@@ -5,6 +5,7 @@
 #include "ObjectManager.h"
 void Utils::ObjectManager::createPlayerShip(Utils::Vector2D p, Utils::Vector2D s, int healthpoints,double speed)
 {
+
         std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::PlayerShipModel>(p, s, healthpoints,speed);
         std::shared_ptr<ViewAbstract> l=std::make_shared<Entity::LifeView>(g->getW(),m);
         std::shared_ptr<ViewAbstract> player=std::make_shared<Entity::PlayerScoreView>(g->getW(),m);
@@ -17,12 +18,14 @@ void Utils::ObjectManager::createPlayerShip(Utils::Vector2D p, Utils::Vector2D s
         std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::PlayerShipController>(m, v);
         std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
         addObject(obj);
+        hero=std::dynamic_pointer_cast<Entity::PlayerShipController>(c);
 }
 void Utils::ObjectManager::setup(Game* game) {
         g=game;
+        enemycount=0;
 }
-void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, double speed, bool friendly,std::shared_ptr<ControllerAbstract> owner) {
-        std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::BulletModel>(p, s, speed,friendly,owner);
+void Utils::ObjectManager::createBullet(Utils::Vector2D p, Utils::Vector2D s, double speed, bool friendly) {
+        std::shared_ptr<ModelAbstract> m = std::make_shared<Entity::BulletModel>(p, s, speed,friendly);
         std::shared_ptr<ViewAbstract> v = std::make_shared<Entity::BulletView>(g->getW(),m);
         m->registerObserver(v);
         std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::BulletController>(m, v);
@@ -37,6 +40,7 @@ void Utils::ObjectManager::createAlienShip(Utils::Vector2D p, Utils::Vector2D s,
     std::shared_ptr<ControllerAbstract> c = std::make_shared<Entity::AlienShipController>(m, v);
     std::shared_ptr<Utils::Object> obj = std::make_shared<Utils::Object>(v, m, c);
     addObject(obj);
+    enemycount++;
 }
 void Utils::ObjectManager::deleteObject(std::shared_ptr<ControllerAbstract> c) {
         for (int i = 0; i < o.size(); ++i) {
@@ -63,3 +67,6 @@ void Utils::ObjectManager::deleteObjects() {
         objectsToDelete.clear();
 }
 const std::vector<std::shared_ptr<ViewAbstract>>& Utils::ObjectManager::getVisuals() const { return visuals; }
+int Utils::ObjectManager::getEnemycount() const { return enemycount; }
+void Utils::ObjectManager::setEnemycount(int enemycount) { ObjectManager::enemycount = enemycount; }
+const std::shared_ptr<Entity::PlayerShipController>& Utils::ObjectManager::getHero() const { return hero; }

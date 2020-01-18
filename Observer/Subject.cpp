@@ -15,4 +15,6 @@ void Subject::removeObserver(std::shared_ptr<Observer> o) {
         }
     }
 }
-
+void Subject::removeallObservers() {
+        observers.clear();
+}

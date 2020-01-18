@@ -1,0 +1,191 @@
+
+
+Several formats exist that encode J\+S\+ON values in a binary format to reduce the size of the encoded value as well as the required effort to parse encoded value. The library implements three formats, namely
+
+
+\begin{DoxyItemize}
+\item \href{https://tools.ietf.org/html/rfc7049}{\texttt{ C\+B\+OR}} (Concise Binary Object Representation)
+\item \href{https://msgpack.org}{\texttt{ Message\+Pack}}
+\item \href{http://ubjson.org}{\texttt{ U\+B\+J\+S\+ON}} (Universal Binary J\+S\+ON)
+\end{DoxyItemize}\hypertarget{md_json-develop_doc_binary_formats_autotoc_md90}{}\doxysection{Interface}\label{md_json-develop_doc_binary_formats_autotoc_md90}
+\hypertarget{md_json-develop_doc_binary_formats_autotoc_md91}{}\doxysubsection{J\+S\+O\+N to binary format}\label{md_json-develop_doc_binary_formats_autotoc_md91}
+For each format, the {\ttfamily to\+\_\+$\ast$} functions (i.\+e., {\ttfamily to\+\_\+cbor}, {\ttfamily to\+\_\+msgpack}, and {\ttfamily to\+\_\+ubjson}) convert a J\+S\+ON value into the respective binary format. Taking C\+B\+OR as example, the concrete prototypes are\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} std::vector<uint8\_t> to\_cbor(\textcolor{keyword}{const} basic\_json\& j);                    \textcolor{comment}{// 1}}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keywordtype}{void} to\_cbor(\textcolor{keyword}{const} basic\_json\& j, detail::output\_adapter<uint8\_t> o); \textcolor{comment}{// 2}}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keywordtype}{void} to\_cbor(\textcolor{keyword}{const} basic\_json\& j, detail::output\_adapter<char> o);    \textcolor{comment}{// 3}}
+\end{DoxyCode}
+
+
+The first function creates a byte vector from the given J\+S\+ON value. The second and third function writes to an output adapter of {\ttfamily uint8\+\_\+t} and {\ttfamily char}, respectively. Output adapters are implemented for strings, output streams, and vectors.
+
+Given a J\+S\+ON value {\ttfamily j}, the following calls are possible\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::vector<uint8\_t> v;}
+\DoxyCodeLine{v = \mbox{\hyperlink{classnlohmann_1_1basic__json_a2566783e190dec524bf3445b322873b8}{json::to\_cbor}}(j);   \textcolor{comment}{// 1}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json_a2566783e190dec524bf3445b322873b8}{json::to\_cbor}}(j, v);    \textcolor{comment}{// 2}}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::string s;}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json_a2566783e190dec524bf3445b322873b8}{json::to\_cbor}}(j, s);    \textcolor{comment}{// 3}}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::ostringstream oss;}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json_a2566783e190dec524bf3445b322873b8}{json::to\_cbor}}(j, oss);  \textcolor{comment}{// 3}}
+\end{DoxyCode}
+\hypertarget{md_json-develop_doc_binary_formats_autotoc_md92}{}\doxysubsection{Binary format to J\+S\+ON}\label{md_json-develop_doc_binary_formats_autotoc_md92}
+Likewise, the {\ttfamily from\+\_\+$\ast$} functions (i.\+e, {\ttfamily from\+\_\+cbor}, {\ttfamily from\+\_\+msgpack}, and {\ttfamily from\+\_\+ubjson}) convert a binary encoded value into a J\+S\+ON value. Taking C\+B\+OR as example, the concrete prototypes are\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} basic\_json from\_cbor(detail::input\_adapter i, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} strict = \textcolor{keyword}{true}); \textcolor{comment}{// 1}}
+\DoxyCodeLine{\textcolor{keyword}{static} basic\_json from\_cbor(A1 \&\& a1, A2 \&\& a2, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} strict = \textcolor{keyword}{true});      \textcolor{comment}{// 2}}
+\end{DoxyCode}
+
+
+Both functions read from an input adapter\+: the first function takes it directly form argument {\ttfamily i}, whereas the second function creates it from the provided arguments {\ttfamily a1} and {\ttfamily a2}. If the optional parameter {\ttfamily strict} is true, the input must be read completely (or a parse error exception is thrown). If it is false, parsing succeeds even if the input is not completely read.
+
+Input adapters are implemented for input streams, character buffers, string literals, and iterator ranges.
+
+Given several inputs (which we assume to be filled with a C\+B\+OR value), the following calls are possible\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::string s;}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j1 = \mbox{\hyperlink{classnlohmann_1_1basic__json_a1d568ba1bd6978d80db42aa76626e2cf}{json::from\_cbor}}(s);                         \textcolor{comment}{// 1}}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::ifstream is(\textcolor{stringliteral}{"somefile.cbor"}, std::ios::binary);}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j2 = \mbox{\hyperlink{classnlohmann_1_1basic__json_a1d568ba1bd6978d80db42aa76626e2cf}{json::from\_cbor}}(is);                        \textcolor{comment}{// 1}}
+\DoxyCodeLine{}
+\DoxyCodeLine{std::vector<uint8\_t> v;}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j3 = \mbox{\hyperlink{classnlohmann_1_1basic__json_a1d568ba1bd6978d80db42aa76626e2cf}{json::from\_cbor}}(v);                         \textcolor{comment}{// 1}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{char}* buff;}
+\DoxyCodeLine{std::size\_t buff\_size;}
+\DoxyCodeLine{\mbox{\hyperlink{classnlohmann_1_1basic__json}{json}} j4 = \mbox{\hyperlink{classnlohmann_1_1basic__json_a1d568ba1bd6978d80db42aa76626e2cf}{json::from\_cbor}}(buff, buff\_size);           \textcolor{comment}{// 2}}
+\end{DoxyCode}
+\hypertarget{md_json-develop_doc_binary_formats_autotoc_md93}{}\doxysection{Details}\label{md_json-develop_doc_binary_formats_autotoc_md93}
+\hypertarget{md_json-develop_doc_binary_formats_autotoc_md94}{}\doxysubsection{C\+B\+OR}\label{md_json-develop_doc_binary_formats_autotoc_md94}
+The mapping from C\+B\+OR to J\+S\+ON is {\bfseries{incomplete}} in the sense that not all C\+B\+OR types can be converted to a J\+S\+ON value. The following C\+B\+OR types are not supported and will yield parse errors (parse\+\_\+error.\+112)\+:
+
+
+\begin{DoxyItemize}
+\item byte strings (0x40..0x5F)
+\item date/time (0x\+C0..0x\+C1)
+\item bignum (0x\+C2..0x\+C3)
+\item decimal fraction (0x\+C4)
+\item bigfloat (0x\+C5)
+\item tagged items (0x\+C6..0x\+D4, 0x\+D8..0x\+DB)
+\item expected conversions (0x\+D5..0x\+D7)
+\item simple values (0x\+E0..0x\+F3, 0x\+F8)
+\item undefined (0x\+F7)
+\end{DoxyItemize}
+
+C\+B\+OR further allows map keys of any type, whereas J\+S\+ON only allows strings as keys in object values. Therefore, C\+B\+OR maps with keys other than U\+T\+F-\/8 strings are rejected (parse\+\_\+error.\+113).
+
+The mapping from J\+S\+ON to C\+B\+OR is {\bfseries{complete}} in the sense that any J\+S\+ON value type can be converted to a C\+B\+OR value.
+
+If NaN or Infinity are stored inside a J\+S\+ON number, they are serialized properly. This behavior differs from the dump() function which serializes NaN or Infinity to null.
+
+The following C\+B\+OR types are not used in the conversion\+:
+
+
+\begin{DoxyItemize}
+\item byte strings (0x40..0x5F)
+\item U\+T\+F-\/8 strings terminated by \char`\"{}break\char`\"{} (0x7F)
+\item arrays terminated by \char`\"{}break\char`\"{} (0x9F)
+\item maps terminated by \char`\"{}break\char`\"{} (0x\+BF)
+\item date/time (0x\+C0..0x\+C1)
+\item bignum (0x\+C2..0x\+C3)
+\item decimal fraction (0x\+C4)
+\item bigfloat (0x\+C5)
+\item tagged items (0x\+C6..0x\+D4, 0x\+D8..0x\+DB)
+\item expected conversions (0x\+D5..0x\+D7)
+\item simple values (0x\+E0..0x\+F3, 0x\+F8)
+\item undefined (0x\+F7)
+\item half and single-\/precision floats (0x\+F9-\/0x\+FA)
+\item break (0x\+FF)
+\end{DoxyItemize}\hypertarget{md_json-develop_doc_binary_formats_autotoc_md95}{}\doxysubsection{Message\+Pack}\label{md_json-develop_doc_binary_formats_autotoc_md95}
+The mapping from Message\+Pack to J\+S\+ON is {\bfseries{incomplete}} in the sense that not all Message\+Pack types can be converted to a J\+S\+ON value. The following Message\+Pack types are not supported and will yield parse errors\+:
+
+
+\begin{DoxyItemize}
+\item bin 8 -\/ bin 32 (0x\+C4..0x\+C6)
+\item ext 8 -\/ ext 32 (0x\+C7..0x\+C9)
+\item fixext 1 -\/ fixext 16 (0x\+D4..0x\+D8)
+\end{DoxyItemize}
+
+The mapping from J\+S\+ON to Message\+Pack is {\bfseries{complete}} in the sense that any J\+S\+ON value type can be converted to a Message\+Pack value.
+
+The following values can not be converted to a Message\+Pack value\+:
+
+
+\begin{DoxyItemize}
+\item strings with more than 4294967295 bytes
+\item arrays with more than 4294967295 elements
+\item objects with more than 4294967295 elements
+\end{DoxyItemize}
+
+The following Message\+Pack types are not used in the conversion\+:
+
+
+\begin{DoxyItemize}
+\item bin 8 -\/ bin 32 (0x\+C4..0x\+C6)
+\item ext 8 -\/ ext 32 (0x\+C7..0x\+C9)
+\item float 32 (0x\+CA)
+\item fixext 1 -\/ fixext 16 (0x\+D4..0x\+D8)
+\end{DoxyItemize}
+
+Any Message\+Pack output created {\ttfamily to\+\_\+msgpack} can be successfully parsed by {\ttfamily from\+\_\+msgpack}.
+
+If NaN or Infinity are stored inside a J\+S\+ON number, they are serialized properly. This behavior differs from the {\ttfamily dump()} function which serializes NaN or Infinity to {\ttfamily null}.\hypertarget{md_json-develop_doc_binary_formats_autotoc_md96}{}\doxysubsection{U\+B\+J\+S\+ON}\label{md_json-develop_doc_binary_formats_autotoc_md96}
+The mapping from U\+B\+J\+S\+ON to J\+S\+ON is {\bfseries{complete}} in the sense that any U\+B\+J\+S\+ON value can be converted to a J\+S\+ON value.
+
+The mapping from J\+S\+ON to U\+B\+J\+S\+ON is {\bfseries{complete}} in the sense that any J\+S\+ON value type can be converted to a U\+B\+J\+S\+ON value.
+
+The following values can not be converted to a U\+B\+J\+S\+ON value\+:
+
+
+\begin{DoxyItemize}
+\item strings with more than 9223372036854775807 bytes (theoretical)
+\item unsigned integer numbers above 9223372036854775807
+\end{DoxyItemize}
+
+The following markers are not used in the conversion\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Z}\+: no-\/op values are not created.
+\item {\ttfamily C}\+: single-\/byte strings are serialized with S markers.
+\end{DoxyItemize}
+
+Any U\+B\+J\+S\+ON output created to\+\_\+ubjson can be successfully parsed by from\+\_\+ubjson.
+
+If NaN or Infinity are stored inside a J\+S\+ON number, they are serialized properly. This behavior differs from the {\ttfamily dump()} function which serializes NaN or Infinity to null.
+
+The optimized formats for containers are supported\+: Parameter {\ttfamily use\+\_\+size} adds size information to the beginning of a container and removes the closing marker. Parameter {\ttfamily use\+\_\+type} further checks whether all elements of a container have the same type and adds the type marker to the beginning of the container. The {\ttfamily use\+\_\+type} parameter must only be used together with {\ttfamily use\+\_\+size = true}. Note that {\ttfamily use\+\_\+size = true} alone may result in larger representations -\/ the benefit of this parameter is that the receiving side is immediately informed on the number of elements of the container.\hypertarget{md_json-develop_doc_binary_formats_autotoc_md97}{}\doxysection{Size comparison examples}\label{md_json-develop_doc_binary_formats_autotoc_md97}
+The following table shows the size compared to the original J\+S\+ON value for different files from the repository for the different formats.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ format  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ sample.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ all\+\_\+unicode.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ floats.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ signed\+\_\+ints.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ jeopardy.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ canada.\+json   }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ format  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ sample.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ all\+\_\+unicode.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ floats.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ signed\+\_\+ints.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ jeopardy.\+json  }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ canada.\+json   }\\\cline{1-7}
+\endhead
+J\+S\+ON  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 100.\+00 \%   \\\cline{1-7}
+C\+B\+OR  &\PBS\raggedleft 87.\+21 \%  &\PBS\raggedleft 71.\+18 \%  &\PBS\raggedleft 48.\+20 \%  &\PBS\raggedleft 44.\+16 \%  &\PBS\raggedleft 87.\+96 \%  &\PBS\raggedleft 50.\+53 \%   \\\cline{1-7}
+Message\+Pack  &\PBS\raggedleft 87.\+16 \%  &\PBS\raggedleft 71.\+18 \%  &\PBS\raggedleft 48.\+20 \%  &\PBS\raggedleft 44.\+16 \%  &\PBS\raggedleft 87.\+91 \%  &\PBS\raggedleft 50.\+56 \%   \\\cline{1-7}
+U\+B\+J\+S\+ON unoptimized  &\PBS\raggedleft 88.\+15 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 48.\+20 \%  &\PBS\raggedleft 44.\+16 \%  &\PBS\raggedleft 96.\+58 \%  &\PBS\raggedleft 53.\+20 \%   \\\cline{1-7}
+U\+B\+J\+S\+ON size-\/optimized  &\PBS\raggedleft 89.\+26 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 48.\+20 \%  &\PBS\raggedleft 44.\+16 \%  &\PBS\raggedleft 97.\+40 \%  &\PBS\raggedleft 58.\+56 \%   \\\cline{1-7}
+U\+B\+J\+S\+ON format-\/optimized  &\PBS\raggedleft 89.\+45 \%  &\PBS\raggedleft 100.\+00 \%  &\PBS\raggedleft 42.\+85 \%  &\PBS\raggedleft 39.\+26 \%  &\PBS\raggedleft 94.\+96 \%  &\PBS\raggedleft 55.\+93 \%   \\\cline{1-7}
+\end{longtabu}
+
+
+The results show that there does not exist a \char`\"{}best\char`\"{} encoding. Furthermore, it is not always worthwhile to use U\+B\+J\+S\+ON\textquotesingle{}s optimizations. 

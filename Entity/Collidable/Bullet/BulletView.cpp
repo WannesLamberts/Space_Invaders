@@ -3,7 +3,7 @@
 //
 
 #include "BulletView.h"
-Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model) : EntityView(w,model) {
+Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model) : EntityView(w,model) {
         generateShape();
 }
 void Entity::BulletView::generateShape() {

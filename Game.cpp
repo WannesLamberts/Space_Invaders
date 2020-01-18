@@ -9,21 +9,31 @@
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 
-Game::Game()
+Game::Game(std::string file)
 {
+        std::ifstream i(file);
+        nlohmann::json j;
+        i >> j;
+        for (int k = 0; k <j["levels"].size() ; ++k) {
+                std::string levelname=j["levels"][k]["name"];
+                levels.push_back(levelname);
+        }
         srand(time(NULL));
         Utils::ObjectManager::getInstance().setup(this);
         w = std::make_shared<sf::RenderWindow>(sf::VideoMode(900, 600), "SpaceInvaders");
         Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0, 2), Utils::Vector2D(1, 0.5), 3, 0.05);
+        currentlevel=0;
+
+        nextlevel();
 
 }
 void Game::drawGame()
 {
         for (int j = 0; j < Utils::ObjectManager::getInstance().getVisuals().size(); ++j) {
-                Utils::ObjectManager::getInstance().getVisuals()[j]->draw(w);
+                Utils::ObjectManager::getInstance().getVisuals()[j]->draw();
         }
         for (int i = 0; i < Utils::ObjectManager::getInstance().getO().size(); ++i) {
-                Utils::ObjectManager::getInstance().getO()[i]->v->draw(w);
+                Utils::ObjectManager::getInstance().getO()[i]->v->draw();
         }
 }
 void Game::runGame()
@@ -44,20 +54,30 @@ void Game::runGame()
                         drawGame();
                         w->display();
                         Utils::StopWatch::getInstance().start();
+                        if(Utils::ObjectManager::getInstance().getEnemycount()==0){
+                                nextlevel();
+                        }
                 }
         }
 }
 void Game::loadLevel(std::string file)
 {
-        std::cout << file << std::endl;
         std::ifstream i(file);
         nlohmann::json j;
         i >> j;
         double speed=j["alienspeed"];
+        std::cout<<"test"<<std::endl;
         for (int k = 0; k < j["aliens"].size(); ++k) {
                 double healthpoints=j["aliens"][k]["healthpoints"];
                 Utils::Vector2D position=Utils::Vector2D(j["aliens"][k]["position"]["x"],j["aliens"][k]["position"]["y"]);
                 Utils::Vector2D size=Utils::Vector2D(j["aliens"][k]["size"]["x"],j["aliens"][k]["size"]["y"]);
                 Utils::ObjectManager::getInstance().createAlienShip(position,size,healthpoints,speed);
+        }
+}
+void Game::nextlevel() {
+        loadLevel(levels[currentlevel]);
+        currentlevel++;
+        if(currentlevel>levels.size()-1){
+                std::cout<<"game completed"<<std::endl;
         }
 }

@@ -11,7 +11,7 @@ void Entity::PlayerShipController::shoot() {
                 std::dynamic_pointer_cast<Entity::AliveModel>(m)->setFireCooldown(10);
                 std::shared_ptr<Entity::AliveModel> mod = std::dynamic_pointer_cast<Entity::AliveModel>(m);
                 Utils::ObjectManager::getInstance().createBullet(
-                    Utils::Vector2D(mod->getPosition().x, mod->getPosition().y-0.2), Utils::Vector2D(0.2, 0.2), 0.1,true,shared_from_this());
+                    Utils::Vector2D(mod->getPosition().x, mod->getPosition().y-0.2), Utils::Vector2D(0.2, 0.2), 0.1,true);
         }
 }
 void Entity::PlayerShipController::readInput()

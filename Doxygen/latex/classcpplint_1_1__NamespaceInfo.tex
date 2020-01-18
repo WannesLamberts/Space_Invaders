@@ -1,0 +1,113 @@
+\hypertarget{classcpplint_1_1__NamespaceInfo}{}\doxysection{cpplint.\+\_\+\+Namespace\+Info Class Reference}
+\label{classcpplint_1_1__NamespaceInfo}\index{cpplint.\_NamespaceInfo@{cpplint.\_NamespaceInfo}}
+Inheritance diagram for cpplint.\+\_\+\+Namespace\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcpplint_1_1__NamespaceInfo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__NamespaceInfo_a4425c93bd90fbf869dc31c87302f5bb0}\label{classcpplint_1_1__NamespaceInfo_a4425c93bd90fbf869dc31c87302f5bb0}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, linenum)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1__NamespaceInfo_a9d3abaeed0353942ca689eeeb2f2924b}{Check\+End}} (self, filename, clean\+\_\+lines, linenum, error)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__NamespaceInfo_a6b518dae822e4e440405654e83dc86a1}\label{classcpplint_1_1__NamespaceInfo_a6b518dae822e4e440405654e83dc86a1}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1__NamespaceInfo_ae0b0b6ffafd3336a93cddca1078df268}\label{classcpplint_1_1__NamespaceInfo_ae0b0b6ffafd3336a93cddca1078df268}} 
+{\bfseries check\+\_\+namespace\+\_\+indentation}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stores information about a namespace.\end{DoxyVerb}
+ 
+
+Definition at line 2554 of file cpplint.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpplint_1_1__NamespaceInfo_a9d3abaeed0353942ca689eeeb2f2924b}\label{classcpplint_1_1__NamespaceInfo_a9d3abaeed0353942ca689eeeb2f2924b}} 
+\index{cpplint.\_NamespaceInfo@{cpplint.\_NamespaceInfo}!CheckEnd@{CheckEnd}}
+\index{CheckEnd@{CheckEnd}!cpplint.\_NamespaceInfo@{cpplint.\_NamespaceInfo}}
+\doxysubsubsection{\texorpdfstring{CheckEnd()}{CheckEnd()}}
+{\footnotesize\ttfamily def cpplint.\+\_\+\+Namespace\+Info.\+Check\+End (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{clean\+\_\+lines,  }\item[{}]{linenum,  }\item[{}]{error }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check end of namespace comments.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classcpplint_1_1__BlockInfo_ae504a3429de136eebf85f32fcae6a8ca}{cpplint.\+\_\+\+Block\+Info}}.
+
+
+
+Definition at line 2562 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2562   \textcolor{keyword}{def }CheckEnd(self, filename, clean\_lines, linenum, error):}
+\DoxyCodeLine{2563     \textcolor{stringliteral}{"""Check end of namespace comments."""}}
+\DoxyCodeLine{2564     line = clean\_lines.raw\_lines[linenum]}
+\DoxyCodeLine{2565 }
+\DoxyCodeLine{2566     \textcolor{comment}{\# Check how many lines is enclosed in this namespace.  Don't issue}}
+\DoxyCodeLine{2567     \textcolor{comment}{\# warning for missing namespace comments if there aren't enough}}
+\DoxyCodeLine{2568     \textcolor{comment}{\# lines.  However, do apply checks if there is already an end of}}
+\DoxyCodeLine{2569     \textcolor{comment}{\# namespace comment and it's incorrect.}}
+\DoxyCodeLine{2570     \textcolor{comment}{\#}}
+\DoxyCodeLine{2571     \textcolor{comment}{\# TODO(unknown): We always want to check end of namespace comments}}
+\DoxyCodeLine{2572     \textcolor{comment}{\# if a namespace is large, but sometimes we also want to apply the}}
+\DoxyCodeLine{2573     \textcolor{comment}{\# check if a short namespace contained nontrivial things (something}}
+\DoxyCodeLine{2574     \textcolor{comment}{\# other than forward declarations).  There is currently no logic on}}
+\DoxyCodeLine{2575     \textcolor{comment}{\# deciding what these nontrivial things are, so this check is}}
+\DoxyCodeLine{2576     \textcolor{comment}{\# triggered by namespace size only, which works most of the time.}}
+\DoxyCodeLine{2577     \textcolor{keywordflow}{if} (linenum -\/ self.starting\_linenum < 10}
+\DoxyCodeLine{2578         \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\};*\(\backslash\)s*(//|/\(\backslash\)*).*\(\backslash\)bnamespace\(\backslash\)b'}, line)):}
+\DoxyCodeLine{2579       \textcolor{keywordflow}{return}}
+\DoxyCodeLine{2580 }
+\DoxyCodeLine{2581     \textcolor{comment}{\# Look for matching comment at end of namespace.}}
+\DoxyCodeLine{2582     \textcolor{comment}{\#}}
+\DoxyCodeLine{2583     \textcolor{comment}{\# Note that we accept C style "/* */" comments for terminating}}
+\DoxyCodeLine{2584     \textcolor{comment}{\# namespaces, so that code that terminate namespaces inside}}
+\DoxyCodeLine{2585     \textcolor{comment}{\# preprocessor macros can be cpplint clean.}}
+\DoxyCodeLine{2586     \textcolor{comment}{\#}}
+\DoxyCodeLine{2587     \textcolor{comment}{\# We also accept stuff like "// end of namespace <name>." with the}}
+\DoxyCodeLine{2588     \textcolor{comment}{\# period at the end.}}
+\DoxyCodeLine{2589     \textcolor{comment}{\#}}
+\DoxyCodeLine{2590     \textcolor{comment}{\# Besides these, we don't accept anything else, otherwise we might}}
+\DoxyCodeLine{2591     \textcolor{comment}{\# get false negatives when existing comment is a substring of the}}
+\DoxyCodeLine{2592     \textcolor{comment}{\# expected namespace.}}
+\DoxyCodeLine{2593     \textcolor{keywordflow}{if} self.name:}
+\DoxyCodeLine{2594       \textcolor{comment}{\# Named namespace}}
+\DoxyCodeLine{2595       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} Match((\textcolor{stringliteral}{r'\string^\(\backslash\)s*\};*\(\backslash\)s*(//|/\(\backslash\)*).*\(\backslash\)bnamespace\(\backslash\)s+'} +}
+\DoxyCodeLine{2596                     re.escape(self.name) + \textcolor{stringliteral}{r'[\(\backslash\)*/\(\backslash\).\(\backslash\)\(\backslash\)\(\backslash\)s]*\$'}),}
+\DoxyCodeLine{2597                    line):}
+\DoxyCodeLine{2598         error(filename, linenum, \textcolor{stringliteral}{'readability/namespace'}, 5,}
+\DoxyCodeLine{2599               \textcolor{stringliteral}{'Namespace should be terminated with "// namespace \%s"'} \%}
+\DoxyCodeLine{2600               self.name)}
+\DoxyCodeLine{2601     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2602       \textcolor{comment}{\# Anonymous namespace}}
+\DoxyCodeLine{2603       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\};*\(\backslash\)s*(//|/\(\backslash\)*).*\(\backslash\)bnamespace[\(\backslash\)*/\(\backslash\).\(\backslash\)\(\backslash\)\(\backslash\)s]*\$'}, line):}
+\DoxyCodeLine{2604         \textcolor{comment}{\# If "// namespace anonymous" or "// anonymous namespace (more text)",}}
+\DoxyCodeLine{2605         \textcolor{comment}{\# mention "// anonymous namespace" as an acceptable form}}
+\DoxyCodeLine{2606         \textcolor{keywordflow}{if} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\}.*\(\backslash\)b(namespace anonymous|anonymous namespace)\(\backslash\)b'}, line):}
+\DoxyCodeLine{2607           error(filename, linenum, \textcolor{stringliteral}{'readability/namespace'}, 5,}
+\DoxyCodeLine{2608                 \textcolor{stringliteral}{'Anonymous namespace should be terminated with "// namespace"'}}
+\DoxyCodeLine{2609                 \textcolor{stringliteral}{' or "// anonymous namespace"'})}
+\DoxyCodeLine{2610         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2611           error(filename, linenum, \textcolor{stringliteral}{'readability/namespace'}, 5,}
+\DoxyCodeLine{2612                 \textcolor{stringliteral}{'Anonymous namespace should be terminated with "// namespace"'})}
+\DoxyCodeLine{2613 }
+\DoxyCodeLine{2614 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/cpplint/cpplint.\+py\end{DoxyCompactItemize}

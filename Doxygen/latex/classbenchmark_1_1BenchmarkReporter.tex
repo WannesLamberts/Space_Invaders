@@ -1,0 +1,58 @@
+\hypertarget{classbenchmark_1_1BenchmarkReporter}{}\doxysection{benchmark\+::Benchmark\+Reporter Class Reference}
+\label{classbenchmark_1_1BenchmarkReporter}\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+Inheritance diagram for benchmark\+::Benchmark\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{classbenchmark_1_1BenchmarkReporter}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a0d1834470fe47a308a8f5c8b9900706e}\label{classbenchmark_1_1BenchmarkReporter_a0d1834470fe47a308a8f5c8b9900706e}} 
+virtual bool {\bfseries Report\+Context} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} \&context)=0
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a9b4fd50b7b1d441d7ca44249a5971ad8}\label{classbenchmark_1_1BenchmarkReporter_a9b4fd50b7b1d441d7ca44249a5971ad8}} 
+virtual void {\bfseries Report\+Runs} (const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} $>$ \&report)=0
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_aa9116282f2e2fa984ee7f11d53d5fa15}\label{classbenchmark_1_1BenchmarkReporter_aa9116282f2e2fa984ee7f11d53d5fa15}} 
+virtual void {\bfseries Finalize} ()
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a703e2a25fee7050b7badd1922dca945d}\label{classbenchmark_1_1BenchmarkReporter_a703e2a25fee7050b7badd1922dca945d}} 
+void {\bfseries Set\+Output\+Stream} (std\+::ostream $\ast$out)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a9289e45f81a88cab04dbdaf8f102c4e3}\label{classbenchmark_1_1BenchmarkReporter_a9289e45f81a88cab04dbdaf8f102c4e3}} 
+void {\bfseries Set\+Error\+Stream} (std\+::ostream $\ast$err)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a8579c6156afd8a0c5c7569262dcf034d}\label{classbenchmark_1_1BenchmarkReporter_a8579c6156afd8a0c5c7569262dcf034d}} 
+std\+::ostream \& {\bfseries Get\+Output\+Stream} () const
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a748af2901286cb8118f940ef3e04d8b3}\label{classbenchmark_1_1BenchmarkReporter_a748af2901286cb8118f940ef3e04d8b3}} 
+std\+::ostream \& {\bfseries Get\+Error\+Stream} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a2c34777aff00c141056eb52292808099}\label{classbenchmark_1_1BenchmarkReporter_a2c34777aff00c141056eb52292808099}} 
+static void {\bfseries Print\+Basic\+Context} (std\+::ostream $\ast$out, \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} const \&context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1250 of file benchmark.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/benchmarks/thirdparty/benchmark/include/benchmark/benchmark.\+h\item 
+json-\/develop/benchmarks/thirdparty/benchmark/src/reporter.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+{
+  "getal":1,
+  "levels": [
+    {
+      "name":"../Games/levels/level0.json"
+    },
+    {
+      "name":"../Games/levels/level1.json"
+    }
+  ]
+}
+

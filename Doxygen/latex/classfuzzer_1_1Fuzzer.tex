@@ -1,0 +1,115 @@
+\hypertarget{classfuzzer_1_1Fuzzer}{}\doxysection{fuzzer\+::Fuzzer Class Reference}
+\label{classfuzzer_1_1Fuzzer}\index{fuzzer::Fuzzer@{fuzzer::Fuzzer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfuzzer_1_1Fuzzer_1_1Coverage}{Coverage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a582438623b355f23604ebcd6150134c1}\label{classfuzzer_1_1Fuzzer_a582438623b355f23604ebcd6150134c1}} 
+{\bfseries Fuzzer} (User\+Callback CB, \mbox{\hyperlink{classfuzzer_1_1InputCorpus}{Input\+Corpus}} \&Corpus, \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher}{Mutation\+Dispatcher}} \&MD, \mbox{\hyperlink{structfuzzer_1_1FuzzingOptions}{Fuzzing\+Options}} Options)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a0306e29f06ced3d24ed0417ea2fef34b}\label{classfuzzer_1_1Fuzzer_a0306e29f06ced3d24ed0417ea2fef34b}} 
+void {\bfseries Loop} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a54326d89b0de8eb858c70dfa78c5cc57}\label{classfuzzer_1_1Fuzzer_a54326d89b0de8eb858c70dfa78c5cc57}} 
+void {\bfseries Minimize\+Crash\+Loop} (const Unit \&U)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a368fcca328a7e72c500caf081227f7ef}\label{classfuzzer_1_1Fuzzer_a368fcca328a7e72c500caf081227f7ef}} 
+void {\bfseries Shuffle\+And\+Minimize} (Unit\+Vector $\ast$V)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a9f3aadcfbeb0e69ee8a0d6ad8133e455}\label{classfuzzer_1_1Fuzzer_a9f3aadcfbeb0e69ee8a0d6ad8133e455}} 
+void {\bfseries Initialize\+Trace\+State} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a44506dc46253928eb73397091d6c4c32}\label{classfuzzer_1_1Fuzzer_a44506dc46253928eb73397091d6c4c32}} 
+void {\bfseries Reread\+Output\+Corpus} (size\+\_\+t Max\+Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a71ac55e6fdd0979496a9c65f99fe33c5}\label{classfuzzer_1_1Fuzzer_a71ac55e6fdd0979496a9c65f99fe33c5}} 
+size\+\_\+t {\bfseries seconds\+Since\+Process\+Start\+Up} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_acde1eccc2e342f62136ab3531b2b5630}\label{classfuzzer_1_1Fuzzer_acde1eccc2e342f62136ab3531b2b5630}} 
+bool {\bfseries Timed\+Out} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_aa88607925eeffcf7d373ac58e767d7d5}\label{classfuzzer_1_1Fuzzer_aa88607925eeffcf7d373ac58e767d7d5}} 
+size\+\_\+t {\bfseries exec\+Per\+Sec} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_af8117818c8156811dc998b34cdcf7ddb}\label{classfuzzer_1_1Fuzzer_af8117818c8156811dc998b34cdcf7ddb}} 
+size\+\_\+t {\bfseries get\+Total\+Number\+Of\+Runs} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a5a299bed53a0c2d2ffd6557c173f7e40}\label{classfuzzer_1_1Fuzzer_a5a299bed53a0c2d2ffd6557c173f7e40}} 
+void {\bfseries Execute\+Callback} (const uint8\+\_\+t $\ast$Data, size\+\_\+t Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a89cb175e3dd6b4e14beb716a8a64f10c}\label{classfuzzer_1_1Fuzzer_a89cb175e3dd6b4e14beb716a8a64f10c}} 
+size\+\_\+t {\bfseries Run\+One} (const uint8\+\_\+t $\ast$Data, size\+\_\+t Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_aad1ef6d2a186b7b2462363111398e54e}\label{classfuzzer_1_1Fuzzer_aad1ef6d2a186b7b2462363111398e54e}} 
+void {\bfseries Merge} (const std\+::vector$<$ std\+::string $>$ \&Corpora)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a3777acf379198d5339bf6baf0e9ad011}\label{classfuzzer_1_1Fuzzer_a3777acf379198d5339bf6baf0e9ad011}} 
+void {\bfseries Crash\+Resistant\+Merge} (const std\+::vector$<$ std\+::string $>$ \&Args, const std\+::vector$<$ std\+::string $>$ \&Corpora)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a960f37bdf1d61e7043609ace07d411e4}\label{classfuzzer_1_1Fuzzer_a960f37bdf1d61e7043609ace07d411e4}} 
+void {\bfseries Crash\+Resistant\+Merge\+Internal\+Step} (const std\+::string \&Control\+File\+Path)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a6a4abd6692ba305867fcb7df7bfe79cc}\label{classfuzzer_1_1Fuzzer_a6a4abd6692ba305867fcb7df7bfe79cc}} 
+Unit\+Vector {\bfseries Find\+Extra\+Units} (const Unit\+Vector \&Initial, const Unit\+Vector \&Extra)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a505a66d146838185619375121b9e0f89}\label{classfuzzer_1_1Fuzzer_a505a66d146838185619375121b9e0f89}} 
+\mbox{\hyperlink{classfuzzer_1_1MutationDispatcher}{Mutation\+Dispatcher}} \& {\bfseries Get\+MD} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a7caa04e4384d37875ab1d2eb745f5978}\label{classfuzzer_1_1Fuzzer_a7caa04e4384d37875ab1d2eb745f5978}} 
+void {\bfseries Print\+Final\+Stats} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_af049926833d09bb487062779d6f881ba}\label{classfuzzer_1_1Fuzzer_af049926833d09bb487062779d6f881ba}} 
+void {\bfseries Set\+Max\+Input\+Len} (size\+\_\+t Max\+Input\+Len)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a294a565231ed605981b9600e0ce60722}\label{classfuzzer_1_1Fuzzer_a294a565231ed605981b9600e0ce60722}} 
+void {\bfseries Set\+Max\+Mutation\+Len} (size\+\_\+t Max\+Mutation\+Len)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_aaff2d6a9892349f851f17dd3f0da5ac0}\label{classfuzzer_1_1Fuzzer_aaff2d6a9892349f851f17dd3f0da5ac0}} 
+void {\bfseries Rss\+Limit\+Callback} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_abbc24e3115c1bf70ff10e81dedfe38c6}\label{classfuzzer_1_1Fuzzer_abbc24e3115c1bf70ff10e81dedfe38c6}} 
+void {\bfseries Reset\+Coverage} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a6b8043b43eaa243299df6d64ba8413b6}\label{classfuzzer_1_1Fuzzer_a6b8043b43eaa243299df6d64ba8413b6}} 
+bool {\bfseries In\+Fuzzing\+Thread} () const
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_af1d13fc1411234ad0cb2b10175d71141}\label{classfuzzer_1_1Fuzzer_af1d13fc1411234ad0cb2b10175d71141}} 
+size\+\_\+t {\bfseries Get\+Current\+Unit\+In\+Fuzzing\+Thead} (const uint8\+\_\+t $\ast$$\ast$Data) const
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a7b4edc3276350436fe6ed3f4200b0226}\label{classfuzzer_1_1Fuzzer_a7b4edc3276350436fe6ed3f4200b0226}} 
+void {\bfseries Try\+Detecting\+A\+Memory\+Leak} (const uint8\+\_\+t $\ast$Data, size\+\_\+t Size, bool During\+Initial\+Corpus\+Execution)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_aedd1fa002d658fbcc1e0870ae28c4489}\label{classfuzzer_1_1Fuzzer_aedd1fa002d658fbcc1e0870ae28c4489}} 
+void {\bfseries Handle\+Malloc} (size\+\_\+t Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a8e5cc850a9e02c0650f196981ced0b78}\label{classfuzzer_1_1Fuzzer_a8e5cc850a9e02c0650f196981ced0b78}} 
+static void {\bfseries Static\+Alarm\+Callback} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_a53ec06c88c7260710d7c7fcae14bf568}\label{classfuzzer_1_1Fuzzer_a53ec06c88c7260710d7c7fcae14bf568}} 
+static void {\bfseries Static\+Crash\+Signal\+Callback} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1Fuzzer_ade17502cb3deeb915a59e0e98cb109da}\label{classfuzzer_1_1Fuzzer_ade17502cb3deeb915a59e0e98cb109da}} 
+static void {\bfseries Static\+Interrupt\+Callback} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 32 of file Fuzzer\+Internal.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Internal.\+h\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Loop.\+cpp\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Merge.\+cpp\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Trace\+State.\+cpp\end{DoxyCompactItemize}

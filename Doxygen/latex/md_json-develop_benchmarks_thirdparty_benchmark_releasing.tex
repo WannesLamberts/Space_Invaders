@@ -1,0 +1,23 @@
+
+\begin{DoxyItemize}
+\item Make sure you\textquotesingle{}re on master and synced to H\+E\+AD
+\item Ensure the project builds and tests run (sanity check only, obviously)
+\begin{DoxyItemize}
+\item {\ttfamily parallel -\/j0 exec \+::\+: test/$\ast$\+\_\+test} can help ensure everything at least passes
+\end{DoxyItemize}
+\item Prepare release notes
+\begin{DoxyItemize}
+\item {\ttfamily git log \$(git describe -\/-\/abbrev=0 -\/-\/tags)..H\+E\+AD} gives you the list of commits between the last annotated tag and H\+E\+AD
+\item Pick the most interesting.
+\end{DoxyItemize}
+\item Create a release through github\textquotesingle{}s interface
+\begin{DoxyItemize}
+\item Note this will create a lightweight tag.
+\item Update this to an annotated tag\+:
+\begin{DoxyItemize}
+\item {\ttfamily git pull -\/-\/tags}
+\item {\ttfamily git tag -\/a -\/f $<$tag$>$ $<$tag$>$}
+\item {\ttfamily git push -\/-\/force origin} 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

@@ -1,0 +1,126 @@
+\hypertarget{namespacestrip__asm}{}\doxysection{strip\+\_\+asm Namespace Reference}
+\label{namespacestrip__asm}\index{strip\_asm@{strip\_asm}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacestrip__asm_aebf5a38ba9f468bce9e9a28692ce9485}\label{namespacestrip__asm_aebf5a38ba9f468bce9e9a28692ce9485}} 
+def {\bfseries find\+\_\+used\+\_\+labels} (asm)
+\item 
+\mbox{\Hypertarget{namespacestrip__asm_a06bdaff2c53605c41529b5cf22549099}\label{namespacestrip__asm_a06bdaff2c53605c41529b5cf22549099}} 
+def {\bfseries normalize\+\_\+labels} (asm)
+\item 
+\mbox{\Hypertarget{namespacestrip__asm_a2b3018b6a8bc3a2daf2236eb84f03cd6}\label{namespacestrip__asm_a2b3018b6a8bc3a2daf2236eb84f03cd6}} 
+def {\bfseries transform\+\_\+labels} (asm)
+\item 
+\mbox{\Hypertarget{namespacestrip__asm_adf85622078a98ae838495861384d7654}\label{namespacestrip__asm_adf85622078a98ae838495861384d7654}} 
+def {\bfseries is\+\_\+identifier} (tk)
+\item 
+def \mbox{\hyperlink{namespacestrip__asm_a2a9bb0b44e6ee4ee40f7f54d7474002c}{process\+\_\+identifiers}} (l)
+\item 
+def \mbox{\hyperlink{namespacestrip__asm_a1358b2e05154db24561e5c567834e057}{process\+\_\+asm}} (asm)
+\item 
+\mbox{\Hypertarget{namespacestrip__asm_a8763fef88109722f967109049af1ed4f}\label{namespacestrip__asm_a8763fef88109722f967109049af1ed4f}} 
+def {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}strip_asm.py - Cleanup ASM output for the specified file
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacestrip__asm_a1358b2e05154db24561e5c567834e057}\label{namespacestrip__asm_a1358b2e05154db24561e5c567834e057}} 
+\index{strip\_asm@{strip\_asm}!process\_asm@{process\_asm}}
+\index{process\_asm@{process\_asm}!strip\_asm@{strip\_asm}}
+\doxysubsubsection{\texorpdfstring{process\_asm()}{process\_asm()}}
+{\footnotesize\ttfamily def strip\+\_\+asm.\+process\+\_\+asm (\begin{DoxyParamCaption}\item[{}]{asm }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Strip the ASM of unwanted directives and lines
+\end{DoxyVerb}
+ 
+
+Definition at line 84 of file strip\+\_\+asm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84 \textcolor{keyword}{def }process\_asm(asm):}
+\DoxyCodeLine{85     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{86 \textcolor{stringliteral}{    Strip the ASM of unwanted directives and lines}}
+\DoxyCodeLine{87 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{88     new\_contents = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{89     asm = transform\_labels(asm)}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{comment}{\# TODO: Add more things we want to remove}}
+\DoxyCodeLine{92     discard\_regexes = [}
+\DoxyCodeLine{93         re.compile(\textcolor{stringliteral}{"\(\backslash\)s+\(\backslash\)..*\$"}), \textcolor{comment}{\# directive}}
+\DoxyCodeLine{94         re.compile(\textcolor{stringliteral}{"\(\backslash\)s*\#(NO\_APP|APP)\$"}), \textcolor{comment}{\#inline ASM}}
+\DoxyCodeLine{95         re.compile(\textcolor{stringliteral}{"\(\backslash\)s*\#.*\$"}), \textcolor{comment}{\# comment line}}
+\DoxyCodeLine{96         re.compile(\textcolor{stringliteral}{"\(\backslash\)s*\(\backslash\).globa?l\(\backslash\)s*([.a-\/zA-\/Z\_][a-\/zA-\/Z0-\/9\$\_.]*)"}), \textcolor{comment}{\#global directive}}
+\DoxyCodeLine{97         re.compile(\textcolor{stringliteral}{"\(\backslash\)s*\(\backslash\).(string|asciz|ascii|[1248]?byte|short|word|long|quad|value|zero)"}),}
+\DoxyCodeLine{98     ]}
+\DoxyCodeLine{99     keep\_regexes = [}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     ]}
+\DoxyCodeLine{102     fn\_label\_def = re.compile(\textcolor{stringliteral}{"\string^[a-\/zA-\/Z\_][a-\/zA-\/Z0-\/9\_.]*:"})}
+\DoxyCodeLine{103     \textcolor{keywordflow}{for} l \textcolor{keywordflow}{in} asm.splitlines():}
+\DoxyCodeLine{104         \textcolor{comment}{\# Remove Mach-\/O attribute}}
+\DoxyCodeLine{105         l = l.replace(\textcolor{stringliteral}{'@GOTPCREL'}, \textcolor{stringliteral}{''})}
+\DoxyCodeLine{106         add\_line = \textcolor{keyword}{True}}
+\DoxyCodeLine{107         \textcolor{keywordflow}{for} reg \textcolor{keywordflow}{in} discard\_regexes:}
+\DoxyCodeLine{108             \textcolor{keywordflow}{if} reg.match(l) \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{109                 add\_line = \textcolor{keyword}{False}}
+\DoxyCodeLine{110                 \textcolor{keywordflow}{break}}
+\DoxyCodeLine{111         \textcolor{keywordflow}{for} reg \textcolor{keywordflow}{in} keep\_regexes:}
+\DoxyCodeLine{112             \textcolor{keywordflow}{if} reg.match(l) \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{113                 add\_line = \textcolor{keyword}{True}}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{break}}
+\DoxyCodeLine{115         \textcolor{keywordflow}{if} add\_line:}
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} fn\_label\_def.match(l) \textcolor{keywordflow}{and} len(new\_contents) != 0:}
+\DoxyCodeLine{117                 new\_contents += \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{118             l = process\_identifiers(l)}
+\DoxyCodeLine{119             new\_contents += l}
+\DoxyCodeLine{120             new\_contents += \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{121     \textcolor{keywordflow}{return} new\_contents}
+\DoxyCodeLine{122 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacestrip__asm_a2a9bb0b44e6ee4ee40f7f54d7474002c}\label{namespacestrip__asm_a2a9bb0b44e6ee4ee40f7f54d7474002c}} 
+\index{strip\_asm@{strip\_asm}!process\_identifiers@{process\_identifiers}}
+\index{process\_identifiers@{process\_identifiers}!strip\_asm@{strip\_asm}}
+\doxysubsubsection{\texorpdfstring{process\_identifiers()}{process\_identifiers()}}
+{\footnotesize\ttfamily def strip\+\_\+asm.\+process\+\_\+identifiers (\begin{DoxyParamCaption}\item[{}]{l }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}process_identifiers - process all identifiers and modify them to have
+consistent names across all platforms; specifically across ELF and MachO.
+For example, MachO inserts an additional understore at the beginning of
+names. This function removes that.
+\end{DoxyVerb}
+ 
+
+Definition at line 64 of file strip\+\_\+asm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \textcolor{keyword}{def }process\_identifiers(l):}
+\DoxyCodeLine{65     \textcolor{stringliteral}{"""}}
+\DoxyCodeLine{66 \textcolor{stringliteral}{    process\_identifiers -\/ process all identifiers and modify them to have}}
+\DoxyCodeLine{67 \textcolor{stringliteral}{    consistent names across all platforms; specifically across ELF and MachO.}}
+\DoxyCodeLine{68 \textcolor{stringliteral}{    For example, MachO inserts an additional understore at the beginning of}}
+\DoxyCodeLine{69 \textcolor{stringliteral}{    names. This function removes that.}}
+\DoxyCodeLine{70 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{71     parts = re.split(\textcolor{stringliteral}{r'([a-\/zA-\/Z0-\/9\_]+)'}, l)}
+\DoxyCodeLine{72     new\_line = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{73     \textcolor{keywordflow}{for} tk \textcolor{keywordflow}{in} parts:}
+\DoxyCodeLine{74         \textcolor{keywordflow}{if} is\_identifier(tk):}
+\DoxyCodeLine{75             \textcolor{keywordflow}{if} tk.startswith(\textcolor{stringliteral}{'\_\_Z'}):}
+\DoxyCodeLine{76                 tk = tk[1:]}
+\DoxyCodeLine{77             \textcolor{keywordflow}{elif} tk.startswith(\textcolor{stringliteral}{'\_'}) \textcolor{keywordflow}{and} len(tk) > 1 \textcolor{keywordflow}{and} \(\backslash\)}
+\DoxyCodeLine{78                     tk[1].isalpha() \textcolor{keywordflow}{and} tk[1] != \textcolor{stringliteral}{'Z'}:}
+\DoxyCodeLine{79                 tk = tk[1:]}
+\DoxyCodeLine{80         new\_line += tk}
+\DoxyCodeLine{81     \textcolor{keywordflow}{return} new\_line}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 }
+
+\end{DoxyCode}

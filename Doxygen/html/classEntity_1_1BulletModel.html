@@ -86,12 +86,15 @@ Inheritance diagram for Entity::BulletModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3624b1e5a46289bd60d6b99cd4321592"><td class="memItemLeft" align="right" valign="top"><a id="a3624b1e5a46289bd60d6b99cd4321592"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>travel</b> ()</td></tr>
-<tr class="separator:a3624b1e5a46289bd60d6b99cd4321592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f450eac61a324c6796b310aa09ecd1"><td class="memItemLeft" align="right" valign="top"><a id="a23f450eac61a324c6796b310aa09ecd1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BulletModel</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position, const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size, double speed)</td></tr>
-<tr class="separator:a23f450eac61a324c6796b310aa09ecd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0aec495706c300776a3062b7f85268"><td class="memItemLeft" align="right" valign="top"><a id="a0f0aec495706c300776a3062b7f85268"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>travel</b> ()</td></tr>
+<tr class="separator:a0f0aec495706c300776a3062b7f85268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263bb03a585c20c92064739699e5847e"><td class="memItemLeft" align="right" valign="top"><a id="a263bb03a585c20c92064739699e5847e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BulletModel</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position, const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size, double speed, bool friendly)</td></tr>
+<tr class="separator:a263bb03a585c20c92064739699e5847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb44bdcda50ce31995fea6e248f1f7f"><td class="memItemLeft" align="right" valign="top"><a id="adcb44bdcda50ce31995fea6e248f1f7f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFriendly</b> () const</td></tr>
+<tr class="separator:adcb44bdcda50ce31995fea6e248f1f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1EntityModel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1EntityModel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></td></tr>
 <tr class="memitem:a14667d01eef84af4dfbbb9c6aea7c701 inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a14667d01eef84af4dfbbb9c6aea7c701"></a>
 const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> () const</td></tr>
@@ -99,14 +102,14 @@ const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp
 <tr class="memitem:a557817a4eef083aa0604876c22ac1a57 inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a557817a4eef083aa0604876c22ac1a57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSize</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size)</td></tr>
 <tr class="separator:a557817a4eef083aa0604876c22ac1a57 inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add95685f6c22f2e5e851089a3501f2ee inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="add95685f6c22f2e5e851089a3501f2ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>validPosition</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:add95685f6c22f2e5e851089a3501f2ee inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd198901a1ad8c64361ced938d199494 inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="afd198901a1ad8c64361ced938d199494"></a>
 const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const</td></tr>
 <tr class="separator:afd198901a1ad8c64361ced938d199494 inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31a8c874036424639a2640d89068050a inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a31a8c874036424639a2640d89068050a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkCollision</b> (<a class="el" href="classEntity_1_1EntityModel.html">EntityModel</a> a, <a class="el" href="classEntity_1_1EntityModel.html">EntityModel</a> b)</td></tr>
-<tr class="separator:a31a8c874036424639a2640d89068050a inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa318495311fdb595a100b9cbc5969a82 inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityModel.html#aa318495311fdb595a100b9cbc5969a82">notifyObservers</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
-<tr class="separator:aa318495311fdb595a100b9cbc5969a82 inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb470f2afae411ad0ee18ff7585d980 inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityModel.html#a5cb470f2afae411ad0ee18ff7585d980">notifyObservers</a> ()</td></tr>
+<tr class="separator:a5cb470f2afae411ad0ee18ff7585d980 inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027cb5db3c6bf8df5f761d7a69d35afe inherit pub_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a027cb5db3c6bf8df5f761d7a69d35afe"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EntityModel</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position, const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size)</td></tr>
 <tr class="separator:a027cb5db3c6bf8df5f761d7a69d35afe inherit pub_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,13 +120,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerObserver</b> 
 <tr class="memitem:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="ab2b8a1aeb158f75379d3975bc2f96ad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; o)</td></tr>
 <tr class="separator:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de02ea75ec4b19553dbb310eeafc514 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="a0de02ea75ec4b19553dbb310eeafc514"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeallObservers</b> ()</td></tr>
+<tr class="separator:a0de02ea75ec4b19553dbb310eeafc514 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classEntity_1_1EntityModel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classEntity_1_1EntityModel')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></td></tr>
-<tr class="memitem:aefaed4aa881f482c2e47d6eab669b7d4 inherit pro_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="aefaed4aa881f482c2e47d6eab669b7d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position)</td></tr>
-<tr class="separator:aefaed4aa881f482c2e47d6eab669b7d4 inherit pro_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8964ced9ede24806efc18a88be658e inherit pro_methods_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a7f8964ced9ede24806efc18a88be658e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position)</td></tr>
+<tr class="separator:a7f8964ced9ede24806efc18a88be658e inherit pro_methods_classEntity_1_1EntityModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classEntity_1_1EntityModel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classEntity_1_1EntityModel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classEntity_1_1EntityModel.html">Entity::EntityModel</a></td></tr>
 <tr class="memitem:a38c2a78548aea09a5feeb1fb5c7d47e4 inherit pro_attribs_classEntity_1_1EntityModel"><td class="memItemLeft" align="right" valign="top"><a id="a38c2a78548aea09a5feeb1fb5c7d47e4"></a>
 <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b></td></tr>
@@ -138,10 +144,10 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Obse
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="BulletModel_8h_source.html#l00009">9</a> of file <a class="el" href="BulletModel_8h_source.html">BulletModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BulletModel_8h_source.html#l00010">10</a> of file <a class="el" href="BulletModel_8h_source.html">BulletModel.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Entity/Bullet/<a class="el" href="BulletModel_8h_source.html">BulletModel.h</a></li>
-<li>Entity/Bullet/<a class="el" href="BulletModel_8cpp_source.html">BulletModel.cpp</a></li>
+<li>Entity/Collidable/Bullet/<a class="el" href="BulletModel_8h_source.html">BulletModel.h</a></li>
+<li>Entity/Collidable/Bullet/<a class="el" href="BulletModel_8cpp_source.html">BulletModel.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -80,40 +80,45 @@ Inheritance diagram for ViewAbstract:</div>
  <div class="center">
   <img src="classViewAbstract.png" usemap="#ViewAbstract_map" alt=""/>
   <map id="ViewAbstract_map" name="ViewAbstract_map">
-<area href="classObserver.html" alt="Observer" shape="rect" coords="149,0,288,24"/>
-<area href="classEntity_1_1EntityView.html" title="View class for Entity this class handles the visual aspect of the game." alt="Entity::EntityView" shape="rect" coords="149,112,288,136"/>
-<area href="classAlienShipView.html" alt="AlienShipView" shape="rect" coords="0,168,139,192"/>
-<area href="classEntity_1_1BulletView.html" alt="Entity::BulletView" shape="rect" coords="149,168,288,192"/>
-<area href="classEntity_1_1PlayerShipView.html" title="View class for PlayerShip this class handles the visual aspect of the game." alt="Entity::PlayerShipView" shape="rect" coords="298,168,437,192"/>
+<area href="classObserver.html" alt="Observer" shape="rect" coords="316,0,464,24"/>
+<area href="classEntity_1_1EntityView.html" title="View class for Entity this class handles the visual aspect of the game." alt="Entity::EntityView" shape="rect" coords="316,112,464,136"/>
+<area href="classEntity_1_1AlienShipView.html" alt="Entity::AlienShipView" shape="rect" coords="0,168,148,192"/>
+<area href="classEntity_1_1BulletView.html" alt="Entity::BulletView" shape="rect" coords="158,168,306,192"/>
+<area href="classEntity_1_1LifeView.html" alt="Entity::LifeView" shape="rect" coords="316,168,464,192"/>
+<area href="classEntity_1_1PlayerScoreView.html" alt="Entity::PlayerScoreView" shape="rect" coords="474,168,622,192"/>
+<area href="classEntity_1_1PlayerShipView.html" title="View class for PlayerShip this class handles the visual aspect of the game." alt="Entity::PlayerShipView" shape="rect" coords="632,168,780,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae70e54b453832e601f5332fefb6f4c74"><td class="memItemLeft" align="right" valign="top"><a id="ae70e54b453832e601f5332fefb6f4c74"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ViewAbstract</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;w)</td></tr>
-<tr class="separator:ae70e54b453832e601f5332fefb6f4c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f70ba4ae9a065c8a2262e6a65106c92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewAbstract.html#a5f70ba4ae9a065c8a2262e6a65106c92">draw</a> (std::shared_ptr&lt; sf::RenderWindow &gt; w)=0</td></tr>
-<tr class="memdesc:a5f70ba4ae9a065c8a2262e6a65106c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">draws a sf::Drawable on a window  <a href="classViewAbstract.html#a5f70ba4ae9a065c8a2262e6a65106c92">More...</a><br /></td></tr>
-<tr class="separator:a5f70ba4ae9a065c8a2262e6a65106c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc948ce51d6a44f6b1c43e1146d5dd6"><td class="memItemLeft" align="right" valign="top"><a id="a7bc948ce51d6a44f6b1c43e1146d5dd6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ViewAbstract</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;w, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; model)</td></tr>
+<tr class="separator:a7bc948ce51d6a44f6b1c43e1146d5dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6837ba028ab2aac5b4ac07e01be8977a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewAbstract.html#a6837ba028ab2aac5b4ac07e01be8977a">draw</a> ()=0</td></tr>
+<tr class="memdesc:a6837ba028ab2aac5b4ac07e01be8977a"><td class="mdescLeft">&#160;</td><td class="mdescRight">draws a sf::Drawable on a window  <a href="classViewAbstract.html#a6837ba028ab2aac5b4ac07e01be8977a">More...</a><br /></td></tr>
+<tr class="separator:a6837ba028ab2aac5b4ac07e01be8977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classObserver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classObserver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classObserver.html">Observer</a></td></tr>
-<tr class="memitem:a149f79eb080d9a0c0f52ef7601323d2f inherit pub_methods_classObserver"><td class="memItemLeft" align="right" valign="top"><a id="a149f79eb080d9a0c0f52ef7601323d2f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)=0</td></tr>
-<tr class="separator:a149f79eb080d9a0c0f52ef7601323d2f inherit pub_methods_classObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75e4b339faeb3ea6fe0a01bf0b4a215 inherit pub_methods_classObserver"><td class="memItemLeft" align="right" valign="top"><a id="ac75e4b339faeb3ea6fe0a01bf0b4a215"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()=0</td></tr>
+<tr class="separator:ac75e4b339faeb3ea6fe0a01bf0b4a215 inherit pub_methods_classObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a51b1f37a6113ef3f7b061db29cb4a4c0"><td class="memItemLeft" align="right" valign="top"><a id="a51b1f37a6113ef3f7b061db29cb4a4c0"></a>
 std::__shared_ptr&lt; sf::RenderWindow &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <tr class="separator:a51b1f37a6113ef3f7b061db29cb4a4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ec13c9203ad6e599e2b9b837501351"><td class="memItemLeft" align="right" valign="top"><a id="ae9ec13c9203ad6e599e2b9b837501351"></a>
+std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b></td></tr>
+<tr class="separator:ae9ec13c9203ad6e599e2b9b837501351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>superclass of all view classes handles the visual aspect of the game </p>
 
-<p class="definition">Definition at line <a class="el" href="ViewAbstract_8h_source.html#l00014">14</a> of file <a class="el" href="ViewAbstract_8h_source.html">ViewAbstract.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ViewAbstract_8h_source.html#l00015">15</a> of file <a class="el" href="ViewAbstract_8h_source.html">ViewAbstract.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f70ba4ae9a065c8a2262e6a65106c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f70ba4ae9a065c8a2262e6a65106c92">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a6837ba028ab2aac5b4ac07e01be8977a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6837ba028ab2aac5b4ac07e01be8977a">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,8 +129,7 @@ std::__shared_ptr&lt; sf::RenderWindow &gt;&#160;</td><td class="memItemRight" v
         <tr>
           <td class="memname">virtual void ViewAbstract::draw </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; sf::RenderWindow &gt;&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -144,7 +148,7 @@ std::__shared_ptr&lt; sf::RenderWindow &gt;&#160;</td><td class="memItemRight" v
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classEntity_1_1EntityView.html#a03c3e29c6972249ac0f4e08aa5cb242e">Entity::EntityView</a>.</p>
+<p>Implemented in <a class="el" href="classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf">Entity::EntityView</a>.</p>
 
 </div>
 </div>

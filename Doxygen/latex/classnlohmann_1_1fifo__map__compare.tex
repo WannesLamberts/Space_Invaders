@@ -1,0 +1,69 @@
+\hypertarget{classnlohmann_1_1fifo__map__compare}{}\doxysection{nlohmann\+::fifo\+\_\+map\+\_\+compare$<$ Key $>$ Class Template Reference}
+\label{classnlohmann_1_1fifo__map__compare}\index{nlohmann::fifo\_map\_compare$<$ Key $>$@{nlohmann::fifo\_map\_compare$<$ Key $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnlohmann_1_1fifo__map__compare_aab17e1040a1d3860c96aac6faf5c705c}\label{classnlohmann_1_1fifo__map__compare_aab17e1040a1d3860c96aac6faf5c705c}} 
+\mbox{\hyperlink{classnlohmann_1_1fifo__map__compare_aab17e1040a1d3860c96aac6faf5c705c}{fifo\+\_\+map\+\_\+compare}} (std\+::unordered\+\_\+map$<$ Key, std\+::size\+\_\+t $>$ $\ast$k)
+\begin{DoxyCompactList}\small\item\em constructor given a pointer to a key storage \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classnlohmann_1_1fifo__map__compare_a148fc9007e182fe0646e919dc53c466a}{operator()}} (const Key \&lhs, const Key \&rhs) const
+\item 
+\mbox{\Hypertarget{classnlohmann_1_1fifo__map__compare_a1eeddfac59afab194e1b9ec45e9d8ea3}\label{classnlohmann_1_1fifo__map__compare_a1eeddfac59afab194e1b9ec45e9d8ea3}} 
+void {\bfseries add\+\_\+key} (const Key \&key)
+\item 
+\mbox{\Hypertarget{classnlohmann_1_1fifo__map__compare_a28b87a4c0ad0928c94c0bf407fe8e54c}\label{classnlohmann_1_1fifo__map__compare_a28b87a4c0ad0928c94c0bf407fe8e54c}} 
+void {\bfseries remove\+\_\+key} (const Key \&key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Key$>$\newline
+class nlohmann\+::fifo\+\_\+map\+\_\+compare$<$ Key $>$}
+
+
+
+Definition at line 47 of file fifo\+\_\+map.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1fifo__map__compare_a148fc9007e182fe0646e919dc53c466a}\label{classnlohmann_1_1fifo__map__compare_a148fc9007e182fe0646e919dc53c466a}} 
+\index{nlohmann::fifo\_map\_compare$<$ Key $>$@{nlohmann::fifo\_map\_compare$<$ Key $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!nlohmann::fifo\_map\_compare$<$ Key $>$@{nlohmann::fifo\_map\_compare$<$ Key $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Key $>$ \\
+bool \mbox{\hyperlink{classnlohmann_1_1fifo__map__compare}{nlohmann\+::fifo\+\_\+map\+\_\+compare}}$<$ Key $>$\+::operator() (\begin{DoxyParamCaption}\item[{const Key \&}]{lhs,  }\item[{const Key \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function compares two keys with respect to the order in which they were added to the container. For this, the mapping keys is used. 
+
+Definition at line 57 of file fifo\+\_\+map.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58     \{}
+\DoxyCodeLine{59         \textcolor{comment}{// look up timestamps for both keys}}
+\DoxyCodeLine{60         \textcolor{keyword}{const} \textcolor{keyword}{auto} timestamp\_lhs = keys-\/>find(lhs);}
+\DoxyCodeLine{61         \textcolor{keyword}{const} \textcolor{keyword}{auto} timestamp\_rhs = keys-\/>find(rhs);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \textcolor{keywordflow}{if} (timestamp\_lhs == keys-\/>end())}
+\DoxyCodeLine{64         \{}
+\DoxyCodeLine{65             \textcolor{comment}{// timestamp for lhs not found -\/ cannot be smaller than for rhs}}
+\DoxyCodeLine{66             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         \textcolor{keywordflow}{if} (timestamp\_rhs == keys-\/>end())}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             \textcolor{comment}{// timestamp for rhs not found -\/ timestamp for lhs is smaller}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{comment}{// compare timestamps}}
+\DoxyCodeLine{76         \textcolor{keywordflow}{return} timestamp\_lhs-\/>second < timestamp\_rhs-\/>second;}
+\DoxyCodeLine{77     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/test/thirdparty/fifo\+\_\+map/fifo\+\_\+map.\+hpp\end{DoxyCompactItemize}

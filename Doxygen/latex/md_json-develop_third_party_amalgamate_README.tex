@@ -1,0 +1,42 @@
+Origin\+: \href{https://bitbucket.org/erikedlund/amalgamate}{\texttt{ https\+://bitbucket.\+org/erikedlund/amalgamate}}
+
+Mirror\+: \href{https://github.com/edlund/amalgamate}{\texttt{ https\+://github.\+com/edlund/amalgamate}}
+
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} aims to make it easy to use S\+Q\+Lite-\/style C source and header amalgamation in projects.
+
+For more information, please refer to\+: \href{http://sqlite.org/amalgamation.html}{\texttt{ http\+://sqlite.\+org/amalgamation.\+html}}\hypertarget{md_json-develop_third_party_amalgamate_README_autotoc_md217}{}\doxysection{Here be dragons}\label{md_json-develop_third_party_amalgamate_README_autotoc_md217}
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} is quite dumb, it only knows the bare minimum about C code required in order to be able to handle trivial include directives. It can produce weird results for unexpected code.
+
+Things to be aware of\+:
+
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} will not handle complex include directives correctly\+: \begin{DoxyVerb}    #define HEADER_PATH "path/to/header.h"
+    #include HEADER_PATH
+\end{DoxyVerb}
+
+
+In the above example, {\ttfamily path/to/header.\+h} will not be included in the amalgamation (H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+TH is never expanded).
+
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} makes the assumption that each source and header file which is not empty will end in a new-\/line character, which is not immediately preceded by a backslash character (see 5.\+1.\+1.\+2p1.\+2 of I\+SO C99).
+
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} should be usable with C++ code, but raw string literals from C++11 will definitely cause problems\+: \begin{DoxyVerb}    R"delimiter(Terrible raw \ data " #include <sneaky.hpp>)delimiter"
+    R"delimiter(Terrible raw \ data " escaping)delimiter"
+\end{DoxyVerb}
+
+
+In the examples above, {\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} will stop parsing the raw string literal when it encounters the first quotation mark, which will produce unexpected results.\hypertarget{md_json-develop_third_party_amalgamate_README_autotoc_md218}{}\doxysection{Installing amalgamate.\+py}\label{md_json-develop_third_party_amalgamate_README_autotoc_md218}
+Python v.\+2.\+7.\+0 or higher is required.
+
+{\ttfamily \mbox{\hyperlink{amalgamate_8py_source}{amalgamate.\+py}}} can be tested and installed using the following commands\+: \begin{DoxyVerb}    ./test.sh && sudo -k cp ./amalgamate.py /usr/local/bin/
+\end{DoxyVerb}
+\hypertarget{md_json-develop_third_party_amalgamate_README_autotoc_md219}{}\doxysection{Using amalgamate.\+py}\label{md_json-develop_third_party_amalgamate_README_autotoc_md219}
+\begin{DoxyVerb}    amalgamate.py [-v] -c path/to/config.json -s path/to/source/dir \
+            [-p path/to/prologue.(c|h)]
+\end{DoxyVerb}
+
+
+
+\begin{DoxyItemize}
+\item The {\ttfamily -\/c, -\/-\/config} option should specify the path to a J\+S\+ON config file which lists the source files, include paths and where to write the resulting amalgamation. Have a look at {\ttfamily test/source.\+c.\+json} and {\ttfamily test/include.\+h.\+json} to see two examples.
+\item The {\ttfamily -\/s, -\/-\/source} option should specify the path to the source directory. This is useful for supporting separate source and build directories.
+\item The {\ttfamily -\/p, -\/-\/prologue} option should specify the path to a file which will be added to the beginning of the amalgamation. It is optional. 
+\end{DoxyItemize}

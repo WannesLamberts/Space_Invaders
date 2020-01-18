@@ -13,7 +13,7 @@ namespace Entity{
 class PlayerScoreView : public Entity::EntityView
 {
 public:
-        PlayerScoreView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model);
+        PlayerScoreView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model);
         void generateShape();
         void update();
         sf::Font font;

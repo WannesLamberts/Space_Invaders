@@ -12,7 +12,7 @@ namespace Entity{
 class LifeView : public Entity::EntityView
 {
 public:
-        LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::shared_ptr<ModelAbstract> model);
+        LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model);
         void generateShape();
         void update();
         sf::Font font;

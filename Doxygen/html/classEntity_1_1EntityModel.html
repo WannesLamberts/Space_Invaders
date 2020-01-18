@@ -89,8 +89,9 @@ Inheritance diagram for Entity::EntityModel:</div>
 <area href="classSubject.html" alt="Subject" shape="rect" coords="156,0,302,24"/>
 <area href="classEntity_1_1AliveModel.html" alt="Entity::AliveModel" shape="rect" coords="78,168,224,192"/>
 <area href="classEntity_1_1BulletModel.html" alt="Entity::BulletModel" shape="rect" coords="234,168,380,192"/>
-<area href="classAlienShipModel.html" alt="AlienShipModel" shape="rect" coords="0,224,146,248"/>
+<area href="classEntity_1_1EnemyModel.html" alt="Entity::EnemyModel" shape="rect" coords="0,224,146,248"/>
 <area href="classEntity_1_1PlayerShipModel.html" title="Model of the PlayerShip handles all the data for PlayerShip." alt="Entity::PlayerShipModel" shape="rect" coords="156,224,302,248"/>
+<area href="classEntity_1_1AlienShipModel.html" alt="Entity::AlienShipModel" shape="rect" coords="0,280,146,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -102,14 +103,14 @@ const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp
 <tr class="memitem:a557817a4eef083aa0604876c22ac1a57"><td class="memItemLeft" align="right" valign="top"><a id="a557817a4eef083aa0604876c22ac1a57"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSize</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size)</td></tr>
 <tr class="separator:a557817a4eef083aa0604876c22ac1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add95685f6c22f2e5e851089a3501f2ee"><td class="memItemLeft" align="right" valign="top"><a id="add95685f6c22f2e5e851089a3501f2ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>validPosition</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
+<tr class="separator:add95685f6c22f2e5e851089a3501f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd198901a1ad8c64361ced938d199494"><td class="memItemLeft" align="right" valign="top"><a id="afd198901a1ad8c64361ced938d199494"></a>
 const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const</td></tr>
 <tr class="separator:afd198901a1ad8c64361ced938d199494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31a8c874036424639a2640d89068050a"><td class="memItemLeft" align="right" valign="top"><a id="a31a8c874036424639a2640d89068050a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkCollision</b> (<a class="el" href="classEntity_1_1EntityModel.html">EntityModel</a> a, <a class="el" href="classEntity_1_1EntityModel.html">EntityModel</a> b)</td></tr>
-<tr class="separator:a31a8c874036424639a2640d89068050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa318495311fdb595a100b9cbc5969a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityModel.html#aa318495311fdb595a100b9cbc5969a82">notifyObservers</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
-<tr class="separator:aa318495311fdb595a100b9cbc5969a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb470f2afae411ad0ee18ff7585d980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityModel.html#a5cb470f2afae411ad0ee18ff7585d980">notifyObservers</a> ()</td></tr>
+<tr class="separator:a5cb470f2afae411ad0ee18ff7585d980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027cb5db3c6bf8df5f761d7a69d35afe"><td class="memItemLeft" align="right" valign="top"><a id="a027cb5db3c6bf8df5f761d7a69d35afe"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EntityModel</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position, const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;size)</td></tr>
 <tr class="separator:a027cb5db3c6bf8df5f761d7a69d35afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,12 +121,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerObserver</b> 
 <tr class="memitem:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="ab2b8a1aeb158f75379d3975bc2f96ad0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (std::shared_ptr&lt; <a class="el" href="classObserver.html">Observer</a> &gt; o)</td></tr>
 <tr class="separator:ab2b8a1aeb158f75379d3975bc2f96ad0 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de02ea75ec4b19553dbb310eeafc514 inherit pub_methods_classSubject"><td class="memItemLeft" align="right" valign="top"><a id="a0de02ea75ec4b19553dbb310eeafc514"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeallObservers</b> ()</td></tr>
+<tr class="separator:a0de02ea75ec4b19553dbb310eeafc514 inherit pub_methods_classSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aefaed4aa881f482c2e47d6eab669b7d4"><td class="memItemLeft" align="right" valign="top"><a id="aefaed4aa881f482c2e47d6eab669b7d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position)</td></tr>
-<tr class="separator:aefaed4aa881f482c2e47d6eab669b7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8964ced9ede24806efc18a88be658e"><td class="memItemLeft" align="right" valign="top"><a id="a7f8964ced9ede24806efc18a88be658e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (const <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> &amp;position)</td></tr>
+<tr class="separator:a7f8964ced9ede24806efc18a88be658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -143,10 +147,10 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Obse
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Model class for Entity this class handles all the data of Entity. </p>
 
-<p class="definition">Definition at line <a class="el" href="EntityModel_8h_source.html#l00014">14</a> of file <a class="el" href="EntityModel_8h_source.html">EntityModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EntityModel_8h_source.html#l00013">13</a> of file <a class="el" href="EntityModel_8h_source.html">EntityModel.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa318495311fdb595a100b9cbc5969a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa318495311fdb595a100b9cbc5969a82">&#9670;&nbsp;</a></span>notifyObservers()</h2>
+<a id="a5cb470f2afae411ad0ee18ff7585d980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb470f2afae411ad0ee18ff7585d980">&#9670;&nbsp;</a></span>notifyObservers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,19 +161,8 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Obse
         <tr>
           <td class="memname">void Entity::EntityModel::notifyObservers </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -189,12 +182,12 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classObserver.html">Obse
 
 <p>Implements <a class="el" href="classSubject.html">Subject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="EntityModel_8cpp_source.html#l00007">7</a> of file <a class="el" href="EntityModel_8cpp_source.html">EntityModel.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; observers.size(); ++i) {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                observers[i]-&gt;update(pos, size);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="EntityModel_8cpp_source.html#l00008">8</a> of file <a class="el" href="EntityModel_8cpp_source.html">EntityModel.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; observers.size(); ++i) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                observers[i]-&gt;update();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

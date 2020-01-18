@@ -16,7 +16,8 @@ public:
 protected:
     std::shared_ptr<ModelAbstract> m;
 
-public:
+    public:
+    public:
         const std::shared_ptr<ModelAbstract>& getM() const;
         const std::shared_ptr<ViewAbstract>& getV() const;
 protected:

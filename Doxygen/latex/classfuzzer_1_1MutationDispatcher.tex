@@ -1,0 +1,141 @@
+\hypertarget{classfuzzer_1_1MutationDispatcher}{}\doxysection{fuzzer\+::Mutation\+Dispatcher Class Reference}
+\label{classfuzzer_1_1MutationDispatcher}\index{fuzzer::MutationDispatcher@{fuzzer::MutationDispatcher}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a057abac517ec3a3eece1ab007fc3c3a6}\label{classfuzzer_1_1MutationDispatcher_a057abac517ec3a3eece1ab007fc3c3a6}} 
+{\bfseries Mutation\+Dispatcher} (\mbox{\hyperlink{classfuzzer_1_1Random}{Random}} \&Rand, const \mbox{\hyperlink{structfuzzer_1_1FuzzingOptions}{Fuzzing\+Options}} \&Options)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a6b24d17b1888937f6ea642544b3bfece}\label{classfuzzer_1_1MutationDispatcher_a6b24d17b1888937f6ea642544b3bfece}} 
+void \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a6b24d17b1888937f6ea642544b3bfece}{Start\+Mutation\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Indicate that we are about to start a new sequence of mutations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a44df135b1a9bc2bd967cb1e536c36431}\label{classfuzzer_1_1MutationDispatcher_a44df135b1a9bc2bd967cb1e536c36431}} 
+void \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a44df135b1a9bc2bd967cb1e536c36431}{Print\+Mutation\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Print the current sequence of mutations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a166dc5df2b854118c2930fc5745dfde7}\label{classfuzzer_1_1MutationDispatcher_a166dc5df2b854118c2930fc5745dfde7}} 
+void \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a166dc5df2b854118c2930fc5745dfde7}{Record\+Successful\+Mutation\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Indicate that the current sequence of mutations was successfull. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a9d02ac9dfce1357597e88fa95541043e}\label{classfuzzer_1_1MutationDispatcher_a9d02ac9dfce1357597e88fa95541043e}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a9d02ac9dfce1357597e88fa95541043e}{Mutate\+\_\+\+Custom}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by invoking user-\/provided mutator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a0c1deb224939195fe4d3d6db5c46ce9f}\label{classfuzzer_1_1MutationDispatcher_a0c1deb224939195fe4d3d6db5c46ce9f}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a0c1deb224939195fe4d3d6db5c46ce9f}{Mutate\+\_\+\+Custom\+Cross\+Over}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by invoking user-\/provided crossover. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a192001bfda5eeccd0609f25b2e9c8a8b}\label{classfuzzer_1_1MutationDispatcher_a192001bfda5eeccd0609f25b2e9c8a8b}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a192001bfda5eeccd0609f25b2e9c8a8b}{Mutate\+\_\+\+Shuffle\+Bytes}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by shuffling bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_aab7670d22afeac5f79849fb64e5e9c05}\label{classfuzzer_1_1MutationDispatcher_aab7670d22afeac5f79849fb64e5e9c05}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_aab7670d22afeac5f79849fb64e5e9c05}{Mutate\+\_\+\+Erase\+Bytes}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by erasing bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a82cdbe976a909974101ef04396209115}\label{classfuzzer_1_1MutationDispatcher_a82cdbe976a909974101ef04396209115}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a82cdbe976a909974101ef04396209115}{Mutate\+\_\+\+Insert\+Byte}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by inserting a byte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_aede8047c4c3f726ee4d781ae93e6e826}\label{classfuzzer_1_1MutationDispatcher_aede8047c4c3f726ee4d781ae93e6e826}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_aede8047c4c3f726ee4d781ae93e6e826}{Mutate\+\_\+\+Insert\+Repeated\+Bytes}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by inserting several repeated bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a3edae850d46dd6b8524c2f04b2c0e0b1}\label{classfuzzer_1_1MutationDispatcher_a3edae850d46dd6b8524c2f04b2c0e0b1}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a3edae850d46dd6b8524c2f04b2c0e0b1}{Mutate\+\_\+\+Change\+Byte}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by chanding one byte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_ac45fd827f35fae692dd23aaf676266c7}\label{classfuzzer_1_1MutationDispatcher_ac45fd827f35fae692dd23aaf676266c7}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_ac45fd827f35fae692dd23aaf676266c7}{Mutate\+\_\+\+Change\+Bit}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by chanding one bit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a45cce402d75c235db82cf896f6159e66}\label{classfuzzer_1_1MutationDispatcher_a45cce402d75c235db82cf896f6159e66}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a45cce402d75c235db82cf896f6159e66}{Mutate\+\_\+\+Copy\+Part}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by copying/inserting a part of data into a different place. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a03dfef49f13061609c3fc61710bcfe5a}\label{classfuzzer_1_1MutationDispatcher_a03dfef49f13061609c3fc61710bcfe5a}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a03dfef49f13061609c3fc61710bcfe5a}{Mutate\+\_\+\+Add\+Word\+From\+Manual\+Dictionary}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by adding a word from the manual dictionary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_ad2e2f3e2d09f0a53864dfc861cd19e0c}\label{classfuzzer_1_1MutationDispatcher_ad2e2f3e2d09f0a53864dfc861cd19e0c}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_ad2e2f3e2d09f0a53864dfc861cd19e0c}{Mutate\+\_\+\+Add\+Word\+From\+Temporary\+Auto\+Dictionary}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by adding a word from the temporary automatic dictionary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a91ff6f09304283c43e593b20e0a9403f}\label{classfuzzer_1_1MutationDispatcher_a91ff6f09304283c43e593b20e0a9403f}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a91ff6f09304283c43e593b20e0a9403f}{Mutate\+\_\+\+Add\+Word\+From\+T\+O\+RC}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by adding a word from the T\+O\+RC. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a0dad3669efe9f4c6fad7b7ef5ea5e0cb}\label{classfuzzer_1_1MutationDispatcher_a0dad3669efe9f4c6fad7b7ef5ea5e0cb}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a0dad3669efe9f4c6fad7b7ef5ea5e0cb}{Mutate\+\_\+\+Add\+Word\+From\+Persistent\+Auto\+Dictionary}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Mutates data by adding a word from the persistent automatic dictionary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a3b493d9e50fb40fb1c02428d6209e2c7}\label{classfuzzer_1_1MutationDispatcher_a3b493d9e50fb40fb1c02428d6209e2c7}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a3b493d9e50fb40fb1c02428d6209e2c7}{Mutate\+\_\+\+Change\+A\+S\+C\+I\+I\+Integer}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Tries to find an A\+S\+C\+II integer in Data, changes it to another A\+S\+C\+II int. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a6d2a194a767c3aabe3638468c2c0e2f0}\label{classfuzzer_1_1MutationDispatcher_a6d2a194a767c3aabe3638468c2c0e2f0}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a6d2a194a767c3aabe3638468c2c0e2f0}{Mutate\+\_\+\+Change\+Binary\+Integer}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Change a 1-\/, 2-\/, 4-\/, or 8-\/byte integer in interesting ways. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a110430b28d550cb3fe55cf7df24bf662}\label{classfuzzer_1_1MutationDispatcher_a110430b28d550cb3fe55cf7df24bf662}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a110430b28d550cb3fe55cf7df24bf662}{Mutate\+\_\+\+Cross\+Over}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\begin{DoxyCompactList}\small\item\em Cross\+Over Data with some other element of the corpus. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_afa4f730fc79863d8b145b5ba0dea19f5}{Mutate}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\item 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_a8c0a901b3167282ed07de767de9ed01f}{Default\+Mutate}} (uint8\+\_\+t $\ast$Data, size\+\_\+t Size, size\+\_\+t Max\+Size)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_ac694b90c95d9f978f22ac4a0fa592366}\label{classfuzzer_1_1MutationDispatcher_ac694b90c95d9f978f22ac4a0fa592366}} 
+size\+\_\+t \mbox{\hyperlink{classfuzzer_1_1MutationDispatcher_ac694b90c95d9f978f22ac4a0fa592366}{Cross\+Over}} (const uint8\+\_\+t $\ast$Data1, size\+\_\+t Size1, const uint8\+\_\+t $\ast$Data2, size\+\_\+t Size2, uint8\+\_\+t $\ast$Out, size\+\_\+t Max\+Out\+Size)
+\begin{DoxyCompactList}\small\item\em Creates a cross-\/over of two pieces of Data, returns its size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a60e156fc033243a56760a329a45843d1}\label{classfuzzer_1_1MutationDispatcher_a60e156fc033243a56760a329a45843d1}} 
+void {\bfseries Add\+Word\+To\+Manual\+Dictionary} (const \mbox{\hyperlink{classfuzzer_1_1FixedWord}{Word}} \&W)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a8260971a12fd061d7b5cc0f8d4f2aa50}\label{classfuzzer_1_1MutationDispatcher_a8260971a12fd061d7b5cc0f8d4f2aa50}} 
+void {\bfseries Add\+Word\+To\+Auto\+Dictionary} (\mbox{\hyperlink{classfuzzer_1_1DictionaryEntry}{Dictionary\+Entry}} DE)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_ae81dd6503e959e35afca6e67572c0cf3}\label{classfuzzer_1_1MutationDispatcher_ae81dd6503e959e35afca6e67572c0cf3}} 
+void {\bfseries Clear\+Auto\+Dictionary} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a2846a7899fa59000aeaf909b8174f6a9}\label{classfuzzer_1_1MutationDispatcher_a2846a7899fa59000aeaf909b8174f6a9}} 
+void {\bfseries Print\+Recommended\+Dictionary} ()
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_ab60a358f47caa871d33dd92dc5d1cd7b}\label{classfuzzer_1_1MutationDispatcher_ab60a358f47caa871d33dd92dc5d1cd7b}} 
+void {\bfseries Set\+Corpus} (const \mbox{\hyperlink{classfuzzer_1_1InputCorpus}{Input\+Corpus}} $\ast$Corpus)
+\item 
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a22242737e63376b4ab6c22210c42c8ab}\label{classfuzzer_1_1MutationDispatcher_a22242737e63376b4ab6c22210c42c8ab}} 
+\mbox{\hyperlink{classfuzzer_1_1Random}{Random}} \& {\bfseries Get\+Rand} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 21 of file Fuzzer\+Mutate.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_a8c0a901b3167282ed07de767de9ed01f}\label{classfuzzer_1_1MutationDispatcher_a8c0a901b3167282ed07de767de9ed01f}} 
+\index{fuzzer::MutationDispatcher@{fuzzer::MutationDispatcher}!DefaultMutate@{DefaultMutate}}
+\index{DefaultMutate@{DefaultMutate}!fuzzer::MutationDispatcher@{fuzzer::MutationDispatcher}}
+\doxysubsubsection{\texorpdfstring{DefaultMutate()}{DefaultMutate()}}
+{\footnotesize\ttfamily size\+\_\+t fuzzer\+::\+Mutation\+Dispatcher\+::\+Default\+Mutate (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{Data,  }\item[{size\+\_\+t}]{Size,  }\item[{size\+\_\+t}]{Max\+Size }\end{DoxyParamCaption})}
+
+Applies one of the default mutations. Provided as a service to mutation authors. 
+
+Definition at line 478 of file Fuzzer\+Mutate.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{479                                                          \{}
+\DoxyCodeLine{480   \textcolor{keywordflow}{return} MutateImpl(Data, Size, MaxSize, DefaultMutators);}
+\DoxyCodeLine{481 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classfuzzer_1_1MutationDispatcher_afa4f730fc79863d8b145b5ba0dea19f5}\label{classfuzzer_1_1MutationDispatcher_afa4f730fc79863d8b145b5ba0dea19f5}} 
+\index{fuzzer::MutationDispatcher@{fuzzer::MutationDispatcher}!Mutate@{Mutate}}
+\index{Mutate@{Mutate}!fuzzer::MutationDispatcher@{fuzzer::MutationDispatcher}}
+\doxysubsubsection{\texorpdfstring{Mutate()}{Mutate()}}
+{\footnotesize\ttfamily size\+\_\+t fuzzer\+::\+Mutation\+Dispatcher\+::\+Mutate (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{Data,  }\item[{size\+\_\+t}]{Size,  }\item[{size\+\_\+t}]{Max\+Size }\end{DoxyParamCaption})}
+
+Applies one of the configured mutations. Returns the new size of data which could be up to Max\+Size. 
+
+Definition at line 474 of file Fuzzer\+Mutate.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{474                                                                             \{}
+\DoxyCodeLine{475   \textcolor{keywordflow}{return} MutateImpl(Data, Size, MaxSize, Mutators);}
+\DoxyCodeLine{476 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Mutate.\+h\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Cross\+Over.\+cpp\item 
+json-\/develop/test/thirdparty/\+Fuzzer/Fuzzer\+Mutate.\+cpp\end{DoxyCompactItemize}

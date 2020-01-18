@@ -77,21 +77,23 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SPACE_INVADERS_ENTITYCONTROLLER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../MVCAbstract/ControllerAbstract.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Entity{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classEntity_1_1EntityController.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1EntityController.html">EntityController</a> : <span class="keyword">public</span> <a class="code" href="classControllerAbstract.html">ControllerAbstract</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classEntity_1_1EntityController.html">EntityController</a>(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt; &amp;m, <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt; &amp;v);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> tick()=0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif //SPACE_INVADERS_ENTITYCONTROLLER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;EntityModel.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;EntityView.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>Entity {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classEntity_1_1EntityController.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEntity_1_1EntityController.html">EntityController</a> : <span class="keyword">public</span> <a class="code" href="classControllerAbstract.html">ControllerAbstract</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classEntity_1_1EntityController.html">EntityController</a>(<span class="keyword">const</span> std::shared_ptr&lt;ModelAbstract&gt;&amp; m, <span class="keyword">const</span> std::shared_ptr&lt;ViewAbstract&gt;&amp; v);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> tick() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif //SPACE_INVADERS_ENTITYCONTROLLER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassControllerAbstract_html"><div class="ttname"><a href="classControllerAbstract.html">ControllerAbstract</a></div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00011">ControllerAbstract.h:11</a></div></div>
-<div class="ttc" id="aclassEntity_1_1EntityController_html"><div class="ttname"><a href="classEntity_1_1EntityController.html">Entity::EntityController</a></div><div class="ttdef"><b>Definition:</b> <a href="EntityController_8h_source.html#l00013">EntityController.h:13</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityController_html"><div class="ttname"><a href="classEntity_1_1EntityController.html">Entity::EntityController</a></div><div class="ttdef"><b>Definition:</b> <a href="EntityController_8h_source.html#l00014">EntityController.h:14</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,0 +1,624 @@
+\hypertarget{classcpplint_1_1NestingState}{}\doxysection{cpplint.\+Nesting\+State Class Reference}
+\label{classcpplint_1_1NestingState}\index{cpplint.NestingState@{cpplint.NestingState}}
+Inheritance diagram for cpplint.\+Nesting\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcpplint_1_1NestingState}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a47e1ad559b9c7304f53d19ef6ebedab4}\label{classcpplint_1_1NestingState_a47e1ad559b9c7304f53d19ef6ebedab4}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a15abc0719a22ca8fbb7a8235f0e22b3e}{Seen\+Open\+Brace}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a1a06f50d53cfe11b1f78d45b531e0c32}{In\+Namespace\+Body}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a67aa1907d42b8408c227ff18537071c7}{In\+ExternC}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a8e111c25149c41bd8927606244965b3c}{In\+Class\+Declaration}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_aa35a529052e4863a477eae649ce778d2}{In\+Asm\+Block}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a8f4e9ba1aaa0459de2bedd966e7a2b54}{In\+Template\+Argument\+List}} (self, clean\+\_\+lines, linenum, pos)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_ac3d509c536af445e8ab6b17b067b53f1}{Update\+Preprocessor}} (self, line)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a3adead8c1575b98ace5c5230f3772c1e}{Update}} (self, filename, clean\+\_\+lines, linenum, error)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a4141768e75b16698463670caaa587120}{Innermost\+Class}} (self)
+\item 
+def \mbox{\hyperlink{classcpplint_1_1NestingState_a7bde5ab65152b4073763b1bd17cba567}{Check\+Completed\+Blocks}} (self, filename, error)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a6ae9bea040f988d152922788d0d73a15}\label{classcpplint_1_1NestingState_a6ae9bea040f988d152922788d0d73a15}} 
+{\bfseries stack}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a7aa34c8fb8df73d76f702c7012c46911}\label{classcpplint_1_1NestingState_a7aa34c8fb8df73d76f702c7012c46911}} 
+{\bfseries previous\+\_\+stack\+\_\+top}
+\item 
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a3a5ca37e3066d91830ea1faa8feae4e5}\label{classcpplint_1_1NestingState_a3a5ca37e3066d91830ea1faa8feae4e5}} 
+{\bfseries pp\+\_\+stack}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Holds states related to parsing braces.\end{DoxyVerb}
+ 
+
+Definition at line 2629 of file cpplint.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a7bde5ab65152b4073763b1bd17cba567}\label{classcpplint_1_1NestingState_a7bde5ab65152b4073763b1bd17cba567}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!CheckCompletedBlocks@{CheckCompletedBlocks}}
+\index{CheckCompletedBlocks@{CheckCompletedBlocks}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{CheckCompletedBlocks()}{CheckCompletedBlocks()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+Check\+Completed\+Blocks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{error }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks that all classes and namespaces have been completely parsed.
+
+Call this when all lines in a file have been processed.
+Args:
+  filename: The name of the current file.
+  error: The function to call with any errors found.
+\end{DoxyVerb}
+ 
+
+Definition at line 2981 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2981   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a7bde5ab65152b4073763b1bd17cba567}{CheckCompletedBlocks}}(self, filename, error):}
+\DoxyCodeLine{2982     \textcolor{stringliteral}{"""Checks that all classes and namespaces have been completely parsed.}}
+\DoxyCodeLine{2983 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2984 \textcolor{stringliteral}{    Call this when all lines in a file have been processed.}}
+\DoxyCodeLine{2985 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{2986 \textcolor{stringliteral}{      filename: The name of the current file.}}
+\DoxyCodeLine{2987 \textcolor{stringliteral}{      error: The function to call with any errors found.}}
+\DoxyCodeLine{2988 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2989     \textcolor{comment}{\# Note: This test can result in false positives if \#ifdef constructs}}
+\DoxyCodeLine{2990     \textcolor{comment}{\# get in the way of brace matching. See the testBuildClass test in}}
+\DoxyCodeLine{2991     \textcolor{comment}{\# cpplint\_unittest.py for an example of this.}}
+\DoxyCodeLine{2992     \textcolor{keywordflow}{for} obj \textcolor{keywordflow}{in} self.stack:}
+\DoxyCodeLine{2993       \textcolor{keywordflow}{if} isinstance(obj, \_ClassInfo):}
+\DoxyCodeLine{2994         error(filename, obj.starting\_linenum, \textcolor{stringliteral}{'build/class'}, 5,}
+\DoxyCodeLine{2995               \textcolor{stringliteral}{'Failed to find complete declaration of class \%s'} \%}
+\DoxyCodeLine{2996               obj.name)}
+\DoxyCodeLine{2997       \textcolor{keywordflow}{elif} isinstance(obj, \_NamespaceInfo):}
+\DoxyCodeLine{2998         error(filename, obj.starting\_linenum, \textcolor{stringliteral}{'build/namespaces'}, 5,}
+\DoxyCodeLine{2999               \textcolor{stringliteral}{'Failed to find complete declaration of namespace \%s'} \%}
+\DoxyCodeLine{3000               obj.name)}
+\DoxyCodeLine{3001 }
+\DoxyCodeLine{3002 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_aa35a529052e4863a477eae649ce778d2}\label{classcpplint_1_1NestingState_aa35a529052e4863a477eae649ce778d2}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InAsmBlock@{InAsmBlock}}
+\index{InAsmBlock@{InAsmBlock}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InAsmBlock()}{InAsmBlock()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+In\+Asm\+Block (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we are currently one level inside an inline ASM block.
+
+Returns:
+  True if the top of the stack is a block containing inline ASM.
+\end{DoxyVerb}
+ 
+
+Definition at line 2688 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2688   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_aa35a529052e4863a477eae649ce778d2}{InAsmBlock}}(self):}
+\DoxyCodeLine{2689     \textcolor{stringliteral}{"""Check if we are currently one level inside an inline ASM block.}}
+\DoxyCodeLine{2690 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2691 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2692 \textcolor{stringliteral}{      True if the top of the stack is a block containing inline ASM.}}
+\DoxyCodeLine{2693 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2694     \textcolor{keywordflow}{return} self.stack \textcolor{keywordflow}{and} self.stack[-\/1].inline\_asm != \_NO\_ASM}
+\DoxyCodeLine{2695 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a8e111c25149c41bd8927606244965b3c}\label{classcpplint_1_1NestingState_a8e111c25149c41bd8927606244965b3c}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InClassDeclaration@{InClassDeclaration}}
+\index{InClassDeclaration@{InClassDeclaration}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InClassDeclaration()}{InClassDeclaration()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+In\+Class\+Declaration (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we are currently one level inside a class or struct declaration.
+
+Returns:
+  True if top of the stack is a class/struct, False otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line 2680 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2680   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a8e111c25149c41bd8927606244965b3c}{InClassDeclaration}}(self):}
+\DoxyCodeLine{2681     \textcolor{stringliteral}{"""Check if we are currently one level inside a class or struct declaration.}}
+\DoxyCodeLine{2682 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2683 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2684 \textcolor{stringliteral}{      True if top of the stack is a class/struct, False otherwise.}}
+\DoxyCodeLine{2685 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2686     \textcolor{keywordflow}{return} self.stack \textcolor{keywordflow}{and} isinstance(self.stack[-\/1], \_ClassInfo)}
+\DoxyCodeLine{2687 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a67aa1907d42b8408c227ff18537071c7}\label{classcpplint_1_1NestingState_a67aa1907d42b8408c227ff18537071c7}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InExternC@{InExternC}}
+\index{InExternC@{InExternC}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InExternC()}{InExternC()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+In\+ExternC (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we are currently one level inside an 'extern "C"' block.
+
+Returns:
+  True if top of the stack is an extern block, False otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line 2672 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2672   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a67aa1907d42b8408c227ff18537071c7}{InExternC}}(self):}
+\DoxyCodeLine{2673     \textcolor{stringliteral}{"""Check if we are currently one level inside an 'extern "C"' block.}}
+\DoxyCodeLine{2674 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2675 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2676 \textcolor{stringliteral}{      True if top of the stack is an extern block, False otherwise.}}
+\DoxyCodeLine{2677 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2678     \textcolor{keywordflow}{return} self.stack \textcolor{keywordflow}{and} isinstance(self.stack[-\/1], \_ExternCInfo)}
+\DoxyCodeLine{2679 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a1a06f50d53cfe11b1f78d45b531e0c32}\label{classcpplint_1_1NestingState_a1a06f50d53cfe11b1f78d45b531e0c32}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InNamespaceBody@{InNamespaceBody}}
+\index{InNamespaceBody@{InNamespaceBody}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InNamespaceBody()}{InNamespaceBody()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+In\+Namespace\+Body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we are currently one level inside a namespace body.
+
+Returns:
+  True if top of the stack is a namespace block, False otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line 2664 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2664   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a1a06f50d53cfe11b1f78d45b531e0c32}{InNamespaceBody}}(self):}
+\DoxyCodeLine{2665     \textcolor{stringliteral}{"""Check if we are currently one level inside a namespace body.}}
+\DoxyCodeLine{2666 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2667 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2668 \textcolor{stringliteral}{      True if top of the stack is a namespace block, False otherwise.}}
+\DoxyCodeLine{2669 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2670     \textcolor{keywordflow}{return} self.stack \textcolor{keywordflow}{and} isinstance(self.stack[-\/1], \_NamespaceInfo)}
+\DoxyCodeLine{2671 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a4141768e75b16698463670caaa587120}\label{classcpplint_1_1NestingState_a4141768e75b16698463670caaa587120}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InnermostClass@{InnermostClass}}
+\index{InnermostClass@{InnermostClass}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InnermostClass()}{InnermostClass()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+Innermost\+Class (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get class info on the top of the stack.
+
+Returns:
+  A _ClassInfo object if we are inside a class, or None otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line 2969 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2969   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a4141768e75b16698463670caaa587120}{InnermostClass}}(self):}
+\DoxyCodeLine{2970     \textcolor{stringliteral}{"""Get class info on the top of the stack.}}
+\DoxyCodeLine{2971 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2972 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2973 \textcolor{stringliteral}{      A \_ClassInfo object if we are inside a class, or None otherwise.}}
+\DoxyCodeLine{2974 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2975     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(len(self.stack), 0, -\/1):}
+\DoxyCodeLine{2976       classinfo = self.stack[i -\/ 1]}
+\DoxyCodeLine{2977       \textcolor{keywordflow}{if} isinstance(classinfo, \_ClassInfo):}
+\DoxyCodeLine{2978         \textcolor{keywordflow}{return} classinfo}
+\DoxyCodeLine{2979     \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{2980 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a8f4e9ba1aaa0459de2bedd966e7a2b54}\label{classcpplint_1_1NestingState_a8f4e9ba1aaa0459de2bedd966e7a2b54}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!InTemplateArgumentList@{InTemplateArgumentList}}
+\index{InTemplateArgumentList@{InTemplateArgumentList}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{InTemplateArgumentList()}{InTemplateArgumentList()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+In\+Template\+Argument\+List (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{clean\+\_\+lines,  }\item[{}]{linenum,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if current position is inside template argument list.
+
+Args:
+  clean_lines: A CleansedLines instance containing the file.
+  linenum: The number of the line to check.
+  pos: position just after the suspected template argument.
+Returns:
+  True if (linenum, pos) is inside template arguments.
+\end{DoxyVerb}
+ 
+
+Definition at line 2696 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2696   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a8f4e9ba1aaa0459de2bedd966e7a2b54}{InTemplateArgumentList}}(self, clean\_lines, linenum, pos):}
+\DoxyCodeLine{2697     \textcolor{stringliteral}{"""Check if current position is inside template argument list.}}
+\DoxyCodeLine{2698 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2699 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{2700 \textcolor{stringliteral}{      clean\_lines: A CleansedLines instance containing the file.}}
+\DoxyCodeLine{2701 \textcolor{stringliteral}{      linenum: The number of the line to check.}}
+\DoxyCodeLine{2702 \textcolor{stringliteral}{      pos: position just after the suspected template argument.}}
+\DoxyCodeLine{2703 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2704 \textcolor{stringliteral}{      True if (linenum, pos) is inside template arguments.}}
+\DoxyCodeLine{2705 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2706     \textcolor{keywordflow}{while} linenum < clean\_lines.NumLines():}
+\DoxyCodeLine{2707       \textcolor{comment}{\# Find the earliest character that might indicate a template argument}}
+\DoxyCodeLine{2708       line = clean\_lines.elided[linenum]}
+\DoxyCodeLine{2709       match = Match(\textcolor{stringliteral}{r'\string^[\string^\{\};=\(\backslash\)[\(\backslash\)]\(\backslash\).<>]*(.)'}, line[pos:])}
+\DoxyCodeLine{2710       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} match:}
+\DoxyCodeLine{2711         linenum += 1}
+\DoxyCodeLine{2712         pos = 0}
+\DoxyCodeLine{2713         \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{2714       token = match.group(1)}
+\DoxyCodeLine{2715       pos += len(match.group(0))}
+\DoxyCodeLine{2716 }
+\DoxyCodeLine{2717       \textcolor{comment}{\# These things do not look like template argument list:}}
+\DoxyCodeLine{2718       \textcolor{comment}{\#   class Suspect \{}}
+\DoxyCodeLine{2719       \textcolor{comment}{\#   class Suspect x; \}}}
+\DoxyCodeLine{2720       \textcolor{keywordflow}{if} token \textcolor{keywordflow}{in} (\textcolor{stringliteral}{'\{'}, \textcolor{stringliteral}{'\}'}, \textcolor{stringliteral}{';'}): \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{2721 }
+\DoxyCodeLine{2722       \textcolor{comment}{\# These things look like template argument list:}}
+\DoxyCodeLine{2723       \textcolor{comment}{\#   template <class Suspect>}}
+\DoxyCodeLine{2724       \textcolor{comment}{\#   template <class Suspect = default\_value>}}
+\DoxyCodeLine{2725       \textcolor{comment}{\#   template <class Suspect[]>}}
+\DoxyCodeLine{2726       \textcolor{comment}{\#   template <class Suspect...>}}
+\DoxyCodeLine{2727       \textcolor{keywordflow}{if} token \textcolor{keywordflow}{in} (\textcolor{stringliteral}{'>'}, \textcolor{stringliteral}{'='}, \textcolor{stringliteral}{'['}, \textcolor{stringliteral}{']'}, \textcolor{stringliteral}{'.'}): \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{2728 }
+\DoxyCodeLine{2729       \textcolor{comment}{\# Check if token is an unmatched '<'.}}
+\DoxyCodeLine{2730       \textcolor{comment}{\# If not, move on to the next character.}}
+\DoxyCodeLine{2731       \textcolor{keywordflow}{if} token != \textcolor{stringliteral}{'<'}:}
+\DoxyCodeLine{2732         pos += 1}
+\DoxyCodeLine{2733         \textcolor{keywordflow}{if} pos >= len(line):}
+\DoxyCodeLine{2734           linenum += 1}
+\DoxyCodeLine{2735           pos = 0}
+\DoxyCodeLine{2736         \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{2737 }
+\DoxyCodeLine{2738       \textcolor{comment}{\# We can't be sure if we just find a single '<', and need to}}
+\DoxyCodeLine{2739       \textcolor{comment}{\# find the matching '>'.}}
+\DoxyCodeLine{2740       (\_, end\_line, end\_pos) = CloseExpression(clean\_lines, linenum, pos -\/ 1)}
+\DoxyCodeLine{2741       \textcolor{keywordflow}{if} end\_pos < 0:}
+\DoxyCodeLine{2742         \textcolor{comment}{\# Not sure if template argument list or syntax error in file}}
+\DoxyCodeLine{2743         \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{2744       linenum = end\_line}
+\DoxyCodeLine{2745       pos = end\_pos}
+\DoxyCodeLine{2746     \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{2747 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a15abc0719a22ca8fbb7a8235f0e22b3e}\label{classcpplint_1_1NestingState_a15abc0719a22ca8fbb7a8235f0e22b3e}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!SeenOpenBrace@{SeenOpenBrace}}
+\index{SeenOpenBrace@{SeenOpenBrace}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{SeenOpenBrace()}{SeenOpenBrace()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+Seen\+Open\+Brace (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we have seen the opening brace for the innermost block.
+
+Returns:
+  True if we have seen the opening brace, False if the innermost
+  block is still expecting an opening brace.
+\end{DoxyVerb}
+ 
+
+Definition at line 2655 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2655   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a15abc0719a22ca8fbb7a8235f0e22b3e}{SeenOpenBrace}}(self):}
+\DoxyCodeLine{2656     \textcolor{stringliteral}{"""Check if we have seen the opening brace for the innermost block.}}
+\DoxyCodeLine{2657 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2658 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{2659 \textcolor{stringliteral}{      True if we have seen the opening brace, False if the innermost}}
+\DoxyCodeLine{2660 \textcolor{stringliteral}{      block is still expecting an opening brace.}}
+\DoxyCodeLine{2661 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2662     \textcolor{keywordflow}{return} (\textcolor{keywordflow}{not} self.stack) \textcolor{keywordflow}{or} self.stack[-\/1].seen\_open\_brace}
+\DoxyCodeLine{2663 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_a3adead8c1575b98ace5c5230f3772c1e}\label{classcpplint_1_1NestingState_a3adead8c1575b98ace5c5230f3772c1e}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!Update@{Update}}
+\index{Update@{Update}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+Update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{clean\+\_\+lines,  }\item[{}]{linenum,  }\item[{}]{error }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update nesting state with current line.
+
+Args:
+  filename: The name of the current file.
+  clean_lines: A CleansedLines instance containing the file.
+  linenum: The number of the line to check.
+  error: The function to call with any errors found.
+\end{DoxyVerb}
+ 
+
+Definition at line 2805 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2805   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_a3adead8c1575b98ace5c5230f3772c1e}{Update}}(self, filename, clean\_lines, linenum, error):}
+\DoxyCodeLine{2806     \textcolor{stringliteral}{"""Update nesting state with current line.}}
+\DoxyCodeLine{2807 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2808 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{2809 \textcolor{stringliteral}{      filename: The name of the current file.}}
+\DoxyCodeLine{2810 \textcolor{stringliteral}{      clean\_lines: A CleansedLines instance containing the file.}}
+\DoxyCodeLine{2811 \textcolor{stringliteral}{      linenum: The number of the line to check.}}
+\DoxyCodeLine{2812 \textcolor{stringliteral}{      error: The function to call with any errors found.}}
+\DoxyCodeLine{2813 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2814     line = clean\_lines.elided[linenum]}
+\DoxyCodeLine{2815 }
+\DoxyCodeLine{2816     \textcolor{comment}{\# Remember top of the previous nesting stack.}}
+\DoxyCodeLine{2817     \textcolor{comment}{\#}}
+\DoxyCodeLine{2818     \textcolor{comment}{\# The stack is always pushed/popped and not modified in place, so}}
+\DoxyCodeLine{2819     \textcolor{comment}{\# we can just do a shallow copy instead of copy.deepcopy.  Using}}
+\DoxyCodeLine{2820     \textcolor{comment}{\# deepcopy would slow down cpplint by \string~28\%.}}
+\DoxyCodeLine{2821     \textcolor{keywordflow}{if} self.stack:}
+\DoxyCodeLine{2822       self.previous\_stack\_top = self.stack[-\/1]}
+\DoxyCodeLine{2823     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2824       self.previous\_stack\_top = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{2825 }
+\DoxyCodeLine{2826     \textcolor{comment}{\# Update pp\_stack}}
+\DoxyCodeLine{2827     self.UpdatePreprocessor(line)}
+\DoxyCodeLine{2828 }
+\DoxyCodeLine{2829     \textcolor{comment}{\# Count parentheses.  This is to avoid adding struct arguments to}}
+\DoxyCodeLine{2830     \textcolor{comment}{\# the nesting stack.}}
+\DoxyCodeLine{2831     \textcolor{keywordflow}{if} self.stack:}
+\DoxyCodeLine{2832       inner\_block = self.stack[-\/1]}
+\DoxyCodeLine{2833       depth\_change = line.count(\textcolor{stringliteral}{'('}) -\/ line.count(\textcolor{stringliteral}{')'})}
+\DoxyCodeLine{2834       inner\_block.open\_parentheses += depth\_change}
+\DoxyCodeLine{2835 }
+\DoxyCodeLine{2836       \textcolor{comment}{\# Also check if we are starting or ending an inline assembly block.}}
+\DoxyCodeLine{2837       \textcolor{keywordflow}{if} inner\_block.inline\_asm \textcolor{keywordflow}{in} (\_NO\_ASM, \_END\_ASM):}
+\DoxyCodeLine{2838         \textcolor{keywordflow}{if} (depth\_change != 0 \textcolor{keywordflow}{and}}
+\DoxyCodeLine{2839             inner\_block.open\_parentheses == 1 \textcolor{keywordflow}{and}}
+\DoxyCodeLine{2840             \_MATCH\_ASM.match(line)):}
+\DoxyCodeLine{2841           \textcolor{comment}{\# Enter assembly block}}
+\DoxyCodeLine{2842           inner\_block.inline\_asm = \_INSIDE\_ASM}
+\DoxyCodeLine{2843         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2844           \textcolor{comment}{\# Not entering assembly block.  If previous line was \_END\_ASM,}}
+\DoxyCodeLine{2845           \textcolor{comment}{\# we will now shift to \_NO\_ASM state.}}
+\DoxyCodeLine{2846           inner\_block.inline\_asm = \_NO\_ASM}
+\DoxyCodeLine{2847       \textcolor{keywordflow}{elif} (inner\_block.inline\_asm == \_INSIDE\_ASM \textcolor{keywordflow}{and}}
+\DoxyCodeLine{2848             inner\_block.open\_parentheses == 0):}
+\DoxyCodeLine{2849         \textcolor{comment}{\# Exit assembly block}}
+\DoxyCodeLine{2850         inner\_block.inline\_asm = \_END\_ASM}
+\DoxyCodeLine{2851 }
+\DoxyCodeLine{2852     \textcolor{comment}{\# Consume namespace declaration at the beginning of the line.  Do}}
+\DoxyCodeLine{2853     \textcolor{comment}{\# this in a loop so that we catch same line declarations like this:}}
+\DoxyCodeLine{2854     \textcolor{comment}{\#   namespace proto2 \{ namespace bridge \{ class MessageSet; \} \}}}
+\DoxyCodeLine{2855     \textcolor{keywordflow}{while} \textcolor{keyword}{True}:}
+\DoxyCodeLine{2856       \textcolor{comment}{\# Match start of namespace.  The "\(\backslash\)b\(\backslash\)s*" below catches namespace}}
+\DoxyCodeLine{2857       \textcolor{comment}{\# declarations even if it weren't followed by a whitespace, this}}
+\DoxyCodeLine{2858       \textcolor{comment}{\# is so that we don't confuse our namespace checker.  The}}
+\DoxyCodeLine{2859       \textcolor{comment}{\# missing spaces will be flagged by CheckSpacing.}}
+\DoxyCodeLine{2860       namespace\_decl\_match = Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*namespace\(\backslash\)b\(\backslash\)s*([:\(\backslash\)w]+)?(.*)\$'}, line)}
+\DoxyCodeLine{2861       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} namespace\_decl\_match:}
+\DoxyCodeLine{2862         \textcolor{keywordflow}{break}}
+\DoxyCodeLine{2863 }
+\DoxyCodeLine{2864       new\_namespace = \_NamespaceInfo(namespace\_decl\_match.group(1), linenum)}
+\DoxyCodeLine{2865       self.stack.append(new\_namespace)}
+\DoxyCodeLine{2866 }
+\DoxyCodeLine{2867       line = namespace\_decl\_match.group(2)}
+\DoxyCodeLine{2868       \textcolor{keywordflow}{if} line.find(\textcolor{stringliteral}{'\{'}) != -\/1:}
+\DoxyCodeLine{2869         new\_namespace.seen\_open\_brace = \textcolor{keyword}{True}}
+\DoxyCodeLine{2870         line = line[line.find(\textcolor{stringliteral}{'\{'}) + 1:]}
+\DoxyCodeLine{2871 }
+\DoxyCodeLine{2872     \textcolor{comment}{\# Look for a class declaration in whatever is left of the line}}
+\DoxyCodeLine{2873     \textcolor{comment}{\# after parsing namespaces.  The regexp accounts for decorated classes}}
+\DoxyCodeLine{2874     \textcolor{comment}{\# such as in:}}
+\DoxyCodeLine{2875     \textcolor{comment}{\#   class LOCKABLE API Object \{}}
+\DoxyCodeLine{2876     \textcolor{comment}{\#   \};}}
+\DoxyCodeLine{2877     class\_decl\_match = Match(}
+\DoxyCodeLine{2878         \textcolor{stringliteral}{r'\string^(\(\backslash\)s*(?:template\(\backslash\)s*<[\(\backslash\)w\(\backslash\)s<>,:=]*>\(\backslash\)s*)?'}}
+\DoxyCodeLine{2879         \textcolor{stringliteral}{r'(class|struct)\(\backslash\)s+(?:[A-\/Z\_]+\(\backslash\)s+)*(\(\backslash\)w+(?:::\(\backslash\)w+)*))'}}
+\DoxyCodeLine{2880         \textcolor{stringliteral}{r'(.*)\$'}, line)}
+\DoxyCodeLine{2881     \textcolor{keywordflow}{if} (class\_decl\_match \textcolor{keywordflow}{and}}
+\DoxyCodeLine{2882         (\textcolor{keywordflow}{not} self.stack \textcolor{keywordflow}{or} self.stack[-\/1].open\_parentheses == 0)):}
+\DoxyCodeLine{2883       \textcolor{comment}{\# We do not want to accept classes that are actually template arguments:}}
+\DoxyCodeLine{2884       \textcolor{comment}{\#   template <class Ignore1,}}
+\DoxyCodeLine{2885       \textcolor{comment}{\#             class Ignore2 = Default<Args>,}}
+\DoxyCodeLine{2886       \textcolor{comment}{\#             template <Args> class Ignore3>}}
+\DoxyCodeLine{2887       \textcolor{comment}{\#   void Function() \{\};}}
+\DoxyCodeLine{2888       \textcolor{comment}{\#}}
+\DoxyCodeLine{2889       \textcolor{comment}{\# To avoid template argument cases, we scan forward and look for}}
+\DoxyCodeLine{2890       \textcolor{comment}{\# an unmatched '>'.  If we see one, assume we are inside a}}
+\DoxyCodeLine{2891       \textcolor{comment}{\# template argument list.}}
+\DoxyCodeLine{2892       end\_declaration = len(class\_decl\_match.group(1))}
+\DoxyCodeLine{2893       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.InTemplateArgumentList(clean\_lines, linenum, end\_declaration):}
+\DoxyCodeLine{2894         self.stack.append(\_ClassInfo(}
+\DoxyCodeLine{2895             class\_decl\_match.group(3), class\_decl\_match.group(2),}
+\DoxyCodeLine{2896             clean\_lines, linenum))}
+\DoxyCodeLine{2897         line = class\_decl\_match.group(4)}
+\DoxyCodeLine{2898 }
+\DoxyCodeLine{2899     \textcolor{comment}{\# If we have not yet seen the opening brace for the innermost block,}}
+\DoxyCodeLine{2900     \textcolor{comment}{\# run checks here.}}
+\DoxyCodeLine{2901     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.SeenOpenBrace():}
+\DoxyCodeLine{2902       self.stack[-\/1].CheckBegin(filename, clean\_lines, linenum, error)}
+\DoxyCodeLine{2903 }
+\DoxyCodeLine{2904     \textcolor{comment}{\# Update access control if we are inside a class/struct}}
+\DoxyCodeLine{2905     \textcolor{keywordflow}{if} self.stack \textcolor{keywordflow}{and} isinstance(self.stack[-\/1], \_ClassInfo):}
+\DoxyCodeLine{2906       classinfo = self.stack[-\/1]}
+\DoxyCodeLine{2907       access\_match = Match(}
+\DoxyCodeLine{2908           \textcolor{stringliteral}{r'\string^(.*)\(\backslash\)b(public|private|protected|signals)(\(\backslash\)s+(?:slots\(\backslash\)s*)?)?'}}
+\DoxyCodeLine{2909           \textcolor{stringliteral}{r':(?:[\string^:]|\$)'},}
+\DoxyCodeLine{2910           line)}
+\DoxyCodeLine{2911       \textcolor{keywordflow}{if} access\_match:}
+\DoxyCodeLine{2912         classinfo.access = access\_match.group(2)}
+\DoxyCodeLine{2913 }
+\DoxyCodeLine{2914         \textcolor{comment}{\# Check that access keywords are indented +1 space.  Skip this}}
+\DoxyCodeLine{2915         \textcolor{comment}{\# check if the keywords are not preceded by whitespaces.}}
+\DoxyCodeLine{2916         indent = access\_match.group(1)}
+\DoxyCodeLine{2917         \textcolor{keywordflow}{if} (len(indent) != classinfo.class\_indent + 1 \textcolor{keywordflow}{and}}
+\DoxyCodeLine{2918             Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\$'}, indent)):}
+\DoxyCodeLine{2919           \textcolor{keywordflow}{if} classinfo.is\_struct:}
+\DoxyCodeLine{2920             parent = \textcolor{stringliteral}{'struct '} + classinfo.name}
+\DoxyCodeLine{2921           \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2922             parent = \textcolor{stringliteral}{'class '} + classinfo.name}
+\DoxyCodeLine{2923           slots = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{2924           \textcolor{keywordflow}{if} access\_match.group(3):}
+\DoxyCodeLine{2925             slots = access\_match.group(3)}
+\DoxyCodeLine{2926           error(filename, linenum, \textcolor{stringliteral}{'whitespace/indent'}, 3,}
+\DoxyCodeLine{2927                 \textcolor{stringliteral}{'\%s\%s: should be indented +1 space inside \%s'} \% (}
+\DoxyCodeLine{2928                     access\_match.group(2), slots, parent))}
+\DoxyCodeLine{2929 }
+\DoxyCodeLine{2930     \textcolor{comment}{\# Consume braces or semicolons from what's left of the line}}
+\DoxyCodeLine{2931     \textcolor{keywordflow}{while} \textcolor{keyword}{True}:}
+\DoxyCodeLine{2932       \textcolor{comment}{\# Match first brace, semicolon, or closed parenthesis.}}
+\DoxyCodeLine{2933       matched = Match(\textcolor{stringliteral}{r'\string^[\string^\{;)\}]*([\{;)\}])(.*)\$'}, line)}
+\DoxyCodeLine{2934       \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} matched:}
+\DoxyCodeLine{2935         \textcolor{keywordflow}{break}}
+\DoxyCodeLine{2936 }
+\DoxyCodeLine{2937       token = matched.group(1)}
+\DoxyCodeLine{2938       \textcolor{keywordflow}{if} token == \textcolor{stringliteral}{'\{'}:}
+\DoxyCodeLine{2939         \textcolor{comment}{\# If namespace or class hasn't seen a opening brace yet, mark}}
+\DoxyCodeLine{2940         \textcolor{comment}{\# namespace/class head as complete.  Push a new block onto the}}
+\DoxyCodeLine{2941         \textcolor{comment}{\# stack otherwise.}}
+\DoxyCodeLine{2942         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.SeenOpenBrace():}
+\DoxyCodeLine{2943           self.stack[-\/1].seen\_open\_brace = \textcolor{keyword}{True}}
+\DoxyCodeLine{2944         \textcolor{keywordflow}{elif} Match(\textcolor{stringliteral}{r'\string^extern\(\backslash\)s*"[\string^"]*"\(\backslash\)s*\(\backslash\)\{'}, line):}
+\DoxyCodeLine{2945           self.stack.append(\_ExternCInfo(linenum))}
+\DoxyCodeLine{2946         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2947           self.stack.append(\_BlockInfo(linenum, \textcolor{keyword}{True}))}
+\DoxyCodeLine{2948           \textcolor{keywordflow}{if} \_MATCH\_ASM.match(line):}
+\DoxyCodeLine{2949             self.stack[-\/1].inline\_asm = \_BLOCK\_ASM}
+\DoxyCodeLine{2950 }
+\DoxyCodeLine{2951       \textcolor{keywordflow}{elif} token == \textcolor{stringliteral}{';'} \textcolor{keywordflow}{or} token == \textcolor{stringliteral}{')'}:}
+\DoxyCodeLine{2952         \textcolor{comment}{\# If we haven't seen an opening brace yet, but we already saw}}
+\DoxyCodeLine{2953         \textcolor{comment}{\# a semicolon, this is probably a forward declaration.  Pop}}
+\DoxyCodeLine{2954         \textcolor{comment}{\# the stack for these.}}
+\DoxyCodeLine{2955         \textcolor{comment}{\#}}
+\DoxyCodeLine{2956         \textcolor{comment}{\# Similarly, if we haven't seen an opening brace yet, but we}}
+\DoxyCodeLine{2957         \textcolor{comment}{\# already saw a closing parenthesis, then these are probably}}
+\DoxyCodeLine{2958         \textcolor{comment}{\# function arguments with extra "class" or "struct" keywords.}}
+\DoxyCodeLine{2959         \textcolor{comment}{\# Also pop these stack for these.}}
+\DoxyCodeLine{2960         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.SeenOpenBrace():}
+\DoxyCodeLine{2961           self.stack.pop()}
+\DoxyCodeLine{2962       \textcolor{keywordflow}{else}:  \textcolor{comment}{\# token == '\}'}}
+\DoxyCodeLine{2963         \textcolor{comment}{\# Perform end of block checks and pop the stack.}}
+\DoxyCodeLine{2964         \textcolor{keywordflow}{if} self.stack:}
+\DoxyCodeLine{2965           self.stack[-\/1].CheckEnd(filename, clean\_lines, linenum, error)}
+\DoxyCodeLine{2966           self.stack.pop()}
+\DoxyCodeLine{2967       line = matched.group(2)}
+\DoxyCodeLine{2968 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcpplint_1_1NestingState_ac3d509c536af445e8ab6b17b067b53f1}\label{classcpplint_1_1NestingState_ac3d509c536af445e8ab6b17b067b53f1}} 
+\index{cpplint.NestingState@{cpplint.NestingState}!UpdatePreprocessor@{UpdatePreprocessor}}
+\index{UpdatePreprocessor@{UpdatePreprocessor}!cpplint.NestingState@{cpplint.NestingState}}
+\doxysubsubsection{\texorpdfstring{UpdatePreprocessor()}{UpdatePreprocessor()}}
+{\footnotesize\ttfamily def cpplint.\+Nesting\+State.\+Update\+Preprocessor (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update preprocessor stack.
+
+We need to handle preprocessors due to classes like this:
+  #ifdef SWIG
+  struct ResultDetailsPageElementExtensionPoint {
+  #else
+  struct ResultDetailsPageElementExtensionPoint : public Extension {
+  #endif
+
+We make the following assumptions (good enough for most files):
+- Preprocessor condition evaluates to true from #if up to first
+  #else/#elif/#endif.
+
+- Preprocessor condition evaluates to false from #else/#elif up
+  to #endif.  We still perform lint checks on these lines, but
+  these do not affect nesting stack.
+
+Args:
+  line: current line to check.
+\end{DoxyVerb}
+ 
+
+Definition at line 2748 of file cpplint.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2748   \textcolor{keyword}{def }\mbox{\hyperlink{classcpplint_1_1NestingState_ac3d509c536af445e8ab6b17b067b53f1}{UpdatePreprocessor}}(self, line):}
+\DoxyCodeLine{2749     \textcolor{stringliteral}{"""Update preprocessor stack.}}
+\DoxyCodeLine{2750 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2751 \textcolor{stringliteral}{    We need to handle preprocessors due to classes like this:}}
+\DoxyCodeLine{2752 \textcolor{stringliteral}{      \#ifdef SWIG}}
+\DoxyCodeLine{2753 \textcolor{stringliteral}{      struct ResultDetailsPageElementExtensionPoint \{}}
+\DoxyCodeLine{2754 \textcolor{stringliteral}{      \#else}}
+\DoxyCodeLine{2755 \textcolor{stringliteral}{      struct ResultDetailsPageElementExtensionPoint : public Extension \{}}
+\DoxyCodeLine{2756 \textcolor{stringliteral}{      \#endif}}
+\DoxyCodeLine{2757 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2758 \textcolor{stringliteral}{    We make the following assumptions (good enough for most files):}}
+\DoxyCodeLine{2759 \textcolor{stringliteral}{    -\/ Preprocessor condition evaluates to true from \#if up to first}}
+\DoxyCodeLine{2760 \textcolor{stringliteral}{      \#else/\#elif/\#endif.}}
+\DoxyCodeLine{2761 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2762 \textcolor{stringliteral}{    -\/ Preprocessor condition evaluates to false from \#else/\#elif up}}
+\DoxyCodeLine{2763 \textcolor{stringliteral}{      to \#endif.  We still perform lint checks on these lines, but}}
+\DoxyCodeLine{2764 \textcolor{stringliteral}{      these do not affect nesting stack.}}
+\DoxyCodeLine{2765 \textcolor{stringliteral}{}}
+\DoxyCodeLine{2766 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{2767 \textcolor{stringliteral}{      line: current line to check.}}
+\DoxyCodeLine{2768 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{2769     \textcolor{keywordflow}{if} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\#\(\backslash\)s*(if|ifdef|ifndef)\(\backslash\)b'}, line):}
+\DoxyCodeLine{2770       \textcolor{comment}{\# Beginning of \#if block, save the nesting stack here.  The saved}}
+\DoxyCodeLine{2771       \textcolor{comment}{\# stack will allow us to restore the parsing state in the \#else case.}}
+\DoxyCodeLine{2772       self.pp\_stack.append(\_PreprocessorInfo(copy.deepcopy(self.stack)))}
+\DoxyCodeLine{2773     \textcolor{keywordflow}{elif} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\#\(\backslash\)s*(else|elif)\(\backslash\)b'}, line):}
+\DoxyCodeLine{2774       \textcolor{comment}{\# Beginning of \#else block}}
+\DoxyCodeLine{2775       \textcolor{keywordflow}{if} self.pp\_stack:}
+\DoxyCodeLine{2776         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.pp\_stack[-\/1].seen\_else:}
+\DoxyCodeLine{2777           \textcolor{comment}{\# This is the first \#else or \#elif block.  Remember the}}
+\DoxyCodeLine{2778           \textcolor{comment}{\# whole nesting stack up to this point.  This is what we}}
+\DoxyCodeLine{2779           \textcolor{comment}{\# keep after the \#endif.}}
+\DoxyCodeLine{2780           self.pp\_stack[-\/1].seen\_else = \textcolor{keyword}{True}}
+\DoxyCodeLine{2781           self.pp\_stack[-\/1].stack\_before\_else = copy.deepcopy(self.stack)}
+\DoxyCodeLine{2782 }
+\DoxyCodeLine{2783         \textcolor{comment}{\# Restore the stack to how it was before the \#if}}
+\DoxyCodeLine{2784         self.stack = copy.deepcopy(self.pp\_stack[-\/1].stack\_before\_if)}
+\DoxyCodeLine{2785       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2786         \textcolor{comment}{\# TODO(unknown): unexpected \#else, issue warning?}}
+\DoxyCodeLine{2787         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{2788     \textcolor{keywordflow}{elif} Match(\textcolor{stringliteral}{r'\string^\(\backslash\)s*\#\(\backslash\)s*endif\(\backslash\)b'}, line):}
+\DoxyCodeLine{2789       \textcolor{comment}{\# End of \#if or \#else blocks.}}
+\DoxyCodeLine{2790       \textcolor{keywordflow}{if} self.pp\_stack:}
+\DoxyCodeLine{2791         \textcolor{comment}{\# If we saw an \#else, we will need to restore the nesting}}
+\DoxyCodeLine{2792         \textcolor{comment}{\# stack to its former state before the \#else, otherwise we}}
+\DoxyCodeLine{2793         \textcolor{comment}{\# will just continue from where we left off.}}
+\DoxyCodeLine{2794         \textcolor{keywordflow}{if} self.pp\_stack[-\/1].seen\_else:}
+\DoxyCodeLine{2795           \textcolor{comment}{\# Here we can just use a shallow copy since we are the last}}
+\DoxyCodeLine{2796           \textcolor{comment}{\# reference to it.}}
+\DoxyCodeLine{2797           self.stack = self.pp\_stack[-\/1].stack\_before\_else}
+\DoxyCodeLine{2798         \textcolor{comment}{\# Drop the corresponding \#if}}
+\DoxyCodeLine{2799         self.pp\_stack.pop()}
+\DoxyCodeLine{2800       \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{2801         \textcolor{comment}{\# TODO(unknown): unexpected \#endif, issue warning?}}
+\DoxyCodeLine{2802         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{2803 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+json-\/develop/third\+\_\+party/cpplint/cpplint.\+py\end{DoxyCompactItemize}

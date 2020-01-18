@@ -4,7 +4,7 @@
 
 #include "PlayerScoreView.h"
 Entity::PlayerScoreView::PlayerScoreView(const std::__shared_ptr<sf::RenderWindow>& w,
-                                         std::shared_ptr<ModelAbstract> model)
+                                         std::weak_ptr<ModelAbstract> model)
     : EntityView(w, model)
 {
         generateShape();
@@ -17,5 +17,5 @@ void Entity::PlayerScoreView::generateShape() {
         Utils::Vector2D position=Utils::Transformation::getInstance().transAndCenter(Utils::Vector2D(0.5,-2.5),Utils::Vector2D(w->getSize().x,w->getSize().y),Utils::Vector2D(1,1));
         std::dynamic_pointer_cast<sf::Text>(shape)->setPosition(position.x,position.y);
 }
-void Entity::PlayerScoreView::update() {   std::shared_ptr<PlayerShipModel> mod= std::dynamic_pointer_cast<PlayerShipModel>(model);
+void Entity::PlayerScoreView::update() {   std::shared_ptr<PlayerShipModel> mod= std::dynamic_pointer_cast<PlayerShipModel>(model.lock());
         std::dynamic_pointer_cast<sf::Text>(shape)->setString(std::to_string(mod->getScore())); }

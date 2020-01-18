@@ -4,7 +4,7 @@
 
 #ifndef SPACE_INVADERS_OBJECTMANAGER_H
 #define SPACE_INVADERS_OBJECTMANAGER_H
-#include "../Entity/Collidable/Alive/AlienShip/AlienShipController.h"
+#include "../Entity/Collidable/Alive/Enemy/AlienShip/AlienShipController.h"
 #include "../Entity/Collidable/Alive/PlayerShip/LifeView.h"
 #include "../Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h"
 #include "../Entity/Collidable/Alive/PlayerShip/PlayerShipController.h"
@@ -18,7 +18,7 @@ class ObjectManager
 public:
         void createPlayerShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints,double speed);
         void createAlienShip(Utils::Vector2D p,Utils::Vector2D s,int healthpoints, double speed);
-        void createBullet(Utils::Vector2D p,Utils::Vector2D s,double speed, bool friendly,std::shared_ptr<ControllerAbstract> owner);
+        void createBullet(Utils::Vector2D p,Utils::Vector2D s,double speed, bool friendly);
         static ObjectManager& getInstance(){
                 static ObjectManager instance; // Guaranteed to be destroyed.
                 // Instantiated on first use.
@@ -28,6 +28,18 @@ public:
 private:
         std::vector<std::shared_ptr<ControllerAbstract>> objectsToDelete;
         std::vector<std::shared_ptr<ViewAbstract>> visuals;
+        std::shared_ptr<Entity::PlayerShipController> hero;
+
+public:
+        const std::shared_ptr<Entity::PlayerShipController>& getHero() const;
+private:
+        int enemycount;
+
+public:
+        void setEnemycount(int enemycount);
+
+public:
+        int getEnemycount() const;
 
 public:
         const std::vector<std::shared_ptr<ViewAbstract>>& getVisuals() const;
