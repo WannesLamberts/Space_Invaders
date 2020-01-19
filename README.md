@@ -1,5 +1,5 @@
 
-https://travis-ci.com/WannesLamberts/Space_Invaders.svg?token=kzFBgLR4E8ze4k9M18Co&branch=master
+<img src="https://travis-ci.com/WannesLamberts/Space_Invaders.svg?token=kzFBgLR4E8ze4k9M18Co&branch=master">
 # Space_Invaders
 Todo:<br /><br />
 changescale in generateshape??? of in controller laten<br />
