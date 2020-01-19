@@ -17,6 +17,12 @@
 class Game
 {
 public:
+    /**
+     *
+     * @param file
+     * @param x
+     * @param y
+     */
         Game(std::string file,int x,int y);
         void drawGame();
         void runGame();
