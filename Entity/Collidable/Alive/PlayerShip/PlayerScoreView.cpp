@@ -10,7 +10,7 @@ Entity::PlayerScoreView::PlayerScoreView(const std::__shared_ptr<sf::RenderWindo
         generateShape();
 }
 void Entity::PlayerScoreView::generateShape() {
-        if (!font.loadFromFile("../Fonts/pixel.ttf"))
+        if (!font.loadFromFile("../Files/Fonts/pixel.ttf"))
         {
         }
         shape=std::make_shared<sf::Text>("",font);

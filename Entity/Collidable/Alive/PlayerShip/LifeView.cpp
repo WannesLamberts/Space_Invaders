@@ -8,7 +8,7 @@ Entity::LifeView::LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::wea
        generateShape();
 }
 void Entity::LifeView::generateShape() {
-        if (!font.loadFromFile("../Fonts/pixel.ttf"))
+        if (!font.loadFromFile("../Files/Fonts/pixel.ttf"))
         {
         }
         shape=std::make_shared<sf::Text>("",font);

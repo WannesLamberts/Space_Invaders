@@ -56,6 +56,7 @@ void Entity::EnemyController::onCollision(std::shared_ptr<Entity::CollidableCont
         }
         if (std::dynamic_pointer_cast<Entity::ShieldController>(b)) {
                 Utils::ObjectManager::getInstance().addDeletion(shared_from_this());
+                Utils::ObjectManager::getInstance().setEnemycount(Utils::ObjectManager::getInstance().getEnemycount()-1);
                 std::shared_ptr<Entity::ShieldModel> model = std::dynamic_pointer_cast<Entity::ShieldModel>(
                     std::dynamic_pointer_cast<Entity::ShieldController>(b)->getM());
                 model->setHealthpoints(model->getHealthpoints() - 1);

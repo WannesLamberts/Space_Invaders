@@ -9,6 +9,6 @@ Entity::BulletView::BulletView(const std::__shared_ptr<sf::RenderWindow>& w,std:
 void Entity::BulletView::generateShape() {
         shape=std::make_shared<sf::Sprite>();
 
-        texture.loadFromFile("../Sprites/bullet.png");
+        texture.loadFromFile("../Files/Sprites/bullet.png");
         std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }

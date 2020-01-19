@@ -55,6 +55,7 @@ void Game::runGame()
 }
 void Game::loadLevel(std::string file)
 {
+
         std::ifstream i(file);
         nlohmann::json j;
         i >> j;
@@ -66,6 +67,7 @@ void Game::loadLevel(std::string file)
                 Utils::Vector2D size = Utils::Vector2D(j["aliens"][k]["size"]["x"], j["aliens"][k]["size"]["y"]);
                 Utils::ObjectManager::getInstance().createAlienShip(position, size, healthpoints, speed);
         }
+
 }
 void Game::nextlevel()
 {
@@ -95,10 +97,11 @@ void Game::setupgame(std::string file,int x,int y) {
         Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(3 ,1),Utils::Vector2D(0.7,0.7),3);
         currentlevel = 0;
         nextlevel();
+
 }
 sf::Sprite Game::generateOver() {
         sf::Sprite gameover;
-        texture.loadFromFile("../Sprites/gameover.png");
+        texture.loadFromFile("../Files/Sprites/gameover.png");
         gameover.setTexture(texture);
         Utils::Vector2D hitbox = Utils::Transformation::getInstance().reScaleHitbox(
             Utils::Vector2D(8,6), Utils::Vector2D(w->getSize().x, w->getSize().y),

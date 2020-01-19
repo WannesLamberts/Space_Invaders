@@ -12,10 +12,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/Games/levels/level0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fonts/pixel.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Fonts/pixel.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/Game1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Games/Game1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/levels/level0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Games/levels/level1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Games/levels/level1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/alien.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/alien.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/gameover.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/gameover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/hart.webp" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/hart.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/index.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/red.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/red.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/shield.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/shield.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/shield2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Sprites/shield2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Space_Invaders" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,16 +108,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Sprites" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Files" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Games" />
       <recent name="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy" />
       <recent name="$PROJECT_DIR$/levels" />
-      <recent name="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Sprites" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.Build All">
@@ -146,6 +196,7 @@
       <workItem from="1579362907141" duration="715000" />
       <workItem from="1579368549112" duration="16777000" />
       <workItem from="1579385568417" duration="976000" />
+      <workItem from="1579439969730" duration="1906000" />
     </task>
     <servers />
   </component>
@@ -217,18 +268,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="498" height="446" key="SwitcherDM/67.27.1853.1053@67.27.1853.1053" timestamp="1579018168192" />
-    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog" timestamp="1579385569663">
+    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog" timestamp="1579439969760">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579385569663" />
+    <state x="649" y="380" width="688" height="344" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579439969760" />
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578916829493">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1578916829493" />
-    <state x="640" y="156" width="866" height="792" key="find.popup" timestamp="1579370039089">
+    <state x="1015" y="195" width="866" height="792" key="find.popup" timestamp="1579441152148">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="640" y="156" width="866" height="792" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1579370039089" />
+    <state x="1015" y="195" width="866" height="792" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1579441152148" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576873354857">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

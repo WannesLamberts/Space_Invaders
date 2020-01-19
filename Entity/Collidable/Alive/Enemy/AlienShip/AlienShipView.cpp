@@ -9,6 +9,6 @@ Entity::AlienShipView::AlienShipView(const std::__shared_ptr<sf::RenderWindow>& 
 }
 void Entity::AlienShipView::generateShape() {
         shape=std::make_shared<sf::Sprite>();
-        texture.loadFromFile("../Sprites/alien.png");
+        texture.loadFromFile("../Files/Sprites/alien.png");
         std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }

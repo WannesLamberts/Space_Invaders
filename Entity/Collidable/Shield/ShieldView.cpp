@@ -10,6 +10,6 @@ Entity::ShieldView::ShieldView(const std::__shared_ptr<sf::RenderWindow>& w, con
 }
 void Entity::ShieldView::generateShape() {
         shape=std::make_shared<sf::Sprite>();
-        texture.loadFromFile("../Sprites/shield.png");
+        texture.loadFromFile("../Files/Sprites/shield.png");
         std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }

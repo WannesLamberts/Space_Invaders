@@ -8,7 +8,7 @@
 void Entity::PlayerShipView::generateShape()
 {
         shape=std::make_shared<sf::Sprite>();
-        texture.loadFromFile("../Sprites/player.png");
+        texture.loadFromFile("../Files/Sprites/player.png");
         std::dynamic_pointer_cast<sf::Sprite>(shape)->setTexture(texture);
 }
 
