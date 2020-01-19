@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['playerscoreview_57',['PlayerScoreView',['../classEntity_1_1PlayerScoreView.html',1,'Entity']]],
-  ['playershipcontroller_58',['PlayerShipController',['../classEntity_1_1PlayerShipController.html',1,'Entity']]],
-  ['playershipmodel_59',['PlayerShipModel',['../classEntity_1_1PlayerShipModel.html',1,'Entity']]],
-  ['playershipview_60',['PlayerShipView',['../classEntity_1_1PlayerShipView.html',1,'Entity']]],
-  ['position_61',['position',['../classEntity_1_1EntityModel.html#a38c2a78548aea09a5feeb1fb5c7d47e4',1,'Entity::EntityModel']]]
+  ['m_55',['m',['../classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b',1,'ControllerAbstract::m()'],['../structUtils_1_1Object.html#a4cabd8d53420cfc28d09c73fa4a0abca',1,'Utils::Object::m()']]],
+  ['model_56',['model',['../classEntity_1_1EntityView.html#a795dc4dd2410feba1a800f7a8b99e09f',1,'Entity::EntityView']]],
+  ['modelabstract_57',['ModelAbstract',['../classModelAbstract.html',1,'']]],
+  ['movedown_58',['moveDown',['../classEntity_1_1EnemyModel.html#aab6733621b05ec6ed12146225997d63c',1,'Entity::EnemyModel']]],
+  ['moveleft_59',['moveLeft',['../classEntity_1_1AliveModel.html#af54c10a1cc03ae8c0a7b198aa2922fa2',1,'Entity::AliveModel']]],
+  ['moveright_60',['moveRight',['../classEntity_1_1AliveModel.html#a2acd6ae99bf4634bb827b9cf3a9d3f5b',1,'Entity::AliveModel']]]
 ];

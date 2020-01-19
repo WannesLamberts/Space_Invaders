@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['shape_189',['shape',['../classViewAbstract.html#a83e9859c55ca1f5cbfe32619e5351d8c',1,'ViewAbstract']]],
-  ['size_190',['size',['../classEntity_1_1EntityModel.html#ad0997b52258cb8903d1d2a6bfdbbb770',1,'Entity::EntityModel']]]
+  ['observers_243',['observers',['../classSubject.html#ab8b404a56f172645e95d23e86f1b8d95',1,'Subject']]]
 ];

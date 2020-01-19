@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1AlienShipController}{}\doxysection{Entity\+::Alien\+Ship\+Controller Class Reference}
 \label{classEntity_1_1AlienShipController}\index{Entity::AlienShipController@{Entity::AlienShipController}}
+
+
+the controller of an alienship  
+
+
+
+
+{\ttfamily \#include $<$Alien\+Ship\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Alien\+Ship\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,23 +18,53 @@ Inheritance diagram for Entity\+::Alien\+Ship\+Controller\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1AlienShipController_a20154130dabc885205796b9fb11eeb0b}\label{classEntity_1_1AlienShipController_a20154130dabc885205796b9fb11eeb0b}} 
-{\bfseries Alien\+Ship\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
-\item 
+\mbox{\hyperlink{classEntity_1_1AlienShipController_a20154130dabc885205796b9fb11eeb0b}{Alien\+Ship\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em the constructor of an alienshipcontroller \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1AlienShipController_a70a75362ade1e252a6d0c5a8f5f8fb27}\label{classEntity_1_1AlienShipController_a70a75362ade1e252a6d0c5a8f5f8fb27}} 
 void \mbox{\hyperlink{classEntity_1_1AlienShipController_a70a75362ade1e252a6d0c5a8f5f8fb27}{tick}} ()
-\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em does the movement and the shooting of an alienship every tick \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1AlienShipController_afe865bf2e2dd07433c7d5b90352e0841}\label{classEntity_1_1AlienShipController_afe865bf2e2dd07433c7d5b90352e0841}} 
-void {\bfseries shoot} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classEntity_1_1AlienShipController_afe865bf2e2dd07433c7d5b90352e0841}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em creates a bullet \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the controller of an alienship 
+
+Definition at line 18 of file Alien\+Ship\+Controller.\+h.
 
 
-Definition at line 16 of file Alien\+Ship\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1AlienShipController_a20154130dabc885205796b9fb11eeb0b}\label{classEntity_1_1AlienShipController_a20154130dabc885205796b9fb11eeb0b}} 
+\index{Entity::AlienShipController@{Entity::AlienShipController}!AlienShipController@{AlienShipController}}
+\index{AlienShipController@{AlienShipController}!Entity::AlienShipController@{Entity::AlienShipController}}
+\doxysubsubsection{\texorpdfstring{AlienShipController()}{AlienShipController()}}
+{\footnotesize\ttfamily Entity\+::\+Alien\+Ship\+Controller\+::\+Alien\+Ship\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+the constructor of an alienshipcontroller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Alien\+Ship\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11     : \mbox{\hyperlink{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}{EnemyController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

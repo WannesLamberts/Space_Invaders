@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1ShieldView}{}\doxysection{Entity\+::Shield\+View Class Reference}
 \label{classEntity_1_1ShieldView}\index{Entity::ShieldView@{Entity::ShieldView}}
+
+
+the view of the shield  
+
+
+
+
+{\ttfamily \#include $<$Shield\+View.\+h$>$}
+
 Inheritance diagram for Entity\+::Shield\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,26 +18,57 @@ Inheritance diagram for Entity\+::Shield\+View\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1ShieldView_a9551db5c26bb834e8db11e2ae5c040bc}\label{classEntity_1_1ShieldView_a9551db5c26bb834e8db11e2ae5c040bc}} 
-{\bfseries Shield\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, const std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
-\item 
+\mbox{\hyperlink{classEntity_1_1ShieldView_a9551db5c26bb834e8db11e2ae5c040bc}{Shield\+View}} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, const std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
+\begin{DoxyCompactList}\small\item\em contructor for shieldview calls generateshape \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1ShieldView_aadfd26c1daf2a5cf5f7a271f7d9efd13}\label{classEntity_1_1ShieldView_aadfd26c1daf2a5cf5f7a271f7d9efd13}} 
 void \mbox{\hyperlink{classEntity_1_1ShieldView_aadfd26c1daf2a5cf5f7a271f7d9efd13}{generate\+Shape}} ()
-\begin{DoxyCompactList}\small\item\em generates shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em generates the sprite of the shield \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1ShieldView_a693d9e5cb1f8c939709577d533b3308b}\label{classEntity_1_1ShieldView_a693d9e5cb1f8c939709577d533b3308b}} 
-sf\+::\+Texture {\bfseries texture}
-\end{DoxyCompactItemize}
+sf\+::\+Texture \mbox{\hyperlink{classEntity_1_1ShieldView_a693d9e5cb1f8c939709577d533b3308b}{texture}}
+\begin{DoxyCompactList}\small\item\em the texture for the sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the view of the shield 
+
+Definition at line 13 of file Shield\+View.\+h.
 
 
-Definition at line 11 of file Shield\+View.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1ShieldView_a9551db5c26bb834e8db11e2ae5c040bc}\label{classEntity_1_1ShieldView_a9551db5c26bb834e8db11e2ae5c040bc}} 
+\index{Entity::ShieldView@{Entity::ShieldView}!ShieldView@{ShieldView}}
+\index{ShieldView@{ShieldView}!Entity::ShieldView@{Entity::ShieldView}}
+\doxysubsubsection{\texorpdfstring{ShieldView()}{ShieldView()}}
+{\footnotesize\ttfamily Entity\+::\+Shield\+View\+::\+Shield\+View (\begin{DoxyParamCaption}\item[{const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{w,  }\item[{const std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{model }\end{DoxyParamCaption})}
+
+
+
+contructor for shieldview calls generateshape 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Shield\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7     : \mbox{\hyperlink{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}{EntityView}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9         \mbox{\hyperlink{classEntity_1_1ShieldView_aadfd26c1daf2a5cf5f7a271f7d9efd13}{generateShape}}();}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

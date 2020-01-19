@@ -6,16 +6,19 @@
 #define SPACE_INVADERS_ALIENSHIPMODEL_H
 #include "../EnemyModel.h"
 namespace Entity {
-
+/**
+ * \brief the model of an alienship
+ */
 class AlienShipModel : public Entity::EnemyModel
 {
 public:
-
-public:
-
-
-
-public:
+        /**
+         * \brief the constructor of an alienshipmodel
+         * @param position
+         * @param size
+         * @param healthpoints
+         * @param speed
+         */
         AlienShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
 
 };

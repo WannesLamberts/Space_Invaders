@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['validposition_181',['validPosition',['../classEntity_1_1EntityModel.html#aafa926edd754207d4ad4c4d8d710a250',1,'Entity::EntityModel']]],
-  ['vector2d_182',['Vector2D',['../structUtils_1_1Vector2D.html#ade549ac129a3bfbda1503c95f609b526',1,'Utils::Vector2D::Vector2D(double x, double y)'],['../structUtils_1_1Vector2D.html#ac7853b96e79c84d187ef670c924e1fb1',1,'Utils::Vector2D::Vector2D()']]],
-  ['viewabstract_183',['ViewAbstract',['../classViewAbstract.html#ae70e54b453832e601f5332fefb6f4c74',1,'ViewAbstract']]]
+  ['readinput_209',['readInput',['../classEntity_1_1PlayerShipController.html#a5bb5ec6d9262030be9375ffc8434c896',1,'Entity::PlayerShipController']]],
+  ['registerobserver_210',['registerObserver',['../classSubject.html#ae79704a06089dffc1809c8ac0cd12398',1,'Subject']]],
+  ['removeobserver_211',['removeObserver',['../classSubject.html#ab2b8a1aeb158f75379d3975bc2f96ad0',1,'Subject']]],
+  ['rescalehitbox_212',['reScaleHitbox',['../classUtils_1_1Transformation.html#ab005281330be18ff1cf67c3e51ced6de',1,'Utils::Transformation']]],
+  ['rungame_213',['runGame',['../classGame.html#abc9436a9d18e48c6e1e4fbc4ea879449',1,'Game']]]
 ];

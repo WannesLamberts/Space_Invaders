@@ -72,13 +72,18 @@ $(function() {
 <div class="title">Entity::PlayerShipController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>the controller of a playership  
+ <a href="classEntity_1_1PlayerShipController.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Entity::PlayerShipController:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classEntity_1_1PlayerShipController.png" usemap="#Entity::PlayerShipController_map" alt=""/>
   <map id="Entity::PlayerShipController_map" name="Entity::PlayerShipController_map">
-<area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="0,168,167,192"/>
+<area href="classEntity_1_1AliveController.html" title="the controller for all objects that can be seen as alive" alt="Entity::AliveController" shape="rect" coords="0,168,167,192"/>
 <area href="classEntity_1_1CollidableController.html" title="the controller for collidable objects" alt="Entity::CollidableController" shape="rect" coords="0,112,167,136"/>
 <area href="classEntity_1_1EntityController.html" title="Controller class for entity this is the interface between entitymodel and entityview." alt="Entity::EntityController" shape="rect" coords="0,56,167,80"/>
 <area href="classControllerAbstract.html" title="superclass of all controllers in the game this is the interface between model en view" alt="ControllerAbstract" shape="rect" coords="0,0,167,24"/>
@@ -88,24 +93,26 @@ Inheritance diagram for Entity::PlayerShipController:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bb5ec6d9262030be9375ffc8434c896"><td class="memItemLeft" align="right" valign="top"><a id="a5bb5ec6d9262030be9375ffc8434c896"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readInput</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#a5bb5ec6d9262030be9375ffc8434c896">readInput</a> ()</td></tr>
+<tr class="memdesc:a5bb5ec6d9262030be9375ffc8434c896"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the input of the keyboard and calls functions moveleft,moveright,shoot accordingly to the input <br /></td></tr>
 <tr class="separator:a5bb5ec6d9262030be9375ffc8434c896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0fac595960d497b704c4fa62ed48cb3"><td class="memItemLeft" align="right" valign="top"><a id="ac0fac595960d497b704c4fa62ed48cb3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerShipController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memitem:ac0fac595960d497b704c4fa62ed48cb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#ac0fac595960d497b704c4fa62ed48cb3">PlayerShipController</a> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memdesc:ac0fac595960d497b704c4fa62ed48cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">contstructor for the playershipcontroller  <a href="classEntity_1_1PlayerShipController.html#ac0fac595960d497b704c4fa62ed48cb3">More...</a><br /></td></tr>
 <tr class="separator:ac0fac595960d497b704c4fa62ed48cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9210cd1bb8f24ade63b423fa31e1518"><td class="memItemLeft" align="right" valign="top"><a id="ae9210cd1bb8f24ade63b423fa31e1518"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#ae9210cd1bb8f24ade63b423fa31e1518">tick</a> ()</td></tr>
-<tr class="memdesc:ae9210cd1bb8f24ade63b423fa31e1518"><td class="mdescLeft">&#160;</td><td class="mdescRight">does what the controller must do every game tick <br /></td></tr>
+<tr class="memdesc:ae9210cd1bb8f24ade63b423fa31e1518"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the input and brings firecooldown down with 1 every tick <br /></td></tr>
 <tr class="separator:ae9210cd1bb8f24ade63b423fa31e1518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6970835c4daf4115924896daed5b6ed"><td class="memItemLeft" align="right" valign="top"><a id="ad6970835c4daf4115924896daed5b6ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#ad6970835c4daf4115924896daed5b6ed">shoot</a> ()</td></tr>
+<tr class="memdesc:ad6970835c4daf4115924896daed5b6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a bullet <br /></td></tr>
 <tr class="separator:ad6970835c4daf4115924896daed5b6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e29b689f2d9e8d1df85edfa828570c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#a50e29b689f2d9e8d1df85edfa828570c">onCollision</a> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; b)</td></tr>
-<tr class="memdesc:a50e29b689f2d9e8d1df85edfa828570c"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function does what must happen when this object collides with controller  <a href="classEntity_1_1PlayerShipController.html#a50e29b689f2d9e8d1df85edfa828570c">More...</a><br /></td></tr>
-<tr class="separator:a50e29b689f2d9e8d1df85edfa828570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58540fe26b5c7b678dc53712d984fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1PlayerShipController.html#ab58540fe26b5c7b678dc53712d984fa2">onCollision</a> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; controller)</td></tr>
+<tr class="memdesc:ab58540fe26b5c7b678dc53712d984fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">does everything a playership moest do when it collides with some other controller  <a href="classEntity_1_1PlayerShipController.html#ab58540fe26b5c7b678dc53712d984fa2">More...</a><br /></td></tr>
+<tr class="separator:ab58540fe26b5c7b678dc53712d984fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1AliveController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1AliveController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1AliveController.html">Entity::AliveController</a></td></tr>
-<tr class="memitem:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="memItemLeft" align="right" valign="top"><a id="a114a701e8601ba0c51f5a1c64f5f71f4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AliveController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memitem:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1AliveController.html#a114a701e8601ba0c51f5a1c64f5f71f4">AliveController</a> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memdesc:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="mdescLeft">&#160;</td><td class="mdescRight">the constructor for a alive controller  <a href="classEntity_1_1AliveController.html#a114a701e8601ba0c51f5a1c64f5f71f4">More...</a><br /></td></tr>
 <tr class="separator:a114a701e8601ba0c51f5a1c64f5f71f4 inherit pub_methods_classEntity_1_1AliveController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1CollidableController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1CollidableController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a></td></tr>
 <tr class="memitem:ae58575acb05614e82c64d0880fe557a1 inherit pub_methods_classEntity_1_1CollidableController"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1CollidableController.html#ae58575acb05614e82c64d0880fe557a1">checkCollision</a> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; controller)</td></tr>
@@ -142,11 +149,55 @@ std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a>
 <tr class="separator:aeb469f80fa4b819b8922e63a9928d1ad inherit pro_attribs_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PlayerShipController_8h_source.html#l00018">18</a> of file <a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a50e29b689f2d9e8d1df85edfa828570c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50e29b689f2d9e8d1df85edfa828570c">&#9670;&nbsp;</a></span>onCollision()</h2>
+<div class="textblock"><p>the controller of a playership </p>
+
+<p class="definition">Definition at line <a class="el" href="PlayerShipController_8h_source.html#l00020">20</a> of file <a class="el" href="PlayerShipController_8h_source.html">PlayerShipController.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac0fac595960d497b704c4fa62ed48cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fac595960d497b704c4fa62ed48cb3">&#9670;&nbsp;</a></span>PlayerShipController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::PlayerShipController::PlayerShipController </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>contstructor for the playershipcontroller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td></td></tr>
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="PlayerShipController_8cpp_source.html#l00029">29</a> of file <a class="el" href="PlayerShipController_8cpp_source.html">PlayerShipController.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : <a class="code" href="classEntity_1_1AliveController.html">Entity::AliveController</a>(<a class="code" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, <a class="code" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab58540fe26b5c7b678dc53712d984fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58540fe26b5c7b678dc53712d984fa2">&#9670;&nbsp;</a></span>onCollision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,10 +220,10 @@ std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a>
 </table>
 </div><div class="memdoc">
 
-<p>this function does what must happen when this object collides with controller </p>
+<p>does everything a playership moest do when it collides with some other controller </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">controllers</td><td></td></tr>
+    <tr><td class="paramname">controller</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -189,6 +240,9 @@ std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a>
 <li>Entity/Collidable/Alive/PlayerShip/<a class="el" href="PlayerShipController_8cpp_source.html">PlayerShipController.cpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassControllerAbstract_html_a9e02164cdd086533e3fd67bdbdce1d5b"><div class="ttname"><a href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">ControllerAbstract::m</a></div><div class="ttdeci">std::shared_ptr&lt; ModelAbstract &gt; m</div><div class="ttdoc">the model of the controller</div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00041">ControllerAbstract.h:41</a></div></div>
+<div class="ttc" id="aclassEntity_1_1AliveController_html"><div class="ttname"><a href="classEntity_1_1AliveController.html">Entity::AliveController</a></div><div class="ttdoc">the controller for all objects that can be seen as alive</div><div class="ttdef"><b>Definition:</b> <a href="AliveController_8h_source.html#l00014">AliveController.h:14</a></div></div>
+<div class="ttc" id="aclassControllerAbstract_html_aeb469f80fa4b819b8922e63a9928d1ad"><div class="ttname"><a href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">ControllerAbstract::v</a></div><div class="ttdeci">std::shared_ptr&lt; ViewAbstract &gt; v</div><div class="ttdoc">the view of the controller</div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00045">ControllerAbstract.h:45</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

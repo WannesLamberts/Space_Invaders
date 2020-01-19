@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1AliveController}{}\doxysection{Entity\+::Alive\+Controller Class Reference}
 \label{classEntity_1_1AliveController}\index{Entity::AliveController@{Entity::AliveController}}
+
+
+the controller for all objects that can be seen as alive  
+
+
+
+
+{\ttfamily \#include $<$Alive\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Alive\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,17 +18,47 @@ Inheritance diagram for Entity\+::Alive\+Controller\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}\label{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}} 
-{\bfseries Alive\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}{Alive\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em the constructor for a alive controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the controller for all objects that can be seen as alive 
+
+Definition at line 14 of file Alive\+Controller.\+h.
 
 
-Definition at line 12 of file Alive\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}\label{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}} 
+\index{Entity::AliveController@{Entity::AliveController}!AliveController@{AliveController}}
+\index{AliveController@{AliveController}!Entity::AliveController@{Entity::AliveController}}
+\doxysubsubsection{\texorpdfstring{AliveController()}{AliveController()}}
+{\footnotesize\ttfamily Entity\+::\+Alive\+Controller\+::\+Alive\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+the constructor for a alive controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file Alive\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12     : \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity::CollidableController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

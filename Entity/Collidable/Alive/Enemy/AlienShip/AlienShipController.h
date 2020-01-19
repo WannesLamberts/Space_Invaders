@@ -12,12 +12,25 @@
 
 namespace Entity{
 
-
+/**
+ * \brief the controller of an alienship
+ */
 class AlienShipController : public Entity::EnemyController
 {
 public:
+        /**
+         * \brief the constructor of an alienshipcontroller
+         * @param m
+         * @param v
+         */
         AlienShipController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+        /**
+         * \brief does the movement and the shooting of an alienship every tick
+         */
         void tick();
+        /**
+         * \brief creates a bullet
+         */
         void shoot();
 
 };

@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['deleteob_138',['deleteob',['../classUtils_1_1ObjectManager.html#a8196375433dd33e1afc982fdba0386fc',1,'Utils::ObjectManager']]],
-  ['deleteobject_139',['deleteObject',['../classUtils_1_1ObjectManager.html#a2bc778e5fe4d63cde65997bf8184bb22',1,'Utils::ObjectManager']]],
-  ['deleteobjects_140',['deleteObjects',['../classUtils_1_1ObjectManager.html#a6b6562c16d017ba3c38bd028696da9cf',1,'Utils::ObjectManager']]],
-  ['draw_141',['draw',['../classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf',1,'Entity::EntityView::draw()'],['../classViewAbstract.html#a6837ba028ab2aac5b4ac07e01be8977a',1,'ViewAbstract::draw()']]],
-  ['drawgame_142',['drawGame',['../classGame.html#ae53fceba1d9bb2aeeaffb4d636ba90e6',1,'Game']]]
+  ['center_157',['center',['../classUtils_1_1Transformation.html#ad0a9540089987c8794a2d58433162565',1,'Utils::Transformation']]],
+  ['changescale_158',['changeScale',['../classEntity_1_1EntityView.html#adf5f026af71d1776b064e0eb7038f65e',1,'Entity::EntityView']]],
+  ['checkcollision_159',['checkCollision',['../classEntity_1_1CollidableController.html#ae58575acb05614e82c64d0880fe557a1',1,'Entity::CollidableController']]],
+  ['collidablecontroller_160',['CollidableController',['../classEntity_1_1CollidableController.html#ab612a1b07f04bb2cd1dddd1105180ab7',1,'Entity::CollidableController']]],
+  ['controllerabstract_161',['ControllerAbstract',['../classControllerAbstract.html#a9ff7d37a76409a65aed7870458b13e5c',1,'ControllerAbstract']]],
+  ['createalienship_162',['createAlienShip',['../classUtils_1_1ObjectManager.html#a1057b4fa1c52d387610a6245839e04e7',1,'Utils::ObjectManager']]],
+  ['createbullet_163',['createBullet',['../classUtils_1_1ObjectManager.html#a5ed06518d2d1f803f6b84261006b4811',1,'Utils::ObjectManager']]],
+  ['createplayership_164',['createPlayerShip',['../classUtils_1_1ObjectManager.html#a1749620e1161b598fddefab873fa4018',1,'Utils::ObjectManager']]],
+  ['createshield_165',['createShield',['../classUtils_1_1ObjectManager.html#a8eab1a6028f7c738dd1d01f0c0d1963a',1,'Utils::ObjectManager']]]
 ];

@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1LifeView}{}\doxysection{Entity\+::Life\+View Class Reference}
 \label{classEntity_1_1LifeView}\index{Entity::LifeView@{Entity::LifeView}}
+
+
+used to display the life of a player\+Ship  
+
+
+
+
+{\ttfamily \#include $<$Life\+View.\+h$>$}
+
 Inheritance diagram for Entity\+::Life\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,29 +18,59 @@ Inheritance diagram for Entity\+::Life\+View\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1LifeView_a54d702f18f458460a7382ac18bf099b7}\label{classEntity_1_1LifeView_a54d702f18f458460a7382ac18bf099b7}} 
-{\bfseries Life\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
-\item 
+\mbox{\hyperlink{classEntity_1_1LifeView_a54d702f18f458460a7382ac18bf099b7}{Life\+View}} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
+\begin{DoxyCompactList}\small\item\em constructor for life\+View \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1LifeView_af84618de2293beecb14b57a8abe6ded6}\label{classEntity_1_1LifeView_af84618de2293beecb14b57a8abe6ded6}} 
 void \mbox{\hyperlink{classEntity_1_1LifeView_af84618de2293beecb14b57a8abe6ded6}{generate\+Shape}} ()
-\begin{DoxyCompactList}\small\item\em generates shape \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em generates the text that displays the life of a playershipmodel \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1LifeView_a994be825af0ddf31b1781b5ac467c843}\label{classEntity_1_1LifeView_a994be825af0ddf31b1781b5ac467c843}} 
 void \mbox{\hyperlink{classEntity_1_1LifeView_a994be825af0ddf31b1781b5ac467c843}{update}} ()
-\begin{DoxyCompactList}\small\item\em changes the position of shape on the screen to the corresponding value in the model \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em sets the text to the current life of the playershipmodel \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1LifeView_af917c0babf29ffb22c79a74d22996f46}\label{classEntity_1_1LifeView_af917c0babf29ffb22c79a74d22996f46}} 
-sf\+::\+Font {\bfseries font}
-\end{DoxyCompactItemize}
+sf\+::\+Font \mbox{\hyperlink{classEntity_1_1LifeView_af917c0babf29ffb22c79a74d22996f46}{font}}
+\begin{DoxyCompactList}\small\item\em the font of the text \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+used to display the life of a player\+Ship 
+
+Definition at line 14 of file Life\+View.\+h.
 
 
-Definition at line 12 of file Life\+View.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1LifeView_a54d702f18f458460a7382ac18bf099b7}\label{classEntity_1_1LifeView_a54d702f18f458460a7382ac18bf099b7}} 
+\index{Entity::LifeView@{Entity::LifeView}!LifeView@{LifeView}}
+\index{LifeView@{LifeView}!Entity::LifeView@{Entity::LifeView}}
+\doxysubsubsection{\texorpdfstring{LifeView()}{LifeView()}}
+{\footnotesize\ttfamily Entity\+::\+Life\+View\+::\+Life\+View (\begin{DoxyParamCaption}\item[{const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{w,  }\item[{std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$}]{model }\end{DoxyParamCaption})}
+
+
+
+constructor for life\+View 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file Life\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                                                                                   : \mbox{\hyperlink{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}{EntityView}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}},\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}}) \{}
+\DoxyCodeLine{8        \mbox{\hyperlink{classEntity_1_1LifeView_af84618de2293beecb14b57a8abe6ded6}{generateShape}}();}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

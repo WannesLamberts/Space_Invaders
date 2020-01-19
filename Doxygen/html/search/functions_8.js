@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['registerobserver_166',['registerObserver',['../classSubject.html#ae79704a06089dffc1809c8ac0cd12398',1,'Subject']]],
-  ['removeobserver_167',['removeObserver',['../classSubject.html#ab2b8a1aeb158f75379d3975bc2f96ad0',1,'Subject']]],
-  ['rescalehitbox_168',['reScaleHitbox',['../classUtils_1_1Transformation.html#ab005281330be18ff1cf67c3e51ced6de',1,'Utils::Transformation']]],
-  ['rungame_169',['runGame',['../classGame.html#abc9436a9d18e48c6e1e4fbc4ea879449',1,'Game']]]
+  ['movedown_198',['moveDown',['../classEntity_1_1EnemyModel.html#aab6733621b05ec6ed12146225997d63c',1,'Entity::EnemyModel']]],
+  ['moveleft_199',['moveLeft',['../classEntity_1_1AliveModel.html#af54c10a1cc03ae8c0a7b198aa2922fa2',1,'Entity::AliveModel']]],
+  ['moveright_200',['moveRight',['../classEntity_1_1AliveModel.html#a2acd6ae99bf4634bb827b9cf3a9d3f5b',1,'Entity::AliveModel']]]
 ];

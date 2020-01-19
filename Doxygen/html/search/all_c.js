@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['setend_67',['setEnd',['../classGame.html#a2da38a05f1ddff329eb1a7441b98c95d',1,'Game']]],
-  ['setenemycount_68',['setEnemycount',['../classUtils_1_1ObjectManager.html#a3be0ee46145b6a44544825b0e81d1aa3',1,'Utils::ObjectManager']]],
-  ['setposition_69',['setPosition',['../classEntity_1_1EntityModel.html#a7f8964ced9ede24806efc18a88be658e',1,'Entity::EntityModel']]],
-  ['setsize_70',['setSize',['../classEntity_1_1EntityModel.html#a557817a4eef083aa0604876c22ac1a57',1,'Entity::EntityModel']]],
-  ['setup_71',['setup',['../classUtils_1_1ObjectManager.html#a03be28faefe2b086b6b8efd418ceaf2a',1,'Utils::ObjectManager']]],
-  ['setupgame_72',['setupgame',['../classGame.html#a3b341189df8fa6269de4b51594f39fc0',1,'Game']]],
-  ['shape_73',['shape',['../classViewAbstract.html#a83e9859c55ca1f5cbfe32619e5351d8c',1,'ViewAbstract']]],
-  ['shieldcontroller_74',['ShieldController',['../classEntity_1_1ShieldController.html',1,'Entity']]],
-  ['shieldmodel_75',['ShieldModel',['../classEntity_1_1ShieldModel.html',1,'Entity']]],
-  ['shieldview_76',['ShieldView',['../classEntity_1_1ShieldView.html',1,'Entity']]],
-  ['size_77',['size',['../classEntity_1_1EntityModel.html#ad0997b52258cb8903d1d2a6bfdbbb770',1,'Entity::EntityModel']]],
-  ['start_78',['start',['../classUtils_1_1StopWatch.html#a6307657657fdea9e3fbd6894f93f3949',1,'Utils::StopWatch']]],
-  ['stopwatch_79',['StopWatch',['../classUtils_1_1StopWatch.html',1,'Utils']]],
-  ['subject_80',['Subject',['../classSubject.html',1,'']]]
+  ['object_63',['Object',['../structUtils_1_1Object.html',1,'Utils::Object'],['../structUtils_1_1Object.html#aa79c531f1d5e77f8e0087c8e24de67c3',1,'Utils::Object::Object(const std::shared_ptr&lt; ViewAbstract &gt; &amp;v, const std::shared_ptr&lt; ModelAbstract &gt; &amp;m, const std::shared_ptr&lt; ControllerAbstract &gt; &amp;c)'],['../structUtils_1_1Object.html#abed32e0060b0afb76e6a44bac5de0230',1,'Utils::Object::Object()']]],
+  ['objectmanager_64',['ObjectManager',['../classUtils_1_1ObjectManager.html',1,'Utils']]],
+  ['observer_65',['Observer',['../classObserver.html',1,'']]],
+  ['observers_66',['observers',['../classSubject.html#ab8b404a56f172645e95d23e86f1b8d95',1,'Subject']]],
+  ['oncollision_67',['onCollision',['../classEntity_1_1EnemyController.html#a3bedc487f6a12cb96c9b3530cda4c1ef',1,'Entity::EnemyController::onCollision()'],['../classEntity_1_1PlayerShipController.html#ab58540fe26b5c7b678dc53712d984fa2',1,'Entity::PlayerShipController::onCollision()'],['../classEntity_1_1BulletController.html#a7e67510b08d7c04de40fbc2b59c0d6f0',1,'Entity::BulletController::onCollision()'],['../classEntity_1_1ShieldController.html#a05e9d69e2dd959c2d41dbd27b3fadd85',1,'Entity::ShieldController::onCollision()']]]
 ];

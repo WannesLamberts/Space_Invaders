@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nextlevel_50',['nextlevel',['../classGame.html#ab0a4b1679513642011b588d9285905dd',1,'Game']]],
-  ['notifyobservers_51',['notifyObservers',['../classEntity_1_1EntityModel.html#a5cb470f2afae411ad0ee18ff7585d980',1,'Entity::EntityModel::notifyObservers()'],['../classSubject.html#adb3adcf5638dda8dbd4b1d4356d02453',1,'Subject::notifyObservers()']]]
+  ['isfriendly_51',['isFriendly',['../classEntity_1_1BulletModel.html#adcb44bdcda50ce31995fea6e248f1f7f',1,'Entity::BulletModel']]],
+  ['isright_52',['isRight',['../classEntity_1_1EnemyModel.html#ac5121168051de3e652704d283067235a',1,'Entity::EnemyModel']]]
 ];

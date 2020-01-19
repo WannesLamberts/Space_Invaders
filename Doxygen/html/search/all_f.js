@@ -1,7 +1,23 @@
 var searchData=
 [
-  ['v_87',['v',['../classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad',1,'ControllerAbstract::v()'],['../structUtils_1_1Object.html#a8477de52c362ed3880918a23c8295e93',1,'Utils::Object::v()']]],
-  ['validposition_88',['validPosition',['../classEntity_1_1EntityModel.html#aafa926edd754207d4ad4c4d8d710a250',1,'Entity::EntityModel']]],
-  ['vector2d_89',['Vector2D',['../structUtils_1_1Vector2D.html',1,'Utils::Vector2D'],['../structUtils_1_1Vector2D.html#ade549ac129a3bfbda1503c95f609b526',1,'Utils::Vector2D::Vector2D(double x, double y)'],['../structUtils_1_1Vector2D.html#ac7853b96e79c84d187ef670c924e1fb1',1,'Utils::Vector2D::Vector2D()']]],
-  ['viewabstract_90',['ViewAbstract',['../classViewAbstract.html',1,'ViewAbstract'],['../classViewAbstract.html#ae70e54b453832e601f5332fefb6f4c74',1,'ViewAbstract::ViewAbstract()']]]
+  ['setend_80',['setEnd',['../classGame.html#a2da38a05f1ddff329eb1a7441b98c95d',1,'Game']]],
+  ['setenemycount_81',['setEnemycount',['../classUtils_1_1ObjectManager.html#a3be0ee46145b6a44544825b0e81d1aa3',1,'Utils::ObjectManager']]],
+  ['setfirecooldown_82',['setFireCooldown',['../classEntity_1_1AliveModel.html#a9314d43ab433fa9ee56c1f11b0d00ee0',1,'Entity::AliveModel']]],
+  ['sethealthpoints_83',['setHealthpoints',['../classEntity_1_1AliveModel.html#a68fb837d01371b4ae533d873d2904613',1,'Entity::AliveModel::setHealthpoints()'],['../classEntity_1_1ShieldModel.html#aaadb2edf61b0375eff564fe69592da67',1,'Entity::ShieldModel::setHealthpoints()']]],
+  ['setposition_84',['setPosition',['../classEntity_1_1EntityModel.html#a7f8964ced9ede24806efc18a88be658e',1,'Entity::EntityModel']]],
+  ['setright_85',['setRight',['../classEntity_1_1EnemyModel.html#ae9522582ce43231ca3e52d19451e8777',1,'Entity::EnemyModel']]],
+  ['setscore_86',['setScore',['../classEntity_1_1PlayerShipModel.html#a0211213d367245d8ba00a66f402d96de',1,'Entity::PlayerShipModel']]],
+  ['setsize_87',['setSize',['../classEntity_1_1EntityModel.html#a557817a4eef083aa0604876c22ac1a57',1,'Entity::EntityModel']]],
+  ['setup_88',['setup',['../classUtils_1_1ObjectManager.html#a03be28faefe2b086b6b8efd418ceaf2a',1,'Utils::ObjectManager']]],
+  ['setupgame_89',['setupgame',['../classGame.html#a3b341189df8fa6269de4b51594f39fc0',1,'Game']]],
+  ['shape_90',['shape',['../classViewAbstract.html#a83e9859c55ca1f5cbfe32619e5351d8c',1,'ViewAbstract']]],
+  ['shieldcontroller_91',['ShieldController',['../classEntity_1_1ShieldController.html',1,'Entity::ShieldController'],['../classEntity_1_1ShieldController.html#a2eece06c654307017f748a23bd63ae6b',1,'Entity::ShieldController::ShieldController()']]],
+  ['shieldmodel_92',['ShieldModel',['../classEntity_1_1ShieldModel.html',1,'Entity::ShieldModel'],['../classEntity_1_1ShieldModel.html#a2605ec261e7b3210a0c306427f5fa56f',1,'Entity::ShieldModel::ShieldModel()']]],
+  ['shieldview_93',['ShieldView',['../classEntity_1_1ShieldView.html',1,'Entity::ShieldView'],['../classEntity_1_1ShieldView.html#a9551db5c26bb834e8db11e2ae5c040bc',1,'Entity::ShieldView::ShieldView()']]],
+  ['shoot_94',['shoot',['../classEntity_1_1AlienShipController.html#afe865bf2e2dd07433c7d5b90352e0841',1,'Entity::AlienShipController::shoot()'],['../classEntity_1_1PlayerShipController.html#ad6970835c4daf4115924896daed5b6ed',1,'Entity::PlayerShipController::shoot()']]],
+  ['size_95',['size',['../classEntity_1_1EntityModel.html#ad0997b52258cb8903d1d2a6bfdbbb770',1,'Entity::EntityModel']]],
+  ['speed_96',['speed',['../classEntity_1_1AliveModel.html#a0951b1d343d0edd862e4fcc5c7b702ae',1,'Entity::AliveModel']]],
+  ['start_97',['start',['../classUtils_1_1StopWatch.html#a6307657657fdea9e3fbd6894f93f3949',1,'Utils::StopWatch']]],
+  ['stopwatch_98',['StopWatch',['../classUtils_1_1StopWatch.html',1,'Utils']]],
+  ['subject_99',['Subject',['../classSubject.html',1,'']]]
 ];

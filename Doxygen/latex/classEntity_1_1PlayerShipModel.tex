@@ -18,15 +18,12 @@ Inheritance diagram for Entity\+::Player\+Ship\+Model\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a5a3c72383624fc9d163017d61a1c5eaf}\label{classEntity_1_1PlayerShipModel_a5a3c72383624fc9d163017d61a1c5eaf}} 
-{\bfseries Player\+Ship\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int healthpoints, double speed)
-\item 
-\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a0211213d367245d8ba00a66f402d96de}\label{classEntity_1_1PlayerShipModel_a0211213d367245d8ba00a66f402d96de}} 
-void {\bfseries set\+Score} (int score)
-\item 
-\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a2e2ed7b71b550013115da3ab6ab2b8c9}\label{classEntity_1_1PlayerShipModel_a2e2ed7b71b550013115da3ab6ab2b8c9}} 
-int {\bfseries get\+Score} () const
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEntity_1_1PlayerShipModel_a5a3c72383624fc9d163017d61a1c5eaf}{Player\+Ship\+Model}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}, double \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})
+\begin{DoxyCompactList}\small\item\em the constructor of Playership\+Model \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1PlayerShipModel_a0211213d367245d8ba00a66f402d96de}{set\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em setter for score \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEntity_1_1PlayerShipModel_a2e2ed7b71b550013115da3ab6ab2b8c9}{get\+Score}} () const
+\begin{DoxyCompactList}\small\item\em getter for score \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -35,6 +32,93 @@ Model of the Player\+Ship handles all the data for Player\+Ship.
 
 Definition at line 13 of file Player\+Ship\+Model.\+h.
 
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a5a3c72383624fc9d163017d61a1c5eaf}\label{classEntity_1_1PlayerShipModel_a5a3c72383624fc9d163017d61a1c5eaf}} 
+\index{Entity::PlayerShipModel@{Entity::PlayerShipModel}!PlayerShipModel@{PlayerShipModel}}
+\index{PlayerShipModel@{PlayerShipModel}!Entity::PlayerShipModel@{Entity::PlayerShipModel}}
+\doxysubsubsection{\texorpdfstring{PlayerShipModel()}{PlayerShipModel()}}
+{\footnotesize\ttfamily Entity\+::\+Player\+Ship\+Model\+::\+Player\+Ship\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position,  }\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size,  }\item[{int}]{healthpoints,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+the constructor of Playership\+Model 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em size} & \\
+\hline
+{\em healthpoints} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file Player\+Ship\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9     : \mbox{\hyperlink{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}{AliveModel}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}, \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11         score=0;}
+\DoxyCodeLine{12         \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{fireCooldown}}=0;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a2e2ed7b71b550013115da3ab6ab2b8c9}\label{classEntity_1_1PlayerShipModel_a2e2ed7b71b550013115da3ab6ab2b8c9}} 
+\index{Entity::PlayerShipModel@{Entity::PlayerShipModel}!getScore@{getScore}}
+\index{getScore@{getScore}!Entity::PlayerShipModel@{Entity::PlayerShipModel}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Entity\+::\+Player\+Ship\+Model\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for score 
+
+\begin{DoxyReturn}{Returns}
+score 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Player\+Ship\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{ \textcolor{keywordflow}{return} score; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1PlayerShipModel_a0211213d367245d8ba00a66f402d96de}\label{classEntity_1_1PlayerShipModel_a0211213d367245d8ba00a66f402d96de}} 
+\index{Entity::PlayerShipModel@{Entity::PlayerShipModel}!setScore@{setScore}}
+\index{setScore@{setScore}!Entity::PlayerShipModel@{Entity::PlayerShipModel}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Entity\+::\+Player\+Ship\+Model\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+setter for score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file Player\+Ship\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                               \{ PlayerShipModel::score = score;}
+\DoxyCodeLine{16 \mbox{\hyperlink{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}{notifyObservers}}();\}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

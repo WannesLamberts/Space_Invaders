@@ -9,11 +9,7 @@
 
 const std::shared_ptr<sf::RenderWindow>& Game::getW() const { return w; }
 
-Game::Game(std::string file,int x,int y)
-{
-        setupgame(file,x,y);
-
-}
+Game::Game(std::string file, int x, int y) { setupgame(file, x, y); }
 void Game::drawGame()
 {
         for (int j = 0; j < Utils::ObjectManager::getInstance().getVisuals().size(); ++j) {
@@ -25,7 +21,7 @@ void Game::drawGame()
 }
 void Game::runGame()
 {
-        sf::Sprite gameover=generateOver();
+        sf::Sprite gameover = generateOver();
         Utils::StopWatch::getInstance().start();
         while (w->isOpen()) {
                 sf::Event event;
@@ -35,7 +31,7 @@ void Game::runGame()
                 }
                 w->clear();
                 drawGame();
-                if(end){
+                if (end) {
                         w->draw(gameover);
                 }
                 w->display();
@@ -49,15 +45,20 @@ void Game::runGame()
                         if (Utils::ObjectManager::getInstance().getEnemycount() == 0) {
                                 nextlevel();
                         }
-
                 }
         }
 }
 void Game::loadLevel(std::string file)
 {
-
         std::ifstream i(file);
         nlohmann::json j;
+        try {
+                if (!i)
+                        throw(file);
+        } catch (std::string text) {
+                std::cout << text << "is not a valid level file standard level will be loaded" << std::endl;
+                i.open("../Files/Games/levels/level0.json");
+        }
         i >> j;
         double speed = j["alienspeed"];
         for (int k = 0; k < j["aliens"].size(); ++k) {
@@ -67,7 +68,6 @@ void Game::loadLevel(std::string file)
                 Utils::Vector2D size = Utils::Vector2D(j["aliens"][k]["size"]["x"], j["aliens"][k]["size"]["y"]);
                 Utils::ObjectManager::getInstance().createAlienShip(position, size, healthpoints, speed);
         }
-
 }
 void Game::nextlevel()
 {
@@ -78,10 +78,18 @@ void Game::nextlevel()
                 end = true;
         }
 }
-void Game::setupgame(std::string file,int x,int y) {
+void Game::setupgame(std::string file, int x, int y)
+{
         end = false;
         std::ifstream i(file);
         nlohmann::json j;
+        try {
+                if (!i)
+                        throw(file);
+        } catch (std::string text) {
+                std::cout << text << " is not a valid gamefile standard gamefile will be loaded" << std::endl;
+                i.open("../Files/Games/Game1.json");
+        }
         i >> j;
         for (int k = 0; k < j["levels"].size(); ++k) {
                 std::string levelname = j["levels"][k]["name"];
@@ -91,23 +99,22 @@ void Game::setupgame(std::string file,int x,int y) {
         Utils::ObjectManager::getInstance().setup(this);
         w = std::make_shared<sf::RenderWindow>(sf::VideoMode(x, y), "SpaceInvaders");
         Utils::ObjectManager::getInstance().createPlayerShip(Utils::Vector2D(0, 2), Utils::Vector2D(1, 0.5), 3, 0.05);
-        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(-3 ,1),Utils::Vector2D(0.7,0.7),3);
-        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D( -1,1),Utils::Vector2D(0.7,0.7),3);
-        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D( 1,1),Utils::Vector2D(0.7,0.7),3);
-        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(3 ,1),Utils::Vector2D(0.7,0.7),3);
+        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(-3, 1), Utils::Vector2D(0.7, 0.7), 3);
+        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(-1, 1), Utils::Vector2D(0.7, 0.7), 3);
+        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(1, 1), Utils::Vector2D(0.7, 0.7), 3);
+        Utils::ObjectManager::getInstance().createShield(Utils::Vector2D(3, 1), Utils::Vector2D(0.7, 0.7), 3);
         currentlevel = 0;
         nextlevel();
-
 }
-sf::Sprite Game::generateOver() {
+sf::Sprite Game::generateOver()
+{
         sf::Sprite gameover;
         texture.loadFromFile("../Files/Sprites/gameover.png");
         gameover.setTexture(texture);
         Utils::Vector2D hitbox = Utils::Transformation::getInstance().reScaleHitbox(
-            Utils::Vector2D(8,6), Utils::Vector2D(w->getSize().x, w->getSize().y),
-            Utils::Vector2D(gameover.getTexture()->getSize().x,
-                            gameover.getTexture()->getSize().y));
-        gameover.setScale(hitbox.x,hitbox.y);
+            Utils::Vector2D(8, 6), Utils::Vector2D(w->getSize().x, w->getSize().y),
+            Utils::Vector2D(gameover.getTexture()->getSize().x, gameover.getTexture()->getSize().y));
+        gameover.setScale(hitbox.x, hitbox.y);
         return gameover;
 }
 void Game::setEnd(bool end) { Game::end = end; }

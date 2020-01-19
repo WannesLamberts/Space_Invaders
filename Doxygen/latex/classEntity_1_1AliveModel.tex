@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1AliveModel}{}\doxysection{Entity\+::Alive\+Model Class Reference}
 \label{classEntity_1_1AliveModel}\index{Entity::AliveModel@{Entity::AliveModel}}
+
+
+Model for all objects that can be seen as living objects.  
+
+
+
+
+{\ttfamily \#include $<$Alive\+Model.\+h$>$}
+
 Inheritance diagram for Entity\+::Alive\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,47 +18,217 @@ Inheritance diagram for Entity\+::Alive\+Model\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}\label{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}} 
-{\bfseries Alive\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int healthpoints, double speed)
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}\label{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}} 
-int {\bfseries get\+Healthpoints} () const
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a68fb837d01371b4ae533d873d2904613}\label{classEntity_1_1AliveModel_a68fb837d01371b4ae533d873d2904613}} 
-void {\bfseries set\+Healthpoints} (int healthpoints)
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_ad37c2b69da6b1c4944f66db2f0cd5447}\label{classEntity_1_1AliveModel_ad37c2b69da6b1c4944f66db2f0cd5447}} 
-int {\bfseries get\+Fire\+Cooldown} () const
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}\label{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}} 
-void {\bfseries set\+Fire\+Cooldown} (int fire\+Cooldown)
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}\label{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}} 
-bool {\bfseries move\+Left} ()
-\item 
-\mbox{\Hypertarget{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}\label{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}} 
-bool {\bfseries move\+Right} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}{Alive\+Model}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}, double \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})
+\begin{DoxyCompactList}\small\item\em constructor for alivemodel \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}{get\+Healthpoints}} () const
+\begin{DoxyCompactList}\small\item\em getter for healthpoints \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1AliveModel_a68fb837d01371b4ae533d873d2904613}{set\+Healthpoints}} (int \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}})
+\begin{DoxyCompactList}\small\item\em setter for healthpoints \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEntity_1_1AliveModel_ad37c2b69da6b1c4944f66db2f0cd5447}{get\+Fire\+Cooldown}} () const
+\begin{DoxyCompactList}\small\item\em getter for firecooldown \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}{set\+Fire\+Cooldown}} (int \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{fire\+Cooldown}})
+\begin{DoxyCompactList}\small\item\em setter for firecooldown \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em moves the model left with speed \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em moves the model right with speed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}\label{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}} 
-int {\bfseries healthpoints}
-\item 
+int \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}
+\begin{DoxyCompactList}\small\item\em the healthpoints \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}\label{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}} 
-int {\bfseries fire\+Cooldown}
-\item 
+int \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{fire\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em how many ticks it takes to be able to fire again \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}\label{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}} 
-double {\bfseries speed}
-\end{DoxyCompactItemize}
+double \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}}
+\begin{DoxyCompactList}\small\item\em the amount that can be moved every tick with moveleft, moveright \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+Model for all objects that can be seen as living objects. 
+
+Definition at line 14 of file Alive\+Model.\+h.
 
 
-Definition at line 12 of file Alive\+Model.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}\label{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!AliveModel@{AliveModel}}
+\index{AliveModel@{AliveModel}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{AliveModel()}{AliveModel()}}
+{\footnotesize\ttfamily Entity\+::\+Alive\+Model\+::\+Alive\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position,  }\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size,  }\item[{int}]{healthpoints,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+constructor for alivemodel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em size} & \\
+\hline
+{\em healthpoints} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21     : \mbox{\hyperlink{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}{EntityModel}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}), \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}(\mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}), \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}}(\mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_ad37c2b69da6b1c4944f66db2f0cd5447}\label{classEntity_1_1AliveModel_ad37c2b69da6b1c4944f66db2f0cd5447}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!getFireCooldown@{getFireCooldown}}
+\index{getFireCooldown@{getFireCooldown}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{getFireCooldown()}{getFireCooldown()}}
+{\footnotesize\ttfamily int Entity\+::\+Alive\+Model\+::get\+Fire\+Cooldown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for firecooldown 
+
+\begin{DoxyReturn}{Returns}
+firecooldown 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{fireCooldown}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}\label{classEntity_1_1AliveModel_acc24cc52f6ab0a056fe3ef4f68b31476}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!getHealthpoints@{getHealthpoints}}
+\index{getHealthpoints@{getHealthpoints}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{getHealthpoints()}{getHealthpoints()}}
+{\footnotesize\ttfamily int Entity\+::\+Alive\+Model\+::get\+Healthpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for healthpoints 
+
+\begin{DoxyReturn}{Returns}
+healthpoints 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}\label{classEntity_1_1AliveModel_af54c10a1cc03ae8c0a7b198aa2922fa2}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily bool Entity\+::\+Alive\+Model\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+moves the model left with speed 
+
+\begin{DoxyReturn}{Returns}
+if the model has moved or not 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}{setPosition}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}} -\/ \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}}, \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}})); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}\label{classEntity_1_1AliveModel_a2acd6ae99bf4634bb827b9cf3a9d3f5b}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily bool Entity\+::\+Alive\+Model\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+moves the model right with speed 
+
+\begin{DoxyReturn}{Returns}
+if the model has moved or not 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}{setPosition}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}} + \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}}, \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}})); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}\label{classEntity_1_1AliveModel_a9314d43ab433fa9ee56c1f11b0d00ee0}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!setFireCooldown@{setFireCooldown}}
+\index{setFireCooldown@{setFireCooldown}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{setFireCooldown()}{setFireCooldown()}}
+{\footnotesize\ttfamily void Entity\+::\+Alive\+Model\+::set\+Fire\+Cooldown (\begin{DoxyParamCaption}\item[{int}]{fire\+Cooldown }\end{DoxyParamCaption})}
+
+
+
+setter for firecooldown 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fire\+Cooldown} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{ \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{AliveModel::fireCooldown}} = \mbox{\hyperlink{classEntity_1_1AliveModel_a06b57ed4a69aa144d23cdf335ff8bc13}{fireCooldown}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1AliveModel_a68fb837d01371b4ae533d873d2904613}\label{classEntity_1_1AliveModel_a68fb837d01371b4ae533d873d2904613}} 
+\index{Entity::AliveModel@{Entity::AliveModel}!setHealthpoints@{setHealthpoints}}
+\index{setHealthpoints@{setHealthpoints}!Entity::AliveModel@{Entity::AliveModel}}
+\doxysubsubsection{\texorpdfstring{setHealthpoints()}{setHealthpoints()}}
+{\footnotesize\ttfamily void Entity\+::\+Alive\+Model\+::set\+Healthpoints (\begin{DoxyParamCaption}\item[{int}]{healthpoints }\end{DoxyParamCaption})}
+
+
+
+setter for healthpoints 
+
+
+\begin{DoxyParams}{Parameters}
+{\em healthpoints} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Alive\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14         \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{AliveModel::healthpoints}} = \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}};}
+\DoxyCodeLine{15         \mbox{\hyperlink{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}{notifyObservers}}();}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

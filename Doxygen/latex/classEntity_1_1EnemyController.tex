@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1EnemyController}{}\doxysection{Entity\+::Enemy\+Controller Class Reference}
 \label{classEntity_1_1EnemyController}\index{Entity::EnemyController@{Entity::EnemyController}}
+
+
+the controller for an enemy  
+
+
+
+
+{\ttfamily \#include $<$Enemy\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Enemy\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,26 +18,56 @@ Inheritance diagram for Entity\+::Enemy\+Controller\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}\label{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}} 
-{\bfseries Enemy\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
-\item 
+\mbox{\hyperlink{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}{Enemy\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em the constructor for an \mbox{\hyperlink{classEntity_1_1EnemyController}{Enemy\+Controller}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}\label{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}} 
 virtual void \mbox{\hyperlink{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}{tick}} ()
-\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
-\begin{DoxyCompactList}\small\item\em this function does what must happen when this object collides with controller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em does the movement an enemy every tick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1EnemyController_a3bedc487f6a12cb96c9b3530cda4c1ef}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ controller)
+\begin{DoxyCompactList}\small\item\em handles the collision between this object and the object with controller controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the controller for an enemy 
+
+Definition at line 14 of file Enemy\+Controller.\+h.
 
 
-Definition at line 12 of file Enemy\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}\label{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}} 
+\index{Entity::EnemyController@{Entity::EnemyController}!EnemyController@{EnemyController}}
+\index{EnemyController@{EnemyController}!Entity::EnemyController@{Entity::EnemyController}}
+\doxysubsubsection{\texorpdfstring{EnemyController()}{EnemyController()}}
+{\footnotesize\ttfamily Entity\+::\+Enemy\+Controller\+::\+Enemy\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+the constructor for an \mbox{\hyperlink{classEntity_1_1EnemyController}{Enemy\+Controller}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file Enemy\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10     : \mbox{\hyperlink{classEntity_1_1AliveController_a114a701e8601ba0c51f5a1c64f5f71f4}{AliveController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}\label{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}} 
+\mbox{\Hypertarget{classEntity_1_1EnemyController_a3bedc487f6a12cb96c9b3530cda4c1ef}\label{classEntity_1_1EnemyController_a3bedc487f6a12cb96c9b3530cda4c1ef}} 
 \index{Entity::EnemyController@{Entity::EnemyController}!onCollision@{onCollision}}
 \index{onCollision@{onCollision}!Entity::EnemyController@{Entity::EnemyController}}
 \doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
@@ -36,11 +75,11 @@ Definition at line 12 of file Enemy\+Controller.\+h.
 
 
 
-this function does what must happen when this object collides with controller 
+handles the collision between this object and the object with controller controller 
 
 
 \begin{DoxyParams}{Parameters}
-{\em controllers} & \\
+{\em controller} & \\
 \hline
 \end{DoxyParams}
 

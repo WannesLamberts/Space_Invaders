@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1BulletController}{}\doxysection{Entity\+::Bullet\+Controller Class Reference}
 \label{classEntity_1_1BulletController}\index{Entity::BulletController@{Entity::BulletController}}
+
+
+the controller of the bullet  
+
+
+
+
+{\ttfamily \#include $<$Bullet\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Bullet\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,24 +20,54 @@ Inheritance diagram for Entity\+::Bullet\+Controller\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}\label{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}} 
 void \mbox{\hyperlink{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}{tick}} ()
-\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}\label{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}} 
-{\bfseries Bullet\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
-\item 
-void \mbox{\hyperlink{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
-\begin{DoxyCompactList}\small\item\em this function does what must happen when this object collides with controller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em let\textquotesingle{}s the bulletmodel travel() every \mbox{\hyperlink{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}{tick()}} and if the bullet goes out of the game adds the bullet to objectstodelete \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}{Bullet\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em constructor for bulletcontroller \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1BulletController_a7e67510b08d7c04de40fbc2b59c0d6f0}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ controller)
+\begin{DoxyCompactList}\small\item\em handles the collision for bullet between bullet and controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the controller of the bullet 
+
+Definition at line 13 of file Bullet\+Controller.\+h.
 
 
-Definition at line 11 of file Bullet\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}\label{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}} 
+\index{Entity::BulletController@{Entity::BulletController}!BulletController@{BulletController}}
+\index{BulletController@{BulletController}!Entity::BulletController@{Entity::BulletController}}
+\doxysubsubsection{\texorpdfstring{BulletController()}{BulletController()}}
+{\footnotesize\ttfamily Entity\+::\+Bullet\+Controller\+::\+Bullet\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+constructor for bulletcontroller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file Bullet\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18     : \mbox{\hyperlink{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}{CollidableController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}\label{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}} 
+\mbox{\Hypertarget{classEntity_1_1BulletController_a7e67510b08d7c04de40fbc2b59c0d6f0}\label{classEntity_1_1BulletController_a7e67510b08d7c04de40fbc2b59c0d6f0}} 
 \index{Entity::BulletController@{Entity::BulletController}!onCollision@{onCollision}}
 \index{onCollision@{onCollision}!Entity::BulletController@{Entity::BulletController}}
 \doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
@@ -36,11 +75,11 @@ Definition at line 11 of file Bullet\+Controller.\+h.
 
 
 
-this function does what must happen when this object collides with controller 
+handles the collision for bullet between bullet and controller 
 
 
 \begin{DoxyParams}{Parameters}
-{\em controllers} & \\
+{\em controller} & \\
 \hline
 \end{DoxyParams}
 

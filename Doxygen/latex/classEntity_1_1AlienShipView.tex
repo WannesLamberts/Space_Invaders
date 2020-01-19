@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1AlienShipView}{}\doxysection{Entity\+::Alien\+Ship\+View Class Reference}
 \label{classEntity_1_1AlienShipView}\index{Entity::AlienShipView@{Entity::AlienShipView}}
+
+
+the view of an alienship  
+
+
+
+
+{\ttfamily \#include $<$Alien\+Ship\+View.\+h$>$}
+
 Inheritance diagram for Entity\+::Alien\+Ship\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,12 +18,11 @@ Inheritance diagram for Entity\+::Alien\+Ship\+View\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1AlienShipView_a90f4cbe49b3a8d6bdfe3ecd77c895a68}\label{classEntity_1_1AlienShipView_a90f4cbe49b3a8d6bdfe3ecd77c895a68}} 
-{\bfseries Alien\+Ship\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
-\item 
+\mbox{\hyperlink{classEntity_1_1AlienShipView_a90f4cbe49b3a8d6bdfe3ecd77c895a68}{Alien\+Ship\+View}} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
+\begin{DoxyCompactList}\small\item\em the constructor of an alienshipview \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1AlienShipView_a021ea3a89b456f430ae64b2c822370fa}\label{classEntity_1_1AlienShipView_a021ea3a89b456f430ae64b2c822370fa}} 
 void \mbox{\hyperlink{classEntity_1_1AlienShipView_a021ea3a89b456f430ae64b2c822370fa}{generate\+Shape}} ()
-\begin{DoxyCompactList}\small\item\em generates shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em generetates the drawable of an alienshipview \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,10 +33,41 @@ sf\+::\+Texture \mbox{\hyperlink{classEntity_1_1AlienShipView_afe637ba5d24faf5cc
 
 
 \doxysubsection{Detailed Description}
+the view of an alienship 
+
+Definition at line 12 of file Alien\+Ship\+View.\+h.
 
 
-Definition at line 10 of file Alien\+Ship\+View.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1AlienShipView_a90f4cbe49b3a8d6bdfe3ecd77c895a68}\label{classEntity_1_1AlienShipView_a90f4cbe49b3a8d6bdfe3ecd77c895a68}} 
+\index{Entity::AlienShipView@{Entity::AlienShipView}!AlienShipView@{AlienShipView}}
+\index{AlienShipView@{AlienShipView}!Entity::AlienShipView@{Entity::AlienShipView}}
+\doxysubsubsection{\texorpdfstring{AlienShipView()}{AlienShipView()}}
+{\footnotesize\ttfamily Entity\+::\+Alien\+Ship\+View\+::\+Alien\+Ship\+View (\begin{DoxyParamCaption}\item[{const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{w,  }\item[{std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$}]{model }\end{DoxyParamCaption})}
+
+
+
+the constructor of an alienshipview 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 7 of file Alien\+Ship\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                                                                                             : \mbox{\hyperlink{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}{EntityView}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}},\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}}) \{}
+\DoxyCodeLine{8         \mbox{\hyperlink{classEntity_1_1AlienShipView_a021ea3a89b456f430ae64b2c822370fa}{generateShape}}();}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1EnemyModel}{}\doxysection{Entity\+::Enemy\+Model Class Reference}
 \label{classEntity_1_1EnemyModel}\index{Entity::EnemyModel@{Entity::EnemyModel}}
+
+
+the model of enemy  
+
+
+
+
+{\ttfamily \#include $<$Enemy\+Model.\+h$>$}
+
 Inheritance diagram for Entity\+::Enemy\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,32 +18,137 @@ Inheritance diagram for Entity\+::Enemy\+Model\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EnemyModel_ac5121168051de3e652704d283067235a}\label{classEntity_1_1EnemyModel_ac5121168051de3e652704d283067235a}} 
-bool {\bfseries is\+Right} () const
-\item 
-\mbox{\Hypertarget{classEntity_1_1EnemyModel_ae9522582ce43231ca3e52d19451e8777}\label{classEntity_1_1EnemyModel_ae9522582ce43231ca3e52d19451e8777}} 
-void {\bfseries set\+Right} (bool right)
-\item 
-\mbox{\Hypertarget{classEntity_1_1EnemyModel_aab6733621b05ec6ed12146225997d63c}\label{classEntity_1_1EnemyModel_aab6733621b05ec6ed12146225997d63c}} 
-bool {\bfseries move\+Down} ()
-\item 
-\mbox{\Hypertarget{classEntity_1_1EnemyModel_aaa76098e1006b009e2e2121eb4111e7f}\label{classEntity_1_1EnemyModel_aaa76098e1006b009e2e2121eb4111e7f}} 
-{\bfseries Enemy\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int healthpoints, double speed)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEntity_1_1EnemyModel_ac5121168051de3e652704d283067235a}{is\+Right}} () const
+\begin{DoxyCompactList}\small\item\em getter for right \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1EnemyModel_ae9522582ce43231ca3e52d19451e8777}{set\+Right}} (bool \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{right}})
+\begin{DoxyCompactList}\small\item\em setter for right \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_1_1EnemyModel_aab6733621b05ec6ed12146225997d63c}{move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em let the model move down with speed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1EnemyModel_aaa76098e1006b009e2e2121eb4111e7f}{Enemy\+Model}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, int \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}, double \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})
+\begin{DoxyCompactList}\small\item\em the constructor for \mbox{\hyperlink{classEntity_1_1EnemyModel}{Enemy\+Model}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}\label{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}} 
-bool {\bfseries right}
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{right}}
+\begin{DoxyCompactList}\small\item\em is the model moving to the right or not \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the model of enemy 
+
+Definition at line 12 of file Enemy\+Model.\+h.
 
 
-Definition at line 9 of file Enemy\+Model.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EnemyModel_aaa76098e1006b009e2e2121eb4111e7f}\label{classEntity_1_1EnemyModel_aaa76098e1006b009e2e2121eb4111e7f}} 
+\index{Entity::EnemyModel@{Entity::EnemyModel}!EnemyModel@{EnemyModel}}
+\index{EnemyModel@{EnemyModel}!Entity::EnemyModel@{Entity::EnemyModel}}
+\doxysubsubsection{\texorpdfstring{EnemyModel()}{EnemyModel()}}
+{\footnotesize\ttfamily Entity\+::\+Enemy\+Model\+::\+Enemy\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position,  }\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size,  }\item[{int}]{healthpoints,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+the constructor for \mbox{\hyperlink{classEntity_1_1EnemyModel}{Enemy\+Model}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em size} & \\
+\hline
+{\em healthpoints} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Enemy\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8     : \mbox{\hyperlink{classEntity_1_1AliveModel_a37c7e2bcc741a7a8defa54f109f3acfa}{AliveModel}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, \mbox{\hyperlink{classEntity_1_1AliveModel_a855d2552f6c597ac737a36935481bd44}{healthpoints}}, \mbox{\hyperlink{classEntity_1_1AliveModel_a0951b1d343d0edd862e4fcc5c7b702ae}{speed}})}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10         \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{right}}=\textcolor{keyword}{true};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1EnemyModel_ac5121168051de3e652704d283067235a}\label{classEntity_1_1EnemyModel_ac5121168051de3e652704d283067235a}} 
+\index{Entity::EnemyModel@{Entity::EnemyModel}!isRight@{isRight}}
+\index{isRight@{isRight}!Entity::EnemyModel@{Entity::EnemyModel}}
+\doxysubsubsection{\texorpdfstring{isRight()}{isRight()}}
+{\footnotesize\ttfamily bool Entity\+::\+Enemy\+Model\+::is\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for right 
+
+\begin{DoxyReturn}{Returns}
+right 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Enemy\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{right}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EnemyModel_aab6733621b05ec6ed12146225997d63c}\label{classEntity_1_1EnemyModel_aab6733621b05ec6ed12146225997d63c}} 
+\index{Entity::EnemyModel@{Entity::EnemyModel}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Entity::EnemyModel@{Entity::EnemyModel}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily bool Entity\+::\+Enemy\+Model\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+let the model move down with speed 
+
+\begin{DoxyReturn}{Returns}
+if the model has moved down or not 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Enemy\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                 \{         \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}{setPosition}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(\mbox{\hyperlink{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}{getPosition}}().x,\mbox{\hyperlink{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}{getPosition}}().y+0.5));}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EnemyModel_ae9522582ce43231ca3e52d19451e8777}\label{classEntity_1_1EnemyModel_ae9522582ce43231ca3e52d19451e8777}} 
+\index{Entity::EnemyModel@{Entity::EnemyModel}!setRight@{setRight}}
+\index{setRight@{setRight}!Entity::EnemyModel@{Entity::EnemyModel}}
+\doxysubsubsection{\texorpdfstring{setRight()}{setRight()}}
+{\footnotesize\ttfamily void Entity\+::\+Enemy\+Model\+::set\+Right (\begin{DoxyParamCaption}\item[{bool}]{right }\end{DoxyParamCaption})}
+
+
+
+setter for right 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file Enemy\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{ \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{EnemyModel::right}} = \mbox{\hyperlink{classEntity_1_1EnemyModel_af1527e89e66510a37b374b396254ac4d}{right}}; \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

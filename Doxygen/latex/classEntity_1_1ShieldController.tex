@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1ShieldController}{}\doxysection{Entity\+::Shield\+Controller Class Reference}
 \label{classEntity_1_1ShieldController}\index{Entity::ShieldController@{Entity::ShieldController}}
+
+
+controller for the shield class  
+
+
+
+
+{\ttfamily \#include $<$Shield\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Shield\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,9 +18,8 @@ Inheritance diagram for Entity\+::Shield\+Controller\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1ShieldController_a2eece06c654307017f748a23bd63ae6b}\label{classEntity_1_1ShieldController_a2eece06c654307017f748a23bd63ae6b}} 
-{\bfseries Shield\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
-\item 
+\mbox{\hyperlink{classEntity_1_1ShieldController_a2eece06c654307017f748a23bd63ae6b}{Shield\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em constructor for the shieldcontroller \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1ShieldController_ae731959c4d37acbcf22b3c3841b49109}\label{classEntity_1_1ShieldController_ae731959c4d37acbcf22b3c3841b49109}} 
 void \mbox{\hyperlink{classEntity_1_1ShieldController_ae731959c4d37acbcf22b3c3841b49109}{tick}} ()
 \begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
@@ -21,10 +29,41 @@ void \mbox{\hyperlink{classEntity_1_1ShieldController_a05e9d69e2dd959c2d41dbd27b
 
 
 \doxysubsection{Detailed Description}
+controller for the shield class 
+
+Definition at line 14 of file Shield\+Controller.\+h.
 
 
-Definition at line 11 of file Shield\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1ShieldController_a2eece06c654307017f748a23bd63ae6b}\label{classEntity_1_1ShieldController_a2eece06c654307017f748a23bd63ae6b}} 
+\index{Entity::ShieldController@{Entity::ShieldController}!ShieldController@{ShieldController}}
+\index{ShieldController@{ShieldController}!Entity::ShieldController@{Entity::ShieldController}}
+\doxysubsubsection{\texorpdfstring{ShieldController()}{ShieldController()}}
+{\footnotesize\ttfamily Entity\+::\+Shield\+Controller\+::\+Shield\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+constructor for the shieldcontroller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Shield\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8     : \mbox{\hyperlink{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}{CollidableController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
@@ -32,7 +71,7 @@ Definition at line 11 of file Shield\+Controller.\+h.
 \index{Entity::ShieldController@{Entity::ShieldController}!onCollision@{onCollision}}
 \index{onCollision@{onCollision}!Entity::ShieldController@{Entity::ShieldController}}
 \doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
-{\footnotesize\ttfamily void Entity\+::\+Shield\+Controller\+::on\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Entity\+::\+Shield\+Controller\+::on\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -40,7 +79,7 @@ this function does what must happen when this object collides with controller
 
 
 \begin{DoxyParams}{Parameters}
-{\em controllers} & \\
+{\em controller} & \\
 \hline
 \end{DoxyParams}
 

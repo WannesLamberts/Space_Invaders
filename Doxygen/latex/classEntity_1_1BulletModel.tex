@@ -1,5 +1,14 @@
 \hypertarget{classEntity_1_1BulletModel}{}\doxysection{Entity\+::Bullet\+Model Class Reference}
 \label{classEntity_1_1BulletModel}\index{Entity::BulletModel@{Entity::BulletModel}}
+
+
+the model of a bullet  
+
+
+
+
+{\ttfamily \#include $<$Bullet\+Model.\+h$>$}
+
 Inheritance diagram for Entity\+::Bullet\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,23 +18,105 @@ Inheritance diagram for Entity\+::Bullet\+Model\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1BulletModel_a0f0aec495706c300776a3062b7f85268}\label{classEntity_1_1BulletModel_a0f0aec495706c300776a3062b7f85268}} 
-bool {\bfseries travel} ()
-\item 
-\mbox{\Hypertarget{classEntity_1_1BulletModel_a263bb03a585c20c92064739699e5847e}\label{classEntity_1_1BulletModel_a263bb03a585c20c92064739699e5847e}} 
-{\bfseries Bullet\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, double speed, bool friendly)
-\item 
-\mbox{\Hypertarget{classEntity_1_1BulletModel_adcb44bdcda50ce31995fea6e248f1f7f}\label{classEntity_1_1BulletModel_adcb44bdcda50ce31995fea6e248f1f7f}} 
-bool {\bfseries is\+Friendly} () const
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEntity_1_1BulletModel_a0f0aec495706c300776a3062b7f85268}{travel}} ()
+\begin{DoxyCompactList}\small\item\em let\textquotesingle{}s the bullet fly \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1BulletModel_a263bb03a585c20c92064739699e5847e}{Bullet\+Model}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}, double speed, bool friendly)
+\begin{DoxyCompactList}\small\item\em constructor for the bullet \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_1_1BulletModel_adcb44bdcda50ce31995fea6e248f1f7f}{is\+Friendly}} () const
+\begin{DoxyCompactList}\small\item\em getter for friendly \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the model of a bullet 
+
+Definition at line 14 of file Bullet\+Model.\+h.
 
 
-Definition at line 10 of file Bullet\+Model.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1BulletModel_a263bb03a585c20c92064739699e5847e}\label{classEntity_1_1BulletModel_a263bb03a585c20c92064739699e5847e}} 
+\index{Entity::BulletModel@{Entity::BulletModel}!BulletModel@{BulletModel}}
+\index{BulletModel@{BulletModel}!Entity::BulletModel@{Entity::BulletModel}}
+\doxysubsubsection{\texorpdfstring{BulletModel()}{BulletModel()}}
+{\footnotesize\ttfamily Entity\+::\+Bullet\+Model\+::\+Bullet\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position,  }\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size,  }\item[{double}]{speed,  }\item[{bool}]{friendly }\end{DoxyParamCaption})}
+
+
+
+constructor for the bullet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em size} & \\
+\hline
+{\em speed} & \\
+\hline
+{\em friendly} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file Bullet\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12     : \mbox{\hyperlink{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}{EntityModel}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}), speed(speed),friendly(friendly)}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1BulletModel_adcb44bdcda50ce31995fea6e248f1f7f}\label{classEntity_1_1BulletModel_adcb44bdcda50ce31995fea6e248f1f7f}} 
+\index{Entity::BulletModel@{Entity::BulletModel}!isFriendly@{isFriendly}}
+\index{isFriendly@{isFriendly}!Entity::BulletModel@{Entity::BulletModel}}
+\doxysubsubsection{\texorpdfstring{isFriendly()}{isFriendly()}}
+{\footnotesize\ttfamily bool Entity\+::\+Bullet\+Model\+::is\+Friendly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for friendly 
+
+\begin{DoxyReturn}{Returns}
+friendly 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Bullet\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{ \textcolor{keywordflow}{return} friendly; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1BulletModel_a0f0aec495706c300776a3062b7f85268}\label{classEntity_1_1BulletModel_a0f0aec495706c300776a3062b7f85268}} 
+\index{Entity::BulletModel@{Entity::BulletModel}!travel@{travel}}
+\index{travel@{travel}!Entity::BulletModel@{Entity::BulletModel}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily bool Entity\+::\+Bullet\+Model\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+let\textquotesingle{}s the bullet fly 
+
+\begin{DoxyReturn}{Returns}
+a boolean that says if the bullet has moved or not 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Bullet\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                \{}
+\DoxyCodeLine{8         \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}{setPosition}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}}, \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}}-\/speed));}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
