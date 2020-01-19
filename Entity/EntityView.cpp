@@ -9,7 +9,8 @@ void Entity::EntityView::update()
 {
         Utils::Vector2D v = Utils::Vector2D(Utils::Transformation::getInstance().transAndCenter(
             std::dynamic_pointer_cast<EntityModel>(model.lock())->getPosition(),
-            Utils::Vector2D(w->getSize().x, w->getSize().y), std::dynamic_pointer_cast<EntityModel>(model.lock())->getSize()));
+            Utils::Vector2D(w->getSize().x, w->getSize().y),
+            std::dynamic_pointer_cast<EntityModel>(model.lock())->getSize()));
         if (std::dynamic_pointer_cast<sf::Sprite>(shape)) {
                 std::dynamic_pointer_cast<sf::Sprite>(shape)->setPosition(v.x, v.y);
         } else if (std::dynamic_pointer_cast<sf::Text>(shape)) {
@@ -18,7 +19,7 @@ void Entity::EntityView::update()
 }
 
 Entity::EntityView::EntityView(const std::__shared_ptr<sf::RenderWindow>& w, std::weak_ptr<ModelAbstract> model)
-    : ViewAbstract(w),model(model)
+    : ViewAbstract(w), model(model)
 {
 }
 void Entity::EntityView::changeScale(Utils::Vector2D cor)

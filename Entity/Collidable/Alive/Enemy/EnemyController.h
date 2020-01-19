@@ -6,12 +6,12 @@
 #define SPACE_INVADERS_ENEMYCONTROLLER_H
 #include "../AliveController.h"
 #include "EnemyModel.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief the controller for an enemy
  */
-class EnemyController: public Entity::AliveController,public std::enable_shared_from_this<Entity::EnemyController>
+class EnemyController : public Entity::AliveController, public std::enable_shared_from_this<Entity::EnemyController>
 {
 public:
         /**
@@ -29,7 +29,6 @@ public:
          * @param controller
          */
         void onCollision(std::shared_ptr<Entity::CollidableController> controller);
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ENEMYCONTROLLER_H

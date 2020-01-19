@@ -68,10 +68,7 @@ Definition at line 12 of file Game.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13 \{}
-\DoxyCodeLine{14         \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame}}(file,x,y);}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16 \}}
+\DoxyCodeLine{12 \{ \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame}}(file, x, y); \}}
 
 \end{DoxyCode}
 
@@ -92,21 +89,20 @@ ths game over sprite
 \end{DoxyReturn}
 
 
-Definition at line 101 of file Game.\+cpp.
+Definition at line 109 of file Game.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{101                             \{}
-\DoxyCodeLine{102         sf::Sprite gameover;}
-\DoxyCodeLine{103         texture.loadFromFile(\textcolor{stringliteral}{"../Files/Sprites/gameover.png"});}
-\DoxyCodeLine{104         gameover.setTexture(texture);}
-\DoxyCodeLine{105         \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} hitbox = \mbox{\hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{Utils::Transformation::getInstance}}().\mbox{\hyperlink{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}{reScaleHitbox}}(}
-\DoxyCodeLine{106             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(8,6), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(w-\/>getSize().x, w-\/>getSize().y),}
-\DoxyCodeLine{107             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(gameover.getTexture()-\/>getSize().x,}
-\DoxyCodeLine{108                             gameover.getTexture()-\/>getSize().y));}
-\DoxyCodeLine{109         gameover.setScale(hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}},hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}});}
-\DoxyCodeLine{110         \textcolor{keywordflow}{return} gameover;}
-\DoxyCodeLine{111 \}}
+\DoxyCodeLine{110 \{}
+\DoxyCodeLine{111         sf::Sprite gameover;}
+\DoxyCodeLine{112         texture.loadFromFile(\textcolor{stringliteral}{"../Files/Sprites/gameover.png"});}
+\DoxyCodeLine{113         gameover.setTexture(texture);}
+\DoxyCodeLine{114         \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} hitbox = \mbox{\hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{Utils::Transformation::getInstance}}().\mbox{\hyperlink{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}{reScaleHitbox}}(}
+\DoxyCodeLine{115             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(8, 6), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(w-\/>getSize().x, w-\/>getSize().y),}
+\DoxyCodeLine{116             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(gameover.getTexture()-\/>getSize().x, gameover.getTexture()-\/>getSize().y));}
+\DoxyCodeLine{117         gameover.setScale(hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}}, hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}});}
+\DoxyCodeLine{118         \textcolor{keywordflow}{return} gameover;}
+\DoxyCodeLine{119 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGame_a403866a794a2ff44570682f903d1c773}\label{classGame_a403866a794a2ff44570682f903d1c773}} 
@@ -148,24 +144,30 @@ loads the level in with the jsonfile file creates the objects mentionned in the 
 \end{DoxyParams}
 
 
-Definition at line 56 of file Game.\+cpp.
+Definition at line 51 of file Game.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{57 \{}
-\DoxyCodeLine{58         std::ifstream i(file);}
-\DoxyCodeLine{59         nlohmann::json j;}
-\DoxyCodeLine{60         i >> j;}
-\DoxyCodeLine{61         \textcolor{keywordtype}{double} speed = j[\textcolor{stringliteral}{"alienspeed"}];}
-\DoxyCodeLine{62         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"aliens"}].size(); ++k) \{}
-\DoxyCodeLine{63                 \textcolor{keywordtype}{double} healthpoints = j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"healthpoints"}];}
-\DoxyCodeLine{64                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} position =}
-\DoxyCodeLine{65                     \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}]);}
-\DoxyCodeLine{66                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} size = \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"y"}]);}
-\DoxyCodeLine{67                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}{createAlienShip}}(position, size, healthpoints, speed);}
-\DoxyCodeLine{68         \}}
-\DoxyCodeLine{69 }
-\DoxyCodeLine{70 \}}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53         std::ifstream i(file);}
+\DoxyCodeLine{54         nlohmann::json j;}
+\DoxyCodeLine{55         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{56                 \textcolor{keywordflow}{if} (!i)}
+\DoxyCodeLine{57                         \textcolor{keywordflow}{throw}(file);}
+\DoxyCodeLine{58         \} \textcolor{keywordflow}{catch} (std::string text) \{}
+\DoxyCodeLine{59                 std::cout << text << \textcolor{stringliteral}{"is not a valid level file standard level will be loaded"} << std::endl;}
+\DoxyCodeLine{60                 i.open(\textcolor{stringliteral}{"../Files/Games/levels/level0.json"});}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62         i >> j;}
+\DoxyCodeLine{63         \textcolor{keywordtype}{double} speed = j[\textcolor{stringliteral}{"alienspeed"}];}
+\DoxyCodeLine{64         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"aliens"}].size(); ++k) \{}
+\DoxyCodeLine{65                 \textcolor{keywordtype}{double} healthpoints = j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"healthpoints"}];}
+\DoxyCodeLine{66                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} position =}
+\DoxyCodeLine{67                     \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}]);}
+\DoxyCodeLine{68                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} size = \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"y"}]);}
+\DoxyCodeLine{69                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}{createAlienShip}}(position, size, healthpoints, speed);}
+\DoxyCodeLine{70         \}}
+\DoxyCodeLine{71 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGame_a2da38a05f1ddff329eb1a7441b98c95d}\label{classGame_a2da38a05f1ddff329eb1a7441b98c95d}} 
@@ -185,11 +187,11 @@ setter for end
 \end{DoxyParams}
 
 
-Definition at line 112 of file Game.\+cpp.
+Definition at line 120 of file Game.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{112 \{ Game::end = end; \}}
+\DoxyCodeLine{120 \{ Game::end = end; \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGame_a3b341189df8fa6269de4b51594f39fc0}\label{classGame_a3b341189df8fa6269de4b51594f39fc0}} 
@@ -213,31 +215,37 @@ reads in the first level and creates the playership and shields and creates the 
 \end{DoxyParams}
 
 
-Definition at line 80 of file Game.\+cpp.
+Definition at line 81 of file Game.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{80                                                \{}
-\DoxyCodeLine{81         end = \textcolor{keyword}{false};}
-\DoxyCodeLine{82         std::ifstream i(file);}
-\DoxyCodeLine{83         nlohmann::json j;}
-\DoxyCodeLine{84         i >> j;}
-\DoxyCodeLine{85         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"levels"}].size(); ++k) \{}
-\DoxyCodeLine{86                 std::string levelname = j[\textcolor{stringliteral}{"levels"}][k][\textcolor{stringliteral}{"name"}];}
-\DoxyCodeLine{87                 levels.push\_back(levelname);}
-\DoxyCodeLine{88         \}}
-\DoxyCodeLine{89         srand(time(NULL));}
-\DoxyCodeLine{90         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}{setup}}(\textcolor{keyword}{this});}
-\DoxyCodeLine{91         w = std::make\_shared<sf::RenderWindow>(sf::VideoMode(x, y), \textcolor{stringliteral}{"SpaceInvaders"});}
-\DoxyCodeLine{92         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}{createPlayerShip}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0, 2), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(1, 0.5), 3, 0.05);}
-\DoxyCodeLine{93         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(-\/3 ,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
-\DoxyCodeLine{94         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}( -\/1,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
-\DoxyCodeLine{95         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}( 1,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
-\DoxyCodeLine{96         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(3 ,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
-\DoxyCodeLine{97         currentlevel = 0;}
-\DoxyCodeLine{98         \mbox{\hyperlink{classGame_ab0a4b1679513642011b588d9285905dd}{nextlevel}}();}
-\DoxyCodeLine{99 }
-\DoxyCodeLine{100 \}}
+\DoxyCodeLine{82 \{}
+\DoxyCodeLine{83         end = \textcolor{keyword}{false};}
+\DoxyCodeLine{84         std::ifstream i(file);}
+\DoxyCodeLine{85         nlohmann::json j;}
+\DoxyCodeLine{86         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{if} (!i)}
+\DoxyCodeLine{88                         \textcolor{keywordflow}{throw}(file);}
+\DoxyCodeLine{89         \} \textcolor{keywordflow}{catch} (std::string text) \{}
+\DoxyCodeLine{90                 std::cout << text << \textcolor{stringliteral}{" is not a valid gamefile standard gamefile will be loaded"} << std::endl;}
+\DoxyCodeLine{91                 i.open(\textcolor{stringliteral}{"../Files/Games/Game1.json"});}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93         i >> j;}
+\DoxyCodeLine{94         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"levels"}].size(); ++k) \{}
+\DoxyCodeLine{95                 std::string levelname = j[\textcolor{stringliteral}{"levels"}][k][\textcolor{stringliteral}{"name"}];}
+\DoxyCodeLine{96                 levels.push\_back(levelname);}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         srand(time(NULL));}
+\DoxyCodeLine{99         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}{setup}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{100         w = std::make\_shared<sf::RenderWindow>(sf::VideoMode(x, y), \textcolor{stringliteral}{"SpaceInvaders"});}
+\DoxyCodeLine{101         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}{createPlayerShip}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0, 2), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(1, 0.5), 3, 0.05);}
+\DoxyCodeLine{102         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(-\/3, 1), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7, 0.7), 3);}
+\DoxyCodeLine{103         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(-\/1, 1), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7, 0.7), 3);}
+\DoxyCodeLine{104         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(1, 1), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7, 0.7), 3);}
+\DoxyCodeLine{105         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(3, 1), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7, 0.7), 3);}
+\DoxyCodeLine{106         currentlevel = 0;}
+\DoxyCodeLine{107         \mbox{\hyperlink{classGame_ab0a4b1679513642011b588d9285905dd}{nextlevel}}();}
+\DoxyCodeLine{108 \}}
 
 \end{DoxyCode}
 

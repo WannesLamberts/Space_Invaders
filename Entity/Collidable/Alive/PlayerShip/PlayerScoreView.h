@@ -7,7 +7,7 @@
 
 #include "../../../EntityView.h"
 #include "PlayerShipModel.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief used to display the score of a playership
@@ -20,7 +20,7 @@ public:
          * @param w
          * @param model
          */
-        PlayerScoreView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model);
+        PlayerScoreView(const std::__shared_ptr<sf::RenderWindow>& w, std::weak_ptr<ModelAbstract> model);
         /**
          * \brief generates the text to display te score
          */
@@ -33,7 +33,6 @@ public:
          * \brief the font of the text
          */
         sf::Font font;
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_PLAYERSCOREVIEW_H

@@ -19,8 +19,7 @@ Utils::Vector2D Utils::Transformation::center(Utils::Vector2D m, Utils::Vector2D
 }
 Utils::Vector2D Utils::Transformation::reScaleHitbox(Utils::Vector2D cor, Utils::Vector2D w, Utils::Vector2D t)
 {
-        Utils::Vector2D v = Vector2D((((float)w.x / 8) / t.x) * cor.x,
-                                     (((float)w.y / 6) / t.y) * cor.y);
+        Utils::Vector2D v = Vector2D((((float)w.x / 8) / t.x) * cor.x, (((float)w.y / 6) / t.y) * cor.y);
 
         return v;
 }

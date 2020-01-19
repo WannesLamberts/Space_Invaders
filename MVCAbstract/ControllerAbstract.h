@@ -34,6 +34,7 @@ public:
          * \brief does what the controller must do every game tick
          */
         virtual void tick() = 0;
+
 protected:
         /**
          * \brief the model of the controller

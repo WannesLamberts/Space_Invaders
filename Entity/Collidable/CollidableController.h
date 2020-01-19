@@ -5,12 +5,12 @@
 #ifndef SPACE_INVADERS_COLLIDABLECONTROLLER_H
 #define SPACE_INVADERS_COLLIDABLECONTROLLER_H
 #include "../EntityController.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief the controller for collidable objects
  */
-class CollidableController: public EntityController
+class CollidableController : public EntityController
 {
 
 public:
@@ -30,12 +30,13 @@ public:
          * \brief does what the controller must do every game tick
          */
         virtual void tick();
+
 private:
         /**
          * \brief this function does what must happen when this object collides with controller
          * @param controller
          */
-        virtual void onCollision(std::shared_ptr<Entity::CollidableController> controller)=0;
+        virtual void onCollision(std::shared_ptr<Entity::CollidableController> controller) = 0;
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_COLLIDABLECONTROLLER_H

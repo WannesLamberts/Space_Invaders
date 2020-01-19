@@ -6,7 +6,7 @@
 #define SPACE_INVADERS_LIFEVIEW_H
 #include "../../../EntityView.h"
 #include "PlayerShipModel.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief used to display the life of a playerShip
@@ -19,7 +19,7 @@ public:
          * @param w
          * @param model
          */
-        LifeView(const std::__shared_ptr<sf::RenderWindow>& w,std::weak_ptr<ModelAbstract> model);
+        LifeView(const std::__shared_ptr<sf::RenderWindow>& w, std::weak_ptr<ModelAbstract> model);
         /**
          * \brief generates the text that displays the life of a playershipmodel
          */
@@ -32,7 +32,6 @@ public:
          * \brief the font of the text
          */
         sf::Font font;
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_LIFEVIEW_H

@@ -6,7 +6,6 @@
 #include "../../../Utils/ObjectManager.h"
 #include <iostream>
 
-
 Entity::AliveController::AliveController(const std::shared_ptr<ModelAbstract>& m,
                                          const std::shared_ptr<ViewAbstract>& v)
     : Entity::CollidableController(m, v)

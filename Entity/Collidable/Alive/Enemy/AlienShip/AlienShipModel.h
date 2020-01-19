@@ -20,7 +20,6 @@ public:
          * @param speed
          */
         AlienShipModel(const Utils::Vector2D& position, const Utils::Vector2D& size, int healthpoints, double speed);
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ALIENSHIPMODEL_H

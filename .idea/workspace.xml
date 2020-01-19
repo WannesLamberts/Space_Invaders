@@ -13,37 +13,56 @@
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/BulletController_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/BulletController_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/EnemyController_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/EnemyController_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/Game_8cpp_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Game_8cpp_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/Game_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/Game_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1BulletController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1BulletController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyController.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classEntity_1_1EnemyController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/classGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/classGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/html/md_README.html" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/html/md_README.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/classGame.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/classGame.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Doxygen/latex/md_README.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/AlienShip/AlienShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/Enemy/EnemyModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/LifeView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/CollidableController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/CollidableController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/CollidableController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/CollidableController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/EntityView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/EntityView.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Sprites/hart.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Sprites/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Sprites/red.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Sprites/shield2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ControllerAbstract.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ControllerAbstract.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ControllerAbstract.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ControllerAbstract.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVCAbstract/ViewAbstract.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observer/Subject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Observer/Subject.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Space_Invaders.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Space_Invaders" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/ObjectManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/ObjectManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/ObjectManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/ObjectManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/StopWatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/StopWatch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Transformation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +195,7 @@
       <workItem from="1579368549112" duration="16777000" />
       <workItem from="1579385568417" duration="976000" />
       <workItem from="1579439969730" duration="3867000" />
-      <workItem from="1579444914140" duration="19819000" />
+      <workItem from="1579444914140" duration="20598000" />
     </task>
     <servers />
   </component>

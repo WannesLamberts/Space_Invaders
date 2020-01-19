@@ -7,10 +7,8 @@ Entity::EnemyModel::EnemyModel(const Utils::Vector2D& position, const Utils::Vec
                                double speed)
     : AliveModel(position, size, healthpoints, speed)
 {
-        right=true;
-
+        right = true;
 }
-bool Entity::EnemyModel::moveDown() {         return setPosition(Utils::Vector2D(getPosition().x,getPosition().y+0.5));
-}
+bool Entity::EnemyModel::moveDown() { return setPosition(Utils::Vector2D(getPosition().x, getPosition().y + 0.5)); }
 bool Entity::EnemyModel::isRight() const { return right; }
 void Entity::EnemyModel::setRight(bool right) { EnemyModel::right = right; }

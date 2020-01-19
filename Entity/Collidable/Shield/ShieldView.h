@@ -5,12 +5,12 @@
 #ifndef SPACE_INVADERS_SHIELDVIEW_H
 #define SPACE_INVADERS_SHIELDVIEW_H
 #include "../../EntityView.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief the view of the shield
  */
-class ShieldView:public Entity::EntityView
+class ShieldView : public Entity::EntityView
 {
 public:
         /**
@@ -28,5 +28,5 @@ public:
          */
         sf::Texture texture;
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_SHIELDVIEW_H

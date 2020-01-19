@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief the controller of an alienship
@@ -32,7 +32,6 @@ public:
          * \brief creates a bullet
          */
         void shoot();
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ALIENSHIPCONTROLLER_H

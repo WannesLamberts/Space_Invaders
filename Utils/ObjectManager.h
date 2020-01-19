@@ -122,6 +122,7 @@ public:
          * @return game*
          */
         Game* getG() const;
+
 private:
         /**
          * \brief the controllers that needs to be deleted after a game tick

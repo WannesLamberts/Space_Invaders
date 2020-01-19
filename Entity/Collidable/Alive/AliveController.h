@@ -6,7 +6,7 @@
 #define SPACE_INVADERS_ALIVECONTROLLER_H
 #include "../../Collidable/CollidableController.h"
 #include "AliveModel.h"
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief the controller for all objects that can be seen as alive
@@ -20,7 +20,6 @@ public:
          * @param v
          */
         AliveController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
-
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ALIVECONTROLLER_H

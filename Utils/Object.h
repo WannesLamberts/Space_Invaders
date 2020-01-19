@@ -6,11 +6,12 @@
 #define SPACE_INVADERS_OBJECT_H
 #include "../MVCAbstract/ControllerAbstract.h"
 #include <memory>
-namespace Utils{
+namespace Utils {
 /**
  * \brief an object in the game that bundles view model en controller
  */
-struct Object{
+struct Object
+{
         /**
          * \brief the view of the object
          */
@@ -39,5 +40,5 @@ struct Object{
          */
         Object() {}
 };
-}
+} // namespace Utils
 #endif // SPACE_INVADERS_OBJECT_H

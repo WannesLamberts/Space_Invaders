@@ -9,5 +9,5 @@ Entity::AlienShipModel::AlienShipModel(const Utils::Vector2D& position, const Ut
                                        double speed)
     : EnemyModel(position, size, healthpoints, speed)
 {
-        fireCooldown=rand() % 500;
+        fireCooldown = rand() % 500;
 }

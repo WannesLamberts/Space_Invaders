@@ -6,12 +6,13 @@
 #define SPACE_INVADERS_ALIVEMODEL_H
 #include "../../EntityModel.h"
 
-namespace Entity{
+namespace Entity {
 
 /**
  * \brief Model for all objects that can be seen as living objects
  */
-class AliveModel : public Entity::EntityModel{
+class AliveModel : public Entity::EntityModel
+{
 public:
         /**
          * \brief constructor for alivemodel
@@ -70,5 +71,5 @@ public:
          */
         bool moveRight();
 };
-}
+} // namespace Entity
 #endif // SPACE_INVADERS_ALIVEMODEL_H
