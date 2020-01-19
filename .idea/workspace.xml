@@ -13,6 +13,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1fec38b3-c7a2-4afc-86ce-b7f06af3e208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/AliveModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerScoreView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Alive/PlayerShip/PlayerShipView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Bullet/BulletView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/CollidableController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/CollidableController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Collidable/Shield/ShieldView.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +157,7 @@
       <workItem from="1579368549112" duration="16777000" />
       <workItem from="1579385568417" duration="976000" />
       <workItem from="1579439969730" duration="3867000" />
-      <workItem from="1579444914140" duration="14088000" />
+      <workItem from="1579444914140" duration="16494000" />
     </task>
     <servers />
   </component>

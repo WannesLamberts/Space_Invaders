@@ -33,7 +33,7 @@ public:
 private:
         /**
          * \brief this function does what must happen when this object collides with controller
-         * @param controllers
+         * @param controller
          */
         virtual void onCollision(std::shared_ptr<Entity::CollidableController> controller)=0;
 };
