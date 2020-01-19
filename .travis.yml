@@ -24,7 +24,4 @@ install:
   - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
 
 script:
-  - mkdir build
-  - cd build
-  - gcc -v && g++ -v && cmake --version
-  - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+  - ./run.sh
