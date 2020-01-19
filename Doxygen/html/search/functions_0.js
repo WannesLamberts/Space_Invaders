@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['draw_67',['draw',['../classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf',1,'Entity::EntityView::draw()'],['../classViewAbstract.html#a6837ba028ab2aac5b4ac07e01be8977a',1,'ViewAbstract::draw()']]]
+  ['adddeletion_127',['addDeletion',['../classUtils_1_1ObjectManager.html#aba103dce4ebd09442d0eb595896a85c2',1,'Utils::ObjectManager']]],
+  ['addobject_128',['addObject',['../classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05',1,'Utils::ObjectManager']]]
 ];

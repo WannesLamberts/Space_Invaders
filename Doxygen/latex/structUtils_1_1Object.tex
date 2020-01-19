@@ -1,30 +1,74 @@
 \hypertarget{structUtils_1_1Object}{}\doxysection{Utils\+::Object Struct Reference}
 \label{structUtils_1_1Object}\index{Utils::Object@{Utils::Object}}
+
+
+an object in the game that bundles view model en controller  
+
+
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structUtils_1_1Object_aa79c531f1d5e77f8e0087c8e24de67c3}\label{structUtils_1_1Object_aa79c531f1d5e77f8e0087c8e24de67c3}} 
-{\bfseries Object} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ \&c)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{structUtils_1_1Object_aa79c531f1d5e77f8e0087c8e24de67c3}{Object}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}{v}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ \&\mbox{\hyperlink{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}{c}})
+\begin{DoxyCompactList}\small\item\em contructor for object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structUtils_1_1Object_abed32e0060b0afb76e6a44bac5de0230}\label{structUtils_1_1Object_abed32e0060b0afb76e6a44bac5de0230}} 
+\mbox{\hyperlink{structUtils_1_1Object_abed32e0060b0afb76e6a44bac5de0230}{Object}} ()
+\begin{DoxyCompactList}\small\item\em empty contructor for object \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}\label{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ {\bfseries v}
-\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \mbox{\hyperlink{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}{v}}
+\begin{DoxyCompactList}\small\item\em the view of the object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}\label{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ {\bfseries m}
-\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}{m}}
+\begin{DoxyCompactList}\small\item\em the model of the object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}\label{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ {\bfseries c}
-\end{DoxyCompactItemize}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ \mbox{\hyperlink{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}{c}}
+\begin{DoxyCompactList}\small\item\em the controller of the object \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+an object in the game that bundles view model en controller 
+
+Definition at line 13 of file Object.\+h.
 
 
-Definition at line 10 of file Object.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structUtils_1_1Object_aa79c531f1d5e77f8e0087c8e24de67c3}\label{structUtils_1_1Object_aa79c531f1d5e77f8e0087c8e24de67c3}} 
+\index{Utils::Object@{Utils::Object}!Object@{Object}}
+\index{Object@{Object}!Utils::Object@{Utils::Object}}
+\doxysubsubsection{\texorpdfstring{Object()}{Object()}}
+{\footnotesize\ttfamily Utils\+::\+Object\+::\+Object (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+contructor for object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the view for the object \\
+\hline
+{\em m} & the model for the object \\
+\hline
+{\em c} & the controller for the object \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Object.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34             : \mbox{\hyperlink{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}{v}}(\mbox{\hyperlink{structUtils_1_1Object_a8477de52c362ed3880918a23c8295e93}{v}}), \mbox{\hyperlink{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}{m}}(\mbox{\hyperlink{structUtils_1_1Object_a4cabd8d53420cfc28d09c73fa4a0abca}{m}}), \mbox{\hyperlink{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}{c}}(\mbox{\hyperlink{structUtils_1_1Object_a6dad0e2c6247870321ea7d6fa0793876}{c}})}
+\DoxyCodeLine{35         \{}
+\DoxyCodeLine{36         \}}
+
+\end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

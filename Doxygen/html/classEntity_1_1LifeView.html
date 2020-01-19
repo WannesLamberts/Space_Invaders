@@ -81,35 +81,37 @@ Inheritance diagram for Entity::LifeView:</div>
   <map id="Entity::LifeView_map" name="Entity::LifeView_map">
 <area href="classEntity_1_1EntityView.html" title="View class for Entity this class handles the visual aspect of the game." alt="Entity::EntityView" shape="rect" coords="0,112,108,136"/>
 <area href="classViewAbstract.html" title="superclass of all view classes handles the visual aspect of the game" alt="ViewAbstract" shape="rect" coords="0,56,108,80"/>
-<area href="classObserver.html" alt="Observer" shape="rect" coords="0,0,108,24"/>
+<area href="classObserver.html" title="the observer from the observerpattern" alt="Observer" shape="rect" coords="0,0,108,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a54d702f18f458460a7382ac18bf099b7"><td class="memItemLeft" align="right" valign="top"><a id="a54d702f18f458460a7382ac18bf099b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LifeView</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;w, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; model)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LifeView</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;<a class="el" href="classViewAbstract.html#a51b1f37a6113ef3f7b061db29cb4a4c0">w</a>, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; <a class="el" href="classEntity_1_1EntityView.html#a795dc4dd2410feba1a800f7a8b99e09f">model</a>)</td></tr>
 <tr class="separator:a54d702f18f458460a7382ac18bf099b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af84618de2293beecb14b57a8abe6ded6"><td class="memItemLeft" align="right" valign="top"><a id="af84618de2293beecb14b57a8abe6ded6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generateShape</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1LifeView.html#af84618de2293beecb14b57a8abe6ded6">generateShape</a> ()</td></tr>
+<tr class="memdesc:af84618de2293beecb14b57a8abe6ded6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates shape <br /></td></tr>
 <tr class="separator:af84618de2293beecb14b57a8abe6ded6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994be825af0ddf31b1781b5ac467c843"><td class="memItemLeft" align="right" valign="top"><a id="a994be825af0ddf31b1781b5ac467c843"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1LifeView.html#a994be825af0ddf31b1781b5ac467c843">update</a> ()</td></tr>
+<tr class="memdesc:a994be825af0ddf31b1781b5ac467c843"><td class="mdescLeft">&#160;</td><td class="mdescRight">changes the position of shape on the screen to the corresponding value in the model <br /></td></tr>
 <tr class="separator:a994be825af0ddf31b1781b5ac467c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1EntityView"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1EntityView')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1EntityView.html">Entity::EntityView</a></td></tr>
-<tr class="memitem:a584f4ec672fef892f6829de190905abf inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf">draw</a> ()</td></tr>
-<tr class="memdesc:a584f4ec672fef892f6829de190905abf inherit pub_methods_classEntity_1_1EntityView"><td class="mdescLeft">&#160;</td><td class="mdescRight">draws the shape on the sf::RenderWindow w  <a href="classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf">More...</a><br /></td></tr>
+<tr class="memitem:a584f4ec672fef892f6829de190905abf inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top"><a id="a584f4ec672fef892f6829de190905abf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#a584f4ec672fef892f6829de190905abf">draw</a> ()</td></tr>
+<tr class="memdesc:a584f4ec672fef892f6829de190905abf inherit pub_methods_classEntity_1_1EntityView"><td class="mdescLeft">&#160;</td><td class="mdescRight">draws the shape on w <br /></td></tr>
 <tr class="separator:a584f4ec672fef892f6829de190905abf inherit pub_methods_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390500fd3f9fe27b09f12c51ccf3fa97 inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top"><a id="a390500fd3f9fe27b09f12c51ccf3fa97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeScale</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>)</td></tr>
-<tr class="separator:a390500fd3f9fe27b09f12c51ccf3fa97 inherit pub_methods_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f693acc2d87f02562b8613dae88540b inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top"><a id="a3f693acc2d87f02562b8613dae88540b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EntityView</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;w, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; model)</td></tr>
+<tr class="memitem:adf5f026af71d1776b064e0eb7038f65e inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#adf5f026af71d1776b064e0eb7038f65e">changeScale</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size)</td></tr>
+<tr class="separator:adf5f026af71d1776b064e0eb7038f65e inherit pub_methods_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f693acc2d87f02562b8613dae88540b inherit pub_methods_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#a3f693acc2d87f02562b8613dae88540b">EntityView</a> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;<a class="el" href="classViewAbstract.html#a51b1f37a6113ef3f7b061db29cb4a4c0">w</a>, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; <a class="el" href="classEntity_1_1EntityView.html#a795dc4dd2410feba1a800f7a8b99e09f">model</a>)</td></tr>
+<tr class="memdesc:a3f693acc2d87f02562b8613dae88540b inherit pub_methods_classEntity_1_1EntityView"><td class="mdescLeft">&#160;</td><td class="mdescRight">contructor for entityview  <a href="classEntity_1_1EntityView.html#a3f693acc2d87f02562b8613dae88540b">More...</a><br /></td></tr>
 <tr class="separator:a3f693acc2d87f02562b8613dae88540b inherit pub_methods_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classViewAbstract"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classViewAbstract')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classViewAbstract.html">ViewAbstract</a></td></tr>
-<tr class="memitem:a7bc948ce51d6a44f6b1c43e1146d5dd6 inherit pub_methods_classViewAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a7bc948ce51d6a44f6b1c43e1146d5dd6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ViewAbstract</b> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;w, std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; model)</td></tr>
-<tr class="separator:a7bc948ce51d6a44f6b1c43e1146d5dd6 inherit pub_methods_classViewAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70e54b453832e601f5332fefb6f4c74 inherit pub_methods_classViewAbstract"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewAbstract.html#ae70e54b453832e601f5332fefb6f4c74">ViewAbstract</a> (const std::__shared_ptr&lt; sf::RenderWindow &gt; &amp;<a class="el" href="classViewAbstract.html#a51b1f37a6113ef3f7b061db29cb4a4c0">w</a>)</td></tr>
+<tr class="memdesc:ae70e54b453832e601f5332fefb6f4c74 inherit pub_methods_classViewAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor of the viewabstract  <a href="classViewAbstract.html#ae70e54b453832e601f5332fefb6f4c74">More...</a><br /></td></tr>
+<tr class="separator:ae70e54b453832e601f5332fefb6f4c74 inherit pub_methods_classViewAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -118,19 +120,22 @@ sf::Font&#160;</td><td class="memItemRight" valign="bottom"><b>font</b></td></tr
 <tr class="separator:af917c0babf29ffb22c79a74d22996f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classViewAbstract"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classViewAbstract')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classViewAbstract.html">ViewAbstract</a></td></tr>
 <tr class="memitem:a51b1f37a6113ef3f7b061db29cb4a4c0 inherit pub_attribs_classViewAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a51b1f37a6113ef3f7b061db29cb4a4c0"></a>
-std::__shared_ptr&lt; sf::RenderWindow &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
+std::__shared_ptr&lt; sf::RenderWindow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewAbstract.html#a51b1f37a6113ef3f7b061db29cb4a4c0">w</a></td></tr>
+<tr class="memdesc:a51b1f37a6113ef3f7b061db29cb4a4c0 inherit pub_attribs_classViewAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">the window of the game <br /></td></tr>
 <tr class="separator:a51b1f37a6113ef3f7b061db29cb4a4c0 inherit pub_attribs_classViewAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ec13c9203ad6e599e2b9b837501351 inherit pub_attribs_classViewAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ae9ec13c9203ad6e599e2b9b837501351"></a>
-std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b></td></tr>
-<tr class="separator:ae9ec13c9203ad6e599e2b9b837501351 inherit pub_attribs_classViewAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classEntity_1_1EntityView"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classEntity_1_1EntityView')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classEntity_1_1EntityView.html">Entity::EntityView</a></td></tr>
-<tr class="memitem:a8434e36a86fa4c29fb7784a1c4be57ce inherit pro_attribs_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top"><a id="a8434e36a86fa4c29fb7784a1c4be57ce"></a>
-std::shared_ptr&lt; sf::Drawable &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#a8434e36a86fa4c29fb7784a1c4be57ce">shape</a></td></tr>
-<tr class="memdesc:a8434e36a86fa4c29fb7784a1c4be57ce inherit pro_attribs_classEntity_1_1EntityView"><td class="mdescLeft">&#160;</td><td class="mdescRight">the sf::Drawable that will be drawn on the window of the game <br /></td></tr>
-<tr class="separator:a8434e36a86fa4c29fb7784a1c4be57ce inherit pro_attribs_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795dc4dd2410feba1a800f7a8b99e09f inherit pro_attribs_classEntity_1_1EntityView"><td class="memItemLeft" align="right" valign="top"><a id="a795dc4dd2410feba1a800f7a8b99e09f"></a>
+std::weak_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityView.html#a795dc4dd2410feba1a800f7a8b99e09f">model</a></td></tr>
+<tr class="memdesc:a795dc4dd2410feba1a800f7a8b99e09f inherit pro_attribs_classEntity_1_1EntityView"><td class="mdescLeft">&#160;</td><td class="mdescRight">the model that has this as observer, I made a pointer to the model so that i don't have to implement multiple update function with different parameters in my observer class. I did that so that i can have a modular design and that notifyobservers from subject just calls <a class="el" href="classEntity_1_1EntityView.html#a9bee787303f1b6a5efc8212f5ec684fc" title="changes the position of shape on the screen to the corresponding value in the model">update()</a>, instead of checking all the types and call form example update(position) if it is a playership view and update(healthpoints) if it is a lifeview etc <br /></td></tr>
+<tr class="separator:a795dc4dd2410feba1a800f7a8b99e09f inherit pro_attribs_classEntity_1_1EntityView"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classViewAbstract"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classViewAbstract')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classViewAbstract.html">ViewAbstract</a></td></tr>
+<tr class="memitem:a83e9859c55ca1f5cbfe32619e5351d8c inherit pro_attribs_classViewAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a83e9859c55ca1f5cbfe32619e5351d8c"></a>
+std::shared_ptr&lt; sf::Drawable &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classViewAbstract.html#a83e9859c55ca1f5cbfe32619e5351d8c">shape</a></td></tr>
+<tr class="memdesc:a83e9859c55ca1f5cbfe32619e5351d8c inherit pro_attribs_classViewAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">the drawable that gets drawn on the screen <br /></td></tr>
+<tr class="separator:a83e9859c55ca1f5cbfe32619e5351d8c inherit pro_attribs_classViewAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">

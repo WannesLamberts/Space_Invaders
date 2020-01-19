@@ -1,28 +1,71 @@
 \hypertarget{classEntity_1_1EntityController}{}\doxysection{Entity\+::Entity\+Controller Class Reference}
 \label{classEntity_1_1EntityController}\index{Entity::EntityController@{Entity::EntityController}}
+
+
+Controller class for entity this is the interface between entitymodel and entityview.  
+
+
+
+
+{\ttfamily \#include $<$Entity\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Entity\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=6.000000cm]{classEntity_1_1EntityController}
+\includegraphics[height=4.800000cm]{classEntity_1_1EntityController}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}\label{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}} 
-{\bfseries Entity\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
-\item 
+\mbox{\hyperlink{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}{Entity\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em contructor for \mbox{\hyperlink{classEntity_1_1EntityController}{Entity\+Controller}} it sets the scale of the view to it hitbox and calls notifyopservers \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EntityController_aa28075ded7bf49d71ca15518ede5ef35}\label{classEntity_1_1EntityController_aa28075ded7bf49d71ca15518ede5ef35}} 
-virtual void {\bfseries tick} ()=0
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classEntity_1_1EntityController_aa28075ded7bf49d71ca15518ede5ef35}{tick}} ()=0
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+Controller class for entity this is the interface between entitymodel and entityview. 
+
+Definition at line 16 of file Entity\+Controller.\+h.
 
 
-Definition at line 14 of file Entity\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}\label{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}} 
+\index{Entity::EntityController@{Entity::EntityController}!EntityController@{EntityController}}
+\index{EntityController@{EntityController}!Entity::EntityController@{Entity::EntityController}}
+\doxysubsubsection{\texorpdfstring{EntityController()}{EntityController()}}
+{\footnotesize\ttfamily Entity\+::\+Entity\+Controller\+::\+Entity\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+contructor for \mbox{\hyperlink{classEntity_1_1EntityController}{Entity\+Controller}} it sets the scale of the view to it hitbox and calls notifyopservers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the model of the controller \\
+\hline
+{\em v} & the view of the controller \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Entity\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11     : \mbox{\hyperlink{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}{ControllerAbstract}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13         std::shared\_ptr<Entity::EntityModel> mod = std::dynamic\_pointer\_cast<Entity::EntityModel>(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}});}
+\DoxyCodeLine{14         std::shared\_ptr<Entity::EntityView> view = std::dynamic\_pointer\_cast<Entity::EntityView>(\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}});}
+\DoxyCodeLine{15         view-\/>changeScale(mod-\/>getSize());}
+\DoxyCodeLine{16         mod-\/>notifyObservers();}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

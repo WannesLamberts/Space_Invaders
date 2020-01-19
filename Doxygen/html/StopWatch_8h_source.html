@@ -77,30 +77,33 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SPACE_INVADERS_STOPWATCH_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Utils{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classUtils_1_1StopWatch.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>&amp; getInstance(){</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>    instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="comment">// Instantiated on first use.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> start();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">double</span> elapsed();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>(){};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>(<a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a> <span class="keyword">const</span>&amp;);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>&amp; operator=(<a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a> <span class="keyword">const</span>&amp;);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::chrono::time_point&lt;std::chrono::system_clock&gt; begin;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif //SPACE_INVADERS_STOPWATCH_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Utils {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classUtils_1_1StopWatch.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classUtils_1_1StopWatch.html#a17a03335cbdac0082b880a969b59a22f">   21</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>&amp; <a class="code" href="classUtils_1_1StopWatch.html#a17a03335cbdac0082b880a969b59a22f">getInstance</a>()</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keyword">static</span> <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a> instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="comment">// Instantiated on first use.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classUtils_1_1StopWatch.html#a6307657657fdea9e3fbd6894f93f3949">start</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classUtils_1_1StopWatch.html#a13136ad8120b345c4d16f7f600867246">elapsed</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classUtils_1_1StopWatch.html">StopWatch</a>(){};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        StopWatch(StopWatch <span class="keyword">const</span>&amp;);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        StopWatch&amp; operator=(StopWatch <span class="keyword">const</span>&amp;);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::chrono::time_point&lt;std::chrono::system_clock&gt; begin;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // SPACE_INVADERS_STOPWATCH_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassUtils_1_1StopWatch_html"><div class="ttname"><a href="classUtils_1_1StopWatch.html">Utils::StopWatch</a></div><div class="ttdef"><b>Definition:</b> <a href="StopWatch_8h_source.html#l00010">StopWatch.h:10</a></div></div>
+<div class="ttc" id="aclassUtils_1_1StopWatch_html_a6307657657fdea9e3fbd6894f93f3949"><div class="ttname"><a href="classUtils_1_1StopWatch.html#a6307657657fdea9e3fbd6894f93f3949">Utils::StopWatch::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">starts the stopwatch</div><div class="ttdef"><b>Definition:</b> <a href="StopWatch_8cpp_source.html#l00006">StopWatch.cpp:6</a></div></div>
+<div class="ttc" id="aclassUtils_1_1StopWatch_html_a13136ad8120b345c4d16f7f600867246"><div class="ttname"><a href="classUtils_1_1StopWatch.html#a13136ad8120b345c4d16f7f600867246">Utils::StopWatch::elapsed</a></div><div class="ttdeci">double elapsed()</div><div class="ttdoc">calculates the time that has been passed since it has started</div><div class="ttdef"><b>Definition:</b> <a href="StopWatch_8cpp_source.html#l00009">StopWatch.cpp:9</a></div></div>
+<div class="ttc" id="aclassUtils_1_1StopWatch_html"><div class="ttname"><a href="classUtils_1_1StopWatch.html">Utils::StopWatch</a></div><div class="ttdoc">a stopwatch used for the main game loop</div><div class="ttdef"><b>Definition:</b> <a href="StopWatch_8h_source.html#l00013">StopWatch.h:13</a></div></div>
+<div class="ttc" id="aclassUtils_1_1StopWatch_html_a17a03335cbdac0082b880a969b59a22f"><div class="ttname"><a href="classUtils_1_1StopWatch.html#a17a03335cbdac0082b880a969b59a22f">Utils::StopWatch::getInstance</a></div><div class="ttdeci">static StopWatch &amp; getInstance()</div><div class="ttdoc">This is the only way to get a reference to the Stopwatch object and there can only exist 1 object of ...</div><div class="ttdef"><b>Definition:</b> <a href="StopWatch_8h_source.html#l00021">StopWatch.h:21</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

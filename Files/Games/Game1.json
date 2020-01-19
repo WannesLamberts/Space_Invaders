@@ -6,6 +6,9 @@
     },
     {
       "name":"../Files/Games/levels/level1.json"
+    },
+    {
+      "name":"../Files/Games/levels/level2.json"
     }
   ]
 }

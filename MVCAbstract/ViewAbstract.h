@@ -12,20 +12,28 @@
 /**
  * \brief superclass of all view classes handles the visual aspect of the game
  */
-class ViewAbstract : public Observer {
+class ViewAbstract : public Observer
+{
 protected:
+        /**
+         * \brief the drawable that gets drawn on the screen
+         */
         std::shared_ptr<sf::Drawable> shape;
-public:
-    std::__shared_ptr<sf::RenderWindow> w;
-public:
-    ViewAbstract(const std::__shared_ptr<sf::RenderWindow> &w);
 
-/**
-     * \brief draws a sf::Drawable on a window
-     * @param w the window where the drawable gets drawn on
-     */
-    virtual void draw()=0;
-
+public:
+        /**
+         * \brief the window of the game
+         */
+        std::__shared_ptr<sf::RenderWindow> w;
+        /**
+         * \brief constructor of the viewabstract
+         * @param w the window of the game
+         */
+        ViewAbstract(const std::__shared_ptr<sf::RenderWindow>& w);
+        /**
+         * \brief draws a sf::Drawable on w
+         */
+        virtual void draw() = 0;
 };
 
 #endif // SPACE_INVADERS_VIEWABSTRACT_H

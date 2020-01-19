@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['texture_72',['texture',['../classEntity_1_1AlienShipView.html#afe637ba5d24faf5cc129b104e05da40e',1,'Entity::AlienShipView::texture()'],['../classEntity_1_1PlayerShipView.html#ad947f6498446c86f9827877059f8871a',1,'Entity::PlayerShipView::texture()'],['../classEntity_1_1BulletView.html#a5a1cc724ef69c9182f0bfca870546eee',1,'Entity::BulletView::texture()']]]
+  ['m_185',['m',['../classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b',1,'ControllerAbstract::m()'],['../structUtils_1_1Object.html#a4cabd8d53420cfc28d09c73fa4a0abca',1,'Utils::Object::m()']]],
+  ['model_186',['model',['../classEntity_1_1EntityView.html#a795dc4dd2410feba1a800f7a8b99e09f',1,'Entity::EntityView']]]
 ];

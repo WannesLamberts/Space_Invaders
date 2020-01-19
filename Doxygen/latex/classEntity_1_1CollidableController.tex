@@ -1,28 +1,107 @@
 \hypertarget{classEntity_1_1CollidableController}{}\doxysection{Entity\+::Collidable\+Controller Class Reference}
 \label{classEntity_1_1CollidableController}\index{Entity::CollidableController@{Entity::CollidableController}}
+
+
+the controller for collidable objects  
+
+
+
+
+{\ttfamily \#include $<$Collidable\+Controller.\+h$>$}
+
 Inheritance diagram for Entity\+::Collidable\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=6.000000cm]{classEntity_1_1CollidableController}
+\includegraphics[height=4.800000cm]{classEntity_1_1CollidableController}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1CollidableController_aef0e6202ddf27cdcb76faf9e49d82876}\label{classEntity_1_1CollidableController_aef0e6202ddf27cdcb76faf9e49d82876}} 
-bool {\bfseries check\+Collision} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
-\item 
-\mbox{\Hypertarget{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}\label{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}} 
-{\bfseries Collidable\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEntity_1_1CollidableController_ae58575acb05614e82c64d0880fe557a1}{check\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ controller)
+\begin{DoxyCompactList}\small\item\em checks if this controller collides with controller \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}{Collidable\+Controller}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em the constructor for the collidablecontroller \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_1_1CollidableController_ae380338ba880d1f28b6bb182365d47ae}\label{classEntity_1_1CollidableController_ae380338ba880d1f28b6bb182365d47ae}} 
+virtual void \mbox{\hyperlink{classEntity_1_1CollidableController_ae380338ba880d1f28b6bb182365d47ae}{tick}} ()
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+the controller for collidable objects 
+
+Definition at line 13 of file Collidable\+Controller.\+h.
 
 
-Definition at line 11 of file Collidable\+Controller.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}\label{classEntity_1_1CollidableController_ab612a1b07f04bb2cd1dddd1105180ab7}} 
+\index{Entity::CollidableController@{Entity::CollidableController}!CollidableController@{CollidableController}}
+\index{CollidableController@{CollidableController}!Entity::CollidableController@{Entity::CollidableController}}
+\doxysubsubsection{\texorpdfstring{CollidableController()}{CollidableController()}}
+{\footnotesize\ttfamily Entity\+::\+Collidable\+Controller\+::\+Collidable\+Controller (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+the constructor for the collidablecontroller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the model of the collidablecontroller \\
+\hline
+{\em v} & the view of the collidablecontroller \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Collidable\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20     : \mbox{\hyperlink{classEntity_1_1EntityController_a32f2181996d48182c887ab92149afdf7}{EntityController}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1CollidableController_ae58575acb05614e82c64d0880fe557a1}\label{classEntity_1_1CollidableController_ae58575acb05614e82c64d0880fe557a1}} 
+\index{Entity::CollidableController@{Entity::CollidableController}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Entity::CollidableController@{Entity::CollidableController}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Entity\+::\+Collidable\+Controller\+::check\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{controller }\end{DoxyParamCaption})}
+
+
+
+checks if this controller collides with controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if it collides or not 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file Collidable\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9         std::shared\_ptr<Entity::EntityModel> mod = std::dynamic\_pointer\_cast<Entity::EntityModel>(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}});}
+\DoxyCodeLine{10         std::shared\_ptr<Entity::EntityModel> modb = std::dynamic\_pointer\_cast<Entity::EntityModel>(b-\/>m);}
+\DoxyCodeLine{11         \textcolor{keywordflow}{return} (mod-\/>getPosition().x + mod-\/>getSize().x/2 >= modb-\/>getPosition().x-\/modb-\/>getSize().x/2 \&\&}
+\DoxyCodeLine{12                 mod-\/>getPosition().x-\/mod-\/>getSize().x/2 <= modb-\/>getPosition().x + modb-\/>getSize().x/2 \&\&}
+\DoxyCodeLine{13                 mod-\/>getPosition().y+mod-\/>getSize().y/2>=modb-\/>getPosition().y -\/ modb-\/>getSize().y/2 \&\&}
+\DoxyCodeLine{14                 mod-\/>getPosition().y-\/mod-\/>getSize().y/2<=modb-\/>getPosition().y+modb-\/>getSize().y/2);}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

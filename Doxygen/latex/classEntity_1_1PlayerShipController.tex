@@ -13,14 +13,16 @@ Inheritance diagram for Entity\+::Player\+Ship\+Controller\+:\begin{figure}[H]
 void {\bfseries read\+Input} ()
 \item 
 \mbox{\Hypertarget{classEntity_1_1PlayerShipController_ac0fac595960d497b704c4fa62ed48cb3}\label{classEntity_1_1PlayerShipController_ac0fac595960d497b704c4fa62ed48cb3}} 
-{\bfseries Player\+Ship\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
+{\bfseries Player\+Ship\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
 \item 
 \mbox{\Hypertarget{classEntity_1_1PlayerShipController_ae9210cd1bb8f24ade63b423fa31e1518}\label{classEntity_1_1PlayerShipController_ae9210cd1bb8f24ade63b423fa31e1518}} 
-void {\bfseries tick} ()
-\item 
+void \mbox{\hyperlink{classEntity_1_1PlayerShipController_ae9210cd1bb8f24ade63b423fa31e1518}{tick}} ()
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1PlayerShipController_ad6970835c4daf4115924896daed5b6ed}\label{classEntity_1_1PlayerShipController_ad6970835c4daf4115924896daed5b6ed}} 
 void {\bfseries shoot} ()
-\end{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEntity_1_1PlayerShipController_a50e29b689f2d9e8d1df85edfa828570c}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
+\begin{DoxyCompactList}\small\item\em this function does what must happen when this object collides with controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -29,6 +31,37 @@ void {\bfseries shoot} ()
 
 Definition at line 18 of file Player\+Ship\+Controller.\+h.
 
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1PlayerShipController_a50e29b689f2d9e8d1df85edfa828570c}\label{classEntity_1_1PlayerShipController_a50e29b689f2d9e8d1df85edfa828570c}} 
+\index{Entity::PlayerShipController@{Entity::PlayerShipController}!onCollision@{onCollision}}
+\index{onCollision@{onCollision}!Entity::PlayerShipController@{Entity::PlayerShipController}}
+\doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
+{\footnotesize\ttfamily void Entity\+::\+Player\+Ship\+Controller\+::on\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+this function does what must happen when this object collides with controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controllers} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}}.
+
+
+
+Definition at line 42 of file Player\+Ship\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{\}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -12,44 +12,39 @@ Model class for Entity this class handles all the data of Entity.
 Inheritance diagram for Entity\+::Entity\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=6.000000cm]{classEntity_1_1EntityModel}
+\includegraphics[height=5.454545cm]{classEntity_1_1EntityModel}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}\label{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}} 
-const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& {\bfseries get\+Size} () const
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a557817a4eef083aa0604876c22ac1a57}\label{classEntity_1_1EntityModel_a557817a4eef083aa0604876c22ac1a57}} 
-void {\bfseries set\+Size} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&size)
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_add95685f6c22f2e5e851089a3501f2ee}\label{classEntity_1_1EntityModel_add95685f6c22f2e5e851089a3501f2ee}} 
-bool {\bfseries valid\+Position} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}\label{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}} 
-const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& {\bfseries get\+Position} () const
-\item 
+const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& \mbox{\hyperlink{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em getter for the size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1EntityModel_a557817a4eef083aa0604876c22ac1a57}{set\+Size}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}})
+\begin{DoxyCompactList}\small\item\em setter for the size \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEntity_1_1EntityModel_aafa926edd754207d4ad4c4d8d710a250}{valid\+Position}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}})
+\begin{DoxyCompactList}\small\item\em checks if the given position is valid for the \mbox{[}-\/4,4\mbox{]}\mbox{[}3,-\/3\mbox{]} interval \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& \mbox{\hyperlink{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em getter for position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}\label{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}} 
 void \mbox{\hyperlink{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}{notify\+Observers}} ()
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}\label{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}} 
-{\bfseries Entity\+Model} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&size)
+\begin{DoxyCompactList}\small\item\em updates all observers \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}{Entity\+Model}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}, const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}})
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}\label{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}} 
-bool {\bfseries set\+Position} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&position)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}{set\+Position}} (const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}})
+\begin{DoxyCompactList}\small\item\em setter for position calls notifyobservers if the position is valid \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}\label{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries position}
-\item 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}
+\begin{DoxyCompactList}\small\item\em the position the entity \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}\label{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries size}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}
+\begin{DoxyCompactList}\small\item\em the size of the entity \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -59,37 +54,164 @@ Definition at line 13 of file Entity\+Model.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}\label{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}} 
-\index{Entity::EntityModel@{Entity::EntityModel}!notifyObservers@{notifyObservers}}
-\index{notifyObservers@{notifyObservers}!Entity::EntityModel@{Entity::EntityModel}}
-\doxysubsubsection{\texorpdfstring{notifyObservers()}{notifyObservers()}}
-{\footnotesize\ttfamily void Entity\+::\+Entity\+Model\+::notify\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}\label{classEntity_1_1EntityModel_a027cb5db3c6bf8df5f761d7a69d35afe}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!EntityModel@{EntityModel}}
+\index{EntityModel@{EntityModel}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{EntityModel()}{EntityModel()}}
+{\footnotesize\ttfamily Entity\+::\+Entity\+Model\+::\+Entity\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position,  }\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size }\end{DoxyParamCaption})}
 
-the contrustructor of \mbox{\hyperlink{classEntity_1_1EntityModel}{Entity\+Model}} creates a Entity with healthpoints, x\+Val, Yval 
+the contrustructor of \mbox{\hyperlink{classEntity_1_1EntityModel}{Entity\+Model}} creates a Entity with healthpoints, position 
 \begin{DoxyParams}{Parameters}
 {\em health\+Points} & The health\+Points of the Entity \\
 \hline
-{\em x\+Val} & The x\+Val of the Entity \\
-\hline
-{\em Yval} & The y\+Val of the Entity \\
+{\em position} & The position of the Entity \\
 \hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classSubject}{Subject}}.
-
-
-
-Definition at line 8 of file Entity\+Model.\+cpp.
+Definition at line 27 of file Entity\+Model.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{9 \{}
-\DoxyCodeLine{10         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < observers.size(); ++i) \{}
-\DoxyCodeLine{11                 observers[i]-\/>update();}
-\DoxyCodeLine{12         \}}
-\DoxyCodeLine{13 \}}
+\DoxyCodeLine{28     : \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}), \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}(\mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}})}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}\label{classEntity_1_1EntityModel_afd198901a1ad8c64361ced938d199494}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& Entity\+::\+Entity\+Model\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for position 
+
+\begin{DoxyReturn}{Returns}
+position 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Entity\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}\label{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!getSize@{getSize}}
+\index{getSize@{getSize}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \& Entity\+::\+Entity\+Model\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for the size 
+
+\begin{DoxyReturn}{Returns}
+size 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file Entity\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}\label{classEntity_1_1EntityModel_a7f8964ced9ede24806efc18a88be658e}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily bool Entity\+::\+Entity\+Model\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+setter for position calls notifyobservers if the position is valid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the position is valid or not 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Entity\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classEntity_1_1EntityModel_aafa926edd754207d4ad4c4d8d710a250}{validPosition}}(\mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}})) \{}
+\DoxyCodeLine{19                 \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{EntityModel::position}} = \mbox{\hyperlink{classEntity_1_1EntityModel_a38c2a78548aea09a5feeb1fb5c7d47e4}{position}};}
+\DoxyCodeLine{20                 \mbox{\hyperlink{classEntity_1_1EntityModel_a5cb470f2afae411ad0ee18ff7585d980}{notifyObservers}}();}
+\DoxyCodeLine{21                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{22         \}}
+\DoxyCodeLine{23         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_a557817a4eef083aa0604876c22ac1a57}\label{classEntity_1_1EntityModel_a557817a4eef083aa0604876c22ac1a57}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!setSize@{setSize}}
+\index{setSize@{setSize}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Entity\+::\+Entity\+Model\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \&}]{size }\end{DoxyParamCaption})}
+
+
+
+setter for the size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Entity\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{ \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{EntityModel::size}} = \mbox{\hyperlink{classEntity_1_1EntityModel_ad0997b52258cb8903d1d2a6bfdbbb770}{size}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_1_1EntityModel_aafa926edd754207d4ad4c4d8d710a250}\label{classEntity_1_1EntityModel_aafa926edd754207d4ad4c4d8d710a250}} 
+\index{Entity::EntityModel@{Entity::EntityModel}!validPosition@{validPosition}}
+\index{validPosition@{validPosition}!Entity::EntityModel@{Entity::EntityModel}}
+\doxysubsubsection{\texorpdfstring{validPosition()}{validPosition()}}
+{\footnotesize\ttfamily bool Entity\+::\+Entity\+Model\+::valid\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{position }\end{DoxyParamCaption})}
+
+
+
+checks if the given position is valid for the \mbox{[}-\/4,4\mbox{]}\mbox{[}3,-\/3\mbox{]} interval 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wether the position is valid or not 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Entity\+Model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} (v.x + \mbox{\hyperlink{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}{getSize}}().x / 2 <= 4 \&\& v.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}} -\/ \mbox{\hyperlink{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}{getSize}}().x / 2 >= -\/4 \&\& v.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}} + \mbox{\hyperlink{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}{getSize}}().y / 2 >= -\/3 \&\&}
+\DoxyCodeLine{34                 v.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}} + \mbox{\hyperlink{classEntity_1_1EntityModel_a14667d01eef84af4dfbbb9c6aea7c701}{getSize}}().y / 2 <= 3);}
+\DoxyCodeLine{35 \}}
 
 \end{DoxyCode}
 

@@ -3,18 +3,20 @@
 Inheritance diagram for Entity\+::Enemy\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=6.000000cm]{classEntity_1_1EnemyController}
+\includegraphics[height=4.955752cm]{classEntity_1_1EnemyController}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}\label{classEntity_1_1EnemyController_a2cc0e83e767502cb1a50ba60067bd391}} 
-{\bfseries Enemy\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
+{\bfseries Enemy\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
 \item 
 \mbox{\Hypertarget{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}\label{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}} 
-virtual void {\bfseries tick} ()
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classEntity_1_1EnemyController_aec6d60a06525248ca7aea6b6880e578a}{tick}} ()
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
+\begin{DoxyCompactList}\small\item\em this function does what must happen when this object collides with controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -23,6 +25,51 @@ virtual void {\bfseries tick} ()
 
 Definition at line 12 of file Enemy\+Controller.\+h.
 
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}\label{classEntity_1_1EnemyController_ac13063e61eed62446abc261e2f17a4c0}} 
+\index{Entity::EnemyController@{Entity::EnemyController}!onCollision@{onCollision}}
+\index{onCollision@{onCollision}!Entity::EnemyController@{Entity::EnemyController}}
+\doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
+{\footnotesize\ttfamily void Entity\+::\+Enemy\+Controller\+::on\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+this function does what must happen when this object collides with controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controllers} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}}.
+
+
+
+Definition at line 52 of file Enemy\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{if} (std::dynamic\_pointer\_cast<Entity::PlayerShipController>(b)) \{}
+\DoxyCodeLine{55                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a43cff63c7253b8ba79c28fdf5cdc3407}{getG}}()-\/>\mbox{\hyperlink{classGame_a2da38a05f1ddff329eb1a7441b98c95d}{setEnd}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (std::dynamic\_pointer\_cast<Entity::ShieldController>(b)) \{}
+\DoxyCodeLine{58                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(shared\_from\_this());}
+\DoxyCodeLine{59                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}{setEnemycount}}(\mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().getEnemycount()-\/1);}
+\DoxyCodeLine{60                 std::shared\_ptr<Entity::ShieldModel> model = std::dynamic\_pointer\_cast<Entity::ShieldModel>(}
+\DoxyCodeLine{61                     std::dynamic\_pointer\_cast<Entity::ShieldController>(b)-\/>\mbox{\hyperlink{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}{getM}}());}
+\DoxyCodeLine{62                 model-\/>setHealthpoints(model-\/>getHealthpoints() -\/ 1);}
+\DoxyCodeLine{63                 \textcolor{keywordflow}{if} (model-\/>getHealthpoints() == 0) \{}
+\DoxyCodeLine{64                         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(b);}
+\DoxyCodeLine{65                 \}}
+\DoxyCodeLine{66         \}}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

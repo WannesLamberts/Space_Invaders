@@ -1,27 +1,89 @@
 \hypertarget{classUtils_1_1StopWatch}{}\doxysection{Utils\+::Stop\+Watch Class Reference}
 \label{classUtils_1_1StopWatch}\index{Utils::StopWatch@{Utils::StopWatch}}
+
+
+a stopwatch used for the main game loop  
+
+
+
+
+{\ttfamily \#include $<$Stop\+Watch.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classUtils_1_1StopWatch_a6307657657fdea9e3fbd6894f93f3949}\label{classUtils_1_1StopWatch_a6307657657fdea9e3fbd6894f93f3949}} 
-void {\bfseries start} ()
-\item 
-\mbox{\Hypertarget{classUtils_1_1StopWatch_a13136ad8120b345c4d16f7f600867246}\label{classUtils_1_1StopWatch_a13136ad8120b345c4d16f7f600867246}} 
-double {\bfseries elapsed} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classUtils_1_1StopWatch_a6307657657fdea9e3fbd6894f93f3949}{start}} ()
+\begin{DoxyCompactList}\small\item\em starts the stopwatch \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classUtils_1_1StopWatch_a13136ad8120b345c4d16f7f600867246}{elapsed}} ()
+\begin{DoxyCompactList}\small\item\em calculates the time that has been passed since it has started \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUtils_1_1StopWatch_a17a03335cbdac0082b880a969b59a22f}\label{classUtils_1_1StopWatch_a17a03335cbdac0082b880a969b59a22f}} 
-static \mbox{\hyperlink{classUtils_1_1StopWatch}{Stop\+Watch}} \& {\bfseries get\+Instance} ()
-\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classUtils_1_1StopWatch}{Stop\+Watch}} \& \mbox{\hyperlink{classUtils_1_1StopWatch_a17a03335cbdac0082b880a969b59a22f}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em This is the only way to get a reference to the Stopwatch object and there can only exist 1 object of Stopwatch;. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+a stopwatch used for the main game loop 
+
+Definition at line 13 of file Stop\+Watch.\+h.
 
 
-Definition at line 10 of file Stop\+Watch.\+h.
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_1_1StopWatch_a13136ad8120b345c4d16f7f600867246}\label{classUtils_1_1StopWatch_a13136ad8120b345c4d16f7f600867246}} 
+\index{Utils::StopWatch@{Utils::StopWatch}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!Utils::StopWatch@{Utils::StopWatch}}
+\doxysubsubsection{\texorpdfstring{elapsed()}{elapsed()}}
+{\footnotesize\ttfamily double Utils\+::\+Stop\+Watch\+::elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates the time that has been passed since it has started 
+
+\begin{DoxyReturn}{Returns}
+the passed time 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Stop\+Watch.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                                \{}
+\DoxyCodeLine{10         std::chrono::time\_point<std::chrono::system\_clock> end=std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{11         std::chrono::duration<float> duration=end-\/begin;}
+\DoxyCodeLine{12         \textcolor{keywordflow}{return} duration.count();}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1StopWatch_a17a03335cbdac0082b880a969b59a22f}\label{classUtils_1_1StopWatch_a17a03335cbdac0082b880a969b59a22f}} 
+\index{Utils::StopWatch@{Utils::StopWatch}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Utils::StopWatch@{Utils::StopWatch}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classUtils_1_1StopWatch}{Stop\+Watch}}\& Utils\+::\+Stop\+Watch\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+This is the only way to get a reference to the Stopwatch object and there can only exist 1 object of Stopwatch;. 
+
+\begin{DoxyReturn}{Returns}
+the reference to the Stopwatch object 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Stop\+Watch.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{23                 \textcolor{keyword}{static} StopWatch instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
+\DoxyCodeLine{24                 \textcolor{comment}{// Instantiated on first use.}}
+\DoxyCodeLine{25                 \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{26         \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

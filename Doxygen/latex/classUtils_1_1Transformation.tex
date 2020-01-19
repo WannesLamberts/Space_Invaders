@@ -2,7 +2,7 @@
 \label{classUtils_1_1Transformation}\index{Utils::Transformation@{Utils::Transformation}}
 
 
-used for transforming a models x and y values to the corresponding values on the screen.  
+transforms x and y values in the logic coordinates to the corresponding values on the screen.  
 
 
 
@@ -12,18 +12,14 @@ used for transforming a models x and y values to the corresponding values on the
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_a1924912bd32f92f85f2ad093f2cf7828}\label{classUtils_1_1Transformation_a1924912bd32f92f85f2ad093f2cf7828}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries trans} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
-\item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_ace53034749afed6d1d4f58b7c25f83a0}\label{classUtils_1_1Transformation_ace53034749afed6d1d4f58b7c25f83a0}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries trans\+And\+Center} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
-\item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_a0b81c184922caf62bf5c0d94dbaa1812}\label{classUtils_1_1Transformation_a0b81c184922caf62bf5c0d94dbaa1812}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries center} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
-\item 
-\mbox{\Hypertarget{classUtils_1_1Transformation_a884c93b1db7ec8d766beca44c3a9f51d}\label{classUtils_1_1Transformation_a884c93b1db7ec8d766beca44c3a9f51d}} 
-\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} {\bfseries re\+Scale\+Hitbox} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classUtils_1_1Transformation_a821534dfe38186a8ddb3e58711134356}{trans}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} window)
+\begin{DoxyCompactList}\small\item\em transforms the logic coordinates to the corresponding values on the screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classUtils_1_1Transformation_ad0a9540089987c8794a2d58433162565}{center}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic\+Position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic\+Size)
+\begin{DoxyCompactList}\small\item\em calculates a vector2D so that if it get\textquotesingle{}s drawn it get\textquotesingle{}s drawn in the center of the model and not in the top left \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classUtils_1_1Transformation_ad2180a20ef9fedcfc120a70d6bb26946}{trans\+And\+Center}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} window, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic\+Size)
+\begin{DoxyCompactList}\small\item\em calculates a vector2D that centers the logic and then transforms it to the corresponding pixels on the screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} \mbox{\hyperlink{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}{re\+Scale\+Hitbox}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} logic\+Size, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} window\+Size, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} Texturesize)
+\begin{DoxyCompactList}\small\item\em calulates a \mbox{\hyperlink{structUtils_1_1Vector2D}{Vector2D}} that scales an image to the hitbox of an image \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,13 +28,44 @@ static \mbox{\hyperlink{classUtils_1_1Transformation}{Transformation}} \& \mbox{
 
 
 \doxysubsection{Detailed Description}
-used for transforming a models x and y values to the corresponding values on the screen. 
+transforms x and y values in the logic coordinates to the corresponding values on the screen. 
 
 Definition at line 13 of file Transformation.\+h.
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_1_1Transformation_ad0a9540089987c8794a2d58433162565}\label{classUtils_1_1Transformation_ad0a9540089987c8794a2d58433162565}} 
+\index{Utils::Transformation@{Utils::Transformation}!center@{center}}
+\index{center@{center}!Utils::Transformation@{Utils::Transformation}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} Utils\+::\+Transformation\+::center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic\+Position,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic\+Size }\end{DoxyParamCaption})}
+
+
+
+calculates a vector2D so that if it get\textquotesingle{}s drawn it get\textquotesingle{}s drawn in the center of the model and not in the top left 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Position} & the position that needs to be centered \\
+\hline
+{\em logic\+Size} & the size of the object that needs to be centered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the centered vector2D 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Transformation.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{return} \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(m.x -\/ (s.x / 2), m.y -\/ (s.y / 2));}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}\label{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}} 
 \index{Utils::Transformation@{Utils::Transformation}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!Utils::Transformation@{Utils::Transformation}}
@@ -54,15 +81,115 @@ the reference to the \mbox{\hyperlink{classUtils_1_1Transformation}{Transformati
 \end{DoxyReturn}
 
 
-Definition at line 20 of file Transformation.\+h.
+Definition at line 21 of file Transformation.\+h.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{20                                             \{}
-\DoxyCodeLine{21                 \textcolor{keyword}{static} Transformation    instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
-\DoxyCodeLine{22                 \textcolor{comment}{// Instantiated on first use.}}
-\DoxyCodeLine{23                 \textcolor{keywordflow}{return} instance;}
-\DoxyCodeLine{24         \}}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{23                 \textcolor{keyword}{static} Transformation instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
+\DoxyCodeLine{24                 \textcolor{comment}{// Instantiated on first use.}}
+\DoxyCodeLine{25                 \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{26         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}\label{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}} 
+\index{Utils::Transformation@{Utils::Transformation}!reScaleHitbox@{reScaleHitbox}}
+\index{reScaleHitbox@{reScaleHitbox}!Utils::Transformation@{Utils::Transformation}}
+\doxysubsubsection{\texorpdfstring{reScaleHitbox()}{reScaleHitbox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} Utils\+::\+Transformation\+::re\+Scale\+Hitbox (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic\+Size,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{window\+Size,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{Texturesize }\end{DoxyParamCaption})}
+
+
+
+calulates a \mbox{\hyperlink{structUtils_1_1Vector2D}{Vector2D}} that scales an image to the hitbox of an image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic\+Size} & the size of the object that needs to be scaled \\
+\hline
+{\em window\+Size} & the size of the window \\
+\hline
+{\em Texturesize} & the size of the Texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rescaled\+Hitbox \mbox{\hyperlink{structUtils_1_1Vector2D}{Vector2D}} 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file Transformation.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22         \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} v = Vector2D((((\textcolor{keywordtype}{float})w.x / 8) / t.x) * cor.x,}
+\DoxyCodeLine{23                                      (((\textcolor{keywordtype}{float})w.y / 6) / t.y) * cor.y);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} v;}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1Transformation_a821534dfe38186a8ddb3e58711134356}\label{classUtils_1_1Transformation_a821534dfe38186a8ddb3e58711134356}} 
+\index{Utils::Transformation@{Utils::Transformation}!trans@{trans}}
+\index{trans@{trans}!Utils::Transformation@{Utils::Transformation}}
+\doxysubsubsection{\texorpdfstring{trans()}{trans()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} Utils\+::\+Transformation\+::trans (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{window }\end{DoxyParamCaption})}
+
+
+
+transforms the logic coordinates to the corresponding values on the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic} & the logic coordinates that needs to be transformed \\
+\hline
+{\em window} & the window coordinates needed to calculate the transformation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed \mbox{\hyperlink{structUtils_1_1Vector2D}{Vector2D}} 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Transformation.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10         \textcolor{keywordflow}{return} \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}((((m.x + 4)) / 8) * w.x, (((m.y + 3)) / 6) * w.y);}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1Transformation_ad2180a20ef9fedcfc120a70d6bb26946}\label{classUtils_1_1Transformation_ad2180a20ef9fedcfc120a70d6bb26946}} 
+\index{Utils::Transformation@{Utils::Transformation}!transAndCenter@{transAndCenter}}
+\index{transAndCenter@{transAndCenter}!Utils::Transformation@{Utils::Transformation}}
+\doxysubsubsection{\texorpdfstring{transAndCenter()}{transAndCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} Utils\+::\+Transformation\+::trans\+And\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{window,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{logic\+Size }\end{DoxyParamCaption})}
+
+
+
+calculates a vector2D that centers the logic and then transforms it to the corresponding pixels on the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logic} & the logic coordinates that needs to be transformed \\
+\hline
+{\em window} & the window coordinates needed to calculate the transformation \\
+\hline
+{\em logic\+Size} & the size of the object that needs to be centered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the centered and transformed \mbox{\hyperlink{structUtils_1_1Vector2D}{Vector2D}} 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Transformation.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14         \textcolor{keywordflow}{return} \mbox{\hyperlink{classUtils_1_1Transformation_a821534dfe38186a8ddb3e58711134356}{trans}}(\mbox{\hyperlink{classUtils_1_1Transformation_ad0a9540089987c8794a2d58433162565}{center}}(m, s), w);}
+\DoxyCodeLine{15 \}}
 
 \end{DoxyCode}
 

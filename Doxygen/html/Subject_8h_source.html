@@ -80,20 +80,24 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Observer.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classSubject.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSubject.html">Subject</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::vector&lt;std::shared_ptr&lt;Observer&gt;&gt; observers;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keywordtype">void</span> registerObserver(std::shared_ptr&lt;Observer&gt; o);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keywordtype">void</span> removeObserver(std::shared_ptr&lt;Observer&gt; o);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keywordtype">void</span> removeallObservers();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">virtual</span> <span class="keywordtype">void</span> notifyObservers()=0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classSubject.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSubject.html">Subject</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classSubject.html#ab8b404a56f172645e95d23e86f1b8d95">   21</a></span>&#160;        std::vector&lt;std::shared_ptr&lt;Observer&gt;&gt; <a class="code" href="classSubject.html#ab8b404a56f172645e95d23e86f1b8d95">observers</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif //SPACE_INVADERS_SUBJECT_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSubject.html#ae79704a06089dffc1809c8ac0cd12398">registerObserver</a>(std::shared_ptr&lt;Observer&gt; o);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSubject.html#ab2b8a1aeb158f75379d3975bc2f96ad0">removeObserver</a>(std::shared_ptr&lt;Observer&gt; o);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSubject.html#adb3adcf5638dda8dbd4b1d4356d02453">notifyObservers</a>() = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // SPACE_INVADERS_SUBJECT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassSubject_html"><div class="ttname"><a href="classSubject.html">Subject</a></div><div class="ttdef"><b>Definition:</b> <a href="Subject_8h_source.html#l00012">Subject.h:12</a></div></div>
+<div class="ttc" id="aclassSubject_html"><div class="ttname"><a href="classSubject.html">Subject</a></div><div class="ttdoc">the subject of the observerpattern</div><div class="ttdef"><b>Definition:</b> <a href="Subject_8h_source.html#l00015">Subject.h:15</a></div></div>
+<div class="ttc" id="aclassSubject_html_ae79704a06089dffc1809c8ac0cd12398"><div class="ttname"><a href="classSubject.html#ae79704a06089dffc1809c8ac0cd12398">Subject::registerObserver</a></div><div class="ttdeci">void registerObserver(std::shared_ptr&lt; Observer &gt; o)</div><div class="ttdoc">adds a new observer</div><div class="ttdef"><b>Definition:</b> <a href="Subject_8cpp_source.html#l00007">Subject.cpp:7</a></div></div>
+<div class="ttc" id="aclassSubject_html_ab2b8a1aeb158f75379d3975bc2f96ad0"><div class="ttname"><a href="classSubject.html#ab2b8a1aeb158f75379d3975bc2f96ad0">Subject::removeObserver</a></div><div class="ttdeci">void removeObserver(std::shared_ptr&lt; Observer &gt; o)</div><div class="ttdoc">removes an observer from observers</div><div class="ttdef"><b>Definition:</b> <a href="Subject_8cpp_source.html#l00011">Subject.cpp:11</a></div></div>
+<div class="ttc" id="aclassSubject_html_adb3adcf5638dda8dbd4b1d4356d02453"><div class="ttname"><a href="classSubject.html#adb3adcf5638dda8dbd4b1d4356d02453">Subject::notifyObservers</a></div><div class="ttdeci">virtual void notifyObservers()=0</div><div class="ttdoc">does the update function from all observers</div></div>
+<div class="ttc" id="aclassSubject_html_ab8b404a56f172645e95d23e86f1b8d95"><div class="ttname"><a href="classSubject.html#ab8b404a56f172645e95d23e86f1b8d95">Subject::observers</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Observer &gt; &gt; observers</div><div class="ttdoc">the vector with all the observers in</div><div class="ttdef"><b>Definition:</b> <a href="Subject_8h_source.html#l00021">Subject.h:21</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

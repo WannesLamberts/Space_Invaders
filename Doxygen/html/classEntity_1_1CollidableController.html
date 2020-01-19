@@ -69,19 +69,25 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classEntity_1_1CollidableController-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Entity::CollidableController Class Reference</div>  </div>
+<div class="title">Entity::CollidableController Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>the controller for collidable objects  
+ <a href="classEntity_1_1CollidableController.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CollidableController_8h_source.html">CollidableController.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Entity::CollidableController:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classEntity_1_1CollidableController.png" usemap="#Entity::CollidableController_map" alt=""/>
   <map id="Entity::CollidableController_map" name="Entity::CollidableController_map">
-<area href="classEntity_1_1EntityController.html" alt="Entity::EntityController" shape="rect" coords="177,56,344,80"/>
-<area href="classControllerAbstract.html" alt="ControllerAbstract" shape="rect" coords="177,0,344,24"/>
+<area href="classEntity_1_1EntityController.html" title="Controller class for entity this is the interface between entitymodel and entityview." alt="Entity::EntityController" shape="rect" coords="265,56,432,80"/>
+<area href="classControllerAbstract.html" title="superclass of all controllers in the game this is the interface between model en view" alt="ControllerAbstract" shape="rect" coords="265,0,432,24"/>
 <area href="classEntity_1_1AliveController.html" alt="Entity::AliveController" shape="rect" coords="88,168,255,192"/>
 <area href="classEntity_1_1BulletController.html" alt="Entity::BulletController" shape="rect" coords="265,168,432,192"/>
+<area href="classEntity_1_1ShieldController.html" alt="Entity::ShieldController" shape="rect" coords="442,168,609,192"/>
 <area href="classEntity_1_1EnemyController.html" alt="Entity::EnemyController" shape="rect" coords="0,224,167,248"/>
 <area href="classEntity_1_1PlayerShipController.html" alt="Entity::PlayerShipController" shape="rect" coords="177,224,344,248"/>
 <area href="classEntity_1_1AlienShipController.html" alt="Entity::AlienShipController" shape="rect" coords="0,280,167,304"/>
@@ -90,48 +96,137 @@ Inheritance diagram for Entity::CollidableController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef0e6202ddf27cdcb76faf9e49d82876"><td class="memItemLeft" align="right" valign="top"><a id="aef0e6202ddf27cdcb76faf9e49d82876"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkCollision</b> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; b)</td></tr>
-<tr class="separator:aef0e6202ddf27cdcb76faf9e49d82876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab612a1b07f04bb2cd1dddd1105180ab7"><td class="memItemLeft" align="right" valign="top"><a id="ab612a1b07f04bb2cd1dddd1105180ab7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CollidableController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
+<tr class="memitem:ae58575acb05614e82c64d0880fe557a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1CollidableController.html#ae58575acb05614e82c64d0880fe557a1">checkCollision</a> (std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt; controller)</td></tr>
+<tr class="memdesc:ae58575acb05614e82c64d0880fe557a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if this controller collides with controller  <a href="classEntity_1_1CollidableController.html#ae58575acb05614e82c64d0880fe557a1">More...</a><br /></td></tr>
+<tr class="separator:ae58575acb05614e82c64d0880fe557a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab612a1b07f04bb2cd1dddd1105180ab7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1CollidableController.html#ab612a1b07f04bb2cd1dddd1105180ab7">CollidableController</a> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memdesc:ab612a1b07f04bb2cd1dddd1105180ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">the constructor for the collidablecontroller  <a href="classEntity_1_1CollidableController.html#ab612a1b07f04bb2cd1dddd1105180ab7">More...</a><br /></td></tr>
 <tr class="separator:ab612a1b07f04bb2cd1dddd1105180ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae380338ba880d1f28b6bb182365d47ae"><td class="memItemLeft" align="right" valign="top"><a id="ae380338ba880d1f28b6bb182365d47ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1CollidableController.html#ae380338ba880d1f28b6bb182365d47ae">tick</a> ()</td></tr>
+<tr class="memdesc:ae380338ba880d1f28b6bb182365d47ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">does what the controller must do every game tick <br /></td></tr>
+<tr class="separator:ae380338ba880d1f28b6bb182365d47ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEntity_1_1EntityController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEntity_1_1EntityController')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEntity_1_1EntityController.html">Entity::EntityController</a></td></tr>
-<tr class="memitem:a32f2181996d48182c887ab92149afdf7 inherit pub_methods_classEntity_1_1EntityController"><td class="memItemLeft" align="right" valign="top"><a id="a32f2181996d48182c887ab92149afdf7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EntityController</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
+<tr class="memitem:a32f2181996d48182c887ab92149afdf7 inherit pub_methods_classEntity_1_1EntityController"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity_1_1EntityController.html#a32f2181996d48182c887ab92149afdf7">EntityController</a> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memdesc:a32f2181996d48182c887ab92149afdf7 inherit pub_methods_classEntity_1_1EntityController"><td class="mdescLeft">&#160;</td><td class="mdescRight">contructor for <a class="el" href="classEntity_1_1EntityController.html" title="Controller class for entity this is the interface between entitymodel and entityview.">EntityController</a> it sets the scale of the view to it hitbox and calls notifyopservers  <a href="classEntity_1_1EntityController.html#a32f2181996d48182c887ab92149afdf7">More...</a><br /></td></tr>
 <tr class="separator:a32f2181996d48182c887ab92149afdf7 inherit pub_methods_classEntity_1_1EntityController"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa28075ded7bf49d71ca15518ede5ef35 inherit pub_methods_classEntity_1_1EntityController"><td class="memItemLeft" align="right" valign="top"><a id="aa28075ded7bf49d71ca15518ede5ef35"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> ()=0</td></tr>
-<tr class="separator:aa28075ded7bf49d71ca15518ede5ef35 inherit pub_methods_classEntity_1_1EntityController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classControllerAbstract"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classControllerAbstract')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classControllerAbstract.html">ControllerAbstract</a></td></tr>
-<tr class="memitem:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a9ff7d37a76409a65aed7870458b13e5c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerAbstract</b> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;m, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;v)</td></tr>
+<tr class="memitem:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classControllerAbstract.html#a9ff7d37a76409a65aed7870458b13e5c">ControllerAbstract</a> (const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;<a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</td></tr>
+<tr class="memdesc:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">contructor for the controller  <a href="classControllerAbstract.html#a9ff7d37a76409a65aed7870458b13e5c">More...</a><br /></td></tr>
 <tr class="separator:a9ff7d37a76409a65aed7870458b13e5c inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ac011c92c97ae6236cd24dd03020bdf85"></a>
-const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getM</b> () const</td></tr>
+<tr class="memitem:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classControllerAbstract.html#ac011c92c97ae6236cd24dd03020bdf85">getM</a> () const</td></tr>
+<tr class="memdesc:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for m  <a href="classControllerAbstract.html#ac011c92c97ae6236cd24dd03020bdf85">More...</a><br /></td></tr>
 <tr class="separator:ac011c92c97ae6236cd24dd03020bdf85 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a120c5e7197bbf9a53d0365658770be43"></a>
-const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getV</b> () const</td></tr>
+<tr class="memitem:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classControllerAbstract.html#a120c5e7197bbf9a53d0365658770be43">getV</a> () const</td></tr>
+<tr class="memdesc:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for v  <a href="classControllerAbstract.html#a120c5e7197bbf9a53d0365658770be43">More...</a><br /></td></tr>
 <tr class="separator:a120c5e7197bbf9a53d0365658770be43 inherit pub_methods_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classControllerAbstract"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classControllerAbstract')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classControllerAbstract.html">ControllerAbstract</a></td></tr>
 <tr class="memitem:a9e02164cdd086533e3fd67bdbdce1d5b inherit pro_attribs_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="a9e02164cdd086533e3fd67bdbdce1d5b"></a>
-std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m</b></td></tr>
+std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a></td></tr>
+<tr class="memdesc:a9e02164cdd086533e3fd67bdbdce1d5b inherit pro_attribs_classControllerAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">the model of the controller <br /></td></tr>
 <tr class="separator:a9e02164cdd086533e3fd67bdbdce1d5b inherit pro_attribs_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb469f80fa4b819b8922e63a9928d1ad inherit pro_attribs_classControllerAbstract"><td class="memItemLeft" align="right" valign="top"><a id="aeb469f80fa4b819b8922e63a9928d1ad"></a>
-std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
+std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a></td></tr>
+<tr class="memdesc:aeb469f80fa4b819b8922e63a9928d1ad inherit pro_attribs_classControllerAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">the view of the controller <br /></td></tr>
 <tr class="separator:aeb469f80fa4b819b8922e63a9928d1ad inherit pro_attribs_classControllerAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="CollidableController_8h_source.html#l00011">11</a> of file <a class="el" href="CollidableController_8h_source.html">CollidableController.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>the controller for collidable objects </p>
+
+<p class="definition">Definition at line <a class="el" href="CollidableController_8h_source.html#l00013">13</a> of file <a class="el" href="CollidableController_8h_source.html">CollidableController.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab612a1b07f04bb2cd1dddd1105180ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab612a1b07f04bb2cd1dddd1105180ab7">&#9670;&nbsp;</a></span>CollidableController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::CollidableController::CollidableController </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classModelAbstract.html">ModelAbstract</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the constructor for the collidablecontroller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>the model of the collidablecontroller </td></tr>
+    <tr><td class="paramname">v</td><td>the view of the collidablecontroller </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="CollidableController_8cpp_source.html#l00018">18</a> of file <a class="el" href="CollidableController_8cpp_source.html">CollidableController.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : <a class="code" href="classEntity_1_1EntityController.html#a32f2181996d48182c887ab92149afdf7">EntityController</a>(<a class="code" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>, <a class="code" href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">v</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae58575acb05614e82c64d0880fe557a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58575acb05614e82c64d0880fe557a1">&#9670;&nbsp;</a></span>checkCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Entity::CollidableController::checkCollision </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classEntity_1_1CollidableController.html">Entity::CollidableController</a> &gt;&#160;</td>
+          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks if this controller collides with controller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if it collides or not </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="CollidableController_8cpp_source.html#l00007">7</a> of file <a class="el" href="CollidableController_8cpp_source.html">CollidableController.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        std::shared_ptr&lt;Entity::EntityModel&gt; mod = std::dynamic_pointer_cast&lt;Entity::EntityModel&gt;(<a class="code" href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">m</a>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        std::shared_ptr&lt;Entity::EntityModel&gt; modb = std::dynamic_pointer_cast&lt;Entity::EntityModel&gt;(b-&gt;m);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span> (mod-&gt;getPosition().x + mod-&gt;getSize().x/2 &gt;= modb-&gt;getPosition().x-modb-&gt;getSize().x/2 &amp;&amp;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                mod-&gt;getPosition().x-mod-&gt;getSize().x/2 &lt;= modb-&gt;getPosition().x + modb-&gt;getSize().x/2 &amp;&amp;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                mod-&gt;getPosition().y+mod-&gt;getSize().y/2&gt;=modb-&gt;getPosition().y - modb-&gt;getSize().y/2 &amp;&amp;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                mod-&gt;getPosition().y-mod-&gt;getSize().y/2&lt;=modb-&gt;getPosition().y+modb-&gt;getSize().y/2);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Entity/Collidable/<a class="el" href="CollidableController_8h_source.html">CollidableController.h</a></li>
 <li>Entity/Collidable/<a class="el" href="CollidableController_8cpp_source.html">CollidableController.cpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassControllerAbstract_html_a9e02164cdd086533e3fd67bdbdce1d5b"><div class="ttname"><a href="classControllerAbstract.html#a9e02164cdd086533e3fd67bdbdce1d5b">ControllerAbstract::m</a></div><div class="ttdeci">std::shared_ptr&lt; ModelAbstract &gt; m</div><div class="ttdoc">the model of the controller</div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00041">ControllerAbstract.h:41</a></div></div>
+<div class="ttc" id="aclassControllerAbstract_html_aeb469f80fa4b819b8922e63a9928d1ad"><div class="ttname"><a href="classControllerAbstract.html#aeb469f80fa4b819b8922e63a9928d1ad">ControllerAbstract::v</a></div><div class="ttdeci">std::shared_ptr&lt; ViewAbstract &gt; v</div><div class="ttdoc">the view of the controller</div><div class="ttdef"><b>Definition:</b> <a href="ControllerAbstract_8h_source.html#l00045">ControllerAbstract.h:45</a></div></div>
+<div class="ttc" id="aclassEntity_1_1EntityController_html_a32f2181996d48182c887ab92149afdf7"><div class="ttname"><a href="classEntity_1_1EntityController.html#a32f2181996d48182c887ab92149afdf7">Entity::EntityController::EntityController</a></div><div class="ttdeci">EntityController(const std::shared_ptr&lt; ModelAbstract &gt; &amp;m, const std::shared_ptr&lt; ViewAbstract &gt; &amp;v)</div><div class="ttdoc">contructor for EntityController it sets the scale of the view to it hitbox and calls notifyopservers</div><div class="ttdef"><b>Definition:</b> <a href="EntityController_8cpp_source.html#l00009">EntityController.cpp:9</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

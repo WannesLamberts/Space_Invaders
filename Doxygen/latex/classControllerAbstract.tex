@@ -1,42 +1,126 @@
 \hypertarget{classControllerAbstract}{}\doxysection{Controller\+Abstract Class Reference}
 \label{classControllerAbstract}\index{ControllerAbstract@{ControllerAbstract}}
+
+
+superclass of all controllers in the game this is the interface between model en view  
+
+
+
+
+{\ttfamily \#include $<$Controller\+Abstract.\+h$>$}
+
 Inheritance diagram for Controller\+Abstract\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=6.000000cm]{classControllerAbstract}
+\includegraphics[height=4.800000cm]{classControllerAbstract}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}\label{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}} 
-{\bfseries Controller\+Abstract} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
-\item 
+\mbox{\hyperlink{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}{Controller\+Abstract}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
+\begin{DoxyCompactList}\small\item\em contructor for the controller \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \& \mbox{\hyperlink{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}{getM}} () const
+\begin{DoxyCompactList}\small\item\em getter for m \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \& \mbox{\hyperlink{classControllerAbstract_a120c5e7197bbf9a53d0365658770be43}{getV}} () const
+\begin{DoxyCompactList}\small\item\em getter for v \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classControllerAbstract_abbe9ad50a190b3dced17a5904b7d418d}\label{classControllerAbstract_abbe9ad50a190b3dced17a5904b7d418d}} 
-virtual void {\bfseries tick} ()=0
-\item 
-\mbox{\Hypertarget{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}\label{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}} 
-const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \& {\bfseries getM} () const
-\item 
-\mbox{\Hypertarget{classControllerAbstract_a120c5e7197bbf9a53d0365658770be43}\label{classControllerAbstract_a120c5e7197bbf9a53d0365658770be43}} 
-const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \& {\bfseries getV} () const
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classControllerAbstract_abbe9ad50a190b3dced17a5904b7d418d}{tick}} ()=0
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}\label{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ {\bfseries m}
-\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}
+\begin{DoxyCompactList}\small\item\em the model of the controller \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}\label{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ {\bfseries v}
-\end{DoxyCompactItemize}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}}
+\begin{DoxyCompactList}\small\item\em the view of the controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+superclass of all controllers in the game this is the interface between model en view 
+
+Definition at line 14 of file Controller\+Abstract.\+h.
 
 
-Definition at line 11 of file Controller\+Abstract.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}\label{classControllerAbstract_a9ff7d37a76409a65aed7870458b13e5c}} 
+\index{ControllerAbstract@{ControllerAbstract}!ControllerAbstract@{ControllerAbstract}}
+\index{ControllerAbstract@{ControllerAbstract}!ControllerAbstract@{ControllerAbstract}}
+\doxysubsubsection{\texorpdfstring{ControllerAbstract()}{ControllerAbstract()}}
+{\footnotesize\ttfamily Controller\+Abstract\+::\+Controller\+Abstract (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&}]{m,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+contructor for the controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the model for the controller \\
+\hline
+{\em v} & the view for the controller \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Controller\+Abstract.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7         : \mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}), \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}}(\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}}) \{}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}\label{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}} 
+\index{ControllerAbstract@{ControllerAbstract}!getM@{getM}}
+\index{getM@{getM}!ControllerAbstract@{ControllerAbstract}}
+\doxysubsubsection{\texorpdfstring{getM()}{getM()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \& Controller\+Abstract\+::getM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for m 
+
+\begin{DoxyReturn}{Returns}
+m 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file Controller\+Abstract.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classControllerAbstract_a120c5e7197bbf9a53d0365658770be43}\label{classControllerAbstract_a120c5e7197bbf9a53d0365658770be43}} 
+\index{ControllerAbstract@{ControllerAbstract}!getV@{getV}}
+\index{getV@{getV}!ControllerAbstract@{ControllerAbstract}}
+\doxysubsubsection{\texorpdfstring{getV()}{getV()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \& Controller\+Abstract\+::getV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for v 
+
+\begin{DoxyReturn}{Returns}
+v 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Controller\+Abstract.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}}; \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

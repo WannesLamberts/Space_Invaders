@@ -1,63 +1,517 @@
 \hypertarget{classUtils_1_1ObjectManager}{}\doxysection{Utils\+::Object\+Manager Class Reference}
 \label{classUtils_1_1ObjectManager}\index{Utils::ObjectManager@{Utils::ObjectManager}}
+
+
+manages all the objects of the game  
+
+
+
+
+{\ttfamily \#include $<$Object\+Manager.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a1c2bbff560b52d08cf2058cc13def2d0}\label{classUtils_1_1ObjectManager_a1c2bbff560b52d08cf2058cc13def2d0}} 
-void {\bfseries create\+Player\+Ship} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, int healthpoints, double speed)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_aa533783a21d7223f77e73864d1a10f9f}\label{classUtils_1_1ObjectManager_aa533783a21d7223f77e73864d1a10f9f}} 
-void {\bfseries create\+Alien\+Ship} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, int healthpoints, double speed)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a401e5ffd32be41d83cb80d7d397a9374}\label{classUtils_1_1ObjectManager_a401e5ffd32be41d83cb80d7d397a9374}} 
-void {\bfseries create\+Bullet} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} p, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} s, double speed, bool friendly)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a65c28d2c647f5ddad5da876afd350d8a}\label{classUtils_1_1ObjectManager_a65c28d2c647f5ddad5da876afd350d8a}} 
-void {\bfseries setup} (\mbox{\hyperlink{classGame}{Game}} $\ast$)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}\label{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}} 
-const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1PlayerShipController}{Entity\+::\+Player\+Ship\+Controller}} $>$ \& {\bfseries get\+Hero} () const
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}\label{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}} 
-void {\bfseries set\+Enemycount} (int enemycount)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}\label{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}} 
-int {\bfseries get\+Enemycount} () const
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}\label{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}} 
-const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ $>$ \& {\bfseries get\+Visuals} () const
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}\label{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}} 
-void {\bfseries deleteob} (int i)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a64b9368e0a6e77f69044eac0aaedd5ca}\label{classUtils_1_1ObjectManager_a64b9368e0a6e77f69044eac0aaedd5ca}} 
-void {\bfseries add\+Object} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$)
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}\label{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}} 
-const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$ $>$ \& {\bfseries getO} () const
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a360b895d90b961c466725ec4d2650d57}\label{classUtils_1_1ObjectManager_a360b895d90b961c466725ec4d2650d57}} 
-void {\bfseries add\+Deletion} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$)
-\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}{create\+Player\+Ship}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} size, int healthpoints, double speed)
+\begin{DoxyCompactList}\small\item\em creates a playership and places it in the object vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}{create\+Alien\+Ship}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} size, int healthpoints, double speed)
+\begin{DoxyCompactList}\small\item\em creates an alienship and places it in the object vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a5ed06518d2d1f803f6b84261006b4811}{create\+Bullet}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} size, double speed, bool friendly)
+\begin{DoxyCompactList}\small\item\em create a bullet and places it in the object vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{create\+Shield}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} position, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} size, int healthpoints)
+\begin{DoxyCompactList}\small\item\em creates a shield and places it in the object vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}{setup}} (\mbox{\hyperlink{classGame}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em sets enemycount to 0 and sets g to game \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1PlayerShipController}{Entity\+::\+Player\+Ship\+Controller}} $>$ \& \mbox{\hyperlink{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}{get\+Hero}} () const
+\begin{DoxyCompactList}\small\item\em getter for the hero \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}{set\+Enemycount}} (int enemycount)
+\begin{DoxyCompactList}\small\item\em setter for enemycount \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}{get\+Enemycount}} () const
+\begin{DoxyCompactList}\small\item\em getter for enemycount \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ $>$ \& \mbox{\hyperlink{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}{get\+Visuals}} () const
+\begin{DoxyCompactList}\small\item\em getter for visuals \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{add\+Deletion}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ controller)
+\begin{DoxyCompactList}\small\item\em adds controller to objects\+To\+Delete \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classUtils_1_1ObjectManager_a6b6562c16d017ba3c38bd028696da9cf}\label{classUtils_1_1ObjectManager_a6b6562c16d017ba3c38bd028696da9cf}} 
-void {\bfseries delete\+Objects} ()
-\item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a59054098c8accaf440db5c699a891e90}\label{classUtils_1_1ObjectManager_a59054098c8accaf440db5c699a891e90}} 
-void {\bfseries delete\+Object} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ c)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a6b6562c16d017ba3c38bd028696da9cf}{delete\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em removes all objects from o that have an controller in objects\+To\+Delete so that these objects will be deleted since there are no more pointers to the objects \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a2bc778e5fe4d63cde65997bf8184bb22}{delete\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$ controller)
+\begin{DoxyCompactList}\small\item\em removes an object from o that has controller as controller \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}{deleteob}} (int i)
+\begin{DoxyCompactList}\small\item\em deletes an object out of o \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}{add\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$ object)
+\begin{DoxyCompactList}\small\item\em adds an object to o \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$ $>$ \& \mbox{\hyperlink{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}{getO}} () const
+\begin{DoxyCompactList}\small\item\em getter of o \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame}{Game}} $\ast$ \mbox{\hyperlink{classUtils_1_1ObjectManager_a43cff63c7253b8ba79c28fdf5cdc3407}{getG}} () const
+\begin{DoxyCompactList}\small\item\em getter for game \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}\label{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}} 
-static \mbox{\hyperlink{classUtils_1_1ObjectManager}{Object\+Manager}} \& {\bfseries get\+Instance} ()
-\end{DoxyCompactItemize}
+static \mbox{\hyperlink{classUtils_1_1ObjectManager}{Object\+Manager}} \& \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em This is the only way to get a reference to the Objectmanager object and there can only exist 1 object of Objectmanager;. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+manages all the objects of the game 
+
+Definition at line 20 of file Object\+Manager.\+h.
 
 
-Definition at line 16 of file Object\+Manager.\+h.
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}\label{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!addDeletion@{addDeletion}}
+\index{addDeletion@{addDeletion}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{addDeletion()}{addDeletion()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::add\+Deletion (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$}]{controller }\end{DoxyParamCaption})}
+
+
+
+adds controller to objects\+To\+Delete 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & the controller to be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                                         \{}
+\DoxyCodeLine{62         objectsToDelete.push\_back(v);}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}\label{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!addObject@{addObject}}
+\index{addObject@{addObject}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::add\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$}]{object }\end{DoxyParamCaption})}
+
+
+
+adds an object to o 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & object that needs to be addded \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                                  \{}
+\DoxyCodeLine{70         o.push\_back(obj);}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}\label{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!createAlienShip@{createAlienShip}}
+\index{createAlienShip@{createAlienShip}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{createAlienShip()}{createAlienShip()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::create\+Alien\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{size,  }\item[{int}]{healthpoints,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+creates an alienship and places it in the object vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position of the alienship \\
+\hline
+{\em size} & the size of the alienship \\
+\hline
+{\em healthpoints} & the healthpoints of the alienship \\
+\hline
+{\em speed} & the speed of the alienship \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                                                                         \{}
+\DoxyCodeLine{45     std::shared\_ptr<ModelAbstract> m = std::make\_shared<Entity::AlienShipModel>(p, s, healthpoints,speed);}
+\DoxyCodeLine{46         std::shared\_ptr<ViewAbstract> v = std::make\_shared<Entity::AlienShipView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         m-\/>registerObserver(v);}
+\DoxyCodeLine{49     std::shared\_ptr<ControllerAbstract> c = std::make\_shared<Entity::AlienShipController>(m, v);}
+\DoxyCodeLine{50     std::shared\_ptr<Utils::Object> obj = std::make\_shared<Utils::Object>(v, m, c);}
+\DoxyCodeLine{51     \mbox{\hyperlink{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}{addObject}}(obj);}
+\DoxyCodeLine{52     enemycount++;}
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a5ed06518d2d1f803f6b84261006b4811}\label{classUtils_1_1ObjectManager_a5ed06518d2d1f803f6b84261006b4811}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!createBullet@{createBullet}}
+\index{createBullet@{createBullet}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{createBullet()}{createBullet()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::create\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{size,  }\item[{double}]{speed,  }\item[{bool}]{friendly }\end{DoxyParamCaption})}
+
+
+
+create a bullet and places it in the object vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position of the bullet \\
+\hline
+{\em size} & the size of the bullet \\
+\hline
+{\em speed} & the speed of the bullet \\
+\hline
+{\em friendly} & is the bullet from the player or not \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                                                                                    \{}
+\DoxyCodeLine{28         std::shared\_ptr<ModelAbstract> m = std::make\_shared<Entity::BulletModel>(p, s, speed,friendly);}
+\DoxyCodeLine{29         std::shared\_ptr<ViewAbstract> v = std::make\_shared<Entity::BulletView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{30         m-\/>registerObserver(v);}
+\DoxyCodeLine{31         std::shared\_ptr<ControllerAbstract> c = std::make\_shared<Entity::BulletController>(m, v);}
+\DoxyCodeLine{32         std::shared\_ptr<Utils::Object> obj = std::make\_shared<Utils::Object>(v, m, c);}
+\DoxyCodeLine{33         \mbox{\hyperlink{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}{addObject}}(obj);}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}\label{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!createPlayerShip@{createPlayerShip}}
+\index{createPlayerShip@{createPlayerShip}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{createPlayerShip()}{createPlayerShip()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::create\+Player\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{size,  }\item[{int}]{healthpoints,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+creates a playership and places it in the object vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position of the playership \\
+\hline
+{\em size} & the size of the playership \\
+\hline
+{\em healthpoints} & the healthpoints of the playership \\
+\hline
+{\em speed} & the speed of the playership \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9         std::shared\_ptr<ModelAbstract> m = std::make\_shared<Entity::PlayerShipModel>(p, s, healthpoints,speed);}
+\DoxyCodeLine{10         std::shared\_ptr<ViewAbstract> l=std::make\_shared<Entity::LifeView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{11         std::shared\_ptr<ViewAbstract> player=std::make\_shared<Entity::PlayerScoreView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{12         visuals.push\_back(l);}
+\DoxyCodeLine{13         visuals.push\_back(player);}
+\DoxyCodeLine{14         std::shared\_ptr<ViewAbstract> v = std::make\_shared<Entity::PlayerShipView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{15         m-\/>registerObserver(v);}
+\DoxyCodeLine{16         m-\/>registerObserver(l);}
+\DoxyCodeLine{17         m-\/>registerObserver(player);}
+\DoxyCodeLine{18         std::shared\_ptr<ControllerAbstract> c = std::make\_shared<Entity::PlayerShipController>(m, v);}
+\DoxyCodeLine{19         std::shared\_ptr<Utils::Object> obj = std::make\_shared<Utils::Object>(v, m, c);}
+\DoxyCodeLine{20         \mbox{\hyperlink{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}{addObject}}(obj);}
+\DoxyCodeLine{21         hero=std::dynamic\_pointer\_cast<Entity::PlayerShipController>(c);}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}\label{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!createShield@{createShield}}
+\index{createShield@{createShield}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{createShield()}{createShield()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::create\+Shield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{size,  }\item[{int}]{healthpoints }\end{DoxyParamCaption})}
+
+
+
+creates a shield and places it in the object vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position of the shield \\
+\hline
+{\em size} & the size of the shield \\
+\hline
+{\em healthpoints} & the healthpoints of the shield \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                                                         \{}
+\DoxyCodeLine{36         std::shared\_ptr<ModelAbstract> m = std::make\_shared<Entity::ShieldModel>(p, s, healthpoints);}
+\DoxyCodeLine{37         std::shared\_ptr<ViewAbstract> v = std::make\_shared<Entity::ShieldView>(g-\/>\mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}}(),m);}
+\DoxyCodeLine{38         m-\/>registerObserver(v);}
+\DoxyCodeLine{39         std::shared\_ptr<ControllerAbstract> c = std::make\_shared<Entity::ShieldController>(m, v);}
+\DoxyCodeLine{40         std::shared\_ptr<Utils::Object> obj = std::make\_shared<Utils::Object>(v, m, c);}
+\DoxyCodeLine{41         \mbox{\hyperlink{classUtils_1_1ObjectManager_a2c9f0ed553f2453227352768b535ca05}{addObject}}(obj);}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}\label{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!deleteob@{deleteob}}
+\index{deleteob@{deleteob}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{deleteob()}{deleteob()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::deleteob (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+deletes an object out of o 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the object to delete in the vector o \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                        \{}
+\DoxyCodeLine{65         o.erase(o.begin()+i);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a2bc778e5fe4d63cde65997bf8184bb22}\label{classUtils_1_1ObjectManager_a2bc778e5fe4d63cde65997bf8184bb22}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!deleteObject@{deleteObject}}
+\index{deleteObject@{deleteObject}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{deleteObject()}{deleteObject()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::delete\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classControllerAbstract}{Controller\+Abstract}} $>$}]{controller }\end{DoxyParamCaption})}
+
+
+
+removes an object from o that has controller as controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & the controller that is the controller of an object that needs to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                                                          \{}
+\DoxyCodeLine{55         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < o.size(); ++i) \{}
+\DoxyCodeLine{56                 \textcolor{keywordflow}{if}(o[i]-\/>c==c)\{}
+\DoxyCodeLine{57                         \mbox{\hyperlink{classUtils_1_1ObjectManager_a8196375433dd33e1afc982fdba0386fc}{deleteob}}(i);}
+\DoxyCodeLine{58                 \}}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}\label{classUtils_1_1ObjectManager_a90ba97a30bdef1dd849a7de74c79d2b2}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getEnemycount@{getEnemycount}}
+\index{getEnemycount@{getEnemycount}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getEnemycount()}{getEnemycount()}}
+{\footnotesize\ttfamily int Utils\+::\+Object\+Manager\+::get\+Enemycount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for enemycount 
+
+\begin{DoxyReturn}{Returns}
+the enemycount 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{ \textcolor{keywordflow}{return} enemycount; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a43cff63c7253b8ba79c28fdf5cdc3407}\label{classUtils_1_1ObjectManager_a43cff63c7253b8ba79c28fdf5cdc3407}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getG@{getG}}
+\index{getG@{getG}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getG()}{getG()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} $\ast$ Utils\+::\+Object\+Manager\+::getG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for game 
+
+\begin{DoxyReturn}{Returns}
+game$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82 \{ \textcolor{keywordflow}{return} g; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}\label{classUtils_1_1ObjectManager_a2523a657a716cef66baf0842b7d7f782}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getHero@{getHero}}
+\index{getHero@{getHero}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getHero()}{getHero()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1PlayerShipController}{Entity\+::\+Player\+Ship\+Controller}} $>$ \& Utils\+::\+Object\+Manager\+::get\+Hero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for the hero 
+
+\begin{DoxyReturn}{Returns}
+the hero 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81 \{ \textcolor{keywordflow}{return} hero; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}\label{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classUtils_1_1ObjectManager}{Object\+Manager}}\& Utils\+::\+Object\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+This is the only way to get a reference to the Objectmanager object and there can only exist 1 object of Objectmanager;. 
+
+\begin{DoxyReturn}{Returns}
+the reference to the Objectmanager object 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file Object\+Manager.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61                 \textcolor{keyword}{static} ObjectManager instance; \textcolor{comment}{// Guaranteed to be destroyed.}}
+\DoxyCodeLine{62                 \textcolor{comment}{// Instantiated on first use.}}
+\DoxyCodeLine{63                 \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{64         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}\label{classUtils_1_1ObjectManager_ab02dfb4c5fd630a51595488729dbc20f}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getO@{getO}}
+\index{getO@{getO}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getO()}{getO()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structUtils_1_1Object}{Utils\+::\+Object}} $>$ $>$ \& Utils\+::\+Object\+Manager\+::getO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter of o 
+
+\begin{DoxyReturn}{Returns}
+o 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \textcolor{keywordflow}{return} o; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}\label{classUtils_1_1ObjectManager_a88bcd9266052f4e9cb81b17270743993}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!getVisuals@{getVisuals}}
+\index{getVisuals@{getVisuals}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{getVisuals()}{getVisuals()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ $>$ \& Utils\+::\+Object\+Manager\+::get\+Visuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for visuals 
+
+\begin{DoxyReturn}{Returns}
+visuals 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78 \{ \textcolor{keywordflow}{return} visuals; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}\label{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!setEnemycount@{setEnemycount}}
+\index{setEnemycount@{setEnemycount}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{setEnemycount()}{setEnemycount()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::set\+Enemycount (\begin{DoxyParamCaption}\item[{int}]{enemycount }\end{DoxyParamCaption})}
+
+
+
+setter for enemycount 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemycount} & sets enemycount to enemycount \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ ObjectManager::enemycount = enemycount; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}\label{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}} 
+\index{Utils::ObjectManager@{Utils::ObjectManager}!setup@{setup}}
+\index{setup@{setup}!Utils::ObjectManager@{Utils::ObjectManager}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void Utils\+::\+Object\+Manager\+::setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+sets enemycount to 0 and sets g to game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the pointer g get\textquotesingle{}s set to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file Object\+Manager.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                          \{}
+\DoxyCodeLine{24         g=game;}
+\DoxyCodeLine{25         enemycount=0;}
+\DoxyCodeLine{26 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

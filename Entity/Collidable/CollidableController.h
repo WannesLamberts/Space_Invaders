@@ -7,18 +7,35 @@
 #include "../EntityController.h"
 namespace Entity{
 
-
+/**
+ * \brief the controller for collidable objects
+ */
 class CollidableController: public EntityController
 {
 
 public:
-        bool checkCollision(std::shared_ptr<Entity::CollidableController> b);
-
+        /**
+         * \brief checks if this controller collides with controller
+         * @param controller
+         * @return if it collides or not
+         */
+        bool checkCollision(std::shared_ptr<Entity::CollidableController> controller);
+        /**
+         * \brief the constructor for the collidablecontroller
+         * @param m the model of the collidablecontroller
+         * @param v the view of the collidablecontroller
+         */
         CollidableController(const std::shared_ptr<ModelAbstract>& m, const std::shared_ptr<ViewAbstract>& v);
+        /**
+         * \brief does what the controller must do every game tick
+         */
         virtual void tick();
-
 private:
-        virtual void onCollision(std::shared_ptr<Entity::CollidableController> b)=0;
+        /**
+         * \brief this function does what must happen when this object collides with controller
+         * @param controllers
+         */
+        virtual void onCollision(std::shared_ptr<Entity::CollidableController> controller)=0;
 };
 }
 #endif // SPACE_INVADERS_COLLIDABLECONTROLLER_H

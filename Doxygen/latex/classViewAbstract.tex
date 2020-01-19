@@ -12,26 +12,29 @@ superclass of all view classes handles the visual aspect of the game
 Inheritance diagram for View\+Abstract\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.871795cm]{classViewAbstract}
+\includegraphics[height=2.393162cm]{classViewAbstract}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classViewAbstract_a7bc948ce51d6a44f6b1c43e1146d5dd6}\label{classViewAbstract_a7bc948ce51d6a44f6b1c43e1146d5dd6}} 
-{\bfseries View\+Abstract} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&w, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ model)
-\item 
+\mbox{\hyperlink{classViewAbstract_ae70e54b453832e601f5332fefb6f4c74}{View\+Abstract}} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}})
+\begin{DoxyCompactList}\small\item\em constructor of the viewabstract \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}\label{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}} 
 virtual void \mbox{\hyperlink{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}{draw}} ()=0
-\begin{DoxyCompactList}\small\item\em draws a sf\+::\+Drawable on a window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em draws a sf\+::\+Drawable on w \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}\label{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}} 
-std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ {\bfseries w}
+std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}
+\begin{DoxyCompactList}\small\item\em the window of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classViewAbstract_ae9ec13c9203ad6e599e2b9b837501351}\label{classViewAbstract_ae9ec13c9203ad6e599e2b9b837501351}} 
-std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ {\bfseries model}
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}\label{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}} 
+std\+::shared\+\_\+ptr$<$ sf\+::\+Drawable $>$ \mbox{\hyperlink{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}{shape}}
+\begin{DoxyCompactList}\small\item\em the drawable that gets drawn on the screen \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -41,26 +44,31 @@ Definition at line 15 of file View\+Abstract.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}\label{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}} 
-\index{ViewAbstract@{ViewAbstract}!draw@{draw}}
-\index{draw@{draw}!ViewAbstract@{ViewAbstract}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily virtual void View\+Abstract\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classViewAbstract_ae70e54b453832e601f5332fefb6f4c74}\label{classViewAbstract_ae70e54b453832e601f5332fefb6f4c74}} 
+\index{ViewAbstract@{ViewAbstract}!ViewAbstract@{ViewAbstract}}
+\index{ViewAbstract@{ViewAbstract}!ViewAbstract@{ViewAbstract}}
+\doxysubsubsection{\texorpdfstring{ViewAbstract()}{ViewAbstract()}}
+{\footnotesize\ttfamily View\+Abstract\+::\+View\+Abstract (\begin{DoxyParamCaption}\item[{const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{w }\end{DoxyParamCaption})}
 
 
 
-draws a sf\+::\+Drawable on a window 
+constructor of the viewabstract 
 
 
 \begin{DoxyParams}{Parameters}
-{\em w} & the window where the drawable gets drawn on \\
+{\em w} & the window of the game \\
 \hline
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}{Entity\+::\+Entity\+View}}.
+Definition at line 6 of file View\+Abstract.\+cpp.
 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6 : \mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}) \{\}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

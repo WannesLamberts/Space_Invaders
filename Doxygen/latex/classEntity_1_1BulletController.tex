@@ -10,14 +10,13 @@ Inheritance diagram for Entity\+::Bullet\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}\label{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}} 
-void {\bfseries tick} ()
-\item 
+void \mbox{\hyperlink{classEntity_1_1BulletController_abab445d63fa950bf899c0e97ac4846b7}{tick}} ()
+\begin{DoxyCompactList}\small\item\em does what the controller must do every game tick \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}\label{classEntity_1_1BulletController_a68555a3e53c80e06c4b61744bfc923fe}} 
-{\bfseries Bullet\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&m, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&v)
+{\bfseries Bullet\+Controller} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classViewAbstract}{View\+Abstract}} $>$ \&\mbox{\hyperlink{classControllerAbstract_aeb469f80fa4b819b8922e63a9928d1ad}{v}})
 \item 
-\mbox{\Hypertarget{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}\label{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}} 
-void {\bfseries on\+Collision} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}{on\+Collision}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$ b)
+\begin{DoxyCompactList}\small\item\em this function does what must happen when this object collides with controller \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -26,6 +25,70 @@ void {\bfseries on\+Collision} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class
 
 Definition at line 11 of file Bullet\+Controller.\+h.
 
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}\label{classEntity_1_1BulletController_af261bfb0c7d7f2e904afba368e68f305}} 
+\index{Entity::BulletController@{Entity::BulletController}!onCollision@{onCollision}}
+\index{onCollision@{onCollision}!Entity::BulletController@{Entity::BulletController}}
+\doxysubsubsection{\texorpdfstring{onCollision()}{onCollision()}}
+{\footnotesize\ttfamily void Entity\+::\+Bullet\+Controller\+::on\+Collision (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}} $>$}]{controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+this function does what must happen when this object collides with controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controllers} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEntity_1_1CollidableController}{Entity\+::\+Collidable\+Controller}}.
+
+
+
+Definition at line 21 of file Bullet\+Controller.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23         \textcolor{keywordflow}{if} (std::dynamic\_pointer\_cast<Entity::EnemyController>(b) \&\&}
+\DoxyCodeLine{24             std::dynamic\_pointer\_cast<Entity::BulletModel>(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}})-\/>isFriendly()) \{}
+\DoxyCodeLine{25                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(shared\_from\_this());}
+\DoxyCodeLine{26                 std::shared\_ptr<Entity::EnemyModel> enemymodel =}
+\DoxyCodeLine{27                     std::dynamic\_pointer\_cast<Entity::EnemyModel>(b-\/>getM());}
+\DoxyCodeLine{28                 enemymodel-\/>setHealthpoints(enemymodel-\/>getHealthpoints() -\/ 1);}
+\DoxyCodeLine{29                 \textcolor{keywordflow}{if} (enemymodel-\/>getHealthpoints() == 0) \{}
+\DoxyCodeLine{30                       std::shared\_ptr<Entity::PlayerShipModel> modelp= std::dynamic\_pointer\_cast<Entity::PlayerShipModel>(\mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().getHero()-\/>\mbox{\hyperlink{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}{getM}}());}
+\DoxyCodeLine{31                        modelp-\/>setScore(modelp-\/>getScore()+50);}
+\DoxyCodeLine{32                         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(b);}
+\DoxyCodeLine{33                         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a3be0ee46145b6a44544825b0e81d1aa3}{setEnemycount}}(}
+\DoxyCodeLine{34                             \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().getEnemycount() -\/ 1);}
+\DoxyCodeLine{35                 \}}
+\DoxyCodeLine{36         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (std::dynamic\_pointer\_cast<Entity::PlayerShipController>(b) \&\&}
+\DoxyCodeLine{37                    !std::dynamic\_pointer\_cast<Entity::BulletModel>(\mbox{\hyperlink{classControllerAbstract_a9e02164cdd086533e3fd67bdbdce1d5b}{m}})-\/>isFriendly()) \{}
+\DoxyCodeLine{38                 std::shared\_ptr<Entity::PlayerShipModel> model = std::dynamic\_pointer\_cast<Entity::PlayerShipModel>(}
+\DoxyCodeLine{39                     std::dynamic\_pointer\_cast<Entity::PlayerShipController>(b)-\/>\mbox{\hyperlink{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}{getM}}());}
+\DoxyCodeLine{40                 model-\/>setHealthpoints(model-\/>getHealthpoints() -\/ 1);}
+\DoxyCodeLine{41                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(shared\_from\_this());}
+\DoxyCodeLine{42                  \textcolor{keywordflow}{if} (model-\/>getHealthpoints() == 0)\{}
+\DoxyCodeLine{43                          \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a43cff63c7253b8ba79c28fdf5cdc3407}{getG}}()-\/>\mbox{\hyperlink{classGame_a2da38a05f1ddff329eb1a7441b98c95d}{setEnd}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{44                  \}}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(std::dynamic\_pointer\_cast<Entity::ShieldController>(b))\{}
+\DoxyCodeLine{47                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(shared\_from\_this());}
+\DoxyCodeLine{48                 std::shared\_ptr<Entity::ShieldModel> model = std::dynamic\_pointer\_cast<Entity::ShieldModel>(}
+\DoxyCodeLine{49                     std::dynamic\_pointer\_cast<Entity::ShieldController>(b)-\/>\mbox{\hyperlink{classControllerAbstract_ac011c92c97ae6236cd24dd03020bdf85}{getM}}());}
+\DoxyCodeLine{50                 model-\/>setHealthpoints(model-\/>getHealthpoints()-\/1);}
+\DoxyCodeLine{51                 \textcolor{keywordflow}{if}(model-\/>getHealthpoints()==0)\{}
+\DoxyCodeLine{52                         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_aba103dce4ebd09442d0eb595896a85c2}{addDeletion}}(b);}
+\DoxyCodeLine{53                 \}}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

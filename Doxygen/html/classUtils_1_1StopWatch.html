@@ -73,26 +73,96 @@ $(function() {
 <div class="title">Utils::StopWatch Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>a stopwatch used for the main game loop  
+ <a href="classUtils_1_1StopWatch.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="StopWatch_8h_source.html">StopWatch.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6307657657fdea9e3fbd6894f93f3949"><td class="memItemLeft" align="right" valign="top"><a id="a6307657657fdea9e3fbd6894f93f3949"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1StopWatch.html#a6307657657fdea9e3fbd6894f93f3949">start</a> ()</td></tr>
+<tr class="memdesc:a6307657657fdea9e3fbd6894f93f3949"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts the stopwatch <br /></td></tr>
 <tr class="separator:a6307657657fdea9e3fbd6894f93f3949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13136ad8120b345c4d16f7f600867246"><td class="memItemLeft" align="right" valign="top"><a id="a13136ad8120b345c4d16f7f600867246"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed</b> ()</td></tr>
+<tr class="memitem:a13136ad8120b345c4d16f7f600867246"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1StopWatch.html#a13136ad8120b345c4d16f7f600867246">elapsed</a> ()</td></tr>
+<tr class="memdesc:a13136ad8120b345c4d16f7f600867246"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the time that has been passed since it has started  <a href="classUtils_1_1StopWatch.html#a13136ad8120b345c4d16f7f600867246">More...</a><br /></td></tr>
 <tr class="separator:a13136ad8120b345c4d16f7f600867246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a17a03335cbdac0082b880a969b59a22f"><td class="memItemLeft" align="right" valign="top"><a id="a17a03335cbdac0082b880a969b59a22f"></a>
-static <a class="el" href="classUtils_1_1StopWatch.html">StopWatch</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:a17a03335cbdac0082b880a969b59a22f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classUtils_1_1StopWatch.html">StopWatch</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1StopWatch.html#a17a03335cbdac0082b880a969b59a22f">getInstance</a> ()</td></tr>
+<tr class="memdesc:a17a03335cbdac0082b880a969b59a22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the only way to get a reference to the Stopwatch object and there can only exist 1 object of Stopwatch;.  <a href="classUtils_1_1StopWatch.html#a17a03335cbdac0082b880a969b59a22f">More...</a><br /></td></tr>
 <tr class="separator:a17a03335cbdac0082b880a969b59a22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="StopWatch_8h_source.html#l00010">10</a> of file <a class="el" href="StopWatch_8h_source.html">StopWatch.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>a stopwatch used for the main game loop </p>
+
+<p class="definition">Definition at line <a class="el" href="StopWatch_8h_source.html#l00013">13</a> of file <a class="el" href="StopWatch_8h_source.html">StopWatch.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a13136ad8120b345c4d16f7f600867246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13136ad8120b345c4d16f7f600867246">&#9670;&nbsp;</a></span>elapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::StopWatch::elapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates the time that has been passed since it has started </p>
+<dl class="section return"><dt>Returns</dt><dd>the passed time </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="StopWatch_8cpp_source.html#l00009">9</a> of file <a class="el" href="StopWatch_8cpp_source.html">StopWatch.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                               {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        std::chrono::time_point&lt;std::chrono::system_clock&gt; end=std::chrono::high_resolution_clock::now();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::chrono::duration&lt;float&gt; duration=end-begin;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">return</span> duration.count();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a17a03335cbdac0082b880a969b59a22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a03335cbdac0082b880a969b59a22f">&#9670;&nbsp;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classUtils_1_1StopWatch.html">StopWatch</a>&amp; Utils::StopWatch::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the only way to get a reference to the Stopwatch object and there can only exist 1 object of Stopwatch;. </p>
+<dl class="section return"><dt>Returns</dt><dd>the reference to the Stopwatch object </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="StopWatch_8h_source.html#l00021">21</a> of file <a class="el" href="StopWatch_8h_source.html">StopWatch.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keyword">static</span> StopWatch instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="comment">// Instantiated on first use.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Utils/<a class="el" href="StopWatch_8h_source.html">StopWatch.h</a></li>
 <li>Utils/<a class="el" href="StopWatch_8cpp_source.html">StopWatch.cpp</a></li>
 </ul>

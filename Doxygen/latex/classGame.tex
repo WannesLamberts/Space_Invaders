@@ -1,33 +1,246 @@
 \hypertarget{classGame}{}\doxysection{Game Class Reference}
 \label{classGame}\index{Game@{Game}}
+
+
+this class had everything needed to play space\+Invaders  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGame_a5046b7ca0ac1a893f5330773117a76b6}\label{classGame_a5046b7ca0ac1a893f5330773117a76b6}} 
-{\bfseries Game} (std\+::string file)
-\item 
+\mbox{\hyperlink{classGame_a8474029dbe4bec603124f0941555b510}{Game}} (std\+::string file, int x, int y)
+\begin{DoxyCompactList}\small\item\em contructs the \mbox{\hyperlink{classGame}{Game}} class with calling \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame(std\+::string file,int x,int y)}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}\label{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}} 
-void {\bfseries draw\+Game} ()
-\item 
+void \mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{draw\+Game}} ()
+\begin{DoxyCompactList}\small\item\em draws all views on the window \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGame_abc9436a9d18e48c6e1e4fbc4ea879449}\label{classGame_abc9436a9d18e48c6e1e4fbc4ea879449}} 
-void {\bfseries run\+Game} ()
-\item 
+void \mbox{\hyperlink{classGame_abc9436a9d18e48c6e1e4fbc4ea879449}{run\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Starts the gameloop of the game, this function starts the game. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classGame_ab0a4b1679513642011b588d9285905dd}\label{classGame_ab0a4b1679513642011b588d9285905dd}} 
-void {\bfseries nextlevel} ()
-\item 
-\mbox{\Hypertarget{classGame_a32190a70e05a3f6ca03f86b02c339161}\label{classGame_a32190a70e05a3f6ca03f86b02c339161}} 
-void {\bfseries load\+Level} (std\+::string file)
-\item 
-\mbox{\Hypertarget{classGame_a403866a794a2ff44570682f903d1c773}\label{classGame_a403866a794a2ff44570682f903d1c773}} 
-const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \& {\bfseries getW} () const
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classGame_ab0a4b1679513642011b588d9285905dd}{nextlevel}} ()
+\begin{DoxyCompactList}\small\item\em loads the next level of the game. if there is no next level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a32190a70e05a3f6ca03f86b02c339161}{load\+Level}} (std\+::string file)
+\begin{DoxyCompactList}\small\item\em loads the level in with the jsonfile file creates the objects mentionned in the jsonfile \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame}} (std\+::string file, int x, int y)
+\begin{DoxyCompactList}\small\item\em reads in the first level and creates the playership and shields and creates the window the game will be drawn on \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classGame_ad73ca1f6748e766a374799f4bf926cb7}{generate\+Over}} ()
+\begin{DoxyCompactList}\small\item\em generates the game over sprite for when the game is finished \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a2da38a05f1ddff329eb1a7441b98c95d}{set\+End}} (bool end)
+\begin{DoxyCompactList}\small\item\em setter for end \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \& \mbox{\hyperlink{classGame_a403866a794a2ff44570682f903d1c773}{getW}} () const
+\begin{DoxyCompactList}\small\item\em getter for the window w \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+this class had everything needed to play space\+Invaders 
+
+Definition at line 18 of file Game.\+h.
 
 
-Definition at line 17 of file Game.\+h.
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_a8474029dbe4bec603124f0941555b510}\label{classGame_a8474029dbe4bec603124f0941555b510}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{file,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+contructs the \mbox{\hyperlink{classGame}{Game}} class with calling \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame(std\+::string file,int x,int y)}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The game file(had all the levels in it) for this game \\
+\hline
+{\em x} & The width in pixels of the game window \\
+\hline
+{\em y} & the height in pixels of the game window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 12 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14         \mbox{\hyperlink{classGame_a3b341189df8fa6269de4b51594f39fc0}{setupgame}}(file,x,y);}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_ad73ca1f6748e766a374799f4bf926cb7}\label{classGame_ad73ca1f6748e766a374799f4bf926cb7}} 
+\index{Game@{Game}!generateOver@{generateOver}}
+\index{generateOver@{generateOver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{generateOver()}{generateOver()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Game\+::generate\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+generates the game over sprite for when the game is finished 
+
+\begin{DoxyReturn}{Returns}
+ths game over sprite 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                             \{}
+\DoxyCodeLine{103         sf::Sprite gameover;}
+\DoxyCodeLine{104         texture.loadFromFile(\textcolor{stringliteral}{"../Files/Sprites/gameover.png"});}
+\DoxyCodeLine{105         gameover.setTexture(texture);}
+\DoxyCodeLine{106         \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} hitbox = \mbox{\hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{Utils::Transformation::getInstance}}().\mbox{\hyperlink{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}{reScaleHitbox}}(}
+\DoxyCodeLine{107             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(8,6), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(w-\/>getSize().x, w-\/>getSize().y),}
+\DoxyCodeLine{108             \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(gameover.getTexture()-\/>getSize().x,}
+\DoxyCodeLine{109                             gameover.getTexture()-\/>getSize().y));}
+\DoxyCodeLine{110         gameover.setScale(hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}},hitbox.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}});}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} gameover;}
+\DoxyCodeLine{112 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGame_a403866a794a2ff44570682f903d1c773}\label{classGame_a403866a794a2ff44570682f903d1c773}} 
+\index{Game@{Game}!getW@{getW}}
+\index{getW@{getW}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getW()}{getW()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \& Game\+::getW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getter for the window w 
+
+\begin{DoxyReturn}{Returns}
+the Game\+::w variable 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{ \textcolor{keywordflow}{return} w; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGame_a32190a70e05a3f6ca03f86b02c339161}\label{classGame_a32190a70e05a3f6ca03f86b02c339161}} 
+\index{Game@{Game}!loadLevel@{loadLevel}}
+\index{loadLevel@{loadLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{loadLevel()}{loadLevel()}}
+{\footnotesize\ttfamily void Game\+::load\+Level (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+
+
+loads the level in with the jsonfile file creates the objects mentionned in the jsonfile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & a json file that has all the objects in it \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         std::ifstream i(file);}
+\DoxyCodeLine{60         nlohmann::json j;}
+\DoxyCodeLine{61         i >> j;}
+\DoxyCodeLine{62         \textcolor{keywordtype}{double} speed = j[\textcolor{stringliteral}{"alienspeed"}];}
+\DoxyCodeLine{63         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"aliens"}].size(); ++k) \{}
+\DoxyCodeLine{64                 \textcolor{keywordtype}{double} healthpoints = j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"healthpoints"}];}
+\DoxyCodeLine{65                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} position =}
+\DoxyCodeLine{66                     \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}]);}
+\DoxyCodeLine{67                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} size = \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"x"}], j[\textcolor{stringliteral}{"aliens"}][k][\textcolor{stringliteral}{"size"}][\textcolor{stringliteral}{"y"}]);}
+\DoxyCodeLine{68                 \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1057b4fa1c52d387610a6245839e04e7}{createAlienShip}}(position, size, healthpoints, speed);}
+\DoxyCodeLine{69         \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGame_a2da38a05f1ddff329eb1a7441b98c95d}\label{classGame_a2da38a05f1ddff329eb1a7441b98c95d}} 
+\index{Game@{Game}!setEnd@{setEnd}}
+\index{setEnd@{setEnd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setEnd()}{setEnd()}}
+{\footnotesize\ttfamily void Game\+::set\+End (\begin{DoxyParamCaption}\item[{bool}]{end }\end{DoxyParamCaption})}
+
+
+
+setter for end 
+
+
+\begin{DoxyParams}{Parameters}
+{\em end} & the game end will be set to this \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113 \{ Game::end = end; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classGame_a3b341189df8fa6269de4b51594f39fc0}\label{classGame_a3b341189df8fa6269de4b51594f39fc0}} 
+\index{Game@{Game}!setupgame@{setupgame}}
+\index{setupgame@{setupgame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setupgame()}{setupgame()}}
+{\footnotesize\ttfamily void Game\+::setupgame (\begin{DoxyParamCaption}\item[{std\+::string}]{file,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+reads in the first level and creates the playership and shields and creates the window the game will be drawn on 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The game file(had all the levels in it) for this game \\
+\hline
+{\em x} & The width in pixels of the game window \\
+\hline
+{\em y} & the height in pixels of the game window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Game.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                \{}
+\DoxyCodeLine{82         end = \textcolor{keyword}{false};}
+\DoxyCodeLine{83         std::ifstream i(file);}
+\DoxyCodeLine{84         nlohmann::json j;}
+\DoxyCodeLine{85         i >> j;}
+\DoxyCodeLine{86         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < j[\textcolor{stringliteral}{"levels"}].size(); ++k) \{}
+\DoxyCodeLine{87                 std::string levelname = j[\textcolor{stringliteral}{"levels"}][k][\textcolor{stringliteral}{"name"}];}
+\DoxyCodeLine{88                 levels.push\_back(levelname);}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         srand(time(NULL));}
+\DoxyCodeLine{91         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a03be28faefe2b086b6b8efd418ceaf2a}{setup}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{92         w = std::make\_shared<sf::RenderWindow>(sf::VideoMode(x, y), \textcolor{stringliteral}{"SpaceInvaders"});}
+\DoxyCodeLine{93         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a1749620e1161b598fddefab873fa4018}{createPlayerShip}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0, 2), \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(1, 0.5), 3, 0.05);}
+\DoxyCodeLine{94         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(-\/3 ,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
+\DoxyCodeLine{95         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}( -\/1,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
+\DoxyCodeLine{96         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}( 1,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
+\DoxyCodeLine{97         \mbox{\hyperlink{classUtils_1_1ObjectManager_a9a94249f48cf0dcaf47f7ecf3d6d607b}{Utils::ObjectManager::getInstance}}().\mbox{\hyperlink{classUtils_1_1ObjectManager_a8eab1a6028f7c738dd1d01f0c0d1963a}{createShield}}(\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(3 ,1),\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(0.7,0.7),3);}
+\DoxyCodeLine{98         currentlevel = 0;}
+\DoxyCodeLine{99         \mbox{\hyperlink{classGame_ab0a4b1679513642011b588d9285905dd}{nextlevel}}();}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

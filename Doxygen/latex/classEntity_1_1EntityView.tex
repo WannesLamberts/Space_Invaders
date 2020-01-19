@@ -12,32 +12,31 @@ View class for Entity this class handles the visual aspect of the game.
 Inheritance diagram for Entity\+::Entity\+View\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.871795cm]{classEntity_1_1EntityView}
+\includegraphics[height=2.393162cm]{classEntity_1_1EntityView}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}\label{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}} 
 void \mbox{\hyperlink{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}{draw}} ()
-\begin{DoxyCompactList}\small\item\em draws the shape on the sf\+::\+Render\+Window w \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em draws the shape on w \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_1_1EntityView_a9bee787303f1b6a5efc8212f5ec684fc}\label{classEntity_1_1EntityView_a9bee787303f1b6a5efc8212f5ec684fc}} 
-virtual void {\bfseries update} ()
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityView_a390500fd3f9fe27b09f12c51ccf3fa97}\label{classEntity_1_1EntityView_a390500fd3f9fe27b09f12c51ccf3fa97}} 
-void {\bfseries change\+Scale} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}})
+virtual void \mbox{\hyperlink{classEntity_1_1EntityView_a9bee787303f1b6a5efc8212f5ec684fc}{update}} ()
+\begin{DoxyCompactList}\small\item\em changes the position of shape on the screen to the corresponding value in the model \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_1_1EntityView_adf5f026af71d1776b064e0eb7038f65e}{change\+Scale}} (\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}} size)
 \item 
 \mbox{\Hypertarget{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}\label{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}} 
-virtual void {\bfseries generate\+Shape} ()=0
-\item 
-\mbox{\Hypertarget{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}\label{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}} 
-{\bfseries Entity\+View} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&w, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ model)
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classEntity_1_1EntityView_ae4aeb4a57034976467848d12906d3042}{generate\+Shape}} ()=0
+\begin{DoxyCompactList}\small\item\em generates shape \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}{Entity\+View}} (const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})
+\begin{DoxyCompactList}\small\item\em contructor for entityview \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEntity_1_1EntityView_a8434e36a86fa4c29fb7784a1c4be57ce}\label{classEntity_1_1EntityView_a8434e36a86fa4c29fb7784a1c4be57ce}} 
-std\+::shared\+\_\+ptr$<$ sf\+::\+Drawable $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a8434e36a86fa4c29fb7784a1c4be57ce}{shape}}
-\begin{DoxyCompactList}\small\item\em the sf\+::\+Drawable that will be drawn on the window of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}\label{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$ \mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}}
+\begin{DoxyCompactList}\small\item\em the model that has this as observer, I made a pointer to the model so that i don\textquotesingle{}t have to implement multiple update function with different parameters in my observer class. I did that so that i can have a modular design and that notifyobservers from subject just calls \mbox{\hyperlink{classEntity_1_1EntityView_a9bee787303f1b6a5efc8212f5ec684fc}{update()}}, instead of checking all the types and call form example update(position) if it is a playership view and update(healthpoints) if it is a lifeview etc \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -48,33 +47,64 @@ Definition at line 15 of file Entity\+View.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}\label{classEntity_1_1EntityView_a584f4ec672fef892f6829de190905abf}} 
-\index{Entity::EntityView@{Entity::EntityView}!draw@{draw}}
-\index{draw@{draw}!Entity::EntityView@{Entity::EntityView}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}\label{classEntity_1_1EntityView_a3f693acc2d87f02562b8613dae88540b}} 
+\index{Entity::EntityView@{Entity::EntityView}!EntityView@{EntityView}}
+\index{EntityView@{EntityView}!Entity::EntityView@{Entity::EntityView}}
+\doxysubsubsection{\texorpdfstring{EntityView()}{EntityView()}}
+{\footnotesize\ttfamily Entity\+::\+Entity\+View\+::\+Entity\+View (\begin{DoxyParamCaption}\item[{const std\+::\+\_\+\+\_\+shared\+\_\+ptr$<$ sf\+::\+Render\+Window $>$ \&}]{w,  }\item[{std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classModelAbstract}{Model\+Abstract}} $>$}]{model }\end{DoxyParamCaption})}
 
 
 
-draws the shape on the sf\+::\+Render\+Window w 
+contructor for entityview 
 
 
 \begin{DoxyParams}{Parameters}
-{\em w} & the window where the shape gets drawn on. \\
+{\em w} & the window for the view \\
+\hline
+{\em model} & the model for the view \\
 \hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classViewAbstract_a6837ba028ab2aac5b4ac07e01be8977a}{View\+Abstract}}.
-
-
-
-Definition at line 34 of file Entity\+View.\+cpp.
+Definition at line 20 of file Entity\+View.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{34 \{ w-\/>draw(*\mbox{\hyperlink{classEntity_1_1EntityView_a8434e36a86fa4c29fb7784a1c4be57ce}{shape}}); \}}
+\DoxyCodeLine{21     : \mbox{\hyperlink{classViewAbstract_ae70e54b453832e601f5332fefb6f4c74}{ViewAbstract}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}),\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}}(\mbox{\hyperlink{classEntity_1_1EntityView_a795dc4dd2410feba1a800f7a8b99e09f}{model}})}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_1_1EntityView_adf5f026af71d1776b064e0eb7038f65e}\label{classEntity_1_1EntityView_adf5f026af71d1776b064e0eb7038f65e}} 
+\index{Entity::EntityView@{Entity::EntityView}!changeScale@{changeScale}}
+\index{changeScale@{changeScale}!Entity::EntityView@{Entity::EntityView}}
+\doxysubsubsection{\texorpdfstring{changeScale()}{changeScale()}}
+{\footnotesize\ttfamily void Entity\+::\+Entity\+View\+::change\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUtils_1_1Vector2D}{Utils\+::\+Vector2D}}}]{size }\end{DoxyParamCaption})}
+
+sets the size of the shape so that is corresponds to the size of the logic(\+So that the hitbox corresponds) 
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of the logic \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file Entity\+View.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26         \textcolor{keywordflow}{if} (std::dynamic\_pointer\_cast<sf::Sprite>(\mbox{\hyperlink{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}{shape}})) \{}
+\DoxyCodeLine{27                 \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}} v = \mbox{\hyperlink{classUtils_1_1Transformation_a03b9f5b948a515ced74861fa154a3ce4}{Utils::Transformation::getInstance}}().\mbox{\hyperlink{classUtils_1_1Transformation_ab005281330be18ff1cf67c3e51ced6de}{reScaleHitbox}}(}
+\DoxyCodeLine{28                     cor, \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(\mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}-\/>getSize().x, \mbox{\hyperlink{classViewAbstract_a51b1f37a6113ef3f7b061db29cb4a4c0}{w}}-\/>getSize().y),}
+\DoxyCodeLine{29                     \mbox{\hyperlink{structUtils_1_1Vector2D}{Utils::Vector2D}}(std::dynamic\_pointer\_cast<sf::Sprite>(\mbox{\hyperlink{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}{shape}})-\/>getTexture()-\/>getSize().x,}
+\DoxyCodeLine{30                                     std::dynamic\_pointer\_cast<sf::Sprite>(\mbox{\hyperlink{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}{shape}})-\/>getTexture()-\/>getSize().y));}
+\DoxyCodeLine{31                 std::dynamic\_pointer\_cast<sf::Sprite>(\mbox{\hyperlink{classViewAbstract_a83e9859c55ca1f5cbfe32619e5351d8c}{shape}})-\/>setScale(v.\mbox{\hyperlink{structUtils_1_1Vector2D_aeaeb48cf0dce236ede6233f0947fa835}{x}}, v.\mbox{\hyperlink{structUtils_1_1Vector2D_a6f6ad821c382bc0ae8c002303a5b5ae3}{y}});}
+\DoxyCodeLine{32         \}}
+\DoxyCodeLine{33 \}}
 
 \end{DoxyCode}
 

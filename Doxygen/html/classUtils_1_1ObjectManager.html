@@ -73,66 +73,670 @@ $(function() {
 <div class="title">Utils::ObjectManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>manages all the objects of the game  
+ <a href="classUtils_1_1ObjectManager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ObjectManager_8h_source.html">ObjectManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c2bbff560b52d08cf2058cc13def2d0"><td class="memItemLeft" align="right" valign="top"><a id="a1c2bbff560b52d08cf2058cc13def2d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createPlayerShip</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> p, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> s, int healthpoints, double speed)</td></tr>
-<tr class="separator:a1c2bbff560b52d08cf2058cc13def2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa533783a21d7223f77e73864d1a10f9f"><td class="memItemLeft" align="right" valign="top"><a id="aa533783a21d7223f77e73864d1a10f9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createAlienShip</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> p, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> s, int healthpoints, double speed)</td></tr>
-<tr class="separator:aa533783a21d7223f77e73864d1a10f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401e5ffd32be41d83cb80d7d397a9374"><td class="memItemLeft" align="right" valign="top"><a id="a401e5ffd32be41d83cb80d7d397a9374"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createBullet</b> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> p, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> s, double speed, bool friendly)</td></tr>
-<tr class="separator:a401e5ffd32be41d83cb80d7d397a9374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c28d2c647f5ddad5da876afd350d8a"><td class="memItemLeft" align="right" valign="top"><a id="a65c28d2c647f5ddad5da876afd350d8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> (<a class="el" href="classGame.html">Game</a> *)</td></tr>
-<tr class="separator:a65c28d2c647f5ddad5da876afd350d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2523a657a716cef66baf0842b7d7f782"><td class="memItemLeft" align="right" valign="top"><a id="a2523a657a716cef66baf0842b7d7f782"></a>
-const std::shared_ptr&lt; <a class="el" href="classEntity_1_1PlayerShipController.html">Entity::PlayerShipController</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getHero</b> () const</td></tr>
+<tr class="memitem:a1749620e1161b598fddefab873fa4018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a1749620e1161b598fddefab873fa4018">createPlayerShip</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size, int healthpoints, double speed)</td></tr>
+<tr class="memdesc:a1749620e1161b598fddefab873fa4018"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a playership and places it in the object vector  <a href="classUtils_1_1ObjectManager.html#a1749620e1161b598fddefab873fa4018">More...</a><br /></td></tr>
+<tr class="separator:a1749620e1161b598fddefab873fa4018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1057b4fa1c52d387610a6245839e04e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a1057b4fa1c52d387610a6245839e04e7">createAlienShip</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size, int healthpoints, double speed)</td></tr>
+<tr class="memdesc:a1057b4fa1c52d387610a6245839e04e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an alienship and places it in the object vector  <a href="classUtils_1_1ObjectManager.html#a1057b4fa1c52d387610a6245839e04e7">More...</a><br /></td></tr>
+<tr class="separator:a1057b4fa1c52d387610a6245839e04e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed06518d2d1f803f6b84261006b4811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a5ed06518d2d1f803f6b84261006b4811">createBullet</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size, double speed, bool friendly)</td></tr>
+<tr class="memdesc:a5ed06518d2d1f803f6b84261006b4811"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a bullet and places it in the object vector  <a href="classUtils_1_1ObjectManager.html#a5ed06518d2d1f803f6b84261006b4811">More...</a><br /></td></tr>
+<tr class="separator:a5ed06518d2d1f803f6b84261006b4811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eab1a6028f7c738dd1d01f0c0d1963a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a8eab1a6028f7c738dd1d01f0c0d1963a">createShield</a> (<a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> position, <a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a> size, int healthpoints)</td></tr>
+<tr class="memdesc:a8eab1a6028f7c738dd1d01f0c0d1963a"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a shield and places it in the object vector  <a href="classUtils_1_1ObjectManager.html#a8eab1a6028f7c738dd1d01f0c0d1963a">More...</a><br /></td></tr>
+<tr class="separator:a8eab1a6028f7c738dd1d01f0c0d1963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03be28faefe2b086b6b8efd418ceaf2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a03be28faefe2b086b6b8efd418ceaf2a">setup</a> (<a class="el" href="classGame.html">Game</a> *game)</td></tr>
+<tr class="memdesc:a03be28faefe2b086b6b8efd418ceaf2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets enemycount to 0 and sets g to game  <a href="classUtils_1_1ObjectManager.html#a03be28faefe2b086b6b8efd418ceaf2a">More...</a><br /></td></tr>
+<tr class="separator:a03be28faefe2b086b6b8efd418ceaf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2523a657a716cef66baf0842b7d7f782"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classEntity_1_1PlayerShipController.html">Entity::PlayerShipController</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a2523a657a716cef66baf0842b7d7f782">getHero</a> () const</td></tr>
+<tr class="memdesc:a2523a657a716cef66baf0842b7d7f782"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the hero  <a href="classUtils_1_1ObjectManager.html#a2523a657a716cef66baf0842b7d7f782">More...</a><br /></td></tr>
 <tr class="separator:a2523a657a716cef66baf0842b7d7f782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be0ee46145b6a44544825b0e81d1aa3"><td class="memItemLeft" align="right" valign="top"><a id="a3be0ee46145b6a44544825b0e81d1aa3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnemycount</b> (int enemycount)</td></tr>
+<tr class="memitem:a3be0ee46145b6a44544825b0e81d1aa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a3be0ee46145b6a44544825b0e81d1aa3">setEnemycount</a> (int enemycount)</td></tr>
+<tr class="memdesc:a3be0ee46145b6a44544825b0e81d1aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter for enemycount  <a href="classUtils_1_1ObjectManager.html#a3be0ee46145b6a44544825b0e81d1aa3">More...</a><br /></td></tr>
 <tr class="separator:a3be0ee46145b6a44544825b0e81d1aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ba97a30bdef1dd849a7de74c79d2b2"><td class="memItemLeft" align="right" valign="top"><a id="a90ba97a30bdef1dd849a7de74c79d2b2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnemycount</b> () const</td></tr>
+<tr class="memitem:a90ba97a30bdef1dd849a7de74c79d2b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a90ba97a30bdef1dd849a7de74c79d2b2">getEnemycount</a> () const</td></tr>
+<tr class="memdesc:a90ba97a30bdef1dd849a7de74c79d2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for enemycount  <a href="classUtils_1_1ObjectManager.html#a90ba97a30bdef1dd849a7de74c79d2b2">More...</a><br /></td></tr>
 <tr class="separator:a90ba97a30bdef1dd849a7de74c79d2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bcd9266052f4e9cb81b17270743993"><td class="memItemLeft" align="right" valign="top"><a id="a88bcd9266052f4e9cb81b17270743993"></a>
-const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getVisuals</b> () const</td></tr>
+<tr class="memitem:a88bcd9266052f4e9cb81b17270743993"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a88bcd9266052f4e9cb81b17270743993">getVisuals</a> () const</td></tr>
+<tr class="memdesc:a88bcd9266052f4e9cb81b17270743993"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for visuals  <a href="classUtils_1_1ObjectManager.html#a88bcd9266052f4e9cb81b17270743993">More...</a><br /></td></tr>
 <tr class="separator:a88bcd9266052f4e9cb81b17270743993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8196375433dd33e1afc982fdba0386fc"><td class="memItemLeft" align="right" valign="top"><a id="a8196375433dd33e1afc982fdba0386fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteob</b> (int i)</td></tr>
-<tr class="separator:a8196375433dd33e1afc982fdba0386fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b9368e0a6e77f69044eac0aaedd5ca"><td class="memItemLeft" align="right" valign="top"><a id="a64b9368e0a6e77f69044eac0aaedd5ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addObject</b> (std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt;)</td></tr>
-<tr class="separator:a64b9368e0a6e77f69044eac0aaedd5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02dfb4c5fd630a51595488729dbc20f"><td class="memItemLeft" align="right" valign="top"><a id="ab02dfb4c5fd630a51595488729dbc20f"></a>
-const std::vector&lt; std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getO</b> () const</td></tr>
-<tr class="separator:ab02dfb4c5fd630a51595488729dbc20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360b895d90b961c466725ec4d2650d57"><td class="memItemLeft" align="right" valign="top"><a id="a360b895d90b961c466725ec4d2650d57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addDeletion</b> (std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt;)</td></tr>
-<tr class="separator:a360b895d90b961c466725ec4d2650d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba103dce4ebd09442d0eb595896a85c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#aba103dce4ebd09442d0eb595896a85c2">addDeletion</a> (std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt; controller)</td></tr>
+<tr class="memdesc:aba103dce4ebd09442d0eb595896a85c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds controller to objectsToDelete  <a href="classUtils_1_1ObjectManager.html#aba103dce4ebd09442d0eb595896a85c2">More...</a><br /></td></tr>
+<tr class="separator:aba103dce4ebd09442d0eb595896a85c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6562c16d017ba3c38bd028696da9cf"><td class="memItemLeft" align="right" valign="top"><a id="a6b6562c16d017ba3c38bd028696da9cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteObjects</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a6b6562c16d017ba3c38bd028696da9cf">deleteObjects</a> ()</td></tr>
+<tr class="memdesc:a6b6562c16d017ba3c38bd028696da9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes all objects from o that have an controller in objectsToDelete so that these objects will be deleted since there are no more pointers to the objects <br /></td></tr>
 <tr class="separator:a6b6562c16d017ba3c38bd028696da9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59054098c8accaf440db5c699a891e90"><td class="memItemLeft" align="right" valign="top"><a id="a59054098c8accaf440db5c699a891e90"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteObject</b> (std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt; c)</td></tr>
-<tr class="separator:a59054098c8accaf440db5c699a891e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc778e5fe4d63cde65997bf8184bb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a2bc778e5fe4d63cde65997bf8184bb22">deleteObject</a> (std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt; controller)</td></tr>
+<tr class="memdesc:a2bc778e5fe4d63cde65997bf8184bb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes an object from o that has controller as controller  <a href="classUtils_1_1ObjectManager.html#a2bc778e5fe4d63cde65997bf8184bb22">More...</a><br /></td></tr>
+<tr class="separator:a2bc778e5fe4d63cde65997bf8184bb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8196375433dd33e1afc982fdba0386fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a8196375433dd33e1afc982fdba0386fc">deleteob</a> (int i)</td></tr>
+<tr class="memdesc:a8196375433dd33e1afc982fdba0386fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes an object out of o  <a href="classUtils_1_1ObjectManager.html#a8196375433dd33e1afc982fdba0386fc">More...</a><br /></td></tr>
+<tr class="separator:a8196375433dd33e1afc982fdba0386fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9f0ed553f2453227352768b535ca05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">addObject</a> (std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt; object)</td></tr>
+<tr class="memdesc:a2c9f0ed553f2453227352768b535ca05"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds an object to o  <a href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">More...</a><br /></td></tr>
+<tr class="separator:a2c9f0ed553f2453227352768b535ca05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02dfb4c5fd630a51595488729dbc20f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#ab02dfb4c5fd630a51595488729dbc20f">getO</a> () const</td></tr>
+<tr class="memdesc:ab02dfb4c5fd630a51595488729dbc20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of o  <a href="classUtils_1_1ObjectManager.html#ab02dfb4c5fd630a51595488729dbc20f">More...</a><br /></td></tr>
+<tr class="separator:ab02dfb4c5fd630a51595488729dbc20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cff63c7253b8ba79c28fdf5cdc3407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html">Game</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a43cff63c7253b8ba79c28fdf5cdc3407">getG</a> () const</td></tr>
+<tr class="memdesc:a43cff63c7253b8ba79c28fdf5cdc3407"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for game  <a href="classUtils_1_1ObjectManager.html#a43cff63c7253b8ba79c28fdf5cdc3407">More...</a><br /></td></tr>
+<tr class="separator:a43cff63c7253b8ba79c28fdf5cdc3407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a94249f48cf0dcaf47f7ecf3d6d607b"><td class="memItemLeft" align="right" valign="top"><a id="a9a94249f48cf0dcaf47f7ecf3d6d607b"></a>
-static <a class="el" href="classUtils_1_1ObjectManager.html">ObjectManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:a9a94249f48cf0dcaf47f7ecf3d6d607b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classUtils_1_1ObjectManager.html">ObjectManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUtils_1_1ObjectManager.html#a9a94249f48cf0dcaf47f7ecf3d6d607b">getInstance</a> ()</td></tr>
+<tr class="memdesc:a9a94249f48cf0dcaf47f7ecf3d6d607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the only way to get a reference to the Objectmanager object and there can only exist 1 object of Objectmanager;.  <a href="classUtils_1_1ObjectManager.html#a9a94249f48cf0dcaf47f7ecf3d6d607b">More...</a><br /></td></tr>
 <tr class="separator:a9a94249f48cf0dcaf47f7ecf3d6d607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ObjectManager_8h_source.html#l00016">16</a> of file <a class="el" href="ObjectManager_8h_source.html">ObjectManager.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>manages all the objects of the game </p>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8h_source.html#l00020">20</a> of file <a class="el" href="ObjectManager_8h_source.html">ObjectManager.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aba103dce4ebd09442d0eb595896a85c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba103dce4ebd09442d0eb595896a85c2">&#9670;&nbsp;</a></span>addDeletion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::addDeletion </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt;&#160;</td>
+          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds controller to objectsToDelete </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>the controller to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00061">61</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        objectsToDelete.push_back(v);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c9f0ed553f2453227352768b535ca05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9f0ed553f2453227352768b535ca05">&#9670;&nbsp;</a></span>addObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::addObject </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt;&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds an object to o </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>object that needs to be addded </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00069">69</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        o.push_back(obj);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1057b4fa1c52d387610a6245839e04e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1057b4fa1c52d387610a6245839e04e7">&#9670;&nbsp;</a></span>createAlienShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::createAlienShip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>healthpoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates an alienship and places it in the object vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position of the alienship </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the alienship </td></tr>
+    <tr><td class="paramname">healthpoints</td><td>the healthpoints of the alienship </td></tr>
+    <tr><td class="paramname">speed</td><td>the speed of the alienship </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00044">44</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                                                        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::shared_ptr&lt;ModelAbstract&gt; m = std::make_shared&lt;Entity::AlienShipModel&gt;(p, s, healthpoints,speed);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; v = std::make_shared&lt;Entity::AlienShipView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m-&gt;registerObserver(v);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::shared_ptr&lt;ControllerAbstract&gt; c = std::make_shared&lt;Entity::AlienShipController&gt;(m, v);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::shared_ptr&lt;Utils::Object&gt; obj = std::make_shared&lt;Utils::Object&gt;(v, m, c);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">addObject</a>(obj);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    enemycount++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5ed06518d2d1f803f6b84261006b4811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed06518d2d1f803f6b84261006b4811">&#9670;&nbsp;</a></span>createBullet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::createBullet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>friendly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a bullet and places it in the object vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position of the bullet </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the bullet </td></tr>
+    <tr><td class="paramname">speed</td><td>the speed of the bullet </td></tr>
+    <tr><td class="paramname">friendly</td><td>is the bullet from the player or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00027">27</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                                                   {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::shared_ptr&lt;ModelAbstract&gt; m = std::make_shared&lt;Entity::BulletModel&gt;(p, s, speed,friendly);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; v = std::make_shared&lt;Entity::BulletView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        m-&gt;registerObserver(v);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::shared_ptr&lt;ControllerAbstract&gt; c = std::make_shared&lt;Entity::BulletController&gt;(m, v);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::shared_ptr&lt;Utils::Object&gt; obj = std::make_shared&lt;Utils::Object&gt;(v, m, c);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">addObject</a>(obj);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1749620e1161b598fddefab873fa4018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1749620e1161b598fddefab873fa4018">&#9670;&nbsp;</a></span>createPlayerShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::createPlayerShip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>healthpoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a playership and places it in the object vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position of the playership </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the playership </td></tr>
+    <tr><td class="paramname">healthpoints</td><td>the healthpoints of the playership </td></tr>
+    <tr><td class="paramname">speed</td><td>the speed of the playership </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00006">6</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        std::shared_ptr&lt;ModelAbstract&gt; m = std::make_shared&lt;Entity::PlayerShipModel&gt;(p, s, healthpoints,speed);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; l=std::make_shared&lt;Entity::LifeView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; player=std::make_shared&lt;Entity::PlayerScoreView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        visuals.push_back(l);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        visuals.push_back(player);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; v = std::make_shared&lt;Entity::PlayerShipView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        m-&gt;registerObserver(v);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        m-&gt;registerObserver(l);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        m-&gt;registerObserver(player);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::shared_ptr&lt;ControllerAbstract&gt; c = std::make_shared&lt;Entity::PlayerShipController&gt;(m, v);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::shared_ptr&lt;Utils::Object&gt; obj = std::make_shared&lt;Utils::Object&gt;(v, m, c);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">addObject</a>(obj);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        hero=std::dynamic_pointer_cast&lt;Entity::PlayerShipController&gt;(c);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8eab1a6028f7c738dd1d01f0c0d1963a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eab1a6028f7c738dd1d01f0c0d1963a">&#9670;&nbsp;</a></span>createShield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::createShield </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1Vector2D.html">Utils::Vector2D</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>healthpoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>creates a shield and places it in the object vector </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>the position of the shield </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the shield </td></tr>
+    <tr><td class="paramname">healthpoints</td><td>the healthpoints of the shield </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00035">35</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                                        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::shared_ptr&lt;ModelAbstract&gt; m = std::make_shared&lt;Entity::ShieldModel&gt;(p, s, healthpoints);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::shared_ptr&lt;ViewAbstract&gt; v = std::make_shared&lt;Entity::ShieldView&gt;(g-&gt;<a class="code" href="classGame.html#a403866a794a2ff44570682f903d1c773">getW</a>(),m);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        m-&gt;registerObserver(v);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::shared_ptr&lt;ControllerAbstract&gt; c = std::make_shared&lt;Entity::ShieldController&gt;(m, v);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::shared_ptr&lt;Utils::Object&gt; obj = std::make_shared&lt;Utils::Object&gt;(v, m, c);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">addObject</a>(obj);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8196375433dd33e1afc982fdba0386fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8196375433dd33e1afc982fdba0386fc">&#9670;&nbsp;</a></span>deleteob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::deleteob </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes an object out of o </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>the index of the object to delete in the vector o </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00064">64</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                       {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        o.erase(o.begin()+i);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2bc778e5fe4d63cde65997bf8184bb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc778e5fe4d63cde65997bf8184bb22">&#9670;&nbsp;</a></span>deleteObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::deleteObject </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classControllerAbstract.html">ControllerAbstract</a> &gt;&#160;</td>
+          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>removes an object from o that has controller as controller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td>the controller that is the controller of an object that needs to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00054">54</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; o.size(); ++i) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">if</span>(o[i]-&gt;c==c){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <a class="code" href="classUtils_1_1ObjectManager.html#a8196375433dd33e1afc982fdba0386fc">deleteob</a>(i);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90ba97a30bdef1dd849a7de74c79d2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ba97a30bdef1dd849a7de74c79d2b2">&#9670;&nbsp;</a></span>getEnemycount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Utils::ObjectManager::getEnemycount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter for enemycount </p>
+<dl class="section return"><dt>Returns</dt><dd>the enemycount </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00079">79</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <span class="keywordflow">return</span> enemycount; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a43cff63c7253b8ba79c28fdf5cdc3407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cff63c7253b8ba79c28fdf5cdc3407">&#9670;&nbsp;</a></span>getG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html">Game</a> * Utils::ObjectManager::getG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter for game </p>
+<dl class="section return"><dt>Returns</dt><dd>game* </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00082">82</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{ <span class="keywordflow">return</span> g; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2523a657a716cef66baf0842b7d7f782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2523a657a716cef66baf0842b7d7f782">&#9670;&nbsp;</a></span>getHero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::shared_ptr&lt; <a class="el" href="classEntity_1_1PlayerShipController.html">Entity::PlayerShipController</a> &gt; &amp; Utils::ObjectManager::getHero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter for the hero </p>
+<dl class="section return"><dt>Returns</dt><dd>the hero </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00081">81</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{ <span class="keywordflow">return</span> hero; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a94249f48cf0dcaf47f7ecf3d6d607b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a94249f48cf0dcaf47f7ecf3d6d607b">&#9670;&nbsp;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classUtils_1_1ObjectManager.html">ObjectManager</a>&amp; Utils::ObjectManager::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the only way to get a reference to the Objectmanager object and there can only exist 1 object of Objectmanager;. </p>
+<dl class="section return"><dt>Returns</dt><dd>the reference to the Objectmanager object </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8h_source.html#l00059">59</a> of file <a class="el" href="ObjectManager_8h_source.html">ObjectManager.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keyword">static</span> ObjectManager instance; <span class="comment">// Guaranteed to be destroyed.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="comment">// Instantiated on first use.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab02dfb4c5fd630a51595488729dbc20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02dfb4c5fd630a51595488729dbc20f">&#9670;&nbsp;</a></span>getO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="structUtils_1_1Object.html">Utils::Object</a> &gt; &gt; &amp; Utils::ObjectManager::getO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter of o </p>
+<dl class="section return"><dt>Returns</dt><dd>o </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00068">68</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{ <span class="keywordflow">return</span> o; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88bcd9266052f4e9cb81b17270743993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bcd9266052f4e9cb81b17270743993">&#9670;&nbsp;</a></span>getVisuals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classViewAbstract.html">ViewAbstract</a> &gt; &gt; &amp; Utils::ObjectManager::getVisuals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter for visuals </p>
+<dl class="section return"><dt>Returns</dt><dd>visuals </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00078">78</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="keywordflow">return</span> visuals; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3be0ee46145b6a44544825b0e81d1aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be0ee46145b6a44544825b0e81d1aa3">&#9670;&nbsp;</a></span>setEnemycount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::setEnemycount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>enemycount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter for enemycount </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemycount</td><td>sets enemycount to enemycount </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00080">80</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{ ObjectManager::enemycount = enemycount; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a03be28faefe2b086b6b8efd418ceaf2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03be28faefe2b086b6b8efd418ceaf2a">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utils::ObjectManager::setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGame.html">Game</a> *&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets enemycount to 0 and sets g to game </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>the pointer g get's set to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ObjectManager_8cpp_source.html#l00023">23</a> of file <a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                         {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        g=game;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        enemycount=0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Utils/<a class="el" href="ObjectManager_8h_source.html">ObjectManager.h</a></li>
 <li>Utils/<a class="el" href="ObjectManager_8cpp_source.html">ObjectManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassUtils_1_1ObjectManager_html_a2c9f0ed553f2453227352768b535ca05"><div class="ttname"><a href="classUtils_1_1ObjectManager.html#a2c9f0ed553f2453227352768b535ca05">Utils::ObjectManager::addObject</a></div><div class="ttdeci">void addObject(std::shared_ptr&lt; Utils::Object &gt; object)</div><div class="ttdoc">adds an object to o</div><div class="ttdef"><b>Definition:</b> <a href="ObjectManager_8cpp_source.html#l00069">ObjectManager.cpp:69</a></div></div>
+<div class="ttc" id="aclassUtils_1_1ObjectManager_html_a8196375433dd33e1afc982fdba0386fc"><div class="ttname"><a href="classUtils_1_1ObjectManager.html#a8196375433dd33e1afc982fdba0386fc">Utils::ObjectManager::deleteob</a></div><div class="ttdeci">void deleteob(int i)</div><div class="ttdoc">deletes an object out of o</div><div class="ttdef"><b>Definition:</b> <a href="ObjectManager_8cpp_source.html#l00064">ObjectManager.cpp:64</a></div></div>
+<div class="ttc" id="aclassGame_html_a403866a794a2ff44570682f903d1c773"><div class="ttname"><a href="classGame.html#a403866a794a2ff44570682f903d1c773">Game::getW</a></div><div class="ttdeci">const std::shared_ptr&lt; sf::RenderWindow &gt; &amp; getW() const</div><div class="ttdoc">getter for the window w</div><div class="ttdef"><b>Definition:</b> <a href="Game_8cpp_source.html#l00010">Game.cpp:10</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
