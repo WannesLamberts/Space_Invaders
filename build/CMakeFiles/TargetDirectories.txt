@@ -1,3 +1,0 @@
-/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles/rebuild_cache.dir
-/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles/Space_Invaders.dir
-/home/wannes/CLionProjects/Space_Invaders/build/CMakeFiles/edit_cache.dir
